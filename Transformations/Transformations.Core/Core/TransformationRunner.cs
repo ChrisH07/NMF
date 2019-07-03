@@ -28,11 +28,13 @@ namespace NMF.Transformations.Core
             if (!context.Transformation.IsInitialized) throw new InvalidOperationException("Could not initialize transformation");
             context.Inputs.Add(input);
             var patternObjects = new List<ITransformationPatternContext>();
-            foreach (var pattern in context.Transformation.Patterns)
+			foreach (var pattern in context.Transformation.Patterns)
             {
                 var obj = pattern.CreatePattern(context);
                 if (obj != null) patternObjects.Add(obj);
             }
+
+			// Call the startRule and begin the transform
             var comp = context.CallTransformation(startRule, input, inputContext);
             if (startRule.OutputType != typeof(void))
             {
