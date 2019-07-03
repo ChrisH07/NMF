@@ -155,12 +155,8 @@ namespace NMF.Transformations.Core
         /// <param name="e">The event arguments</param>
         protected virtual void OnOutputInitialized(EventArgs e)
         {
-            var handler = Interlocked.Exchange(ref OutputInitialized, null);
-            if (handler != null)
-            {
-                handler(this, e);
-            }
-        }
+			Interlocked.Exchange(ref OutputInitialized, null)?.Invoke(this, e);
+		}
 
         internal OutputDelay OutputDelay
         {
