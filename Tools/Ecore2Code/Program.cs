@@ -176,6 +176,11 @@ namespace Ecore2Code
                     }
                     string file = mapping.Substring(lastIdx + 1);
                     string[] uriNs = mapping.Substring(0, lastIdx).Split(new[] { '@' });
+                    if (uriNs.Length > 2)
+                    {
+                        Console.WriteLine("Namespace mapping {0} contains multiple '@' symbols. Required format: URI@baseNamespace=file", mapping);
+                        continue;
+                    }
                     
                     if (!Uri.TryCreate(uriNs[0], UriKind.Absolute, out Uri uri))
                     {
