@@ -100,11 +100,12 @@ namespace NMF.Transformations.Core
         #region Internal properties
 
         internal List<GeneralTransformationRule> Children { get; private set; }
-        
-        /// <summary>
-        /// Gets the base rule, i.e. the rule the current rule can instantiate
-        /// </summary>
-        public GeneralTransformationRule BaseRule { get; private set; }
+		public IReadOnlyList<GeneralTransformationRule> ChildTransformations { get { return Children?.AsReadOnly(); } }
+
+		/// <summary>
+		/// Gets the base rule, i.e. the rule the current rule can instantiate
+		/// </summary>
+		public GeneralTransformationRule BaseRule { get; private set; }
         internal Predicate<Computation> BaseFilter { get; private set; }
         
         #endregion
