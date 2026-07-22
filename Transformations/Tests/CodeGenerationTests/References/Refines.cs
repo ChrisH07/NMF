@@ -1086,11 +1086,6 @@ namespace TemporaryGeneratedCode.Refines
         {
             if ((feature == "ITEM"))
             {
-                this.Item = ((INode)(value));
-                return;
-            }
-            if ((feature == "ITEM"))
-            {
                 ((IBase)(this)).Item = ((INode)(value));
                 return;
             }
