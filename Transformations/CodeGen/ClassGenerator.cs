@@ -369,6 +369,8 @@ namespace NMF.CodeGen
 
             if (member is CodeMemberMethod memberMethod && current is CodeMemberMethod currentMethod)
             {
+                if (!SamePrivateImplementationType(memberMethod.PrivateImplementationType, currentMethod.PrivateImplementationType)) return false;
+
                 if (memberMethod.Parameters.Count != currentMethod.Parameters.Count) return false;
                 if (memberMethod.TypeParameters.Count != currentMethod.TypeParameters.Count) return false;
 
@@ -377,7 +379,33 @@ namespace NMF.CodeGen
                     if (memberMethod.Parameters[i].Type.BaseType != currentMethod.Parameters[i].Type.BaseType) return false;
                 }
             }
+
+            if (member is CodeMemberProperty memberProperty && current is CodeMemberProperty currentProperty)
+            {
+                if (!SamePrivateImplementationType(memberProperty.PrivateImplementationType, currentProperty.PrivateImplementationType)) return false;
+            }
+
+            if (member is CodeMemberEvent memberEvent && current is CodeMemberEvent currentEvent)
+            {
+                if (!SamePrivateImplementationType(memberEvent.PrivateImplementationType, currentEvent.PrivateImplementationType)) return false;
+            }
+
             return true;
+        }
+
+        /// <summary>
+        /// Determines whether two (possibly absent) private implementation types refer to the same interface
+        /// </summary>
+        /// <remarks>
+        /// Explicit interface implementations may legitimately share a member name (e.g. a redefined/refined
+        /// reference implemented for two different base interfaces), so members must only be considered
+        /// conflicting when they target the same private implementation type.
+        /// </remarks>
+        private static bool SamePrivateImplementationType(CodeTypeReference left, CodeTypeReference right)
+        {
+            if (left == null && right == null) return true;
+            if (left == null || right == null) return false;
+            return left.BaseType == right.BaseType;
         }
 
         /// <summary>
