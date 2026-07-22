@@ -30,7 +30,9 @@ namespace NMF.Models.Meta
             /// <returns>The uninitialized code type declaration</returns>
             public override CodeTypeDeclaration CreateOutput(IClass scope, IAttribute attribute, ITransformationContext context)
             {
-                return CodeDomHelper.CreateTypeDeclarationWithReference(scope.Name.ToPascalCase() + attribute.Name.ToPascalCase() + "Collection", false);
+                // "Refined" disambiguates this from Class2Children's own nested "{scope}ChildrenCollection" type,
+                // which it would otherwise collide with whenever a metamodel names an attribute "Children".
+                return CodeDomHelper.CreateTypeDeclarationWithReference(scope.Name.ToPascalCase() + "Refined" + attribute.Name.ToPascalCase() + "Collection", false);
             }
 
             private readonly CodeFieldReferenceExpression parentRef = new CodeFieldReferenceExpression(new CodeThisReferenceExpression(), "_parent");
