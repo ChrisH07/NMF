@@ -159,8 +159,10 @@ namespace NMF.Models.Meta
         private static CodeTypeReference CreateReferenceForMappedType(bool implementation, MappedType mappedType)
         {
             var reference = new CodeTypeReference();
-            if (mappedType.SystemType.IsValueType || mappedType.SystemType == typeof(string))
+            if (mappedType.SystemType.IsValueType || mappedType.SystemType == typeof(string) || mappedType.SystemType == typeof(System.Type))
             {
+                // System.Type must always be fully qualified: NMF.Models.Meta (a namespace imported into every
+                // generated file) also declares a class named "Type", so a bare "Type" reference is ambiguous.
                 reference.BaseType = mappedType.SystemType.FullName;
             }
             else
