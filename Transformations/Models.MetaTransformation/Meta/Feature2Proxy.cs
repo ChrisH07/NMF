@@ -19,7 +19,12 @@ namespace NMF.Models.Meta
             /// <inheritdoc />
             public override void Transform(ITypedElement feature, CodeTypeDeclaration generatedType, ITransformationContext context)
             {
-                generatedType.Name = feature.Name.ToPascalCase() + "Proxy";
+                var declaringType = context.Trace.ResolveIn(Rule<Type2Type>(), feature.Parent as IType).GetReferenceForType();
+
+                // Qualified with the declaring type's name: a reference that refines/redefines a base feature
+                // keeps the same feature name, so an unqualified name would collide with the base feature's own proxy.
+                // Class2Type.AddToExpressionForFeature constructs this same name independently and must stay in sync.
+                generatedType.Name = (feature.Parent as IType).Name.ToPascalCase() + feature.Name.ToPascalCase() + "Proxy";
                 generatedType.Attributes = MemberAttributes.Private | MemberAttributes.Final;
                 generatedType.TypeAttributes = System.Reflection.TypeAttributes.NestedPrivate | System.Reflection.TypeAttributes.Sealed;
                 generatedType.WriteDocumentation(string.Format("Represents a proxy to represent an incremental access to the {0} property", feature.Name));
@@ -31,7 +36,6 @@ namespace NMF.Models.Meta
                     type = new CodeTypeReference(typeof(System.Nullable<>).Name, type);
                 }
 
-                var declaringType = context.Trace.ResolveIn(Rule<Type2Type>(), feature.Parent as IType).GetReferenceForType();
                 generatedType.BaseTypes.Add(new CodeTypeReference("ModelPropertyChange", declaringType, type));
 
                 var modelElementRef = new CodePropertyReferenceExpression(new CodeThisReferenceExpression(), "ModelElement");
