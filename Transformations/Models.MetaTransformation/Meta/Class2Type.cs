@@ -1032,8 +1032,12 @@ namespace NMF.Models.Meta
                 setFeature.Parameters.Add(new CodeParameterDeclarationExpression(typeof(string), "feature"));
                 setFeature.Parameters.Add(new CodeParameterDeclarationExpression(typeof(object), "value"));
                 var thisRef = new CodeThisReferenceExpression();
-                AddReferencesOfClass(input, generatedType, (m, f, p, _) => AddSetFeature(m, f, p, context, true, thisRef), setFeature, false, context);
-                AddAttributesOfClass(input, generatedType, (m, f, p, _) => AddSetFeature(m, f, p, context, false, thisRef), setFeature, context);
+                // References/attributes that themselves refine a base feature share its external name with the
+                // case AddRefinedReferencesOfClass/AddRefinedAttributesOfClass generates below. Skip them here so
+                // that the refined case - which correctly dispatches to whichever implementation applies - is the
+                // one that is actually reached, instead of being shadowed by this simpler, non-dispatching case.
+                AddReferencesOfClass(input, generatedType, (m, f, p, _) => f.Refines != null ? m : AddSetFeature(m, f, p, context, true, thisRef), setFeature, false, context);
+                AddAttributesOfClass(input, generatedType, (m, f, p, _) => f.Refines != null ? m : AddSetFeature(m, f, p, context, false, thisRef), setFeature, context);
                 var type2Type = Rule<Type2Type>();
                 AddRefinedReferencesOfClass(input, generatedType, (m, f, p, _) =>
                 {
