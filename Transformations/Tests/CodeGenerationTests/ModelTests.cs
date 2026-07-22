@@ -84,6 +84,12 @@ namespace NMF.CodeGenerationTests
         }
 
         [TestMethod]
+        public void RefinesModelGeneratedSuccessfully()
+        {
+            GenerateAndAssertEcore("Refines.ecore");
+        }
+
+        [TestMethod]
         public void DefaultValueExampleGeneratesAndInstanceCanBeLoaded()
         {
             GenerateAndAssertEcore("DefaultValueTest.ecore");
