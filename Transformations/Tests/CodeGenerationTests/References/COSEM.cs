@@ -1871,7 +1871,7 @@ namespace TemporaryGeneratedCode.COSEM
         {
             if ((attribute == "ID"))
             {
-                return new IDProxy(this);
+                return new LogicalDeviceIDProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -1885,91 +1885,91 @@ namespace TemporaryGeneratedCode.COSEM
         {
             if ((reference == "AA"))
             {
-                return new AAProxy(this);
+                return new LogicalDeviceAAProxy(this);
             }
             if ((reference == "NAME"))
             {
-                return new NameProxy(this);
+                return new LogicalDeviceNameProxy(this);
             }
             if ((reference == "AUTOCONNECT"))
             {
-                return new AutoConnectProxy(this);
+                return new LogicalDeviceAutoConnectProxy(this);
             }
             if ((reference == "BILLINGPERIODVALUES"))
             {
-                return new BillingPeriodValuesProxy(this);
+                return new LogicalDeviceBillingPeriodValuesProxy(this);
             }
             if ((reference == "ELECTRICITYID"))
             {
-                return new ElectricityIDProxy(this);
+                return new LogicalDeviceElectricityIDProxy(this);
             }
             if ((reference == "PROGRAMENTRIES"))
             {
-                return new ProgramEntriesProxy(this);
+                return new LogicalDeviceProgramEntriesProxy(this);
             }
             if ((reference == "OUTPUTPULSE"))
             {
-                return new OutputPulseProxy(this);
+                return new LogicalDeviceOutputPulseProxy(this);
             }
             if ((reference == "READINGFACTOR"))
             {
-                return new ReadingFactorProxy(this);
+                return new LogicalDeviceReadingFactorProxy(this);
             }
             if ((reference == "NOMINALVALUES"))
             {
-                return new NominalValuesProxy(this);
+                return new LogicalDeviceNominalValuesProxy(this);
             }
             if ((reference == "INPUTPULSE"))
             {
-                return new InputPulseProxy(this);
+                return new LogicalDeviceInputPulseProxy(this);
             }
             if ((reference == "MEASUREMENTPERIOD"))
             {
-                return new MeasurementPeriodProxy(this);
+                return new LogicalDeviceMeasurementPeriodProxy(this);
             }
             if ((reference == "TIMEENTRIES"))
             {
-                return new TimeEntriesProxy(this);
+                return new LogicalDeviceTimeEntriesProxy(this);
             }
             if ((reference == "TRANSFORMERLINELOSSES"))
             {
-                return new TransformerLineLossesProxy(this);
+                return new LogicalDeviceTransformerLineLossesProxy(this);
             }
             if ((reference == "MEASUREMENTALGORITHM"))
             {
-                return new MeasurementAlgorithmProxy(this);
+                return new LogicalDeviceMeasurementAlgorithmProxy(this);
             }
             if ((reference == "METERINGPOINT"))
             {
-                return new MeteringPointProxy(this);
+                return new LogicalDeviceMeteringPointProxy(this);
             }
             if ((reference == "ELECTRICITYRELATEDSTATUS"))
             {
-                return new ElectricityRelatedStatusProxy(this);
+                return new LogicalDeviceElectricityRelatedStatusProxy(this);
             }
             if ((reference == "REGISTERMONITOR"))
             {
-                return new RegisterMonitorProxy(this);
+                return new LogicalDeviceRegisterMonitorProxy(this);
             }
             if ((reference == "ELECTRICITYVALUES"))
             {
-                return new ElectricityValuesProxy(this);
+                return new LogicalDeviceElectricityValuesProxy(this);
             }
             if ((reference == "MEASUREMENTVALUETYPES"))
             {
-                return new MeasurementValueTypesProxy(this);
+                return new LogicalDeviceMeasurementValueTypesProxy(this);
             }
             if ((reference == "HARMONICS"))
             {
-                return new HarmonicsProxy(this);
+                return new LogicalDeviceHarmonicsProxy(this);
             }
             if ((reference == "TARIFFS"))
             {
-                return new TariffsProxy(this);
+                return new LogicalDeviceTariffsProxy(this);
             }
             if ((reference == "PHASEANGLES"))
             {
-                return new PhaseanglesProxy(this);
+                return new LogicalDevicePhaseanglesProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -2109,28 +2109,28 @@ namespace TemporaryGeneratedCode.COSEM
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new AAProxy(this._parent),
-                        new NameProxy(this._parent),
-                        new AutoConnectProxy(this._parent),
-                        new BillingPeriodValuesProxy(this._parent),
-                        new ElectricityIDProxy(this._parent),
-                        new ProgramEntriesProxy(this._parent),
-                        new OutputPulseProxy(this._parent),
-                        new ReadingFactorProxy(this._parent),
-                        new NominalValuesProxy(this._parent),
-                        new InputPulseProxy(this._parent),
-                        new MeasurementPeriodProxy(this._parent),
-                        new TimeEntriesProxy(this._parent),
-                        new TransformerLineLossesProxy(this._parent),
-                        new MeasurementAlgorithmProxy(this._parent),
-                        new MeteringPointProxy(this._parent),
-                        new ElectricityRelatedStatusProxy(this._parent),
-                        new RegisterMonitorProxy(this._parent),
-                        new ElectricityValuesProxy(this._parent),
-                        new MeasurementValueTypesProxy(this._parent),
-                        new HarmonicsProxy(this._parent),
-                        new TariffsProxy(this._parent),
-                        new PhaseanglesProxy(this._parent)};
+                        new LogicalDeviceAAProxy(this._parent),
+                        new LogicalDeviceNameProxy(this._parent),
+                        new LogicalDeviceAutoConnectProxy(this._parent),
+                        new LogicalDeviceBillingPeriodValuesProxy(this._parent),
+                        new LogicalDeviceElectricityIDProxy(this._parent),
+                        new LogicalDeviceProgramEntriesProxy(this._parent),
+                        new LogicalDeviceOutputPulseProxy(this._parent),
+                        new LogicalDeviceReadingFactorProxy(this._parent),
+                        new LogicalDeviceNominalValuesProxy(this._parent),
+                        new LogicalDeviceInputPulseProxy(this._parent),
+                        new LogicalDeviceMeasurementPeriodProxy(this._parent),
+                        new LogicalDeviceTimeEntriesProxy(this._parent),
+                        new LogicalDeviceTransformerLineLossesProxy(this._parent),
+                        new LogicalDeviceMeasurementAlgorithmProxy(this._parent),
+                        new LogicalDeviceMeteringPointProxy(this._parent),
+                        new LogicalDeviceElectricityRelatedStatusProxy(this._parent),
+                        new LogicalDeviceRegisterMonitorProxy(this._parent),
+                        new LogicalDeviceElectricityValuesProxy(this._parent),
+                        new LogicalDeviceMeasurementValueTypesProxy(this._parent),
+                        new LogicalDeviceHarmonicsProxy(this._parent),
+                        new LogicalDeviceTariffsProxy(this._parent),
+                        new LogicalDevicePhaseanglesProxy(this._parent)};
             }
             
             /// <summary>
@@ -2838,28 +2838,28 @@ namespace TemporaryGeneratedCode.COSEM
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new AAProxy(this._parent),
-                        new NameProxy(this._parent),
-                        new AutoConnectProxy(this._parent),
-                        new BillingPeriodValuesProxy(this._parent),
-                        new ElectricityIDProxy(this._parent),
-                        new ProgramEntriesProxy(this._parent),
-                        new OutputPulseProxy(this._parent),
-                        new ReadingFactorProxy(this._parent),
-                        new NominalValuesProxy(this._parent),
-                        new InputPulseProxy(this._parent),
-                        new MeasurementPeriodProxy(this._parent),
-                        new TimeEntriesProxy(this._parent),
-                        new TransformerLineLossesProxy(this._parent),
-                        new MeasurementAlgorithmProxy(this._parent),
-                        new MeteringPointProxy(this._parent),
-                        new ElectricityRelatedStatusProxy(this._parent),
-                        new RegisterMonitorProxy(this._parent),
-                        new ElectricityValuesProxy(this._parent),
-                        new MeasurementValueTypesProxy(this._parent),
-                        new HarmonicsProxy(this._parent),
-                        new TariffsProxy(this._parent),
-                        new PhaseanglesProxy(this._parent)};
+                        new LogicalDeviceAAProxy(this._parent),
+                        new LogicalDeviceNameProxy(this._parent),
+                        new LogicalDeviceAutoConnectProxy(this._parent),
+                        new LogicalDeviceBillingPeriodValuesProxy(this._parent),
+                        new LogicalDeviceElectricityIDProxy(this._parent),
+                        new LogicalDeviceProgramEntriesProxy(this._parent),
+                        new LogicalDeviceOutputPulseProxy(this._parent),
+                        new LogicalDeviceReadingFactorProxy(this._parent),
+                        new LogicalDeviceNominalValuesProxy(this._parent),
+                        new LogicalDeviceInputPulseProxy(this._parent),
+                        new LogicalDeviceMeasurementPeriodProxy(this._parent),
+                        new LogicalDeviceTimeEntriesProxy(this._parent),
+                        new LogicalDeviceTransformerLineLossesProxy(this._parent),
+                        new LogicalDeviceMeasurementAlgorithmProxy(this._parent),
+                        new LogicalDeviceMeteringPointProxy(this._parent),
+                        new LogicalDeviceElectricityRelatedStatusProxy(this._parent),
+                        new LogicalDeviceRegisterMonitorProxy(this._parent),
+                        new LogicalDeviceElectricityValuesProxy(this._parent),
+                        new LogicalDeviceMeasurementValueTypesProxy(this._parent),
+                        new LogicalDeviceHarmonicsProxy(this._parent),
+                        new LogicalDeviceTariffsProxy(this._parent),
+                        new LogicalDevicePhaseanglesProxy(this._parent)};
             }
             
             /// <summary>
@@ -3447,14 +3447,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ID property
         /// </summary>
-        private sealed class IDProxy : ModelPropertyChange<ILogicalDevice, string>
+        private sealed class LogicalDeviceIDProxy : ModelPropertyChange<ILogicalDevice, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public IDProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceIDProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "ID")
             {
             }
@@ -3478,14 +3478,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AA property
         /// </summary>
-        private sealed class AAProxy : ModelPropertyChange<ILogicalDevice, ICurrentAssociation>
+        private sealed class LogicalDeviceAAProxy : ModelPropertyChange<ILogicalDevice, ICurrentAssociation>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public AAProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceAAProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "AA")
             {
             }
@@ -3509,14 +3509,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the name property
         /// </summary>
-        private sealed class NameProxy : ModelPropertyChange<ILogicalDevice, ILogicalDeviceName>
+        private sealed class LogicalDeviceNameProxy : ModelPropertyChange<ILogicalDevice, ILogicalDeviceName>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public NameProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceNameProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "Name")
             {
             }
@@ -3540,14 +3540,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AutoConnect property
         /// </summary>
-        private sealed class AutoConnectProxy : ModelPropertyChange<ILogicalDevice, IAutoConnectObject>
+        private sealed class LogicalDeviceAutoConnectProxy : ModelPropertyChange<ILogicalDevice, IAutoConnectObject>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public AutoConnectProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceAutoConnectProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "AutoConnect")
             {
             }
@@ -3571,14 +3571,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BillingPeriodValues property
         /// </summary>
-        private sealed class BillingPeriodValuesProxy : ModelPropertyChange<ILogicalDevice, IBillingPeriodValues>
+        private sealed class LogicalDeviceBillingPeriodValuesProxy : ModelPropertyChange<ILogicalDevice, IBillingPeriodValues>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public BillingPeriodValuesProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceBillingPeriodValuesProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "BillingPeriodValues")
             {
             }
@@ -3602,14 +3602,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ElectricityID property
         /// </summary>
-        private sealed class ElectricityIDProxy : ModelPropertyChange<ILogicalDevice, IElectricityID>
+        private sealed class LogicalDeviceElectricityIDProxy : ModelPropertyChange<ILogicalDevice, IElectricityID>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ElectricityIDProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceElectricityIDProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "ElectricityID")
             {
             }
@@ -3633,14 +3633,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ProgramEntries property
         /// </summary>
-        private sealed class ProgramEntriesProxy : ModelPropertyChange<ILogicalDevice, IElectricityProgramEntries>
+        private sealed class LogicalDeviceProgramEntriesProxy : ModelPropertyChange<ILogicalDevice, IElectricityProgramEntries>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ProgramEntriesProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceProgramEntriesProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "ProgramEntries")
             {
             }
@@ -3664,14 +3664,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OutputPulse property
         /// </summary>
-        private sealed class OutputPulseProxy : ModelPropertyChange<ILogicalDevice, IOutputPulseValues_constants>
+        private sealed class LogicalDeviceOutputPulseProxy : ModelPropertyChange<ILogicalDevice, IOutputPulseValues_constants>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public OutputPulseProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceOutputPulseProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "OutputPulse")
             {
             }
@@ -3695,14 +3695,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReadingFactor property
         /// </summary>
-        private sealed class ReadingFactorProxy : ModelPropertyChange<ILogicalDevice, IReadingFactorAndCT_VTratio>
+        private sealed class LogicalDeviceReadingFactorProxy : ModelPropertyChange<ILogicalDevice, IReadingFactorAndCT_VTratio>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReadingFactorProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceReadingFactorProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "ReadingFactor")
             {
             }
@@ -3726,14 +3726,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NominalValues property
         /// </summary>
-        private sealed class NominalValuesProxy : ModelPropertyChange<ILogicalDevice, IElectricityNominalValues>
+        private sealed class LogicalDeviceNominalValuesProxy : ModelPropertyChange<ILogicalDevice, IElectricityNominalValues>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public NominalValuesProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceNominalValuesProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "NominalValues")
             {
             }
@@ -3757,14 +3757,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the InputPulse property
         /// </summary>
-        private sealed class InputPulseProxy : ModelPropertyChange<ILogicalDevice, IInputPulseValuesOrConstants>
+        private sealed class LogicalDeviceInputPulseProxy : ModelPropertyChange<ILogicalDevice, IInputPulseValuesOrConstants>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public InputPulseProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceInputPulseProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "InputPulse")
             {
             }
@@ -3788,14 +3788,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MeasurementPeriod property
         /// </summary>
-        private sealed class MeasurementPeriodProxy : ModelPropertyChange<ILogicalDevice, IMeasurementPeriod_recordingInterval_billingPeriodDuration>
+        private sealed class LogicalDeviceMeasurementPeriodProxy : ModelPropertyChange<ILogicalDevice, IMeasurementPeriod_recordingInterval_billingPeriodDuration>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public MeasurementPeriodProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceMeasurementPeriodProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "MeasurementPeriod")
             {
             }
@@ -3819,14 +3819,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TimeEntries property
         /// </summary>
-        private sealed class TimeEntriesProxy : ModelPropertyChange<ILogicalDevice, ITimeEntries>
+        private sealed class LogicalDeviceTimeEntriesProxy : ModelPropertyChange<ILogicalDevice, ITimeEntries>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TimeEntriesProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceTimeEntriesProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "TimeEntries")
             {
             }
@@ -3850,14 +3850,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TransformerLineLosses property
         /// </summary>
-        private sealed class TransformerLineLossesProxy : ModelPropertyChange<ILogicalDevice, ITransformerAndLineLosses>
+        private sealed class LogicalDeviceTransformerLineLossesProxy : ModelPropertyChange<ILogicalDevice, ITransformerAndLineLosses>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TransformerLineLossesProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceTransformerLineLossesProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "TransformerLineLosses")
             {
             }
@@ -3881,14 +3881,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MeasurementAlgorithm property
         /// </summary>
-        private sealed class MeasurementAlgorithmProxy : ModelPropertyChange<ILogicalDevice, IMeasurementMethods>
+        private sealed class LogicalDeviceMeasurementAlgorithmProxy : ModelPropertyChange<ILogicalDevice, IMeasurementMethods>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public MeasurementAlgorithmProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceMeasurementAlgorithmProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "MeasurementAlgorithm")
             {
             }
@@ -3912,14 +3912,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MeteringPoint property
         /// </summary>
-        private sealed class MeteringPointProxy : ModelPropertyChange<ILogicalDevice, IMeteringPointID>
+        private sealed class LogicalDeviceMeteringPointProxy : ModelPropertyChange<ILogicalDevice, IMeteringPointID>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public MeteringPointProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceMeteringPointProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "MeteringPoint")
             {
             }
@@ -3943,14 +3943,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ElectricityRelatedStatus property
         /// </summary>
-        private sealed class ElectricityRelatedStatusProxy : ModelPropertyChange<ILogicalDevice, IElectricityRelatedStatusData>
+        private sealed class LogicalDeviceElectricityRelatedStatusProxy : ModelPropertyChange<ILogicalDevice, IElectricityRelatedStatusData>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ElectricityRelatedStatusProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceElectricityRelatedStatusProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "ElectricityRelatedStatus")
             {
             }
@@ -3974,14 +3974,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RegisterMonitor property
         /// </summary>
-        private sealed class RegisterMonitorProxy : ModelPropertyChange<ILogicalDevice, IRegisterMonitorObject>
+        private sealed class LogicalDeviceRegisterMonitorProxy : ModelPropertyChange<ILogicalDevice, IRegisterMonitorObject>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public RegisterMonitorProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceRegisterMonitorProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "RegisterMonitor")
             {
             }
@@ -4005,14 +4005,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ElectricityValues property
         /// </summary>
-        private sealed class ElectricityValuesProxy : ModelPropertyChange<ILogicalDevice, IElectricityValues>
+        private sealed class LogicalDeviceElectricityValuesProxy : ModelPropertyChange<ILogicalDevice, IElectricityValues>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ElectricityValuesProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceElectricityValuesProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "ElectricityValues")
             {
             }
@@ -4036,14 +4036,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MeasurementValueTypes property
         /// </summary>
-        private sealed class MeasurementValueTypesProxy : ModelPropertyChange<ILogicalDevice, IMeasurementValues>
+        private sealed class LogicalDeviceMeasurementValueTypesProxy : ModelPropertyChange<ILogicalDevice, IMeasurementValues>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public MeasurementValueTypesProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceMeasurementValueTypesProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "MeasurementValueTypes")
             {
             }
@@ -4067,14 +4067,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Harmonics property
         /// </summary>
-        private sealed class HarmonicsProxy : ModelPropertyChange<ILogicalDevice, IElectricityHarmonics>
+        private sealed class LogicalDeviceHarmonicsProxy : ModelPropertyChange<ILogicalDevice, IElectricityHarmonics>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public HarmonicsProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceHarmonicsProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "Harmonics")
             {
             }
@@ -4098,14 +4098,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Tariffs property
         /// </summary>
-        private sealed class TariffsProxy : ModelPropertyChange<ILogicalDevice, ICurrentlyActiveTariff>
+        private sealed class LogicalDeviceTariffsProxy : ModelPropertyChange<ILogicalDevice, ICurrentlyActiveTariff>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TariffsProxy(ILogicalDevice modelElement) : 
+            public LogicalDeviceTariffsProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "Tariffs")
             {
             }
@@ -4129,14 +4129,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Phaseangles property
         /// </summary>
-        private sealed class PhaseanglesProxy : ModelPropertyChange<ILogicalDevice, IExtendedPhaseAngleMeasurement>
+        private sealed class LogicalDevicePhaseanglesProxy : ModelPropertyChange<ILogicalDevice, IExtendedPhaseAngleMeasurement>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public PhaseanglesProxy(ILogicalDevice modelElement) : 
+            public LogicalDevicePhaseanglesProxy(ILogicalDevice modelElement) : 
                     base(modelElement, "Phaseangles")
             {
             }
@@ -6072,7 +6072,7 @@ namespace TemporaryGeneratedCode.COSEM
         {
             if ((attribute == "ID"))
             {
-                return new IDProxy(this);
+                return new PhysicalDeviceIDProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -6086,91 +6086,91 @@ namespace TemporaryGeneratedCode.COSEM
         {
             if ((reference == "MANAGEMENTLOGICALDEVICE"))
             {
-                return new ManagementLogicalDeviceProxy(this);
+                return new PhysicalDeviceManagementLogicalDeviceProxy(this);
             }
             if ((reference == "ELECTRICITYRELATEDSTATUS"))
             {
-                return new ElectricityRelatedStatusProxy(this);
+                return new PhysicalDeviceElectricityRelatedStatusProxy(this);
             }
             if ((reference == "AA"))
             {
-                return new AAProxy(this);
+                return new PhysicalDeviceAAProxy(this);
             }
             if ((reference == "AUTOCONNECT"))
             {
-                return new AutoConnectProxy(this);
+                return new PhysicalDeviceAutoConnectProxy(this);
             }
             if ((reference == "BILLINGPERIODVALUES"))
             {
-                return new BillingPeriodValuesProxy(this);
+                return new PhysicalDeviceBillingPeriodValuesProxy(this);
             }
             if ((reference == "ELECTRICITYID"))
             {
-                return new ElectricityIDProxy(this);
+                return new PhysicalDeviceElectricityIDProxy(this);
             }
             if ((reference == "PROGRAMENTRIES"))
             {
-                return new ProgramEntriesProxy(this);
+                return new PhysicalDeviceProgramEntriesProxy(this);
             }
             if ((reference == "OUTPUTPULSE"))
             {
-                return new OutputPulseProxy(this);
+                return new PhysicalDeviceOutputPulseProxy(this);
             }
             if ((reference == "READINGFACTOR"))
             {
-                return new ReadingFactorProxy(this);
+                return new PhysicalDeviceReadingFactorProxy(this);
             }
             if ((reference == "NOMINALVALUES"))
             {
-                return new NominalValuesProxy(this);
+                return new PhysicalDeviceNominalValuesProxy(this);
             }
             if ((reference == "INPUTPULSE"))
             {
-                return new InputPulseProxy(this);
+                return new PhysicalDeviceInputPulseProxy(this);
             }
             if ((reference == "MEASUREMENTPERIOD"))
             {
-                return new MeasurementPeriodProxy(this);
+                return new PhysicalDeviceMeasurementPeriodProxy(this);
             }
             if ((reference == "TIMEENTRIES"))
             {
-                return new TimeEntriesProxy(this);
+                return new PhysicalDeviceTimeEntriesProxy(this);
             }
             if ((reference == "TRANSFORMERLINELOSSES"))
             {
-                return new TransformerLineLossesProxy(this);
+                return new PhysicalDeviceTransformerLineLossesProxy(this);
             }
             if ((reference == "MEASUREMENTALGORITHM"))
             {
-                return new MeasurementAlgorithmProxy(this);
+                return new PhysicalDeviceMeasurementAlgorithmProxy(this);
             }
             if ((reference == "METERINGPOINT"))
             {
-                return new MeteringPointProxy(this);
+                return new PhysicalDeviceMeteringPointProxy(this);
             }
             if ((reference == "REGISTERMONITOR"))
             {
-                return new RegisterMonitorProxy(this);
+                return new PhysicalDeviceRegisterMonitorProxy(this);
             }
             if ((reference == "ELECTRICITYVALUES"))
             {
-                return new ElectricityValuesProxy(this);
+                return new PhysicalDeviceElectricityValuesProxy(this);
             }
             if ((reference == "MEASUREMENTVALUETYPES"))
             {
-                return new MeasurementValueTypesProxy(this);
+                return new PhysicalDeviceMeasurementValueTypesProxy(this);
             }
             if ((reference == "HARMONICS"))
             {
-                return new HarmonicsProxy(this);
+                return new PhysicalDeviceHarmonicsProxy(this);
             }
             if ((reference == "TARIFFS"))
             {
-                return new TariffsProxy(this);
+                return new PhysicalDeviceTariffsProxy(this);
             }
             if ((reference == "PHASEANGLES"))
             {
-                return new PhaseanglesProxy(this);
+                return new PhysicalDevicePhaseanglesProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -6306,27 +6306,27 @@ namespace TemporaryGeneratedCode.COSEM
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new ElectricityRelatedStatusProxy(this._parent),
-                        new AAProxy(this._parent),
-                        new AutoConnectProxy(this._parent),
-                        new BillingPeriodValuesProxy(this._parent),
-                        new ElectricityIDProxy(this._parent),
-                        new ProgramEntriesProxy(this._parent),
-                        new OutputPulseProxy(this._parent),
-                        new ReadingFactorProxy(this._parent),
-                        new NominalValuesProxy(this._parent),
-                        new InputPulseProxy(this._parent),
-                        new MeasurementPeriodProxy(this._parent),
-                        new TimeEntriesProxy(this._parent),
-                        new TransformerLineLossesProxy(this._parent),
-                        new MeasurementAlgorithmProxy(this._parent),
-                        new MeteringPointProxy(this._parent),
-                        new RegisterMonitorProxy(this._parent),
-                        new ElectricityValuesProxy(this._parent),
-                        new MeasurementValueTypesProxy(this._parent),
-                        new HarmonicsProxy(this._parent),
-                        new TariffsProxy(this._parent),
-                        new PhaseanglesProxy(this._parent)};
+                        new PhysicalDeviceElectricityRelatedStatusProxy(this._parent),
+                        new PhysicalDeviceAAProxy(this._parent),
+                        new PhysicalDeviceAutoConnectProxy(this._parent),
+                        new PhysicalDeviceBillingPeriodValuesProxy(this._parent),
+                        new PhysicalDeviceElectricityIDProxy(this._parent),
+                        new PhysicalDeviceProgramEntriesProxy(this._parent),
+                        new PhysicalDeviceOutputPulseProxy(this._parent),
+                        new PhysicalDeviceReadingFactorProxy(this._parent),
+                        new PhysicalDeviceNominalValuesProxy(this._parent),
+                        new PhysicalDeviceInputPulseProxy(this._parent),
+                        new PhysicalDeviceMeasurementPeriodProxy(this._parent),
+                        new PhysicalDeviceTimeEntriesProxy(this._parent),
+                        new PhysicalDeviceTransformerLineLossesProxy(this._parent),
+                        new PhysicalDeviceMeasurementAlgorithmProxy(this._parent),
+                        new PhysicalDeviceMeteringPointProxy(this._parent),
+                        new PhysicalDeviceRegisterMonitorProxy(this._parent),
+                        new PhysicalDeviceElectricityValuesProxy(this._parent),
+                        new PhysicalDeviceMeasurementValueTypesProxy(this._parent),
+                        new PhysicalDeviceHarmonicsProxy(this._parent),
+                        new PhysicalDeviceTariffsProxy(this._parent),
+                        new PhysicalDevicePhaseanglesProxy(this._parent)};
             }
             
             /// <summary>
@@ -7011,29 +7011,29 @@ namespace TemporaryGeneratedCode.COSEM
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new ManagementLogicalDeviceProxy(this._parent),
+                        new PhysicalDeviceManagementLogicalDeviceProxy(this._parent),
                         this._parent.LogicalDevice.AsNotifiable(),
-                        new ElectricityRelatedStatusProxy(this._parent),
-                        new AAProxy(this._parent),
-                        new AutoConnectProxy(this._parent),
-                        new BillingPeriodValuesProxy(this._parent),
-                        new ElectricityIDProxy(this._parent),
-                        new ProgramEntriesProxy(this._parent),
-                        new OutputPulseProxy(this._parent),
-                        new ReadingFactorProxy(this._parent),
-                        new NominalValuesProxy(this._parent),
-                        new InputPulseProxy(this._parent),
-                        new MeasurementPeriodProxy(this._parent),
-                        new TimeEntriesProxy(this._parent),
-                        new TransformerLineLossesProxy(this._parent),
-                        new MeasurementAlgorithmProxy(this._parent),
-                        new MeteringPointProxy(this._parent),
-                        new RegisterMonitorProxy(this._parent),
-                        new ElectricityValuesProxy(this._parent),
-                        new MeasurementValueTypesProxy(this._parent),
-                        new HarmonicsProxy(this._parent),
-                        new TariffsProxy(this._parent),
-                        new PhaseanglesProxy(this._parent)};
+                        new PhysicalDeviceElectricityRelatedStatusProxy(this._parent),
+                        new PhysicalDeviceAAProxy(this._parent),
+                        new PhysicalDeviceAutoConnectProxy(this._parent),
+                        new PhysicalDeviceBillingPeriodValuesProxy(this._parent),
+                        new PhysicalDeviceElectricityIDProxy(this._parent),
+                        new PhysicalDeviceProgramEntriesProxy(this._parent),
+                        new PhysicalDeviceOutputPulseProxy(this._parent),
+                        new PhysicalDeviceReadingFactorProxy(this._parent),
+                        new PhysicalDeviceNominalValuesProxy(this._parent),
+                        new PhysicalDeviceInputPulseProxy(this._parent),
+                        new PhysicalDeviceMeasurementPeriodProxy(this._parent),
+                        new PhysicalDeviceTimeEntriesProxy(this._parent),
+                        new PhysicalDeviceTransformerLineLossesProxy(this._parent),
+                        new PhysicalDeviceMeasurementAlgorithmProxy(this._parent),
+                        new PhysicalDeviceMeteringPointProxy(this._parent),
+                        new PhysicalDeviceRegisterMonitorProxy(this._parent),
+                        new PhysicalDeviceElectricityValuesProxy(this._parent),
+                        new PhysicalDeviceMeasurementValueTypesProxy(this._parent),
+                        new PhysicalDeviceHarmonicsProxy(this._parent),
+                        new PhysicalDeviceTariffsProxy(this._parent),
+                        new PhysicalDevicePhaseanglesProxy(this._parent)};
             }
             
             /// <summary>
@@ -7652,14 +7652,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ID property
         /// </summary>
-        private sealed class IDProxy : ModelPropertyChange<IPhysicalDevice, string>
+        private sealed class PhysicalDeviceIDProxy : ModelPropertyChange<IPhysicalDevice, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public IDProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceIDProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "ID")
             {
             }
@@ -7683,14 +7683,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the managementLogicalDevice property
         /// </summary>
-        private sealed class ManagementLogicalDeviceProxy : ModelPropertyChange<IPhysicalDevice, IManagementLogicalDevice>
+        private sealed class PhysicalDeviceManagementLogicalDeviceProxy : ModelPropertyChange<IPhysicalDevice, IManagementLogicalDevice>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ManagementLogicalDeviceProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceManagementLogicalDeviceProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "ManagementLogicalDevice")
             {
             }
@@ -7714,14 +7714,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ElectricityRelatedStatus property
         /// </summary>
-        private sealed class ElectricityRelatedStatusProxy : ModelPropertyChange<IPhysicalDevice, IElectricityRelatedStatusData>
+        private sealed class PhysicalDeviceElectricityRelatedStatusProxy : ModelPropertyChange<IPhysicalDevice, IElectricityRelatedStatusData>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ElectricityRelatedStatusProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceElectricityRelatedStatusProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "ElectricityRelatedStatus")
             {
             }
@@ -7745,14 +7745,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AA property
         /// </summary>
-        private sealed class AAProxy : ModelPropertyChange<IPhysicalDevice, ICurrentAssociation>
+        private sealed class PhysicalDeviceAAProxy : ModelPropertyChange<IPhysicalDevice, ICurrentAssociation>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public AAProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceAAProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "AA")
             {
             }
@@ -7776,14 +7776,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AutoConnect property
         /// </summary>
-        private sealed class AutoConnectProxy : ModelPropertyChange<IPhysicalDevice, IAutoConnectObject>
+        private sealed class PhysicalDeviceAutoConnectProxy : ModelPropertyChange<IPhysicalDevice, IAutoConnectObject>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public AutoConnectProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceAutoConnectProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "AutoConnect")
             {
             }
@@ -7807,14 +7807,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BillingPeriodValues property
         /// </summary>
-        private sealed class BillingPeriodValuesProxy : ModelPropertyChange<IPhysicalDevice, IBillingPeriodValues>
+        private sealed class PhysicalDeviceBillingPeriodValuesProxy : ModelPropertyChange<IPhysicalDevice, IBillingPeriodValues>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public BillingPeriodValuesProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceBillingPeriodValuesProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "BillingPeriodValues")
             {
             }
@@ -7838,14 +7838,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ElectricityID property
         /// </summary>
-        private sealed class ElectricityIDProxy : ModelPropertyChange<IPhysicalDevice, IElectricityID>
+        private sealed class PhysicalDeviceElectricityIDProxy : ModelPropertyChange<IPhysicalDevice, IElectricityID>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ElectricityIDProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceElectricityIDProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "ElectricityID")
             {
             }
@@ -7869,14 +7869,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ProgramEntries property
         /// </summary>
-        private sealed class ProgramEntriesProxy : ModelPropertyChange<IPhysicalDevice, IElectricityProgramEntries>
+        private sealed class PhysicalDeviceProgramEntriesProxy : ModelPropertyChange<IPhysicalDevice, IElectricityProgramEntries>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ProgramEntriesProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceProgramEntriesProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "ProgramEntries")
             {
             }
@@ -7900,14 +7900,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OutputPulse property
         /// </summary>
-        private sealed class OutputPulseProxy : ModelPropertyChange<IPhysicalDevice, IOutputPulseValues_constants>
+        private sealed class PhysicalDeviceOutputPulseProxy : ModelPropertyChange<IPhysicalDevice, IOutputPulseValues_constants>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public OutputPulseProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceOutputPulseProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "OutputPulse")
             {
             }
@@ -7931,14 +7931,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReadingFactor property
         /// </summary>
-        private sealed class ReadingFactorProxy : ModelPropertyChange<IPhysicalDevice, IReadingFactorAndCT_VTratio>
+        private sealed class PhysicalDeviceReadingFactorProxy : ModelPropertyChange<IPhysicalDevice, IReadingFactorAndCT_VTratio>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReadingFactorProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceReadingFactorProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "ReadingFactor")
             {
             }
@@ -7962,14 +7962,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NominalValues property
         /// </summary>
-        private sealed class NominalValuesProxy : ModelPropertyChange<IPhysicalDevice, IElectricityNominalValues>
+        private sealed class PhysicalDeviceNominalValuesProxy : ModelPropertyChange<IPhysicalDevice, IElectricityNominalValues>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public NominalValuesProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceNominalValuesProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "NominalValues")
             {
             }
@@ -7993,14 +7993,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the InputPulse property
         /// </summary>
-        private sealed class InputPulseProxy : ModelPropertyChange<IPhysicalDevice, IInputPulseValuesOrConstants>
+        private sealed class PhysicalDeviceInputPulseProxy : ModelPropertyChange<IPhysicalDevice, IInputPulseValuesOrConstants>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public InputPulseProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceInputPulseProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "InputPulse")
             {
             }
@@ -8024,14 +8024,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MeasurementPeriod property
         /// </summary>
-        private sealed class MeasurementPeriodProxy : ModelPropertyChange<IPhysicalDevice, IMeasurementPeriod_recordingInterval_billingPeriodDuration>
+        private sealed class PhysicalDeviceMeasurementPeriodProxy : ModelPropertyChange<IPhysicalDevice, IMeasurementPeriod_recordingInterval_billingPeriodDuration>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public MeasurementPeriodProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceMeasurementPeriodProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "MeasurementPeriod")
             {
             }
@@ -8055,14 +8055,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TimeEntries property
         /// </summary>
-        private sealed class TimeEntriesProxy : ModelPropertyChange<IPhysicalDevice, ITimeEntries>
+        private sealed class PhysicalDeviceTimeEntriesProxy : ModelPropertyChange<IPhysicalDevice, ITimeEntries>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TimeEntriesProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceTimeEntriesProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "TimeEntries")
             {
             }
@@ -8086,14 +8086,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TransformerLineLosses property
         /// </summary>
-        private sealed class TransformerLineLossesProxy : ModelPropertyChange<IPhysicalDevice, ITransformerAndLineLosses>
+        private sealed class PhysicalDeviceTransformerLineLossesProxy : ModelPropertyChange<IPhysicalDevice, ITransformerAndLineLosses>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TransformerLineLossesProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceTransformerLineLossesProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "TransformerLineLosses")
             {
             }
@@ -8117,14 +8117,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MeasurementAlgorithm property
         /// </summary>
-        private sealed class MeasurementAlgorithmProxy : ModelPropertyChange<IPhysicalDevice, IMeasurementMethods>
+        private sealed class PhysicalDeviceMeasurementAlgorithmProxy : ModelPropertyChange<IPhysicalDevice, IMeasurementMethods>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public MeasurementAlgorithmProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceMeasurementAlgorithmProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "MeasurementAlgorithm")
             {
             }
@@ -8148,14 +8148,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MeteringPoint property
         /// </summary>
-        private sealed class MeteringPointProxy : ModelPropertyChange<IPhysicalDevice, IMeteringPointID>
+        private sealed class PhysicalDeviceMeteringPointProxy : ModelPropertyChange<IPhysicalDevice, IMeteringPointID>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public MeteringPointProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceMeteringPointProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "MeteringPoint")
             {
             }
@@ -8179,14 +8179,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RegisterMonitor property
         /// </summary>
-        private sealed class RegisterMonitorProxy : ModelPropertyChange<IPhysicalDevice, IRegisterMonitorObject>
+        private sealed class PhysicalDeviceRegisterMonitorProxy : ModelPropertyChange<IPhysicalDevice, IRegisterMonitorObject>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public RegisterMonitorProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceRegisterMonitorProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "RegisterMonitor")
             {
             }
@@ -8210,14 +8210,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ElectricityValues property
         /// </summary>
-        private sealed class ElectricityValuesProxy : ModelPropertyChange<IPhysicalDevice, IElectricityValues>
+        private sealed class PhysicalDeviceElectricityValuesProxy : ModelPropertyChange<IPhysicalDevice, IElectricityValues>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ElectricityValuesProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceElectricityValuesProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "ElectricityValues")
             {
             }
@@ -8241,14 +8241,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MeasurementValueTypes property
         /// </summary>
-        private sealed class MeasurementValueTypesProxy : ModelPropertyChange<IPhysicalDevice, IMeasurementValues>
+        private sealed class PhysicalDeviceMeasurementValueTypesProxy : ModelPropertyChange<IPhysicalDevice, IMeasurementValues>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public MeasurementValueTypesProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceMeasurementValueTypesProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "MeasurementValueTypes")
             {
             }
@@ -8272,14 +8272,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Harmonics property
         /// </summary>
-        private sealed class HarmonicsProxy : ModelPropertyChange<IPhysicalDevice, IElectricityHarmonics>
+        private sealed class PhysicalDeviceHarmonicsProxy : ModelPropertyChange<IPhysicalDevice, IElectricityHarmonics>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public HarmonicsProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceHarmonicsProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "Harmonics")
             {
             }
@@ -8303,14 +8303,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Tariffs property
         /// </summary>
-        private sealed class TariffsProxy : ModelPropertyChange<IPhysicalDevice, ICurrentlyActiveTariff>
+        private sealed class PhysicalDeviceTariffsProxy : ModelPropertyChange<IPhysicalDevice, ICurrentlyActiveTariff>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TariffsProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDeviceTariffsProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "Tariffs")
             {
             }
@@ -8334,14 +8334,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Phaseangles property
         /// </summary>
-        private sealed class PhaseanglesProxy : ModelPropertyChange<IPhysicalDevice, IExtendedPhaseAngleMeasurement>
+        private sealed class PhysicalDevicePhaseanglesProxy : ModelPropertyChange<IPhysicalDevice, IExtendedPhaseAngleMeasurement>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public PhaseanglesProxy(IPhysicalDevice modelElement) : 
+            public PhysicalDevicePhaseanglesProxy(IPhysicalDevice modelElement) : 
                     base(modelElement, "Phaseangles")
             {
             }
@@ -8568,7 +8568,7 @@ namespace TemporaryGeneratedCode.COSEM
         {
             if ((reference == "NAME"))
             {
-                return new NameProxy(this);
+                return new LogicalDeviceNameNameProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -8624,7 +8624,7 @@ namespace TemporaryGeneratedCode.COSEM
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new NameProxy(this._parent)};
+                        new LogicalDeviceNameNameProxy(this._parent)};
             }
             
             /// <summary>
@@ -8744,7 +8744,7 @@ namespace TemporaryGeneratedCode.COSEM
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new NameProxy(this._parent)};
+                        new LogicalDeviceNameNameProxy(this._parent)};
             }
             
             /// <summary>
@@ -8828,14 +8828,14 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the name property
         /// </summary>
-        private sealed class NameProxy : ModelPropertyChange<ILogicalDeviceName, ISAPAssignmentCurrent>
+        private sealed class LogicalDeviceNameNameProxy : ModelPropertyChange<ILogicalDeviceName, ISAPAssignmentCurrent>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public NameProxy(ILogicalDeviceName modelElement) : 
+            public LogicalDeviceNameNameProxy(ILogicalDeviceName modelElement) : 
                     base(modelElement, "Name")
             {
             }
@@ -10259,11 +10259,11 @@ namespace TemporaryGeneratedCode.COSEM.Datatypes
         {
             if ((attribute == "SCALER"))
             {
-                return Observable.Box(new ScalerProxy(this));
+                return Observable.Box(new Scal_unit_typeScalerProxy(this));
             }
             if ((attribute == "UNIT"))
             {
-                return Observable.Box(new UnitProxy(this));
+                return Observable.Box(new Scal_unit_typeUnitProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -10283,14 +10283,14 @@ namespace TemporaryGeneratedCode.COSEM.Datatypes
         /// <summary>
         /// Represents a proxy to represent an incremental access to the scaler property
         /// </summary>
-        private sealed class ScalerProxy : ModelPropertyChange<IScal_unit_type, Nullable<int>>
+        private sealed class Scal_unit_typeScalerProxy : ModelPropertyChange<IScal_unit_type, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ScalerProxy(IScal_unit_type modelElement) : 
+            public Scal_unit_typeScalerProxy(IScal_unit_type modelElement) : 
                     base(modelElement, "Scaler")
             {
             }
@@ -10314,14 +10314,14 @@ namespace TemporaryGeneratedCode.COSEM.Datatypes
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Unit property
         /// </summary>
-        private sealed class UnitProxy : ModelPropertyChange<IScal_unit_type, Nullable<Units>>
+        private sealed class Scal_unit_typeUnitProxy : ModelPropertyChange<IScal_unit_type, Nullable<Units>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public UnitProxy(IScal_unit_type modelElement) : 
+            public Scal_unit_typeUnitProxy(IScal_unit_type modelElement) : 
                     base(modelElement, "Unit")
             {
             }
@@ -13515,11 +13515,11 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         {
             if ((attribute == "STATE"))
             {
-                return Observable.Box(new StateProxy(this));
+                return Observable.Box(new DisconnectControlStateProxy(this));
             }
             if ((attribute == "TRANSITION"))
             {
-                return Observable.Box(new TransitionProxy(this));
+                return Observable.Box(new DisconnectControlTransitionProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -13539,14 +13539,14 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the state property
         /// </summary>
-        private sealed class StateProxy : ModelPropertyChange<TemporaryGeneratedCode.COSEM.InterfaceClasses.IDisconnectControl, Nullable<DisconnectControlState>>
+        private sealed class DisconnectControlStateProxy : ModelPropertyChange<TemporaryGeneratedCode.COSEM.InterfaceClasses.IDisconnectControl, Nullable<DisconnectControlState>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public StateProxy(TemporaryGeneratedCode.COSEM.InterfaceClasses.IDisconnectControl modelElement) : 
+            public DisconnectControlStateProxy(TemporaryGeneratedCode.COSEM.InterfaceClasses.IDisconnectControl modelElement) : 
                     base(modelElement, "State")
             {
             }
@@ -13570,14 +13570,14 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the transition property
         /// </summary>
-        private sealed class TransitionProxy : ModelPropertyChange<TemporaryGeneratedCode.COSEM.InterfaceClasses.IDisconnectControl, Nullable<DisconnectControlTransition>>
+        private sealed class DisconnectControlTransitionProxy : ModelPropertyChange<TemporaryGeneratedCode.COSEM.InterfaceClasses.IDisconnectControl, Nullable<DisconnectControlTransition>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TransitionProxy(TemporaryGeneratedCode.COSEM.InterfaceClasses.IDisconnectControl modelElement) : 
+            public DisconnectControlTransitionProxy(TemporaryGeneratedCode.COSEM.InterfaceClasses.IDisconnectControl modelElement) : 
                     base(modelElement, "Transition")
             {
             }
@@ -14211,7 +14211,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         {
             if ((attribute == "VALUE"))
             {
-                return Observable.Box(new ValueProxy(this));
+                return Observable.Box(new RegisterValueProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -14225,7 +14225,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         {
             if ((reference == "SCALER_UNIT"))
             {
-                return new Scaler_unitProxy(this);
+                return new RegisterScaler_unitProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -14281,7 +14281,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new Scaler_unitProxy(this._parent)};
+                        new RegisterScaler_unitProxy(this._parent)};
             }
             
             /// <summary>
@@ -14365,14 +14365,14 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ValueProxy : ModelPropertyChange<IRegister, Nullable<float>>
+        private sealed class RegisterValueProxy : ModelPropertyChange<IRegister, Nullable<float>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ValueProxy(IRegister modelElement) : 
+            public RegisterValueProxy(IRegister modelElement) : 
                     base(modelElement, "Value")
             {
             }
@@ -14396,14 +14396,14 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the scaler_unit property
         /// </summary>
-        private sealed class Scaler_unitProxy : ModelPropertyChange<IRegister, IScal_unit_type>
+        private sealed class RegisterScaler_unitProxy : ModelPropertyChange<IRegister, IScal_unit_type>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Scaler_unitProxy(IRegister modelElement) : 
+            public RegisterScaler_unitProxy(IRegister modelElement) : 
                     base(modelElement, "Scaler_unit")
             {
             }
@@ -14561,7 +14561,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         {
             if ((reference == "LDNNAME"))
             {
-                return new LdnnameProxy(this);
+                return new SAPAssignmentLdnnameProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -14617,7 +14617,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new LdnnameProxy(this._parent)};
+                        new SAPAssignmentLdnnameProxy(this._parent)};
             }
             
             /// <summary>
@@ -14701,14 +14701,14 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ldnname property
         /// </summary>
-        private sealed class LdnnameProxy : ModelPropertyChange<ISAPAssignment, ILogicalDeviceName>
+        private sealed class SAPAssignmentLdnnameProxy : ModelPropertyChange<ISAPAssignment, ILogicalDeviceName>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public LdnnameProxy(ISAPAssignment modelElement) : 
+            public SAPAssignmentLdnnameProxy(ISAPAssignment modelElement) : 
                     base(modelElement, "Ldnname")
             {
             }
@@ -14864,7 +14864,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         {
             if ((reference == "AA"))
             {
-                return new AAProxy(this);
+                return new AssociationLNAAProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -14920,7 +14920,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new AAProxy(this._parent)};
+                        new AssociationLNAAProxy(this._parent)};
             }
             
             /// <summary>
@@ -15004,14 +15004,14 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AA property
         /// </summary>
-        private sealed class AAProxy : ModelPropertyChange<IAssociationLN, IApplicationAssociation>
+        private sealed class AssociationLNAAProxy : ModelPropertyChange<IAssociationLN, IApplicationAssociation>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public AAProxy(IAssociationLN modelElement) : 
+            public AssociationLNAAProxy(IAssociationLN modelElement) : 
                     base(modelElement, "AA")
             {
             }
@@ -15317,11 +15317,11 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         {
             if ((attribute == "NUMBER_OF_PERIODS"))
             {
-                return Observable.Box(new Number_of_periodsProxy(this));
+                return Observable.Box(new DemandRegisterNumber_of_periodsProxy(this));
             }
             if ((attribute == "PERIOD"))
             {
-                return Observable.Box(new PeriodProxy(this));
+                return Observable.Box(new DemandRegisterPeriodProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -15341,14 +15341,14 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the number_of_periods property
         /// </summary>
-        private sealed class Number_of_periodsProxy : ModelPropertyChange<IDemandRegister, Nullable<int>>
+        private sealed class DemandRegisterNumber_of_periodsProxy : ModelPropertyChange<IDemandRegister, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Number_of_periodsProxy(IDemandRegister modelElement) : 
+            public DemandRegisterNumber_of_periodsProxy(IDemandRegister modelElement) : 
                     base(modelElement, "Number_of_periods")
             {
             }
@@ -15372,14 +15372,14 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the period property
         /// </summary>
-        private sealed class PeriodProxy : ModelPropertyChange<IDemandRegister, Nullable<int>>
+        private sealed class DemandRegisterPeriodProxy : ModelPropertyChange<IDemandRegister, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public PeriodProxy(IDemandRegister modelElement) : 
+            public DemandRegisterPeriodProxy(IDemandRegister modelElement) : 
                     base(modelElement, "Period")
             {
             }
@@ -15629,11 +15629,11 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         {
             if ((attribute == "LOGICAL_NAME"))
             {
-                return new Logical_nameProxy(this);
+                return new BaseLogical_nameProxy(this);
             }
             if ((attribute == "OBISCODE"))
             {
-                return new OBIScodeProxy(this);
+                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -15653,14 +15653,14 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the logical_name property
         /// </summary>
-        private sealed class Logical_nameProxy : ModelPropertyChange<IBase, string>
+        private sealed class BaseLogical_nameProxy : ModelPropertyChange<IBase, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Logical_nameProxy(IBase modelElement) : 
+            public BaseLogical_nameProxy(IBase modelElement) : 
                     base(modelElement, "Logical_name")
             {
             }
@@ -15684,14 +15684,14 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OBIScode property
         /// </summary>
-        private sealed class OBIScodeProxy : ModelPropertyChange<IBase, string>
+        private sealed class BaseOBIScodeProxy : ModelPropertyChange<IBase, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public OBIScodeProxy(IBase modelElement) : 
+            public BaseOBIScodeProxy(IBase modelElement) : 
                     base(modelElement, "OBIScode")
             {
             }
@@ -15991,15 +15991,15 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         {
             if ((attribute == "COMPACT_BUFFER"))
             {
-                return new Compact_bufferProxy(this);
+                return new CompactdataCompact_bufferProxy(this);
             }
             if ((attribute == "TEMPLATE_ID"))
             {
-                return new Template_idProxy(this);
+                return new CompactdataTemplate_idProxy(this);
             }
             if ((attribute == "TEMPLATE_DESCRIPTION"))
             {
-                return new Template_descriptionProxy(this);
+                return new CompactdataTemplate_descriptionProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -16019,14 +16019,14 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the compact_buffer property
         /// </summary>
-        private sealed class Compact_bufferProxy : ModelPropertyChange<ICompactdata, string>
+        private sealed class CompactdataCompact_bufferProxy : ModelPropertyChange<ICompactdata, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Compact_bufferProxy(ICompactdata modelElement) : 
+            public CompactdataCompact_bufferProxy(ICompactdata modelElement) : 
                     base(modelElement, "Compact_buffer")
             {
             }
@@ -16050,14 +16050,14 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the template_id property
         /// </summary>
-        private sealed class Template_idProxy : ModelPropertyChange<ICompactdata, string>
+        private sealed class CompactdataTemplate_idProxy : ModelPropertyChange<ICompactdata, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Template_idProxy(ICompactdata modelElement) : 
+            public CompactdataTemplate_idProxy(ICompactdata modelElement) : 
                     base(modelElement, "Template_id")
             {
             }
@@ -16081,14 +16081,14 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the template_description property
         /// </summary>
-        private sealed class Template_descriptionProxy : ModelPropertyChange<ICompactdata, string>
+        private sealed class CompactdataTemplate_descriptionProxy : ModelPropertyChange<ICompactdata, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Template_descriptionProxy(ICompactdata modelElement) : 
+            public CompactdataTemplate_descriptionProxy(ICompactdata modelElement) : 
                     base(modelElement, "Template_description")
             {
             }
@@ -16957,23 +16957,23 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         {
             if ((attribute == "TIME"))
             {
-                return new TimeProxy(this);
+                return new ClockTimeProxy(this);
             }
             if ((attribute == "STATUS"))
             {
-                return new StatusProxy(this);
+                return new ClockStatusProxy(this);
             }
             if ((attribute == "DAYLIGHT_SAVINGS_BEGIN"))
             {
-                return new Daylight_savings_beginProxy(this);
+                return new ClockDaylight_savings_beginProxy(this);
             }
             if ((attribute == "DAYLIGHT_SAVINGS_END"))
             {
-                return new Daylight_savings_endProxy(this);
+                return new ClockDaylight_savings_endProxy(this);
             }
             if ((attribute == "DAYLIGHT_SAVINGS_ENABLED"))
             {
-                return Observable.Box(new Daylight_savings_enabledProxy(this));
+                return Observable.Box(new ClockDaylight_savings_enabledProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -16993,14 +16993,14 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the time property
         /// </summary>
-        private sealed class TimeProxy : ModelPropertyChange<IClock, string>
+        private sealed class ClockTimeProxy : ModelPropertyChange<IClock, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TimeProxy(IClock modelElement) : 
+            public ClockTimeProxy(IClock modelElement) : 
                     base(modelElement, "Time")
             {
             }
@@ -17024,14 +17024,14 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the status property
         /// </summary>
-        private sealed class StatusProxy : ModelPropertyChange<IClock, string>
+        private sealed class ClockStatusProxy : ModelPropertyChange<IClock, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public StatusProxy(IClock modelElement) : 
+            public ClockStatusProxy(IClock modelElement) : 
                     base(modelElement, "Status")
             {
             }
@@ -17055,14 +17055,14 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the daylight_savings_begin property
         /// </summary>
-        private sealed class Daylight_savings_beginProxy : ModelPropertyChange<IClock, string>
+        private sealed class ClockDaylight_savings_beginProxy : ModelPropertyChange<IClock, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Daylight_savings_beginProxy(IClock modelElement) : 
+            public ClockDaylight_savings_beginProxy(IClock modelElement) : 
                     base(modelElement, "Daylight_savings_begin")
             {
             }
@@ -17086,14 +17086,14 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the daylight_savings_end property
         /// </summary>
-        private sealed class Daylight_savings_endProxy : ModelPropertyChange<IClock, string>
+        private sealed class ClockDaylight_savings_endProxy : ModelPropertyChange<IClock, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Daylight_savings_endProxy(IClock modelElement) : 
+            public ClockDaylight_savings_endProxy(IClock modelElement) : 
                     base(modelElement, "Daylight_savings_end")
             {
             }
@@ -17117,14 +17117,14 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the daylight_savings_enabled property
         /// </summary>
-        private sealed class Daylight_savings_enabledProxy : ModelPropertyChange<IClock, Nullable<bool>>
+        private sealed class ClockDaylight_savings_enabledProxy : ModelPropertyChange<IClock, Nullable<bool>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Daylight_savings_enabledProxy(IClock modelElement) : 
+            public ClockDaylight_savings_enabledProxy(IClock modelElement) : 
                     base(modelElement, "Daylight_savings_enabled")
             {
             }
@@ -18526,15 +18526,15 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "ACTIVEFIRMWAREIDENTIFIER"))
             {
-                return new ActiveFirmwareIdentifierProxy(this);
+                return new ProgramEntriesActiveFirmwareIdentifierProxy(this);
             }
             if ((attribute == "ACTIVEFIRMWAREVERSION"))
             {
-                return new ActiveFirmwareVersionProxy(this);
+                return new ProgramEntriesActiveFirmwareVersionProxy(this);
             }
             if ((attribute == "ACTIVEFIRMWARESIGNATURE"))
             {
-                return new ActiveFirmwareSignatureProxy(this);
+                return new ProgramEntriesActiveFirmwareSignatureProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -18554,14 +18554,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActiveFirmwareIdentifier property
         /// </summary>
-        private sealed class ActiveFirmwareIdentifierProxy : ModelPropertyChange<IProgramEntries, string>
+        private sealed class ProgramEntriesActiveFirmwareIdentifierProxy : ModelPropertyChange<IProgramEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActiveFirmwareIdentifierProxy(IProgramEntries modelElement) : 
+            public ProgramEntriesActiveFirmwareIdentifierProxy(IProgramEntries modelElement) : 
                     base(modelElement, "ActiveFirmwareIdentifier")
             {
             }
@@ -18585,14 +18585,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActiveFirmwareVersion property
         /// </summary>
-        private sealed class ActiveFirmwareVersionProxy : ModelPropertyChange<IProgramEntries, string>
+        private sealed class ProgramEntriesActiveFirmwareVersionProxy : ModelPropertyChange<IProgramEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActiveFirmwareVersionProxy(IProgramEntries modelElement) : 
+            public ProgramEntriesActiveFirmwareVersionProxy(IProgramEntries modelElement) : 
                     base(modelElement, "ActiveFirmwareVersion")
             {
             }
@@ -18616,14 +18616,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActiveFirmwareSignature property
         /// </summary>
-        private sealed class ActiveFirmwareSignatureProxy : ModelPropertyChange<IProgramEntries, string>
+        private sealed class ProgramEntriesActiveFirmwareSignatureProxy : ModelPropertyChange<IProgramEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActiveFirmwareSignatureProxy(IProgramEntries modelElement) : 
+            public ProgramEntriesActiveFirmwareSignatureProxy(IProgramEntries modelElement) : 
                     base(modelElement, "ActiveFirmwareSignature")
             {
             }
@@ -18839,15 +18839,15 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "BILLINGPERIODCOUNTER"))
             {
-                return Observable.Box(new BillingPeriodCounterProxy(this));
+                return Observable.Box(new BillingPeriodValuesBillingPeriodCounterProxy(this));
             }
             if ((attribute == "NUMBERAVAILABLEBILLINGPERIODS"))
             {
-                return Observable.Box(new NumberAvailableBillingPeriodsProxy(this));
+                return Observable.Box(new BillingPeriodValuesNumberAvailableBillingPeriodsProxy(this));
             }
             if ((attribute == "TIMESTAMPRECENTBILLINGPERIOD"))
             {
-                return new TimestampRecentBillingPeriodProxy(this);
+                return new BillingPeriodValuesTimestampRecentBillingPeriodProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -18867,14 +18867,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BillingPeriodCounter property
         /// </summary>
-        private sealed class BillingPeriodCounterProxy : ModelPropertyChange<IBillingPeriodValues, Nullable<int>>
+        private sealed class BillingPeriodValuesBillingPeriodCounterProxy : ModelPropertyChange<IBillingPeriodValues, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public BillingPeriodCounterProxy(IBillingPeriodValues modelElement) : 
+            public BillingPeriodValuesBillingPeriodCounterProxy(IBillingPeriodValues modelElement) : 
                     base(modelElement, "BillingPeriodCounter")
             {
             }
@@ -18898,14 +18898,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NumberAvailableBillingPeriods property
         /// </summary>
-        private sealed class NumberAvailableBillingPeriodsProxy : ModelPropertyChange<IBillingPeriodValues, Nullable<int>>
+        private sealed class BillingPeriodValuesNumberAvailableBillingPeriodsProxy : ModelPropertyChange<IBillingPeriodValues, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public NumberAvailableBillingPeriodsProxy(IBillingPeriodValues modelElement) : 
+            public BillingPeriodValuesNumberAvailableBillingPeriodsProxy(IBillingPeriodValues modelElement) : 
                     base(modelElement, "NumberAvailableBillingPeriods")
             {
             }
@@ -18929,14 +18929,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TimestampRecentBillingPeriod property
         /// </summary>
-        private sealed class TimestampRecentBillingPeriodProxy : ModelPropertyChange<IBillingPeriodValues, string>
+        private sealed class BillingPeriodValuesTimestampRecentBillingPeriodProxy : ModelPropertyChange<IBillingPeriodValues, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TimestampRecentBillingPeriodProxy(IBillingPeriodValues modelElement) : 
+            public BillingPeriodValuesTimestampRecentBillingPeriodProxy(IBillingPeriodValues modelElement) : 
                     base(modelElement, "TimestampRecentBillingPeriod")
             {
             }
@@ -19106,11 +19106,11 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "LOCALTIME"))
             {
-                return new LocalTimeProxy(this);
+                return new TimeEntriesLocalTimeProxy(this);
             }
             if ((attribute == "LOCALDATE"))
             {
-                return new LocalDateProxy(this);
+                return new TimeEntriesLocalDateProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -19130,14 +19130,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LocalTime property
         /// </summary>
-        private sealed class LocalTimeProxy : ModelPropertyChange<ITimeEntries, string>
+        private sealed class TimeEntriesLocalTimeProxy : ModelPropertyChange<ITimeEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public LocalTimeProxy(ITimeEntries modelElement) : 
+            public TimeEntriesLocalTimeProxy(ITimeEntries modelElement) : 
                     base(modelElement, "LocalTime")
             {
             }
@@ -19161,14 +19161,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LocalDate property
         /// </summary>
-        private sealed class LocalDateProxy : ModelPropertyChange<ITimeEntries, string>
+        private sealed class TimeEntriesLocalDateProxy : ModelPropertyChange<ITimeEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public LocalDateProxy(ITimeEntries modelElement) : 
+            public TimeEntriesLocalDateProxy(ITimeEntries modelElement) : 
                     base(modelElement, "LocalDate")
             {
             }
@@ -19292,7 +19292,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "TIME"))
             {
-                return new TimeProxy(this);
+                return new ClockObjectTimeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -19312,14 +19312,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Time property
         /// </summary>
-        private sealed class TimeProxy : ModelPropertyChange<IClockObject, string>
+        private sealed class ClockObjectTimeProxy : ModelPropertyChange<IClockObject, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TimeProxy(IClockObject modelElement) : 
+            public ClockObjectTimeProxy(IClockObject modelElement) : 
                     base(modelElement, "Time")
             {
             }
@@ -19445,7 +19445,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "VALUE"))
             {
-                return new ValueProxy(this);
+                return new UNIXClockValueProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -19465,14 +19465,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ValueProxy : ModelPropertyChange<IUNIXClock, string>
+        private sealed class UNIXClockValueProxy : ModelPropertyChange<IUNIXClock, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ValueProxy(IUNIXClock modelElement) : 
+            public UNIXClockValueProxy(IUNIXClock modelElement) : 
                     base(modelElement, "Value")
             {
             }
@@ -19635,7 +19635,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "CONNECTION"))
             {
-                return Observable.Box(new ConnectionProxy(this));
+                return Observable.Box(new AutoConnectObjectConnectionProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -19655,14 +19655,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Connection property
         /// </summary>
-        private sealed class ConnectionProxy : ModelPropertyChange<IAutoConnectObject, Nullable<bool>>
+        private sealed class AutoConnectObjectConnectionProxy : ModelPropertyChange<IAutoConnectObject, Nullable<bool>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ConnectionProxy(IAutoConnectObject modelElement) : 
+            public AutoConnectObjectConnectionProxy(IAutoConnectObject modelElement) : 
                     base(modelElement, "Connection")
             {
             }
@@ -19786,7 +19786,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "ANSWER"))
             {
-                return Observable.Box(new AnswerProxy(this));
+                return Observable.Box(new AutoAnswerObjectAnswerProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -19806,14 +19806,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Answer property
         /// </summary>
-        private sealed class AnswerProxy : ModelPropertyChange<IAutoAnswerObject, Nullable<bool>>
+        private sealed class AutoAnswerObjectAnswerProxy : ModelPropertyChange<IAutoAnswerObject, Nullable<bool>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public AnswerProxy(IAutoAnswerObject modelElement) : 
+            public AutoAnswerObjectAnswerProxy(IAutoAnswerObject modelElement) : 
                     base(modelElement, "Answer")
             {
             }
@@ -20708,51 +20708,51 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((reference == "GLOBALMETERRESET"))
             {
-                return new GlobalMeterResetProxy(this);
+                return new ScriptTableGlobalMeterResetProxy(this);
             }
             if ((reference == "MDIRESET"))
             {
-                return new MDIResetProxy(this);
+                return new ScriptTableMDIResetProxy(this);
             }
             if ((reference == "TARIFFICATION"))
             {
-                return new TarifficationProxy(this);
+                return new ScriptTableTarifficationProxy(this);
             }
             if ((reference == "ACITVATETEST"))
             {
-                return new AcitvateTestProxy(this);
+                return new ScriptTableAcitvateTestProxy(this);
             }
             if ((reference == "ACTIVATENORMAL"))
             {
-                return new ActivateNormalProxy(this);
+                return new ScriptTableActivateNormalProxy(this);
             }
             if ((reference == "SETOUTPUT"))
             {
-                return new SetOutputProxy(this);
+                return new ScriptTableSetOutputProxy(this);
             }
             if ((reference == "SWITCHOPTICAL"))
             {
-                return new SwitchOpticalProxy(this);
+                return new ScriptTableSwitchOpticalProxy(this);
             }
             if ((reference == "POWERQUALITY"))
             {
-                return new PowerQualityProxy(this);
+                return new ScriptTablePowerQualityProxy(this);
             }
             if ((reference == "DISCONNECT"))
             {
-                return new DisconnectProxy(this);
+                return new ScriptTableDisconnectProxy(this);
             }
             if ((reference == "IMAGE"))
             {
-                return new ImageProxy(this);
+                return new ScriptTableImageProxy(this);
             }
             if ((reference == "PUSH"))
             {
-                return new PushProxy(this);
+                return new ScriptTablePushProxy(this);
             }
             if ((reference == "BROADCAST"))
             {
-                return new BroadcastProxy(this);
+                return new ScriptTableBroadcastProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -20852,18 +20852,18 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new GlobalMeterResetProxy(this._parent),
-                        new MDIResetProxy(this._parent),
-                        new TarifficationProxy(this._parent),
-                        new AcitvateTestProxy(this._parent),
-                        new ActivateNormalProxy(this._parent),
-                        new SetOutputProxy(this._parent),
-                        new SwitchOpticalProxy(this._parent),
-                        new PowerQualityProxy(this._parent),
-                        new DisconnectProxy(this._parent),
-                        new ImageProxy(this._parent),
-                        new PushProxy(this._parent),
-                        new BroadcastProxy(this._parent)};
+                        new ScriptTableGlobalMeterResetProxy(this._parent),
+                        new ScriptTableMDIResetProxy(this._parent),
+                        new ScriptTableTarifficationProxy(this._parent),
+                        new ScriptTableAcitvateTestProxy(this._parent),
+                        new ScriptTableActivateNormalProxy(this._parent),
+                        new ScriptTableSetOutputProxy(this._parent),
+                        new ScriptTableSwitchOpticalProxy(this._parent),
+                        new ScriptTablePowerQualityProxy(this._parent),
+                        new ScriptTableDisconnectProxy(this._parent),
+                        new ScriptTableImageProxy(this._parent),
+                        new ScriptTablePushProxy(this._parent),
+                        new ScriptTableBroadcastProxy(this._parent)};
             }
             
             /// <summary>
@@ -21211,14 +21211,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the globalMeterReset property
         /// </summary>
-        private sealed class GlobalMeterResetProxy : ModelPropertyChange<IScriptTable, IGlobalMeterReset>
+        private sealed class ScriptTableGlobalMeterResetProxy : ModelPropertyChange<IScriptTable, IGlobalMeterReset>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public GlobalMeterResetProxy(IScriptTable modelElement) : 
+            public ScriptTableGlobalMeterResetProxy(IScriptTable modelElement) : 
                     base(modelElement, "GlobalMeterReset")
             {
             }
@@ -21242,14 +21242,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MDIReset property
         /// </summary>
-        private sealed class MDIResetProxy : ModelPropertyChange<IScriptTable, IMDIReset>
+        private sealed class ScriptTableMDIResetProxy : ModelPropertyChange<IScriptTable, IMDIReset>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public MDIResetProxy(IScriptTable modelElement) : 
+            public ScriptTableMDIResetProxy(IScriptTable modelElement) : 
                     base(modelElement, "MDIReset")
             {
             }
@@ -21273,14 +21273,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Tariffication property
         /// </summary>
-        private sealed class TarifficationProxy : ModelPropertyChange<IScriptTable, ITariffication>
+        private sealed class ScriptTableTarifficationProxy : ModelPropertyChange<IScriptTable, ITariffication>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TarifficationProxy(IScriptTable modelElement) : 
+            public ScriptTableTarifficationProxy(IScriptTable modelElement) : 
                     base(modelElement, "Tariffication")
             {
             }
@@ -21304,14 +21304,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AcitvateTest property
         /// </summary>
-        private sealed class AcitvateTestProxy : ModelPropertyChange<IScriptTable, IActivateTestMode>
+        private sealed class ScriptTableAcitvateTestProxy : ModelPropertyChange<IScriptTable, IActivateTestMode>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public AcitvateTestProxy(IScriptTable modelElement) : 
+            public ScriptTableAcitvateTestProxy(IScriptTable modelElement) : 
                     base(modelElement, "AcitvateTest")
             {
             }
@@ -21335,14 +21335,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivateNormal property
         /// </summary>
-        private sealed class ActivateNormalProxy : ModelPropertyChange<IScriptTable, IActivateNormalMode>
+        private sealed class ScriptTableActivateNormalProxy : ModelPropertyChange<IScriptTable, IActivateNormalMode>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivateNormalProxy(IScriptTable modelElement) : 
+            public ScriptTableActivateNormalProxy(IScriptTable modelElement) : 
                     base(modelElement, "ActivateNormal")
             {
             }
@@ -21366,14 +21366,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SetOutput property
         /// </summary>
-        private sealed class SetOutputProxy : ModelPropertyChange<IScriptTable, ISetOutputSignal>
+        private sealed class ScriptTableSetOutputProxy : ModelPropertyChange<IScriptTable, ISetOutputSignal>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public SetOutputProxy(IScriptTable modelElement) : 
+            public ScriptTableSetOutputProxy(IScriptTable modelElement) : 
                     base(modelElement, "SetOutput")
             {
             }
@@ -21397,14 +21397,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SwitchOptical property
         /// </summary>
-        private sealed class SwitchOpticalProxy : ModelPropertyChange<IScriptTable, ISwitchOpticalTestOutput>
+        private sealed class ScriptTableSwitchOpticalProxy : ModelPropertyChange<IScriptTable, ISwitchOpticalTestOutput>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public SwitchOpticalProxy(IScriptTable modelElement) : 
+            public ScriptTableSwitchOpticalProxy(IScriptTable modelElement) : 
                     base(modelElement, "SwitchOptical")
             {
             }
@@ -21428,14 +21428,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PowerQuality property
         /// </summary>
-        private sealed class PowerQualityProxy : ModelPropertyChange<IScriptTable, IPowerQualityMeasurementManagement>
+        private sealed class ScriptTablePowerQualityProxy : ModelPropertyChange<IScriptTable, IPowerQualityMeasurementManagement>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public PowerQualityProxy(IScriptTable modelElement) : 
+            public ScriptTablePowerQualityProxy(IScriptTable modelElement) : 
                     base(modelElement, "PowerQuality")
             {
             }
@@ -21459,14 +21459,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Disconnect property
         /// </summary>
-        private sealed class DisconnectProxy : ModelPropertyChange<IScriptTable, IDisconnectControl>
+        private sealed class ScriptTableDisconnectProxy : ModelPropertyChange<IScriptTable, IDisconnectControl>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public DisconnectProxy(IScriptTable modelElement) : 
+            public ScriptTableDisconnectProxy(IScriptTable modelElement) : 
                     base(modelElement, "Disconnect")
             {
             }
@@ -21490,14 +21490,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Image property
         /// </summary>
-        private sealed class ImageProxy : ModelPropertyChange<IScriptTable, IImageActivation>
+        private sealed class ScriptTableImageProxy : ModelPropertyChange<IScriptTable, IImageActivation>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ImageProxy(IScriptTable modelElement) : 
+            public ScriptTableImageProxy(IScriptTable modelElement) : 
                     base(modelElement, "Image")
             {
             }
@@ -21521,14 +21521,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Push property
         /// </summary>
-        private sealed class PushProxy : ModelPropertyChange<IScriptTable, IPush>
+        private sealed class ScriptTablePushProxy : ModelPropertyChange<IScriptTable, IPush>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public PushProxy(IScriptTable modelElement) : 
+            public ScriptTablePushProxy(IScriptTable modelElement) : 
                     base(modelElement, "Push")
             {
             }
@@ -21552,14 +21552,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Broadcast property
         /// </summary>
-        private sealed class BroadcastProxy : ModelPropertyChange<IScriptTable, IBroadcast>
+        private sealed class ScriptTableBroadcastProxy : ModelPropertyChange<IScriptTable, IBroadcast>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public BroadcastProxy(IScriptTable modelElement) : 
+            public ScriptTableBroadcastProxy(IScriptTable modelElement) : 
                     base(modelElement, "Broadcast")
             {
             }
@@ -22609,23 +22609,23 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((reference == "DISCONNECT"))
             {
-                return new DisconnectProxy(this);
+                return new SingleActionScheduleObjectDisconnectProxy(this);
             }
             if ((reference == "BILLINGPERIODEND"))
             {
-                return new BillingPeriodEndProxy(this);
+                return new SingleActionScheduleObjectBillingPeriodEndProxy(this);
             }
             if ((reference == "IMAGE"))
             {
-                return new ImageProxy(this);
+                return new SingleActionScheduleObjectImageProxy(this);
             }
             if ((reference == "OUTPUT"))
             {
-                return new OutputProxy(this);
+                return new SingleActionScheduleObjectOutputProxy(this);
             }
             if ((reference == "PUSH"))
             {
-                return new PushProxy(this);
+                return new SingleActionScheduleObjectPushProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -22697,11 +22697,11 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new DisconnectProxy(this._parent),
-                        new BillingPeriodEndProxy(this._parent),
-                        new ImageProxy(this._parent),
-                        new OutputProxy(this._parent),
-                        new PushProxy(this._parent)};
+                        new SingleActionScheduleObjectDisconnectProxy(this._parent),
+                        new SingleActionScheduleObjectBillingPeriodEndProxy(this._parent),
+                        new SingleActionScheduleObjectImageProxy(this._parent),
+                        new SingleActionScheduleObjectOutputProxy(this._parent),
+                        new SingleActionScheduleObjectPushProxy(this._parent)};
             }
             
             /// <summary>
@@ -22881,14 +22881,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the disconnect property
         /// </summary>
-        private sealed class DisconnectProxy : ModelPropertyChange<ISingleActionScheduleObject, IDisconnectControlSchedule>
+        private sealed class SingleActionScheduleObjectDisconnectProxy : ModelPropertyChange<ISingleActionScheduleObject, IDisconnectControlSchedule>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public DisconnectProxy(ISingleActionScheduleObject modelElement) : 
+            public SingleActionScheduleObjectDisconnectProxy(ISingleActionScheduleObject modelElement) : 
                     base(modelElement, "Disconnect")
             {
             }
@@ -22912,14 +22912,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BillingPeriodEnd property
         /// </summary>
-        private sealed class BillingPeriodEndProxy : ModelPropertyChange<ISingleActionScheduleObject, IEndOfBillingPeriodSchedule>
+        private sealed class SingleActionScheduleObjectBillingPeriodEndProxy : ModelPropertyChange<ISingleActionScheduleObject, IEndOfBillingPeriodSchedule>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public BillingPeriodEndProxy(ISingleActionScheduleObject modelElement) : 
+            public SingleActionScheduleObjectBillingPeriodEndProxy(ISingleActionScheduleObject modelElement) : 
                     base(modelElement, "BillingPeriodEnd")
             {
             }
@@ -22943,14 +22943,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Image property
         /// </summary>
-        private sealed class ImageProxy : ModelPropertyChange<ISingleActionScheduleObject, IImageActivationSchedule>
+        private sealed class SingleActionScheduleObjectImageProxy : ModelPropertyChange<ISingleActionScheduleObject, IImageActivationSchedule>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ImageProxy(ISingleActionScheduleObject modelElement) : 
+            public SingleActionScheduleObjectImageProxy(ISingleActionScheduleObject modelElement) : 
                     base(modelElement, "Image")
             {
             }
@@ -22974,14 +22974,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Output property
         /// </summary>
-        private sealed class OutputProxy : ModelPropertyChange<ISingleActionScheduleObject, IOutputControlSchedule>
+        private sealed class SingleActionScheduleObjectOutputProxy : ModelPropertyChange<ISingleActionScheduleObject, IOutputControlSchedule>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public OutputProxy(ISingleActionScheduleObject modelElement) : 
+            public SingleActionScheduleObjectOutputProxy(ISingleActionScheduleObject modelElement) : 
                     base(modelElement, "Output")
             {
             }
@@ -23005,14 +23005,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Push property
         /// </summary>
-        private sealed class PushProxy : ModelPropertyChange<ISingleActionScheduleObject, IPushSchedule>
+        private sealed class SingleActionScheduleObjectPushProxy : ModelPropertyChange<ISingleActionScheduleObject, IPushSchedule>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public PushProxy(ISingleActionScheduleObject modelElement) : 
+            public SingleActionScheduleObjectPushProxy(ISingleActionScheduleObject modelElement) : 
                     base(modelElement, "Push")
             {
             }
@@ -23645,7 +23645,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "VALUE"))
             {
-                return Observable.Box(new ValueProxy(this));
+                return Observable.Box(new MaxCreditLimitValueProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -23665,14 +23665,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ValueProxy : ModelPropertyChange<IMaxCreditLimit, Nullable<double>>
+        private sealed class MaxCreditLimitValueProxy : ModelPropertyChange<IMaxCreditLimit, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ValueProxy(IMaxCreditLimit modelElement) : 
+            public MaxCreditLimitValueProxy(IMaxCreditLimit modelElement) : 
                     base(modelElement, "Value")
             {
             }
@@ -23798,7 +23798,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "VALUE"))
             {
-                return Observable.Box(new ValueProxy(this));
+                return Observable.Box(new MaxVendLimitValueProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -23818,14 +23818,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ValueProxy : ModelPropertyChange<IMaxVendLimit, Nullable<double>>
+        private sealed class MaxVendLimitValueProxy : ModelPropertyChange<IMaxVendLimit, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ValueProxy(IMaxVendLimit modelElement) : 
+            public MaxVendLimitValueProxy(IMaxVendLimit modelElement) : 
                     base(modelElement, "Value")
             {
             }
@@ -24257,27 +24257,27 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "GENERALLOCALPORTREADOUT"))
             {
-                return new GeneralLocalPortReadoutProxy(this);
+                return new StandardReadoutGeneralLocalPortReadoutProxy(this);
             }
             if ((attribute == "GENERALDISPLAYREADOUT"))
             {
-                return new GeneralDisplayReadoutProxy(this);
+                return new StandardReadoutGeneralDisplayReadoutProxy(this);
             }
             if ((attribute == "ALTERNATEDISPLAYREADOUT"))
             {
-                return new AlternateDisplayReadoutProxy(this);
+                return new StandardReadoutAlternateDisplayReadoutProxy(this);
             }
             if ((attribute == "SERVICEDISPLAYREADOUT"))
             {
-                return new ServiceDisplayReadoutProxy(this);
+                return new StandardReadoutServiceDisplayReadoutProxy(this);
             }
             if ((attribute == "LISTCONFIGMETERDATA"))
             {
-                return new ListConfigMeterDataProxy(this);
+                return new StandardReadoutListConfigMeterDataProxy(this);
             }
             if ((attribute == "ADDITIONALREADOUT"))
             {
-                return new AdditionalReadoutProxy(this);
+                return new StandardReadoutAdditionalReadoutProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -24297,14 +24297,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the GeneralLocalPortReadout property
         /// </summary>
-        private sealed class GeneralLocalPortReadoutProxy : ModelPropertyChange<IStandardReadout, string>
+        private sealed class StandardReadoutGeneralLocalPortReadoutProxy : ModelPropertyChange<IStandardReadout, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public GeneralLocalPortReadoutProxy(IStandardReadout modelElement) : 
+            public StandardReadoutGeneralLocalPortReadoutProxy(IStandardReadout modelElement) : 
                     base(modelElement, "GeneralLocalPortReadout")
             {
             }
@@ -24328,14 +24328,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the GeneralDisplayReadout property
         /// </summary>
-        private sealed class GeneralDisplayReadoutProxy : ModelPropertyChange<IStandardReadout, string>
+        private sealed class StandardReadoutGeneralDisplayReadoutProxy : ModelPropertyChange<IStandardReadout, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public GeneralDisplayReadoutProxy(IStandardReadout modelElement) : 
+            public StandardReadoutGeneralDisplayReadoutProxy(IStandardReadout modelElement) : 
                     base(modelElement, "GeneralDisplayReadout")
             {
             }
@@ -24359,14 +24359,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AlternateDisplayReadout property
         /// </summary>
-        private sealed class AlternateDisplayReadoutProxy : ModelPropertyChange<IStandardReadout, string>
+        private sealed class StandardReadoutAlternateDisplayReadoutProxy : ModelPropertyChange<IStandardReadout, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public AlternateDisplayReadoutProxy(IStandardReadout modelElement) : 
+            public StandardReadoutAlternateDisplayReadoutProxy(IStandardReadout modelElement) : 
                     base(modelElement, "AlternateDisplayReadout")
             {
             }
@@ -24390,14 +24390,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ServiceDisplayReadout property
         /// </summary>
-        private sealed class ServiceDisplayReadoutProxy : ModelPropertyChange<IStandardReadout, string>
+        private sealed class StandardReadoutServiceDisplayReadoutProxy : ModelPropertyChange<IStandardReadout, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ServiceDisplayReadoutProxy(IStandardReadout modelElement) : 
+            public StandardReadoutServiceDisplayReadoutProxy(IStandardReadout modelElement) : 
                     base(modelElement, "ServiceDisplayReadout")
             {
             }
@@ -24421,14 +24421,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ListConfigMeterData property
         /// </summary>
-        private sealed class ListConfigMeterDataProxy : ModelPropertyChange<IStandardReadout, string>
+        private sealed class StandardReadoutListConfigMeterDataProxy : ModelPropertyChange<IStandardReadout, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ListConfigMeterDataProxy(IStandardReadout modelElement) : 
+            public StandardReadoutListConfigMeterDataProxy(IStandardReadout modelElement) : 
                     base(modelElement, "ListConfigMeterData")
             {
             }
@@ -24452,14 +24452,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AdditionalReadout property
         /// </summary>
-        private sealed class AdditionalReadoutProxy : ModelPropertyChange<IStandardReadout, string>
+        private sealed class StandardReadoutAdditionalReadoutProxy : ModelPropertyChange<IStandardReadout, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public AdditionalReadoutProxy(IStandardReadout modelElement) : 
+            public StandardReadoutAdditionalReadoutProxy(IStandardReadout modelElement) : 
                     base(modelElement, "AdditionalReadout")
             {
             }
@@ -26731,7 +26731,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "VALUE"))
             {
-                return Observable.Box(new ValueProxy(this));
+                return Observable.Box(new InvocationCounterValueProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -26751,14 +26751,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ValueProxy : ModelPropertyChange<IInvocationCounter, Nullable<int>>
+        private sealed class InvocationCounterValueProxy : ModelPropertyChange<IInvocationCounter, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ValueProxy(IInvocationCounter modelElement) : 
+            public InvocationCounterValueProxy(IInvocationCounter modelElement) : 
                     base(modelElement, "Value")
             {
             }
@@ -27098,19 +27098,19 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "STANDARD"))
             {
-                return new StandardProxy(this);
+                return new UtilitiesTableObjectStandardProxy(this);
             }
             if ((attribute == "MANUFACTURER"))
             {
-                return new ManufacturerProxy(this);
+                return new UtilitiesTableObjectManufacturerProxy(this);
             }
             if ((attribute == "STDPENDING"))
             {
-                return new StdPendingProxy(this);
+                return new UtilitiesTableObjectStdPendingProxy(this);
             }
             if ((attribute == "MFGPENDING"))
             {
-                return new MfgPendingProxy(this);
+                return new UtilitiesTableObjectMfgPendingProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -27130,14 +27130,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Standard property
         /// </summary>
-        private sealed class StandardProxy : ModelPropertyChange<IUtilitiesTableObject, string>
+        private sealed class UtilitiesTableObjectStandardProxy : ModelPropertyChange<IUtilitiesTableObject, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public StandardProxy(IUtilitiesTableObject modelElement) : 
+            public UtilitiesTableObjectStandardProxy(IUtilitiesTableObject modelElement) : 
                     base(modelElement, "Standard")
             {
             }
@@ -27161,14 +27161,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Manufacturer property
         /// </summary>
-        private sealed class ManufacturerProxy : ModelPropertyChange<IUtilitiesTableObject, string>
+        private sealed class UtilitiesTableObjectManufacturerProxy : ModelPropertyChange<IUtilitiesTableObject, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ManufacturerProxy(IUtilitiesTableObject modelElement) : 
+            public UtilitiesTableObjectManufacturerProxy(IUtilitiesTableObject modelElement) : 
                     base(modelElement, "Manufacturer")
             {
             }
@@ -27192,14 +27192,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StdPending property
         /// </summary>
-        private sealed class StdPendingProxy : ModelPropertyChange<IUtilitiesTableObject, string>
+        private sealed class UtilitiesTableObjectStdPendingProxy : ModelPropertyChange<IUtilitiesTableObject, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public StdPendingProxy(IUtilitiesTableObject modelElement) : 
+            public UtilitiesTableObjectStdPendingProxy(IUtilitiesTableObject modelElement) : 
                     base(modelElement, "StdPending")
             {
             }
@@ -27223,14 +27223,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MfgPending property
         /// </summary>
-        private sealed class MfgPendingProxy : ModelPropertyChange<IUtilitiesTableObject, string>
+        private sealed class UtilitiesTableObjectMfgPendingProxy : ModelPropertyChange<IUtilitiesTableObject, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public MfgPendingProxy(IUtilitiesTableObject modelElement) : 
+            public UtilitiesTableObjectMfgPendingProxy(IUtilitiesTableObject modelElement) : 
                     base(modelElement, "MfgPending")
             {
             }
@@ -27395,7 +27395,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "VALUE"))
             {
-                return new ValueProxy(this);
+                return new DeviceIDValueProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -27415,14 +27415,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ValueProxy : ModelPropertyChange<IDeviceID, string>
+        private sealed class DeviceIDValueProxy : ModelPropertyChange<IDeviceID, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ValueProxy(IDeviceID modelElement) : 
+            public DeviceIDValueProxy(IDeviceID modelElement) : 
                     base(modelElement, "Value")
             {
             }
@@ -27548,7 +27548,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "VALUE"))
             {
-                return new ValueProxy(this);
+                return new MeteringPointIDValueProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -27568,14 +27568,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ValueProxy : ModelPropertyChange<IMeteringPointID, string>
+        private sealed class MeteringPointIDValueProxy : ModelPropertyChange<IMeteringPointID, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ValueProxy(IMeteringPointID modelElement) : 
+            public MeteringPointIDValueProxy(IMeteringPointID modelElement) : 
                     base(modelElement, "Value")
             {
             }
@@ -28205,51 +28205,51 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "NUMBERCONFIGPROGRAMCHANGES"))
             {
-                return Observable.Box(new NumberConfigProgramChangesProxy(this));
+                return Observable.Box(new ParameterChangesObjectNumberConfigProgramChangesProxy(this));
             }
             if ((attribute == "DATELASTCONFIGCHANGE"))
             {
-                return Observable.Box(new DateLastConfigChangeProxy(this));
+                return Observable.Box(new ParameterChangesObjectDateLastConfigChangeProxy(this));
             }
             if ((attribute == "DATELASTSWITCHCHANGE"))
             {
-                return Observable.Box(new DateLastSwitchChangeProxy(this));
+                return Observable.Box(new ParameterChangesObjectDateLastSwitchChangeProxy(this));
             }
             if ((attribute == "DATELASTRIPPLECONTROLCHANGE"))
             {
-                return Observable.Box(new DateLastRippleControlChangeProxy(this));
+                return Observable.Box(new ParameterChangesObjectDateLastRippleControlChangeProxy(this));
             }
             if ((attribute == "STATUSSECURITYSWITCHES"))
             {
-                return new StatusSecuritySwitchesProxy(this);
+                return new ParameterChangesObjectStatusSecuritySwitchesProxy(this);
             }
             if ((attribute == "DATELASTCALIBRATION"))
             {
-                return Observable.Box(new DateLastCalibrationProxy(this));
+                return Observable.Box(new ParameterChangesObjectDateLastCalibrationProxy(this));
             }
             if ((attribute == "DATENEXTCONFIG"))
             {
-                return Observable.Box(new DateNextConfigProxy(this));
+                return Observable.Box(new ParameterChangesObjectDateNextConfigProxy(this));
             }
             if ((attribute == "DATEACTIVATIONPASSIVCALENDAR"))
             {
-                return Observable.Box(new DateActivationPassivCalendarProxy(this));
+                return Observable.Box(new ParameterChangesObjectDateActivationPassivCalendarProxy(this));
             }
             if ((attribute == "NUMBERPROTECTEDCONFIGCHANGES"))
             {
-                return Observable.Box(new NumberProtectedConfigChangesProxy(this));
+                return Observable.Box(new ParameterChangesObjectNumberProtectedConfigChangesProxy(this));
             }
             if ((attribute == "DATELASTPROTECTEDCONFIGCHANGE"))
             {
-                return Observable.Box(new DateLastProtectedConfigChangeProxy(this));
+                return Observable.Box(new ParameterChangesObjectDateLastProtectedConfigChangeProxy(this));
             }
             if ((attribute == "DATELASTCLOCKSYNCH"))
             {
-                return Observable.Box(new DateLastClockSynchProxy(this));
+                return Observable.Box(new ParameterChangesObjectDateLastClockSynchProxy(this));
             }
             if ((attribute == "DATELASTFIRMWAREACTIVATION"))
             {
-                return Observable.Box(new DateLastFirmwareActivationProxy(this));
+                return Observable.Box(new ParameterChangesObjectDateLastFirmwareActivationProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -28269,14 +28269,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NumberConfigProgramChanges property
         /// </summary>
-        private sealed class NumberConfigProgramChangesProxy : ModelPropertyChange<IParameterChangesObject, Nullable<int>>
+        private sealed class ParameterChangesObjectNumberConfigProgramChangesProxy : ModelPropertyChange<IParameterChangesObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public NumberConfigProgramChangesProxy(IParameterChangesObject modelElement) : 
+            public ParameterChangesObjectNumberConfigProgramChangesProxy(IParameterChangesObject modelElement) : 
                     base(modelElement, "NumberConfigProgramChanges")
             {
             }
@@ -28300,14 +28300,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DateLastConfigChange property
         /// </summary>
-        private sealed class DateLastConfigChangeProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
+        private sealed class ParameterChangesObjectDateLastConfigChangeProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public DateLastConfigChangeProxy(IParameterChangesObject modelElement) : 
+            public ParameterChangesObjectDateLastConfigChangeProxy(IParameterChangesObject modelElement) : 
                     base(modelElement, "DateLastConfigChange")
             {
             }
@@ -28331,14 +28331,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DateLastSwitchChange property
         /// </summary>
-        private sealed class DateLastSwitchChangeProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
+        private sealed class ParameterChangesObjectDateLastSwitchChangeProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public DateLastSwitchChangeProxy(IParameterChangesObject modelElement) : 
+            public ParameterChangesObjectDateLastSwitchChangeProxy(IParameterChangesObject modelElement) : 
                     base(modelElement, "DateLastSwitchChange")
             {
             }
@@ -28362,14 +28362,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DateLastRippleControlChange property
         /// </summary>
-        private sealed class DateLastRippleControlChangeProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
+        private sealed class ParameterChangesObjectDateLastRippleControlChangeProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public DateLastRippleControlChangeProxy(IParameterChangesObject modelElement) : 
+            public ParameterChangesObjectDateLastRippleControlChangeProxy(IParameterChangesObject modelElement) : 
                     base(modelElement, "DateLastRippleControlChange")
             {
             }
@@ -28393,14 +28393,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StatusSecuritySwitches property
         /// </summary>
-        private sealed class StatusSecuritySwitchesProxy : ModelPropertyChange<IParameterChangesObject, string>
+        private sealed class ParameterChangesObjectStatusSecuritySwitchesProxy : ModelPropertyChange<IParameterChangesObject, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public StatusSecuritySwitchesProxy(IParameterChangesObject modelElement) : 
+            public ParameterChangesObjectStatusSecuritySwitchesProxy(IParameterChangesObject modelElement) : 
                     base(modelElement, "StatusSecuritySwitches")
             {
             }
@@ -28424,14 +28424,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DateLastCalibration property
         /// </summary>
-        private sealed class DateLastCalibrationProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
+        private sealed class ParameterChangesObjectDateLastCalibrationProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public DateLastCalibrationProxy(IParameterChangesObject modelElement) : 
+            public ParameterChangesObjectDateLastCalibrationProxy(IParameterChangesObject modelElement) : 
                     base(modelElement, "DateLastCalibration")
             {
             }
@@ -28455,14 +28455,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DateNextConfig property
         /// </summary>
-        private sealed class DateNextConfigProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
+        private sealed class ParameterChangesObjectDateNextConfigProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public DateNextConfigProxy(IParameterChangesObject modelElement) : 
+            public ParameterChangesObjectDateNextConfigProxy(IParameterChangesObject modelElement) : 
                     base(modelElement, "DateNextConfig")
             {
             }
@@ -28486,14 +28486,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DateActivationPassivCalendar property
         /// </summary>
-        private sealed class DateActivationPassivCalendarProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
+        private sealed class ParameterChangesObjectDateActivationPassivCalendarProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public DateActivationPassivCalendarProxy(IParameterChangesObject modelElement) : 
+            public ParameterChangesObjectDateActivationPassivCalendarProxy(IParameterChangesObject modelElement) : 
                     base(modelElement, "DateActivationPassivCalendar")
             {
             }
@@ -28517,14 +28517,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NumberProtectedConfigChanges property
         /// </summary>
-        private sealed class NumberProtectedConfigChangesProxy : ModelPropertyChange<IParameterChangesObject, Nullable<int>>
+        private sealed class ParameterChangesObjectNumberProtectedConfigChangesProxy : ModelPropertyChange<IParameterChangesObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public NumberProtectedConfigChangesProxy(IParameterChangesObject modelElement) : 
+            public ParameterChangesObjectNumberProtectedConfigChangesProxy(IParameterChangesObject modelElement) : 
                     base(modelElement, "NumberProtectedConfigChanges")
             {
             }
@@ -28548,14 +28548,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DateLastProtectedConfigChange property
         /// </summary>
-        private sealed class DateLastProtectedConfigChangeProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
+        private sealed class ParameterChangesObjectDateLastProtectedConfigChangeProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public DateLastProtectedConfigChangeProxy(IParameterChangesObject modelElement) : 
+            public ParameterChangesObjectDateLastProtectedConfigChangeProxy(IParameterChangesObject modelElement) : 
                     base(modelElement, "DateLastProtectedConfigChange")
             {
             }
@@ -28579,14 +28579,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DateLastClockSynch property
         /// </summary>
-        private sealed class DateLastClockSynchProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
+        private sealed class ParameterChangesObjectDateLastClockSynchProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public DateLastClockSynchProxy(IParameterChangesObject modelElement) : 
+            public ParameterChangesObjectDateLastClockSynchProxy(IParameterChangesObject modelElement) : 
                     base(modelElement, "DateLastClockSynch")
             {
             }
@@ -28610,14 +28610,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DateLastFirmwareActivation property
         /// </summary>
-        private sealed class DateLastFirmwareActivationProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
+        private sealed class ParameterChangesObjectDateLastFirmwareActivationProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public DateLastFirmwareActivationProxy(IParameterChangesObject modelElement) : 
+            public ParameterChangesObjectDateLastFirmwareActivationProxy(IParameterChangesObject modelElement) : 
                     base(modelElement, "DateLastFirmwareActivation")
             {
             }
@@ -28743,7 +28743,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "VALUE"))
             {
-                return new ValueProxy(this);
+                return new I_O_control_signal_objects_contentsmanufacturerspecificValueProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -28763,14 +28763,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ValueProxy : ModelPropertyChange<II_O_control_signal_objects_contentsmanufacturerspecific, string>
+        private sealed class I_O_control_signal_objects_contentsmanufacturerspecificValueProxy : ModelPropertyChange<II_O_control_signal_objects_contentsmanufacturerspecific, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ValueProxy(II_O_control_signal_objects_contentsmanufacturerspecific modelElement) : 
+            public I_O_control_signal_objects_contentsmanufacturerspecificValueProxy(II_O_control_signal_objects_contentsmanufacturerspecific modelElement) : 
                     base(modelElement, "Value")
             {
             }
@@ -29055,7 +29055,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "VALUE"))
             {
-                return new ValueProxy(this);
+                return new IOControlSignalsManufacturerValueProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -29075,14 +29075,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ValueProxy : ModelPropertyChange<IIOControlSignalsManufacturer, string>
+        private sealed class IOControlSignalsManufacturerValueProxy : ModelPropertyChange<IIOControlSignalsManufacturer, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ValueProxy(IIOControlSignalsManufacturer modelElement) : 
+            public IOControlSignalsManufacturerValueProxy(IIOControlSignalsManufacturer modelElement) : 
                     base(modelElement, "Value")
             {
             }
@@ -29364,7 +29364,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "VALUE"))
             {
-                return new ValueProxy(this);
+                return new InternalControlManuValueProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -29384,14 +29384,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ValueProxy : ModelPropertyChange<IInternalControlManu, string>
+        private sealed class InternalControlManuValueProxy : ModelPropertyChange<IInternalControlManu, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ValueProxy(IInternalControlManu modelElement) : 
+            public InternalControlManuValueProxy(IInternalControlManu modelElement) : 
                     base(modelElement, "Value")
             {
             }
@@ -29790,7 +29790,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "VALUE"))
             {
-                return new ValueProxy(this);
+                return new ErrorRegisterObjectValueProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -29810,14 +29810,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ValueProxy : ModelPropertyChange<IErrorRegisterObject, string>
+        private sealed class ErrorRegisterObjectValueProxy : ModelPropertyChange<IErrorRegisterObject, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ValueProxy(IErrorRegisterObject modelElement) : 
+            public ErrorRegisterObjectValueProxy(IErrorRegisterObject modelElement) : 
                     base(modelElement, "Value")
             {
             }
@@ -30021,7 +30021,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "VALUE"))
             {
-                return new ValueProxy(this);
+                return new AlarmRegisterObjectValueProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -30041,14 +30041,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ValueProxy : ModelPropertyChange<IAlarmRegisterObject, string>
+        private sealed class AlarmRegisterObjectValueProxy : ModelPropertyChange<IAlarmRegisterObject, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ValueProxy(IAlarmRegisterObject modelElement) : 
+            public AlarmRegisterObjectValueProxy(IAlarmRegisterObject modelElement) : 
                     base(modelElement, "Value")
             {
             }
@@ -30174,7 +30174,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "VALUE"))
             {
-                return new ValueProxy(this);
+                return new AlarmFilterObjectValueProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -30194,14 +30194,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ValueProxy : ModelPropertyChange<IAlarmFilterObject, string>
+        private sealed class AlarmFilterObjectValueProxy : ModelPropertyChange<IAlarmFilterObject, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ValueProxy(IAlarmFilterObject modelElement) : 
+            public AlarmFilterObjectValueProxy(IAlarmFilterObject modelElement) : 
                     base(modelElement, "Value")
             {
             }
@@ -30327,7 +30327,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "VALUE"))
             {
-                return new ValueProxy(this);
+                return new AlarmDescriptorObjectValueProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -30347,14 +30347,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ValueProxy : ModelPropertyChange<IAlarmDescriptorObject, string>
+        private sealed class AlarmDescriptorObjectValueProxy : ModelPropertyChange<IAlarmDescriptorObject, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ValueProxy(IAlarmDescriptorObject modelElement) : 
+            public AlarmDescriptorObjectValueProxy(IAlarmDescriptorObject modelElement) : 
                     base(modelElement, "Value")
             {
             }
@@ -30519,7 +30519,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "VALUE"))
             {
-                return new ValueProxy(this);
+                return new ElectricityIDValueProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -30539,14 +30539,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ValueProxy : ModelPropertyChange<IElectricityID, string>
+        private sealed class ElectricityIDValueProxy : ModelPropertyChange<IElectricityID, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ValueProxy(IElectricityID modelElement) : 
+            public ElectricityIDValueProxy(IElectricityID modelElement) : 
                     base(modelElement, "Value")
             {
             }
@@ -30946,31 +30946,31 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "ACTIVEFIRMWAREIDENTIFIER"))
             {
-                return new ActivefirmwareidentifierProxy(this);
+                return new ElectricityProgramEntriesActivefirmwareidentifierProxy(this);
             }
             if ((attribute == "PARAMETERRECORDNUMBER"))
             {
-                return Observable.Box(new ParameterrecordnumberProxy(this));
+                return Observable.Box(new ElectricityProgramEntriesParameterrecordnumberProxy(this));
             }
             if ((attribute == "TIMESWITCHPROGRAMNUMBER"))
             {
-                return Observable.Box(new TimeswitchprogramnumberProxy(this));
+                return Observable.Box(new ElectricityProgramEntriesTimeswitchprogramnumberProxy(this));
             }
             if ((attribute == "RCRPROGRAMNUMBER"))
             {
-                return Observable.Box(new RCRprogramnumberProxy(this));
+                return Observable.Box(new ElectricityProgramEntriesRCRprogramnumberProxy(this));
             }
             if ((attribute == "METERCONNECTIONDIAGRAMID"))
             {
-                return new MeterconnectiondiagramIDProxy(this);
+                return new ElectricityProgramEntriesMeterconnectiondiagramIDProxy(this);
             }
             if ((attribute == "PASSIVECALENDARNAME"))
             {
-                return new PassivecalendarnameProxy(this);
+                return new ElectricityProgramEntriesPassivecalendarnameProxy(this);
             }
             if ((attribute == "ACTIVEFIRMWARESIGNATURE"))
             {
-                return new ActivefirmwaresignatureProxy(this);
+                return new ElectricityProgramEntriesActivefirmwaresignatureProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -30990,14 +30990,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Activefirmwareidentifier property
         /// </summary>
-        private sealed class ActivefirmwareidentifierProxy : ModelPropertyChange<IElectricityProgramEntries, string>
+        private sealed class ElectricityProgramEntriesActivefirmwareidentifierProxy : ModelPropertyChange<IElectricityProgramEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivefirmwareidentifierProxy(IElectricityProgramEntries modelElement) : 
+            public ElectricityProgramEntriesActivefirmwareidentifierProxy(IElectricityProgramEntries modelElement) : 
                     base(modelElement, "Activefirmwareidentifier")
             {
             }
@@ -31021,14 +31021,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Parameterrecordnumber property
         /// </summary>
-        private sealed class ParameterrecordnumberProxy : ModelPropertyChange<IElectricityProgramEntries, Nullable<int>>
+        private sealed class ElectricityProgramEntriesParameterrecordnumberProxy : ModelPropertyChange<IElectricityProgramEntries, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ParameterrecordnumberProxy(IElectricityProgramEntries modelElement) : 
+            public ElectricityProgramEntriesParameterrecordnumberProxy(IElectricityProgramEntries modelElement) : 
                     base(modelElement, "Parameterrecordnumber")
             {
             }
@@ -31052,14 +31052,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Timeswitchprogramnumber property
         /// </summary>
-        private sealed class TimeswitchprogramnumberProxy : ModelPropertyChange<IElectricityProgramEntries, Nullable<int>>
+        private sealed class ElectricityProgramEntriesTimeswitchprogramnumberProxy : ModelPropertyChange<IElectricityProgramEntries, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TimeswitchprogramnumberProxy(IElectricityProgramEntries modelElement) : 
+            public ElectricityProgramEntriesTimeswitchprogramnumberProxy(IElectricityProgramEntries modelElement) : 
                     base(modelElement, "Timeswitchprogramnumber")
             {
             }
@@ -31083,14 +31083,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RCRprogramnumber property
         /// </summary>
-        private sealed class RCRprogramnumberProxy : ModelPropertyChange<IElectricityProgramEntries, Nullable<int>>
+        private sealed class ElectricityProgramEntriesRCRprogramnumberProxy : ModelPropertyChange<IElectricityProgramEntries, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public RCRprogramnumberProxy(IElectricityProgramEntries modelElement) : 
+            public ElectricityProgramEntriesRCRprogramnumberProxy(IElectricityProgramEntries modelElement) : 
                     base(modelElement, "RCRprogramnumber")
             {
             }
@@ -31114,14 +31114,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MeterconnectiondiagramID property
         /// </summary>
-        private sealed class MeterconnectiondiagramIDProxy : ModelPropertyChange<IElectricityProgramEntries, string>
+        private sealed class ElectricityProgramEntriesMeterconnectiondiagramIDProxy : ModelPropertyChange<IElectricityProgramEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public MeterconnectiondiagramIDProxy(IElectricityProgramEntries modelElement) : 
+            public ElectricityProgramEntriesMeterconnectiondiagramIDProxy(IElectricityProgramEntries modelElement) : 
                     base(modelElement, "MeterconnectiondiagramID")
             {
             }
@@ -31145,14 +31145,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Passivecalendarname property
         /// </summary>
-        private sealed class PassivecalendarnameProxy : ModelPropertyChange<IElectricityProgramEntries, string>
+        private sealed class ElectricityProgramEntriesPassivecalendarnameProxy : ModelPropertyChange<IElectricityProgramEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public PassivecalendarnameProxy(IElectricityProgramEntries modelElement) : 
+            public ElectricityProgramEntriesPassivecalendarnameProxy(IElectricityProgramEntries modelElement) : 
                     base(modelElement, "Passivecalendarname")
             {
             }
@@ -31176,14 +31176,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Activefirmwaresignature property
         /// </summary>
-        private sealed class ActivefirmwaresignatureProxy : ModelPropertyChange<IElectricityProgramEntries, string>
+        private sealed class ElectricityProgramEntriesActivefirmwaresignatureProxy : ModelPropertyChange<IElectricityProgramEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivefirmwaresignatureProxy(IElectricityProgramEntries modelElement) : 
+            public ElectricityProgramEntriesActivefirmwaresignatureProxy(IElectricityProgramEntries modelElement) : 
                     base(modelElement, "Activefirmwaresignature")
             {
             }
@@ -31721,43 +31721,43 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "ACTIVEENERGYMETROLOGICALLED"))
             {
-                return Observable.Box(new ActiveenergymetrologicalLEDProxy(this));
+                return Observable.Box(new OutputPulseValues_constantsActiveenergymetrologicalLEDProxy(this));
             }
             if ((attribute == "REACTIVEENERGYMETROLOGICALLED"))
             {
-                return Observable.Box(new ReactiveenergymetrologicalLEDProxy(this));
+                return Observable.Box(new OutputPulseValues_constantsReactiveenergymetrologicalLEDProxy(this));
             }
             if ((attribute == "APPARENTENERGYMETROLOGICALLED"))
             {
-                return Observable.Box(new ApparentenergymetrologicalLEDProxy(this));
+                return Observable.Box(new OutputPulseValues_constantsApparentenergymetrologicalLEDProxy(this));
             }
             if ((attribute == "ACTIVEENERGYOUTPUTPULSE"))
             {
-                return Observable.Box(new ActiveenergyoutputpulseProxy(this));
+                return Observable.Box(new OutputPulseValues_constantsActiveenergyoutputpulseProxy(this));
             }
             if ((attribute == "REACTIVEENERGYOUTPUTPULSE"))
             {
-                return Observable.Box(new ReactiveenergyoutputpulseProxy(this));
+                return Observable.Box(new OutputPulseValues_constantsReactiveenergyoutputpulseProxy(this));
             }
             if ((attribute == "APPARENTENERGYOUTPUTPULSE"))
             {
-                return Observable.Box(new ApparentenergyoutputpulseProxy(this));
+                return Observable.Box(new OutputPulseValues_constantsApparentenergyoutputpulseProxy(this));
             }
             if ((attribute == "VOLT_SQUAREDHOURSMETROLOGICALLED"))
             {
-                return Observable.Box(new Volt_squaredhoursmetrologicalLEDProxy(this));
+                return Observable.Box(new OutputPulseValues_constantsVolt_squaredhoursmetrologicalLEDProxy(this));
             }
             if ((attribute == "AMPERE_SQUAREDHOURSMETROLOGICALLED"))
             {
-                return Observable.Box(new Ampere_squaredhoursmetrologicalLEDProxy(this));
+                return Observable.Box(new OutputPulseValues_constantsAmpere_squaredhoursmetrologicalLEDProxy(this));
             }
             if ((attribute == "VOLT_SQUAREDHOURSOUTPUTPULSE"))
             {
-                return Observable.Box(new Volt_squaredhoursoutputpulseProxy(this));
+                return Observable.Box(new OutputPulseValues_constantsVolt_squaredhoursoutputpulseProxy(this));
             }
             if ((attribute == "AMPERE_SQUAREDHOURSOUTPUTPULSE"))
             {
-                return Observable.Box(new Ampere_squaredhoursoutputpulseProxy(this));
+                return Observable.Box(new OutputPulseValues_constantsAmpere_squaredhoursoutputpulseProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -31777,14 +31777,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActiveenergymetrologicalLED property
         /// </summary>
-        private sealed class ActiveenergymetrologicalLEDProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
+        private sealed class OutputPulseValues_constantsActiveenergymetrologicalLEDProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActiveenergymetrologicalLEDProxy(IOutputPulseValues_constants modelElement) : 
+            public OutputPulseValues_constantsActiveenergymetrologicalLEDProxy(IOutputPulseValues_constants modelElement) : 
                     base(modelElement, "ActiveenergymetrologicalLED")
             {
             }
@@ -31808,14 +31808,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactiveenergymetrologicalLED property
         /// </summary>
-        private sealed class ReactiveenergymetrologicalLEDProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
+        private sealed class OutputPulseValues_constantsReactiveenergymetrologicalLEDProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactiveenergymetrologicalLEDProxy(IOutputPulseValues_constants modelElement) : 
+            public OutputPulseValues_constantsReactiveenergymetrologicalLEDProxy(IOutputPulseValues_constants modelElement) : 
                     base(modelElement, "ReactiveenergymetrologicalLED")
             {
             }
@@ -31839,14 +31839,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ApparentenergymetrologicalLED property
         /// </summary>
-        private sealed class ApparentenergymetrologicalLEDProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
+        private sealed class OutputPulseValues_constantsApparentenergymetrologicalLEDProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ApparentenergymetrologicalLEDProxy(IOutputPulseValues_constants modelElement) : 
+            public OutputPulseValues_constantsApparentenergymetrologicalLEDProxy(IOutputPulseValues_constants modelElement) : 
                     base(modelElement, "ApparentenergymetrologicalLED")
             {
             }
@@ -31870,14 +31870,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Activeenergyoutputpulse property
         /// </summary>
-        private sealed class ActiveenergyoutputpulseProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
+        private sealed class OutputPulseValues_constantsActiveenergyoutputpulseProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActiveenergyoutputpulseProxy(IOutputPulseValues_constants modelElement) : 
+            public OutputPulseValues_constantsActiveenergyoutputpulseProxy(IOutputPulseValues_constants modelElement) : 
                     base(modelElement, "Activeenergyoutputpulse")
             {
             }
@@ -31901,14 +31901,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactiveenergyoutputpulse property
         /// </summary>
-        private sealed class ReactiveenergyoutputpulseProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
+        private sealed class OutputPulseValues_constantsReactiveenergyoutputpulseProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactiveenergyoutputpulseProxy(IOutputPulseValues_constants modelElement) : 
+            public OutputPulseValues_constantsReactiveenergyoutputpulseProxy(IOutputPulseValues_constants modelElement) : 
                     base(modelElement, "Reactiveenergyoutputpulse")
             {
             }
@@ -31932,14 +31932,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Apparentenergyoutputpulse property
         /// </summary>
-        private sealed class ApparentenergyoutputpulseProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
+        private sealed class OutputPulseValues_constantsApparentenergyoutputpulseProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ApparentenergyoutputpulseProxy(IOutputPulseValues_constants modelElement) : 
+            public OutputPulseValues_constantsApparentenergyoutputpulseProxy(IOutputPulseValues_constants modelElement) : 
                     base(modelElement, "Apparentenergyoutputpulse")
             {
             }
@@ -31963,14 +31963,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Volt_squaredhoursmetrologicalLED property
         /// </summary>
-        private sealed class Volt_squaredhoursmetrologicalLEDProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
+        private sealed class OutputPulseValues_constantsVolt_squaredhoursmetrologicalLEDProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Volt_squaredhoursmetrologicalLEDProxy(IOutputPulseValues_constants modelElement) : 
+            public OutputPulseValues_constantsVolt_squaredhoursmetrologicalLEDProxy(IOutputPulseValues_constants modelElement) : 
                     base(modelElement, "Volt_squaredhoursmetrologicalLED")
             {
             }
@@ -31994,14 +31994,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Ampere_squaredhoursmetrologicalLED property
         /// </summary>
-        private sealed class Ampere_squaredhoursmetrologicalLEDProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
+        private sealed class OutputPulseValues_constantsAmpere_squaredhoursmetrologicalLEDProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Ampere_squaredhoursmetrologicalLEDProxy(IOutputPulseValues_constants modelElement) : 
+            public OutputPulseValues_constantsAmpere_squaredhoursmetrologicalLEDProxy(IOutputPulseValues_constants modelElement) : 
                     base(modelElement, "Ampere_squaredhoursmetrologicalLED")
             {
             }
@@ -32025,14 +32025,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Volt_squaredhoursoutputpulse property
         /// </summary>
-        private sealed class Volt_squaredhoursoutputpulseProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
+        private sealed class OutputPulseValues_constantsVolt_squaredhoursoutputpulseProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Volt_squaredhoursoutputpulseProxy(IOutputPulseValues_constants modelElement) : 
+            public OutputPulseValues_constantsVolt_squaredhoursoutputpulseProxy(IOutputPulseValues_constants modelElement) : 
                     base(modelElement, "Volt_squaredhoursoutputpulse")
             {
             }
@@ -32056,14 +32056,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Ampere_squaredhoursoutputpulse property
         /// </summary>
-        private sealed class Ampere_squaredhoursoutputpulseProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
+        private sealed class OutputPulseValues_constantsAmpere_squaredhoursoutputpulseProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Ampere_squaredhoursoutputpulseProxy(IOutputPulseValues_constants modelElement) : 
+            public OutputPulseValues_constantsAmpere_squaredhoursoutputpulseProxy(IOutputPulseValues_constants modelElement) : 
                     base(modelElement, "Ampere_squaredhoursoutputpulse")
             {
             }
@@ -32509,35 +32509,35 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "READINGFACTORFORPOWER"))
             {
-                return Observable.Box(new ReadingfactorforpowerProxy(this));
+                return Observable.Box(new ReadingFactorAndCT_VTratioReadingfactorforpowerProxy(this));
             }
             if ((attribute == "READINGFACTORFORENERGY"))
             {
-                return Observable.Box(new ReadingfactorforenergyProxy(this));
+                return Observable.Box(new ReadingFactorAndCT_VTratioReadingfactorforenergyProxy(this));
             }
             if ((attribute == "TRANSFORMERRATIO_CURRENTZÄHLER"))
             {
-                return Observable.Box(new Transformerratio_currentzählerProxy(this));
+                return Observable.Box(new ReadingFactorAndCT_VTratioTransformerratio_currentzählerProxy(this));
             }
             if ((attribute == "TRANSFORMERRATIO_VOLTAGEZÄHLER"))
             {
-                return Observable.Box(new Transformerratio_voltagezählerProxy(this));
+                return Observable.Box(new ReadingFactorAndCT_VTratioTransformerratio_voltagezählerProxy(this));
             }
             if ((attribute == "OVERALLTRANSFORMERRATIOZÄHLER"))
             {
-                return Observable.Box(new OveralltransformerratiozählerProxy(this));
+                return Observable.Box(new ReadingFactorAndCT_VTratioOveralltransformerratiozählerProxy(this));
             }
             if ((attribute == "TRANSFORMERRATIO_CURRENTNENNER"))
             {
-                return Observable.Box(new Transformerratio_currentnennerProxy(this));
+                return Observable.Box(new ReadingFactorAndCT_VTratioTransformerratio_currentnennerProxy(this));
             }
             if ((attribute == "TRANSFORMERRATIO_VOLTAGENENNER"))
             {
-                return Observable.Box(new Transformerratio_voltagenennerProxy(this));
+                return Observable.Box(new ReadingFactorAndCT_VTratioTransformerratio_voltagenennerProxy(this));
             }
             if ((attribute == "OVERALLTRANSFORMER_RATIONENNER"))
             {
-                return Observable.Box(new Overalltransformer_rationennerProxy(this));
+                return Observable.Box(new ReadingFactorAndCT_VTratioOveralltransformer_rationennerProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -32557,14 +32557,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Readingfactorforpower property
         /// </summary>
-        private sealed class ReadingfactorforpowerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<double>>
+        private sealed class ReadingFactorAndCT_VTratioReadingfactorforpowerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReadingfactorforpowerProxy(IReadingFactorAndCT_VTratio modelElement) : 
+            public ReadingFactorAndCT_VTratioReadingfactorforpowerProxy(IReadingFactorAndCT_VTratio modelElement) : 
                     base(modelElement, "Readingfactorforpower")
             {
             }
@@ -32588,14 +32588,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Readingfactorforenergy property
         /// </summary>
-        private sealed class ReadingfactorforenergyProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<double>>
+        private sealed class ReadingFactorAndCT_VTratioReadingfactorforenergyProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReadingfactorforenergyProxy(IReadingFactorAndCT_VTratio modelElement) : 
+            public ReadingFactorAndCT_VTratioReadingfactorforenergyProxy(IReadingFactorAndCT_VTratio modelElement) : 
                     base(modelElement, "Readingfactorforenergy")
             {
             }
@@ -32619,14 +32619,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Transformerratio_currentzähler property
         /// </summary>
-        private sealed class Transformerratio_currentzählerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
+        private sealed class ReadingFactorAndCT_VTratioTransformerratio_currentzählerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Transformerratio_currentzählerProxy(IReadingFactorAndCT_VTratio modelElement) : 
+            public ReadingFactorAndCT_VTratioTransformerratio_currentzählerProxy(IReadingFactorAndCT_VTratio modelElement) : 
                     base(modelElement, "Transformerratio_currentzähler")
             {
             }
@@ -32650,14 +32650,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Transformerratio_voltagezähler property
         /// </summary>
-        private sealed class Transformerratio_voltagezählerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
+        private sealed class ReadingFactorAndCT_VTratioTransformerratio_voltagezählerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Transformerratio_voltagezählerProxy(IReadingFactorAndCT_VTratio modelElement) : 
+            public ReadingFactorAndCT_VTratioTransformerratio_voltagezählerProxy(IReadingFactorAndCT_VTratio modelElement) : 
                     base(modelElement, "Transformerratio_voltagezähler")
             {
             }
@@ -32681,14 +32681,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Overalltransformerratiozähler property
         /// </summary>
-        private sealed class OveralltransformerratiozählerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
+        private sealed class ReadingFactorAndCT_VTratioOveralltransformerratiozählerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public OveralltransformerratiozählerProxy(IReadingFactorAndCT_VTratio modelElement) : 
+            public ReadingFactorAndCT_VTratioOveralltransformerratiozählerProxy(IReadingFactorAndCT_VTratio modelElement) : 
                     base(modelElement, "Overalltransformerratiozähler")
             {
             }
@@ -32712,14 +32712,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Transformerratio_currentnenner property
         /// </summary>
-        private sealed class Transformerratio_currentnennerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
+        private sealed class ReadingFactorAndCT_VTratioTransformerratio_currentnennerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Transformerratio_currentnennerProxy(IReadingFactorAndCT_VTratio modelElement) : 
+            public ReadingFactorAndCT_VTratioTransformerratio_currentnennerProxy(IReadingFactorAndCT_VTratio modelElement) : 
                     base(modelElement, "Transformerratio_currentnenner")
             {
             }
@@ -32743,14 +32743,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Transformerratio_voltagenenner property
         /// </summary>
-        private sealed class Transformerratio_voltagenennerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
+        private sealed class ReadingFactorAndCT_VTratioTransformerratio_voltagenennerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Transformerratio_voltagenennerProxy(IReadingFactorAndCT_VTratio modelElement) : 
+            public ReadingFactorAndCT_VTratioTransformerratio_voltagenennerProxy(IReadingFactorAndCT_VTratio modelElement) : 
                     base(modelElement, "Transformerratio_voltagenenner")
             {
             }
@@ -32774,14 +32774,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Overalltransformer_rationenner property
         /// </summary>
-        private sealed class Overalltransformer_rationennerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
+        private sealed class ReadingFactorAndCT_VTratioOveralltransformer_rationennerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Overalltransformer_rationennerProxy(IReadingFactorAndCT_VTratio modelElement) : 
+            public ReadingFactorAndCT_VTratioOveralltransformer_rationennerProxy(IReadingFactorAndCT_VTratio modelElement) : 
                     base(modelElement, "Overalltransformer_rationenner")
             {
             }
@@ -33135,27 +33135,27 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "VOLTAGE"))
             {
-                return Observable.Box(new VoltageProxy(this));
+                return Observable.Box(new ElectricityNominalValuesVoltageProxy(this));
             }
             if ((attribute == "NOMINALCURRENT"))
             {
-                return Observable.Box(new NominalcurrentProxy(this));
+                return Observable.Box(new ElectricityNominalValuesNominalcurrentProxy(this));
             }
             if ((attribute == "FREQUENCY"))
             {
-                return Observable.Box(new FrequencyProxy(this));
+                return Observable.Box(new ElectricityNominalValuesFrequencyProxy(this));
             }
             if ((attribute == "MAXIMUMCURRENT"))
             {
-                return Observable.Box(new MaximumcurrentProxy(this));
+                return Observable.Box(new ElectricityNominalValuesMaximumcurrentProxy(this));
             }
             if ((attribute == "REFERENCE_VOLTAGE_FOR_POWER_QUALITY_MEASUREMENT"))
             {
-                return Observable.Box(new Reference_voltage_for_power_quality_measurementProxy(this));
+                return Observable.Box(new ElectricityNominalValuesReference_voltage_for_power_quality_measurementProxy(this));
             }
             if ((attribute == "REFERENCE_VOLTAGE_FOR_AUX_POWER_SUPPLY"))
             {
-                return Observable.Box(new Reference_voltage_for_aux_power_supplyProxy(this));
+                return Observable.Box(new ElectricityNominalValuesReference_voltage_for_aux_power_supplyProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -33175,14 +33175,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Voltage property
         /// </summary>
-        private sealed class VoltageProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
+        private sealed class ElectricityNominalValuesVoltageProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public VoltageProxy(IElectricityNominalValues modelElement) : 
+            public ElectricityNominalValuesVoltageProxy(IElectricityNominalValues modelElement) : 
                     base(modelElement, "Voltage")
             {
             }
@@ -33206,14 +33206,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Nominalcurrent property
         /// </summary>
-        private sealed class NominalcurrentProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
+        private sealed class ElectricityNominalValuesNominalcurrentProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public NominalcurrentProxy(IElectricityNominalValues modelElement) : 
+            public ElectricityNominalValuesNominalcurrentProxy(IElectricityNominalValues modelElement) : 
                     base(modelElement, "Nominalcurrent")
             {
             }
@@ -33237,14 +33237,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Frequency property
         /// </summary>
-        private sealed class FrequencyProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
+        private sealed class ElectricityNominalValuesFrequencyProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FrequencyProxy(IElectricityNominalValues modelElement) : 
+            public ElectricityNominalValuesFrequencyProxy(IElectricityNominalValues modelElement) : 
                     base(modelElement, "Frequency")
             {
             }
@@ -33268,14 +33268,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Maximumcurrent property
         /// </summary>
-        private sealed class MaximumcurrentProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
+        private sealed class ElectricityNominalValuesMaximumcurrentProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public MaximumcurrentProxy(IElectricityNominalValues modelElement) : 
+            public ElectricityNominalValuesMaximumcurrentProxy(IElectricityNominalValues modelElement) : 
                     base(modelElement, "Maximumcurrent")
             {
             }
@@ -33299,14 +33299,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reference_voltage_for_power_quality_measurement property
         /// </summary>
-        private sealed class Reference_voltage_for_power_quality_measurementProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
+        private sealed class ElectricityNominalValuesReference_voltage_for_power_quality_measurementProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Reference_voltage_for_power_quality_measurementProxy(IElectricityNominalValues modelElement) : 
+            public ElectricityNominalValuesReference_voltage_for_power_quality_measurementProxy(IElectricityNominalValues modelElement) : 
                     base(modelElement, "Reference_voltage_for_power_quality_measurement")
             {
             }
@@ -33330,14 +33330,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reference_voltage_for_aux_power_supply property
         /// </summary>
-        private sealed class Reference_voltage_for_aux_power_supplyProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
+        private sealed class ElectricityNominalValuesReference_voltage_for_aux_power_supplyProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Reference_voltage_for_aux_power_supplyProxy(IElectricityNominalValues modelElement) : 
+            public ElectricityNominalValuesReference_voltage_for_aux_power_supplyProxy(IElectricityNominalValues modelElement) : 
                     base(modelElement, "Reference_voltage_for_aux_power_supply")
             {
             }
@@ -33829,39 +33829,39 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "ACTIVEENERGY"))
             {
-                return Observable.Box(new ActiveEnergyProxy(this));
+                return Observable.Box(new InputPulseValuesOrConstantsActiveEnergyProxy(this));
             }
             if ((attribute == "REACTIVE_ENERGY"))
             {
-                return Observable.Box(new Reactive_energyProxy(this));
+                return Observable.Box(new InputPulseValuesOrConstantsReactive_energyProxy(this));
             }
             if ((attribute == "APPARENT_ENERGY"))
             {
-                return Observable.Box(new Apparent_energyProxy(this));
+                return Observable.Box(new InputPulseValuesOrConstantsApparent_energyProxy(this));
             }
             if ((attribute == "VOLT_SQUARED_HOURS"))
             {
-                return Observable.Box(new Volt_squared_hoursProxy(this));
+                return Observable.Box(new InputPulseValuesOrConstantsVolt_squared_hoursProxy(this));
             }
             if ((attribute == "AMPERE_SQUARED_HOURS"))
             {
-                return Observable.Box(new Ampere_squared_hoursProxy(this));
+                return Observable.Box(new InputPulseValuesOrConstantsAmpere_squared_hoursProxy(this));
             }
             if ((attribute == "UNITLESS_QUANTITIES"))
             {
-                return Observable.Box(new Unitless_quantitiesProxy(this));
+                return Observable.Box(new InputPulseValuesOrConstantsUnitless_quantitiesProxy(this));
             }
             if ((attribute == "ACTIVE_ENERGY_EXPORT"))
             {
-                return Observable.Box(new Active_energy_exportProxy(this));
+                return Observable.Box(new InputPulseValuesOrConstantsActive_energy_exportProxy(this));
             }
             if ((attribute == "REACTIVE_ENERGY_EXPORT"))
             {
-                return Observable.Box(new Reactive_energy_exportProxy(this));
+                return Observable.Box(new InputPulseValuesOrConstantsReactive_energy_exportProxy(this));
             }
             if ((attribute == "APPARENT_ENERGY_EXPORT"))
             {
-                return Observable.Box(new Apparent_energy_exportProxy(this));
+                return Observable.Box(new InputPulseValuesOrConstantsApparent_energy_exportProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -33881,14 +33881,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActiveEnergy property
         /// </summary>
-        private sealed class ActiveEnergyProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
+        private sealed class InputPulseValuesOrConstantsActiveEnergyProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActiveEnergyProxy(IInputPulseValuesOrConstants modelElement) : 
+            public InputPulseValuesOrConstantsActiveEnergyProxy(IInputPulseValuesOrConstants modelElement) : 
                     base(modelElement, "ActiveEnergy")
             {
             }
@@ -33912,14 +33912,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_energy property
         /// </summary>
-        private sealed class Reactive_energyProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
+        private sealed class InputPulseValuesOrConstantsReactive_energyProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Reactive_energyProxy(IInputPulseValuesOrConstants modelElement) : 
+            public InputPulseValuesOrConstantsReactive_energyProxy(IInputPulseValuesOrConstants modelElement) : 
                     base(modelElement, "Reactive_energy")
             {
             }
@@ -33943,14 +33943,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Apparent_energy property
         /// </summary>
-        private sealed class Apparent_energyProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
+        private sealed class InputPulseValuesOrConstantsApparent_energyProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Apparent_energyProxy(IInputPulseValuesOrConstants modelElement) : 
+            public InputPulseValuesOrConstantsApparent_energyProxy(IInputPulseValuesOrConstants modelElement) : 
                     base(modelElement, "Apparent_energy")
             {
             }
@@ -33974,14 +33974,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Volt_squared_hours property
         /// </summary>
-        private sealed class Volt_squared_hoursProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
+        private sealed class InputPulseValuesOrConstantsVolt_squared_hoursProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Volt_squared_hoursProxy(IInputPulseValuesOrConstants modelElement) : 
+            public InputPulseValuesOrConstantsVolt_squared_hoursProxy(IInputPulseValuesOrConstants modelElement) : 
                     base(modelElement, "Volt_squared_hours")
             {
             }
@@ -34005,14 +34005,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Ampere_squared_hours property
         /// </summary>
-        private sealed class Ampere_squared_hoursProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
+        private sealed class InputPulseValuesOrConstantsAmpere_squared_hoursProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Ampere_squared_hoursProxy(IInputPulseValuesOrConstants modelElement) : 
+            public InputPulseValuesOrConstantsAmpere_squared_hoursProxy(IInputPulseValuesOrConstants modelElement) : 
                     base(modelElement, "Ampere_squared_hours")
             {
             }
@@ -34036,14 +34036,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Unitless_quantities property
         /// </summary>
-        private sealed class Unitless_quantitiesProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
+        private sealed class InputPulseValuesOrConstantsUnitless_quantitiesProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Unitless_quantitiesProxy(IInputPulseValuesOrConstants modelElement) : 
+            public InputPulseValuesOrConstantsUnitless_quantitiesProxy(IInputPulseValuesOrConstants modelElement) : 
                     base(modelElement, "Unitless_quantities")
             {
             }
@@ -34067,14 +34067,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Active_energy_export property
         /// </summary>
-        private sealed class Active_energy_exportProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
+        private sealed class InputPulseValuesOrConstantsActive_energy_exportProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Active_energy_exportProxy(IInputPulseValuesOrConstants modelElement) : 
+            public InputPulseValuesOrConstantsActive_energy_exportProxy(IInputPulseValuesOrConstants modelElement) : 
                     base(modelElement, "Active_energy_export")
             {
             }
@@ -34098,14 +34098,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_energy_export property
         /// </summary>
-        private sealed class Reactive_energy_exportProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
+        private sealed class InputPulseValuesOrConstantsReactive_energy_exportProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Reactive_energy_exportProxy(IInputPulseValuesOrConstants modelElement) : 
+            public InputPulseValuesOrConstantsReactive_energy_exportProxy(IInputPulseValuesOrConstants modelElement) : 
                     base(modelElement, "Reactive_energy_export")
             {
             }
@@ -34129,14 +34129,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Apparent_energy_export property
         /// </summary>
-        private sealed class Apparent_energy_exportProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
+        private sealed class InputPulseValuesOrConstantsApparent_energy_exportProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Apparent_energy_exportProxy(IInputPulseValuesOrConstants modelElement) : 
+            public InputPulseValuesOrConstantsApparent_energy_exportProxy(IInputPulseValuesOrConstants modelElement) : 
                     base(modelElement, "Apparent_energy_export")
             {
             }
@@ -34538,31 +34538,31 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "MEASUREMENT_PERIOD_1_FOR_AVERAGING_SCHEME_1"))
             {
-                return new Measurement_period_1_for_averaging_scheme_1Proxy(this);
+                return new MeasurementPeriod_recordingInterval_billingPeriodDurationMeasurement_period_1_for_averaging_scheme_1Proxy(this);
             }
             if ((attribute == "MEASUREMENT_PERIOD_2_FOR_AVERAGINGSCHEME_2"))
             {
-                return new Measurement_period_2_for_averagingscheme_2Proxy(this);
+                return new MeasurementPeriod_recordingInterval_billingPeriodDurationMeasurement_period_2_for_averagingscheme_2Proxy(this);
             }
             if ((attribute == "MEASUREMENT_PERIOD_3_FOR_INSTANTANEOUS_VALUE"))
             {
-                return new Measurement_period_3_for_instantaneous_valueProxy(this);
+                return new MeasurementPeriod_recordingInterval_billingPeriodDurationMeasurement_period_3_for_instantaneous_valueProxy(this);
             }
             if ((attribute == "MEASUREMENT_PERIOD_4_FOR_TEST_VALUE"))
             {
-                return new Measurement_period_4_for_test_valueProxy(this);
+                return new MeasurementPeriod_recordingInterval_billingPeriodDurationMeasurement_period_4_for_test_valueProxy(this);
             }
             if ((attribute == "RECORDING_INTERVAL_1_FOR_LOADPROFILE"))
             {
-                return new Recording_interval_1_for_loadprofileProxy(this);
+                return new MeasurementPeriod_recordingInterval_billingPeriodDurationRecording_interval_1_for_loadprofileProxy(this);
             }
             if ((attribute == "RECORDING_INTERVAL_2_FOR_LOADPROFILE"))
             {
-                return new Recording_interval_2_for_loadprofileProxy(this);
+                return new MeasurementPeriod_recordingInterval_billingPeriodDurationRecording_interval_2_for_loadprofileProxy(this);
             }
             if ((attribute == "BILLINGPERIOD"))
             {
-                return new BillingperiodProxy(this);
+                return new MeasurementPeriod_recordingInterval_billingPeriodDurationBillingperiodProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -34583,14 +34583,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Measurement_period_1_for_averaging_scheme_1 property
         /// </summary>
-        private sealed class Measurement_period_1_for_averaging_scheme_1Proxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
+        private sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationMeasurement_period_1_for_averaging_scheme_1Proxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Measurement_period_1_for_averaging_scheme_1Proxy(IMeasurementPeriod_recordingInterval_billingPeriodDuration modelElement) : 
+            public MeasurementPeriod_recordingInterval_billingPeriodDurationMeasurement_period_1_for_averaging_scheme_1Proxy(IMeasurementPeriod_recordingInterval_billingPeriodDuration modelElement) : 
                     base(modelElement, "Measurement_period_1_for_averaging_scheme_1")
             {
             }
@@ -34614,14 +34614,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Measurement_period_2_for_averagingscheme_2 property
         /// </summary>
-        private sealed class Measurement_period_2_for_averagingscheme_2Proxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
+        private sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationMeasurement_period_2_for_averagingscheme_2Proxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Measurement_period_2_for_averagingscheme_2Proxy(IMeasurementPeriod_recordingInterval_billingPeriodDuration modelElement) : 
+            public MeasurementPeriod_recordingInterval_billingPeriodDurationMeasurement_period_2_for_averagingscheme_2Proxy(IMeasurementPeriod_recordingInterval_billingPeriodDuration modelElement) : 
                     base(modelElement, "Measurement_period_2_for_averagingscheme_2")
             {
             }
@@ -34645,14 +34645,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Measurement_period_3_for_instantaneous_value property
         /// </summary>
-        private sealed class Measurement_period_3_for_instantaneous_valueProxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
+        private sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationMeasurement_period_3_for_instantaneous_valueProxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Measurement_period_3_for_instantaneous_valueProxy(IMeasurementPeriod_recordingInterval_billingPeriodDuration modelElement) : 
+            public MeasurementPeriod_recordingInterval_billingPeriodDurationMeasurement_period_3_for_instantaneous_valueProxy(IMeasurementPeriod_recordingInterval_billingPeriodDuration modelElement) : 
                     base(modelElement, "Measurement_period_3_for_instantaneous_value")
             {
             }
@@ -34676,14 +34676,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Measurement_period_4_for_test_value property
         /// </summary>
-        private sealed class Measurement_period_4_for_test_valueProxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
+        private sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationMeasurement_period_4_for_test_valueProxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Measurement_period_4_for_test_valueProxy(IMeasurementPeriod_recordingInterval_billingPeriodDuration modelElement) : 
+            public MeasurementPeriod_recordingInterval_billingPeriodDurationMeasurement_period_4_for_test_valueProxy(IMeasurementPeriod_recordingInterval_billingPeriodDuration modelElement) : 
                     base(modelElement, "Measurement_period_4_for_test_value")
             {
             }
@@ -34707,14 +34707,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Recording_interval_1_for_loadprofile property
         /// </summary>
-        private sealed class Recording_interval_1_for_loadprofileProxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
+        private sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationRecording_interval_1_for_loadprofileProxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Recording_interval_1_for_loadprofileProxy(IMeasurementPeriod_recordingInterval_billingPeriodDuration modelElement) : 
+            public MeasurementPeriod_recordingInterval_billingPeriodDurationRecording_interval_1_for_loadprofileProxy(IMeasurementPeriod_recordingInterval_billingPeriodDuration modelElement) : 
                     base(modelElement, "Recording_interval_1_for_loadprofile")
             {
             }
@@ -34738,14 +34738,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Recording_interval_2_for_loadprofile property
         /// </summary>
-        private sealed class Recording_interval_2_for_loadprofileProxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
+        private sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationRecording_interval_2_for_loadprofileProxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Recording_interval_2_for_loadprofileProxy(IMeasurementPeriod_recordingInterval_billingPeriodDuration modelElement) : 
+            public MeasurementPeriod_recordingInterval_billingPeriodDurationRecording_interval_2_for_loadprofileProxy(IMeasurementPeriod_recordingInterval_billingPeriodDuration modelElement) : 
                     base(modelElement, "Recording_interval_2_for_loadprofile")
             {
             }
@@ -34769,14 +34769,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Billingperiod property
         /// </summary>
-        private sealed class BillingperiodProxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
+        private sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationBillingperiodProxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public BillingperiodProxy(IMeasurementPeriod_recordingInterval_billingPeriodDuration modelElement) : 
+            public MeasurementPeriod_recordingInterval_billingPeriodDurationBillingperiodProxy(IMeasurementPeriod_recordingInterval_billingPeriodDuration modelElement) : 
                     base(modelElement, "Billingperiod")
             {
             }
@@ -35360,47 +35360,47 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "TIME_EXPIRED_SINCE_LAST_END_OF_BILLING_PERIOD"))
             {
-                return new Time_expired_since_last_end_of_billing_periodProxy(this);
+                return new ElectricityTimeEntriesTime_expired_since_last_end_of_billing_periodProxy(this);
             }
             if ((attribute == "LOCALTIME"))
             {
-                return new LocaltimeProxy(this);
+                return new ElectricityTimeEntriesLocaltimeProxy(this);
             }
             if ((attribute == "LOCALDATE"))
             {
-                return new LocaldateProxy(this);
+                return new ElectricityTimeEntriesLocaldateProxy(this);
             }
             if ((attribute == "WEEKDAY"))
             {
-                return new WeekdayProxy(this);
+                return new ElectricityTimeEntriesWeekdayProxy(this);
             }
             if ((attribute == "TIMEOFLASTRESET"))
             {
-                return new TimeoflastresetProxy(this);
+                return new ElectricityTimeEntriesTimeoflastresetProxy(this);
             }
             if ((attribute == "DATEOFLASTRESET"))
             {
-                return new DateoflastresetProxy(this);
+                return new ElectricityTimeEntriesDateoflastresetProxy(this);
             }
             if ((attribute == "OUTPUTPULSEDURATION"))
             {
-                return new OutputpulsedurationProxy(this);
+                return new ElectricityTimeEntriesOutputpulsedurationProxy(this);
             }
             if ((attribute == "CLOCKSYNCHRONIZATIONWINDOW"))
             {
-                return new ClocksynchronizationwindowProxy(this);
+                return new ElectricityTimeEntriesClocksynchronizationwindowProxy(this);
             }
             if ((attribute == "CLOCK_SYNCHRONIZATION_METHOD"))
             {
-                return new Clock_synchronization_methodProxy(this);
+                return new ElectricityTimeEntriesClock_synchronization_methodProxy(this);
             }
             if ((attribute == "CLOCK_TIME_SHIFT_LIMIT"))
             {
-                return new Clock_time_shift_limitProxy(this);
+                return new ElectricityTimeEntriesClock_time_shift_limitProxy(this);
             }
             if ((attribute == "BILLING_PERIOD_RESET_LOCKOUT_TIME"))
             {
-                return new Billing_period_reset_lockout_timeProxy(this);
+                return new ElectricityTimeEntriesBilling_period_reset_lockout_timeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -35420,14 +35420,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Time_expired_since_last_end_of_billing_period property
         /// </summary>
-        private sealed class Time_expired_since_last_end_of_billing_periodProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        private sealed class ElectricityTimeEntriesTime_expired_since_last_end_of_billing_periodProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Time_expired_since_last_end_of_billing_periodProxy(IElectricityTimeEntries modelElement) : 
+            public ElectricityTimeEntriesTime_expired_since_last_end_of_billing_periodProxy(IElectricityTimeEntries modelElement) : 
                     base(modelElement, "Time_expired_since_last_end_of_billing_period")
             {
             }
@@ -35451,14 +35451,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Localtime property
         /// </summary>
-        private sealed class LocaltimeProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        private sealed class ElectricityTimeEntriesLocaltimeProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public LocaltimeProxy(IElectricityTimeEntries modelElement) : 
+            public ElectricityTimeEntriesLocaltimeProxy(IElectricityTimeEntries modelElement) : 
                     base(modelElement, "Localtime")
             {
             }
@@ -35482,14 +35482,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Localdate property
         /// </summary>
-        private sealed class LocaldateProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        private sealed class ElectricityTimeEntriesLocaldateProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public LocaldateProxy(IElectricityTimeEntries modelElement) : 
+            public ElectricityTimeEntriesLocaldateProxy(IElectricityTimeEntries modelElement) : 
                     base(modelElement, "Localdate")
             {
             }
@@ -35513,14 +35513,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Weekday property
         /// </summary>
-        private sealed class WeekdayProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        private sealed class ElectricityTimeEntriesWeekdayProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public WeekdayProxy(IElectricityTimeEntries modelElement) : 
+            public ElectricityTimeEntriesWeekdayProxy(IElectricityTimeEntries modelElement) : 
                     base(modelElement, "Weekday")
             {
             }
@@ -35544,14 +35544,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Timeoflastreset property
         /// </summary>
-        private sealed class TimeoflastresetProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        private sealed class ElectricityTimeEntriesTimeoflastresetProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TimeoflastresetProxy(IElectricityTimeEntries modelElement) : 
+            public ElectricityTimeEntriesTimeoflastresetProxy(IElectricityTimeEntries modelElement) : 
                     base(modelElement, "Timeoflastreset")
             {
             }
@@ -35575,14 +35575,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Dateoflastreset property
         /// </summary>
-        private sealed class DateoflastresetProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        private sealed class ElectricityTimeEntriesDateoflastresetProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public DateoflastresetProxy(IElectricityTimeEntries modelElement) : 
+            public ElectricityTimeEntriesDateoflastresetProxy(IElectricityTimeEntries modelElement) : 
                     base(modelElement, "Dateoflastreset")
             {
             }
@@ -35606,14 +35606,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Outputpulseduration property
         /// </summary>
-        private sealed class OutputpulsedurationProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        private sealed class ElectricityTimeEntriesOutputpulsedurationProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public OutputpulsedurationProxy(IElectricityTimeEntries modelElement) : 
+            public ElectricityTimeEntriesOutputpulsedurationProxy(IElectricityTimeEntries modelElement) : 
                     base(modelElement, "Outputpulseduration")
             {
             }
@@ -35637,14 +35637,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Clocksynchronizationwindow property
         /// </summary>
-        private sealed class ClocksynchronizationwindowProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        private sealed class ElectricityTimeEntriesClocksynchronizationwindowProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ClocksynchronizationwindowProxy(IElectricityTimeEntries modelElement) : 
+            public ElectricityTimeEntriesClocksynchronizationwindowProxy(IElectricityTimeEntries modelElement) : 
                     base(modelElement, "Clocksynchronizationwindow")
             {
             }
@@ -35668,14 +35668,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Clock_synchronization_method property
         /// </summary>
-        private sealed class Clock_synchronization_methodProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        private sealed class ElectricityTimeEntriesClock_synchronization_methodProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Clock_synchronization_methodProxy(IElectricityTimeEntries modelElement) : 
+            public ElectricityTimeEntriesClock_synchronization_methodProxy(IElectricityTimeEntries modelElement) : 
                     base(modelElement, "Clock_synchronization_method")
             {
             }
@@ -35699,14 +35699,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Clock_time_shift_limit property
         /// </summary>
-        private sealed class Clock_time_shift_limitProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        private sealed class ElectricityTimeEntriesClock_time_shift_limitProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Clock_time_shift_limitProxy(IElectricityTimeEntries modelElement) : 
+            public ElectricityTimeEntriesClock_time_shift_limitProxy(IElectricityTimeEntries modelElement) : 
                     base(modelElement, "Clock_time_shift_limit")
             {
             }
@@ -35730,14 +35730,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Billing_period_reset_lockout_time property
         /// </summary>
-        private sealed class Billing_period_reset_lockout_timeProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        private sealed class ElectricityTimeEntriesBilling_period_reset_lockout_timeProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Billing_period_reset_lockout_timeProxy(IElectricityTimeEntries modelElement) : 
+            public ElectricityTimeEntriesBilling_period_reset_lockout_timeProxy(IElectricityTimeEntries modelElement) : 
                     base(modelElement, "Billing_period_reset_lockout_time")
             {
             }
@@ -35999,19 +35999,19 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "TRANSFORMER_MAGNETIC_LOSSES"))
             {
-                return Observable.Box(new Transformer_magnetic_lossesProxy(this));
+                return Observable.Box(new CoefficientsTransformer_magnetic_lossesProxy(this));
             }
             if ((attribute == "TRANSFORMER_IRON_LOSSES"))
             {
-                return Observable.Box(new Transformer_iron_lossesProxy(this));
+                return Observable.Box(new CoefficientsTransformer_iron_lossesProxy(this));
             }
             if ((attribute == "LINE_RESISTANCE_LOSSES"))
             {
-                return Observable.Box(new Line_resistance_lossesProxy(this));
+                return Observable.Box(new CoefficientsLine_resistance_lossesProxy(this));
             }
             if ((attribute == "LINE_REACTANCE_LOSSES"))
             {
-                return Observable.Box(new Line_reactance_lossesProxy(this));
+                return Observable.Box(new CoefficientsLine_reactance_lossesProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -36031,14 +36031,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Transformer_magnetic_losses property
         /// </summary>
-        private sealed class Transformer_magnetic_lossesProxy : ModelPropertyChange<ICoefficients, Nullable<double>>
+        private sealed class CoefficientsTransformer_magnetic_lossesProxy : ModelPropertyChange<ICoefficients, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Transformer_magnetic_lossesProxy(ICoefficients modelElement) : 
+            public CoefficientsTransformer_magnetic_lossesProxy(ICoefficients modelElement) : 
                     base(modelElement, "Transformer_magnetic_losses")
             {
             }
@@ -36062,14 +36062,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Transformer_iron_losses property
         /// </summary>
-        private sealed class Transformer_iron_lossesProxy : ModelPropertyChange<ICoefficients, Nullable<double>>
+        private sealed class CoefficientsTransformer_iron_lossesProxy : ModelPropertyChange<ICoefficients, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Transformer_iron_lossesProxy(ICoefficients modelElement) : 
+            public CoefficientsTransformer_iron_lossesProxy(ICoefficients modelElement) : 
                     base(modelElement, "Transformer_iron_losses")
             {
             }
@@ -36093,14 +36093,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Line_resistance_losses property
         /// </summary>
-        private sealed class Line_resistance_lossesProxy : ModelPropertyChange<ICoefficients, Nullable<double>>
+        private sealed class CoefficientsLine_resistance_lossesProxy : ModelPropertyChange<ICoefficients, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Line_resistance_lossesProxy(ICoefficients modelElement) : 
+            public CoefficientsLine_resistance_lossesProxy(ICoefficients modelElement) : 
                     base(modelElement, "Line_resistance_losses")
             {
             }
@@ -36124,14 +36124,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Line_reactance_losses property
         /// </summary>
-        private sealed class Line_reactance_lossesProxy : ModelPropertyChange<ICoefficients, Nullable<double>>
+        private sealed class CoefficientsLine_reactance_lossesProxy : ModelPropertyChange<ICoefficients, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Line_reactance_lossesProxy(ICoefficients modelElement) : 
+            public CoefficientsLine_reactance_lossesProxy(ICoefficients modelElement) : 
                     base(modelElement, "Line_reactance_losses")
             {
             }
@@ -36531,31 +36531,31 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "ALGORITHM_FOR_ACTIVE_POWER_MEASUREMENT"))
             {
-                return new Algorithm_for_active_power_measurementProxy(this);
+                return new MeasurementMethodsAlgorithm_for_active_power_measurementProxy(this);
             }
             if ((attribute == "ALGORITHM_FOR_ACTIVE_ENERGY_MANAGEMENT"))
             {
-                return new Algorithm_for_active_energy_managementProxy(this);
+                return new MeasurementMethodsAlgorithm_for_active_energy_managementProxy(this);
             }
             if ((attribute == "ALGORITHM_FOR_REACTIVE_POWER_MEASUREMENT"))
             {
-                return new Algorithm_for_reactive_power_measurementProxy(this);
+                return new MeasurementMethodsAlgorithm_for_reactive_power_measurementProxy(this);
             }
             if ((attribute == "ALGORITHM_FOR_REACTIVE_ENERGY_MEASUREMENT"))
             {
-                return new Algorithm_for_reactive_energy_measurementProxy(this);
+                return new MeasurementMethodsAlgorithm_for_reactive_energy_measurementProxy(this);
             }
             if ((attribute == "ALGORITHM_FOR_APPARENT_POWER_MEASUREMENT"))
             {
-                return new Algorithm_for_apparent_power_measurementProxy(this);
+                return new MeasurementMethodsAlgorithm_for_apparent_power_measurementProxy(this);
             }
             if ((attribute == "ALGORITHM_FOR_APPARENT_ENERGY_MEASUREMENT"))
             {
-                return new Algorithm_for_apparent_energy_measurementProxy(this);
+                return new MeasurementMethodsAlgorithm_for_apparent_energy_measurementProxy(this);
             }
             if ((attribute == "ALGORITHM_FOR_POWER_FACTOR_CALCULATION"))
             {
-                return new Algorithm_for_power_factor_calculationProxy(this);
+                return new MeasurementMethodsAlgorithm_for_power_factor_calculationProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -36575,14 +36575,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Algorithm_for_active_power_measurement property
         /// </summary>
-        private sealed class Algorithm_for_active_power_measurementProxy : ModelPropertyChange<IMeasurementMethods, string>
+        private sealed class MeasurementMethodsAlgorithm_for_active_power_measurementProxy : ModelPropertyChange<IMeasurementMethods, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Algorithm_for_active_power_measurementProxy(IMeasurementMethods modelElement) : 
+            public MeasurementMethodsAlgorithm_for_active_power_measurementProxy(IMeasurementMethods modelElement) : 
                     base(modelElement, "Algorithm_for_active_power_measurement")
             {
             }
@@ -36606,14 +36606,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Algorithm_for_active_energy_management property
         /// </summary>
-        private sealed class Algorithm_for_active_energy_managementProxy : ModelPropertyChange<IMeasurementMethods, string>
+        private sealed class MeasurementMethodsAlgorithm_for_active_energy_managementProxy : ModelPropertyChange<IMeasurementMethods, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Algorithm_for_active_energy_managementProxy(IMeasurementMethods modelElement) : 
+            public MeasurementMethodsAlgorithm_for_active_energy_managementProxy(IMeasurementMethods modelElement) : 
                     base(modelElement, "Algorithm_for_active_energy_management")
             {
             }
@@ -36637,14 +36637,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Algorithm_for_reactive_power_measurement property
         /// </summary>
-        private sealed class Algorithm_for_reactive_power_measurementProxy : ModelPropertyChange<IMeasurementMethods, string>
+        private sealed class MeasurementMethodsAlgorithm_for_reactive_power_measurementProxy : ModelPropertyChange<IMeasurementMethods, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Algorithm_for_reactive_power_measurementProxy(IMeasurementMethods modelElement) : 
+            public MeasurementMethodsAlgorithm_for_reactive_power_measurementProxy(IMeasurementMethods modelElement) : 
                     base(modelElement, "Algorithm_for_reactive_power_measurement")
             {
             }
@@ -36668,14 +36668,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Algorithm_for_reactive_energy_measurement property
         /// </summary>
-        private sealed class Algorithm_for_reactive_energy_measurementProxy : ModelPropertyChange<IMeasurementMethods, string>
+        private sealed class MeasurementMethodsAlgorithm_for_reactive_energy_measurementProxy : ModelPropertyChange<IMeasurementMethods, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Algorithm_for_reactive_energy_measurementProxy(IMeasurementMethods modelElement) : 
+            public MeasurementMethodsAlgorithm_for_reactive_energy_measurementProxy(IMeasurementMethods modelElement) : 
                     base(modelElement, "Algorithm_for_reactive_energy_measurement")
             {
             }
@@ -36699,14 +36699,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Algorithm_for_apparent_power_measurement property
         /// </summary>
-        private sealed class Algorithm_for_apparent_power_measurementProxy : ModelPropertyChange<IMeasurementMethods, string>
+        private sealed class MeasurementMethodsAlgorithm_for_apparent_power_measurementProxy : ModelPropertyChange<IMeasurementMethods, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Algorithm_for_apparent_power_measurementProxy(IMeasurementMethods modelElement) : 
+            public MeasurementMethodsAlgorithm_for_apparent_power_measurementProxy(IMeasurementMethods modelElement) : 
                     base(modelElement, "Algorithm_for_apparent_power_measurement")
             {
             }
@@ -36730,14 +36730,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Algorithm_for_apparent_energy_measurement property
         /// </summary>
-        private sealed class Algorithm_for_apparent_energy_measurementProxy : ModelPropertyChange<IMeasurementMethods, string>
+        private sealed class MeasurementMethodsAlgorithm_for_apparent_energy_measurementProxy : ModelPropertyChange<IMeasurementMethods, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Algorithm_for_apparent_energy_measurementProxy(IMeasurementMethods modelElement) : 
+            public MeasurementMethodsAlgorithm_for_apparent_energy_measurementProxy(IMeasurementMethods modelElement) : 
                     base(modelElement, "Algorithm_for_apparent_energy_measurement")
             {
             }
@@ -36761,14 +36761,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Algorithm_for_power_factor_calculation property
         /// </summary>
-        private sealed class Algorithm_for_power_factor_calculationProxy : ModelPropertyChange<IMeasurementMethods, string>
+        private sealed class MeasurementMethodsAlgorithm_for_power_factor_calculationProxy : ModelPropertyChange<IMeasurementMethods, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Algorithm_for_power_factor_calculationProxy(IMeasurementMethods modelElement) : 
+            public MeasurementMethodsAlgorithm_for_power_factor_calculationProxy(IMeasurementMethods modelElement) : 
                     base(modelElement, "Algorithm_for_power_factor_calculation")
             {
             }
@@ -36894,7 +36894,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "VALUE"))
             {
-                return new ValueProxy(this);
+                return new ElectricityMeteringPointIDValueProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -36914,14 +36914,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ValueProxy : ModelPropertyChange<IElectricityMeteringPointID, string>
+        private sealed class ElectricityMeteringPointIDValueProxy : ModelPropertyChange<IElectricityMeteringPointID, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ValueProxy(IElectricityMeteringPointID modelElement) : 
+            public ElectricityMeteringPointIDValueProxy(IElectricityMeteringPointID modelElement) : 
                     base(modelElement, "Value")
             {
             }
@@ -37183,19 +37183,19 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "STATUS_INFORMATION_MISSING_VOLTAGE"))
             {
-                return new Status_information_missing_voltageProxy(this);
+                return new ElectricityRelatedStatusDataStatus_information_missing_voltageProxy(this);
             }
             if ((attribute == "STATUS_INFORMATION_MISSING_CURRENT"))
             {
-                return new Status_information_missing_currentProxy(this);
+                return new ElectricityRelatedStatusDataStatus_information_missing_currentProxy(this);
             }
             if ((attribute == "STATUS_INFORMATION_CURRENT_WITHOUT_VOLTAGE"))
             {
-                return new Status_information_current_without_voltageProxy(this);
+                return new ElectricityRelatedStatusDataStatus_information_current_without_voltageProxy(this);
             }
             if ((attribute == "STATUS_INFORMATION_AUXILIARY_POWER_SUPPLY"))
             {
-                return new Status_information_auxiliary_power_supplyProxy(this);
+                return new ElectricityRelatedStatusDataStatus_information_auxiliary_power_supplyProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -37215,14 +37215,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Status_information_missing_voltage property
         /// </summary>
-        private sealed class Status_information_missing_voltageProxy : ModelPropertyChange<IElectricityRelatedStatusData, string>
+        private sealed class ElectricityRelatedStatusDataStatus_information_missing_voltageProxy : ModelPropertyChange<IElectricityRelatedStatusData, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Status_information_missing_voltageProxy(IElectricityRelatedStatusData modelElement) : 
+            public ElectricityRelatedStatusDataStatus_information_missing_voltageProxy(IElectricityRelatedStatusData modelElement) : 
                     base(modelElement, "Status_information_missing_voltage")
             {
             }
@@ -37246,14 +37246,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Status_information_missing_current property
         /// </summary>
-        private sealed class Status_information_missing_currentProxy : ModelPropertyChange<IElectricityRelatedStatusData, string>
+        private sealed class ElectricityRelatedStatusDataStatus_information_missing_currentProxy : ModelPropertyChange<IElectricityRelatedStatusData, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Status_information_missing_currentProxy(IElectricityRelatedStatusData modelElement) : 
+            public ElectricityRelatedStatusDataStatus_information_missing_currentProxy(IElectricityRelatedStatusData modelElement) : 
                     base(modelElement, "Status_information_missing_current")
             {
             }
@@ -37277,14 +37277,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Status_information_current_without_voltage property
         /// </summary>
-        private sealed class Status_information_current_without_voltageProxy : ModelPropertyChange<IElectricityRelatedStatusData, string>
+        private sealed class ElectricityRelatedStatusDataStatus_information_current_without_voltageProxy : ModelPropertyChange<IElectricityRelatedStatusData, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Status_information_current_without_voltageProxy(IElectricityRelatedStatusData modelElement) : 
+            public ElectricityRelatedStatusDataStatus_information_current_without_voltageProxy(IElectricityRelatedStatusData modelElement) : 
                     base(modelElement, "Status_information_current_without_voltage")
             {
             }
@@ -37308,14 +37308,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Status_information_auxiliary_power_supply property
         /// </summary>
-        private sealed class Status_information_auxiliary_power_supplyProxy : ModelPropertyChange<IElectricityRelatedStatusData, string>
+        private sealed class ElectricityRelatedStatusDataStatus_information_auxiliary_power_supplyProxy : ModelPropertyChange<IElectricityRelatedStatusData, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Status_information_auxiliary_power_supplyProxy(IElectricityRelatedStatusData modelElement) : 
+            public ElectricityRelatedStatusDataStatus_information_auxiliary_power_supplyProxy(IElectricityRelatedStatusData modelElement) : 
                     base(modelElement, "Status_information_auxiliary_power_supply")
             {
             }
@@ -37846,39 +37846,39 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "BATTERY_USE_TIME_COUNTER"))
             {
-                return Observable.Box(new Battery_use_time_counterProxy(this));
+                return Observable.Box(new BatteryEntriesBattery_use_time_counterProxy(this));
             }
             if ((attribute == "BATTERY_CHARGE_DISPLAY"))
             {
-                return new Battery_charge_displayProxy(this);
+                return new BatteryEntriesBattery_charge_displayProxy(this);
             }
             if ((attribute == "DATE_OF_NEXT_BATTERY_CHANGE"))
             {
-                return new Date_of_next_battery_changeProxy(this);
+                return new BatteryEntriesDate_of_next_battery_changeProxy(this);
             }
             if ((attribute == "BATTERY_VOLTAGE"))
             {
-                return Observable.Box(new Battery_voltageProxy(this));
+                return Observable.Box(new BatteryEntriesBattery_voltageProxy(this));
             }
             if ((attribute == "BATTERY_INITIAL_CAPACITY"))
             {
-                return Observable.Box(new Battery_initial_capacityProxy(this));
+                return Observable.Box(new BatteryEntriesBattery_initial_capacityProxy(this));
             }
             if ((attribute == "BATTERY_INSTALLATION_DATE_AND_TIME"))
             {
-                return new Battery_installation_date_and_timeProxy(this);
+                return new BatteryEntriesBattery_installation_date_and_timeProxy(this);
             }
             if ((attribute == "BATTERY_ESTIMATED_REMAINING_USE_TIME"))
             {
-                return new Battery_estimated_remaining_use_timeProxy(this);
+                return new BatteryEntriesBattery_estimated_remaining_use_timeProxy(this);
             }
             if ((attribute == "AUX_SUPPLY_USE_TIME_COUNTER"))
             {
-                return Observable.Box(new Aux_supply_use_time_counterProxy(this));
+                return Observable.Box(new BatteryEntriesAux_supply_use_time_counterProxy(this));
             }
             if ((attribute == "AUX_VOLTAGE"))
             {
-                return Observable.Box(new Aux_voltageProxy(this));
+                return Observable.Box(new BatteryEntriesAux_voltageProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -37898,14 +37898,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Battery_use_time_counter property
         /// </summary>
-        private sealed class Battery_use_time_counterProxy : ModelPropertyChange<IBatteryEntries, Nullable<int>>
+        private sealed class BatteryEntriesBattery_use_time_counterProxy : ModelPropertyChange<IBatteryEntries, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Battery_use_time_counterProxy(IBatteryEntries modelElement) : 
+            public BatteryEntriesBattery_use_time_counterProxy(IBatteryEntries modelElement) : 
                     base(modelElement, "Battery_use_time_counter")
             {
             }
@@ -37929,14 +37929,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Battery_charge_display property
         /// </summary>
-        private sealed class Battery_charge_displayProxy : ModelPropertyChange<IBatteryEntries, string>
+        private sealed class BatteryEntriesBattery_charge_displayProxy : ModelPropertyChange<IBatteryEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Battery_charge_displayProxy(IBatteryEntries modelElement) : 
+            public BatteryEntriesBattery_charge_displayProxy(IBatteryEntries modelElement) : 
                     base(modelElement, "Battery_charge_display")
             {
             }
@@ -37960,14 +37960,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Date_of_next_battery_change property
         /// </summary>
-        private sealed class Date_of_next_battery_changeProxy : ModelPropertyChange<IBatteryEntries, string>
+        private sealed class BatteryEntriesDate_of_next_battery_changeProxy : ModelPropertyChange<IBatteryEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Date_of_next_battery_changeProxy(IBatteryEntries modelElement) : 
+            public BatteryEntriesDate_of_next_battery_changeProxy(IBatteryEntries modelElement) : 
                     base(modelElement, "Date_of_next_battery_change")
             {
             }
@@ -37991,14 +37991,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Battery_voltage property
         /// </summary>
-        private sealed class Battery_voltageProxy : ModelPropertyChange<IBatteryEntries, Nullable<double>>
+        private sealed class BatteryEntriesBattery_voltageProxy : ModelPropertyChange<IBatteryEntries, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Battery_voltageProxy(IBatteryEntries modelElement) : 
+            public BatteryEntriesBattery_voltageProxy(IBatteryEntries modelElement) : 
                     base(modelElement, "Battery_voltage")
             {
             }
@@ -38022,14 +38022,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Battery_initial_capacity property
         /// </summary>
-        private sealed class Battery_initial_capacityProxy : ModelPropertyChange<IBatteryEntries, Nullable<double>>
+        private sealed class BatteryEntriesBattery_initial_capacityProxy : ModelPropertyChange<IBatteryEntries, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Battery_initial_capacityProxy(IBatteryEntries modelElement) : 
+            public BatteryEntriesBattery_initial_capacityProxy(IBatteryEntries modelElement) : 
                     base(modelElement, "Battery_initial_capacity")
             {
             }
@@ -38053,14 +38053,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Battery_installation_date_and_time property
         /// </summary>
-        private sealed class Battery_installation_date_and_timeProxy : ModelPropertyChange<IBatteryEntries, string>
+        private sealed class BatteryEntriesBattery_installation_date_and_timeProxy : ModelPropertyChange<IBatteryEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Battery_installation_date_and_timeProxy(IBatteryEntries modelElement) : 
+            public BatteryEntriesBattery_installation_date_and_timeProxy(IBatteryEntries modelElement) : 
                     base(modelElement, "Battery_installation_date_and_time")
             {
             }
@@ -38084,14 +38084,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Battery_estimated_remaining_use_time property
         /// </summary>
-        private sealed class Battery_estimated_remaining_use_timeProxy : ModelPropertyChange<IBatteryEntries, string>
+        private sealed class BatteryEntriesBattery_estimated_remaining_use_timeProxy : ModelPropertyChange<IBatteryEntries, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Battery_estimated_remaining_use_timeProxy(IBatteryEntries modelElement) : 
+            public BatteryEntriesBattery_estimated_remaining_use_timeProxy(IBatteryEntries modelElement) : 
                     base(modelElement, "Battery_estimated_remaining_use_time")
             {
             }
@@ -38115,14 +38115,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Aux_supply_use_time_counter property
         /// </summary>
-        private sealed class Aux_supply_use_time_counterProxy : ModelPropertyChange<IBatteryEntries, Nullable<int>>
+        private sealed class BatteryEntriesAux_supply_use_time_counterProxy : ModelPropertyChange<IBatteryEntries, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Aux_supply_use_time_counterProxy(IBatteryEntries modelElement) : 
+            public BatteryEntriesAux_supply_use_time_counterProxy(IBatteryEntries modelElement) : 
                     base(modelElement, "Aux_supply_use_time_counter")
             {
             }
@@ -38146,14 +38146,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Aux_voltage property
         /// </summary>
-        private sealed class Aux_voltageProxy : ModelPropertyChange<IBatteryEntries, Nullable<double>>
+        private sealed class BatteryEntriesAux_voltageProxy : ModelPropertyChange<IBatteryEntries, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Aux_voltageProxy(IBatteryEntries modelElement) : 
+            public BatteryEntriesAux_voltageProxy(IBatteryEntries modelElement) : 
                     base(modelElement, "Aux_voltage")
             {
             }
@@ -39243,91 +39243,91 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "FAILURESALLPHASES"))
             {
-                return Observable.Box(new FailuresAllPhasesProxy(this));
+                return Observable.Box(new PowerFailureMonitoringFailuresAllPhasesProxy(this));
             }
             if ((attribute == "FAILURESL1"))
             {
-                return Observable.Box(new FailuresL1Proxy(this));
+                return Observable.Box(new PowerFailureMonitoringFailuresL1Proxy(this));
             }
             if ((attribute == "FAILURESL2"))
             {
-                return Observable.Box(new FailuresL2Proxy(this));
+                return Observable.Box(new PowerFailureMonitoringFailuresL2Proxy(this));
             }
             if ((attribute == "FAILURESL3"))
             {
-                return Observable.Box(new FailuresL3Proxy(this));
+                return Observable.Box(new PowerFailureMonitoringFailuresL3Proxy(this));
             }
             if ((attribute == "FAILURESANY"))
             {
-                return Observable.Box(new FailuresAnyProxy(this));
+                return Observable.Box(new PowerFailureMonitoringFailuresAnyProxy(this));
             }
             if ((attribute == "AUXILIARYSUPPLY"))
             {
-                return new AuxiliarysupplyProxy(this);
+                return new PowerFailureMonitoringAuxiliarysupplyProxy(this);
             }
             if ((attribute == "LONGFAILSALL"))
             {
-                return Observable.Box(new LongFailsAllProxy(this));
+                return Observable.Box(new PowerFailureMonitoringLongFailsAllProxy(this));
             }
             if ((attribute == "LONGFAILSL1"))
             {
-                return Observable.Box(new LongFailsL1Proxy(this));
+                return Observable.Box(new PowerFailureMonitoringLongFailsL1Proxy(this));
             }
             if ((attribute == "LONGFAILSL2"))
             {
-                return Observable.Box(new LongFailsL2Proxy(this));
+                return Observable.Box(new PowerFailureMonitoringLongFailsL2Proxy(this));
             }
             if ((attribute == "LONGFAILSL3"))
             {
-                return Observable.Box(new LongFailsL3Proxy(this));
+                return Observable.Box(new PowerFailureMonitoringLongFailsL3Proxy(this));
             }
             if ((attribute == "LONGFAILSANY"))
             {
-                return Observable.Box(new LongFailsAnyProxy(this));
+                return Observable.Box(new PowerFailureMonitoringLongFailsAnyProxy(this));
             }
             if ((attribute == "TIMEALL"))
             {
-                return new TimeAllProxy(this);
+                return new PowerFailureMonitoringTimeAllProxy(this);
             }
             if ((attribute == "TIMEL1"))
             {
-                return new TimeL1Proxy(this);
+                return new PowerFailureMonitoringTimeL1Proxy(this);
             }
             if ((attribute == "TIMEL2"))
             {
-                return new TimeL2Proxy(this);
+                return new PowerFailureMonitoringTimeL2Proxy(this);
             }
             if ((attribute == "TIMEL3"))
             {
-                return new TimeL3Proxy(this);
+                return new PowerFailureMonitoringTimeL3Proxy(this);
             }
             if ((attribute == "TIMEANY"))
             {
-                return new TimeAnyProxy(this);
+                return new PowerFailureMonitoringTimeAnyProxy(this);
             }
             if ((attribute == "DURATIONALL"))
             {
-                return Observable.Box(new DurationAllProxy(this));
+                return Observable.Box(new PowerFailureMonitoringDurationAllProxy(this));
             }
             if ((attribute == "DURATIONL1"))
             {
-                return Observable.Box(new DurationL1Proxy(this));
+                return Observable.Box(new PowerFailureMonitoringDurationL1Proxy(this));
             }
             if ((attribute == "DURATIONL2"))
             {
-                return Observable.Box(new DurationL2Proxy(this));
+                return Observable.Box(new PowerFailureMonitoringDurationL2Proxy(this));
             }
             if ((attribute == "DURATIONL3"))
             {
-                return Observable.Box(new DurationL3Proxy(this));
+                return Observable.Box(new PowerFailureMonitoringDurationL3Proxy(this));
             }
             if ((attribute == "DURATIONANY"))
             {
-                return Observable.Box(new DurationAnyProxy(this));
+                return Observable.Box(new PowerFailureMonitoringDurationAnyProxy(this));
             }
             if ((attribute == "TIME_THRESHOLD_LONG_POWERFAILURE"))
             {
-                return Observable.Box(new Time_threshold_long_powerfailureProxy(this));
+                return Observable.Box(new PowerFailureMonitoringTime_threshold_long_powerfailureProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -39347,14 +39347,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FailuresAllPhases property
         /// </summary>
-        private sealed class FailuresAllPhasesProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        private sealed class PowerFailureMonitoringFailuresAllPhasesProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FailuresAllPhasesProxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringFailuresAllPhasesProxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "FailuresAllPhases")
             {
             }
@@ -39378,14 +39378,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FailuresL1 property
         /// </summary>
-        private sealed class FailuresL1Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        private sealed class PowerFailureMonitoringFailuresL1Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FailuresL1Proxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringFailuresL1Proxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "FailuresL1")
             {
             }
@@ -39409,14 +39409,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FailuresL2 property
         /// </summary>
-        private sealed class FailuresL2Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        private sealed class PowerFailureMonitoringFailuresL2Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FailuresL2Proxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringFailuresL2Proxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "FailuresL2")
             {
             }
@@ -39440,14 +39440,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FailuresL3 property
         /// </summary>
-        private sealed class FailuresL3Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        private sealed class PowerFailureMonitoringFailuresL3Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FailuresL3Proxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringFailuresL3Proxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "FailuresL3")
             {
             }
@@ -39471,14 +39471,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FailuresAny property
         /// </summary>
-        private sealed class FailuresAnyProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        private sealed class PowerFailureMonitoringFailuresAnyProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FailuresAnyProxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringFailuresAnyProxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "FailuresAny")
             {
             }
@@ -39502,14 +39502,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Auxiliarysupply property
         /// </summary>
-        private sealed class AuxiliarysupplyProxy : ModelPropertyChange<IPowerFailureMonitoring, string>
+        private sealed class PowerFailureMonitoringAuxiliarysupplyProxy : ModelPropertyChange<IPowerFailureMonitoring, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public AuxiliarysupplyProxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringAuxiliarysupplyProxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "Auxiliarysupply")
             {
             }
@@ -39533,14 +39533,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LongFailsAll property
         /// </summary>
-        private sealed class LongFailsAllProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        private sealed class PowerFailureMonitoringLongFailsAllProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public LongFailsAllProxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringLongFailsAllProxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "LongFailsAll")
             {
             }
@@ -39564,14 +39564,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LongFailsL1 property
         /// </summary>
-        private sealed class LongFailsL1Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        private sealed class PowerFailureMonitoringLongFailsL1Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public LongFailsL1Proxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringLongFailsL1Proxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "LongFailsL1")
             {
             }
@@ -39595,14 +39595,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LongFailsL2 property
         /// </summary>
-        private sealed class LongFailsL2Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        private sealed class PowerFailureMonitoringLongFailsL2Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public LongFailsL2Proxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringLongFailsL2Proxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "LongFailsL2")
             {
             }
@@ -39626,14 +39626,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LongFailsL3 property
         /// </summary>
-        private sealed class LongFailsL3Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        private sealed class PowerFailureMonitoringLongFailsL3Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public LongFailsL3Proxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringLongFailsL3Proxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "LongFailsL3")
             {
             }
@@ -39657,14 +39657,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LongFailsAny property
         /// </summary>
-        private sealed class LongFailsAnyProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        private sealed class PowerFailureMonitoringLongFailsAnyProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public LongFailsAnyProxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringLongFailsAnyProxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "LongFailsAny")
             {
             }
@@ -39688,14 +39688,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TimeAll property
         /// </summary>
-        private sealed class TimeAllProxy : ModelPropertyChange<IPowerFailureMonitoring, string>
+        private sealed class PowerFailureMonitoringTimeAllProxy : ModelPropertyChange<IPowerFailureMonitoring, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TimeAllProxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringTimeAllProxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "TimeAll")
             {
             }
@@ -39719,14 +39719,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TimeL1 property
         /// </summary>
-        private sealed class TimeL1Proxy : ModelPropertyChange<IPowerFailureMonitoring, string>
+        private sealed class PowerFailureMonitoringTimeL1Proxy : ModelPropertyChange<IPowerFailureMonitoring, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TimeL1Proxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringTimeL1Proxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "TimeL1")
             {
             }
@@ -39750,14 +39750,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TimeL2 property
         /// </summary>
-        private sealed class TimeL2Proxy : ModelPropertyChange<IPowerFailureMonitoring, string>
+        private sealed class PowerFailureMonitoringTimeL2Proxy : ModelPropertyChange<IPowerFailureMonitoring, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TimeL2Proxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringTimeL2Proxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "TimeL2")
             {
             }
@@ -39781,14 +39781,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TimeL3 property
         /// </summary>
-        private sealed class TimeL3Proxy : ModelPropertyChange<IPowerFailureMonitoring, string>
+        private sealed class PowerFailureMonitoringTimeL3Proxy : ModelPropertyChange<IPowerFailureMonitoring, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TimeL3Proxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringTimeL3Proxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "TimeL3")
             {
             }
@@ -39812,14 +39812,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TimeAny property
         /// </summary>
-        private sealed class TimeAnyProxy : ModelPropertyChange<IPowerFailureMonitoring, string>
+        private sealed class PowerFailureMonitoringTimeAnyProxy : ModelPropertyChange<IPowerFailureMonitoring, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TimeAnyProxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringTimeAnyProxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "TimeAny")
             {
             }
@@ -39843,14 +39843,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DurationAll property
         /// </summary>
-        private sealed class DurationAllProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        private sealed class PowerFailureMonitoringDurationAllProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public DurationAllProxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringDurationAllProxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "DurationAll")
             {
             }
@@ -39874,14 +39874,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DurationL1 property
         /// </summary>
-        private sealed class DurationL1Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        private sealed class PowerFailureMonitoringDurationL1Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public DurationL1Proxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringDurationL1Proxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "DurationL1")
             {
             }
@@ -39905,14 +39905,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DurationL2 property
         /// </summary>
-        private sealed class DurationL2Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        private sealed class PowerFailureMonitoringDurationL2Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public DurationL2Proxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringDurationL2Proxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "DurationL2")
             {
             }
@@ -39936,14 +39936,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DurationL3 property
         /// </summary>
-        private sealed class DurationL3Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        private sealed class PowerFailureMonitoringDurationL3Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public DurationL3Proxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringDurationL3Proxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "DurationL3")
             {
             }
@@ -39967,14 +39967,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DurationAny property
         /// </summary>
-        private sealed class DurationAnyProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        private sealed class PowerFailureMonitoringDurationAnyProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public DurationAnyProxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringDurationAnyProxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "DurationAny")
             {
             }
@@ -39998,14 +39998,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Time_threshold_long_powerfailure property
         /// </summary>
-        private sealed class Time_threshold_long_powerfailureProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        private sealed class PowerFailureMonitoringTime_threshold_long_powerfailureProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Time_threshold_long_powerfailureProxy(IPowerFailureMonitoring modelElement) : 
+            public PowerFailureMonitoringTime_threshold_long_powerfailureProxy(IPowerFailureMonitoring modelElement) : 
                     base(modelElement, "Time_threshold_long_powerfailure")
             {
             }
@@ -40129,7 +40129,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "TIMEOFOPERATION"))
             {
-                return new TimeofoperationProxy(this);
+                return new OperatingTimeTimeofoperationProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -40149,14 +40149,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Timeofoperation property
         /// </summary>
-        private sealed class TimeofoperationProxy : ModelPropertyChange<IOperatingTime, string>
+        private sealed class OperatingTimeTimeofoperationProxy : ModelPropertyChange<IOperatingTime, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TimeofoperationProxy(IOperatingTime modelElement) : 
+            public OperatingTimeTimeofoperationProxy(IOperatingTime modelElement) : 
                     base(modelElement, "Timeofoperation")
             {
             }
@@ -40374,15 +40374,15 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "AMBIENT_TEMPERATURE"))
             {
-                return Observable.Box(new Ambient_temperatureProxy(this));
+                return Observable.Box(new EnvironmentRelatedParametersAmbient_temperatureProxy(this));
             }
             if ((attribute == "AMBIENT_PRESSURE"))
             {
-                return Observable.Box(new Ambient_pressureProxy(this));
+                return Observable.Box(new EnvironmentRelatedParametersAmbient_pressureProxy(this));
             }
             if ((attribute == "RELATIVE_HUMIDITY"))
             {
-                return Observable.Box(new Relative_humidityProxy(this));
+                return Observable.Box(new EnvironmentRelatedParametersRelative_humidityProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -40402,14 +40402,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ambient_temperature property
         /// </summary>
-        private sealed class Ambient_temperatureProxy : ModelPropertyChange<IEnvironmentRelatedParameters, Nullable<double>>
+        private sealed class EnvironmentRelatedParametersAmbient_temperatureProxy : ModelPropertyChange<IEnvironmentRelatedParameters, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Ambient_temperatureProxy(IEnvironmentRelatedParameters modelElement) : 
+            public EnvironmentRelatedParametersAmbient_temperatureProxy(IEnvironmentRelatedParameters modelElement) : 
                     base(modelElement, "Ambient_temperature")
             {
             }
@@ -40433,14 +40433,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Ambient_pressure property
         /// </summary>
-        private sealed class Ambient_pressureProxy : ModelPropertyChange<IEnvironmentRelatedParameters, Nullable<double>>
+        private sealed class EnvironmentRelatedParametersAmbient_pressureProxy : ModelPropertyChange<IEnvironmentRelatedParameters, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Ambient_pressureProxy(IEnvironmentRelatedParameters modelElement) : 
+            public EnvironmentRelatedParametersAmbient_pressureProxy(IEnvironmentRelatedParameters modelElement) : 
                     base(modelElement, "Ambient_pressure")
             {
             }
@@ -40464,14 +40464,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Relative_humidity property
         /// </summary>
-        private sealed class Relative_humidityProxy : ModelPropertyChange<IEnvironmentRelatedParameters, Nullable<double>>
+        private sealed class EnvironmentRelatedParametersRelative_humidityProxy : ModelPropertyChange<IEnvironmentRelatedParameters, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Relative_humidityProxy(IEnvironmentRelatedParameters modelElement) : 
+            public EnvironmentRelatedParametersRelative_humidityProxy(IEnvironmentRelatedParameters modelElement) : 
                     base(modelElement, "Relative_humidity")
             {
             }
@@ -40636,7 +40636,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "EVENT_CODE_OBJECT"))
             {
-                return new Event_code_objectProxy(this);
+                return new EventCodeEvent_code_objectProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -40656,14 +40656,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the event_code_object property
         /// </summary>
-        private sealed class Event_code_objectProxy : ModelPropertyChange<IEventCode, string>
+        private sealed class EventCodeEvent_code_objectProxy : ModelPropertyChange<IEventCode, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Event_code_objectProxy(IEventCode modelElement) : 
+            public EventCodeEvent_code_objectProxy(IEventCode modelElement) : 
                     base(modelElement, "Event_code_object")
             {
             }
@@ -40971,23 +40971,23 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "RESERVED"))
             {
-                return new ReservedProxy(this);
+                return new CommunicationPortLogParametersReservedProxy(this);
             }
             if ((attribute == "NUMBER_CONNECTIONS"))
             {
-                return new Number_connectionsProxy(this);
+                return new CommunicationPortLogParametersNumber_connectionsProxy(this);
             }
             if ((attribute == "COMMUNICATION_PORT_PARAMETER"))
             {
-                return new Communication_port_parameterProxy(this);
+                return new CommunicationPortLogParametersCommunication_port_parameterProxy(this);
             }
             if ((attribute == "GSM_FIELD_STRENGTH"))
             {
-                return new GSM_field_strengthProxy(this);
+                return new CommunicationPortLogParametersGSM_field_strengthProxy(this);
             }
             if ((attribute == "COMMUNICATIONADDRESS"))
             {
-                return new CommunicationaddressProxy(this);
+                return new CommunicationPortLogParametersCommunicationaddressProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -41007,14 +41007,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reserved property
         /// </summary>
-        private sealed class ReservedProxy : ModelPropertyChange<ICommunicationPortLogParameters, string>
+        private sealed class CommunicationPortLogParametersReservedProxy : ModelPropertyChange<ICommunicationPortLogParameters, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReservedProxy(ICommunicationPortLogParameters modelElement) : 
+            public CommunicationPortLogParametersReservedProxy(ICommunicationPortLogParameters modelElement) : 
                     base(modelElement, "Reserved")
             {
             }
@@ -41038,14 +41038,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Number_connections property
         /// </summary>
-        private sealed class Number_connectionsProxy : ModelPropertyChange<ICommunicationPortLogParameters, string>
+        private sealed class CommunicationPortLogParametersNumber_connectionsProxy : ModelPropertyChange<ICommunicationPortLogParameters, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Number_connectionsProxy(ICommunicationPortLogParameters modelElement) : 
+            public CommunicationPortLogParametersNumber_connectionsProxy(ICommunicationPortLogParameters modelElement) : 
                     base(modelElement, "Number_connections")
             {
             }
@@ -41069,14 +41069,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Communication_port_parameter property
         /// </summary>
-        private sealed class Communication_port_parameterProxy : ModelPropertyChange<ICommunicationPortLogParameters, string>
+        private sealed class CommunicationPortLogParametersCommunication_port_parameterProxy : ModelPropertyChange<ICommunicationPortLogParameters, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Communication_port_parameterProxy(ICommunicationPortLogParameters modelElement) : 
+            public CommunicationPortLogParametersCommunication_port_parameterProxy(ICommunicationPortLogParameters modelElement) : 
                     base(modelElement, "Communication_port_parameter")
             {
             }
@@ -41100,14 +41100,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the GSM_field_strength property
         /// </summary>
-        private sealed class GSM_field_strengthProxy : ModelPropertyChange<ICommunicationPortLogParameters, string>
+        private sealed class CommunicationPortLogParametersGSM_field_strengthProxy : ModelPropertyChange<ICommunicationPortLogParameters, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public GSM_field_strengthProxy(ICommunicationPortLogParameters modelElement) : 
+            public CommunicationPortLogParametersGSM_field_strengthProxy(ICommunicationPortLogParameters modelElement) : 
                     base(modelElement, "GSM_field_strength")
             {
             }
@@ -41131,14 +41131,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Communicationaddress property
         /// </summary>
-        private sealed class CommunicationaddressProxy : ModelPropertyChange<ICommunicationPortLogParameters, string>
+        private sealed class CommunicationPortLogParametersCommunicationaddressProxy : ModelPropertyChange<ICommunicationPortLogParameters, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public CommunicationaddressProxy(ICommunicationPortLogParameters modelElement) : 
+            public CommunicationPortLogParametersCommunicationaddressProxy(ICommunicationPortLogParameters modelElement) : 
                     base(modelElement, "Communicationaddress")
             {
             }
@@ -41308,11 +41308,11 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "CONSUMER_MESSAGE_VIA_LOCAL_CONSUMER_INFORMATION_PORT"))
             {
-                return new Consumer_message_via_local_consumer_information_portProxy(this);
+                return new ConsumerMessageConsumer_message_via_local_consumer_information_portProxy(this);
             }
             if ((attribute == "CONSUMER_MESSAGE_VIA_METER_DISPLAY"))
             {
-                return new Consumer_message_via_meter_displayProxy(this);
+                return new ConsumerMessageConsumer_message_via_meter_displayProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -41332,14 +41332,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Consumer_message_via_local_consumer_information_port property
         /// </summary>
-        private sealed class Consumer_message_via_local_consumer_information_portProxy : ModelPropertyChange<IConsumerMessage, string>
+        private sealed class ConsumerMessageConsumer_message_via_local_consumer_information_portProxy : ModelPropertyChange<IConsumerMessage, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Consumer_message_via_local_consumer_information_portProxy(IConsumerMessage modelElement) : 
+            public ConsumerMessageConsumer_message_via_local_consumer_information_portProxy(IConsumerMessage modelElement) : 
                     base(modelElement, "Consumer_message_via_local_consumer_information_port")
             {
             }
@@ -41363,14 +41363,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Consumer_message_via_meter_display property
         /// </summary>
-        private sealed class Consumer_message_via_meter_displayProxy : ModelPropertyChange<IConsumerMessage, string>
+        private sealed class ConsumerMessageConsumer_message_via_meter_displayProxy : ModelPropertyChange<IConsumerMessage, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Consumer_message_via_meter_displayProxy(IConsumerMessage modelElement) : 
+            public ConsumerMessageConsumer_message_via_meter_displayProxy(IConsumerMessage modelElement) : 
                     base(modelElement, "Consumer_message_via_meter_display")
             {
             }
@@ -41496,7 +41496,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "VALUE"))
             {
-                return new ValueProxy(this);
+                return new CurrentlyActiveTariffValueProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -41516,14 +41516,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ValueProxy : ModelPropertyChange<ICurrentlyActiveTariff, string>
+        private sealed class CurrentlyActiveTariffValueProxy : ModelPropertyChange<ICurrentlyActiveTariff, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ValueProxy(ICurrentlyActiveTariff modelElement) : 
+            public CurrentlyActiveTariffValueProxy(ICurrentlyActiveTariff modelElement) : 
                     base(modelElement, "Value")
             {
             }
@@ -41649,7 +41649,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "VALUE"))
             {
-                return Observable.Box(new ValueProxy(this));
+                return Observable.Box(new EventCounterObjectValueProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -41669,14 +41669,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ValueProxy : ModelPropertyChange<IEventCounterObject, Nullable<int>>
+        private sealed class EventCounterObjectValueProxy : ModelPropertyChange<IEventCounterObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ValueProxy(IEventCounterObject modelElement) : 
+            public EventCounterObjectValueProxy(IEventCounterObject modelElement) : 
                     base(modelElement, "Value")
             {
             }
@@ -41802,7 +41802,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "VALUE"))
             {
-                return new ValueProxy(this);
+                return new ProfileEntryDigitalSignatureObjectValueProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -41822,14 +41822,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ValueProxy : ModelPropertyChange<IProfileEntryDigitalSignatureObject, string>
+        private sealed class ProfileEntryDigitalSignatureObjectValueProxy : ModelPropertyChange<IProfileEntryDigitalSignatureObject, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ValueProxy(IProfileEntryDigitalSignatureObject modelElement) : 
+            public ProfileEntryDigitalSignatureObjectValueProxy(IProfileEntryDigitalSignatureObject modelElement) : 
                     base(modelElement, "Value")
             {
             }
@@ -43241,119 +43241,119 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "METER_OPEN_EVENT_COUNTER"))
             {
-                return Observable.Box(new Meter_open_event_counterProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectMeter_open_event_counterProxy(this));
             }
             if ((attribute == "METER_OPEN_EVENT_TIMESTAMP"))
             {
-                return new Meter_open_event_timestampProxy(this);
+                return new MeterTemperEventRelatedObjectMeter_open_event_timestampProxy(this);
             }
             if ((attribute == "METER_OPEN_EVENT_DURATION"))
             {
-                return Observable.Box(new Meter_open_event_durationProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectMeter_open_event_durationProxy(this));
             }
             if ((attribute == "METER_OPEN_EVENT_CUMULATIVE_DURATION"))
             {
-                return Observable.Box(new Meter_open_event_cumulative_durationProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectMeter_open_event_cumulative_durationProxy(this));
             }
             if ((attribute == "TERMINAL_COVER_OPEN_EVENT_COUNTER"))
             {
-                return Observable.Box(new Terminal_cover_open_event_counterProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectTerminal_cover_open_event_counterProxy(this));
             }
             if ((attribute == "TERMINAL_COVER_OPEN_EVENT_TIME"))
             {
-                return new Terminal_cover_open_event_timeProxy(this);
+                return new MeterTemperEventRelatedObjectTerminal_cover_open_event_timeProxy(this);
             }
             if ((attribute == "TERMINAL_COVER_OPEN_EVENT_DURATION"))
             {
-                return Observable.Box(new Terminal_cover_open_event_durationProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectTerminal_cover_open_event_durationProxy(this));
             }
             if ((attribute == "TERMINAL_COVER_OPEN_EVENT_CUMULATIVE_DURATION"))
             {
-                return Observable.Box(new Terminal_cover_open_event_cumulative_durationProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectTerminal_cover_open_event_cumulative_durationProxy(this));
             }
             if ((attribute == "TILT_EVENT_COUNTER"))
             {
-                return Observable.Box(new Tilt_event_counterProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectTilt_event_counterProxy(this));
             }
             if ((attribute == "TILT_EVENT_TIME"))
             {
-                return new Tilt_event_timeProxy(this);
+                return new MeterTemperEventRelatedObjectTilt_event_timeProxy(this);
             }
             if ((attribute == "TILT_EVENT_DURATION"))
             {
-                return Observable.Box(new Tilt_event_durationProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectTilt_event_durationProxy(this));
             }
             if ((attribute == "TILT_EVENT_CUMULATIVE_DURATION"))
             {
-                return Observable.Box(new Tilt_event_cumulative_durationProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectTilt_event_cumulative_durationProxy(this));
             }
             if ((attribute == "STRONG_DC_MAGNETIC_FIELD_EVENT_COUNTER"))
             {
-                return Observable.Box(new Strong_DC_magnetic_field_event_counterProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectStrong_DC_magnetic_field_event_counterProxy(this));
             }
             if ((attribute == "STRONG_DC_MAGNETIC_FIELD_EVENT_TIME"))
             {
-                return new Strong_DC_magnetic_field_event_timeProxy(this);
+                return new MeterTemperEventRelatedObjectStrong_DC_magnetic_field_event_timeProxy(this);
             }
             if ((attribute == "STRONG_DC_MAGNETIC_FIELD_EVENT_DURATION"))
             {
-                return Observable.Box(new Strong_DC_magnetic_field_event_durationProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectStrong_DC_magnetic_field_event_durationProxy(this));
             }
             if ((attribute == "STRONG_DC_MAGNETIC_FIELD_EVENT_CUMULATIVE_DURATION"))
             {
-                return Observable.Box(new Strong_DC_magnetic_field_event_cumulative_durationProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectStrong_DC_magnetic_field_event_cumulative_durationProxy(this));
             }
             if ((attribute == "SUPPLY_CONTROL_SWITCH_EVENT_COUNTER"))
             {
-                return Observable.Box(new Supply_control_switch_event_counterProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectSupply_control_switch_event_counterProxy(this));
             }
             if ((attribute == "SUPPLY_CONTROL_SWITCH_EVENT_TIME"))
             {
-                return new Supply_control_switch_event_timeProxy(this);
+                return new MeterTemperEventRelatedObjectSupply_control_switch_event_timeProxy(this);
             }
             if ((attribute == "SUPPLY_CONTROL_SWITCH_EVENT_DURATION"))
             {
-                return Observable.Box(new Supply_control_switch_event_durationProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectSupply_control_switch_event_durationProxy(this));
             }
             if ((attribute == "SUPPLY_CONTROL_SWITCH_EVENT_CUMULATIVE_DURATION"))
             {
-                return Observable.Box(new Supply_control_switch_event_cumulative_durationProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectSupply_control_switch_event_cumulative_durationProxy(this));
             }
             if ((attribute == "METROLOGY_TAMPER_EVENT_COUNTER"))
             {
-                return Observable.Box(new Metrology_tamper_event_counterProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectMetrology_tamper_event_counterProxy(this));
             }
             if ((attribute == "METROLOGY_TAMPER_EVENT_TIME"))
             {
-                return new Metrology_tamper_event_timeProxy(this);
+                return new MeterTemperEventRelatedObjectMetrology_tamper_event_timeProxy(this);
             }
             if ((attribute == "METROLOGY_TAMPER_EVENT_DURATION"))
             {
-                return Observable.Box(new Metrology_tamper_event_durationProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectMetrology_tamper_event_durationProxy(this));
             }
             if ((attribute == "METROLOGY_TAMPER_EVENT_CUMULATIVE_DURATION"))
             {
-                return Observable.Box(new Metrology_tamper_event_cumulative_durationProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectMetrology_tamper_event_cumulative_durationProxy(this));
             }
             if ((attribute == "COMMUNICATION_TAMPER_EVENT_COUNTER"))
             {
-                return Observable.Box(new Communication_tamper_event_counterProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectCommunication_tamper_event_counterProxy(this));
             }
             if ((attribute == "COMMUNICATION_TAMPER_EVENT_TIME"))
             {
-                return new Communication_tamper_event_timeProxy(this);
+                return new MeterTemperEventRelatedObjectCommunication_tamper_event_timeProxy(this);
             }
             if ((attribute == "COMMUNICATION_TAMPER_EVENT_DURATION"))
             {
-                return Observable.Box(new Communication_tamper_event_durationProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectCommunication_tamper_event_durationProxy(this));
             }
             if ((attribute == "COMMUNICATION_TAMPER_EVENT_CUMULATIVE_DURATION"))
             {
-                return Observable.Box(new Communication_tamper_event_cumulative_durationProxy(this));
+                return Observable.Box(new MeterTemperEventRelatedObjectCommunication_tamper_event_cumulative_durationProxy(this));
             }
             if ((attribute == "MANUFACTURER_SPECIFIC"))
             {
-                return new Manufacturer_specificProxy(this);
+                return new MeterTemperEventRelatedObjectManufacturer_specificProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -43373,14 +43373,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Meter_open_event_counter property
         /// </summary>
-        private sealed class Meter_open_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectMeter_open_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Meter_open_event_counterProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectMeter_open_event_counterProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Meter_open_event_counter")
             {
             }
@@ -43404,14 +43404,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Meter_open_event_timestamp property
         /// </summary>
-        private sealed class Meter_open_event_timestampProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
+        private sealed class MeterTemperEventRelatedObjectMeter_open_event_timestampProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Meter_open_event_timestampProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectMeter_open_event_timestampProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Meter_open_event_timestamp")
             {
             }
@@ -43435,14 +43435,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Meter_open_event_duration property
         /// </summary>
-        private sealed class Meter_open_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectMeter_open_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Meter_open_event_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectMeter_open_event_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Meter_open_event_duration")
             {
             }
@@ -43466,14 +43466,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Meter_open_event_cumulative_duration property
         /// </summary>
-        private sealed class Meter_open_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectMeter_open_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Meter_open_event_cumulative_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectMeter_open_event_cumulative_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Meter_open_event_cumulative_duration")
             {
             }
@@ -43497,14 +43497,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Terminal_cover_open_event_counter property
         /// </summary>
-        private sealed class Terminal_cover_open_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectTerminal_cover_open_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Terminal_cover_open_event_counterProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectTerminal_cover_open_event_counterProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Terminal_cover_open_event_counter")
             {
             }
@@ -43528,14 +43528,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Terminal_cover_open_event_time property
         /// </summary>
-        private sealed class Terminal_cover_open_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
+        private sealed class MeterTemperEventRelatedObjectTerminal_cover_open_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Terminal_cover_open_event_timeProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectTerminal_cover_open_event_timeProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Terminal_cover_open_event_time")
             {
             }
@@ -43559,14 +43559,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Terminal_cover_open_event_duration property
         /// </summary>
-        private sealed class Terminal_cover_open_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectTerminal_cover_open_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Terminal_cover_open_event_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectTerminal_cover_open_event_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Terminal_cover_open_event_duration")
             {
             }
@@ -43590,14 +43590,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Terminal_cover_open_event_cumulative_duration property
         /// </summary>
-        private sealed class Terminal_cover_open_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectTerminal_cover_open_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Terminal_cover_open_event_cumulative_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectTerminal_cover_open_event_cumulative_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Terminal_cover_open_event_cumulative_duration")
             {
             }
@@ -43621,14 +43621,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Tilt_event_counter property
         /// </summary>
-        private sealed class Tilt_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectTilt_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Tilt_event_counterProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectTilt_event_counterProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Tilt_event_counter")
             {
             }
@@ -43652,14 +43652,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Tilt_event_time property
         /// </summary>
-        private sealed class Tilt_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
+        private sealed class MeterTemperEventRelatedObjectTilt_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Tilt_event_timeProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectTilt_event_timeProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Tilt_event_time")
             {
             }
@@ -43683,14 +43683,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Tilt_event_duration property
         /// </summary>
-        private sealed class Tilt_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectTilt_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Tilt_event_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectTilt_event_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Tilt_event_duration")
             {
             }
@@ -43714,14 +43714,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Tilt_event_cumulative_duration property
         /// </summary>
-        private sealed class Tilt_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectTilt_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Tilt_event_cumulative_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectTilt_event_cumulative_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Tilt_event_cumulative_duration")
             {
             }
@@ -43745,14 +43745,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Strong_DC_magnetic_field_event_counter property
         /// </summary>
-        private sealed class Strong_DC_magnetic_field_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectStrong_DC_magnetic_field_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Strong_DC_magnetic_field_event_counterProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectStrong_DC_magnetic_field_event_counterProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Strong_DC_magnetic_field_event_counter")
             {
             }
@@ -43776,14 +43776,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Strong_DC_magnetic_field_event_time property
         /// </summary>
-        private sealed class Strong_DC_magnetic_field_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
+        private sealed class MeterTemperEventRelatedObjectStrong_DC_magnetic_field_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Strong_DC_magnetic_field_event_timeProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectStrong_DC_magnetic_field_event_timeProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Strong_DC_magnetic_field_event_time")
             {
             }
@@ -43807,14 +43807,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Strong_DC_magnetic_field_event_duration property
         /// </summary>
-        private sealed class Strong_DC_magnetic_field_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectStrong_DC_magnetic_field_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Strong_DC_magnetic_field_event_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectStrong_DC_magnetic_field_event_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Strong_DC_magnetic_field_event_duration")
             {
             }
@@ -43838,14 +43838,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Strong_DC_magnetic_field_event_cumulative_duration property
         /// </summary>
-        private sealed class Strong_DC_magnetic_field_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectStrong_DC_magnetic_field_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Strong_DC_magnetic_field_event_cumulative_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectStrong_DC_magnetic_field_event_cumulative_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Strong_DC_magnetic_field_event_cumulative_duration")
             {
             }
@@ -43869,14 +43869,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Supply_control_switch_event_counter property
         /// </summary>
-        private sealed class Supply_control_switch_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectSupply_control_switch_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Supply_control_switch_event_counterProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectSupply_control_switch_event_counterProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Supply_control_switch_event_counter")
             {
             }
@@ -43900,14 +43900,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Supply_control_switch_event_time property
         /// </summary>
-        private sealed class Supply_control_switch_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
+        private sealed class MeterTemperEventRelatedObjectSupply_control_switch_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Supply_control_switch_event_timeProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectSupply_control_switch_event_timeProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Supply_control_switch_event_time")
             {
             }
@@ -43931,14 +43931,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Supply_control_switch_event_duration property
         /// </summary>
-        private sealed class Supply_control_switch_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectSupply_control_switch_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Supply_control_switch_event_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectSupply_control_switch_event_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Supply_control_switch_event_duration")
             {
             }
@@ -43962,14 +43962,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Supply_control_switch_event_cumulative_duration property
         /// </summary>
-        private sealed class Supply_control_switch_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectSupply_control_switch_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Supply_control_switch_event_cumulative_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectSupply_control_switch_event_cumulative_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Supply_control_switch_event_cumulative_duration")
             {
             }
@@ -43993,14 +43993,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Metrology_tamper_event_counter property
         /// </summary>
-        private sealed class Metrology_tamper_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectMetrology_tamper_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Metrology_tamper_event_counterProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectMetrology_tamper_event_counterProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Metrology_tamper_event_counter")
             {
             }
@@ -44024,14 +44024,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Metrology_tamper_event_time property
         /// </summary>
-        private sealed class Metrology_tamper_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
+        private sealed class MeterTemperEventRelatedObjectMetrology_tamper_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Metrology_tamper_event_timeProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectMetrology_tamper_event_timeProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Metrology_tamper_event_time")
             {
             }
@@ -44055,14 +44055,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Metrology_tamper_event_duration property
         /// </summary>
-        private sealed class Metrology_tamper_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectMetrology_tamper_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Metrology_tamper_event_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectMetrology_tamper_event_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Metrology_tamper_event_duration")
             {
             }
@@ -44086,14 +44086,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Metrology_tamper_event_cumulative_duration property
         /// </summary>
-        private sealed class Metrology_tamper_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectMetrology_tamper_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Metrology_tamper_event_cumulative_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectMetrology_tamper_event_cumulative_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Metrology_tamper_event_cumulative_duration")
             {
             }
@@ -44117,14 +44117,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Communication_tamper_event_counter property
         /// </summary>
-        private sealed class Communication_tamper_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectCommunication_tamper_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Communication_tamper_event_counterProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectCommunication_tamper_event_counterProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Communication_tamper_event_counter")
             {
             }
@@ -44148,14 +44148,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Communication_tamper_event_time property
         /// </summary>
-        private sealed class Communication_tamper_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
+        private sealed class MeterTemperEventRelatedObjectCommunication_tamper_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Communication_tamper_event_timeProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectCommunication_tamper_event_timeProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Communication_tamper_event_time")
             {
             }
@@ -44179,14 +44179,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Communication_tamper_event_duration property
         /// </summary>
-        private sealed class Communication_tamper_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectCommunication_tamper_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Communication_tamper_event_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectCommunication_tamper_event_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Communication_tamper_event_duration")
             {
             }
@@ -44210,14 +44210,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Communication_tamper_event_cumulative_duration property
         /// </summary>
-        private sealed class Communication_tamper_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        private sealed class MeterTemperEventRelatedObjectCommunication_tamper_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Communication_tamper_event_cumulative_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectCommunication_tamper_event_cumulative_durationProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Communication_tamper_event_cumulative_duration")
             {
             }
@@ -44241,14 +44241,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Manufacturer_specific property
         /// </summary>
-        private sealed class Manufacturer_specificProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
+        private sealed class MeterTemperEventRelatedObjectManufacturer_specificProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Manufacturer_specificProxy(IMeterTemperEventRelatedObject modelElement) : 
+            public MeterTemperEventRelatedObjectManufacturer_specificProxy(IMeterTemperEventRelatedObject modelElement) : 
                     base(modelElement, "Manufacturer_specific")
             {
             }
@@ -48282,347 +48282,347 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "ACTIVEPOWERPL1"))
             {
-                return Observable.Box(new ActivePowerpL1Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerpL1Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERPALL"))
             {
-                return Observable.Box(new ActivePowerpallProxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerpallProxy(this));
             }
             if ((attribute == "ACTIVEPOWERPL2"))
             {
-                return Observable.Box(new ActivePowerpL2Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerpL2Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERPL3"))
             {
-                return Observable.Box(new ActivePowerpL3Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerpL3Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERML2"))
             {
-                return Observable.Box(new ActivePowermL2Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowermL2Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERML1"))
             {
-                return Observable.Box(new ActivePowermL1Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowermL1Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERML3"))
             {
-                return Observable.Box(new ActivePowermL3Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowermL3Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERMALL"))
             {
-                return Observable.Box(new ActivePowermallProxy(this));
+                return Observable.Box(new ElectricityValuesActivePowermallProxy(this));
             }
             if ((attribute == "REACTIVEPOWERPL1"))
             {
-                return Observable.Box(new ReactivePowerpL1Proxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowerpL1Proxy(this));
             }
             if ((attribute == "REACTIVEPOWERPL2"))
             {
-                return Observable.Box(new ReactivePowerpL2Proxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowerpL2Proxy(this));
             }
             if ((attribute == "REACTIVEPOWERPL3"))
             {
-                return Observable.Box(new ReactivePowerpL3Proxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowerpL3Proxy(this));
             }
             if ((attribute == "REACTIVEPOWERPALL"))
             {
-                return Observable.Box(new ReactivePowerpallProxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowerpallProxy(this));
             }
             if ((attribute == "REACTIVEPOWERML1"))
             {
-                return Observable.Box(new ReactivePowermL1Proxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowermL1Proxy(this));
             }
             if ((attribute == "REACTIVEPOWERML2"))
             {
-                return Observable.Box(new ReactivePowermL2Proxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowermL2Proxy(this));
             }
             if ((attribute == "REACTIVEPOWERML3"))
             {
-                return Observable.Box(new ReactivePowermL3Proxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowermL3Proxy(this));
             }
             if ((attribute == "REACTIVEPOWERMALL"))
             {
-                return Observable.Box(new ReactivePowermallProxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowermallProxy(this));
             }
             if ((attribute == "REACTIVEPOWERQIL1"))
             {
-                return Observable.Box(new ReactivePowerQIL1Proxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowerQIL1Proxy(this));
             }
             if ((attribute == "REACTIVEPOWERQIL2"))
             {
-                return Observable.Box(new ReactivePowerQIL2Proxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowerQIL2Proxy(this));
             }
             if ((attribute == "REACTIVEPOWERQIL3"))
             {
-                return Observable.Box(new ReactivePowerQIL3Proxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowerQIL3Proxy(this));
             }
             if ((attribute == "REACTIVEPOWERQIALL"))
             {
-                return Observable.Box(new ReactivePowerQIallProxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowerQIallProxy(this));
             }
             if ((attribute == "REACTIVEPOWERQIIL1"))
             {
-                return Observable.Box(new ReactivePowerQIIL1Proxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowerQIIL1Proxy(this));
             }
             if ((attribute == "REACTIVEPOWERQIIL2"))
             {
-                return Observable.Box(new ReactivePowerQIIL2Proxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowerQIIL2Proxy(this));
             }
             if ((attribute == "REACTIVEPOWERQIIL3"))
             {
-                return Observable.Box(new ReactivePowerQIIL3Proxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowerQIIL3Proxy(this));
             }
             if ((attribute == "REACTIVEPOWERQIIALL"))
             {
-                return Observable.Box(new ReactivePowerQIIallProxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowerQIIallProxy(this));
             }
             if ((attribute == "REACTIVEPOWERQIIIL1"))
             {
-                return Observable.Box(new ReactivePowerQIIIL1Proxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowerQIIIL1Proxy(this));
             }
             if ((attribute == "REACTIVEPOWERQIIIL2"))
             {
-                return Observable.Box(new ReactivePowerQIIIL2Proxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowerQIIIL2Proxy(this));
             }
             if ((attribute == "REACTIVEPOWERQIIIL3"))
             {
-                return Observable.Box(new ReactivePowerQIIIL3Proxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowerQIIIL3Proxy(this));
             }
             if ((attribute == "REACTIVEPOWERQIIIALL"))
             {
-                return Observable.Box(new ReactivePowerQIIIallProxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowerQIIIallProxy(this));
             }
             if ((attribute == "REACTIVEPOWERQIVL1"))
             {
-                return Observable.Box(new ReactivePowerQIVL1Proxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowerQIVL1Proxy(this));
             }
             if ((attribute == "REACTIVEPOWERQIVL2"))
             {
-                return Observable.Box(new ReactivePowerQIVL2Proxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowerQIVL2Proxy(this));
             }
             if ((attribute == "REACTIVEPOWERQIVL3"))
             {
-                return Observable.Box(new ReactivePowerQIVL3Proxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowerQIVL3Proxy(this));
             }
             if ((attribute == "REACTIVEPOWERQIVALL"))
             {
-                return Observable.Box(new ReactivePowerQIVallProxy(this));
+                return Observable.Box(new ElectricityValuesReactivePowerQIVallProxy(this));
             }
             if ((attribute == "APPARENTPOWERPL1"))
             {
-                return Observable.Box(new ApparentPowerpL1Proxy(this));
+                return Observable.Box(new ElectricityValuesApparentPowerpL1Proxy(this));
             }
             if ((attribute == "APPARENTPOWERPL2"))
             {
-                return Observable.Box(new ApparentPowerpL2Proxy(this));
+                return Observable.Box(new ElectricityValuesApparentPowerpL2Proxy(this));
             }
             if ((attribute == "APPARENTPOWERPL3"))
             {
-                return Observable.Box(new ApparentPowerpL3Proxy(this));
+                return Observable.Box(new ElectricityValuesApparentPowerpL3Proxy(this));
             }
             if ((attribute == "APPARENTPOWERPALL"))
             {
-                return Observable.Box(new ApparentPowerpAllProxy(this));
+                return Observable.Box(new ElectricityValuesApparentPowerpAllProxy(this));
             }
             if ((attribute == "APPARENTPOWERML1"))
             {
-                return Observable.Box(new ApparentPowermL1Proxy(this));
+                return Observable.Box(new ElectricityValuesApparentPowermL1Proxy(this));
             }
             if ((attribute == "APPARENTPOWERML2"))
             {
-                return Observable.Box(new ApparentPowermL2Proxy(this));
+                return Observable.Box(new ElectricityValuesApparentPowermL2Proxy(this));
             }
             if ((attribute == "APPARENTPOWERML3"))
             {
-                return Observable.Box(new ApparentPowermL3Proxy(this));
+                return Observable.Box(new ElectricityValuesApparentPowermL3Proxy(this));
             }
             if ((attribute == "APPARENTPOWERMALL"))
             {
-                return Observable.Box(new ApparentPowermAllProxy(this));
+                return Observable.Box(new ElectricityValuesApparentPowermAllProxy(this));
             }
             if ((attribute == "CURRENTL1"))
             {
-                return Observable.Box(new CurrentL1Proxy(this));
+                return Observable.Box(new ElectricityValuesCurrentL1Proxy(this));
             }
             if ((attribute == "CURRENTL2"))
             {
-                return Observable.Box(new CurrentL2Proxy(this));
+                return Observable.Box(new ElectricityValuesCurrentL2Proxy(this));
             }
             if ((attribute == "CURRENTL3"))
             {
-                return Observable.Box(new CurrentL3Proxy(this));
+                return Observable.Box(new ElectricityValuesCurrentL3Proxy(this));
             }
             if ((attribute == "CURRENTALL"))
             {
-                return Observable.Box(new CurrentAllProxy(this));
+                return Observable.Box(new ElectricityValuesCurrentAllProxy(this));
             }
             if ((attribute == "VOLTAGEL1"))
             {
-                return Observable.Box(new VoltageL1Proxy(this));
+                return Observable.Box(new ElectricityValuesVoltageL1Proxy(this));
             }
             if ((attribute == "VOLTAGEL2"))
             {
-                return Observable.Box(new VoltageL2Proxy(this));
+                return Observable.Box(new ElectricityValuesVoltageL2Proxy(this));
             }
             if ((attribute == "VOLTAGEL3"))
             {
-                return Observable.Box(new VoltageL3Proxy(this));
+                return Observable.Box(new ElectricityValuesVoltageL3Proxy(this));
             }
             if ((attribute == "VOLTAGEALL"))
             {
-                return Observable.Box(new VoltageAllProxy(this));
+                return Observable.Box(new ElectricityValuesVoltageAllProxy(this));
             }
             if ((attribute == "POWERFACTORL1"))
             {
-                return Observable.Box(new PowerFactorL1Proxy(this));
+                return Observable.Box(new ElectricityValuesPowerFactorL1Proxy(this));
             }
             if ((attribute == "POWERFACTORL2"))
             {
-                return Observable.Box(new PowerFactorL2Proxy(this));
+                return Observable.Box(new ElectricityValuesPowerFactorL2Proxy(this));
             }
             if ((attribute == "POWERFACTORL3"))
             {
-                return Observable.Box(new PowerFactorL3Proxy(this));
+                return Observable.Box(new ElectricityValuesPowerFactorL3Proxy(this));
             }
             if ((attribute == "POWERFACTORALL"))
             {
-                return Observable.Box(new PowerFactorAllProxy(this));
+                return Observable.Box(new ElectricityValuesPowerFactorAllProxy(this));
             }
             if ((attribute == "SUPPLYFREQUENCYL1"))
             {
-                return Observable.Box(new SupplyFrequencyL1Proxy(this));
+                return Observable.Box(new ElectricityValuesSupplyFrequencyL1Proxy(this));
             }
             if ((attribute == "SUPPLYFREQUENCYL2"))
             {
-                return Observable.Box(new SupplyFrequencyL2Proxy(this));
+                return Observable.Box(new ElectricityValuesSupplyFrequencyL2Proxy(this));
             }
             if ((attribute == "SUPPLYFREQUENCYL3"))
             {
-                return Observable.Box(new SupplyFrequencyL3Proxy(this));
+                return Observable.Box(new ElectricityValuesSupplyFrequencyL3Proxy(this));
             }
             if ((attribute == "SUPPLYFREQUENCYALL"))
             {
-                return Observable.Box(new SupplyFrequencyAllProxy(this));
+                return Observable.Box(new ElectricityValuesSupplyFrequencyAllProxy(this));
             }
             if ((attribute == "ACTIVEPOWERABSPL1"))
             {
-                return Observable.Box(new ActivePowerAbsPL1Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerAbsPL1Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERABSPL2"))
             {
-                return Observable.Box(new ActivePowerAbsPL2Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerAbsPL2Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERABSPL3"))
             {
-                return Observable.Box(new ActivePowerAbsPL3Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerAbsPL3Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERABSPALL"))
             {
-                return Observable.Box(new ActivePowerAbsPAllProxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerAbsPAllProxy(this));
             }
             if ((attribute == "ACTIVEPOWERABSML1"))
             {
-                return Observable.Box(new ActivePowerAbsML1Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerAbsML1Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERABSML2"))
             {
-                return Observable.Box(new ActivePowerAbsML2Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerAbsML2Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERABSML3"))
             {
-                return Observable.Box(new ActivePowerAbsML3Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerAbsML3Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERABSMALL"))
             {
-                return Observable.Box(new ActivePowerAbsMAllProxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerAbsMAllProxy(this));
             }
             if ((attribute == "ACTIVEPOWERQIL1"))
             {
-                return Observable.Box(new ActivePowerQIL1Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerQIL1Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERQIL2"))
             {
-                return Observable.Box(new ActivePowerQIL2Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerQIL2Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERQIL3"))
             {
-                return Observable.Box(new ActivePowerQIL3Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerQIL3Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERQIALL"))
             {
-                return Observable.Box(new ActivePowerQIallProxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerQIallProxy(this));
             }
             if ((attribute == "ACTIVEPOWERQIIL1"))
             {
-                return Observable.Box(new ActivePowerQIIL1Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerQIIL1Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERQIIL2"))
             {
-                return Observable.Box(new ActivePowerQIIL2Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerQIIL2Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERQIIL3"))
             {
-                return Observable.Box(new ActivePowerQIIL3Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerQIIL3Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERQIIALL"))
             {
-                return Observable.Box(new ActivePowerQIIallProxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerQIIallProxy(this));
             }
             if ((attribute == "ACTIVEPOWERQIIIL1"))
             {
-                return Observable.Box(new ActivePowerQIIIL1Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerQIIIL1Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERQIIIL2"))
             {
-                return Observable.Box(new ActivePowerQIIIL2Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerQIIIL2Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERQIIIL3"))
             {
-                return Observable.Box(new ActivePowerQIIIL3Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerQIIIL3Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERQIIIALL"))
             {
-                return Observable.Box(new ActivePowerQIIIallProxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerQIIIallProxy(this));
             }
             if ((attribute == "ACTIVEPOWERQIVL1"))
             {
-                return Observable.Box(new ActivePowerQIVL1Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerQIVL1Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERQIVL2"))
             {
-                return Observable.Box(new ActivePowerQIVL2Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerQIVL2Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERQIVL3"))
             {
-                return Observable.Box(new ActivePowerQIVL3Proxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerQIVL3Proxy(this));
             }
             if ((attribute == "ACTIVEPOWERQIVALL"))
             {
-                return Observable.Box(new ActivePowerQIVallProxy(this));
+                return Observable.Box(new ElectricityValuesActivePowerQIVallProxy(this));
             }
             if ((attribute == "ANGLES"))
             {
-                return Observable.Box(new AnglesProxy(this));
+                return Observable.Box(new ElectricityValuesAnglesProxy(this));
             }
             if ((attribute == "PULSES"))
             {
-                return Observable.Box(new PulsesProxy(this));
+                return Observable.Box(new ElectricityValuesPulsesProxy(this));
             }
             if ((attribute == "AMPERE_SQUAREDHOURS"))
             {
-                return Observable.Box(new Ampere_squaredHoursProxy(this));
+                return Observable.Box(new ElectricityValuesAmpere_squaredHoursProxy(this));
             }
             if ((attribute == "VOLT_SQUAREDHOURS"))
             {
-                return Observable.Box(new Volt_squaredHoursProxy(this));
+                return Observable.Box(new ElectricityValuesVolt_squaredHoursProxy(this));
             }
             if ((attribute == "NEUTRALCURRENT"))
             {
-                return Observable.Box(new NeutralCurrentProxy(this));
+                return Observable.Box(new ElectricityValuesNeutralCurrentProxy(this));
             }
             if ((attribute == "NEUTRALVOLTAGE"))
             {
-                return Observable.Box(new NeutralVoltageProxy(this));
+                return Observable.Box(new ElectricityValuesNeutralVoltageProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -48642,14 +48642,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerpL1 property
         /// </summary>
-        private sealed class ActivePowerpL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerpL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerpL1Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerpL1Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerpL1")
             {
             }
@@ -48673,14 +48673,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerpall property
         /// </summary>
-        private sealed class ActivePowerpallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerpallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerpallProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerpallProxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerpall")
             {
             }
@@ -48704,14 +48704,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerpL2 property
         /// </summary>
-        private sealed class ActivePowerpL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerpL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerpL2Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerpL2Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerpL2")
             {
             }
@@ -48735,14 +48735,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerpL3 property
         /// </summary>
-        private sealed class ActivePowerpL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerpL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerpL3Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerpL3Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerpL3")
             {
             }
@@ -48766,14 +48766,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowermL2 property
         /// </summary>
-        private sealed class ActivePowermL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowermL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowermL2Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowermL2Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowermL2")
             {
             }
@@ -48797,14 +48797,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowermL1 property
         /// </summary>
-        private sealed class ActivePowermL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowermL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowermL1Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowermL1Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowermL1")
             {
             }
@@ -48828,14 +48828,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowermL3 property
         /// </summary>
-        private sealed class ActivePowermL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowermL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowermL3Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowermL3Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowermL3")
             {
             }
@@ -48859,14 +48859,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowermall property
         /// </summary>
-        private sealed class ActivePowermallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowermallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowermallProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowermallProxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowermall")
             {
             }
@@ -48890,14 +48890,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerpL1 property
         /// </summary>
-        private sealed class ReactivePowerpL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowerpL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowerpL1Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowerpL1Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowerpL1")
             {
             }
@@ -48921,14 +48921,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerpL2 property
         /// </summary>
-        private sealed class ReactivePowerpL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowerpL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowerpL2Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowerpL2Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowerpL2")
             {
             }
@@ -48952,14 +48952,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerpL3 property
         /// </summary>
-        private sealed class ReactivePowerpL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowerpL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowerpL3Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowerpL3Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowerpL3")
             {
             }
@@ -48983,14 +48983,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerpall property
         /// </summary>
-        private sealed class ReactivePowerpallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowerpallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowerpallProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowerpallProxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowerpall")
             {
             }
@@ -49014,14 +49014,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowermL1 property
         /// </summary>
-        private sealed class ReactivePowermL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowermL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowermL1Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowermL1Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowermL1")
             {
             }
@@ -49045,14 +49045,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowermL2 property
         /// </summary>
-        private sealed class ReactivePowermL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowermL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowermL2Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowermL2Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowermL2")
             {
             }
@@ -49076,14 +49076,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowermL3 property
         /// </summary>
-        private sealed class ReactivePowermL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowermL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowermL3Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowermL3Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowermL3")
             {
             }
@@ -49107,14 +49107,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowermall property
         /// </summary>
-        private sealed class ReactivePowermallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowermallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowermallProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowermallProxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowermall")
             {
             }
@@ -49138,14 +49138,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIL1 property
         /// </summary>
-        private sealed class ReactivePowerQIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowerQIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowerQIL1Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowerQIL1Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowerQIL1")
             {
             }
@@ -49169,14 +49169,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIL2 property
         /// </summary>
-        private sealed class ReactivePowerQIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowerQIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowerQIL2Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowerQIL2Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowerQIL2")
             {
             }
@@ -49200,14 +49200,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIL3 property
         /// </summary>
-        private sealed class ReactivePowerQIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowerQIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowerQIL3Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowerQIL3Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowerQIL3")
             {
             }
@@ -49231,14 +49231,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIall property
         /// </summary>
-        private sealed class ReactivePowerQIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowerQIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowerQIallProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowerQIallProxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowerQIall")
             {
             }
@@ -49262,14 +49262,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIIL1 property
         /// </summary>
-        private sealed class ReactivePowerQIIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowerQIIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowerQIIL1Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowerQIIL1Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowerQIIL1")
             {
             }
@@ -49293,14 +49293,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIIL2 property
         /// </summary>
-        private sealed class ReactivePowerQIIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowerQIIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowerQIIL2Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowerQIIL2Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowerQIIL2")
             {
             }
@@ -49324,14 +49324,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIIL3 property
         /// </summary>
-        private sealed class ReactivePowerQIIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowerQIIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowerQIIL3Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowerQIIL3Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowerQIIL3")
             {
             }
@@ -49355,14 +49355,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIIall property
         /// </summary>
-        private sealed class ReactivePowerQIIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowerQIIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowerQIIallProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowerQIIallProxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowerQIIall")
             {
             }
@@ -49386,14 +49386,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIIIL1 property
         /// </summary>
-        private sealed class ReactivePowerQIIIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowerQIIIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowerQIIIL1Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowerQIIIL1Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowerQIIIL1")
             {
             }
@@ -49417,14 +49417,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIIIL2 property
         /// </summary>
-        private sealed class ReactivePowerQIIIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowerQIIIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowerQIIIL2Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowerQIIIL2Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowerQIIIL2")
             {
             }
@@ -49448,14 +49448,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIIIL3 property
         /// </summary>
-        private sealed class ReactivePowerQIIIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowerQIIIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowerQIIIL3Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowerQIIIL3Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowerQIIIL3")
             {
             }
@@ -49479,14 +49479,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIIIall property
         /// </summary>
-        private sealed class ReactivePowerQIIIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowerQIIIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowerQIIIallProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowerQIIIallProxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowerQIIIall")
             {
             }
@@ -49510,14 +49510,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIVL1 property
         /// </summary>
-        private sealed class ReactivePowerQIVL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowerQIVL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowerQIVL1Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowerQIVL1Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowerQIVL1")
             {
             }
@@ -49541,14 +49541,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIVL2 property
         /// </summary>
-        private sealed class ReactivePowerQIVL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowerQIVL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowerQIVL2Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowerQIVL2Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowerQIVL2")
             {
             }
@@ -49572,14 +49572,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIVL3 property
         /// </summary>
-        private sealed class ReactivePowerQIVL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowerQIVL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowerQIVL3Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowerQIVL3Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowerQIVL3")
             {
             }
@@ -49603,14 +49603,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIVall property
         /// </summary>
-        private sealed class ReactivePowerQIVallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesReactivePowerQIVallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ReactivePowerQIVallProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesReactivePowerQIVallProxy(IElectricityValues modelElement) : 
                     base(modelElement, "ReactivePowerQIVall")
             {
             }
@@ -49634,14 +49634,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ApparentPowerpL1 property
         /// </summary>
-        private sealed class ApparentPowerpL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesApparentPowerpL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ApparentPowerpL1Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesApparentPowerpL1Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ApparentPowerpL1")
             {
             }
@@ -49665,14 +49665,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ApparentPowerpL2 property
         /// </summary>
-        private sealed class ApparentPowerpL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesApparentPowerpL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ApparentPowerpL2Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesApparentPowerpL2Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ApparentPowerpL2")
             {
             }
@@ -49696,14 +49696,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ApparentPowerpL3 property
         /// </summary>
-        private sealed class ApparentPowerpL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesApparentPowerpL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ApparentPowerpL3Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesApparentPowerpL3Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ApparentPowerpL3")
             {
             }
@@ -49727,14 +49727,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ApparentPowerpAll property
         /// </summary>
-        private sealed class ApparentPowerpAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesApparentPowerpAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ApparentPowerpAllProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesApparentPowerpAllProxy(IElectricityValues modelElement) : 
                     base(modelElement, "ApparentPowerpAll")
             {
             }
@@ -49758,14 +49758,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ApparentPowermL1 property
         /// </summary>
-        private sealed class ApparentPowermL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesApparentPowermL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ApparentPowermL1Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesApparentPowermL1Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ApparentPowermL1")
             {
             }
@@ -49789,14 +49789,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ApparentPowermL2 property
         /// </summary>
-        private sealed class ApparentPowermL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesApparentPowermL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ApparentPowermL2Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesApparentPowermL2Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ApparentPowermL2")
             {
             }
@@ -49820,14 +49820,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ApparentPowermL3 property
         /// </summary>
-        private sealed class ApparentPowermL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesApparentPowermL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ApparentPowermL3Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesApparentPowermL3Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ApparentPowermL3")
             {
             }
@@ -49851,14 +49851,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ApparentPowermAll property
         /// </summary>
-        private sealed class ApparentPowermAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesApparentPowermAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ApparentPowermAllProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesApparentPowermAllProxy(IElectricityValues modelElement) : 
                     base(modelElement, "ApparentPowermAll")
             {
             }
@@ -49882,14 +49882,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the CurrentL1 property
         /// </summary>
-        private sealed class CurrentL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesCurrentL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public CurrentL1Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesCurrentL1Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "CurrentL1")
             {
             }
@@ -49913,14 +49913,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the CurrentL2 property
         /// </summary>
-        private sealed class CurrentL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesCurrentL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public CurrentL2Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesCurrentL2Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "CurrentL2")
             {
             }
@@ -49944,14 +49944,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the CurrentL3 property
         /// </summary>
-        private sealed class CurrentL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesCurrentL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public CurrentL3Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesCurrentL3Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "CurrentL3")
             {
             }
@@ -49975,14 +49975,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the CurrentAll property
         /// </summary>
-        private sealed class CurrentAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesCurrentAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public CurrentAllProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesCurrentAllProxy(IElectricityValues modelElement) : 
                     base(modelElement, "CurrentAll")
             {
             }
@@ -50006,14 +50006,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VoltageL1 property
         /// </summary>
-        private sealed class VoltageL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesVoltageL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public VoltageL1Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesVoltageL1Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "VoltageL1")
             {
             }
@@ -50037,14 +50037,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VoltageL2 property
         /// </summary>
-        private sealed class VoltageL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesVoltageL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public VoltageL2Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesVoltageL2Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "VoltageL2")
             {
             }
@@ -50068,14 +50068,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VoltageL3 property
         /// </summary>
-        private sealed class VoltageL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesVoltageL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public VoltageL3Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesVoltageL3Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "VoltageL3")
             {
             }
@@ -50099,14 +50099,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VoltageAll property
         /// </summary>
-        private sealed class VoltageAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesVoltageAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public VoltageAllProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesVoltageAllProxy(IElectricityValues modelElement) : 
                     base(modelElement, "VoltageAll")
             {
             }
@@ -50130,14 +50130,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PowerFactorL1 property
         /// </summary>
-        private sealed class PowerFactorL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesPowerFactorL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public PowerFactorL1Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesPowerFactorL1Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "PowerFactorL1")
             {
             }
@@ -50161,14 +50161,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PowerFactorL2 property
         /// </summary>
-        private sealed class PowerFactorL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesPowerFactorL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public PowerFactorL2Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesPowerFactorL2Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "PowerFactorL2")
             {
             }
@@ -50192,14 +50192,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PowerFactorL3 property
         /// </summary>
-        private sealed class PowerFactorL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesPowerFactorL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public PowerFactorL3Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesPowerFactorL3Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "PowerFactorL3")
             {
             }
@@ -50223,14 +50223,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PowerFactorAll property
         /// </summary>
-        private sealed class PowerFactorAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesPowerFactorAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public PowerFactorAllProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesPowerFactorAllProxy(IElectricityValues modelElement) : 
                     base(modelElement, "PowerFactorAll")
             {
             }
@@ -50254,14 +50254,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SupplyFrequencyL1 property
         /// </summary>
-        private sealed class SupplyFrequencyL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesSupplyFrequencyL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public SupplyFrequencyL1Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesSupplyFrequencyL1Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "SupplyFrequencyL1")
             {
             }
@@ -50285,14 +50285,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SupplyFrequencyL2 property
         /// </summary>
-        private sealed class SupplyFrequencyL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesSupplyFrequencyL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public SupplyFrequencyL2Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesSupplyFrequencyL2Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "SupplyFrequencyL2")
             {
             }
@@ -50316,14 +50316,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SupplyFrequencyL3 property
         /// </summary>
-        private sealed class SupplyFrequencyL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesSupplyFrequencyL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public SupplyFrequencyL3Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesSupplyFrequencyL3Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "SupplyFrequencyL3")
             {
             }
@@ -50347,14 +50347,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SupplyFrequencyAll property
         /// </summary>
-        private sealed class SupplyFrequencyAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesSupplyFrequencyAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public SupplyFrequencyAllProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesSupplyFrequencyAllProxy(IElectricityValues modelElement) : 
                     base(modelElement, "SupplyFrequencyAll")
             {
             }
@@ -50378,14 +50378,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerAbsPL1 property
         /// </summary>
-        private sealed class ActivePowerAbsPL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerAbsPL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerAbsPL1Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerAbsPL1Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerAbsPL1")
             {
             }
@@ -50409,14 +50409,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerAbsPL2 property
         /// </summary>
-        private sealed class ActivePowerAbsPL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerAbsPL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerAbsPL2Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerAbsPL2Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerAbsPL2")
             {
             }
@@ -50440,14 +50440,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerAbsPL3 property
         /// </summary>
-        private sealed class ActivePowerAbsPL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerAbsPL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerAbsPL3Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerAbsPL3Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerAbsPL3")
             {
             }
@@ -50471,14 +50471,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerAbsPAll property
         /// </summary>
-        private sealed class ActivePowerAbsPAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerAbsPAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerAbsPAllProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerAbsPAllProxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerAbsPAll")
             {
             }
@@ -50502,14 +50502,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerAbsML1 property
         /// </summary>
-        private sealed class ActivePowerAbsML1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerAbsML1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerAbsML1Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerAbsML1Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerAbsML1")
             {
             }
@@ -50533,14 +50533,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerAbsML2 property
         /// </summary>
-        private sealed class ActivePowerAbsML2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerAbsML2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerAbsML2Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerAbsML2Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerAbsML2")
             {
             }
@@ -50564,14 +50564,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerAbsML3 property
         /// </summary>
-        private sealed class ActivePowerAbsML3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerAbsML3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerAbsML3Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerAbsML3Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerAbsML3")
             {
             }
@@ -50595,14 +50595,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerAbsMAll property
         /// </summary>
-        private sealed class ActivePowerAbsMAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerAbsMAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerAbsMAllProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerAbsMAllProxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerAbsMAll")
             {
             }
@@ -50626,14 +50626,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIL1 property
         /// </summary>
-        private sealed class ActivePowerQIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerQIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerQIL1Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerQIL1Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerQIL1")
             {
             }
@@ -50657,14 +50657,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIL2 property
         /// </summary>
-        private sealed class ActivePowerQIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerQIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerQIL2Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerQIL2Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerQIL2")
             {
             }
@@ -50688,14 +50688,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIL3 property
         /// </summary>
-        private sealed class ActivePowerQIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerQIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerQIL3Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerQIL3Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerQIL3")
             {
             }
@@ -50719,14 +50719,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIall property
         /// </summary>
-        private sealed class ActivePowerQIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerQIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerQIallProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerQIallProxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerQIall")
             {
             }
@@ -50750,14 +50750,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIIL1 property
         /// </summary>
-        private sealed class ActivePowerQIIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerQIIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerQIIL1Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerQIIL1Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerQIIL1")
             {
             }
@@ -50781,14 +50781,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIIL2 property
         /// </summary>
-        private sealed class ActivePowerQIIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerQIIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerQIIL2Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerQIIL2Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerQIIL2")
             {
             }
@@ -50812,14 +50812,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIIL3 property
         /// </summary>
-        private sealed class ActivePowerQIIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerQIIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerQIIL3Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerQIIL3Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerQIIL3")
             {
             }
@@ -50843,14 +50843,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIIall property
         /// </summary>
-        private sealed class ActivePowerQIIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerQIIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerQIIallProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerQIIallProxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerQIIall")
             {
             }
@@ -50874,14 +50874,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIIIL1 property
         /// </summary>
-        private sealed class ActivePowerQIIIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerQIIIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerQIIIL1Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerQIIIL1Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerQIIIL1")
             {
             }
@@ -50905,14 +50905,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIIIL2 property
         /// </summary>
-        private sealed class ActivePowerQIIIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerQIIIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerQIIIL2Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerQIIIL2Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerQIIIL2")
             {
             }
@@ -50936,14 +50936,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIIIL3 property
         /// </summary>
-        private sealed class ActivePowerQIIIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerQIIIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerQIIIL3Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerQIIIL3Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerQIIIL3")
             {
             }
@@ -50967,14 +50967,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIIIall property
         /// </summary>
-        private sealed class ActivePowerQIIIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerQIIIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerQIIIallProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerQIIIallProxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerQIIIall")
             {
             }
@@ -50998,14 +50998,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIVL1 property
         /// </summary>
-        private sealed class ActivePowerQIVL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerQIVL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerQIVL1Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerQIVL1Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerQIVL1")
             {
             }
@@ -51029,14 +51029,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIVL2 property
         /// </summary>
-        private sealed class ActivePowerQIVL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerQIVL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerQIVL2Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerQIVL2Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerQIVL2")
             {
             }
@@ -51060,14 +51060,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIVL3 property
         /// </summary>
-        private sealed class ActivePowerQIVL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerQIVL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerQIVL3Proxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerQIVL3Proxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerQIVL3")
             {
             }
@@ -51091,14 +51091,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIVall property
         /// </summary>
-        private sealed class ActivePowerQIVallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesActivePowerQIVallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ActivePowerQIVallProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesActivePowerQIVallProxy(IElectricityValues modelElement) : 
                     base(modelElement, "ActivePowerQIVall")
             {
             }
@@ -51122,14 +51122,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Angles property
         /// </summary>
-        private sealed class AnglesProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesAnglesProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public AnglesProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesAnglesProxy(IElectricityValues modelElement) : 
                     base(modelElement, "Angles")
             {
             }
@@ -51153,14 +51153,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Pulses property
         /// </summary>
-        private sealed class PulsesProxy : ModelPropertyChange<IElectricityValues, Nullable<int>>
+        private sealed class ElectricityValuesPulsesProxy : ModelPropertyChange<IElectricityValues, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public PulsesProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesPulsesProxy(IElectricityValues modelElement) : 
                     base(modelElement, "Pulses")
             {
             }
@@ -51184,14 +51184,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Ampere_squaredHours property
         /// </summary>
-        private sealed class Ampere_squaredHoursProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesAmpere_squaredHoursProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Ampere_squaredHoursProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesAmpere_squaredHoursProxy(IElectricityValues modelElement) : 
                     base(modelElement, "Ampere_squaredHours")
             {
             }
@@ -51215,14 +51215,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Volt_squaredHours property
         /// </summary>
-        private sealed class Volt_squaredHoursProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesVolt_squaredHoursProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Volt_squaredHoursProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesVolt_squaredHoursProxy(IElectricityValues modelElement) : 
                     base(modelElement, "Volt_squaredHours")
             {
             }
@@ -51246,14 +51246,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NeutralCurrent property
         /// </summary>
-        private sealed class NeutralCurrentProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesNeutralCurrentProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public NeutralCurrentProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesNeutralCurrentProxy(IElectricityValues modelElement) : 
                     base(modelElement, "NeutralCurrent")
             {
             }
@@ -51277,14 +51277,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NeutralVoltage property
         /// </summary>
-        private sealed class NeutralVoltageProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        private sealed class ElectricityValuesNeutralVoltageProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public NeutralVoltageProxy(IElectricityValues modelElement) : 
+            public ElectricityValuesNeutralVoltageProxy(IElectricityValues modelElement) : 
                     base(modelElement, "NeutralVoltage")
             {
             }
@@ -52741,115 +52741,115 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "BILLING_PERIOD_AVERAGE"))
             {
-                return Observable.Box(new Billing_period_averageProxy(this));
+                return Observable.Box(new MeasurementValuesBilling_period_averageProxy(this));
             }
             if ((attribute == "CUMULATIVE_MINIMUM"))
             {
-                return Observable.Box(new Cumulative_minimumProxy(this));
+                return Observable.Box(new MeasurementValuesCumulative_minimumProxy(this));
             }
             if ((attribute == "CUMULATIVE_MAXIMUM"))
             {
-                return Observable.Box(new Cumulative_maximumProxy(this));
+                return Observable.Box(new MeasurementValuesCumulative_maximumProxy(this));
             }
             if ((attribute == "MINIMUM"))
             {
-                return Observable.Box(new MinimumProxy(this));
+                return Observable.Box(new MeasurementValuesMinimumProxy(this));
             }
             if ((attribute == "CURRENT_AVERAGE"))
             {
-                return Observable.Box(new Current_averageProxy(this));
+                return Observable.Box(new MeasurementValuesCurrent_averageProxy(this));
             }
             if ((attribute == "LAST_AVERAGE"))
             {
-                return Observable.Box(new Last_averageProxy(this));
+                return Observable.Box(new MeasurementValuesLast_averageProxy(this));
             }
             if ((attribute == "MAXIMUM"))
             {
-                return Observable.Box(new MaximumProxy(this));
+                return Observable.Box(new MeasurementValuesMaximumProxy(this));
             }
             if ((attribute == "INSTANTANEOUS_VALUE"))
             {
-                return Observable.Box(new Instantaneous_valueProxy(this));
+                return Observable.Box(new MeasurementValuesInstantaneous_valueProxy(this));
             }
             if ((attribute == "TIME_INTEGRAL"))
             {
-                return Observable.Box(new Time_integralProxy(this));
+                return Observable.Box(new MeasurementValuesTime_integralProxy(this));
             }
             if ((attribute == "UNDER_LIMIT_THRESHOLD"))
             {
-                return Observable.Box(new Under_limit_thresholdProxy(this));
+                return Observable.Box(new MeasurementValuesUnder_limit_thresholdProxy(this));
             }
             if ((attribute == "UNDER_LIMIT_OCCURRENCE_COUNTER"))
             {
-                return Observable.Box(new Under_limit_occurrence_counterProxy(this));
+                return Observable.Box(new MeasurementValuesUnder_limit_occurrence_counterProxy(this));
             }
             if ((attribute == "UNDER_LIMIT_DURATION"))
             {
-                return Observable.Box(new Under_limit_durationProxy(this));
+                return Observable.Box(new MeasurementValuesUnder_limit_durationProxy(this));
             }
             if ((attribute == "UNDER_LIMIT_MAGNITUDE"))
             {
-                return Observable.Box(new Under_limit_magnitudeProxy(this));
+                return Observable.Box(new MeasurementValuesUnder_limit_magnitudeProxy(this));
             }
             if ((attribute == "OVER_LIMIT_THRESHOLD"))
             {
-                return Observable.Box(new Over_limit_thresholdProxy(this));
+                return Observable.Box(new MeasurementValuesOver_limit_thresholdProxy(this));
             }
             if ((attribute == "OVER_LIMIT_OCCURRENCE_COUNTER"))
             {
-                return Observable.Box(new Over_limit_occurrence_counterProxy(this));
+                return Observable.Box(new MeasurementValuesOver_limit_occurrence_counterProxy(this));
             }
             if ((attribute == "OVER_LIMIT_DURATION"))
             {
-                return Observable.Box(new Over_limit_durationProxy(this));
+                return Observable.Box(new MeasurementValuesOver_limit_durationProxy(this));
             }
             if ((attribute == "OVER_LIMIT_MAGNITUDE"))
             {
-                return Observable.Box(new Over_limit_magnitudeProxy(this));
+                return Observable.Box(new MeasurementValuesOver_limit_magnitudeProxy(this));
             }
             if ((attribute == "MISSING_THRESHOLD"))
             {
-                return Observable.Box(new Missing_thresholdProxy(this));
+                return Observable.Box(new MeasurementValuesMissing_thresholdProxy(this));
             }
             if ((attribute == "MISSING_OCCURRENCE_COUNTER"))
             {
-                return Observable.Box(new Missing_occurrence_counterProxy(this));
+                return Observable.Box(new MeasurementValuesMissing_occurrence_counterProxy(this));
             }
             if ((attribute == "MISSING_DURATION"))
             {
-                return Observable.Box(new Missing_durationProxy(this));
+                return Observable.Box(new MeasurementValuesMissing_durationProxy(this));
             }
             if ((attribute == "MISSING_MAGNITUDE"))
             {
-                return Observable.Box(new Missing_magnitudeProxy(this));
+                return Observable.Box(new MeasurementValuesMissing_magnitudeProxy(this));
             }
             if ((attribute == "TIME_THRESHOLD_FOR_UNDER_LIMIT"))
             {
-                return new Time_threshold_for_under_limitProxy(this);
+                return new MeasurementValuesTime_threshold_for_under_limitProxy(this);
             }
             if ((attribute == "TIME_THRESHOLD_FOR_OVER_LIMIT"))
             {
-                return new Time_threshold_for_over_limitProxy(this);
+                return new MeasurementValuesTime_threshold_for_over_limitProxy(this);
             }
             if ((attribute == "TIME_THRESHOLD_FOR_MISSING_MAGNITUDE"))
             {
-                return new Time_threshold_for_missing_magnitudeProxy(this);
+                return new MeasurementValuesTime_threshold_for_missing_magnitudeProxy(this);
             }
             if ((attribute == "CONTRACTED_VALUE"))
             {
-                return Observable.Box(new Contracted_valueProxy(this));
+                return Observable.Box(new MeasurementValuesContracted_valueProxy(this));
             }
             if ((attribute == "MINIMUM_FOR_RECORDING_INTERVAL"))
             {
-                return Observable.Box(new Minimum_for_recording_intervalProxy(this));
+                return Observable.Box(new MeasurementValuesMinimum_for_recording_intervalProxy(this));
             }
             if ((attribute == "MAXIMUM_FOR_RECORDING_INTERVAL"))
             {
-                return Observable.Box(new Maximum_for_recording_intervalProxy(this));
+                return Observable.Box(new MeasurementValuesMaximum_for_recording_intervalProxy(this));
             }
             if ((attribute == "TEST_AVERAGE"))
             {
-                return Observable.Box(new Test_averageProxy(this));
+                return Observable.Box(new MeasurementValuesTest_averageProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -52863,7 +52863,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((reference == "CALCULATIONS"))
             {
-                return new CalculationsProxy(this);
+                return new MeasurementValuesCalculationsProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -52919,7 +52919,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new CalculationsProxy(this._parent)};
+                        new MeasurementValuesCalculationsProxy(this._parent)};
             }
             
             /// <summary>
@@ -53003,14 +53003,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Billing_period_average property
         /// </summary>
-        private sealed class Billing_period_averageProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesBilling_period_averageProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Billing_period_averageProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesBilling_period_averageProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Billing_period_average")
             {
             }
@@ -53034,14 +53034,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Cumulative_minimum property
         /// </summary>
-        private sealed class Cumulative_minimumProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesCumulative_minimumProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Cumulative_minimumProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesCumulative_minimumProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Cumulative_minimum")
             {
             }
@@ -53065,14 +53065,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Cumulative_maximum property
         /// </summary>
-        private sealed class Cumulative_maximumProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesCumulative_maximumProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Cumulative_maximumProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesCumulative_maximumProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Cumulative_maximum")
             {
             }
@@ -53096,14 +53096,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Minimum property
         /// </summary>
-        private sealed class MinimumProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesMinimumProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public MinimumProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesMinimumProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Minimum")
             {
             }
@@ -53127,14 +53127,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Current_average property
         /// </summary>
-        private sealed class Current_averageProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesCurrent_averageProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Current_averageProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesCurrent_averageProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Current_average")
             {
             }
@@ -53158,14 +53158,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Last_average property
         /// </summary>
-        private sealed class Last_averageProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesLast_averageProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Last_averageProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesLast_averageProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Last_average")
             {
             }
@@ -53189,14 +53189,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Maximum property
         /// </summary>
-        private sealed class MaximumProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesMaximumProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public MaximumProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesMaximumProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Maximum")
             {
             }
@@ -53220,14 +53220,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Instantaneous_value property
         /// </summary>
-        private sealed class Instantaneous_valueProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesInstantaneous_valueProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Instantaneous_valueProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesInstantaneous_valueProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Instantaneous_value")
             {
             }
@@ -53251,14 +53251,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Time_integral property
         /// </summary>
-        private sealed class Time_integralProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesTime_integralProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Time_integralProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesTime_integralProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Time_integral")
             {
             }
@@ -53282,14 +53282,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Under_limit_threshold property
         /// </summary>
-        private sealed class Under_limit_thresholdProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesUnder_limit_thresholdProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Under_limit_thresholdProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesUnder_limit_thresholdProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Under_limit_threshold")
             {
             }
@@ -53313,14 +53313,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Under_limit_occurrence_counter property
         /// </summary>
-        private sealed class Under_limit_occurrence_counterProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesUnder_limit_occurrence_counterProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Under_limit_occurrence_counterProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesUnder_limit_occurrence_counterProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Under_limit_occurrence_counter")
             {
             }
@@ -53344,14 +53344,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Under_limit_duration property
         /// </summary>
-        private sealed class Under_limit_durationProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesUnder_limit_durationProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Under_limit_durationProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesUnder_limit_durationProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Under_limit_duration")
             {
             }
@@ -53375,14 +53375,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Under_limit_magnitude property
         /// </summary>
-        private sealed class Under_limit_magnitudeProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesUnder_limit_magnitudeProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Under_limit_magnitudeProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesUnder_limit_magnitudeProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Under_limit_magnitude")
             {
             }
@@ -53406,14 +53406,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Over_limit_threshold property
         /// </summary>
-        private sealed class Over_limit_thresholdProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesOver_limit_thresholdProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Over_limit_thresholdProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesOver_limit_thresholdProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Over_limit_threshold")
             {
             }
@@ -53437,14 +53437,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Over_limit_occurrence_counter property
         /// </summary>
-        private sealed class Over_limit_occurrence_counterProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesOver_limit_occurrence_counterProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Over_limit_occurrence_counterProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesOver_limit_occurrence_counterProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Over_limit_occurrence_counter")
             {
             }
@@ -53468,14 +53468,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Over_limit_duration property
         /// </summary>
-        private sealed class Over_limit_durationProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesOver_limit_durationProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Over_limit_durationProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesOver_limit_durationProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Over_limit_duration")
             {
             }
@@ -53499,14 +53499,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Over_limit_magnitude property
         /// </summary>
-        private sealed class Over_limit_magnitudeProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesOver_limit_magnitudeProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Over_limit_magnitudeProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesOver_limit_magnitudeProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Over_limit_magnitude")
             {
             }
@@ -53530,14 +53530,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Missing_threshold property
         /// </summary>
-        private sealed class Missing_thresholdProxy : ModelPropertyChange<IMeasurementValues, Nullable<bool>>
+        private sealed class MeasurementValuesMissing_thresholdProxy : ModelPropertyChange<IMeasurementValues, Nullable<bool>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Missing_thresholdProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesMissing_thresholdProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Missing_threshold")
             {
             }
@@ -53561,14 +53561,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Missing_occurrence_counter property
         /// </summary>
-        private sealed class Missing_occurrence_counterProxy : ModelPropertyChange<IMeasurementValues, Nullable<bool>>
+        private sealed class MeasurementValuesMissing_occurrence_counterProxy : ModelPropertyChange<IMeasurementValues, Nullable<bool>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Missing_occurrence_counterProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesMissing_occurrence_counterProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Missing_occurrence_counter")
             {
             }
@@ -53592,14 +53592,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Missing_duration property
         /// </summary>
-        private sealed class Missing_durationProxy : ModelPropertyChange<IMeasurementValues, Nullable<bool>>
+        private sealed class MeasurementValuesMissing_durationProxy : ModelPropertyChange<IMeasurementValues, Nullable<bool>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Missing_durationProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesMissing_durationProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Missing_duration")
             {
             }
@@ -53623,14 +53623,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Missing_magnitude property
         /// </summary>
-        private sealed class Missing_magnitudeProxy : ModelPropertyChange<IMeasurementValues, Nullable<bool>>
+        private sealed class MeasurementValuesMissing_magnitudeProxy : ModelPropertyChange<IMeasurementValues, Nullable<bool>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Missing_magnitudeProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesMissing_magnitudeProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Missing_magnitude")
             {
             }
@@ -53654,14 +53654,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Time_threshold_for_under_limit property
         /// </summary>
-        private sealed class Time_threshold_for_under_limitProxy : ModelPropertyChange<IMeasurementValues, string>
+        private sealed class MeasurementValuesTime_threshold_for_under_limitProxy : ModelPropertyChange<IMeasurementValues, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Time_threshold_for_under_limitProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesTime_threshold_for_under_limitProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Time_threshold_for_under_limit")
             {
             }
@@ -53685,14 +53685,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Time_threshold_for_over_limit property
         /// </summary>
-        private sealed class Time_threshold_for_over_limitProxy : ModelPropertyChange<IMeasurementValues, string>
+        private sealed class MeasurementValuesTime_threshold_for_over_limitProxy : ModelPropertyChange<IMeasurementValues, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Time_threshold_for_over_limitProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesTime_threshold_for_over_limitProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Time_threshold_for_over_limit")
             {
             }
@@ -53716,14 +53716,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Time_threshold_for_missing_magnitude property
         /// </summary>
-        private sealed class Time_threshold_for_missing_magnitudeProxy : ModelPropertyChange<IMeasurementValues, string>
+        private sealed class MeasurementValuesTime_threshold_for_missing_magnitudeProxy : ModelPropertyChange<IMeasurementValues, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Time_threshold_for_missing_magnitudeProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesTime_threshold_for_missing_magnitudeProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Time_threshold_for_missing_magnitude")
             {
             }
@@ -53747,14 +53747,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Contracted_value property
         /// </summary>
-        private sealed class Contracted_valueProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesContracted_valueProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Contracted_valueProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesContracted_valueProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Contracted_value")
             {
             }
@@ -53778,14 +53778,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Minimum_for_recording_interval property
         /// </summary>
-        private sealed class Minimum_for_recording_intervalProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesMinimum_for_recording_intervalProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Minimum_for_recording_intervalProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesMinimum_for_recording_intervalProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Minimum_for_recording_interval")
             {
             }
@@ -53809,14 +53809,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Maximum_for_recording_interval property
         /// </summary>
-        private sealed class Maximum_for_recording_intervalProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesMaximum_for_recording_intervalProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Maximum_for_recording_intervalProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesMaximum_for_recording_intervalProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Maximum_for_recording_interval")
             {
             }
@@ -53840,14 +53840,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Test_average property
         /// </summary>
-        private sealed class Test_averageProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        private sealed class MeasurementValuesTest_averageProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Test_averageProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesTest_averageProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Test_average")
             {
             }
@@ -53871,14 +53871,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the calculations property
         /// </summary>
-        private sealed class CalculationsProxy : ModelPropertyChange<IMeasurementValues, IElectricityValues>
+        private sealed class MeasurementValuesCalculationsProxy : ModelPropertyChange<IMeasurementValues, IElectricityValues>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public CalculationsProxy(IMeasurementValues modelElement) : 
+            public MeasurementValuesCalculationsProxy(IMeasurementValues modelElement) : 
                     base(modelElement, "Calculations")
             {
             }
@@ -54284,31 +54284,31 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "TOTAL"))
             {
-                return Observable.Box(new TotalProxy(this));
+                return Observable.Box(new ElectricityHarmonicsTotalProxy(this));
             }
             if ((attribute == "FUNDAMENTAL_HARMONIC"))
             {
-                return Observable.Box(new Fundamental_harmonicProxy(this));
+                return Observable.Box(new ElectricityHarmonicsFundamental_harmonicProxy(this));
             }
             if ((attribute == "HARMONIC"))
             {
-                return Observable.Box(new HarmonicProxy(this));
+                return Observable.Box(new ElectricityHarmonicsHarmonicProxy(this));
             }
             if ((attribute == "TOTAL_HARMONI_DISTORTION"))
             {
-                return Observable.Box(new Total_Harmoni_DistortionProxy(this));
+                return Observable.Box(new ElectricityHarmonicsTotal_Harmoni_DistortionProxy(this));
             }
             if ((attribute == "TOTAL_DEMAND_DISTORTION"))
             {
-                return Observable.Box(new Total_Demand_DistortionProxy(this));
+                return Observable.Box(new ElectricityHarmonicsTotal_Demand_DistortionProxy(this));
             }
             if ((attribute == "ALL_HARMONICS"))
             {
-                return Observable.Box(new All_harmonicsProxy(this));
+                return Observable.Box(new ElectricityHarmonicsAll_harmonicsProxy(this));
             }
             if ((attribute == "ALL_HARMONICS_TO_NOMINAL_VALUE_RATIO"))
             {
-                return Observable.Box(new All_harmonics_to_nominal_value_ratioProxy(this));
+                return Observable.Box(new ElectricityHarmonicsAll_harmonics_to_nominal_value_ratioProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -54328,14 +54328,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the total property
         /// </summary>
-        private sealed class TotalProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
+        private sealed class ElectricityHarmonicsTotalProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TotalProxy(IElectricityHarmonics modelElement) : 
+            public ElectricityHarmonicsTotalProxy(IElectricityHarmonics modelElement) : 
                     base(modelElement, "Total")
             {
             }
@@ -54359,14 +54359,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the fundamental_harmonic property
         /// </summary>
-        private sealed class Fundamental_harmonicProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
+        private sealed class ElectricityHarmonicsFundamental_harmonicProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Fundamental_harmonicProxy(IElectricityHarmonics modelElement) : 
+            public ElectricityHarmonicsFundamental_harmonicProxy(IElectricityHarmonics modelElement) : 
                     base(modelElement, "Fundamental_harmonic")
             {
             }
@@ -54390,14 +54390,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the harmonic property
         /// </summary>
-        private sealed class HarmonicProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
+        private sealed class ElectricityHarmonicsHarmonicProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public HarmonicProxy(IElectricityHarmonics modelElement) : 
+            public ElectricityHarmonicsHarmonicProxy(IElectricityHarmonics modelElement) : 
                     base(modelElement, "Harmonic")
             {
             }
@@ -54421,14 +54421,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Total_Harmoni_Distortion property
         /// </summary>
-        private sealed class Total_Harmoni_DistortionProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
+        private sealed class ElectricityHarmonicsTotal_Harmoni_DistortionProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Total_Harmoni_DistortionProxy(IElectricityHarmonics modelElement) : 
+            public ElectricityHarmonicsTotal_Harmoni_DistortionProxy(IElectricityHarmonics modelElement) : 
                     base(modelElement, "Total_Harmoni_Distortion")
             {
             }
@@ -54452,14 +54452,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Total_Demand_Distortion property
         /// </summary>
-        private sealed class Total_Demand_DistortionProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
+        private sealed class ElectricityHarmonicsTotal_Demand_DistortionProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Total_Demand_DistortionProxy(IElectricityHarmonics modelElement) : 
+            public ElectricityHarmonicsTotal_Demand_DistortionProxy(IElectricityHarmonics modelElement) : 
                     base(modelElement, "Total_Demand_Distortion")
             {
             }
@@ -54483,14 +54483,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the All_harmonics property
         /// </summary>
-        private sealed class All_harmonicsProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
+        private sealed class ElectricityHarmonicsAll_harmonicsProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public All_harmonicsProxy(IElectricityHarmonics modelElement) : 
+            public ElectricityHarmonicsAll_harmonicsProxy(IElectricityHarmonics modelElement) : 
                     base(modelElement, "All_harmonics")
             {
             }
@@ -54514,14 +54514,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the All_harmonics_to_nominal_value_ratio property
         /// </summary>
-        private sealed class All_harmonics_to_nominal_value_ratioProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
+        private sealed class ElectricityHarmonicsAll_harmonics_to_nominal_value_ratioProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public All_harmonics_to_nominal_value_ratioProxy(IElectricityHarmonics modelElement) : 
+            public ElectricityHarmonicsAll_harmonics_to_nominal_value_ratioProxy(IElectricityHarmonics modelElement) : 
                     base(modelElement, "All_harmonics_to_nominal_value_ratio")
             {
             }
@@ -56531,171 +56531,171 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "FROMUL1TOUL2"))
             {
-                return Observable.Box(new FromUL1toUL2Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromUL1toUL2Proxy(this));
             }
             if ((attribute == "FROMUL1TOUL3"))
             {
-                return Observable.Box(new FromUL1toUL3Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromUL1toUL3Proxy(this));
             }
             if ((attribute == "FROMUL1TOIL1"))
             {
-                return Observable.Box(new FromUL1toIL1Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromUL1toIL1Proxy(this));
             }
             if ((attribute == "FROMUL1TOIL2"))
             {
-                return Observable.Box(new FromUL1toIL2Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromUL1toIL2Proxy(this));
             }
             if ((attribute == "FROMUL1TOIL3"))
             {
-                return Observable.Box(new FromUL1toIL3Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromUL1toIL3Proxy(this));
             }
             if ((attribute == "FROMUL1TOIL0"))
             {
-                return Observable.Box(new FromUL1toIL0Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromUL1toIL0Proxy(this));
             }
             if ((attribute == "FROMUL2TOUL1"))
             {
-                return Observable.Box(new FromUL2toUL1Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromUL2toUL1Proxy(this));
             }
             if ((attribute == "FROMUL2TOUL3"))
             {
-                return Observable.Box(new FromUL2toUL3Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromUL2toUL3Proxy(this));
             }
             if ((attribute == "FROMUL2TOIL1"))
             {
-                return Observable.Box(new FromUL2toIL1Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromUL2toIL1Proxy(this));
             }
             if ((attribute == "FROMUL2TOIL2"))
             {
-                return Observable.Box(new FromUL2toIL2Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromUL2toIL2Proxy(this));
             }
             if ((attribute == "FROMUL2TOIL3"))
             {
-                return Observable.Box(new FromUL2toIL3Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromUL2toIL3Proxy(this));
             }
             if ((attribute == "FROMUL2TOIL0"))
             {
-                return Observable.Box(new FromUL2toIL0Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromUL2toIL0Proxy(this));
             }
             if ((attribute == "FROMUL3TOUL1"))
             {
-                return Observable.Box(new FromUL3toUL1Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromUL3toUL1Proxy(this));
             }
             if ((attribute == "FROMUL3TOUL2"))
             {
-                return Observable.Box(new FromUL3toUL2Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromUL3toUL2Proxy(this));
             }
             if ((attribute == "FROMUL3TOIL1"))
             {
-                return Observable.Box(new FromUL3toIL1Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromUL3toIL1Proxy(this));
             }
             if ((attribute == "FROMUL3TOIL2"))
             {
-                return Observable.Box(new FromUL3toIL2Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromUL3toIL2Proxy(this));
             }
             if ((attribute == "FROMUL3TOIL3"))
             {
-                return Observable.Box(new FromUL3toIL3Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromUL3toIL3Proxy(this));
             }
             if ((attribute == "FROMUL3TOIL0"))
             {
-                return Observable.Box(new FromUL3toIL0Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromUL3toIL0Proxy(this));
             }
             if ((attribute == "FROMIL1TOUL1"))
             {
-                return Observable.Box(new FromIL1toUL1Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL1toUL1Proxy(this));
             }
             if ((attribute == "FROMIL1TOUL2"))
             {
-                return Observable.Box(new FromIL1toUL2Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL1toUL2Proxy(this));
             }
             if ((attribute == "FROMIL1TOUL3"))
             {
-                return Observable.Box(new FromIL1toUL3Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL1toUL3Proxy(this));
             }
             if ((attribute == "FROMIL1TOIL2"))
             {
-                return Observable.Box(new FromIL1toIL2Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL1toIL2Proxy(this));
             }
             if ((attribute == "FROMIL1TOIL3"))
             {
-                return Observable.Box(new FromIL1toIL3Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL1toIL3Proxy(this));
             }
             if ((attribute == "FROMIL1TOIL0"))
             {
-                return Observable.Box(new FromIL1toIL0Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL1toIL0Proxy(this));
             }
             if ((attribute == "FROMIL2TOUL1"))
             {
-                return Observable.Box(new FromIL2toUL1Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL2toUL1Proxy(this));
             }
             if ((attribute == "FROMIL2TOUL2"))
             {
-                return Observable.Box(new FromIL2toUL2Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL2toUL2Proxy(this));
             }
             if ((attribute == "FROMIL2TOUL3"))
             {
-                return Observable.Box(new FromIL2toUL3Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL2toUL3Proxy(this));
             }
             if ((attribute == "FROMIL2TOIL1"))
             {
-                return Observable.Box(new FromIL2toIL1Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL2toIL1Proxy(this));
             }
             if ((attribute == "FROMIL2TOIL3"))
             {
-                return Observable.Box(new FromIL2toIL3Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL2toIL3Proxy(this));
             }
             if ((attribute == "FROMIL2TOIL0"))
             {
-                return Observable.Box(new FromIL2toIL0Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL2toIL0Proxy(this));
             }
             if ((attribute == "FROMIL3TOUL1"))
             {
-                return Observable.Box(new FromIL3toUL1Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL3toUL1Proxy(this));
             }
             if ((attribute == "FROMIL3TOUL2"))
             {
-                return Observable.Box(new FromIL3toUL2Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL3toUL2Proxy(this));
             }
             if ((attribute == "FROMIL3TOUL3"))
             {
-                return Observable.Box(new FromIL3toUL3Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL3toUL3Proxy(this));
             }
             if ((attribute == "FROMIL3TOIL1"))
             {
-                return Observable.Box(new FromIL3toIL1Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL3toIL1Proxy(this));
             }
             if ((attribute == "FROMIL3TOIL2"))
             {
-                return Observable.Box(new FromIL3toIL2Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL3toIL2Proxy(this));
             }
             if ((attribute == "FROMIL3TOIL0"))
             {
-                return Observable.Box(new FromIL3toIL0Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL3toIL0Proxy(this));
             }
             if ((attribute == "FROMIL0TOUL1"))
             {
-                return Observable.Box(new FromIL0toUL1Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL0toUL1Proxy(this));
             }
             if ((attribute == "FROMIL0TOUL2"))
             {
-                return Observable.Box(new FromIL0toUL2Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL0toUL2Proxy(this));
             }
             if ((attribute == "FROMIL0TOUL3"))
             {
-                return Observable.Box(new FromIL0toUL3Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL0toUL3Proxy(this));
             }
             if ((attribute == "FROMIL0TOIL1"))
             {
-                return Observable.Box(new FromIL0toIL1Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL0toIL1Proxy(this));
             }
             if ((attribute == "FROMIL0TOIL2"))
             {
-                return Observable.Box(new FromIL0toIL2Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL0toIL2Proxy(this));
             }
             if ((attribute == "FROMIL0TOIL3"))
             {
-                return Observable.Box(new FromIL0toIL3Proxy(this));
+                return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL0toIL3Proxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -56715,14 +56715,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL1toUL2 property
         /// </summary>
-        private sealed class FromUL1toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromUL1toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromUL1toUL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromUL1toUL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromUL1toUL2")
             {
             }
@@ -56746,14 +56746,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL1toUL3 property
         /// </summary>
-        private sealed class FromUL1toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromUL1toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromUL1toUL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromUL1toUL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromUL1toUL3")
             {
             }
@@ -56777,14 +56777,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL1toIL1 property
         /// </summary>
-        private sealed class FromUL1toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromUL1toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromUL1toIL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromUL1toIL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromUL1toIL1")
             {
             }
@@ -56808,14 +56808,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL1toIL2 property
         /// </summary>
-        private sealed class FromUL1toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromUL1toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromUL1toIL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromUL1toIL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromUL1toIL2")
             {
             }
@@ -56839,14 +56839,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL1toIL3 property
         /// </summary>
-        private sealed class FromUL1toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromUL1toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromUL1toIL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromUL1toIL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromUL1toIL3")
             {
             }
@@ -56870,14 +56870,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL1toIL0 property
         /// </summary>
-        private sealed class FromUL1toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromUL1toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromUL1toIL0Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromUL1toIL0Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromUL1toIL0")
             {
             }
@@ -56901,14 +56901,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL2toUL1 property
         /// </summary>
-        private sealed class FromUL2toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromUL2toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromUL2toUL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromUL2toUL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromUL2toUL1")
             {
             }
@@ -56932,14 +56932,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL2toUL3 property
         /// </summary>
-        private sealed class FromUL2toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromUL2toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromUL2toUL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromUL2toUL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromUL2toUL3")
             {
             }
@@ -56963,14 +56963,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL2toIL1 property
         /// </summary>
-        private sealed class FromUL2toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromUL2toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromUL2toIL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromUL2toIL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromUL2toIL1")
             {
             }
@@ -56994,14 +56994,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL2toIL2 property
         /// </summary>
-        private sealed class FromUL2toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromUL2toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromUL2toIL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromUL2toIL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromUL2toIL2")
             {
             }
@@ -57025,14 +57025,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL2toIL3 property
         /// </summary>
-        private sealed class FromUL2toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromUL2toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromUL2toIL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromUL2toIL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromUL2toIL3")
             {
             }
@@ -57056,14 +57056,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL2toIL0 property
         /// </summary>
-        private sealed class FromUL2toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromUL2toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromUL2toIL0Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromUL2toIL0Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromUL2toIL0")
             {
             }
@@ -57087,14 +57087,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL3toUL1 property
         /// </summary>
-        private sealed class FromUL3toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromUL3toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromUL3toUL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromUL3toUL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromUL3toUL1")
             {
             }
@@ -57118,14 +57118,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL3toUL2 property
         /// </summary>
-        private sealed class FromUL3toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromUL3toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromUL3toUL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromUL3toUL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromUL3toUL2")
             {
             }
@@ -57149,14 +57149,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL3toIL1 property
         /// </summary>
-        private sealed class FromUL3toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromUL3toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromUL3toIL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromUL3toIL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromUL3toIL1")
             {
             }
@@ -57180,14 +57180,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL3toIL2 property
         /// </summary>
-        private sealed class FromUL3toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromUL3toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromUL3toIL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromUL3toIL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromUL3toIL2")
             {
             }
@@ -57211,14 +57211,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL3toIL3 property
         /// </summary>
-        private sealed class FromUL3toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromUL3toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromUL3toIL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromUL3toIL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromUL3toIL3")
             {
             }
@@ -57242,14 +57242,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL3toIL0 property
         /// </summary>
-        private sealed class FromUL3toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromUL3toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromUL3toIL0Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromUL3toIL0Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromUL3toIL0")
             {
             }
@@ -57273,14 +57273,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL1toUL1 property
         /// </summary>
-        private sealed class FromIL1toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL1toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL1toUL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL1toUL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL1toUL1")
             {
             }
@@ -57304,14 +57304,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL1toUL2 property
         /// </summary>
-        private sealed class FromIL1toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL1toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL1toUL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL1toUL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL1toUL2")
             {
             }
@@ -57335,14 +57335,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL1toUL3 property
         /// </summary>
-        private sealed class FromIL1toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL1toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL1toUL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL1toUL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL1toUL3")
             {
             }
@@ -57366,14 +57366,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL1toIL2 property
         /// </summary>
-        private sealed class FromIL1toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL1toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL1toIL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL1toIL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL1toIL2")
             {
             }
@@ -57397,14 +57397,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL1toIL3 property
         /// </summary>
-        private sealed class FromIL1toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL1toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL1toIL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL1toIL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL1toIL3")
             {
             }
@@ -57428,14 +57428,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL1toIL0 property
         /// </summary>
-        private sealed class FromIL1toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL1toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL1toIL0Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL1toIL0Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL1toIL0")
             {
             }
@@ -57459,14 +57459,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL2toUL1 property
         /// </summary>
-        private sealed class FromIL2toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL2toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL2toUL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL2toUL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL2toUL1")
             {
             }
@@ -57490,14 +57490,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL2toUL2 property
         /// </summary>
-        private sealed class FromIL2toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL2toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL2toUL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL2toUL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL2toUL2")
             {
             }
@@ -57521,14 +57521,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL2toUL3 property
         /// </summary>
-        private sealed class FromIL2toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL2toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL2toUL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL2toUL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL2toUL3")
             {
             }
@@ -57552,14 +57552,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL2toIL1 property
         /// </summary>
-        private sealed class FromIL2toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL2toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL2toIL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL2toIL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL2toIL1")
             {
             }
@@ -57583,14 +57583,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL2toIL3 property
         /// </summary>
-        private sealed class FromIL2toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL2toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL2toIL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL2toIL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL2toIL3")
             {
             }
@@ -57614,14 +57614,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL2toIL0 property
         /// </summary>
-        private sealed class FromIL2toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL2toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL2toIL0Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL2toIL0Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL2toIL0")
             {
             }
@@ -57645,14 +57645,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL3toUL1 property
         /// </summary>
-        private sealed class FromIL3toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL3toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL3toUL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL3toUL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL3toUL1")
             {
             }
@@ -57676,14 +57676,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL3toUL2 property
         /// </summary>
-        private sealed class FromIL3toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL3toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL3toUL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL3toUL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL3toUL2")
             {
             }
@@ -57707,14 +57707,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL3toUL3 property
         /// </summary>
-        private sealed class FromIL3toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL3toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL3toUL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL3toUL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL3toUL3")
             {
             }
@@ -57738,14 +57738,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL3toIL1 property
         /// </summary>
-        private sealed class FromIL3toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL3toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL3toIL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL3toIL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL3toIL1")
             {
             }
@@ -57769,14 +57769,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL3toIL2 property
         /// </summary>
-        private sealed class FromIL3toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL3toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL3toIL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL3toIL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL3toIL2")
             {
             }
@@ -57800,14 +57800,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL3toIL0 property
         /// </summary>
-        private sealed class FromIL3toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL3toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL3toIL0Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL3toIL0Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL3toIL0")
             {
             }
@@ -57831,14 +57831,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL0toUL1 property
         /// </summary>
-        private sealed class FromIL0toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL0toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL0toUL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL0toUL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL0toUL1")
             {
             }
@@ -57862,14 +57862,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL0toUL2 property
         /// </summary>
-        private sealed class FromIL0toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL0toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL0toUL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL0toUL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL0toUL2")
             {
             }
@@ -57893,14 +57893,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL0toUL3 property
         /// </summary>
-        private sealed class FromIL0toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL0toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL0toUL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL0toUL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL0toUL3")
             {
             }
@@ -57924,14 +57924,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL0toIL1 property
         /// </summary>
-        private sealed class FromIL0toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL0toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL0toIL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL0toIL1Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL0toIL1")
             {
             }
@@ -57955,14 +57955,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL0toIL2 property
         /// </summary>
-        private sealed class FromIL0toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL0toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL0toIL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL0toIL2Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL0toIL2")
             {
             }
@@ -57986,14 +57986,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL0toIL3 property
         /// </summary>
-        private sealed class FromIL0toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        private sealed class ExtendedPhaseAngleMeasurementFromIL0toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FromIL0toIL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
+            public ExtendedPhaseAngleMeasurementFromIL0toIL3Proxy(IExtendedPhaseAngleMeasurement modelElement) : 
                     base(modelElement, "FromIL0toIL3")
             {
             }
@@ -61981,343 +61981,343 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         {
             if ((attribute == "ACTIVE_LINE_LOSSES_P"))
             {
-                return Observable.Box(new Active_line_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesActive_line_losses_PProxy(this));
             }
             if ((attribute == "ACTIVE_LINE_LOSSES_M"))
             {
-                return Observable.Box(new Active_line_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesActive_line_losses_MProxy(this));
             }
             if ((attribute == "ACTIVE_LINE_LOSSES"))
             {
-                return Observable.Box(new Active_line_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesActive_line_lossesProxy(this));
             }
             if ((attribute == "ACTIVE_TRANSFORMER_LOSSES_P"))
             {
-                return Observable.Box(new Active_transformer_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesActive_transformer_losses_PProxy(this));
             }
             if ((attribute == "ACTIVE_TRANSFORMER_LOSSES_M"))
             {
-                return Observable.Box(new Active_transformer_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesActive_transformer_losses_MProxy(this));
             }
             if ((attribute == "ACTIVE_TRANSFORMER_LOSSES"))
             {
-                return Observable.Box(new Active_transformer_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesActive_transformer_lossesProxy(this));
             }
             if ((attribute == "ACTIVE_LOSSES_P"))
             {
-                return Observable.Box(new Active_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesActive_losses_PProxy(this));
             }
             if ((attribute == "ACTIVE_LOSSES_M"))
             {
-                return Observable.Box(new Active_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesActive_losses_MProxy(this));
             }
             if ((attribute == "ACTIVE_LOSSES"))
             {
-                return Observable.Box(new Active_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesActive_lossesProxy(this));
             }
             if ((attribute == "REACTIVE_LINE_LOSSES_P"))
             {
-                return Observable.Box(new Reactive_line_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesReactive_line_losses_PProxy(this));
             }
             if ((attribute == "REACTIVE_LINE_LOSSES_M"))
             {
-                return Observable.Box(new Reactive_line_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesReactive_line_losses_MProxy(this));
             }
             if ((attribute == "REACTIVE_LINE_LOSSES"))
             {
-                return Observable.Box(new Reactive_line_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesReactive_line_lossesProxy(this));
             }
             if ((attribute == "REACTIVE_TRANSFORMER_LOSSES_P"))
             {
-                return Observable.Box(new Reactive_transformer_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesReactive_transformer_losses_PProxy(this));
             }
             if ((attribute == "REACTIVE_TRANSFORMER_LOSSES_M"))
             {
-                return Observable.Box(new Reactive_transformer_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesReactive_transformer_losses_MProxy(this));
             }
             if ((attribute == "REACTIVE_TRANSFORMER_LOSSES"))
             {
-                return Observable.Box(new Reactive_transformer_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesReactive_transformer_lossesProxy(this));
             }
             if ((attribute == "REACTIVE_LOSSES_P"))
             {
-                return Observable.Box(new Reactive_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesReactive_losses_PProxy(this));
             }
             if ((attribute == "REACTIVE_LOSSES_M"))
             {
-                return Observable.Box(new Reactive_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesReactive_losses_MProxy(this));
             }
             if ((attribute == "REACTIVE_LOSSES"))
             {
-                return Observable.Box(new Reactive_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesReactive_lossesProxy(this));
             }
             if ((attribute == "TOTAL_NORMALIZED_TRANSFORMER_LOSSES"))
             {
-                return Observable.Box(new Total_normalized_transformer_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesTotal_normalized_transformer_lossesProxy(this));
             }
             if ((attribute == "TOTAL_NORMALIZED_LINE_LOSSES"))
             {
-                return Observable.Box(new Total_normalized_line_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesTotal_normalized_line_lossesProxy(this));
             }
             if ((attribute == "COMPENSATED_ACTIVE_GROSS_P"))
             {
-                return Observable.Box(new Compensated_active_gross_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesCompensated_active_gross_PProxy(this));
             }
             if ((attribute == "COMPENSATED_ACTIVE_NET_P"))
             {
-                return Observable.Box(new Compensated_active_net_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesCompensated_active_net_PProxy(this));
             }
             if ((attribute == "COMPENSATED_ACTIVE_GROSS_M"))
             {
-                return Observable.Box(new Compensated_active_gross_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesCompensated_active_gross_MProxy(this));
             }
             if ((attribute == "COMPENSATED_ACTIVE_NET_M"))
             {
-                return Observable.Box(new Compensated_active_net_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesCompensated_active_net_MProxy(this));
             }
             if ((attribute == "COMPENSATED_REACTIVE_GROSS_P"))
             {
-                return Observable.Box(new Compensated_reactive_gross_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesCompensated_reactive_gross_PProxy(this));
             }
             if ((attribute == "COMPENSATED_REACTIVE_NET_P"))
             {
-                return Observable.Box(new Compensated_reactive_net_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesCompensated_reactive_net_PProxy(this));
             }
             if ((attribute == "COMPENSATED_REACTIVE_GROSS_M"))
             {
-                return Observable.Box(new Compensated_reactive_gross_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesCompensated_reactive_gross_MProxy(this));
             }
             if ((attribute == "COMPENSATED_REACTIVE_NET_M"))
             {
-                return Observable.Box(new Compensated_reactive_net_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesCompensated_reactive_net_MProxy(this));
             }
             if ((attribute == "L1ACTIVE_LINE_LOSSES"))
             {
-                return Observable.Box(new L1active_line_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL1active_line_lossesProxy(this));
             }
             if ((attribute == "L1ACTIVE_LINE_LOSSES_M"))
             {
-                return Observable.Box(new L1active_line_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL1active_line_losses_MProxy(this));
             }
             if ((attribute == "L1ACTIVE_TRANSFORMER_LOSSES_P"))
             {
-                return Observable.Box(new L1active_transformer_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL1active_transformer_losses_PProxy(this));
             }
             if ((attribute == "L1ACTIVE_TRANSFORMER_LOSSES_M"))
             {
-                return Observable.Box(new L1active_transformer_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL1active_transformer_losses_MProxy(this));
             }
             if ((attribute == "L1ACTIVE_TRANSFORMER_LOSSES"))
             {
-                return Observable.Box(new L1active_transformer_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL1active_transformer_lossesProxy(this));
             }
             if ((attribute == "L1ACTIVE_LOSSES_P"))
             {
-                return Observable.Box(new L1active_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL1active_losses_PProxy(this));
             }
             if ((attribute == "L1ACTIVE_LOSSES_M"))
             {
-                return Observable.Box(new L1active_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL1active_losses_MProxy(this));
             }
             if ((attribute == "L1ACTIVE_LOSSES"))
             {
-                return Observable.Box(new L1active_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL1active_lossesProxy(this));
             }
             if ((attribute == "L1REACTIVE_LINE_LOSSES_P"))
             {
-                return Observable.Box(new L1reactive_line_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL1reactive_line_losses_PProxy(this));
             }
             if ((attribute == "L1REACTIVE_LINE_LOSSES_M"))
             {
-                return Observable.Box(new L1reactive_line_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL1reactive_line_losses_MProxy(this));
             }
             if ((attribute == "L1REACTIVE_LINE_LOSSES"))
             {
-                return Observable.Box(new L1reactive_line_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL1reactive_line_lossesProxy(this));
             }
             if ((attribute == "L1REACTIVE_TRANSFORMER_LOSSES_P"))
             {
-                return Observable.Box(new L1reactive_transformer_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL1reactive_transformer_losses_PProxy(this));
             }
             if ((attribute == "L1REACTIVE_TRANSFORMER_LOSSES_M"))
             {
-                return Observable.Box(new L1reactive_transformer_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL1reactive_transformer_losses_MProxy(this));
             }
             if ((attribute == "L1REACTIVE_TRANSFORMER_LOSSES"))
             {
-                return Observable.Box(new L1reactive_transformer_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL1reactive_transformer_lossesProxy(this));
             }
             if ((attribute == "L1REACTIVE_LOSSES_P"))
             {
-                return Observable.Box(new L1Reactive_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL1Reactive_losses_PProxy(this));
             }
             if ((attribute == "L1REACTIVE_LOSSES_M"))
             {
-                return Observable.Box(new L1Reactive_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL1Reactive_losses_MProxy(this));
             }
             if ((attribute == "L1REACTIVE_LOSSES"))
             {
-                return Observable.Box(new L1Reactive_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL1Reactive_lossesProxy(this));
             }
             if ((attribute == "L1AMPERE_SQUARED_HOURS"))
             {
-                return Observable.Box(new L1Ampere_squared_hoursProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL1Ampere_squared_hoursProxy(this));
             }
             if ((attribute == "L1VOLT_SQUARED_HOURS"))
             {
-                return Observable.Box(new L1Volt_squared_hoursProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL1Volt_squared_hoursProxy(this));
             }
             if ((attribute == "L2ACTIVE_LINE_LOSSES_P"))
             {
-                return Observable.Box(new L2active_line_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL2active_line_losses_PProxy(this));
             }
             if ((attribute == "L2ACTIVE_LINE_LOSSES_M"))
             {
-                return Observable.Box(new L2active_line_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL2active_line_losses_MProxy(this));
             }
             if ((attribute == "L2ACTIVE_TRANSFORMER_LOSSES_P"))
             {
-                return Observable.Box(new L2active_transformer_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL2active_transformer_losses_PProxy(this));
             }
             if ((attribute == "L2ACTIVE_TRANSFORMER_LOSSES_M"))
             {
-                return Observable.Box(new L2active_transformer_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL2active_transformer_losses_MProxy(this));
             }
             if ((attribute == "L2ACTIVE_TRANSFORMER_LOSSES"))
             {
-                return Observable.Box(new L2active_transformer_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL2active_transformer_lossesProxy(this));
             }
             if ((attribute == "L2ACTIVE_LOSSES_P"))
             {
-                return Observable.Box(new L2active_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL2active_losses_PProxy(this));
             }
             if ((attribute == "L2ACTIVE_LOSSES_M"))
             {
-                return Observable.Box(new L2active_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL2active_losses_MProxy(this));
             }
             if ((attribute == "L2ACTIVE_LOSSES"))
             {
-                return Observable.Box(new L2active_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL2active_lossesProxy(this));
             }
             if ((attribute == "L2REACTIVE_LINE_LOSSES_P"))
             {
-                return Observable.Box(new L2reactive_line_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL2reactive_line_losses_PProxy(this));
             }
             if ((attribute == "L2REACTIVE_LINE_LOSSES_M"))
             {
-                return Observable.Box(new L2reactive_line_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL2reactive_line_losses_MProxy(this));
             }
             if ((attribute == "L2REACTIVE_LINE_LOSSES"))
             {
-                return Observable.Box(new L2reactive_line_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL2reactive_line_lossesProxy(this));
             }
             if ((attribute == "L2REACTIVE_TRANSFORMER_LOSSES"))
             {
-                return Observable.Box(new L2reactive_transformer_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL2reactive_transformer_lossesProxy(this));
             }
             if ((attribute == "L2REACTIVE_TRANSFORMER_LOSSES_P"))
             {
-                return Observable.Box(new L2reactive_transformer_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL2reactive_transformer_losses_PProxy(this));
             }
             if ((attribute == "L2REACTIVE_TRANSFORMER_LOSSES_M"))
             {
-                return Observable.Box(new L2reactive_transformer_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL2reactive_transformer_losses_MProxy(this));
             }
             if ((attribute == "L2REACTIVE_LOSSES"))
             {
-                return Observable.Box(new L2reactive_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL2reactive_lossesProxy(this));
             }
             if ((attribute == "L2REACTIVE_LOSSES_P"))
             {
-                return Observable.Box(new L2reactive_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL2reactive_losses_PProxy(this));
             }
             if ((attribute == "L2REACTIVE_LOSSES_M"))
             {
-                return Observable.Box(new L2reactive_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL2reactive_losses_MProxy(this));
             }
             if ((attribute == "L2AMPERE_SQUARED_HOURS"))
             {
-                return Observable.Box(new L2Ampere_squared_hoursProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL2Ampere_squared_hoursProxy(this));
             }
             if ((attribute == "L2VOLT_SQUARED_HOURS"))
             {
-                return Observable.Box(new L2Volt_squared_hoursProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL2Volt_squared_hoursProxy(this));
             }
             if ((attribute == "L3ACTIVE_LINE_LOSSES_P"))
             {
-                return Observable.Box(new L3Active_line_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL3Active_line_losses_PProxy(this));
             }
             if ((attribute == "L3ACTIVE_LINE_LOSSES_M"))
             {
-                return Observable.Box(new L3Active_line_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL3Active_line_losses_MProxy(this));
             }
             if ((attribute == "L3ACTIVE_TRANSFORMER_LOSSES_P"))
             {
-                return Observable.Box(new L3active_transformer_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL3active_transformer_losses_PProxy(this));
             }
             if ((attribute == "L3ACTIVE_TRANSFORMER_LOSSES_M"))
             {
-                return Observable.Box(new L3active_transformer_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL3active_transformer_losses_MProxy(this));
             }
             if ((attribute == "L3ACTIVE_TRANSFORMER_LOSSES"))
             {
-                return Observable.Box(new L3active_transformer_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL3active_transformer_lossesProxy(this));
             }
             if ((attribute == "L3ACTIVE_LOSSES_P"))
             {
-                return Observable.Box(new L3active_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL3active_losses_PProxy(this));
             }
             if ((attribute == "L3ACTIVE_LOSSES_M"))
             {
-                return Observable.Box(new L3active_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL3active_losses_MProxy(this));
             }
             if ((attribute == "L3ACTIVE_LOSSES"))
             {
-                return Observable.Box(new L3active_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL3active_lossesProxy(this));
             }
             if ((attribute == "L3REACTIVE_LINE_LOSSES_P"))
             {
-                return Observable.Box(new L3reactive_line_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL3reactive_line_losses_PProxy(this));
             }
             if ((attribute == "L3REACTIVE_LINE_LOSSES_M"))
             {
-                return Observable.Box(new L3reactive_line_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL3reactive_line_losses_MProxy(this));
             }
             if ((attribute == "L3REACTIVE_LINE_LOSSES"))
             {
-                return Observable.Box(new L3reactive_line_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL3reactive_line_lossesProxy(this));
             }
             if ((attribute == "L3REACTIVE_TRANSFORMER_LOSSES_P"))
             {
-                return Observable.Box(new L3reactive_transformer_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL3reactive_transformer_losses_PProxy(this));
             }
             if ((attribute == "L3REACTIVE_TRANSFORMER_LOSSES_M"))
             {
-                return Observable.Box(new L3reactive_transformer_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL3reactive_transformer_losses_MProxy(this));
             }
             if ((attribute == "L3REACTIVE_TRANSFORMER_LOSSES"))
             {
-                return Observable.Box(new L3reactive_transformer_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL3reactive_transformer_lossesProxy(this));
             }
             if ((attribute == "L3REACTIVE_LOSSES_P"))
             {
-                return Observable.Box(new L3reactive_losses_PProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL3reactive_losses_PProxy(this));
             }
             if ((attribute == "L3REACTIVE_LOSSES_M"))
             {
-                return Observable.Box(new L3reactive_losses_MProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL3reactive_losses_MProxy(this));
             }
             if ((attribute == "L3REACTIVE_LOSSES"))
             {
-                return Observable.Box(new L3reactive_lossesProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL3reactive_lossesProxy(this));
             }
             if ((attribute == "L3AMPERE_SQUARED_HOURS"))
             {
-                return Observable.Box(new L3Ampere_squared_hoursProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL3Ampere_squared_hoursProxy(this));
             }
             if ((attribute == "L3VOLT_SQUARED_HOURS"))
             {
-                return Observable.Box(new L3Volt_Squared_hoursProxy(this));
+                return Observable.Box(new TransformerAndLineLossesL3Volt_Squared_hoursProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -62337,14 +62337,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Active_line_losses_P property
         /// </summary>
-        private sealed class Active_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesActive_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Active_line_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesActive_line_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Active_line_losses_P")
             {
             }
@@ -62368,14 +62368,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Active_line_losses_M property
         /// </summary>
-        private sealed class Active_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesActive_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Active_line_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesActive_line_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Active_line_losses_M")
             {
             }
@@ -62399,14 +62399,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Active_line_losses property
         /// </summary>
-        private sealed class Active_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesActive_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Active_line_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesActive_line_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Active_line_losses")
             {
             }
@@ -62430,14 +62430,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Active_transformer_losses_P property
         /// </summary>
-        private sealed class Active_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesActive_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Active_transformer_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesActive_transformer_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Active_transformer_losses_P")
             {
             }
@@ -62461,14 +62461,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Active_transformer_losses_M property
         /// </summary>
-        private sealed class Active_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesActive_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Active_transformer_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesActive_transformer_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Active_transformer_losses_M")
             {
             }
@@ -62492,14 +62492,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Active_transformer_losses property
         /// </summary>
-        private sealed class Active_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesActive_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Active_transformer_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesActive_transformer_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Active_transformer_losses")
             {
             }
@@ -62523,14 +62523,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Active_losses_P property
         /// </summary>
-        private sealed class Active_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesActive_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Active_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesActive_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Active_losses_P")
             {
             }
@@ -62554,14 +62554,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Active_losses_M property
         /// </summary>
-        private sealed class Active_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesActive_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Active_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesActive_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Active_losses_M")
             {
             }
@@ -62585,14 +62585,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Active_losses property
         /// </summary>
-        private sealed class Active_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesActive_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Active_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesActive_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Active_losses")
             {
             }
@@ -62616,14 +62616,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_line_losses_P property
         /// </summary>
-        private sealed class Reactive_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesReactive_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Reactive_line_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesReactive_line_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Reactive_line_losses_P")
             {
             }
@@ -62647,14 +62647,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_line_losses_M property
         /// </summary>
-        private sealed class Reactive_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesReactive_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Reactive_line_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesReactive_line_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Reactive_line_losses_M")
             {
             }
@@ -62678,14 +62678,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_line_losses property
         /// </summary>
-        private sealed class Reactive_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesReactive_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Reactive_line_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesReactive_line_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Reactive_line_losses")
             {
             }
@@ -62709,14 +62709,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_transformer_losses_P property
         /// </summary>
-        private sealed class Reactive_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesReactive_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Reactive_transformer_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesReactive_transformer_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Reactive_transformer_losses_P")
             {
             }
@@ -62740,14 +62740,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_transformer_losses_M property
         /// </summary>
-        private sealed class Reactive_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesReactive_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Reactive_transformer_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesReactive_transformer_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Reactive_transformer_losses_M")
             {
             }
@@ -62771,14 +62771,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_transformer_losses property
         /// </summary>
-        private sealed class Reactive_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesReactive_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Reactive_transformer_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesReactive_transformer_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Reactive_transformer_losses")
             {
             }
@@ -62802,14 +62802,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_losses_P property
         /// </summary>
-        private sealed class Reactive_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesReactive_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Reactive_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesReactive_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Reactive_losses_P")
             {
             }
@@ -62833,14 +62833,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_losses_M property
         /// </summary>
-        private sealed class Reactive_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesReactive_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Reactive_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesReactive_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Reactive_losses_M")
             {
             }
@@ -62864,14 +62864,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_losses property
         /// </summary>
-        private sealed class Reactive_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesReactive_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Reactive_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesReactive_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Reactive_losses")
             {
             }
@@ -62895,14 +62895,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Total_normalized_transformer_losses property
         /// </summary>
-        private sealed class Total_normalized_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesTotal_normalized_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Total_normalized_transformer_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesTotal_normalized_transformer_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Total_normalized_transformer_losses")
             {
             }
@@ -62926,14 +62926,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Total_normalized_line_losses property
         /// </summary>
-        private sealed class Total_normalized_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesTotal_normalized_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Total_normalized_line_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesTotal_normalized_line_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Total_normalized_line_losses")
             {
             }
@@ -62957,14 +62957,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Compensated_active_gross_P property
         /// </summary>
-        private sealed class Compensated_active_gross_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesCompensated_active_gross_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Compensated_active_gross_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesCompensated_active_gross_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Compensated_active_gross_P")
             {
             }
@@ -62988,14 +62988,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Compensated_active_net_P property
         /// </summary>
-        private sealed class Compensated_active_net_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesCompensated_active_net_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Compensated_active_net_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesCompensated_active_net_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Compensated_active_net_P")
             {
             }
@@ -63019,14 +63019,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Compensated_active_gross_M property
         /// </summary>
-        private sealed class Compensated_active_gross_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesCompensated_active_gross_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Compensated_active_gross_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesCompensated_active_gross_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Compensated_active_gross_M")
             {
             }
@@ -63050,14 +63050,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Compensated_active_net_M property
         /// </summary>
-        private sealed class Compensated_active_net_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesCompensated_active_net_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Compensated_active_net_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesCompensated_active_net_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Compensated_active_net_M")
             {
             }
@@ -63081,14 +63081,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Compensated_reactive_gross_P property
         /// </summary>
-        private sealed class Compensated_reactive_gross_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesCompensated_reactive_gross_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Compensated_reactive_gross_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesCompensated_reactive_gross_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Compensated_reactive_gross_P")
             {
             }
@@ -63112,14 +63112,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Compensated_reactive_net_P property
         /// </summary>
-        private sealed class Compensated_reactive_net_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesCompensated_reactive_net_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Compensated_reactive_net_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesCompensated_reactive_net_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Compensated_reactive_net_P")
             {
             }
@@ -63143,14 +63143,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Compensated_reactive_gross_M property
         /// </summary>
-        private sealed class Compensated_reactive_gross_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesCompensated_reactive_gross_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Compensated_reactive_gross_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesCompensated_reactive_gross_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Compensated_reactive_gross_M")
             {
             }
@@ -63174,14 +63174,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Compensated_reactive_net_M property
         /// </summary>
-        private sealed class Compensated_reactive_net_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesCompensated_reactive_net_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public Compensated_reactive_net_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesCompensated_reactive_net_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "Compensated_reactive_net_M")
             {
             }
@@ -63205,14 +63205,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1active_line_losses property
         /// </summary>
-        private sealed class L1active_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL1active_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L1active_line_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL1active_line_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L1active_line_losses")
             {
             }
@@ -63236,14 +63236,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1active_line_losses_M property
         /// </summary>
-        private sealed class L1active_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL1active_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L1active_line_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL1active_line_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L1active_line_losses_M")
             {
             }
@@ -63267,14 +63267,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1active_transformer_losses_P property
         /// </summary>
-        private sealed class L1active_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL1active_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L1active_transformer_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL1active_transformer_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L1active_transformer_losses_P")
             {
             }
@@ -63298,14 +63298,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1active_transformer_losses_M property
         /// </summary>
-        private sealed class L1active_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL1active_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L1active_transformer_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL1active_transformer_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L1active_transformer_losses_M")
             {
             }
@@ -63329,14 +63329,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1active_transformer_losses property
         /// </summary>
-        private sealed class L1active_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL1active_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L1active_transformer_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL1active_transformer_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L1active_transformer_losses")
             {
             }
@@ -63360,14 +63360,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1active_losses_P property
         /// </summary>
-        private sealed class L1active_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL1active_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L1active_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL1active_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L1active_losses_P")
             {
             }
@@ -63391,14 +63391,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1active_losses_M property
         /// </summary>
-        private sealed class L1active_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL1active_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L1active_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL1active_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L1active_losses_M")
             {
             }
@@ -63422,14 +63422,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1active_losses property
         /// </summary>
-        private sealed class L1active_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL1active_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L1active_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL1active_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L1active_losses")
             {
             }
@@ -63453,14 +63453,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1reactive_line_losses_P property
         /// </summary>
-        private sealed class L1reactive_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL1reactive_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L1reactive_line_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL1reactive_line_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L1reactive_line_losses_P")
             {
             }
@@ -63484,14 +63484,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1reactive_line_losses_M property
         /// </summary>
-        private sealed class L1reactive_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL1reactive_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L1reactive_line_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL1reactive_line_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L1reactive_line_losses_M")
             {
             }
@@ -63515,14 +63515,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1reactive_line_losses property
         /// </summary>
-        private sealed class L1reactive_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL1reactive_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L1reactive_line_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL1reactive_line_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L1reactive_line_losses")
             {
             }
@@ -63546,14 +63546,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1reactive_transformer_losses_P property
         /// </summary>
-        private sealed class L1reactive_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL1reactive_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L1reactive_transformer_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL1reactive_transformer_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L1reactive_transformer_losses_P")
             {
             }
@@ -63577,14 +63577,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1reactive_transformer_losses_M property
         /// </summary>
-        private sealed class L1reactive_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL1reactive_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L1reactive_transformer_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL1reactive_transformer_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L1reactive_transformer_losses_M")
             {
             }
@@ -63608,14 +63608,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1reactive_transformer_losses property
         /// </summary>
-        private sealed class L1reactive_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL1reactive_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L1reactive_transformer_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL1reactive_transformer_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L1reactive_transformer_losses")
             {
             }
@@ -63639,14 +63639,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1Reactive_losses_P property
         /// </summary>
-        private sealed class L1Reactive_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL1Reactive_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L1Reactive_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL1Reactive_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L1Reactive_losses_P")
             {
             }
@@ -63670,14 +63670,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1Reactive_losses_M property
         /// </summary>
-        private sealed class L1Reactive_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL1Reactive_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L1Reactive_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL1Reactive_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L1Reactive_losses_M")
             {
             }
@@ -63701,14 +63701,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1Reactive_losses property
         /// </summary>
-        private sealed class L1Reactive_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL1Reactive_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L1Reactive_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL1Reactive_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L1Reactive_losses")
             {
             }
@@ -63732,14 +63732,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1Ampere_squared_hours property
         /// </summary>
-        private sealed class L1Ampere_squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL1Ampere_squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L1Ampere_squared_hoursProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL1Ampere_squared_hoursProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L1Ampere_squared_hours")
             {
             }
@@ -63763,14 +63763,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1Volt_squared_hours property
         /// </summary>
-        private sealed class L1Volt_squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL1Volt_squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L1Volt_squared_hoursProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL1Volt_squared_hoursProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L1Volt_squared_hours")
             {
             }
@@ -63794,14 +63794,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2active_line_losses_P property
         /// </summary>
-        private sealed class L2active_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL2active_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L2active_line_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL2active_line_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L2active_line_losses_P")
             {
             }
@@ -63825,14 +63825,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2active_line_losses_M property
         /// </summary>
-        private sealed class L2active_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL2active_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L2active_line_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL2active_line_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L2active_line_losses_M")
             {
             }
@@ -63856,14 +63856,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2active_transformer_losses_P property
         /// </summary>
-        private sealed class L2active_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL2active_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L2active_transformer_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL2active_transformer_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L2active_transformer_losses_P")
             {
             }
@@ -63887,14 +63887,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2active_transformer_losses_M property
         /// </summary>
-        private sealed class L2active_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL2active_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L2active_transformer_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL2active_transformer_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L2active_transformer_losses_M")
             {
             }
@@ -63918,14 +63918,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2active_transformer_losses property
         /// </summary>
-        private sealed class L2active_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL2active_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L2active_transformer_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL2active_transformer_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L2active_transformer_losses")
             {
             }
@@ -63949,14 +63949,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2active_losses_P property
         /// </summary>
-        private sealed class L2active_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL2active_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L2active_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL2active_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L2active_losses_P")
             {
             }
@@ -63980,14 +63980,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2active_losses_M property
         /// </summary>
-        private sealed class L2active_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL2active_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L2active_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL2active_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L2active_losses_M")
             {
             }
@@ -64011,14 +64011,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2active_losses property
         /// </summary>
-        private sealed class L2active_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL2active_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L2active_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL2active_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L2active_losses")
             {
             }
@@ -64042,14 +64042,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2reactive_line_losses_P property
         /// </summary>
-        private sealed class L2reactive_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL2reactive_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L2reactive_line_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL2reactive_line_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L2reactive_line_losses_P")
             {
             }
@@ -64073,14 +64073,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2reactive_line_losses_M property
         /// </summary>
-        private sealed class L2reactive_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL2reactive_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L2reactive_line_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL2reactive_line_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L2reactive_line_losses_M")
             {
             }
@@ -64104,14 +64104,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2reactive_line_losses property
         /// </summary>
-        private sealed class L2reactive_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL2reactive_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L2reactive_line_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL2reactive_line_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L2reactive_line_losses")
             {
             }
@@ -64135,14 +64135,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2reactive_transformer_losses property
         /// </summary>
-        private sealed class L2reactive_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL2reactive_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L2reactive_transformer_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL2reactive_transformer_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L2reactive_transformer_losses")
             {
             }
@@ -64166,14 +64166,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2reactive_transformer_losses_P property
         /// </summary>
-        private sealed class L2reactive_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL2reactive_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L2reactive_transformer_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL2reactive_transformer_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L2reactive_transformer_losses_P")
             {
             }
@@ -64197,14 +64197,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2reactive_transformer_losses_M property
         /// </summary>
-        private sealed class L2reactive_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL2reactive_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L2reactive_transformer_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL2reactive_transformer_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L2reactive_transformer_losses_M")
             {
             }
@@ -64228,14 +64228,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2reactive_losses property
         /// </summary>
-        private sealed class L2reactive_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL2reactive_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L2reactive_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL2reactive_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L2reactive_losses")
             {
             }
@@ -64259,14 +64259,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2reactive_losses_P property
         /// </summary>
-        private sealed class L2reactive_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL2reactive_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L2reactive_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL2reactive_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L2reactive_losses_P")
             {
             }
@@ -64290,14 +64290,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2reactive_losses_M property
         /// </summary>
-        private sealed class L2reactive_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL2reactive_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L2reactive_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL2reactive_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L2reactive_losses_M")
             {
             }
@@ -64321,14 +64321,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2Ampere_squared_hours property
         /// </summary>
-        private sealed class L2Ampere_squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL2Ampere_squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L2Ampere_squared_hoursProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL2Ampere_squared_hoursProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L2Ampere_squared_hours")
             {
             }
@@ -64352,14 +64352,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2Volt_squared_hours property
         /// </summary>
-        private sealed class L2Volt_squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL2Volt_squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L2Volt_squared_hoursProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL2Volt_squared_hoursProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L2Volt_squared_hours")
             {
             }
@@ -64383,14 +64383,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3Active_line_losses_P property
         /// </summary>
-        private sealed class L3Active_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL3Active_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L3Active_line_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL3Active_line_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L3Active_line_losses_P")
             {
             }
@@ -64414,14 +64414,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3Active_line_losses_M property
         /// </summary>
-        private sealed class L3Active_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL3Active_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L3Active_line_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL3Active_line_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L3Active_line_losses_M")
             {
             }
@@ -64445,14 +64445,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3active_transformer_losses_P property
         /// </summary>
-        private sealed class L3active_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL3active_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L3active_transformer_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL3active_transformer_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L3active_transformer_losses_P")
             {
             }
@@ -64476,14 +64476,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3active_transformer_losses_M property
         /// </summary>
-        private sealed class L3active_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL3active_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L3active_transformer_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL3active_transformer_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L3active_transformer_losses_M")
             {
             }
@@ -64507,14 +64507,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3active_transformer_losses property
         /// </summary>
-        private sealed class L3active_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL3active_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L3active_transformer_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL3active_transformer_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L3active_transformer_losses")
             {
             }
@@ -64538,14 +64538,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3active_losses_P property
         /// </summary>
-        private sealed class L3active_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL3active_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L3active_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL3active_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L3active_losses_P")
             {
             }
@@ -64569,14 +64569,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3active_losses_M property
         /// </summary>
-        private sealed class L3active_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL3active_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L3active_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL3active_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L3active_losses_M")
             {
             }
@@ -64600,14 +64600,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3active_losses property
         /// </summary>
-        private sealed class L3active_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL3active_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L3active_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL3active_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L3active_losses")
             {
             }
@@ -64631,14 +64631,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3reactive_line_losses_P property
         /// </summary>
-        private sealed class L3reactive_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL3reactive_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L3reactive_line_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL3reactive_line_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L3reactive_line_losses_P")
             {
             }
@@ -64662,14 +64662,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3reactive_line_losses_M property
         /// </summary>
-        private sealed class L3reactive_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL3reactive_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L3reactive_line_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL3reactive_line_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L3reactive_line_losses_M")
             {
             }
@@ -64693,14 +64693,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3reactive_line_losses property
         /// </summary>
-        private sealed class L3reactive_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL3reactive_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L3reactive_line_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL3reactive_line_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L3reactive_line_losses")
             {
             }
@@ -64724,14 +64724,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3reactive_transformer_losses_P property
         /// </summary>
-        private sealed class L3reactive_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL3reactive_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L3reactive_transformer_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL3reactive_transformer_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L3reactive_transformer_losses_P")
             {
             }
@@ -64755,14 +64755,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3reactive_transformer_losses_M property
         /// </summary>
-        private sealed class L3reactive_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL3reactive_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L3reactive_transformer_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL3reactive_transformer_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L3reactive_transformer_losses_M")
             {
             }
@@ -64786,14 +64786,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3reactive_transformer_losses property
         /// </summary>
-        private sealed class L3reactive_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL3reactive_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L3reactive_transformer_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL3reactive_transformer_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L3reactive_transformer_losses")
             {
             }
@@ -64817,14 +64817,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3reactive_losses_P property
         /// </summary>
-        private sealed class L3reactive_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL3reactive_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L3reactive_losses_PProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL3reactive_losses_PProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L3reactive_losses_P")
             {
             }
@@ -64848,14 +64848,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3reactive_losses_M property
         /// </summary>
-        private sealed class L3reactive_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL3reactive_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L3reactive_losses_MProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL3reactive_losses_MProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L3reactive_losses_M")
             {
             }
@@ -64879,14 +64879,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3reactive_losses property
         /// </summary>
-        private sealed class L3reactive_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL3reactive_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L3reactive_lossesProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL3reactive_lossesProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L3reactive_losses")
             {
             }
@@ -64910,14 +64910,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3Ampere_squared_hours property
         /// </summary>
-        private sealed class L3Ampere_squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL3Ampere_squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L3Ampere_squared_hoursProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL3Ampere_squared_hoursProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L3Ampere_squared_hours")
             {
             }
@@ -64941,14 +64941,14 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3Volt_Squared_hours property
         /// </summary>
-        private sealed class L3Volt_Squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        private sealed class TransformerAndLineLossesL3Volt_Squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public L3Volt_Squared_hoursProxy(ITransformerAndLineLosses modelElement) : 
+            public TransformerAndLineLossesL3Volt_Squared_hoursProxy(ITransformerAndLineLosses modelElement) : 
                     base(modelElement, "L3Volt_Squared_hours")
             {
             }

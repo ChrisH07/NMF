@@ -134,7 +134,7 @@ namespace TemporaryGeneratedCode.Railway
         {
             if ((attribute == "LENGTH"))
             {
-                return Observable.Box(new LengthProxy(this));
+                return Observable.Box(new SegmentLengthProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -154,14 +154,14 @@ namespace TemporaryGeneratedCode.Railway
         /// <summary>
         /// Represents a proxy to represent an incremental access to the length property
         /// </summary>
-        private sealed class LengthProxy : ModelPropertyChange<ISegment, int>
+        private sealed class SegmentLengthProxy : ModelPropertyChange<ISegment, int>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public LengthProxy(ISegment modelElement) : 
+            public SegmentLengthProxy(ISegment modelElement) : 
                     base(modelElement, "Length")
             {
             }
@@ -406,7 +406,7 @@ namespace TemporaryGeneratedCode.Railway
         {
             if ((reference == "SENSOR"))
             {
-                return new SensorProxy(this);
+                return new TrackElementSensorProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -463,7 +463,7 @@ namespace TemporaryGeneratedCode.Railway
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new SensorProxy(this._parent),
+                        new TrackElementSensorProxy(this._parent),
                         this._parent.ConnectsTo.AsNotifiable()};
             }
             
@@ -579,14 +579,14 @@ namespace TemporaryGeneratedCode.Railway
         /// <summary>
         /// Represents a proxy to represent an incremental access to the sensor property
         /// </summary>
-        private sealed class SensorProxy : ModelPropertyChange<ITrackElement, ISensor>
+        private sealed class TrackElementSensorProxy : ModelPropertyChange<ITrackElement, ISensor>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public SensorProxy(ITrackElement modelElement) : 
+            public TrackElementSensorProxy(ITrackElement modelElement) : 
                     base(modelElement, "Sensor")
             {
             }
@@ -820,7 +820,7 @@ namespace TemporaryGeneratedCode.Railway
         {
             if ((attribute == "CURRENTPOSITION"))
             {
-                return Observable.Box(new CurrentPositionProxy(this));
+                return Observable.Box(new SwitchCurrentPositionProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -964,14 +964,14 @@ namespace TemporaryGeneratedCode.Railway
         /// <summary>
         /// Represents a proxy to represent an incremental access to the currentPosition property
         /// </summary>
-        private sealed class CurrentPositionProxy : ModelPropertyChange<ISwitch, Position>
+        private sealed class SwitchCurrentPositionProxy : ModelPropertyChange<ISwitch, Position>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public CurrentPositionProxy(ISwitch modelElement) : 
+            public SwitchCurrentPositionProxy(ISwitch modelElement) : 
                     base(modelElement, "CurrentPosition")
             {
             }
@@ -1384,11 +1384,11 @@ namespace TemporaryGeneratedCode.Railway
         {
             if ((reference == "ENTRY"))
             {
-                return new EntryProxy(this);
+                return new RouteEntryProxy(this);
             }
             if ((reference == "EXIT"))
             {
-                return new ExitProxy(this);
+                return new RouteExitProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -1625,9 +1625,9 @@ namespace TemporaryGeneratedCode.Railway
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new EntryProxy(this._parent),
+                        new RouteEntryProxy(this._parent),
                         this._parent.Follows.AsNotifiable(),
-                        new ExitProxy(this._parent),
+                        new RouteExitProxy(this._parent),
                         this._parent.DefinedBy.AsNotifiable()};
             }
             
@@ -1798,14 +1798,14 @@ namespace TemporaryGeneratedCode.Railway
         /// <summary>
         /// Represents a proxy to represent an incremental access to the entry property
         /// </summary>
-        private sealed class EntryProxy : ModelPropertyChange<IRoute, ISemaphore>
+        private sealed class RouteEntryProxy : ModelPropertyChange<IRoute, ISemaphore>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public EntryProxy(IRoute modelElement) : 
+            public RouteEntryProxy(IRoute modelElement) : 
                     base(modelElement, "Entry")
             {
             }
@@ -1829,14 +1829,14 @@ namespace TemporaryGeneratedCode.Railway
         /// <summary>
         /// Represents a proxy to represent an incremental access to the exit property
         /// </summary>
-        private sealed class ExitProxy : ModelPropertyChange<IRoute, ISemaphore>
+        private sealed class RouteExitProxy : ModelPropertyChange<IRoute, ISemaphore>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ExitProxy(IRoute modelElement) : 
+            public RouteExitProxy(IRoute modelElement) : 
                     base(modelElement, "Exit")
             {
             }
@@ -1962,7 +1962,7 @@ namespace TemporaryGeneratedCode.Railway
         {
             if ((attribute == "SIGNAL"))
             {
-                return Observable.Box(new SignalProxy(this));
+                return Observable.Box(new SemaphoreSignalProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -1982,14 +1982,14 @@ namespace TemporaryGeneratedCode.Railway
         /// <summary>
         /// Represents a proxy to represent an incremental access to the signal property
         /// </summary>
-        private sealed class SignalProxy : ModelPropertyChange<ISemaphore, Signal>
+        private sealed class SemaphoreSignalProxy : ModelPropertyChange<ISemaphore, Signal>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public SignalProxy(ISemaphore modelElement) : 
+            public SemaphoreSignalProxy(ISemaphore modelElement) : 
                     base(modelElement, "Signal")
             {
             }
@@ -2280,7 +2280,7 @@ namespace TemporaryGeneratedCode.Railway
         {
             if ((attribute == "POSITION"))
             {
-                return Observable.Box(new PositionProxy(this));
+                return Observable.Box(new SwitchPositionPositionProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -2294,11 +2294,11 @@ namespace TemporaryGeneratedCode.Railway
         {
             if ((reference == "SWITCH"))
             {
-                return new SwitchProxy(this);
+                return new SwitchPositionSwitchProxy(this);
             }
             if ((reference == "ROUTE"))
             {
-                return new RouteProxy(this);
+                return new SwitchPositionRouteProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -2358,8 +2358,8 @@ namespace TemporaryGeneratedCode.Railway
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new SwitchProxy(this._parent),
-                        new RouteProxy(this._parent)};
+                        new SwitchPositionSwitchProxy(this._parent),
+                        new SwitchPositionRouteProxy(this._parent)};
             }
             
             /// <summary>
@@ -2467,14 +2467,14 @@ namespace TemporaryGeneratedCode.Railway
         /// <summary>
         /// Represents a proxy to represent an incremental access to the position property
         /// </summary>
-        private sealed class PositionProxy : ModelPropertyChange<ISwitchPosition, Position>
+        private sealed class SwitchPositionPositionProxy : ModelPropertyChange<ISwitchPosition, Position>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public PositionProxy(ISwitchPosition modelElement) : 
+            public SwitchPositionPositionProxy(ISwitchPosition modelElement) : 
                     base(modelElement, "Position")
             {
             }
@@ -2498,14 +2498,14 @@ namespace TemporaryGeneratedCode.Railway
         /// <summary>
         /// Represents a proxy to represent an incremental access to the switch property
         /// </summary>
-        private sealed class SwitchProxy : ModelPropertyChange<ISwitchPosition, ISwitch>
+        private sealed class SwitchPositionSwitchProxy : ModelPropertyChange<ISwitchPosition, ISwitch>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public SwitchProxy(ISwitchPosition modelElement) : 
+            public SwitchPositionSwitchProxy(ISwitchPosition modelElement) : 
                     base(modelElement, "Switch")
             {
             }
@@ -2529,14 +2529,14 @@ namespace TemporaryGeneratedCode.Railway
         /// <summary>
         /// Represents a proxy to represent an incremental access to the route property
         /// </summary>
-        private sealed class RouteProxy : ModelPropertyChange<ISwitchPosition, IRoute>
+        private sealed class SwitchPositionRouteProxy : ModelPropertyChange<ISwitchPosition, IRoute>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public RouteProxy(ISwitchPosition modelElement) : 
+            public SwitchPositionRouteProxy(ISwitchPosition modelElement) : 
                     base(modelElement, "Route")
             {
             }
@@ -2662,7 +2662,7 @@ namespace TemporaryGeneratedCode.Railway
         {
             if ((attribute == "ID"))
             {
-                return Observable.Box(new IdProxy(this));
+                return Observable.Box(new RailwayElementIdProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -2682,14 +2682,14 @@ namespace TemporaryGeneratedCode.Railway
         /// <summary>
         /// Represents a proxy to represent an incremental access to the id property
         /// </summary>
-        private sealed class IdProxy : ModelPropertyChange<IRailwayElement, Nullable<int>>
+        private sealed class RailwayElementIdProxy : ModelPropertyChange<IRailwayElement, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public IdProxy(IRailwayElement modelElement) : 
+            public RailwayElementIdProxy(IRailwayElement modelElement) : 
                     base(modelElement, "Id")
             {
             }

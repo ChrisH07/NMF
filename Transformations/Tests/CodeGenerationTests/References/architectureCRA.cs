@@ -1433,7 +1433,7 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         {
             if ((reference == "ISENCAPSULATEDBY"))
             {
-                return new IsEncapsulatedByProxy(this);
+                return new FeatureIsEncapsulatedByProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -1489,7 +1489,7 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new IsEncapsulatedByProxy(this._parent)};
+                        new FeatureIsEncapsulatedByProxy(this._parent)};
             }
             
             /// <summary>
@@ -1573,14 +1573,14 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the isEncapsulatedBy property
         /// </summary>
-        private sealed class IsEncapsulatedByProxy : ModelPropertyChange<IFeature, TemporaryGeneratedCode.ArchitectureCRA.IClass>
+        private sealed class FeatureIsEncapsulatedByProxy : ModelPropertyChange<IFeature, TemporaryGeneratedCode.ArchitectureCRA.IClass>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public IsEncapsulatedByProxy(IFeature modelElement) : 
+            public FeatureIsEncapsulatedByProxy(IFeature modelElement) : 
                     base(modelElement, "IsEncapsulatedBy")
             {
             }
@@ -1721,7 +1721,7 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         {
             if ((attribute == "NAME"))
             {
-                return new NameProxy(this);
+                return new NamedElementNameProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -1754,14 +1754,14 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the name property
         /// </summary>
-        private sealed class NameProxy : ModelPropertyChange<INamedElement, string>
+        private sealed class NamedElementNameProxy : ModelPropertyChange<INamedElement, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public NameProxy(INamedElement modelElement) : 
+            public NamedElementNameProxy(INamedElement modelElement) : 
                     base(modelElement, "Name")
             {
             }

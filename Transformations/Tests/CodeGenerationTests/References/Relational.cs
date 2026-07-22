@@ -149,7 +149,7 @@ namespace TemporaryGeneratedCode.Relational
         {
             if ((attribute == "NAME"))
             {
-                return new NameProxy(this);
+                return new NamedNameProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -182,14 +182,14 @@ namespace TemporaryGeneratedCode.Relational
         /// <summary>
         /// Represents a proxy to represent an incremental access to the name property
         /// </summary>
-        private sealed class NameProxy : ModelPropertyChange<INamed, string>
+        private sealed class NamedNameProxy : ModelPropertyChange<INamed, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public NameProxy(INamed modelElement) : 
+            public NamedNameProxy(INamed modelElement) : 
                     base(modelElement, "Name")
             {
             }
@@ -1017,15 +1017,15 @@ namespace TemporaryGeneratedCode.Relational
         {
             if ((reference == "OWNER"))
             {
-                return new OwnerProxy(this);
+                return new ColumnOwnerProxy(this);
             }
             if ((reference == "KEYOF"))
             {
-                return new KeyOfProxy(this);
+                return new ColumnKeyOfProxy(this);
             }
             if ((reference == "TYPE"))
             {
-                return new TypeProxy(this);
+                return new ColumnTypeProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -1089,9 +1089,9 @@ namespace TemporaryGeneratedCode.Relational
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new OwnerProxy(this._parent),
-                        new KeyOfProxy(this._parent),
-                        new TypeProxy(this._parent)};
+                        new ColumnOwnerProxy(this._parent),
+                        new ColumnKeyOfProxy(this._parent),
+                        new ColumnTypeProxy(this._parent)};
             }
             
             /// <summary>
@@ -1223,14 +1223,14 @@ namespace TemporaryGeneratedCode.Relational
         /// <summary>
         /// Represents a proxy to represent an incremental access to the owner property
         /// </summary>
-        private sealed class OwnerProxy : ModelPropertyChange<IColumn, ITable>
+        private sealed class ColumnOwnerProxy : ModelPropertyChange<IColumn, ITable>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public OwnerProxy(IColumn modelElement) : 
+            public ColumnOwnerProxy(IColumn modelElement) : 
                     base(modelElement, "Owner")
             {
             }
@@ -1254,14 +1254,14 @@ namespace TemporaryGeneratedCode.Relational
         /// <summary>
         /// Represents a proxy to represent an incremental access to the keyOf property
         /// </summary>
-        private sealed class KeyOfProxy : ModelPropertyChange<IColumn, ITable>
+        private sealed class ColumnKeyOfProxy : ModelPropertyChange<IColumn, ITable>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public KeyOfProxy(IColumn modelElement) : 
+            public ColumnKeyOfProxy(IColumn modelElement) : 
                     base(modelElement, "KeyOf")
             {
             }
@@ -1285,14 +1285,14 @@ namespace TemporaryGeneratedCode.Relational
         /// <summary>
         /// Represents a proxy to represent an incremental access to the type property
         /// </summary>
-        private sealed class TypeProxy : ModelPropertyChange<IColumn, TemporaryGeneratedCode.Relational.IType>
+        private sealed class ColumnTypeProxy : ModelPropertyChange<IColumn, TemporaryGeneratedCode.Relational.IType>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public TypeProxy(IColumn modelElement) : 
+            public ColumnTypeProxy(IColumn modelElement) : 
                     base(modelElement, "Type")
             {
             }
