@@ -1037,12 +1037,12 @@ namespace NMF.Models.Meta
                 var type2Type = Rule<Type2Type>();
                 AddRefinedReferencesOfClass(input, generatedType, (m, f, p, _) =>
                 {
-                    var type = context.Trace.ResolveIn(type2Type, f.Type);
+                    var type = context.Trace.ResolveIn(type2Type, f.DeclaringType);
                     return AddSetFeature(m, f, p, context, true, new CodeCastExpression(type.GetReferenceForType(), thisRef));
                 }, setFeature, false, context);
                 AddRefinedAttributesOfClass(input, generatedType, (m, f, p, _) =>
                 {
-                    var type = context.Trace.ResolveIn(type2Type, f.Type);
+                    var type = context.Trace.ResolveIn(type2Type, f.DeclaringType);
                     return AddSetFeature(m, f, p, context, false, new CodeCastExpression(type.GetReferenceForType(), thisRef));
                 }, setFeature, context);
                 if (setFeature.Statements.Count == 0)
