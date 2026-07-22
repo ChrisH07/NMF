@@ -1235,7 +1235,8 @@ namespace NMF.Models.Meta
             {
                 if (feature.UpperBound == 1)
                 {
-                    var propTypeRef = new CodeTypeReference(feature.Name.ToPascalCase() + "Proxy");
+                    // Must match the name Feature2Proxy assigns to the generated proxy nested type.
+                    var propTypeRef = new CodeTypeReference((feature.Parent as IType).Name.ToPascalCase() + feature.Name.ToPascalCase() + "Proxy");
                     var ifStmt = new CodeConditionStatement(new CodeBinaryOperatorExpression(new CodeVariableReferenceExpression(parameterName),
                         CodeBinaryOperatorType.ValueEquality, new CodePrimitiveExpression(property.Name.ToUpperInvariant())));
                     CodeExpression proxyExpression = new CodeObjectCreateExpression(propTypeRef, new CodeThisReferenceExpression());
