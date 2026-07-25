@@ -25,8 +25,11 @@ namespace NMF.Models.Meta
                 // keeps the same feature name, so an unqualified name would collide with the base feature's own proxy.
                 // Class2Type.AddToExpressionForFeature constructs this same name independently and must stay in sync.
                 generatedType.Name = (feature.Parent as IType).Name.ToPascalCase() + feature.Name.ToPascalCase() + "Proxy";
-                generatedType.Attributes = MemberAttributes.Private | MemberAttributes.Final;
-                generatedType.TypeAttributes = System.Reflection.TypeAttributes.NestedPrivate | System.Reflection.TypeAttributes.Sealed;
+                // Protected, not private: a derived class's own generated children-collection class (see
+                // Class2Children) constructs proxies for containment references it inherits, including ones
+                // declared on a base class, so the proxy must be visible outside its declaring class.
+                generatedType.Attributes = MemberAttributes.Family | MemberAttributes.Final;
+                generatedType.TypeAttributes = System.Reflection.TypeAttributes.NestedFamily | System.Reflection.TypeAttributes.Sealed;
                 generatedType.WriteDocumentation(string.Format("Represents a proxy to represent an incremental access to the {0} property", feature.Name));
 
                 var type = CreateReference(feature.Type, feature is IReference, context);
