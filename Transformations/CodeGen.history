@@ -15,3 +15,4 @@ patch: improve code generation for child elements
 patch: update system dependencies
 patch: fix code generation for refined references and attributes
 patch: update dependencies
+patch: fix Children/ReferencedElements silently dropping containment references
