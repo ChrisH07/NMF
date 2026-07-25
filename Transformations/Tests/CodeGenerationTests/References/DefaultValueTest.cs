@@ -180,11 +180,11 @@ namespace TemporaryGeneratedCode.Test
         {
             if ((attribute == "VALUE"))
             {
-                return new PTypeValueProxy(this);
+                return new ValueProxy(this);
             }
             if ((attribute == "NAME"))
             {
-                return new PTypeNameProxy(this);
+                return new NameProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -213,14 +213,14 @@ namespace TemporaryGeneratedCode.Test
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class PTypeValueProxy : ModelPropertyChange<IPType, string>
+        protected sealed class ValueProxy : ModelPropertyChange<IPType, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public PTypeValueProxy(IPType modelElement) : 
+            public ValueProxy(IPType modelElement) : 
                     base(modelElement, "Value")
             {
             }
@@ -244,14 +244,14 @@ namespace TemporaryGeneratedCode.Test
         /// <summary>
         /// Represents a proxy to represent an incremental access to the name property
         /// </summary>
-        private sealed class PTypeNameProxy : ModelPropertyChange<IPType, string>
+        protected sealed class NameProxy : ModelPropertyChange<IPType, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public PTypeNameProxy(IPType modelElement) : 
+            public NameProxy(IPType modelElement) : 
                     base(modelElement, "Name")
             {
             }

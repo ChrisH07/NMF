@@ -149,7 +149,7 @@ namespace TemporaryGeneratedCode.NameClashes
         {
             if ((attribute == "NAME"))
             {
-                return new ElementNameProxy(this);
+                return new NameProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -216,14 +216,14 @@ namespace TemporaryGeneratedCode.NameClashes
         /// <summary>
         /// Represents a proxy to represent an incremental access to the name property
         /// </summary>
-        private sealed class ElementNameProxy : ModelPropertyChange<IElement, string>
+        protected sealed class NameProxy : ModelPropertyChange<IElement, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ElementNameProxy(IElement modelElement) : 
+            public NameProxy(IElement modelElement) : 
                     base(modelElement, "Name")
             {
             }

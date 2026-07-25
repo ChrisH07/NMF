@@ -1161,6 +1161,10 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
                     int count = 0;
                     count = (count + this._parent.DataDependency.Count);
                     count = (count + this._parent.FunctionalDependency.Count);
+                    if ((this._parent.IsEncapsulatedBy != null))
+                    {
+                        count = (count + 1);
+                    }
                     return count;
                 }
             }
@@ -1173,7 +1177,8 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
             {
                 return new INotifiable[] {
                         this._parent.DataDependency.AsNotifiable(),
-                        this._parent.FunctionalDependency.AsNotifiable()};
+                        this._parent.FunctionalDependency.AsNotifiable(),
+                        new IsEncapsulatedByProxy(this._parent)};
             }
             
             /// <summary>
@@ -1192,6 +1197,15 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
                 {
                     this._parent.FunctionalDependency.Add(functionalDependencyCasted);
                 }
+                if ((this._parent.IsEncapsulatedBy == null))
+                {
+                    TemporaryGeneratedCode.ArchitectureCRA.IClass isEncapsulatedByCasted = item.As<TemporaryGeneratedCode.ArchitectureCRA.IClass>();
+                    if ((isEncapsulatedByCasted != null))
+                    {
+                        this._parent.IsEncapsulatedBy = isEncapsulatedByCasted;
+                        return;
+                    }
+                }
             }
             
             /// <summary>
@@ -1201,6 +1215,7 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
             {
                 this._parent.DataDependency.Clear();
                 this._parent.FunctionalDependency.Clear();
+                this._parent.IsEncapsulatedBy = null;
             }
             
             /// <summary>
@@ -1215,6 +1230,10 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
                     return true;
                 }
                 if (this._parent.FunctionalDependency.Contains(item))
+                {
+                    return true;
+                }
+                if ((item == this._parent.IsEncapsulatedBy))
                 {
                     return true;
                 }
@@ -1258,6 +1277,11 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
                 {
                     functionalDependencyEnumerator.Dispose();
                 }
+                if ((this._parent.IsEncapsulatedBy != null))
+                {
+                    array[arrayIndex] = this._parent.IsEncapsulatedBy;
+                    arrayIndex = (arrayIndex + 1);
+                }
             }
             
             /// <summary>
@@ -1279,6 +1303,11 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
                 {
                     return true;
                 }
+                if ((this._parent.IsEncapsulatedBy == item))
+                {
+                    this._parent.IsEncapsulatedBy = null;
+                    return true;
+                }
                 return false;
             }
             
@@ -1288,7 +1317,7 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.DataDependency).Concat(this._parent.FunctionalDependency).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.DataDependency).Concat(this._parent.FunctionalDependency).Concat(this._parent.IsEncapsulatedBy).GetEnumerator();
             }
         }
     }
@@ -1433,7 +1462,7 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         {
             if ((reference == "ISENCAPSULATEDBY"))
             {
-                return new FeatureIsEncapsulatedByProxy(this);
+                return new IsEncapsulatedByProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -1489,7 +1518,7 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new FeatureIsEncapsulatedByProxy(this._parent)};
+                        new IsEncapsulatedByProxy(this._parent)};
             }
             
             /// <summary>
@@ -1573,14 +1602,14 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the isEncapsulatedBy property
         /// </summary>
-        private sealed class FeatureIsEncapsulatedByProxy : ModelPropertyChange<IFeature, TemporaryGeneratedCode.ArchitectureCRA.IClass>
+        protected sealed class IsEncapsulatedByProxy : ModelPropertyChange<IFeature, TemporaryGeneratedCode.ArchitectureCRA.IClass>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FeatureIsEncapsulatedByProxy(IFeature modelElement) : 
+            public IsEncapsulatedByProxy(IFeature modelElement) : 
                     base(modelElement, "IsEncapsulatedBy")
             {
             }
@@ -1721,7 +1750,7 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         {
             if ((attribute == "NAME"))
             {
-                return new NamedElementNameProxy(this);
+                return new NameProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -1754,14 +1783,14 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the name property
         /// </summary>
-        private sealed class NamedElementNameProxy : ModelPropertyChange<INamedElement, string>
+        protected sealed class NameProxy : ModelPropertyChange<INamedElement, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public NamedElementNameProxy(INamedElement modelElement) : 
+            public NameProxy(INamedElement modelElement) : 
                     base(modelElement, "Name")
             {
             }

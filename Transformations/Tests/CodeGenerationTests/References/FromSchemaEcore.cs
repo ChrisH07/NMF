@@ -531,7 +531,7 @@ namespace TemporaryGeneratedCode.Simulink
         {
             if ((attribute == "VALUE"))
             {
-                return new PTypeValueProxy(this);
+                return new ValueProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -547,14 +547,14 @@ namespace TemporaryGeneratedCode.Simulink
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class PTypeValueProxy : ModelPropertyChange<IPType, string>
+        protected sealed class ValueProxy : ModelPropertyChange<IPType, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public PTypeValueProxy(IPType modelElement) : 
+            public ValueProxy(IPType modelElement) : 
                     base(modelElement, "Value")
             {
             }

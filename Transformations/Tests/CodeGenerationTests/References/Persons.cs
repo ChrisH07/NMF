@@ -133,7 +133,7 @@ namespace TemporaryGeneratedCode.Persons
         {
             if ((attribute == "FULLNAME"))
             {
-                return new PersonFullNameProxy(this);
+                return new FullNameProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -153,14 +153,14 @@ namespace TemporaryGeneratedCode.Persons
         /// <summary>
         /// Represents a proxy to represent an incremental access to the fullName property
         /// </summary>
-        private sealed class PersonFullNameProxy : ModelPropertyChange<IPerson, string>
+        protected sealed class FullNameProxy : ModelPropertyChange<IPerson, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public PersonFullNameProxy(IPerson modelElement) : 
+            public FullNameProxy(IPerson modelElement) : 
                     base(modelElement, "FullName")
             {
             }

@@ -504,7 +504,7 @@ namespace TemporaryGeneratedCode.Families
         {
             if ((attribute == "LASTNAME"))
             {
-                return new FamilyLastNameProxy(this);
+                return new LastNameProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -518,11 +518,11 @@ namespace TemporaryGeneratedCode.Families
         {
             if ((reference == "FATHER"))
             {
-                return new FamilyFatherProxy(this);
+                return new FatherProxy(this);
             }
             if ((reference == "MOTHER"))
             {
-                return new FamilyMotherProxy(this);
+                return new MotherProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -602,8 +602,8 @@ namespace TemporaryGeneratedCode.Families
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new FamilyFatherProxy(this._parent),
-                        new FamilyMotherProxy(this._parent),
+                        new FatherProxy(this._parent),
+                        new MotherProxy(this._parent),
                         this._parent.Sons.AsNotifiable(),
                         this._parent.Daughters.AsNotifiable()};
             }
@@ -816,8 +816,8 @@ namespace TemporaryGeneratedCode.Families
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new FamilyFatherProxy(this._parent),
-                        new FamilyMotherProxy(this._parent),
+                        new FatherProxy(this._parent),
+                        new MotherProxy(this._parent),
                         this._parent.Sons.AsNotifiable(),
                         this._parent.Daughters.AsNotifiable()};
             }
@@ -988,14 +988,14 @@ namespace TemporaryGeneratedCode.Families
         /// <summary>
         /// Represents a proxy to represent an incremental access to the lastName property
         /// </summary>
-        private sealed class FamilyLastNameProxy : ModelPropertyChange<IFamily, string>
+        protected sealed class LastNameProxy : ModelPropertyChange<IFamily, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FamilyLastNameProxy(IFamily modelElement) : 
+            public LastNameProxy(IFamily modelElement) : 
                     base(modelElement, "LastName")
             {
             }
@@ -1019,14 +1019,14 @@ namespace TemporaryGeneratedCode.Families
         /// <summary>
         /// Represents a proxy to represent an incremental access to the father property
         /// </summary>
-        private sealed class FamilyFatherProxy : ModelPropertyChange<IFamily, IMember>
+        protected sealed class FatherProxy : ModelPropertyChange<IFamily, IMember>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FamilyFatherProxy(IFamily modelElement) : 
+            public FatherProxy(IFamily modelElement) : 
                     base(modelElement, "Father")
             {
             }
@@ -1050,14 +1050,14 @@ namespace TemporaryGeneratedCode.Families
         /// <summary>
         /// Represents a proxy to represent an incremental access to the mother property
         /// </summary>
-        private sealed class FamilyMotherProxy : ModelPropertyChange<IFamily, IMember>
+        protected sealed class MotherProxy : ModelPropertyChange<IFamily, IMember>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public FamilyMotherProxy(IFamily modelElement) : 
+            public MotherProxy(IFamily modelElement) : 
                     base(modelElement, "Mother")
             {
             }
@@ -1489,7 +1489,7 @@ namespace TemporaryGeneratedCode.Families
         {
             if ((attribute == "FIRSTNAME"))
             {
-                return new MemberFirstNameProxy(this);
+                return new FirstNameProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -1503,19 +1503,19 @@ namespace TemporaryGeneratedCode.Families
         {
             if ((reference == "FAMILYFATHER"))
             {
-                return new MemberFamilyFatherProxy(this);
+                return new FamilyFatherProxy(this);
             }
             if ((reference == "FAMILYMOTHER"))
             {
-                return new MemberFamilyMotherProxy(this);
+                return new FamilyMotherProxy(this);
             }
             if ((reference == "FAMILYSON"))
             {
-                return new MemberFamilySonProxy(this);
+                return new FamilySonProxy(this);
             }
             if ((reference == "FAMILYDAUGHTER"))
             {
-                return new MemberFamilyDaughterProxy(this);
+                return new FamilyDaughterProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -1583,10 +1583,10 @@ namespace TemporaryGeneratedCode.Families
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new MemberFamilyFatherProxy(this._parent),
-                        new MemberFamilyMotherProxy(this._parent),
-                        new MemberFamilySonProxy(this._parent),
-                        new MemberFamilyDaughterProxy(this._parent)};
+                        new FamilyFatherProxy(this._parent),
+                        new FamilyMotherProxy(this._parent),
+                        new FamilySonProxy(this._parent),
+                        new FamilyDaughterProxy(this._parent)};
             }
             
             /// <summary>
@@ -1742,14 +1742,14 @@ namespace TemporaryGeneratedCode.Families
         /// <summary>
         /// Represents a proxy to represent an incremental access to the firstName property
         /// </summary>
-        private sealed class MemberFirstNameProxy : ModelPropertyChange<IMember, string>
+        protected sealed class FirstNameProxy : ModelPropertyChange<IMember, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public MemberFirstNameProxy(IMember modelElement) : 
+            public FirstNameProxy(IMember modelElement) : 
                     base(modelElement, "FirstName")
             {
             }
@@ -1773,14 +1773,14 @@ namespace TemporaryGeneratedCode.Families
         /// <summary>
         /// Represents a proxy to represent an incremental access to the familyFather property
         /// </summary>
-        private sealed class MemberFamilyFatherProxy : ModelPropertyChange<IMember, IFamily>
+        protected sealed class FamilyFatherProxy : ModelPropertyChange<IMember, IFamily>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public MemberFamilyFatherProxy(IMember modelElement) : 
+            public FamilyFatherProxy(IMember modelElement) : 
                     base(modelElement, "FamilyFather")
             {
             }
@@ -1804,14 +1804,14 @@ namespace TemporaryGeneratedCode.Families
         /// <summary>
         /// Represents a proxy to represent an incremental access to the familyMother property
         /// </summary>
-        private sealed class MemberFamilyMotherProxy : ModelPropertyChange<IMember, IFamily>
+        protected sealed class FamilyMotherProxy : ModelPropertyChange<IMember, IFamily>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public MemberFamilyMotherProxy(IMember modelElement) : 
+            public FamilyMotherProxy(IMember modelElement) : 
                     base(modelElement, "FamilyMother")
             {
             }
@@ -1835,14 +1835,14 @@ namespace TemporaryGeneratedCode.Families
         /// <summary>
         /// Represents a proxy to represent an incremental access to the familySon property
         /// </summary>
-        private sealed class MemberFamilySonProxy : ModelPropertyChange<IMember, IFamily>
+        protected sealed class FamilySonProxy : ModelPropertyChange<IMember, IFamily>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public MemberFamilySonProxy(IMember modelElement) : 
+            public FamilySonProxy(IMember modelElement) : 
                     base(modelElement, "FamilySon")
             {
             }
@@ -1866,14 +1866,14 @@ namespace TemporaryGeneratedCode.Families
         /// <summary>
         /// Represents a proxy to represent an incremental access to the familyDaughter property
         /// </summary>
-        private sealed class MemberFamilyDaughterProxy : ModelPropertyChange<IMember, IFamily>
+        protected sealed class FamilyDaughterProxy : ModelPropertyChange<IMember, IFamily>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public MemberFamilyDaughterProxy(IMember modelElement) : 
+            public FamilyDaughterProxy(IMember modelElement) : 
                     base(modelElement, "FamilyDaughter")
             {
             }

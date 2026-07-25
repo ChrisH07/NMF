@@ -295,7 +295,7 @@ namespace TemporaryGeneratedCode.Test
         {
             if ((attribute == "ATTR01"))
             {
-                return new ClassAAttr01Proxy(this);
+                return new Attr01Proxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -309,7 +309,7 @@ namespace TemporaryGeneratedCode.Test
         {
             if ((reference == "ATTR02"))
             {
-                return new ClassAAttr02Proxy(this);
+                return new Attr02Proxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -361,7 +361,7 @@ namespace TemporaryGeneratedCode.Test
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new ClassAAttr02Proxy(this._parent)};
+                        new Attr02Proxy(this._parent)};
             }
             
             /// <summary>
@@ -445,14 +445,14 @@ namespace TemporaryGeneratedCode.Test
         /// <summary>
         /// Represents a proxy to represent an incremental access to the attr01 property
         /// </summary>
-        private sealed class ClassAAttr01Proxy : ModelPropertyChange<IClassA, string>
+        protected sealed class Attr01Proxy : ModelPropertyChange<IClassA, string>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ClassAAttr01Proxy(IClassA modelElement) : 
+            public Attr01Proxy(IClassA modelElement) : 
                     base(modelElement, "Attr01")
             {
             }
@@ -476,14 +476,14 @@ namespace TemporaryGeneratedCode.Test
         /// <summary>
         /// Represents a proxy to represent an incremental access to the attr02 property
         /// </summary>
-        private sealed class ClassAAttr02Proxy : ModelPropertyChange<IClassA, IClassB>
+        protected sealed class Attr02Proxy : ModelPropertyChange<IClassA, IClassB>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ClassAAttr02Proxy(IClassA modelElement) : 
+            public Attr02Proxy(IClassA modelElement) : 
                     base(modelElement, "Attr02")
             {
             }
@@ -593,7 +593,7 @@ namespace TemporaryGeneratedCode.Test
         {
             if ((attribute == "ATTR01"))
             {
-                return Observable.Box(new ClassBAttr01Proxy(this));
+                return Observable.Box(new Attr01Proxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -609,14 +609,14 @@ namespace TemporaryGeneratedCode.Test
         /// <summary>
         /// Represents a proxy to represent an incremental access to the attr01 property
         /// </summary>
-        private sealed class ClassBAttr01Proxy : ModelPropertyChange<IClassB, Nullable<int>>
+        protected sealed class Attr01Proxy : ModelPropertyChange<IClassB, Nullable<int>>
         {
             
             /// <summary>
             /// Creates a new observable property access proxy
             /// </summary>
             /// <param name="modelElement">The model instance element for which to create the property access proxy</param>
-            public ClassBAttr01Proxy(IClassB modelElement) : 
+            public Attr01Proxy(IClassB modelElement) : 
                     base(modelElement, "Attr01")
             {
             }
