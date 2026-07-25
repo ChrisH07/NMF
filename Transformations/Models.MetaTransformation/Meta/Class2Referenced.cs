@@ -19,12 +19,12 @@ namespace NMF.Models.Meta
             /// <inheritdoc />
             protected override List<IReference> GetImplementingReferences(IClass scope, ITransformationContext context)
             {
-                var generatedType = context.Trace.ResolveIn(Rule<Class2Type>(), scope);
-                var r2p = Rule<Reference2Property>();
-                return (from c in scope.Closure(c => c.BaseTypes)
-                        from r in c.References
-                        where generatedType.Members.Contains(context.Trace.ResolveIn(r2p, r))
-                        select r).ToList();
+                // See the base class override: a reference is excluded here precisely when some other reference
+                // visible to scope refines it, decided from the Refines relationships in the metamodel itself
+                // rather than from generatedType.Members, which is not yet populated when this runs.
+                var allReferences = scope.Closure(c => c.BaseTypes).SelectMany(c => c.References).ToList();
+                var refinedAway = new HashSet<IReference>(allReferences.Select(r => r.Refines).Where(r => r != null));
+                return allReferences.Where(r => !refinedAway.Contains(r)).ToList();
             }
 
             /// <summary>

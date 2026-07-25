@@ -49,11 +49,15 @@ namespace NMF.Models.Meta
             /// <inheritdoc />
             protected virtual List<IReference> GetImplementingReferences(IClass scope, ITransformationContext context)
             {
-                var generatedType = context.Trace.ResolveIn(Rule<Class2Type>(), scope);
-                return (from c in scope.Closure(c => c.BaseTypes)
-                        from r in c.References
-                        where r.IsContainment && generatedType.Members.Contains(context.Trace.ResolveIn(reference2Property, r))
-                        select r).ToList();
+                // A reference is excluded here precisely when some other reference visible to scope refines it -
+                // that other reference holds the actual data and will be included in its own right. This must be
+                // decided from the Refines relationships in the metamodel itself, not from whether the reference's
+                // generated property has already been added to generatedType.Members: Class2Children runs before
+                // that population happens, so a members-containment check is always false here, regardless of
+                // whether the reference is refined or not.
+                var allReferences = scope.Closure(c => c.BaseTypes).SelectMany(c => c.References).ToList();
+                var refinedAway = new HashSet<IReference>(allReferences.Select(r => r.Refines).Where(r => r != null));
+                return allReferences.Where(r => r.IsContainment && !refinedAway.Contains(r)).ToList();
             }
 
             private readonly CodeFieldReferenceExpression parentRef = new CodeFieldReferenceExpression(new CodeThisReferenceExpression(), "_parent");
