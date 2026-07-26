@@ -166,7 +166,7 @@ namespace TemporaryGeneratedCode.Simulink
         {
             if ((feature == "P"))
             {
-                return this._p;
+                return ((System.Collections.IList)(this.P));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -178,7 +178,7 @@ namespace TemporaryGeneratedCode.Simulink
         /// <param name="container">The container object</param>
         protected override string GetCompositionName(object container)
         {
-            if ((container == this._p))
+            if ((container == this.P))
             {
                 return "p";
             }

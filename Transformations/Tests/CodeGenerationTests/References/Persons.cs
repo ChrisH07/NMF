@@ -209,6 +209,50 @@ namespace TemporaryGeneratedCode.Persons
         }
         
         /// <summary>
+        /// Resolves the given attribute name
+        /// </summary>
+        /// <returns>The attribute value or null if it could not be found</returns>
+        /// <param name="attribute">The requested attribute name</param>
+        /// <param name="index">The index of this attribute</param>
+        protected override object GetAttributeValue(string attribute, int index)
+        {
+            if ((attribute == "FULLNAME"))
+            {
+                return this.FullName;
+            }
+            return base.GetAttributeValue(attribute, index);
+        }
+        
+        /// <summary>
+        /// Sets a value to the given feature
+        /// </summary>
+        /// <param name="feature">The requested feature</param>
+        /// <param name="value">The value that should be set to that feature</param>
+        protected override void SetFeature(string feature, object value)
+        {
+            if ((feature == "FULLNAME"))
+            {
+                this.FullName = ((string)(value));
+                return;
+            }
+            base.SetFeature(feature, value);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given attribute
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="attribute">The requested attribute in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
+        {
+            if ((attribute == "FULLNAME"))
+            {
+                return new FullNameProxy(this);
+            }
+            return base.GetExpressionForAttribute(attribute);
+        }
+        
+        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -245,6 +289,50 @@ namespace TemporaryGeneratedCode.Persons
                 }
                 return _classInstance;
             }
+        }
+        
+        /// <summary>
+        /// Resolves the given attribute name
+        /// </summary>
+        /// <returns>The attribute value or null if it could not be found</returns>
+        /// <param name="attribute">The requested attribute name</param>
+        /// <param name="index">The index of this attribute</param>
+        protected override object GetAttributeValue(string attribute, int index)
+        {
+            if ((attribute == "FULLNAME"))
+            {
+                return this.FullName;
+            }
+            return base.GetAttributeValue(attribute, index);
+        }
+        
+        /// <summary>
+        /// Sets a value to the given feature
+        /// </summary>
+        /// <param name="feature">The requested feature</param>
+        /// <param name="value">The value that should be set to that feature</param>
+        protected override void SetFeature(string feature, object value)
+        {
+            if ((feature == "FULLNAME"))
+            {
+                this.FullName = ((string)(value));
+                return;
+            }
+            base.SetFeature(feature, value);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given attribute
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="attribute">The requested attribute in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
+        {
+            if ((attribute == "FULLNAME"))
+            {
+                return new FullNameProxy(this);
+            }
+            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>

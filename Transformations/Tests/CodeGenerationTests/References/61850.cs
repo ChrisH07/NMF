@@ -1392,79 +1392,79 @@ namespace TemporaryGeneratedCode.SubstationStandard
         {
             if ((feature == "LN"))
             {
-                return this._lN;
+                return ((System.Collections.IList)(this.LN));
             }
             if ((feature == "NAMEPLT"))
             {
-                return this._namePlt;
+                return ((System.Collections.IList)(this.NamePlt));
             }
             if ((feature == "LPL"))
             {
-                return this._lPL;
+                return ((System.Collections.IList)(this.LPL));
             }
             if ((feature == "DPC"))
             {
-                return this._dPC;
+                return ((System.Collections.IList)(this.DPC));
             }
             if ((feature == "ACT"))
             {
-                return this._aCT;
+                return ((System.Collections.IList)(this.ACT));
             }
             if ((feature == "SPS"))
             {
-                return this._sPS;
+                return ((System.Collections.IList)(this.SPS));
             }
             if ((feature == "BSC"))
             {
-                return this._bSC;
+                return ((System.Collections.IList)(this.BSC));
             }
             if ((feature == "ISC"))
             {
-                return this._iSC;
+                return ((System.Collections.IList)(this.ISC));
             }
             if ((feature == "SPC"))
             {
-                return this._sPC;
+                return ((System.Collections.IList)(this.SPC));
             }
             if ((feature == "MV"))
             {
-                return this._mV;
+                return ((System.Collections.IList)(this.MV));
             }
             if ((feature == "INS"))
             {
-                return this._iNS;
+                return ((System.Collections.IList)(this.INS));
             }
             if ((feature == "ASG"))
             {
-                return this._aSG;
+                return ((System.Collections.IList)(this.ASG));
             }
             if ((feature == "WYE"))
             {
-                return this._wYE;
+                return ((System.Collections.IList)(this.WYE));
             }
             if ((feature == "DPSTATUS"))
             {
-                return this._dPStatus;
+                return ((System.Collections.IList)(this.DPStatus));
             }
             if ((feature == "ANALOGUEVALUE"))
             {
-                return this._analogueValue;
+                return ((System.Collections.IList)(this.AnalogueValue));
             }
             if ((feature == "CMV"))
             {
-                return this._cMV;
+                return ((System.Collections.IList)(this.CMV));
             }
             if ((feature == "VALWITHTRANS"))
             {
-                return this._valWithTrans;
+                return ((System.Collections.IList)(this.ValWithTrans));
             }
             if ((feature == "BSCONTROL"))
             {
-                return this._bSControl;
+                return ((System.Collections.IList)(this.BSControl));
             }
             if ((feature == "VECTOR"))
             {
-                return this._vector;
+                return ((System.Collections.IList)(this.Vector));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -1476,79 +1476,79 @@ namespace TemporaryGeneratedCode.SubstationStandard
         /// <param name="container">The container object</param>
         protected override string GetCompositionName(object container)
         {
-            if ((container == this._lN))
+            if ((container == this.LN))
             {
                 return "LN";
             }
-            if ((container == this._namePlt))
+            if ((container == this.NamePlt))
             {
                 return "NamePlt";
             }
-            if ((container == this._lPL))
+            if ((container == this.LPL))
             {
                 return "LPL";
             }
-            if ((container == this._dPC))
+            if ((container == this.DPC))
             {
                 return "DPC";
             }
-            if ((container == this._aCT))
+            if ((container == this.ACT))
             {
                 return "ACT";
             }
-            if ((container == this._sPS))
+            if ((container == this.SPS))
             {
                 return "SPS";
             }
-            if ((container == this._bSC))
+            if ((container == this.BSC))
             {
                 return "BSC";
             }
-            if ((container == this._iSC))
+            if ((container == this.ISC))
             {
                 return "ISC";
             }
-            if ((container == this._sPC))
+            if ((container == this.SPC))
             {
                 return "SPC";
             }
-            if ((container == this._mV))
+            if ((container == this.MV))
             {
                 return "MV";
             }
-            if ((container == this._iNS))
+            if ((container == this.INS))
             {
                 return "INS";
             }
-            if ((container == this._aSG))
+            if ((container == this.ASG))
             {
                 return "ASG";
             }
-            if ((container == this._wYE))
+            if ((container == this.WYE))
             {
                 return "WYE";
             }
-            if ((container == this._dPStatus))
+            if ((container == this.DPStatus))
             {
                 return "DPStatus";
             }
-            if ((container == this._analogueValue))
+            if ((container == this.AnalogueValue))
             {
                 return "AnalogueValue";
             }
-            if ((container == this._cMV))
+            if ((container == this.CMV))
             {
                 return "CMV";
             }
-            if ((container == this._valWithTrans))
+            if ((container == this.ValWithTrans))
             {
                 return "ValWithTrans";
             }
-            if ((container == this._bSControl))
+            if ((container == this.BSControl))
             {
                 return "BSControl";
             }
-            if ((container == this._vector))
+            if ((container == this.Vector))
             {
                 return "Vector";
             }
@@ -4140,6 +4140,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.OpCntRs;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -4155,6 +4171,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.OpCntRs = ((IINC)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -4168,6 +4204,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "OPCNTRS"))
             {
                 return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -5283,6 +5335,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.TmACrv;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -5358,6 +5430,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.TmACrv = ((ICURVE)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -5419,6 +5516,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "TMACRV"))
             {
                 return new TmACrvProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -6663,6 +6780,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDiTmms;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -6688,6 +6825,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDiTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -6709,6 +6871,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDITMMS"))
             {
                 return new RsDiTmmsProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -7601,6 +7783,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDiTmms;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -7646,6 +7848,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDiTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -7683,6 +7910,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDITMMS"))
             {
                 return new RsDiTmmsProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -8753,6 +9000,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDiTmms;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -8793,6 +9060,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDiTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -8826,6 +9118,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDITMMS"))
             {
                 return new RsDiTmmsProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -10022,6 +10334,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.BlkValV;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -10077,6 +10409,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.BlkValV = ((IASG)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -10122,6 +10479,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "BLKVALV"))
             {
                 return new BlkValVProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -11126,6 +11503,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.StrVal;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -11151,6 +11548,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.StrVal = ((IASG)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -11172,6 +11594,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "STRVAL"))
             {
                 return new StrValProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -13118,6 +13560,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDlTmms;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -13248,6 +13710,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDlTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -13353,6 +13840,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDLTMMS"))
             {
                 return new RsDlTmmsProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -15443,6 +15950,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDlTmms;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -15483,6 +16010,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDlTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -15516,6 +16068,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDLTMMS"))
             {
                 return new RsDlTmmsProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -16588,6 +17160,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDlTmms;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -16633,6 +17225,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDlTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -16670,6 +17287,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDLTMMS"))
             {
                 return new RsDlTmmsProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -17554,6 +18191,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.StrVal;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -17579,6 +18236,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.StrVal = ((IASG)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -17600,6 +18282,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "STRVAL"))
             {
                 return new StrValProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -18678,6 +19380,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.InhTmm;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -18738,6 +19460,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.InhTmm = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -18787,6 +19534,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "INHTMM"))
             {
                 return new InhTmmProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -20037,6 +20804,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.LokRotTms;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -20077,6 +20864,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.LokRotTms = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -20110,6 +20922,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "LOKROTTMS"))
             {
                 return new LokRotTmsProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -22174,6 +23006,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RvRsTmms;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -22299,6 +23151,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RvRsTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -22400,6 +23277,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RVRSTMMS"))
             {
                 return new RvRsTmmsProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -24554,6 +25451,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.DirMod;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -24604,6 +25521,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.DirMod = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -24645,6 +25587,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "DIRMOD"))
             {
                 return new DirModProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -25775,6 +26737,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.DirMod;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -25815,6 +26797,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.DirMod = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -25848,6 +26855,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "DIRMOD"))
             {
                 return new DirModProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -26734,6 +27761,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.DirMod;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -26764,6 +27811,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.DirMod = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -26789,6 +27861,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "DIRMOD"))
             {
                 return new DirModProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -28051,6 +29143,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.DirMod;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -28121,6 +29233,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.DirMod = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -28178,6 +29315,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "DIRMOD"))
             {
                 return new DirModProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -29610,6 +30767,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDlTmms;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -29655,6 +30832,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDlTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -29692,6 +30894,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDLTMMS"))
             {
                 return new RsDlTmmsProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -31010,6 +32232,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDlTmms;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -31070,6 +32312,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDlTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -31119,6 +32386,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDLTMMS"))
             {
                 return new RsDlTmmsProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -33299,6 +34586,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.AlmVal;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -33414,6 +34721,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.AlmVal = ((IASG)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -33507,6 +34839,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "ALMVAL"))
             {
                 return new AlmValProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -35789,6 +37141,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.AlmVal;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -35859,6 +37231,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.AlmVal = ((IASG)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -35916,6 +37313,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "ALMVAL"))
             {
                 return new AlmValProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -37348,6 +38765,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDlTmms;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -37393,6 +38830,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDlTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -37430,6 +38892,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDLTMMS"))
             {
                 return new RsDlTmmsProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -38872,6 +40354,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDlTmms;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -38942,6 +40444,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDlTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -38999,6 +40526,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDLTMMS"))
             {
                 return new RsDlTmmsProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -40679,6 +42226,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.MaxOpTmms;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -40744,6 +42311,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.MaxOpTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -40797,6 +42389,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "MAXOPTMMS"))
             {
                 return new MaxOpTmmsProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -42045,6 +43657,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.TrPlsTmms;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -42080,6 +43712,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.TrPlsTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -42109,6 +43766,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "TRPLSTMMS"))
             {
                 return new TrPlsTmmsProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -43307,6 +44984,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDlTmms;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -43367,6 +45064,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDlTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -43416,6 +45138,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDLTMMS"))
             {
                 return new RsDlTmmsProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -44852,6 +46594,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.BlkValV;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -44907,6 +46669,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.BlkValV = ((IASG)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -44952,6 +46739,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "BLKVALV"))
             {
                 return new BlkValVProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -46080,6 +47887,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDlTmms;
             }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -46115,6 +47942,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDlTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -46144,6 +47996,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDLTMMS"))
             {
                 return new RsDlTmmsProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -49848,6 +51720,89 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         private static IClass _classInstance;
         
         /// <summary>
+        /// Resolves the given URI to a child model element
+        /// </summary>
+        /// <returns>The model element or null if it could not be found</returns>
+        /// <param name="reference">The requested reference name</param>
+        /// <param name="index">The index of this reference</param>
+        protected override IModelElement GetModelElementForReference(string reference, int index)
+        {
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
+            return base.GetModelElementForReference(reference, index);
+        }
+        
+        /// <summary>
+        /// Sets a value to the given feature
+        /// </summary>
+        /// <param name="feature">The requested feature</param>
+        /// <param name="value">The value that should be set to that feature</param>
+        protected override void SetFeature(string feature, object value)
+        {
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
+            base.SetFeature(feature, value);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given reference
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="reference">The requested reference in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<NMF.Models.IModelElement> GetExpressionForReference(string reference)
+        {
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
+            }
+            return base.GetExpressionForReference(reference);
+        }
+        
+        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -51063,6 +53018,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return this.OpMod;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -51168,6 +53139,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this.OpMod = ((IING)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -51253,6 +53244,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             if ((reference == "OPMOD"))
             {
                 return new OpModProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -52766,6 +54773,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return this.DltRcd;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -52786,6 +54809,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this.DltRcd = ((ISPC)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -52803,6 +54846,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             if ((reference == "DLTRCD"))
             {
                 return new DltRcdProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -54040,6 +56099,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return this.EvTmms;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -54120,6 +56195,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this.EvTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -54185,6 +56280,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             if ((reference == "EVTMMS"))
             {
                 return new EvTmmsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -55894,6 +58005,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return this.ReTrMod;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -55954,6 +58081,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this.ReTrMod = ((IING)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -56003,6 +58150,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             if ((reference == "RETRMOD"))
             {
                 return new ReTrModProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -57410,6 +59573,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return this.PstTmms;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -57465,6 +59644,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this.PstTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -57510,6 +59709,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             if ((reference == "PSTTMMS"))
             {
                 return new PstTmmsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -58733,6 +60948,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return this.PstTmms;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -58778,6 +61009,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this.PstTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -58815,6 +61066,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             if ((reference == "PSTTMMS"))
             {
                 return new PstTmmsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -60104,6 +62371,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return this.MinPPV;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -60164,6 +62447,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this.MinPPV = ((IASG)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -60213,6 +62516,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             if ((reference == "MINPPV"))
             {
                 return new MinPPVProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -62116,6 +64435,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return this.Zm0Ang;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -62211,6 +64546,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this.Zm0Ang = ((IASG)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -62288,6 +64643,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             if ((reference == "ZM0ANG"))
             {
                 return new Zm0AngProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -64239,6 +66610,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return this.RclTmms;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -64304,6 +66691,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this.RclTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -64357,6 +66764,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             if ((reference == "RCLTMMS"))
             {
                 return new RclTmmsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -66506,6 +68929,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return this.BkrTmms;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -66616,6 +69055,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this.BkrTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -66705,6 +69164,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             if ((reference == "BKRTMMS"))
             {
                 return new BkrTmmsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -69567,6 +72042,89 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         private static IClass _classInstance;
         
         /// <summary>
+        /// Resolves the given URI to a child model element
+        /// </summary>
+        /// <returns>The model element or null if it could not be found</returns>
+        /// <param name="reference">The requested reference name</param>
+        /// <param name="index">The index of this reference</param>
+        protected override IModelElement GetModelElementForReference(string reference, int index)
+        {
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
+            return base.GetModelElementForReference(reference, index);
+        }
+        
+        /// <summary>
+        /// Sets a value to the given feature
+        /// </summary>
+        /// <param name="feature">The requested feature</param>
+        /// <param name="value">The value that should be set to that feature</param>
+        protected override void SetFeature(string feature, object value)
+        {
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
+            base.SetFeature(feature, value);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given reference
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="reference">The requested reference in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<NMF.Models.IModelElement> GetExpressionForReference(string reference)
+        {
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
+            }
+            return base.GetExpressionForReference(reference);
+        }
+        
+        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -69790,6 +72348,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             {
                 return this.AlmLstOv;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -69815,6 +72389,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                 this.AlmLstOv = ((ISPS)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -69836,6 +72430,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             if ((reference == "ALMLSTOV"))
             {
                 return new AlmLstOvProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -70389,6 +72999,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             {
                 return this.EnaCls;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -70409,6 +73035,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                 this.EnaCls = ((ISPS)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -70426,6 +73072,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             if ((reference == "ENACLS"))
             {
                 return new EnaClsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -71973,6 +74635,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             {
                 return this.OilTmpSet;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -72078,6 +74756,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                 this.OilTmpSet = ((IASG)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -72163,6 +74861,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             if ((reference == "OILTMPSET"))
             {
                 return new OilTmpSetProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -73862,6 +76576,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             {
                 return this.MaxDlTmms;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -73897,6 +76627,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                 this.MaxDlTmms = ((IING)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -73926,6 +76676,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             if ((reference == "MAXDLTMMS"))
             {
                 return new MaxDlTmmsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -74971,6 +77737,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             {
                 return this.OpCls;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -75021,6 +77803,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                 this.OpCls = ((IACT)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -75062,6 +77864,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             if ((reference == "OPCLS"))
             {
                 return new OpClsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -76461,6 +79279,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             {
                 return this.Auto;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -76486,6 +79320,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                 this.Auto = ((ISPS)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -76507,6 +79361,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             if ((reference == "AUTO"))
             {
                 return new AutoProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -77122,6 +79992,34 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             {
                 return this.LCol;
             }
+            if ((reference == "LOC"))
+            {
+                return this.Loc;
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "AUTO"))
+            {
+                return this.Auto;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -77147,6 +80045,41 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                 this.LCol = ((ISPC)(value));
                 return;
             }
+            if ((feature == "LOC"))
+            {
+                this.Loc = ((ISPS)(value));
+                return;
+            }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "AUTO"))
+            {
+                this.Auto = ((ISPS)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -77168,6 +80101,34 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             if ((reference == "LCOL"))
             {
                 return new LColProxy(this);
+            }
+            if ((reference == "LOC"))
+            {
+                return new LocProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "AUTO"))
+            {
+                return new AutoProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -77932,6 +80893,34 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             {
                 return this.DschBlk;
             }
+            if ((reference == "LOC"))
+            {
+                return this.Loc;
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "AUTO"))
+            {
+                return this.Auto;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -77962,6 +80951,41 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                 this.DschBlk = ((ISPS)(value));
                 return;
             }
+            if ((feature == "LOC"))
+            {
+                this.Loc = ((ISPS)(value));
+                return;
+            }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "AUTO"))
+            {
+                this.Auto = ((ISPS)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -77987,6 +81011,34 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             if ((reference == "DSCHBLK"))
             {
                 return new DschBlkProxy(this);
+            }
+            if ((reference == "LOC"))
+            {
+                return new LocProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "AUTO"))
+            {
+                return new AutoProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -80485,6 +83537,34 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             {
                 return this.TapBlkL;
             }
+            if ((reference == "LOC"))
+            {
+                return this.Loc;
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "AUTO"))
+            {
+                return this.Auto;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -80650,6 +83730,41 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                 this.TapBlkL = ((IASG)(value));
                 return;
             }
+            if ((feature == "LOC"))
+            {
+                this.Loc = ((ISPS)(value));
+                return;
+            }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "AUTO"))
+            {
+                this.Auto = ((ISPS)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -80783,6 +83898,34 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             if ((reference == "TAPBLKL"))
             {
                 return new TapBlkLProxy(this);
+            }
+            if ((reference == "LOC"))
+            {
+                return new LocProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "AUTO"))
+            {
+                return new AutoProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -83351,6 +86494,34 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             {
                 return this.LimVOv;
             }
+            if ((reference == "LOC"))
+            {
+                return this.Loc;
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return this.OpCntRs;
+            }
+            if ((reference == "AUTO"))
+            {
+                return this.Auto;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -83391,6 +86562,41 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                 this.LimVOv = ((IASG)(value));
                 return;
             }
+            if ((feature == "LOC"))
+            {
+                this.Loc = ((ISPS)(value));
+                return;
+            }
+            if ((feature == "OPCNTRS"))
+            {
+                this.OpCntRs = ((IINC)(value));
+                return;
+            }
+            if ((feature == "AUTO"))
+            {
+                this.Auto = ((ISPS)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -83424,6 +86630,34 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             if ((reference == "LIMVOV"))
             {
                 return new LimVOvProxy(this);
+            }
+            if ((reference == "LOC"))
+            {
+                return new LocProxy(this);
+            }
+            if ((reference == "OPCNTRS"))
+            {
+                return new OpCntRsProxy(this);
+            }
+            if ((reference == "AUTO"))
+            {
+                return new AutoProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -84688,6 +87922,89 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         private static IClass _classInstance;
         
         /// <summary>
+        /// Resolves the given URI to a child model element
+        /// </summary>
+        /// <returns>The model element or null if it could not be found</returns>
+        /// <param name="reference">The requested reference name</param>
+        /// <param name="index">The index of this reference</param>
+        protected override IModelElement GetModelElementForReference(string reference, int index)
+        {
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
+            return base.GetModelElementForReference(reference, index);
+        }
+        
+        /// <summary>
+        /// Sets a value to the given feature
+        /// </summary>
+        /// <param name="feature">The requested feature</param>
+        /// <param name="value">The value that should be set to that feature</param>
+        protected override void SetFeature(string feature, object value)
+        {
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
+            base.SetFeature(feature, value);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given reference
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="reference">The requested reference in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<NMF.Models.IModelElement> GetExpressionForReference(string reference)
+        {
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
+            }
+            return base.GetExpressionForReference(reference);
+        }
+        
+        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -84973,6 +88290,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             {
                 return this.Amp3;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -85003,6 +88336,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this.Amp3 = ((ISAV)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -85028,6 +88381,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             if ((reference == "AMP3"))
             {
                 return new Amp3Proxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -87848,6 +91217,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             {
                 return this.NomA;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -88058,6 +91443,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this.NomA = ((IASG)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             if ((feature == "EEHEALTH"))
             {
                 this.EEHealth = ((HealthStateKind)(value));
@@ -88234,6 +91639,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             if ((reference == "NOMA"))
             {
                 return new NomAProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -92879,6 +96300,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             {
                 return this.NomA;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -93074,6 +96511,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this.NomA = ((IASG)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             if ((feature == "EEHEALTH"))
             {
                 this.EEHealth = ((HealthStateKind)(value));
@@ -93238,6 +96695,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             if ((reference == "NOMA"))
             {
                 return new NomAProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -96401,6 +99874,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             {
                 return this.Z;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -96491,6 +99980,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this.Z = ((IWYE)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             if ((feature == "EEHEALTH"))
             {
                 this.EEHealth = ((HealthStateKind)(value));
@@ -96571,6 +100080,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             if ((reference == "Z"))
             {
                 return new ZProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -98536,6 +102061,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             {
                 return this.MaxImbV;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -98631,6 +102172,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this.MaxImbV = ((IWYE)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             if ((feature == "EEHEALTH"))
             {
                 this.EEHealth = ((HealthStateKind)(value));
@@ -98715,6 +102276,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             if ((reference == "MAXIMBV"))
             {
                 return new MaxImbVProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -100368,6 +103945,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             {
                 return this.DmdVArh;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -100433,6 +104026,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this.DmdVArh = ((IBCR)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             if ((feature == "EEHEALTH"))
             {
                 this.EEHealth = ((HealthStateKind)(value));
@@ -100493,6 +104106,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             if ((reference == "DMDVARH"))
             {
                 return new DmdVArhProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -101848,6 +105477,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             {
                 return this.Hz;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -101918,6 +105563,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this.Hz = ((IMV)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             if ((feature == "EEHEALTH"))
             {
                 this.EEHealth = ((HealthStateKind)(value));
@@ -101982,6 +105647,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             if ((reference == "HZ"))
             {
                 return new HzProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -103955,6 +107636,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             {
                 return this.EvTmms;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -104070,6 +107767,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this.EvTmms = ((IASG)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             if ((feature == "EEHEALTH"))
             {
                 this.EEHealth = ((HealthStateKind)(value));
@@ -104170,6 +107887,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             if ((reference == "EVTMMS"))
             {
                 return new EvTmmsProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -107691,6 +111424,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             {
                 return this.ChaMotEna;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -107751,6 +111500,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                 this.ChaMotEna = ((ISPC)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             if ((feature == "EEHEALTH"))
             {
                 this.EEHealth = ((HealthStateKind)(value));
@@ -107807,6 +111576,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             if ((reference == "CHAMOTENA"))
             {
                 return new ChaMotEnaProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -108792,6 +112577,50 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             {
                 return this.SwitchControl;
             }
+            if ((reference == "LOC"))
+            {
+                return this.Loc;
+            }
+            if ((reference == "EENAME"))
+            {
+                return this.EEName;
+            }
+            if ((reference == "OPCNT"))
+            {
+                return this.OpCnt;
+            }
+            if ((reference == "POS"))
+            {
+                return this.Pos;
+            }
+            if ((reference == "BLKOPN"))
+            {
+                return this.BlkOpn;
+            }
+            if ((reference == "BLKCLS"))
+            {
+                return this.BlkCls;
+            }
+            if ((reference == "CHAMOTENA"))
+            {
+                return this.ChaMotEna;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -108806,6 +112635,10 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             if ((attribute == "POWCAP"))
             {
                 return this.POWCap;
+            }
+            if ((attribute == "EEHEALTH"))
+            {
+                return this.EEHealth;
             }
             return base.GetAttributeValue(attribute, index);
         }
@@ -108837,9 +112670,69 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                 this.SwitchControl = ((ICSWI)(value));
                 return;
             }
+            if ((feature == "LOC"))
+            {
+                this.Loc = ((ISPS)(value));
+                return;
+            }
+            if ((feature == "EENAME"))
+            {
+                this.EEName = ((IDPL)(value));
+                return;
+            }
+            if ((feature == "OPCNT"))
+            {
+                this.OpCnt = ((IINS)(value));
+                return;
+            }
+            if ((feature == "POS"))
+            {
+                this.Pos = ((IDPC)(value));
+                return;
+            }
+            if ((feature == "BLKOPN"))
+            {
+                this.BlkOpn = ((ISPC)(value));
+                return;
+            }
+            if ((feature == "BLKCLS"))
+            {
+                this.BlkCls = ((ISPC)(value));
+                return;
+            }
+            if ((feature == "CHAMOTENA"))
+            {
+                this.ChaMotEna = ((ISPC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             if ((feature == "POWCAP"))
             {
                 this.POWCap = ((SwitchingCapabilityKind)(value));
+                return;
+            }
+            if ((feature == "EEHEALTH"))
+            {
+                this.EEHealth = ((HealthStateKind)(value));
                 return;
             }
             base.SetFeature(feature, value);
@@ -108855,6 +112748,10 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             if ((attribute == "POWCAP"))
             {
                 return Observable.Box(new POWCapProxy(this));
+            }
+            if ((attribute == "EEHEALTH"))
+            {
+                return Observable.Box(new EEHealthProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -108881,6 +112778,50 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             if ((reference == "SWITCHCONTROL"))
             {
                 return new SwitchControlProxy(this);
+            }
+            if ((reference == "LOC"))
+            {
+                return new LocProxy(this);
+            }
+            if ((reference == "EENAME"))
+            {
+                return new EENameProxy(this);
+            }
+            if ((reference == "OPCNT"))
+            {
+                return new OpCntProxy(this);
+            }
+            if ((reference == "POS"))
+            {
+                return new PosProxy(this);
+            }
+            if ((reference == "BLKOPN"))
+            {
+                return new BlkOpnProxy(this);
+            }
+            if ((reference == "BLKCLS"))
+            {
+                return new BlkClsProxy(this);
+            }
+            if ((reference == "CHAMOTENA"))
+            {
+                return new ChaMotEnaProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -109777,6 +113718,50 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             {
                 return this.SwitchControl;
             }
+            if ((reference == "LOC"))
+            {
+                return this.Loc;
+            }
+            if ((reference == "EENAME"))
+            {
+                return this.EEName;
+            }
+            if ((reference == "OPCNT"))
+            {
+                return this.OpCnt;
+            }
+            if ((reference == "POS"))
+            {
+                return this.Pos;
+            }
+            if ((reference == "BLKOPN"))
+            {
+                return this.BlkOpn;
+            }
+            if ((reference == "BLKCLS"))
+            {
+                return this.BlkCls;
+            }
+            if ((reference == "CHAMOTENA"))
+            {
+                return this.ChaMotEna;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -109800,6 +113785,10 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             {
                 return this.SwTyp;
             }
+            if ((attribute == "EEHEALTH"))
+            {
+                return this.EEHealth;
+            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -109815,6 +113804,61 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                 this.SwitchControl = ((ICSWI)(value));
                 return;
             }
+            if ((feature == "LOC"))
+            {
+                this.Loc = ((ISPS)(value));
+                return;
+            }
+            if ((feature == "EENAME"))
+            {
+                this.EEName = ((IDPL)(value));
+                return;
+            }
+            if ((feature == "OPCNT"))
+            {
+                this.OpCnt = ((IINS)(value));
+                return;
+            }
+            if ((feature == "POS"))
+            {
+                this.Pos = ((IDPC)(value));
+                return;
+            }
+            if ((feature == "BLKOPN"))
+            {
+                this.BlkOpn = ((ISPC)(value));
+                return;
+            }
+            if ((feature == "BLKCLS"))
+            {
+                this.BlkCls = ((ISPC)(value));
+                return;
+            }
+            if ((feature == "CHAMOTENA"))
+            {
+                this.ChaMotEna = ((ISPC)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             if ((feature == "SWOPCAP"))
             {
                 this.SwOpCap = ((SwitchingCapabilityKind)(value));
@@ -109828,6 +113872,11 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             if ((feature == "SWTYP"))
             {
                 this.SwTyp = ((SwitchTypeKind)(value));
+                return;
+            }
+            if ((feature == "EEHEALTH"))
+            {
+                this.EEHealth = ((HealthStateKind)(value));
                 return;
             }
             base.SetFeature(feature, value);
@@ -109852,6 +113901,10 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             {
                 return Observable.Box(new SwTypProxy(this));
             }
+            if ((attribute == "EEHEALTH"))
+            {
+                return Observable.Box(new EEHealthProxy(this));
+            }
             return base.GetExpressionForAttribute(attribute);
         }
         
@@ -109865,6 +113918,50 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             if ((reference == "SWITCHCONTROL"))
             {
                 return new SwitchControlProxy(this);
+            }
+            if ((reference == "LOC"))
+            {
+                return new LocProxy(this);
+            }
+            if ((reference == "EENAME"))
+            {
+                return new EENameProxy(this);
+            }
+            if ((reference == "OPCNT"))
+            {
+                return new OpCntProxy(this);
+            }
+            if ((reference == "POS"))
+            {
+                return new PosProxy(this);
+            }
+            if ((reference == "BLKOPN"))
+            {
+                return new BlkOpnProxy(this);
+            }
+            if ((reference == "BLKCLS"))
+            {
+                return new BlkClsProxy(this);
+            }
+            if ((reference == "CHAMOTENA"))
+            {
+                return new ChaMotEnaProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -111117,6 +115214,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
             {
                 return this.AngCor;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -111172,6 +115285,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                 this.AngCor = ((IASG)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             if ((feature == "EEHEALTH"))
             {
                 this.EEHealth = ((HealthStateKind)(value));
@@ -111224,6 +115357,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
             if ((reference == "ANGCOR"))
             {
                 return new AngCorProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -111988,7 +116137,62 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
             {
                 return this.ARtg;
             }
+            if ((reference == "EENAME"))
+            {
+                return this.EEName;
+            }
+            if ((reference == "OPTMH"))
+            {
+                return this.OpTmh;
+            }
+            if ((reference == "HZRTG"))
+            {
+                return this.HzRtg;
+            }
+            if ((reference == "RAT"))
+            {
+                return this.Rat;
+            }
+            if ((reference == "COR"))
+            {
+                return this.Cor;
+            }
+            if ((reference == "ANGCOR"))
+            {
+                return this.AngCor;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
+        }
+        
+        /// <summary>
+        /// Resolves the given attribute name
+        /// </summary>
+        /// <returns>The attribute value or null if it could not be found</returns>
+        /// <param name="attribute">The requested attribute name</param>
+        /// <param name="index">The index of this attribute</param>
+        protected override object GetAttributeValue(string attribute, int index)
+        {
+            if ((attribute == "EEHEALTH"))
+            {
+                return this.EEHealth;
+            }
+            return base.GetAttributeValue(attribute, index);
         }
         
         /// <summary>
@@ -112008,7 +116212,76 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                 this.ARtg = ((IASG)(value));
                 return;
             }
+            if ((feature == "EENAME"))
+            {
+                this.EEName = ((IDPL)(value));
+                return;
+            }
+            if ((feature == "OPTMH"))
+            {
+                this.OpTmh = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HZRTG"))
+            {
+                this.HzRtg = ((IASG)(value));
+                return;
+            }
+            if ((feature == "RAT"))
+            {
+                this.Rat = ((IASG)(value));
+                return;
+            }
+            if ((feature == "COR"))
+            {
+                this.Cor = ((IASG)(value));
+                return;
+            }
+            if ((feature == "ANGCOR"))
+            {
+                this.AngCor = ((IASG)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
+            if ((feature == "EEHEALTH"))
+            {
+                this.EEHealth = ((HealthStateKind)(value));
+                return;
+            }
             base.SetFeature(feature, value);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given attribute
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="attribute">The requested attribute in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
+        {
+            if ((attribute == "EEHEALTH"))
+            {
+                return Observable.Box(new EEHealthProxy(this));
+            }
+            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -112025,6 +116298,46 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
             if ((reference == "ARTG"))
             {
                 return new ARtgProxy(this);
+            }
+            if ((reference == "EENAME"))
+            {
+                return new EENameProxy(this);
+            }
+            if ((reference == "OPTMH"))
+            {
+                return new OpTmhProxy(this);
+            }
+            if ((reference == "HZRTG"))
+            {
+                return new HzRtgProxy(this);
+            }
+            if ((reference == "RAT"))
+            {
+                return new RatProxy(this);
+            }
+            if ((reference == "COR"))
+            {
+                return new CorProxy(this);
+            }
+            if ((reference == "ANGCOR"))
+            {
+                return new AngCorProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -112754,7 +117067,62 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
             {
                 return this.VRtg;
             }
+            if ((reference == "EENAME"))
+            {
+                return this.EEName;
+            }
+            if ((reference == "OPTMH"))
+            {
+                return this.OpTmh;
+            }
+            if ((reference == "HZRTG"))
+            {
+                return this.HzRtg;
+            }
+            if ((reference == "RAT"))
+            {
+                return this.Rat;
+            }
+            if ((reference == "COR"))
+            {
+                return this.Cor;
+            }
+            if ((reference == "ANGCOR"))
+            {
+                return this.AngCor;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
+        }
+        
+        /// <summary>
+        /// Resolves the given attribute name
+        /// </summary>
+        /// <returns>The attribute value or null if it could not be found</returns>
+        /// <param name="attribute">The requested attribute name</param>
+        /// <param name="index">The index of this attribute</param>
+        protected override object GetAttributeValue(string attribute, int index)
+        {
+            if ((attribute == "EEHEALTH"))
+            {
+                return this.EEHealth;
+            }
+            return base.GetAttributeValue(attribute, index);
         }
         
         /// <summary>
@@ -112779,7 +117147,76 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                 this.VRtg = ((IASG)(value));
                 return;
             }
+            if ((feature == "EENAME"))
+            {
+                this.EEName = ((IDPL)(value));
+                return;
+            }
+            if ((feature == "OPTMH"))
+            {
+                this.OpTmh = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HZRTG"))
+            {
+                this.HzRtg = ((IASG)(value));
+                return;
+            }
+            if ((feature == "RAT"))
+            {
+                this.Rat = ((IASG)(value));
+                return;
+            }
+            if ((feature == "COR"))
+            {
+                this.Cor = ((IASG)(value));
+                return;
+            }
+            if ((feature == "ANGCOR"))
+            {
+                this.AngCor = ((IASG)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
+            if ((feature == "EEHEALTH"))
+            {
+                this.EEHealth = ((HealthStateKind)(value));
+                return;
+            }
             base.SetFeature(feature, value);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given attribute
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="attribute">The requested attribute in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
+        {
+            if ((attribute == "EEHEALTH"))
+            {
+                return Observable.Box(new EEHealthProxy(this));
+            }
+            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -112800,6 +117237,46 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
             if ((reference == "VRTG"))
             {
                 return new VRtgProxy(this);
+            }
+            if ((reference == "EENAME"))
+            {
+                return new EENameProxy(this);
+            }
+            if ((reference == "OPTMH"))
+            {
+                return new OpTmhProxy(this);
+            }
+            if ((reference == "HZRTG"))
+            {
+                return new HzRtgProxy(this);
+            }
+            if ((reference == "RAT"))
+            {
+                return new RatProxy(this);
+            }
+            if ((reference == "COR"))
+            {
+                return new CorProxy(this);
+            }
+            if ((reference == "ANGCOR"))
+            {
+                return new AngCorProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -113686,6 +118163,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             {
                 return this.EEName;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -113714,6 +118207,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             if ((feature == "EENAME"))
             {
                 this.EEName = ((IDPL)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
                 return;
             }
             if ((feature == "EEHEALTH"))
@@ -113748,6 +118261,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             if ((reference == "EENAME"))
             {
                 return new EENameProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -114398,7 +118927,42 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             {
                 return this.ColPos;
             }
+            if ((reference == "EENAME"))
+            {
+                return this.EEName;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
+        }
+        
+        /// <summary>
+        /// Resolves the given attribute name
+        /// </summary>
+        /// <returns>The attribute value or null if it could not be found</returns>
+        /// <param name="attribute">The requested attribute name</param>
+        /// <param name="index">The index of this attribute</param>
+        protected override object GetAttributeValue(string attribute, int index)
+        {
+            if ((attribute == "EEHEALTH"))
+            {
+                return this.EEHealth;
+            }
+            return base.GetAttributeValue(attribute, index);
         }
         
         /// <summary>
@@ -114433,7 +118997,51 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                 this.ColPos = ((IAPC)(value));
                 return;
             }
+            if ((feature == "EENAME"))
+            {
+                this.EEName = ((IDPL)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
+            if ((feature == "EEHEALTH"))
+            {
+                this.EEHealth = ((HealthStateKind)(value));
+                return;
+            }
             base.SetFeature(feature, value);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given attribute
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="attribute">The requested attribute in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
+        {
+            if ((attribute == "EEHEALTH"))
+            {
+                return Observable.Box(new EEHealthProxy(this));
+            }
+            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -114462,6 +119070,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             if ((reference == "COLPOS"))
             {
                 return new ColPosProxy(this);
+            }
+            if ((reference == "EENAME"))
+            {
+                return new EENameProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -115536,7 +120164,42 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             {
                 return this.OilFil;
             }
+            if ((reference == "EENAME"))
+            {
+                return this.EEName;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
+        }
+        
+        /// <summary>
+        /// Resolves the given attribute name
+        /// </summary>
+        /// <returns>The attribute value or null if it could not be found</returns>
+        /// <param name="attribute">The requested attribute name</param>
+        /// <param name="index">The index of this attribute</param>
+        protected override object GetAttributeValue(string attribute, int index)
+        {
+            if ((attribute == "EEHEALTH"))
+            {
+                return this.EEHealth;
+            }
+            return base.GetAttributeValue(attribute, index);
         }
         
         /// <summary>
@@ -115586,7 +120249,51 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                 this.OilFil = ((ISPS)(value));
                 return;
             }
+            if ((feature == "EENAME"))
+            {
+                this.EEName = ((IDPL)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
+            if ((feature == "EEHEALTH"))
+            {
+                this.EEHealth = ((HealthStateKind)(value));
+                return;
+            }
             base.SetFeature(feature, value);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given attribute
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="attribute">The requested attribute in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
+        {
+            if ((attribute == "EEHEALTH"))
+            {
+                return Observable.Box(new EEHealthProxy(this));
+            }
+            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -115627,6 +120334,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             if ((reference == "OILFIL"))
             {
                 return new OilFilProxy(this);
+            }
+            if ((reference == "EENAME"))
+            {
+                return new EENameProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -116769,6 +121496,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             {
                 return this.ChaMotEna;
             }
+            if ((reference == "EENAME"))
+            {
+                return this.EEName;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -116787,6 +121534,10 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             if ((attribute == "MAXOPCAP"))
             {
                 return this.MaxOpCap;
+            }
+            if ((attribute == "EEHEALTH"))
+            {
+                return this.EEHealth;
             }
             return base.GetAttributeValue(attribute, index);
         }
@@ -116823,6 +121574,31 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                 this.ChaMotEna = ((ISPC)(value));
                 return;
             }
+            if ((feature == "EENAME"))
+            {
+                this.EEName = ((IDPL)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             if ((feature == "SHOPCAP"))
             {
                 this.ShOpCap = ((SwitchingCapabilityKind)(value));
@@ -116831,6 +121607,11 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             if ((feature == "MAXOPCAP"))
             {
                 this.MaxOpCap = ((SwitchingCapabilityKind)(value));
+                return;
+            }
+            if ((feature == "EEHEALTH"))
+            {
+                this.EEHealth = ((HealthStateKind)(value));
                 return;
             }
             base.SetFeature(feature, value);
@@ -116850,6 +121631,10 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             if ((attribute == "MAXOPCAP"))
             {
                 return Observable.Box(new MaxOpCapProxy(this));
+            }
+            if ((attribute == "EEHEALTH"))
+            {
+                return Observable.Box(new EEHealthProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -116880,6 +121665,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             if ((reference == "CHAMOTENA"))
             {
                 return new ChaMotEnaProxy(this);
+            }
+            if ((reference == "EENAME"))
+            {
+                return new EENameProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -118326,7 +123131,42 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             {
                 return this.TransformerControl;
             }
+            if ((reference == "EENAME"))
+            {
+                return this.EEName;
+            }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
+        }
+        
+        /// <summary>
+        /// Resolves the given attribute name
+        /// </summary>
+        /// <returns>The attribute value or null if it could not be found</returns>
+        /// <param name="attribute">The requested attribute name</param>
+        /// <param name="index">The index of this attribute</param>
+        protected override object GetAttributeValue(string attribute, int index)
+        {
+            if ((attribute == "EEHEALTH"))
+            {
+                return this.EEHealth;
+            }
+            return base.GetAttributeValue(attribute, index);
         }
         
         /// <summary>
@@ -118401,7 +123241,51 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                 this.TransformerControl = ((IATCC)(value));
                 return;
             }
+            if ((feature == "EENAME"))
+            {
+                this.EEName = ((IDPL)(value));
+                return;
+            }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
+            if ((feature == "EEHEALTH"))
+            {
+                this.EEHealth = ((HealthStateKind)(value));
+                return;
+            }
             base.SetFeature(feature, value);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given attribute
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="attribute">The requested attribute in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
+        {
+            if ((attribute == "EEHEALTH"))
+            {
+                return Observable.Box(new EEHealthProxy(this));
+            }
+            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -118462,6 +123346,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             if ((reference == "TRANSFORMERCONTROL"))
             {
                 return new TransformerControlProxy(this);
+            }
+            if ((reference == "EENAME"))
+            {
+                return new EENameProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -119957,6 +124861,89 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         private static IClass _classInstance;
         
         /// <summary>
+        /// Resolves the given URI to a child model element
+        /// </summary>
+        /// <returns>The model element or null if it could not be found</returns>
+        /// <param name="reference">The requested reference name</param>
+        /// <param name="index">The index of this reference</param>
+        protected override IModelElement GetModelElementForReference(string reference, int index)
+        {
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
+            return base.GetModelElementForReference(reference, index);
+        }
+        
+        /// <summary>
+        /// Sets a value to the given feature
+        /// </summary>
+        /// <param name="feature">The requested feature</param>
+        /// <param name="value">The value that should be set to that feature</param>
+        protected override void SetFeature(string feature, object value)
+        {
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
+            base.SetFeature(feature, value);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given reference
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="reference">The requested reference in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<NMF.Models.IModelElement> GetExpressionForReference(string reference)
+        {
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
+            }
+            return base.GetExpressionForReference(reference);
+        }
+        
+        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -120180,6 +125167,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.Amp;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -120205,6 +125208,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.Amp = ((IMV)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -120226,6 +125249,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "AMP"))
             {
                 return new AmpProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -120717,6 +125756,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.OpTmh;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -120732,6 +125787,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.OpTmh = ((IINS)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -120745,6 +125820,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "OPTMH"))
             {
                 return new OpTmhProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -121674,6 +126765,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.HiBatVal;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -121734,6 +126841,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.HiBatVal = ((IASG)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -121783,6 +126910,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "HIBATVAL"))
             {
                 return new HiBatValProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -122694,6 +127837,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.OpTmh;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -122709,6 +127868,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.OpTmh = ((IINS)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -122722,6 +127901,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "OPTMH"))
             {
                 return new OpTmhProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -123341,6 +128536,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.PresAlm;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -123376,6 +128587,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.PresAlm = ((ISPS)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -123405,6 +128636,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "PRESALM"))
             {
                 return new PresAlmProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -124078,6 +129325,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.ReactorControl;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -124098,6 +129361,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.ReactorControl = ((IARCO)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -124115,6 +129398,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "REACTORCONTROL"))
             {
                 return new ReactorControlProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -124918,6 +130217,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.RefV;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -124963,6 +130278,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.RefV = ((IASG)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -125000,6 +130335,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "REFV"))
             {
                 return new RefVProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -125731,6 +131082,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.OpTmh;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -125746,6 +131113,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.OpTmh = ((IINS)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -125759,6 +131146,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "OPTMH"))
             {
                 return new OpTmhProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -126192,6 +131595,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.OPSA;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -126212,6 +131631,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.OPSA = ((ISPS)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -126229,6 +131668,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "OPSA"))
             {
                 return new OPSAProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -126722,6 +132177,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.PwrFrq;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -126742,6 +132213,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.PwrFrq = ((IASG)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -126759,6 +132250,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "PWRFRQ"))
             {
                 return new PwrFrqProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -127190,6 +132697,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.OpTmh;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -127205,6 +132728,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.OpTmh = ((IINS)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -127218,6 +132761,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "OPTMH"))
             {
                 return new OpTmhProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -127589,6 +133148,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.OpTmh;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -127604,6 +133179,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.OpTmh = ((IINS)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -127617,6 +133212,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "OPTMH"))
             {
                 return new OpTmhProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -128174,6 +133785,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.CapControl;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -128204,6 +133831,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.CapControl = ((IARCO)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -128229,6 +133876,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "CAPCONTROL"))
             {
                 return new CapControlProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -128780,6 +134443,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.OpTmh;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -128795,6 +134474,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.OpTmh = ((IINS)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -128808,6 +134507,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "OPTMH"))
             {
                 return new OpTmhProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -130332,6 +136047,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.VRtg;
             }
+            if ((reference == "MODE"))
+            {
+                return this.Mode;
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return this.Behaviour;
+            }
+            if ((reference == "HEALTH"))
+            {
+                return this.Health;
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return this.NamePlt;
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -130452,6 +136183,26 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.VRtg = ((IASG)(value));
                 return;
             }
+            if ((feature == "MODE"))
+            {
+                this.Mode = ((IINC)(value));
+                return;
+            }
+            if ((feature == "BEHAVIOUR"))
+            {
+                this.Behaviour = ((IINS)(value));
+                return;
+            }
+            if ((feature == "HEALTH"))
+            {
+                this.Health = ((IINS)(value));
+                return;
+            }
+            if ((feature == "NAMEPLT"))
+            {
+                this.NamePlt = ((ILPL)(value));
+                return;
+            }
             if ((feature == "GNST"))
             {
                 this.GnSt = ((GeneratorStateKind)(value));
@@ -130556,6 +136307,22 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "VRTG"))
             {
                 return new VRtgProxy(this);
+            }
+            if ((reference == "MODE"))
+            {
+                return new ModeProxy(this);
+            }
+            if ((reference == "BEHAVIOUR"))
+            {
+                return new BehaviourProxy(this);
+            }
+            if ((reference == "HEALTH"))
+            {
+                return new HealthProxy(this);
+            }
+            if ((reference == "NAMEPLT"))
+            {
+                return new NamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -136588,7 +142355,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         {
             if ((feature == "POINT"))
             {
-                return this._point;
+                return ((System.Collections.IList)(this.Point));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -141623,7 +147390,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         {
             if ((feature == "VECTOR"))
             {
-                return this._vector;
+                return ((System.Collections.IList)(this.Vector));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -169346,11 +175113,11 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         {
             if ((feature == "APC"))
             {
-                return this._aPC;
+                return ((System.Collections.IList)(this.APC));
             }
             if ((feature == "C_PRIMITIVECDC"))
             {
-                return this._c_PrimitiveCDC;
+                return ((System.Collections.IList)(this.C_PrimitiveCDC));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -176235,19 +182002,19 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         {
             if ((feature == "DPL"))
             {
-                return this._dPL;
+                return ((System.Collections.IList)(this.DPL));
             }
             if ((feature == "LPL"))
             {
-                return this._lPL;
+                return ((System.Collections.IList)(this.LPL));
             }
             if ((feature == "CSD"))
             {
-                return this._cSD;
+                return ((System.Collections.IList)(this.CSD));
             }
             if ((feature == "C_PRIMITIVECDC"))
             {
-                return this._c_PrimitiveCDC;
+                return ((System.Collections.IList)(this.C_PrimitiveCDC));
             }
             return base.GetCollectionForFeature(feature);
         }

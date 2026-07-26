@@ -461,11 +461,11 @@ namespace TemporaryGeneratedCode.Families
         {
             if ((feature == "SONS"))
             {
-                return this._sons;
+                return ((System.Collections.IList)(this.Sons));
             }
             if ((feature == "DAUGHTERS"))
             {
-                return this._daughters;
+                return ((System.Collections.IList)(this.Daughters));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -534,11 +534,11 @@ namespace TemporaryGeneratedCode.Families
         /// <param name="container">The container object</param>
         protected override string GetCompositionName(object container)
         {
-            if ((container == this._sons))
+            if ((container == this.Sons))
             {
                 return "sons";
             }
-            if ((container == this._daughters))
+            if ((container == this.Daughters))
             {
                 return "daughters";
             }

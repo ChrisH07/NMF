@@ -96,6 +96,32 @@ namespace TemporaryGeneratedCode.Railway
         }
         
         /// <summary>
+        /// Resolves the given URI to a child model element
+        /// </summary>
+        /// <returns>The model element or null if it could not be found</returns>
+        /// <param name="reference">The requested reference name</param>
+        /// <param name="index">The index of this reference</param>
+        protected override IModelElement GetModelElementForReference(string reference, int index)
+        {
+            if ((reference == "SENSOR"))
+            {
+                return this.Sensor;
+            }
+            if ((reference == "CONNECTSTO"))
+            {
+                if ((index < this.ConnectsTo.Count))
+                {
+                    return this.ConnectsTo[index];
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            return base.GetModelElementForReference(reference, index);
+        }
+        
+        /// <summary>
         /// Resolves the given attribute name
         /// </summary>
         /// <returns>The attribute value or null if it could not be found</returns>
@@ -107,7 +133,25 @@ namespace TemporaryGeneratedCode.Railway
             {
                 return this.Length;
             }
+            if ((attribute == "ID"))
+            {
+                return this.Id;
+            }
             return base.GetAttributeValue(attribute, index);
+        }
+        
+        /// <summary>
+        /// Gets the Model element collection for the given feature
+        /// </summary>
+        /// <returns>A non-generic list of elements</returns>
+        /// <param name="feature">The requested feature</param>
+        protected override System.Collections.IList GetCollectionForFeature(string feature)
+        {
+            if ((feature == "CONNECTSTO"))
+            {
+                return ((System.Collections.IList)(this.ConnectsTo));
+            }
+            return base.GetCollectionForFeature(feature);
         }
         
         /// <summary>
@@ -117,9 +161,19 @@ namespace TemporaryGeneratedCode.Railway
         /// <param name="value">The value that should be set to that feature</param>
         protected override void SetFeature(string feature, object value)
         {
+            if ((feature == "SENSOR"))
+            {
+                this.Sensor = ((ISensor)(value));
+                return;
+            }
             if ((feature == "LENGTH"))
             {
                 this.Length = ((int)(value));
+                return;
+            }
+            if ((feature == "ID"))
+            {
+                this.Id = ((int)(value));
                 return;
             }
             base.SetFeature(feature, value);
@@ -136,7 +190,25 @@ namespace TemporaryGeneratedCode.Railway
             {
                 return Observable.Box(new LengthProxy(this));
             }
+            if ((attribute == "ID"))
+            {
+                return Observable.Box(new IdProxy(this));
+            }
             return base.GetExpressionForAttribute(attribute);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given reference
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="reference">The requested reference in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<NMF.Models.IModelElement> GetExpressionForReference(string reference)
+        {
+            if ((reference == "SENSOR"))
+            {
+                return new SensorProxy(this);
+            }
+            return base.GetExpressionForReference(reference);
         }
         
         /// <summary>
@@ -369,6 +441,21 @@ namespace TemporaryGeneratedCode.Railway
         }
         
         /// <summary>
+        /// Resolves the given attribute name
+        /// </summary>
+        /// <returns>The attribute value or null if it could not be found</returns>
+        /// <param name="attribute">The requested attribute name</param>
+        /// <param name="index">The index of this attribute</param>
+        protected override object GetAttributeValue(string attribute, int index)
+        {
+            if ((attribute == "ID"))
+            {
+                return this.Id;
+            }
+            return base.GetAttributeValue(attribute, index);
+        }
+        
+        /// <summary>
         /// Gets the Model element collection for the given feature
         /// </summary>
         /// <returns>A non-generic list of elements</returns>
@@ -377,7 +464,7 @@ namespace TemporaryGeneratedCode.Railway
         {
             if ((feature == "CONNECTSTO"))
             {
-                return this._connectsTo;
+                return ((System.Collections.IList)(this.ConnectsTo));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -394,7 +481,26 @@ namespace TemporaryGeneratedCode.Railway
                 this.Sensor = ((ISensor)(value));
                 return;
             }
+            if ((feature == "ID"))
+            {
+                this.Id = ((int)(value));
+                return;
+            }
             base.SetFeature(feature, value);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given attribute
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="attribute">The requested attribute in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
+        {
+            if ((attribute == "ID"))
+            {
+                return Observable.Box(new IdProxy(this));
+            }
+            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -764,6 +870,21 @@ namespace TemporaryGeneratedCode.Railway
                     return null;
                 }
             }
+            if ((reference == "SENSOR"))
+            {
+                return this.Sensor;
+            }
+            if ((reference == "CONNECTSTO"))
+            {
+                if ((index < this.ConnectsTo.Count))
+                {
+                    return this.ConnectsTo[index];
+                }
+                else
+                {
+                    return null;
+                }
+            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -779,6 +900,10 @@ namespace TemporaryGeneratedCode.Railway
             {
                 return this.CurrentPosition;
             }
+            if ((attribute == "ID"))
+            {
+                return this.Id;
+            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -791,7 +916,11 @@ namespace TemporaryGeneratedCode.Railway
         {
             if ((feature == "POSITIONS"))
             {
-                return this._positions;
+                return ((System.Collections.IList)(this.Positions));
+            }
+            if ((feature == "CONNECTSTO"))
+            {
+                return ((System.Collections.IList)(this.ConnectsTo));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -803,9 +932,19 @@ namespace TemporaryGeneratedCode.Railway
         /// <param name="value">The value that should be set to that feature</param>
         protected override void SetFeature(string feature, object value)
         {
+            if ((feature == "SENSOR"))
+            {
+                this.Sensor = ((ISensor)(value));
+                return;
+            }
             if ((feature == "CURRENTPOSITION"))
             {
                 this.CurrentPosition = ((Position)(value));
+                return;
+            }
+            if ((feature == "ID"))
+            {
+                this.Id = ((int)(value));
                 return;
             }
             base.SetFeature(feature, value);
@@ -822,7 +961,25 @@ namespace TemporaryGeneratedCode.Railway
             {
                 return Observable.Box(new CurrentPositionProxy(this));
             }
+            if ((attribute == "ID"))
+            {
+                return Observable.Box(new IdProxy(this));
+            }
             return base.GetExpressionForAttribute(attribute);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given reference
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="reference">The requested reference in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<NMF.Models.IModelElement> GetExpressionForReference(string reference)
+        {
+            if ((reference == "SENSOR"))
+            {
+                return new SensorProxy(this);
+            }
+            return base.GetExpressionForReference(reference);
         }
         
         /// <summary>
@@ -1400,6 +1557,21 @@ namespace TemporaryGeneratedCode.Railway
         }
         
         /// <summary>
+        /// Resolves the given attribute name
+        /// </summary>
+        /// <returns>The attribute value or null if it could not be found</returns>
+        /// <param name="attribute">The requested attribute name</param>
+        /// <param name="index">The index of this attribute</param>
+        protected override object GetAttributeValue(string attribute, int index)
+        {
+            if ((attribute == "ID"))
+            {
+                return this.Id;
+            }
+            return base.GetAttributeValue(attribute, index);
+        }
+        
+        /// <summary>
         /// Gets the Model element collection for the given feature
         /// </summary>
         /// <returns>A non-generic list of elements</returns>
@@ -1408,11 +1580,11 @@ namespace TemporaryGeneratedCode.Railway
         {
             if ((feature == "FOLLOWS"))
             {
-                return this._follows;
+                return ((System.Collections.IList)(this.Follows));
             }
             if ((feature == "DEFINEDBY"))
             {
-                return this._definedBy;
+                return ((System.Collections.IList)(this.DefinedBy));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -1434,7 +1606,26 @@ namespace TemporaryGeneratedCode.Railway
                 this.Exit = ((ISemaphore)(value));
                 return;
             }
+            if ((feature == "ID"))
+            {
+                this.Id = ((int)(value));
+                return;
+            }
             base.SetFeature(feature, value);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given attribute
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="attribute">The requested attribute in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
+        {
+            if ((attribute == "ID"))
+            {
+                return Observable.Box(new IdProxy(this));
+            }
+            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -1462,11 +1653,11 @@ namespace TemporaryGeneratedCode.Railway
         /// <param name="container">The container object</param>
         protected override string GetCompositionName(object container)
         {
-            if ((container == this._follows))
+            if ((container == this.Follows))
             {
                 return "follows";
             }
-            if ((container == this._definedBy))
+            if ((container == this.DefinedBy))
             {
                 return "definedBy";
             }
@@ -1997,6 +2188,10 @@ namespace TemporaryGeneratedCode.Railway
             {
                 return this.Signal;
             }
+            if ((attribute == "ID"))
+            {
+                return this.Id;
+            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -2012,6 +2207,11 @@ namespace TemporaryGeneratedCode.Railway
                 this.Signal = ((Signal)(value));
                 return;
             }
+            if ((feature == "ID"))
+            {
+                this.Id = ((int)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -2025,6 +2225,10 @@ namespace TemporaryGeneratedCode.Railway
             if ((attribute == "SIGNAL"))
             {
                 return Observable.Box(new SignalProxy(this));
+            }
+            if ((attribute == "ID"))
+            {
+                return Observable.Box(new IdProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -2305,6 +2509,10 @@ namespace TemporaryGeneratedCode.Railway
             {
                 return this.Position;
             }
+            if ((attribute == "ID"))
+            {
+                return this.Id;
+            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -2330,6 +2538,11 @@ namespace TemporaryGeneratedCode.Railway
                 this.Position = ((Position)(value));
                 return;
             }
+            if ((feature == "ID"))
+            {
+                this.Id = ((int)(value));
+                return;
+            }
             base.SetFeature(feature, value);
         }
         
@@ -2343,6 +2556,10 @@ namespace TemporaryGeneratedCode.Railway
             if ((attribute == "POSITION"))
             {
                 return Observable.Box(new PositionProxy(this));
+            }
+            if ((attribute == "ID"))
+            {
+                return Observable.Box(new IdProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -2920,6 +3137,21 @@ namespace TemporaryGeneratedCode.Railway
         }
         
         /// <summary>
+        /// Resolves the given attribute name
+        /// </summary>
+        /// <returns>The attribute value or null if it could not be found</returns>
+        /// <param name="attribute">The requested attribute name</param>
+        /// <param name="index">The index of this attribute</param>
+        protected override object GetAttributeValue(string attribute, int index)
+        {
+            if ((attribute == "ID"))
+            {
+                return this.Id;
+            }
+            return base.GetAttributeValue(attribute, index);
+        }
+        
+        /// <summary>
         /// Gets the Model element collection for the given feature
         /// </summary>
         /// <returns>A non-generic list of elements</returns>
@@ -2928,9 +3160,38 @@ namespace TemporaryGeneratedCode.Railway
         {
             if ((feature == "ELEMENTS"))
             {
-                return this._elements;
+                return ((System.Collections.IList)(this.Elements));
             }
             return base.GetCollectionForFeature(feature);
+        }
+        
+        /// <summary>
+        /// Sets a value to the given feature
+        /// </summary>
+        /// <param name="feature">The requested feature</param>
+        /// <param name="value">The value that should be set to that feature</param>
+        protected override void SetFeature(string feature, object value)
+        {
+            if ((feature == "ID"))
+            {
+                this.Id = ((int)(value));
+                return;
+            }
+            base.SetFeature(feature, value);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given attribute
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="attribute">The requested attribute in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
+        {
+            if ((attribute == "ID"))
+            {
+                return Observable.Box(new IdProxy(this));
+            }
+            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -2940,7 +3201,7 @@ namespace TemporaryGeneratedCode.Railway
         /// <param name="container">The container object</param>
         protected override string GetCompositionName(object container)
         {
-            if ((container == this._elements))
+            if ((container == this.Elements))
             {
                 return "elements";
             }
@@ -3524,15 +3785,15 @@ namespace TemporaryGeneratedCode.Railway
         {
             if ((feature == "INVALIDS"))
             {
-                return this._invalids;
+                return ((System.Collections.IList)(this.Invalids));
             }
             if ((feature == "SEMAPHORES"))
             {
-                return this._semaphores;
+                return ((System.Collections.IList)(this.Semaphores));
             }
             if ((feature == "ROUTES"))
             {
-                return this._routes;
+                return ((System.Collections.IList)(this.Routes));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -3544,15 +3805,15 @@ namespace TemporaryGeneratedCode.Railway
         /// <param name="container">The container object</param>
         protected override string GetCompositionName(object container)
         {
-            if ((container == this._invalids))
+            if ((container == this.Invalids))
             {
                 return "invalids";
             }
-            if ((container == this._semaphores))
+            if ((container == this.Semaphores))
             {
                 return "semaphores";
             }
-            if ((container == this._routes))
+            if ((container == this.Routes))
             {
                 return "routes";
             }

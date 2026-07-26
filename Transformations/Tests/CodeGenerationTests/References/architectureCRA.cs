@@ -246,6 +246,21 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         }
         
         /// <summary>
+        /// Resolves the given attribute name
+        /// </summary>
+        /// <returns>The attribute value or null if it could not be found</returns>
+        /// <param name="attribute">The requested attribute name</param>
+        /// <param name="index">The index of this attribute</param>
+        protected override object GetAttributeValue(string attribute, int index)
+        {
+            if ((attribute == "NAME"))
+            {
+                return this.Name;
+            }
+            return base.GetAttributeValue(attribute, index);
+        }
+        
+        /// <summary>
         /// Gets the Model element collection for the given feature
         /// </summary>
         /// <returns>A non-generic list of elements</returns>
@@ -254,13 +269,42 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         {
             if ((feature == "CLASSES"))
             {
-                return this._classes;
+                return ((System.Collections.IList)(this.Classes));
             }
             if ((feature == "FEATURES"))
             {
-                return this._features;
+                return ((System.Collections.IList)(this.Features));
             }
             return base.GetCollectionForFeature(feature);
+        }
+        
+        /// <summary>
+        /// Sets a value to the given feature
+        /// </summary>
+        /// <param name="feature">The requested feature</param>
+        /// <param name="value">The value that should be set to that feature</param>
+        protected override void SetFeature(string feature, object value)
+        {
+            if ((feature == "NAME"))
+            {
+                this.Name = ((string)(value));
+                return;
+            }
+            base.SetFeature(feature, value);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given attribute
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="attribute">The requested attribute in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
+        {
+            if ((attribute == "NAME"))
+            {
+                return new NameProxy(this);
+            }
+            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -270,11 +314,11 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         /// <param name="container">The container object</param>
         protected override string GetCompositionName(object container)
         {
-            if ((container == this._classes))
+            if ((container == this.Classes))
             {
                 return "classes";
             }
-            if ((container == this._features))
+            if ((container == this.Features))
             {
                 return "features";
             }
@@ -731,6 +775,21 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         }
         
         /// <summary>
+        /// Resolves the given attribute name
+        /// </summary>
+        /// <returns>The attribute value or null if it could not be found</returns>
+        /// <param name="attribute">The requested attribute name</param>
+        /// <param name="index">The index of this attribute</param>
+        protected override object GetAttributeValue(string attribute, int index)
+        {
+            if ((attribute == "NAME"))
+            {
+                return this.Name;
+            }
+            return base.GetAttributeValue(attribute, index);
+        }
+        
+        /// <summary>
         /// Gets the Model element collection for the given feature
         /// </summary>
         /// <returns>A non-generic list of elements</returns>
@@ -739,9 +798,38 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         {
             if ((feature == "ENCAPSULATES"))
             {
-                return this._encapsulates;
+                return ((System.Collections.IList)(this.Encapsulates));
             }
             return base.GetCollectionForFeature(feature);
+        }
+        
+        /// <summary>
+        /// Sets a value to the given feature
+        /// </summary>
+        /// <param name="feature">The requested feature</param>
+        /// <param name="value">The value that should be set to that feature</param>
+        protected override void SetFeature(string feature, object value)
+        {
+            if ((feature == "NAME"))
+            {
+                this.Name = ((string)(value));
+                return;
+            }
+            base.SetFeature(feature, value);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given attribute
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="attribute">The requested attribute in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
+        {
+            if ((attribute == "NAME"))
+            {
+                return new NameProxy(this);
+            }
+            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -906,6 +994,84 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
                 }
                 return _classInstance;
             }
+        }
+        
+        /// <summary>
+        /// Resolves the given URI to a child model element
+        /// </summary>
+        /// <returns>The model element or null if it could not be found</returns>
+        /// <param name="reference">The requested reference name</param>
+        /// <param name="index">The index of this reference</param>
+        protected override IModelElement GetModelElementForReference(string reference, int index)
+        {
+            if ((reference == "ISENCAPSULATEDBY"))
+            {
+                return this.IsEncapsulatedBy;
+            }
+            return base.GetModelElementForReference(reference, index);
+        }
+        
+        /// <summary>
+        /// Resolves the given attribute name
+        /// </summary>
+        /// <returns>The attribute value or null if it could not be found</returns>
+        /// <param name="attribute">The requested attribute name</param>
+        /// <param name="index">The index of this attribute</param>
+        protected override object GetAttributeValue(string attribute, int index)
+        {
+            if ((attribute == "NAME"))
+            {
+                return this.Name;
+            }
+            return base.GetAttributeValue(attribute, index);
+        }
+        
+        /// <summary>
+        /// Sets a value to the given feature
+        /// </summary>
+        /// <param name="feature">The requested feature</param>
+        /// <param name="value">The value that should be set to that feature</param>
+        protected override void SetFeature(string feature, object value)
+        {
+            if ((feature == "ISENCAPSULATEDBY"))
+            {
+                this.IsEncapsulatedBy = ((TemporaryGeneratedCode.ArchitectureCRA.IClass)(value));
+                return;
+            }
+            if ((feature == "NAME"))
+            {
+                this.Name = ((string)(value));
+                return;
+            }
+            base.SetFeature(feature, value);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given attribute
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="attribute">The requested attribute in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
+        {
+            if ((attribute == "NAME"))
+            {
+                return new NameProxy(this);
+            }
+            return base.GetExpressionForAttribute(attribute);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given reference
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="reference">The requested reference in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<NMF.Models.IModelElement> GetExpressionForReference(string reference)
+        {
+            if ((reference == "ISENCAPSULATEDBY"))
+            {
+                return new IsEncapsulatedByProxy(this);
+            }
+            return base.GetExpressionForReference(reference);
         }
         
         /// <summary>
@@ -1102,7 +1268,26 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
                     return null;
                 }
             }
+            if ((reference == "ISENCAPSULATEDBY"))
+            {
+                return this.IsEncapsulatedBy;
+            }
             return base.GetModelElementForReference(reference, index);
+        }
+        
+        /// <summary>
+        /// Resolves the given attribute name
+        /// </summary>
+        /// <returns>The attribute value or null if it could not be found</returns>
+        /// <param name="attribute">The requested attribute name</param>
+        /// <param name="index">The index of this attribute</param>
+        protected override object GetAttributeValue(string attribute, int index)
+        {
+            if ((attribute == "NAME"))
+            {
+                return this.Name;
+            }
+            return base.GetAttributeValue(attribute, index);
         }
         
         /// <summary>
@@ -1114,13 +1299,61 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         {
             if ((feature == "DATADEPENDENCY"))
             {
-                return this._dataDependency;
+                return ((System.Collections.IList)(this.DataDependency));
             }
             if ((feature == "FUNCTIONALDEPENDENCY"))
             {
-                return this._functionalDependency;
+                return ((System.Collections.IList)(this.FunctionalDependency));
             }
             return base.GetCollectionForFeature(feature);
+        }
+        
+        /// <summary>
+        /// Sets a value to the given feature
+        /// </summary>
+        /// <param name="feature">The requested feature</param>
+        /// <param name="value">The value that should be set to that feature</param>
+        protected override void SetFeature(string feature, object value)
+        {
+            if ((feature == "ISENCAPSULATEDBY"))
+            {
+                this.IsEncapsulatedBy = ((TemporaryGeneratedCode.ArchitectureCRA.IClass)(value));
+                return;
+            }
+            if ((feature == "NAME"))
+            {
+                this.Name = ((string)(value));
+                return;
+            }
+            base.SetFeature(feature, value);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given attribute
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="attribute">The requested attribute in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
+        {
+            if ((attribute == "NAME"))
+            {
+                return new NameProxy(this);
+            }
+            return base.GetExpressionForAttribute(attribute);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given reference
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="reference">The requested reference in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<NMF.Models.IModelElement> GetExpressionForReference(string reference)
+        {
+            if ((reference == "ISENCAPSULATEDBY"))
+            {
+                return new IsEncapsulatedByProxy(this);
+            }
+            return base.GetExpressionForReference(reference);
         }
         
         /// <summary>
@@ -1439,6 +1672,21 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         }
         
         /// <summary>
+        /// Resolves the given attribute name
+        /// </summary>
+        /// <returns>The attribute value or null if it could not be found</returns>
+        /// <param name="attribute">The requested attribute name</param>
+        /// <param name="index">The index of this attribute</param>
+        protected override object GetAttributeValue(string attribute, int index)
+        {
+            if ((attribute == "NAME"))
+            {
+                return this.Name;
+            }
+            return base.GetAttributeValue(attribute, index);
+        }
+        
+        /// <summary>
         /// Sets a value to the given feature
         /// </summary>
         /// <param name="feature">The requested feature</param>
@@ -1450,7 +1698,26 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
                 this.IsEncapsulatedBy = ((TemporaryGeneratedCode.ArchitectureCRA.IClass)(value));
                 return;
             }
+            if ((feature == "NAME"))
+            {
+                this.Name = ((string)(value));
+                return;
+            }
             base.SetFeature(feature, value);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given attribute
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="attribute">The requested attribute in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
+        {
+            if ((attribute == "NAME"))
+            {
+                return new NameProxy(this);
+            }
+            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>

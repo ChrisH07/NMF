@@ -392,6 +392,21 @@ namespace TemporaryGeneratedCode.NameClashes
         }
         
         /// <summary>
+        /// Resolves the given attribute name
+        /// </summary>
+        /// <returns>The attribute value or null if it could not be found</returns>
+        /// <param name="attribute">The requested attribute name</param>
+        /// <param name="index">The index of this attribute</param>
+        protected override object GetAttributeValue(string attribute, int index)
+        {
+            if ((attribute == "NAME"))
+            {
+                return this.Name;
+            }
+            return base.GetAttributeValue(attribute, index);
+        }
+        
+        /// <summary>
         /// Gets the Model element collection for the given feature
         /// </summary>
         /// <returns>A non-generic list of elements</returns>
@@ -400,9 +415,38 @@ namespace TemporaryGeneratedCode.NameClashes
         {
             if ((feature == "CHILDREN"))
             {
-                return this._children_;
+                return ((System.Collections.IList)(this.Children_));
             }
             return base.GetCollectionForFeature(feature);
+        }
+        
+        /// <summary>
+        /// Sets a value to the given feature
+        /// </summary>
+        /// <param name="feature">The requested feature</param>
+        /// <param name="value">The value that should be set to that feature</param>
+        protected override void SetFeature(string feature, object value)
+        {
+            if ((feature == "NAME"))
+            {
+                this.Name = ((string)(value));
+                return;
+            }
+            base.SetFeature(feature, value);
+        }
+        
+        /// <summary>
+        /// Gets the property expression for the given attribute
+        /// </summary>
+        /// <returns>An incremental property expression</returns>
+        /// <param name="attribute">The requested attribute in upper case</param>
+        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
+        {
+            if ((attribute == "NAME"))
+            {
+                return new NameProxy(this);
+            }
+            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -412,7 +456,7 @@ namespace TemporaryGeneratedCode.NameClashes
         /// <param name="container">The container object</param>
         protected override string GetCompositionName(object container)
         {
-            if ((container == this._children_))
+            if ((container == this.Children_))
             {
                 return "children";
             }

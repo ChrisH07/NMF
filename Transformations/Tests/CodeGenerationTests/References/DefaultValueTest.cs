@@ -372,7 +372,7 @@ namespace TemporaryGeneratedCode.Test
         {
             if ((feature == "P"))
             {
-                return this._p;
+                return ((System.Collections.IList)(this.P));
             }
             return base.GetCollectionForFeature(feature);
         }
