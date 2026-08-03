@@ -5,6 +5,7 @@ using System.Text;
 using System.Reflection;
 using NMF.Models.Repository.Serialization;
 using NMF.Models.Meta;
+using System.IO;
 
 namespace NMF.Models.Repository
 {
@@ -188,15 +189,14 @@ namespace NMF.Models.Repository
                     for (int i = 0; i < attributes.Length; i++)
                     {
                         var metadata = attributes[i] as ModelMetadataAttribute;
-                        string resourceName = FindResourceName(assembly, names, metadata);
                         if (metadata.ModelUri.IsAbsoluteUri)
                         {
 #if DEBUG
-                            LoadModel(assembly, attributes, i, resourceName, metadata.ModelUri);
+                            LoadModel(metadata.LoadMetamodel(assembly, names), attributes, i, metadata.ResourceName, metadata.ModelUri);
 #else
                         try
                         {
-                            LoadModel(assembly, attributes, i, resourceName, metadata.ModelUri);
+                            LoadModel(metadata.LoadMetamodel(assembly, names), attributes, i, metadata.ResourceName, metadata.ModelUri);
                         }
                         catch (Exception e)
                         {
@@ -211,7 +211,7 @@ namespace NMF.Models.Repository
                         }
                         else
                         {
-                            throw new InvalidOperationException($"The declared embedded resource {metadata.ResourceName} of assembly {assembly.FullName} could not be found.");
+                            throw new InvalidOperationException($"The model URI {metadata.ModelUri} is not an absolute URI.");
                         }
                     }
                     AddMappedTypeExtensions(saveMapping);
@@ -234,29 +234,6 @@ namespace NMF.Models.Repository
                     throw new InvalidOperationException(string.Format("The class {0} could not be resolved.", saveMapping[i].Key));
                 }
             }
-        }
-
-        private static string FindResourceName(Assembly assembly, string[] names, ModelMetadataAttribute metadata)
-        {
-            var resourceName = metadata.ResourceName;
-            if (!names.Contains(metadata.ResourceName))
-            {
-                var resources = names.Where(n => n.EndsWith(resourceName)).ToList();
-                if (resources.Count == 1)
-                {
-                    resourceName = resources[0];
-                }
-                else if (resources.Count == 0)
-                {
-                    throw new InvalidOperationException($"Embedded resource {resourceName} was not found in assembly {assembly.FullName}.");
-                }
-                else
-                {
-                    throw new InvalidOperationException($"Multiple embedded resources with the suffix {resourceName} were found in {assembly.FullName}.");
-                }
-            }
-
-            return resourceName;
         }
 
         private void InitSaveMappings(System.Type[] types, List<KeyValuePair<string, System.Type>> saveMapping)
@@ -301,9 +278,14 @@ namespace NMF.Models.Repository
             }
         }
 
-        private void LoadModel(Assembly assembly, object[] attributes, int i, string resourceName, Uri modelUri)
+        private void LoadModel(Stream resourceStream, object[] attributes, int i, string resourceName, Uri modelUri)
         {
-            var model = serializer.Deserialize(assembly.GetManifestResourceStream(resourceName), modelUri, this, true);
+            if (resourceStream == null)
+            {
+                return;
+            }
+
+            var model = serializer.Deserialize(resourceStream, modelUri, this, true);
             for (int j = i + 1; j < attributes.Length; j++)
             {
                 if (attributes[j] is ModelMetadataAttribute followingAttribute)
