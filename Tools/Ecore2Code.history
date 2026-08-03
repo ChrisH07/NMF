@@ -14,3 +14,4 @@ patch: adapt to models interface
 patch: update system dependencies
 patch: fix type mappings, copy types imported from elsewhere into generated package
 patch: fix type copy for operations without return type
+patch: update dependencies
