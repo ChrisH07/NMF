@@ -20,3 +20,4 @@ patch: store all elements with global name, including conflicts
 patch: debugging improvements
 major: improve code generation for child elements
 patch: make model collection observable, update dependencies
+minor: allow to override how model metadata is loaded
