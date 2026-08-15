@@ -51,3 +51,4 @@ patch: adapt metamodel code to changed interface
 patch: improve error reporting
 patch: update StreamJsonRpc version, improve error reporting
 patch: update dependencies
+patch: fix left-recursive rules losing their growing continuations when they start matching at a position already claimed by an unrelated left-recursive rule

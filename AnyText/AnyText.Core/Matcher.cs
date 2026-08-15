@@ -205,6 +205,11 @@ namespace NMF.AnyText
                         recursionContext = new RecursionContext(position, rule.Continuations);
                         createdRecursion = recursionContext;
                     }
+                    else if (!AllContinuationsPresent(recursionContext, rule.Continuations))
+                    {
+                        recursionContext = new RecursionContext(position, MergeContinuations(recursionContext.Continuations, rule.Continuations));
+                        createdRecursion = recursionContext;
+                    }
                     var cycleDetector = new FailedRuleApplication(rule, new ParsePositionDelta(1, 0), "Recursive");
                     cycleDetector.AddToColumn(column);
                     var processor = rule.NextMatchProcessor(context, recursionContext, ref position);
@@ -320,6 +325,31 @@ namespace NMF.AnyText
                 }
                 return next;
             }
+        }
+
+        private static bool AllContinuationsPresent(RecursionContext recursionContext, IReadOnlyCollection<RecursiveContinuation> continuations)
+        {
+            foreach (var continuation in continuations)
+            {
+                if (!recursionContext.Continuations.Contains(continuation))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        private static List<RecursiveContinuation> MergeContinuations(IReadOnlyCollection<RecursiveContinuation> existing, IReadOnlyCollection<RecursiveContinuation> additional)
+        {
+            var merged = new List<RecursiveContinuation>(existing);
+            foreach (var continuation in additional)
+            {
+                if (!merged.Contains(continuation))
+                {
+                    merged.Add(continuation);
+                }
+            }
+            return merged;
         }
 
         private static void ExtendContinuations(RecursionContext recursionContext, MemoColumn column, ParseContext context, ref ParsePosition position, ref RuleApplication ruleApplication)
