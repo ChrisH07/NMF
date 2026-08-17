@@ -52,3 +52,4 @@ patch: improve error reporting
 patch: update StreamJsonRpc version, improve error reporting
 patch: update dependencies
 patch: fix stack overflow in ChoiceRule synthesis for self-referential choices with a parantheses alternative
+patch: fix TextEdit.ApplyReconstructArray clobbering preceding text when an edit's end points past the last line
