@@ -4140,22 +4140,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.OpCntRs;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -4171,26 +4155,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.OpCntRs = ((IINC)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -4204,22 +4168,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "OPCNTRS"))
             {
                 return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -4260,22 +4208,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -4287,11 +4219,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new GroupPOpCntRsProxy(this._parent)};
             }
             
             /// <summary>
@@ -4309,42 +4237,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -4353,10 +4245,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             public override void Clear()
             {
                 this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -4367,22 +4255,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             public override bool Contains(IModelElement item)
             {
                 if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -4401,26 +4273,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.OpCntRs;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -4435,26 +4287,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.OpCntRs = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -4464,7 +4296,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpCntRs).GetEnumerator();
             }
         }
         
@@ -5335,26 +5167,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.TmACrv;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -5430,31 +5242,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.TmACrv = ((ICURVE)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -5516,26 +5303,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "TMACRV"))
             {
                 return new PDIFTmACrvProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -5624,26 +5391,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -5667,12 +5414,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PDIFMaxOpTmmsProxy(this._parent),
                         new PDIFRstModProxy(this._parent),
                         new PDIFRsDiTmmsProxy(this._parent),
-                        new PDIFTmACrvProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PDIFTmACrvProxy(this._parent)};
             }
             
             /// <summary>
@@ -5798,51 +5540,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -5863,11 +5560,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.RstMod = null;
                 this._parent.RsDiTmms = null;
                 this._parent.TmACrv = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -5926,26 +5618,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.TmACrv))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -6024,31 +5696,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.TmACrv;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -6123,31 +5770,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.TmACrv = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -6157,7 +5779,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.TmASt).Concat(this._parent.DifAClc).Concat(this._parent.RstA).Concat(this._parent.LinCapac).Concat(this._parent.LoSet).Concat(this._parent.HiSet).Concat(this._parent.MinOpTmms).Concat(this._parent.MaxOpTmms).Concat(this._parent.RstMod).Concat(this._parent.RsDiTmms).Concat(this._parent.TmACrv).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.TmASt).Concat(this._parent.DifAClc).Concat(this._parent.RstA).Concat(this._parent.LinCapac).Concat(this._parent.LoSet).Concat(this._parent.HiSet).Concat(this._parent.MinOpTmms).Concat(this._parent.MaxOpTmms).Concat(this._parent.RstMod).Concat(this._parent.RsDiTmms).Concat(this._parent.TmACrv).GetEnumerator();
             }
         }
         
@@ -6780,26 +6402,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDiTmms;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -6825,31 +6427,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDiTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -6871,26 +6448,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDITMMS"))
             {
                 return new PDIRRsDiTmmsProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -6939,26 +6496,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -6972,12 +6509,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 return new INotifiable[] {
                         new PDIRStrProxy(this._parent),
                         new PDIROpProxy(this._parent),
-                        new PDIRRsDiTmmsProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PDIRRsDiTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -7013,51 +6545,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -7068,11 +6555,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.Str = null;
                 this._parent.Op = null;
                 this._parent.RsDiTmms = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -7091,26 +6573,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.RsDiTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -7139,31 +6601,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.RsDiTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -7188,31 +6625,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.RsDiTmms = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -7222,7 +6634,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.RsDiTmms).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.RsDiTmms).GetEnumerator();
             }
         }
         
@@ -7783,26 +7195,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDiTmms;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -7848,31 +7240,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDiTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -7910,26 +7277,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDITMMS"))
             {
                 return new PFRCRsDiTmmsProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -7994,26 +7341,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -8031,12 +7358,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PFRCStrValProxy(this._parent),
                         new PFRCBlkValProxy(this._parent),
                         new PFRCOpDiTmmsProxy(this._parent),
-                        new PFRCRsDiTmmsProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PFRCRsDiTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -8108,51 +7430,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -8167,11 +7444,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.BlkVal = null;
                 this._parent.OpDiTmms = null;
                 this._parent.RsDiTmms = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -8206,26 +7478,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.RsDiTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -8274,31 +7526,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.RsDiTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -8343,31 +7570,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.RsDiTmms = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -8377,7 +7579,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.BlkV).Concat(this._parent.StrVal).Concat(this._parent.BlkVal).Concat(this._parent.OpDiTmms).Concat(this._parent.RsDiTmms).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.BlkV).Concat(this._parent.StrVal).Concat(this._parent.BlkVal).Concat(this._parent.OpDiTmms).Concat(this._parent.RsDiTmms).GetEnumerator();
             }
         }
         
@@ -9000,26 +8202,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDiTmms;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -9060,31 +8242,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDiTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -9118,26 +8275,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDITMMS"))
             {
                 return new PHARRsDiTmmsProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -9198,26 +8335,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -9234,12 +8351,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PHARPhStrProxy(this._parent),
                         new PHARPhStopProxy(this._parent),
                         new PHAROpDiTmmsProxy(this._parent),
-                        new PHARRsDiTmmsProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PHARRsDiTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -9302,51 +8414,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -9360,11 +8427,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.PhStop = null;
                 this._parent.OpDiTmms = null;
                 this._parent.RsDiTmms = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -9395,26 +8457,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.RsDiTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -9458,31 +8500,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.RsDiTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -9522,31 +8539,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.RsDiTmms = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -9556,7 +8548,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.HaRst).Concat(this._parent.PhStr).Concat(this._parent.PhStop).Concat(this._parent.OpDiTmms).Concat(this._parent.RsDiTmms).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.HaRst).Concat(this._parent.PhStr).Concat(this._parent.PhStop).Concat(this._parent.OpDiTmms).Concat(this._parent.RsDiTmms).GetEnumerator();
             }
         }
         
@@ -10334,26 +9326,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.BlkValV;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -10409,31 +9381,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.BlkValV = ((IASG)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -10479,26 +9426,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "BLKVALV"))
             {
                 return new POPFBlkValVProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -10571,26 +9498,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -10610,12 +9517,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new POPFOpDiTmmsProxy(this._parent),
                         new POPFRsDiTmmsProxy(this._parent),
                         new POPFBlkValAProxy(this._parent),
-                        new POPFBlkValVProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new POPFBlkValVProxy(this._parent)};
             }
             
             /// <summary>
@@ -10705,51 +9607,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -10766,11 +9623,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.RsDiTmms = null;
                 this._parent.BlkValA = null;
                 this._parent.BlkValV = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -10813,26 +9665,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.BlkValV))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -10891,31 +9723,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.BlkValV;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -10970,31 +9777,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.BlkValV = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -11004,7 +9786,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.BlkA).Concat(this._parent.BlkV).Concat(this._parent.StrVal).Concat(this._parent.OpDiTmms).Concat(this._parent.RsDiTmms).Concat(this._parent.BlkValA).Concat(this._parent.BlkValV).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.BlkA).Concat(this._parent.BlkV).Concat(this._parent.StrVal).Concat(this._parent.OpDiTmms).Concat(this._parent.RsDiTmms).Concat(this._parent.BlkValA).Concat(this._parent.BlkValV).GetEnumerator();
             }
         }
         
@@ -11503,26 +10285,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.StrVal;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -11548,31 +10310,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.StrVal = ((IASG)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -11594,26 +10331,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "STRVAL"))
             {
                 return new PPAMStrValProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -11662,26 +10379,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -11695,12 +10392,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 return new INotifiable[] {
                         new PPAMStrProxy(this._parent),
                         new PPAMOpProxy(this._parent),
-                        new PPAMStrValProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PPAMStrValProxy(this._parent)};
             }
             
             /// <summary>
@@ -11736,51 +10428,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -11791,11 +10438,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.Str = null;
                 this._parent.Op = null;
                 this._parent.StrVal = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -11814,26 +10456,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.StrVal))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -11862,31 +10484,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.StrVal;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -11911,31 +10508,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.StrVal = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -11945,7 +10517,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.StrVal).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.StrVal).GetEnumerator();
             }
         }
         
@@ -13560,26 +12132,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDlTmms;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -13710,31 +12262,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDlTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -13840,26 +12367,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDLTMMS"))
             {
                 return new PDISRsDlTmmsProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -13992,26 +12499,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -14046,12 +12533,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PDISRisPhRchProxy(this._parent),
                         new PDISK0FactProxy(this._parent),
                         new PDISK0FactAngProxy(this._parent),
-                        new PDISRsDlTmmsProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PDISRsDlTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -14276,51 +12758,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -14352,11 +12789,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.K0Fact = null;
                 this._parent.K0FactAng = null;
                 this._parent.RsDlTmms = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -14459,26 +12891,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.RsDlTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -14612,31 +13024,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.RsDlTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -14766,31 +13153,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.RsDlTmms = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -14800,7 +13162,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.PoRch).Concat(this._parent.PhStr).Concat(this._parent.GndStr).Concat(this._parent.DirMod).Concat(this._parent.PctRch).Concat(this._parent.Ofs).Concat(this._parent.PctOfs).Concat(this._parent.RisLod).Concat(this._parent.AngLod).Concat(this._parent.TmDlMod).Concat(this._parent.OpDlTmms).Concat(this._parent.PhDlMod).Concat(this._parent.PhDlTmms).Concat(this._parent.GndDlMod).Concat(this._parent.GndDlTmms).Concat(this._parent.X1).Concat(this._parent.LinAng).Concat(this._parent.RisGndRch).Concat(this._parent.RisPhRch).Concat(this._parent.K0Fact).Concat(this._parent.K0FactAng).Concat(this._parent.RsDlTmms).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.PoRch).Concat(this._parent.PhStr).Concat(this._parent.GndStr).Concat(this._parent.DirMod).Concat(this._parent.PctRch).Concat(this._parent.Ofs).Concat(this._parent.PctOfs).Concat(this._parent.RisLod).Concat(this._parent.AngLod).Concat(this._parent.TmDlMod).Concat(this._parent.OpDlTmms).Concat(this._parent.PhDlMod).Concat(this._parent.PhDlTmms).Concat(this._parent.GndDlMod).Concat(this._parent.GndDlTmms).Concat(this._parent.X1).Concat(this._parent.LinAng).Concat(this._parent.RisGndRch).Concat(this._parent.RisPhRch).Concat(this._parent.K0Fact).Concat(this._parent.K0FactAng).Concat(this._parent.RsDlTmms).GetEnumerator();
             }
         }
         
@@ -15950,26 +14312,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDlTmms;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -16010,31 +14352,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDlTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -16068,26 +14385,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDLTMMS"))
             {
                 return new PDOPRsDlTmmsProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -16148,26 +14445,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -16184,12 +14461,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PDOPDirModProxy(this._parent),
                         new PDOPStrValProxy(this._parent),
                         new PDOPOpDlTmmsProxy(this._parent),
-                        new PDOPRsDlTmmsProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PDOPRsDlTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -16252,51 +14524,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -16310,11 +14537,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.StrVal = null;
                 this._parent.OpDlTmms = null;
                 this._parent.RsDlTmms = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -16345,26 +14567,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.RsDlTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -16408,31 +14610,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.RsDlTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -16472,31 +14649,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.RsDlTmms = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -16506,7 +14658,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.DirMod).Concat(this._parent.StrVal).Concat(this._parent.OpDlTmms).Concat(this._parent.RsDlTmms).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.DirMod).Concat(this._parent.StrVal).Concat(this._parent.OpDlTmms).Concat(this._parent.RsDlTmms).GetEnumerator();
             }
         }
         
@@ -17160,26 +15312,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDlTmms;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -17225,31 +15357,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDlTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -17287,26 +15394,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDLTMMS"))
             {
                 return new PHIZRsDlTmmsProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -17371,26 +15458,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -17408,12 +15475,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PHIZVStrProxy(this._parent),
                         new PHIZHVStrProxy(this._parent),
                         new PHIZOpDlTmmsProxy(this._parent),
-                        new PHIZRsDlTmmsProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PHIZRsDlTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -17485,51 +15547,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -17544,11 +15561,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.HVStr = null;
                 this._parent.OpDlTmms = null;
                 this._parent.RsDlTmms = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -17583,26 +15595,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.RsDlTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -17651,31 +15643,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.RsDlTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -17720,31 +15687,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.RsDlTmms = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -17754,7 +15696,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.AStr).Concat(this._parent.VStr).Concat(this._parent.HVStr).Concat(this._parent.OpDlTmms).Concat(this._parent.RsDlTmms).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.AStr).Concat(this._parent.VStr).Concat(this._parent.HVStr).Concat(this._parent.OpDlTmms).Concat(this._parent.RsDlTmms).GetEnumerator();
             }
         }
         
@@ -18191,26 +16133,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.StrVal;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -18236,31 +16158,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.StrVal = ((IASG)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -18282,26 +16179,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "STRVAL"))
             {
                 return new PIOCStrValProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -18350,26 +16227,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -18383,12 +16240,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 return new INotifiable[] {
                         new PIOCStrProxy(this._parent),
                         new PIOCOpProxy(this._parent),
-                        new PIOCStrValProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PIOCStrValProxy(this._parent)};
             }
             
             /// <summary>
@@ -18424,51 +16276,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -18479,11 +16286,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.Str = null;
                 this._parent.Op = null;
                 this._parent.StrVal = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -18502,26 +16304,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.StrVal))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -18550,31 +16332,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.StrVal;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -18599,31 +16356,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.StrVal = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -18633,7 +16365,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.StrVal).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.StrVal).GetEnumerator();
             }
         }
         
@@ -19380,26 +17112,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.InhTmm;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -19460,31 +17172,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.InhTmm = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -19534,26 +17221,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "INHTMM"))
             {
                 return new PMRIInhTmmProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -19630,26 +17297,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -19670,12 +17317,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PMRIMaxWrmStrProxy(this._parent),
                         new PMRIMaxStrTmmProxy(this._parent),
                         new PMRIEqTmmProxy(this._parent),
-                        new PMRIInhTmmProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PMRIInhTmmProxy(this._parent)};
             }
             
             /// <summary>
@@ -19774,51 +17416,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -19836,11 +17433,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.MaxStrTmm = null;
                 this._parent.EqTmm = null;
                 this._parent.InhTmm = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -19887,26 +17479,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.InhTmm))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -19970,31 +17542,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.InhTmm;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -20054,31 +17601,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.InhTmm = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -20088,7 +17610,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Op).Concat(this._parent.StrInh).Concat(this._parent.StrInhTmm).Concat(this._parent.SetA).Concat(this._parent.SetTms).Concat(this._parent.MaxNumStr).Concat(this._parent.MaxWrmStr).Concat(this._parent.MaxStrTmm).Concat(this._parent.EqTmm).Concat(this._parent.InhTmm).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Op).Concat(this._parent.StrInh).Concat(this._parent.StrInhTmm).Concat(this._parent.SetA).Concat(this._parent.SetTms).Concat(this._parent.MaxNumStr).Concat(this._parent.MaxWrmStr).Concat(this._parent.MaxStrTmm).Concat(this._parent.EqTmm).Concat(this._parent.InhTmm).GetEnumerator();
             }
         }
         
@@ -20804,26 +18326,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.LokRotTms;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -20864,31 +18366,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.LokRotTms = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -20922,26 +18399,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "LOKROTTMS"))
             {
                 return new PMSSLokRotTmsProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -21002,26 +18459,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -21038,12 +18475,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PMSSSetAProxy(this._parent),
                         new PMSSSetTmsProxy(this._parent),
                         new PMSSMotStrProxy(this._parent),
-                        new PMSSLokRotTmsProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PMSSLokRotTmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -21106,51 +18538,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -21164,11 +18551,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.SetTms = null;
                 this._parent.MotStr = null;
                 this._parent.LokRotTms = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -21199,26 +18581,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.LokRotTms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -21262,31 +18624,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.LokRotTms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -21326,31 +18663,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.LokRotTms = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -21360,7 +18672,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.SetA).Concat(this._parent.SetTms).Concat(this._parent.MotStr).Concat(this._parent.LokRotTms).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.SetA).Concat(this._parent.SetTms).Concat(this._parent.MotStr).Concat(this._parent.LokRotTms).GetEnumerator();
             }
         }
         
@@ -23006,26 +20318,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RvRsTmms;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -23151,31 +20443,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RvRsTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -23277,26 +20544,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RVRSTMMS"))
             {
                 return new PSCHRvRsTmmsProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -23425,26 +20672,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -23478,12 +20705,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PSCHPhGndValProxy(this._parent),
                         new PSCHRvAModProxy(this._parent),
                         new PSCHRvATmmsProxy(this._parent),
-                        new PSCHRvRsTmmsProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PSCHRvRsTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -23699,51 +20921,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -23774,11 +20951,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.RvAMod = null;
                 this._parent.RvATmms = null;
                 this._parent.RvRsTmms = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -23877,26 +21049,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.RvRsTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -24025,31 +21177,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.RvRsTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -24174,31 +21301,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.RvRsTmms = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -24208,7 +21310,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.ProTx).Concat(this._parent.ProRx).Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.CarRx).Concat(this._parent.LosOfGrd).Concat(this._parent.Echo).Concat(this._parent.WeiOp).Concat(this._parent.RvABlk).Concat(this._parent.GrdRx).Concat(this._parent.SchTyp).Concat(this._parent.OpDlTmms).Concat(this._parent.CrdTmms).Concat(this._parent.DurTmms).Concat(this._parent.UnBlkMod).Concat(this._parent.SecTmms).Concat(this._parent.WeiMod).Concat(this._parent.WeiTmms).Concat(this._parent.PPVVal).Concat(this._parent.PhGndVal).Concat(this._parent.RvAMod).Concat(this._parent.RvATmms).Concat(this._parent.RvRsTmms).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.ProTx).Concat(this._parent.ProRx).Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.CarRx).Concat(this._parent.LosOfGrd).Concat(this._parent.Echo).Concat(this._parent.WeiOp).Concat(this._parent.RvABlk).Concat(this._parent.GrdRx).Concat(this._parent.SchTyp).Concat(this._parent.OpDlTmms).Concat(this._parent.CrdTmms).Concat(this._parent.DurTmms).Concat(this._parent.UnBlkMod).Concat(this._parent.SecTmms).Concat(this._parent.WeiMod).Concat(this._parent.WeiTmms).Concat(this._parent.PPVVal).Concat(this._parent.PhGndVal).Concat(this._parent.RvAMod).Concat(this._parent.RvATmms).Concat(this._parent.RvRsTmms).GetEnumerator();
             }
         }
         
@@ -25451,26 +22553,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.DirMod;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -25521,31 +22603,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.DirMod = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -25587,26 +22644,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "DIRMOD"))
             {
                 return new PSDEDirModProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -25675,26 +22712,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -25713,12 +22730,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PSDEGndOpProxy(this._parent),
                         new PSDEStrDlTmmsProxy(this._parent),
                         new PSDEOpDlTmmsProxy(this._parent),
-                        new PSDEDirModProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PSDEDirModProxy(this._parent)};
             }
             
             /// <summary>
@@ -25799,51 +22811,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -25859,11 +22826,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.StrDlTmms = null;
                 this._parent.OpDlTmms = null;
                 this._parent.DirMod = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -25902,26 +22864,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.DirMod))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -25975,31 +22917,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.DirMod;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -26049,31 +22966,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.DirMod = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -26083,7 +22975,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.Ang).Concat(this._parent.GndStr).Concat(this._parent.GndOp).Concat(this._parent.StrDlTmms).Concat(this._parent.OpDlTmms).Concat(this._parent.DirMod).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.Ang).Concat(this._parent.GndStr).Concat(this._parent.GndOp).Concat(this._parent.StrDlTmms).Concat(this._parent.OpDlTmms).Concat(this._parent.DirMod).GetEnumerator();
             }
         }
         
@@ -26737,26 +23629,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.DirMod;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -26797,31 +23669,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.DirMod = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -26855,26 +23702,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "DIRMOD"))
             {
                 return new PDUPDirModProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -26935,26 +23762,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -26971,12 +23778,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PDUPStrValProxy(this._parent),
                         new PDUPOpDlTmmsProxy(this._parent),
                         new PDUPRsDlTmmsProxy(this._parent),
-                        new PDUPDirModProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PDUPDirModProxy(this._parent)};
             }
             
             /// <summary>
@@ -27039,51 +23841,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -27097,11 +23854,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.OpDlTmms = null;
                 this._parent.RsDlTmms = null;
                 this._parent.DirMod = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -27132,26 +23884,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.DirMod))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -27195,31 +23927,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.DirMod;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -27259,31 +23966,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.DirMod = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -27293,7 +23975,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.StrVal).Concat(this._parent.OpDlTmms).Concat(this._parent.RsDlTmms).Concat(this._parent.DirMod).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.StrVal).Concat(this._parent.OpDlTmms).Concat(this._parent.RsDlTmms).Concat(this._parent.DirMod).GetEnumerator();
             }
         }
         
@@ -27761,26 +24443,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.DirMod;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -27811,31 +24473,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.DirMod = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -27861,26 +24498,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "DIRMOD"))
             {
                 return new PTEFDirModProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -27933,26 +24550,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -27967,12 +24564,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PTEFStrProxy(this._parent),
                         new PTEFOpProxy(this._parent),
                         new PTEFGndStrProxy(this._parent),
-                        new PTEFDirModProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PTEFDirModProxy(this._parent)};
             }
             
             /// <summary>
@@ -28017,51 +24609,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -28073,11 +24620,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.Op = null;
                 this._parent.GndStr = null;
                 this._parent.DirMod = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -28100,26 +24642,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.DirMod))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -28153,31 +24675,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.DirMod;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -28207,31 +24704,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.DirMod = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -28241,7 +24713,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.GndStr).Concat(this._parent.DirMod).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.GndStr).Concat(this._parent.DirMod).GetEnumerator();
             }
         }
         
@@ -29143,26 +25615,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.DirMod;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -29233,31 +25685,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.DirMod = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -29315,26 +25742,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "DIRMOD"))
             {
                 return new PTOCDirModProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -29419,26 +25826,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -29461,12 +25848,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PTOCOpDlTmmsProxy(this._parent),
                         new PTOCTypRsCrvProxy(this._parent),
                         new PTOCRsDlTmmsProxy(this._parent),
-                        new PTOCDirModProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PTOCDirModProxy(this._parent)};
             }
             
             /// <summary>
@@ -29583,51 +25965,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -29647,11 +25984,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.TypRsCrv = null;
                 this._parent.RsDlTmms = null;
                 this._parent.DirMod = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -29706,26 +26038,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.DirMod))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -29799,31 +26111,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.DirMod;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -29893,31 +26180,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.DirMod = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -29927,7 +26189,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.TmASt).Concat(this._parent.TmACrv).Concat(this._parent.StrVal).Concat(this._parent.TmMult).Concat(this._parent.MinOpTmms).Concat(this._parent.MaxOpTmms).Concat(this._parent.OpDlTmms).Concat(this._parent.TypRsCrv).Concat(this._parent.RsDlTmms).Concat(this._parent.DirMod).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.TmASt).Concat(this._parent.TmACrv).Concat(this._parent.StrVal).Concat(this._parent.TmMult).Concat(this._parent.MinOpTmms).Concat(this._parent.MaxOpTmms).Concat(this._parent.OpDlTmms).Concat(this._parent.TypRsCrv).Concat(this._parent.RsDlTmms).Concat(this._parent.DirMod).GetEnumerator();
             }
         }
         
@@ -30767,26 +27029,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDlTmms;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -30832,31 +27074,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDlTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -30894,26 +27111,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDLTMMS"))
             {
                 return new PTOFRsDlTmmsProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -30978,26 +27175,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -31015,12 +27192,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PTOFStrValProxy(this._parent),
                         new PTOFBlkValProxy(this._parent),
                         new PTOFOpDlTmmsProxy(this._parent),
-                        new PTOFRsDlTmmsProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PTOFRsDlTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -31092,51 +27264,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -31151,11 +27278,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.BlkVal = null;
                 this._parent.OpDlTmms = null;
                 this._parent.RsDlTmms = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -31190,26 +27312,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.RsDlTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -31258,31 +27360,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.RsDlTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -31327,31 +27404,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.RsDlTmms = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -31361,7 +27413,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.BlkV).Concat(this._parent.StrVal).Concat(this._parent.BlkVal).Concat(this._parent.OpDlTmms).Concat(this._parent.RsDlTmms).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.BlkV).Concat(this._parent.StrVal).Concat(this._parent.BlkVal).Concat(this._parent.OpDlTmms).Concat(this._parent.RsDlTmms).GetEnumerator();
             }
         }
         
@@ -32232,26 +28284,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDlTmms;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -32312,31 +28344,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDlTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -32386,26 +28393,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDLTMMS"))
             {
                 return new PTOVRsDlTmmsProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -32482,26 +28469,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -32522,12 +28489,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PTOVMinOpTmmsProxy(this._parent),
                         new PTOVMaxOpTmmsProxy(this._parent),
                         new PTOVOpDlTmmsProxy(this._parent),
-                        new PTOVRsDlTmmsProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PTOVRsDlTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -32626,51 +28588,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -32688,11 +28605,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.MaxOpTmms = null;
                 this._parent.OpDlTmms = null;
                 this._parent.RsDlTmms = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -32739,26 +28651,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.RsDlTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -32822,31 +28714,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.RsDlTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -32906,31 +28773,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.RsDlTmms = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -32940,7 +28782,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.TmVst).Concat(this._parent.TmVCrv).Concat(this._parent.StrVal).Concat(this._parent.TmMult).Concat(this._parent.MinOpTmms).Concat(this._parent.MaxOpTmms).Concat(this._parent.OpDlTmms).Concat(this._parent.RsDlTmms).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.TmVst).Concat(this._parent.TmVCrv).Concat(this._parent.StrVal).Concat(this._parent.TmMult).Concat(this._parent.MinOpTmms).Concat(this._parent.MaxOpTmms).Concat(this._parent.OpDlTmms).Concat(this._parent.RsDlTmms).GetEnumerator();
             }
         }
         
@@ -34586,26 +30428,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.AlmVal;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -34721,31 +30543,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.AlmVal = ((IASG)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -34839,26 +30636,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "ALMVAL"))
             {
                 return new PTTRAlmValProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -34979,26 +30756,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -35030,12 +30787,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PTTRMaxOpTmmsProxy(this._parent),
                         new PTTRRsDlTmmsProxy(this._parent),
                         new PTTRConsTmsProxy(this._parent),
-                        new PTTRAlmValProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PTTRAlmValProxy(this._parent)};
             }
             
             /// <summary>
@@ -35233,51 +30985,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -35306,11 +31013,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.RsDlTmms = null;
                 this._parent.ConsTms = null;
                 this._parent.AlmVal = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -35401,26 +31103,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.AlmVal))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -35539,31 +31221,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.AlmVal;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -35678,31 +31335,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.AlmVal = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -35712,7 +31344,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Amp).Concat(this._parent.Tmp).Concat(this._parent.TmpRl).Concat(this._parent.LodRsvAlm).Concat(this._parent.LodRsvTr).Concat(this._parent.AgeRat).Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.AlmThm).Concat(this._parent.TmTmpSt).Concat(this._parent.TmASt).Concat(this._parent.TmTmpCrv).Concat(this._parent.TmACrv).Concat(this._parent.TmpMax).Concat(this._parent.StrVal).Concat(this._parent.OpDlTmms).Concat(this._parent.MinOpTmms).Concat(this._parent.MaxOpTmms).Concat(this._parent.RsDlTmms).Concat(this._parent.ConsTms).Concat(this._parent.AlmVal).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Amp).Concat(this._parent.Tmp).Concat(this._parent.TmpRl).Concat(this._parent.LodRsvAlm).Concat(this._parent.LodRsvTr).Concat(this._parent.AgeRat).Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.AlmThm).Concat(this._parent.TmTmpSt).Concat(this._parent.TmASt).Concat(this._parent.TmTmpCrv).Concat(this._parent.TmACrv).Concat(this._parent.TmpMax).Concat(this._parent.StrVal).Concat(this._parent.OpDlTmms).Concat(this._parent.MinOpTmms).Concat(this._parent.MaxOpTmms).Concat(this._parent.RsDlTmms).Concat(this._parent.ConsTms).Concat(this._parent.AlmVal).GetEnumerator();
             }
         }
         
@@ -37141,26 +32773,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.AlmVal;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -37231,31 +32843,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.AlmVal = ((IASG)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -37313,26 +32900,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "ALMVAL"))
             {
                 return new PTUCAlmValProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -37417,26 +32984,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -37459,12 +33006,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PTUCMaxOpTmmsProxy(this._parent),
                         new PTUCRsDlTmmsProxy(this._parent),
                         new PTUCConsTmsProxy(this._parent),
-                        new PTUCAlmValProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PTUCAlmValProxy(this._parent)};
             }
             
             /// <summary>
@@ -37581,51 +33123,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -37645,11 +33142,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.RsDlTmms = null;
                 this._parent.ConsTms = null;
                 this._parent.AlmVal = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -37704,26 +33196,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.AlmVal))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -37797,31 +33269,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.AlmVal;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -37891,31 +33338,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.AlmVal = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -37925,7 +33347,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.TmASt).Concat(this._parent.TmACrv).Concat(this._parent.StrVal).Concat(this._parent.OpDlTmms).Concat(this._parent.TmMult).Concat(this._parent.MinOpTmms).Concat(this._parent.MaxOpTmms).Concat(this._parent.RsDlTmms).Concat(this._parent.ConsTms).Concat(this._parent.AlmVal).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.TmASt).Concat(this._parent.TmACrv).Concat(this._parent.StrVal).Concat(this._parent.OpDlTmms).Concat(this._parent.TmMult).Concat(this._parent.MinOpTmms).Concat(this._parent.MaxOpTmms).Concat(this._parent.RsDlTmms).Concat(this._parent.ConsTms).Concat(this._parent.AlmVal).GetEnumerator();
             }
         }
         
@@ -38765,26 +34187,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDlTmms;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -38830,31 +34232,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDlTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -38892,26 +34269,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDLTMMS"))
             {
                 return new PTUFRsDlTmmsProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -38976,26 +34333,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -39013,12 +34350,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PTUFStrValProxy(this._parent),
                         new PTUFBlkValProxy(this._parent),
                         new PTUFOpDlTmmsProxy(this._parent),
-                        new PTUFRsDlTmmsProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PTUFRsDlTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -39090,51 +34422,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -39149,11 +34436,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.BlkVal = null;
                 this._parent.OpDlTmms = null;
                 this._parent.RsDlTmms = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -39188,26 +34470,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.RsDlTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -39256,31 +34518,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.RsDlTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -39325,31 +34562,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.RsDlTmms = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -39359,7 +34571,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.BlkV).Concat(this._parent.StrVal).Concat(this._parent.BlkVal).Concat(this._parent.OpDlTmms).Concat(this._parent.RsDlTmms).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.BlkV).Concat(this._parent.StrVal).Concat(this._parent.BlkVal).Concat(this._parent.OpDlTmms).Concat(this._parent.RsDlTmms).GetEnumerator();
             }
         }
         
@@ -40354,26 +35566,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDlTmms;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -40444,31 +35636,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDlTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -40526,26 +35693,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDLTMMS"))
             {
                 return new PVOCRsDlTmmsProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -40630,26 +35777,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -40672,12 +35799,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PVOCMaxOpTmmsProxy(this._parent),
                         new PVOCOpDlTmmsProxy(this._parent),
                         new PVOCTypRsCrvProxy(this._parent),
-                        new PVOCRsDlTmmsProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PVOCRsDlTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -40794,51 +35916,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -40858,11 +35935,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.OpDlTmms = null;
                 this._parent.TypRsCrv = null;
                 this._parent.RsDlTmms = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -40917,26 +35989,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.RsDlTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -41010,31 +36062,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.RsDlTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -41104,31 +36131,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.RsDlTmms = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -41138,7 +36140,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.AVSt).Concat(this._parent.TmASt).Concat(this._parent.TmMult).Concat(this._parent.AVCrv).Concat(this._parent.TmACrv).Concat(this._parent.MinOpTmms).Concat(this._parent.MaxOpTmms).Concat(this._parent.OpDlTmms).Concat(this._parent.TypRsCrv).Concat(this._parent.RsDlTmms).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.AVSt).Concat(this._parent.TmASt).Concat(this._parent.TmMult).Concat(this._parent.AVCrv).Concat(this._parent.TmACrv).Concat(this._parent.MinOpTmms).Concat(this._parent.MaxOpTmms).Concat(this._parent.OpDlTmms).Concat(this._parent.TypRsCrv).Concat(this._parent.RsDlTmms).GetEnumerator();
             }
         }
         
@@ -42226,26 +37228,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.MaxOpTmms;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -42311,31 +37293,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.MaxOpTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -42389,26 +37346,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "MAXOPTMMS"))
             {
                 return new PVPHMaxOpTmmsProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -42489,26 +37426,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -42530,12 +37447,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PVPHRsDlTmmsProxy(this._parent),
                         new PVPHTmMultProxy(this._parent),
                         new PVPHMinOpTmmsProxy(this._parent),
-                        new PVPHMaxOpTmmsProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PVPHMaxOpTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -42643,51 +37555,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -42706,11 +37573,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.TmMult = null;
                 this._parent.MinOpTmms = null;
                 this._parent.MaxOpTmms = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -42761,26 +37623,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.MaxOpTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -42849,31 +37691,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.MaxOpTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -42938,31 +37755,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.MaxOpTmms = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -42972,7 +37764,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.VHzSt).Concat(this._parent.VHzCrv).Concat(this._parent.StrVal).Concat(this._parent.OpDlTmms).Concat(this._parent.TypRsCrv).Concat(this._parent.RsDlTmms).Concat(this._parent.TmMult).Concat(this._parent.MinOpTmms).Concat(this._parent.MaxOpTmms).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.VHzSt).Concat(this._parent.VHzCrv).Concat(this._parent.StrVal).Concat(this._parent.OpDlTmms).Concat(this._parent.TypRsCrv).Concat(this._parent.RsDlTmms).Concat(this._parent.TmMult).Concat(this._parent.MinOpTmms).Concat(this._parent.MaxOpTmms).GetEnumerator();
             }
         }
         
@@ -43657,26 +38449,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.TrPlsTmms;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -43712,31 +38484,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.TrPlsTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -43766,26 +38513,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "TRPLSTMMS"))
             {
                 return new PTRCTrPlsTmmsProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -43842,26 +38569,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -43877,12 +38584,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PTRCOpProxy(this._parent),
                         new PTRCStrProxy(this._parent),
                         new PTRCTrModProxy(this._parent),
-                        new PTRCTrPlsTmmsProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PTRCTrPlsTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -43936,51 +38638,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -43993,11 +38650,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.Str = null;
                 this._parent.TrMod = null;
                 this._parent.TrPlsTmms = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -44024,26 +38676,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.TrPlsTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -44082,31 +38714,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.TrPlsTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -44141,31 +38748,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.TrPlsTmms = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -44175,7 +38757,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Tr).Concat(this._parent.Op).Concat(this._parent.Str).Concat(this._parent.TrMod).Concat(this._parent.TrPlsTmms).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Tr).Concat(this._parent.Op).Concat(this._parent.Str).Concat(this._parent.TrMod).Concat(this._parent.TrPlsTmms).GetEnumerator();
             }
         }
         
@@ -44984,26 +39566,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDlTmms;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -45064,31 +39626,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDlTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -45138,26 +39675,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDLTMMS"))
             {
                 return new PTUVRsDlTmmsProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -45234,26 +39751,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -45274,12 +39771,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PTUVMinOpTmmsProxy(this._parent),
                         new PTUVMaxOpTmmsProxy(this._parent),
                         new PTUVOpDlTmmsProxy(this._parent),
-                        new PTUVRsDlTmmsProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PTUVRsDlTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -45378,51 +39870,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -45440,11 +39887,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.MaxOpTmms = null;
                 this._parent.OpDlTmms = null;
                 this._parent.RsDlTmms = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -45491,26 +39933,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.RsDlTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -45574,31 +39996,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.RsDlTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -45658,31 +40055,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.RsDlTmms = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -45692,7 +40064,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.TmVSt).Concat(this._parent.TmVCrv).Concat(this._parent.StrVal).Concat(this._parent.TmMult).Concat(this._parent.MinOpTmms).Concat(this._parent.MaxOpTmms).Concat(this._parent.OpDlTmms).Concat(this._parent.RsDlTmms).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.TmVSt).Concat(this._parent.TmVCrv).Concat(this._parent.StrVal).Concat(this._parent.TmMult).Concat(this._parent.MinOpTmms).Concat(this._parent.MaxOpTmms).Concat(this._parent.OpDlTmms).Concat(this._parent.RsDlTmms).GetEnumerator();
             }
         }
         
@@ -46594,26 +40966,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.BlkValV;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -46669,31 +41021,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.BlkValV = ((IASG)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -46739,26 +41066,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "BLKVALV"))
             {
                 return new PUPFBlkValVProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -46831,26 +41138,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -46870,12 +41157,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PUPFOpDlTmmsProxy(this._parent),
                         new PUPFRsDlTmmsProxy(this._parent),
                         new PUPFBlkValAProxy(this._parent),
-                        new PUPFBlkValVProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PUPFBlkValVProxy(this._parent)};
             }
             
             /// <summary>
@@ -46965,51 +41247,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -47026,11 +41263,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.RsDlTmms = null;
                 this._parent.BlkValA = null;
                 this._parent.BlkValV = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -47073,26 +41305,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.BlkValV))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -47151,31 +41363,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.BlkValV;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -47230,31 +41417,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.BlkValV = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -47264,7 +41426,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.BlkA).Concat(this._parent.BlkV).Concat(this._parent.StrVal).Concat(this._parent.OpDlTmms).Concat(this._parent.RsDlTmms).Concat(this._parent.BlkValA).Concat(this._parent.BlkValV).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.BlkA).Concat(this._parent.BlkV).Concat(this._parent.StrVal).Concat(this._parent.OpDlTmms).Concat(this._parent.RsDlTmms).Concat(this._parent.BlkValA).Concat(this._parent.BlkValV).GetEnumerator();
             }
         }
         
@@ -47887,26 +42049,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             {
                 return this.RsDlTmms;
             }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -47942,31 +42084,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this.RsDlTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -47996,26 +42113,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             if ((reference == "RSDLTMMS"))
             {
                 return new PZSURsDlTmmsProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupPOpCntRsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -48072,26 +42169,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -48107,12 +42184,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         new PZSUOpProxy(this._parent),
                         new PZSUStrValProxy(this._parent),
                         new PZSUOpDlTmmsProxy(this._parent),
-                        new PZSURsDlTmmsProxy(this._parent),
-                        new GroupPOpCntRsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new PZSURsDlTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -48166,51 +42238,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                         return;
                     }
                 }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -48223,11 +42250,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                 this._parent.StrVal = null;
                 this._parent.OpDlTmms = null;
                 this._parent.RsDlTmms = null;
-                this._parent.OpCntRs = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -48254,26 +42276,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     return true;
                 }
                 if ((item == this._parent.RsDlTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -48312,31 +42314,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     array[arrayIndex] = this._parent.RsDlTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -48371,31 +42348,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
                     this._parent.RsDlTmms = null;
                     return true;
                 }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -48405,7 +42357,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.StrVal).Concat(this._parent.OpDlTmms).Concat(this._parent.RsDlTmms).Concat(this._parent.OpCntRs).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.StrVal).Concat(this._parent.OpDlTmms).Concat(this._parent.RsDlTmms).GetEnumerator();
             }
         }
         
@@ -51720,89 +45672,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         private static IClass _classInstance;
         
         /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given reference
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="reference">The requested reference in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<NMF.Models.IModelElement> GetExpressionForReference(string reference)
-        {
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
-            }
-            return base.GetExpressionForReference(reference);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -53018,22 +46887,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return this.OpMod;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -53139,26 +46992,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this.OpMod = ((IING)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -53244,22 +47077,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             if ((reference == "OPMOD"))
             {
                 return new RDREOpModProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -53372,22 +47189,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -53417,11 +47218,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                         new RDREReTrgModProxy(this._parent),
                         new RDREPerTrgTmsProxy(this._parent),
                         new RDREExclTmmsProxy(this._parent),
-                        new RDREOpModProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new RDREOpModProxy(this._parent)};
             }
             
             /// <summary>
@@ -53601,42 +47398,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -53663,10 +47424,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this._parent.PerTrgTms = null;
                 this._parent.ExclTmms = null;
                 this._parent.OpMod = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -53749,22 +47506,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     return true;
                 }
                 if ((item == this._parent.OpMod))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -53873,26 +47614,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     array[arrayIndex] = this._parent.OpMod;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -53997,26 +47718,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     this._parent.OpMod = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -54026,7 +47727,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpCntRs).Concat(this._parent.RcdTrg).Concat(this._parent.MemRs).Concat(this._parent.MemClr).Concat(this._parent.RcdMade).Concat(this._parent.FltNum).Concat(this._parent.GriFltNum).Concat(this._parent.RcdStr).Concat(this._parent.MemUsed).Concat(this._parent.TrgMod).Concat(this._parent.LevMod).Concat(this._parent.PreTmms).Concat(this._parent.PstTmms).Concat(this._parent.MemFull).Concat(this._parent.MaxNumRcd).Concat(this._parent.ReTrgMod).Concat(this._parent.PerTrgTms).Concat(this._parent.ExclTmms).Concat(this._parent.OpMod).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpCntRs).Concat(this._parent.RcdTrg).Concat(this._parent.MemRs).Concat(this._parent.MemClr).Concat(this._parent.RcdMade).Concat(this._parent.FltNum).Concat(this._parent.GriFltNum).Concat(this._parent.RcdStr).Concat(this._parent.MemUsed).Concat(this._parent.TrgMod).Concat(this._parent.LevMod).Concat(this._parent.PreTmms).Concat(this._parent.PstTmms).Concat(this._parent.MemFull).Concat(this._parent.MaxNumRcd).Concat(this._parent.ReTrgMod).Concat(this._parent.PerTrgTms).Concat(this._parent.ExclTmms).Concat(this._parent.OpMod).GetEnumerator();
             }
         }
         
@@ -54773,22 +48474,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return this.DltRcd;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -54809,26 +48494,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this.DltRcd = ((ISPC)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -54846,22 +48511,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             if ((reference == "DLTRCD"))
             {
                 return new RDRSDltRcdProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -54906,22 +48555,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -54934,11 +48567,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return new INotifiable[] {
                         new RDRSAutoUpLodProxy(this._parent),
-                        new RDRSDltRcdProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new RDRSDltRcdProxy(this._parent)};
             }
             
             /// <summary>
@@ -54965,42 +48594,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -55010,10 +48603,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 this._parent.AutoUpLod = null;
                 this._parent.DltRcd = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -55028,22 +48617,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     return true;
                 }
                 if ((item == this._parent.DltRcd))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -55067,26 +48640,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     array[arrayIndex] = this._parent.DltRcd;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -55106,26 +48659,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     this._parent.DltRcd = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -55135,7 +48668,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.AutoUpLod).Concat(this._parent.DltRcd).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.AutoUpLod).Concat(this._parent.DltRcd).GetEnumerator();
             }
         }
         
@@ -56099,22 +49632,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return this.EvTmms;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -56195,26 +49712,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this.EvTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -56280,22 +49777,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             if ((reference == "EVTMMS"))
             {
                 return new RPSBEvTmmsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -56388,22 +49869,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -56428,11 +49893,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                         new RPSBSwgTmmsProxy(this._parent),
                         new RPSBUnBlkTmmsProxy(this._parent),
                         new RPSBMaxNumSlpProxy(this._parent),
-                        new RPSBEvTmmsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new RPSBEvTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -56567,42 +50028,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -56624,10 +50049,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this._parent.UnBlkTmms = null;
                 this._parent.MaxNumSlp = null;
                 this._parent.EvTmms = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -56690,22 +50111,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     return true;
                 }
                 if ((item == this._parent.EvTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -56789,26 +50194,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     array[arrayIndex] = this._parent.EvTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -56888,26 +50273,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     this._parent.EvTmms = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -56917,7 +50282,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpCntRs).Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.BlkZn).Concat(this._parent.ZeroEna).Concat(this._parent.NgEna).Concat(this._parent.MaxEna).Concat(this._parent.SwgVal).Concat(this._parent.SwgRis).Concat(this._parent.SwgReact).Concat(this._parent.SwgTmms).Concat(this._parent.UnBlkTmms).Concat(this._parent.MaxNumSlp).Concat(this._parent.EvTmms).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpCntRs).Concat(this._parent.Str).Concat(this._parent.Op).Concat(this._parent.BlkZn).Concat(this._parent.ZeroEna).Concat(this._parent.NgEna).Concat(this._parent.MaxEna).Concat(this._parent.SwgVal).Concat(this._parent.SwgRis).Concat(this._parent.SwgReact).Concat(this._parent.SwgTmms).Concat(this._parent.UnBlkTmms).Concat(this._parent.MaxNumSlp).Concat(this._parent.EvTmms).GetEnumerator();
             }
         }
         
@@ -58005,22 +51370,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return this.ReTrMod;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -58081,26 +51430,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this.ReTrMod = ((IING)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -58150,22 +51479,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             if ((reference == "RETRMOD"))
             {
                 return new RBRFReTrModProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -58242,22 +51555,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -58278,11 +51575,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                         new RBRFSPlTrTmmsProxy(this._parent),
                         new RBRFTPTrTmmsProxy(this._parent),
                         new RBRFDetValAProxy(this._parent),
-                        new RBRFReTrModProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new RBRFReTrModProxy(this._parent)};
             }
             
             /// <summary>
@@ -58381,42 +51674,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -58434,10 +51691,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this._parent.TPTrTmms = null;
                 this._parent.DetValA = null;
                 this._parent.ReTrMod = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -58484,22 +51737,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     return true;
                 }
                 if ((item == this._parent.ReTrMod))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -58563,26 +51800,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     array[arrayIndex] = this._parent.ReTrMod;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -58642,26 +51859,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     this._parent.ReTrMod = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -58671,7 +51868,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpCntRs).Concat(this._parent.Str).Concat(this._parent.OpEx).Concat(this._parent.OpIn).Concat(this._parent.FailMod).Concat(this._parent.FailTmms).Concat(this._parent.SPlTrTmms).Concat(this._parent.TPTrTmms).Concat(this._parent.DetValA).Concat(this._parent.ReTrMod).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpCntRs).Concat(this._parent.Str).Concat(this._parent.OpEx).Concat(this._parent.OpIn).Concat(this._parent.FailMod).Concat(this._parent.FailTmms).Concat(this._parent.SPlTrTmms).Concat(this._parent.TPTrTmms).Concat(this._parent.DetValA).Concat(this._parent.ReTrMod).GetEnumerator();
             }
         }
         
@@ -59573,22 +52770,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return this.PstTmms;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -59644,26 +52825,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this.PstTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -59709,22 +52870,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             if ((reference == "PSTTMMS"))
             {
                 return new RADRPstTmmsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -59797,22 +52942,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -59832,11 +52961,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                         new RADRHiTrgLevProxy(this._parent),
                         new RADRLoTrgLevProxy(this._parent),
                         new RADRPreTmmsProxy(this._parent),
-                        new RADRPstTmmsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new RADRPstTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -59926,42 +53051,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -59978,10 +53067,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this._parent.LoTrgLev = null;
                 this._parent.PreTmms = null;
                 this._parent.PstTmms = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -60024,22 +53109,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     return true;
                 }
                 if ((item == this._parent.PstTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -60098,26 +53167,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     array[arrayIndex] = this._parent.PstTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -60172,26 +53221,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     this._parent.PstTmms = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -60201,7 +53230,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpCntRs).Concat(this._parent.ChTrg).Concat(this._parent.ChNum).Concat(this._parent.TrGMod).Concat(this._parent.LevMod).Concat(this._parent.HiTrgLev).Concat(this._parent.LoTrgLev).Concat(this._parent.PreTmms).Concat(this._parent.PstTmms).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpCntRs).Concat(this._parent.ChTrg).Concat(this._parent.ChNum).Concat(this._parent.TrGMod).Concat(this._parent.LevMod).Concat(this._parent.HiTrgLev).Concat(this._parent.LoTrgLev).Concat(this._parent.PreTmms).Concat(this._parent.PstTmms).GetEnumerator();
             }
         }
         
@@ -60948,22 +53977,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return this.PstTmms;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -61009,26 +54022,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this.PstTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -61066,22 +54059,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             if ((reference == "PSTTMMS"))
             {
                 return new RBDRPstTmmsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -61146,22 +54123,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -61179,11 +54140,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                         new RBDRTrgModProxy(this._parent),
                         new RBDRLevModProxy(this._parent),
                         new RBDRPreTmmsProxy(this._parent),
-                        new RBDRPstTmmsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new RBDRPstTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -61255,42 +54212,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -61305,10 +54226,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this._parent.LevMod = null;
                 this._parent.PreTmms = null;
                 this._parent.PstTmms = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -61343,22 +54260,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     return true;
                 }
                 if ((item == this._parent.PstTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -61407,26 +54308,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     array[arrayIndex] = this._parent.PstTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -61471,26 +54352,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     this._parent.PstTmms = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -61500,7 +54361,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpCntRs).Concat(this._parent.ChTrg).Concat(this._parent.ChNum).Concat(this._parent.TrgMod).Concat(this._parent.LevMod).Concat(this._parent.PreTmms).Concat(this._parent.PstTmms).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpCntRs).Concat(this._parent.ChTrg).Concat(this._parent.ChNum).Concat(this._parent.TrgMod).Concat(this._parent.LevMod).Concat(this._parent.PreTmms).Concat(this._parent.PstTmms).GetEnumerator();
             }
         }
         
@@ -62371,22 +55232,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return this.MinPPV;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -62447,26 +55292,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this.MinPPV = ((IASG)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -62516,22 +55341,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             if ((reference == "MINPPV"))
             {
                 return new RDIRMinPPVProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -62608,22 +55417,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -62644,11 +55437,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                         new RDIRBlkValAProxy(this._parent),
                         new RDIRBlkValVProxy(this._parent),
                         new RDIRPolQtyProxy(this._parent),
-                        new RDIRMinPPVProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new RDIRMinPPVProxy(this._parent)};
             }
             
             /// <summary>
@@ -62747,42 +55536,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -62800,10 +55553,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this._parent.BlkValV = null;
                 this._parent.PolQty = null;
                 this._parent.MinPPV = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -62850,22 +55599,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     return true;
                 }
                 if ((item == this._parent.MinPPV))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -62929,26 +55662,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     array[arrayIndex] = this._parent.MinPPV;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -63008,26 +55721,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     this._parent.MinPPV = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -63037,7 +55730,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Dir).Concat(this._parent.ChrAng).Concat(this._parent.MinFwdAng).Concat(this._parent.MinRvAng).Concat(this._parent.MaxFwdAng).Concat(this._parent.MaxRvAng).Concat(this._parent.BlkValA).Concat(this._parent.BlkValV).Concat(this._parent.PolQty).Concat(this._parent.MinPPV).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Dir).Concat(this._parent.ChrAng).Concat(this._parent.MinFwdAng).Concat(this._parent.MinRvAng).Concat(this._parent.MaxFwdAng).Concat(this._parent.MaxRvAng).Concat(this._parent.BlkValA).Concat(this._parent.BlkValV).Concat(this._parent.PolQty).Concat(this._parent.MinPPV).GetEnumerator();
             }
         }
         
@@ -64435,22 +57128,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return this.Zm0Ang;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -64546,26 +57223,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this.Zm0Ang = ((IASG)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -64643,22 +57300,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             if ((reference == "ZM0ANG"))
             {
                 return new RFLOZm0AngProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -64763,22 +57404,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -64806,11 +57431,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                         new RFLORm0Proxy(this._parent),
                         new RFLOXm0Proxy(this._parent),
                         new RFLOZm0ModProxy(this._parent),
-                        new RFLOZm0AngProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new RFLOZm0AngProxy(this._parent)};
             }
             
             /// <summary>
@@ -64972,42 +57593,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -65032,10 +57617,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this._parent.Xm0 = null;
                 this._parent.Zm0Mod = null;
                 this._parent.Zm0Ang = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -65110,22 +57691,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     return true;
                 }
                 if ((item == this._parent.Zm0Ang))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -65224,26 +57789,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     array[arrayIndex] = this._parent.Zm0Ang;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -65338,26 +57883,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     this._parent.Zm0Ang = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -65367,7 +57892,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpCntRs).Concat(this._parent.FltZ).Concat(this._parent.FltDiskm).Concat(this._parent.FltLoop).Concat(this._parent.LinLenKm).Concat(this._parent.R1).Concat(this._parent.X1).Concat(this._parent.R0).Concat(this._parent.X0).Concat(this._parent.Z1Mod).Concat(this._parent.Z1Ang).Concat(this._parent.Z0Mod).Concat(this._parent.Z0Ang).Concat(this._parent.Rm0).Concat(this._parent.Xm0).Concat(this._parent.Zm0Mod).Concat(this._parent.Zm0Ang).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpCntRs).Concat(this._parent.FltZ).Concat(this._parent.FltDiskm).Concat(this._parent.FltLoop).Concat(this._parent.LinLenKm).Concat(this._parent.R1).Concat(this._parent.X1).Concat(this._parent.R0).Concat(this._parent.X0).Concat(this._parent.Z1Mod).Concat(this._parent.Z1Ang).Concat(this._parent.Z0Mod).Concat(this._parent.Z0Ang).Concat(this._parent.Rm0).Concat(this._parent.Xm0).Concat(this._parent.Zm0Mod).Concat(this._parent.Zm0Ang).GetEnumerator();
             }
         }
         
@@ -66610,22 +59135,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return this.RclTmms;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -66691,26 +59200,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this.RclTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -66764,22 +59253,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             if ((reference == "RCLTMMS"))
             {
                 return new RRECRclTmmsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -66860,22 +59333,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -66897,11 +59354,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                         new RRECRec2TmmsProxy(this._parent),
                         new RRECRec3TmmsProxy(this._parent),
                         new RRECPlsTmmsProxy(this._parent),
-                        new RRECRclTmmsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new RRECRclTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -67009,42 +59462,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -67063,10 +59480,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this._parent.Rec3Tmms = null;
                 this._parent.PlsTmms = null;
                 this._parent.RclTmms = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -67117,22 +59530,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     return true;
                 }
                 if ((item == this._parent.RclTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -67201,26 +59598,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     array[arrayIndex] = this._parent.RclTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -67285,26 +59662,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     this._parent.RclTmms = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -67314,7 +59671,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpCntRs).Concat(this._parent.BlkRec).Concat(this._parent.ChkRec).Concat(this._parent.Auto).Concat(this._parent.Op).Concat(this._parent.AutoRecSt).Concat(this._parent.Rec1Tmms).Concat(this._parent.Rec2Tmms).Concat(this._parent.Rec3Tmms).Concat(this._parent.PlsTmms).Concat(this._parent.RclTmms).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpCntRs).Concat(this._parent.BlkRec).Concat(this._parent.ChkRec).Concat(this._parent.Auto).Concat(this._parent.Op).Concat(this._parent.AutoRecSt).Concat(this._parent.Rec1Tmms).Concat(this._parent.Rec2Tmms).Concat(this._parent.Rec3Tmms).Concat(this._parent.PlsTmms).Concat(this._parent.RclTmms).GetEnumerator();
             }
         }
         
@@ -68929,22 +61286,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             {
                 return this.BkrTmms;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -69055,26 +61396,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this.BkrTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -69164,22 +61485,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             if ((reference == "BKRTMMS"))
             {
                 return new RSYNBkrTmmsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -69296,22 +61601,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -69342,11 +61631,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                         new RSYNLivLinValProxy(this._parent),
                         new RSYNDeaBusValProxy(this._parent),
                         new RSYNPlsTmmsProxy(this._parent),
-                        new RSYNBkrTmmsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new RSYNBkrTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -69535,42 +61820,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -69598,10 +61847,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                 this._parent.DeaBusVal = null;
                 this._parent.PlsTmms = null;
                 this._parent.BkrTmms = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -69688,22 +61933,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     return true;
                 }
                 if ((item == this._parent.BkrTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -69817,26 +62046,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     array[arrayIndex] = this._parent.BkrTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -69946,26 +62155,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
                     this._parent.BkrTmms = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -69975,7 +62164,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.RHz).Concat(this._parent.LHz).Concat(this._parent.RV).Concat(this._parent.LV).Concat(this._parent.Rel).Concat(this._parent.Vlnd).Concat(this._parent.AngInd).Concat(this._parent.HzInd).Concat(this._parent.SynPrg).Concat(this._parent.DifVClc).Concat(this._parent.DifAngClc).Concat(this._parent.DifV).Concat(this._parent.DifHz).Concat(this._parent.DifAng).Concat(this._parent.LivDeaMod).Concat(this._parent.DeaLinVal).Concat(this._parent.LivLinVal).Concat(this._parent.DeaBusVal).Concat(this._parent.PlsTmms).Concat(this._parent.BkrTmms).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.RHz).Concat(this._parent.LHz).Concat(this._parent.RV).Concat(this._parent.LV).Concat(this._parent.Rel).Concat(this._parent.Vlnd).Concat(this._parent.AngInd).Concat(this._parent.HzInd).Concat(this._parent.SynPrg).Concat(this._parent.DifVClc).Concat(this._parent.DifAngClc).Concat(this._parent.DifV).Concat(this._parent.DifHz).Concat(this._parent.DifAng).Concat(this._parent.LivDeaMod).Concat(this._parent.DeaLinVal).Concat(this._parent.LivLinVal).Concat(this._parent.DeaBusVal).Concat(this._parent.PlsTmms).Concat(this._parent.BkrTmms).GetEnumerator();
             }
         }
         
@@ -72042,89 +64231,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         private static IClass _classInstance;
         
         /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given reference
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="reference">The requested reference in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<NMF.Models.IModelElement> GetExpressionForReference(string reference)
-        {
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
-            }
-            return base.GetExpressionForReference(reference);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -72348,22 +64454,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             {
                 return this.AlmLstOv;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -72389,26 +64479,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                 this.AlmLstOv = ((ISPS)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -72430,22 +64500,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             if ((reference == "ALMLSTOV"))
             {
                 return new CALHAlmLstOvProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -72494,22 +64548,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -72523,11 +64561,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                 return new INotifiable[] {
                         new CALHGrAlmProxy(this._parent),
                         new CALHGrWrnProxy(this._parent),
-                        new CALHAlmLstOvProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new CALHAlmLstOvProxy(this._parent)};
             }
             
             /// <summary>
@@ -72563,42 +64597,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -72609,10 +64607,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                 this._parent.GrAlm = null;
                 this._parent.GrWrn = null;
                 this._parent.AlmLstOv = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -72631,22 +64625,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                     return true;
                 }
                 if ((item == this._parent.AlmLstOv))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -72675,26 +64653,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                     array[arrayIndex] = this._parent.AlmLstOv;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -72719,26 +64677,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                     this._parent.AlmLstOv = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -72748,7 +64686,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.GrAlm).Concat(this._parent.GrWrn).Concat(this._parent.AlmLstOv).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.GrAlm).Concat(this._parent.GrWrn).Concat(this._parent.AlmLstOv).GetEnumerator();
             }
         }
         
@@ -72999,22 +64937,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             {
                 return this.EnaCls;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -73035,26 +64957,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                 this.EnaCls = ((ISPS)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -73072,22 +64974,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             if ((reference == "ENACLS"))
             {
                 return new CILOEnaClsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -73132,22 +65018,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -73160,11 +65030,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             {
                 return new INotifiable[] {
                         new CILOEnaOpnProxy(this._parent),
-                        new CILOEnaClsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new CILOEnaClsProxy(this._parent)};
             }
             
             /// <summary>
@@ -73191,42 +65057,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -73236,10 +65066,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             {
                 this._parent.EnaOpn = null;
                 this._parent.EnaCls = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -73254,22 +65080,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                     return true;
                 }
                 if ((item == this._parent.EnaCls))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -73293,26 +65103,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                     array[arrayIndex] = this._parent.EnaCls;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -73332,26 +65122,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                     this._parent.EnaCls = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -73361,7 +65131,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.EnaOpn).Concat(this._parent.EnaCls).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.EnaOpn).Concat(this._parent.EnaCls).GetEnumerator();
             }
         }
         
@@ -74635,22 +66405,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             {
                 return this.OilTmpSet;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -74756,26 +66510,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                 this.OilTmpSet = ((IASG)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -74861,22 +66595,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             if ((reference == "OILTMPSET"))
             {
                 return new CCGROilTmpSetProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -74989,22 +66707,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -75034,11 +66736,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                         new CCGRFanOvCurProxy(this._parent),
                         new CCGRPmpOvCurProxy(this._parent),
                         new CCGRPmpAlmProxy(this._parent),
-                        new CCGROilTmpSetProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new CCGROilTmpSetProxy(this._parent)};
             }
             
             /// <summary>
@@ -75218,42 +66916,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -75280,10 +66942,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                 this._parent.PmpOvCur = null;
                 this._parent.PmpAlm = null;
                 this._parent.OilTmpSet = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -75366,22 +67024,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                     return true;
                 }
                 if ((item == this._parent.OilTmpSet))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -75490,26 +67132,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                     array[arrayIndex] = this._parent.OilTmpSet;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -75614,26 +67236,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                     this._parent.OilTmpSet = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -75643,7 +67245,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.EEHealth).Concat(this._parent.EEName).Concat(this._parent.OpTmh).Concat(this._parent.EnvTmp).Concat(this._parent.OilTmpIn).Concat(this._parent.OilTmpOut).Concat(this._parent.OilMotA).Concat(this._parent.FanFlw).Concat(this._parent.FanA).Concat(this._parent.CECtl).Concat(this._parent.PmpCtlGen).Concat(this._parent.PmpCtl).Concat(this._parent.FanCtlGen).Concat(this._parent.FanCtl).Concat(this._parent.Auto).Concat(this._parent.FanOvCur).Concat(this._parent.PmpOvCur).Concat(this._parent.PmpAlm).Concat(this._parent.OilTmpSet).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.EEHealth).Concat(this._parent.EEName).Concat(this._parent.OpTmh).Concat(this._parent.EnvTmp).Concat(this._parent.OilTmpIn).Concat(this._parent.OilTmpOut).Concat(this._parent.OilMotA).Concat(this._parent.FanFlw).Concat(this._parent.FanA).Concat(this._parent.CECtl).Concat(this._parent.PmpCtlGen).Concat(this._parent.PmpCtl).Concat(this._parent.FanCtlGen).Concat(this._parent.FanCtl).Concat(this._parent.Auto).Concat(this._parent.FanOvCur).Concat(this._parent.PmpOvCur).Concat(this._parent.PmpAlm).Concat(this._parent.OilTmpSet).GetEnumerator();
             }
         }
         
@@ -76576,22 +68178,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             {
                 return this.MaxDlTmms;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -76627,26 +68213,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                 this.MaxDlTmms = ((IING)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -76676,22 +68242,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             if ((reference == "MAXDLTMMS"))
             {
                 return new CPOWMaxDlTmmsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -76748,22 +68298,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -76779,11 +68313,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                         new CPOWStrPOWProxy(this._parent),
                         new CPOWOpOpnProxy(this._parent),
                         new CPOWOpClsProxy(this._parent),
-                        new CPOWMaxDlTmmsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new CPOWMaxDlTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -76837,42 +68367,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -76885,10 +68379,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                 this._parent.OpOpn = null;
                 this._parent.OpCls = null;
                 this._parent.MaxDlTmms = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -76915,22 +68405,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                     return true;
                 }
                 if ((item == this._parent.MaxDlTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -76969,26 +68443,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                     array[arrayIndex] = this._parent.MaxDlTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -77023,26 +68477,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                     this._parent.MaxDlTmms = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -77052,7 +68486,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.TmExc).Concat(this._parent.StrPOW).Concat(this._parent.OpOpn).Concat(this._parent.OpCls).Concat(this._parent.MaxDlTmms).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.TmExc).Concat(this._parent.StrPOW).Concat(this._parent.OpOpn).Concat(this._parent.OpCls).Concat(this._parent.MaxDlTmms).GetEnumerator();
             }
         }
         
@@ -77737,22 +69171,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             {
                 return this.OpCls;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -77803,26 +69221,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                 this.OpCls = ((IACT)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -77864,22 +69262,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             if ((reference == "OPCLS"))
             {
                 return new CSWIOpClsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -77948,22 +69330,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -77982,11 +69348,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                         new CSWIPosBProxy(this._parent),
                         new CSWIPosCProxy(this._parent),
                         new CSWIOpOpnProxy(this._parent),
-                        new CSWIOpClsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new CSWIOpClsProxy(this._parent)};
             }
             
             /// <summary>
@@ -78067,42 +69429,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -78118,10 +69444,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                 this._parent.PosC = null;
                 this._parent.OpOpn = null;
                 this._parent.OpCls = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -78160,22 +69482,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                     return true;
                 }
                 if ((item == this._parent.OpCls))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -78229,26 +69535,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                     array[arrayIndex] = this._parent.OpCls;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -78298,26 +69584,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
                     this._parent.OpCls = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -78327,7 +69593,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Loc).Concat(this._parent.OpCntRs).Concat(this._parent.Pos).Concat(this._parent.PosA).Concat(this._parent.PosB).Concat(this._parent.PosC).Concat(this._parent.OpOpn).Concat(this._parent.OpCls).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Loc).Concat(this._parent.OpCntRs).Concat(this._parent.Pos).Concat(this._parent.PosA).Concat(this._parent.PosB).Concat(this._parent.PosC).Concat(this._parent.OpOpn).Concat(this._parent.OpCls).GetEnumerator();
             }
         }
         
@@ -79279,22 +70545,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             {
                 return this.Auto;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -79320,26 +70570,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                 this.Auto = ((ISPS)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -79361,22 +70591,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             if ((reference == "AUTO"))
             {
                 return new GroupAAutoProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -79425,22 +70639,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -79454,11 +70652,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                 return new INotifiable[] {
                         new GroupALocProxy(this._parent),
                         new GroupAOpCntRsProxy(this._parent),
-                        new GroupAAutoProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new GroupAAutoProxy(this._parent)};
             }
             
             /// <summary>
@@ -79494,42 +70688,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -79540,10 +70698,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                 this._parent.Loc = null;
                 this._parent.OpCntRs = null;
                 this._parent.Auto = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -79562,22 +70716,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                     return true;
                 }
                 if ((item == this._parent.Auto))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -79606,26 +70744,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                     array[arrayIndex] = this._parent.Auto;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -79650,26 +70768,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                     this._parent.Auto = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -79679,7 +70777,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Loc).Concat(this._parent.OpCntRs).Concat(this._parent.Auto).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Loc).Concat(this._parent.OpCntRs).Concat(this._parent.Auto).GetEnumerator();
             }
         }
         
@@ -79992,34 +71090,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             {
                 return this.LCol;
             }
-            if ((reference == "LOC"))
-            {
-                return this.Loc;
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "AUTO"))
-            {
-                return this.Auto;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -80045,41 +71115,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                 this.LCol = ((ISPC)(value));
                 return;
             }
-            if ((feature == "LOC"))
-            {
-                this.Loc = ((ISPS)(value));
-                return;
-            }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "AUTO"))
-            {
-                this.Auto = ((ISPS)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -80101,34 +71136,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             if ((reference == "LCOL"))
             {
                 return new ANCRLColProxy(this);
-            }
-            if ((reference == "LOC"))
-            {
-                return new GroupALocProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupAOpCntRsProxy(this);
-            }
-            if ((reference == "AUTO"))
-            {
-                return new GroupAAutoProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -80177,34 +71184,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Loc != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Auto != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -80218,14 +71197,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                 return new INotifiable[] {
                         new ANCRTapChgProxy(this._parent),
                         new ANCRRColProxy(this._parent),
-                        new ANCRLColProxy(this._parent),
-                        new GroupALocProxy(this._parent),
-                        new GroupAOpCntRsProxy(this._parent),
-                        new GroupAAutoProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new ANCRLColProxy(this._parent)};
             }
             
             /// <summary>
@@ -80261,69 +71233,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                         return;
                     }
                 }
-                if ((this._parent.Loc == null))
-                {
-                    ISPS locCasted = item.As<ISPS>();
-                    if ((locCasted != null))
-                    {
-                        this._parent.Loc = locCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Auto == null))
-                {
-                    ISPS autoCasted = item.As<ISPS>();
-                    if ((autoCasted != null))
-                    {
-                        this._parent.Auto = autoCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -80334,13 +71243,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                 this._parent.TapChg = null;
                 this._parent.RCol = null;
                 this._parent.LCol = null;
-                this._parent.Loc = null;
-                this._parent.OpCntRs = null;
-                this._parent.Auto = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -80359,34 +71261,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                     return true;
                 }
                 if ((item == this._parent.LCol))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Loc))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Auto))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -80415,41 +71289,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                     array[arrayIndex] = this._parent.LCol;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Loc != null))
-                {
-                    array[arrayIndex] = this._parent.Loc;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Auto != null))
-                {
-                    array[arrayIndex] = this._parent.Auto;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -80474,41 +71313,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                     this._parent.LCol = null;
                     return true;
                 }
-                if ((this._parent.Loc == item))
-                {
-                    this._parent.Loc = null;
-                    return true;
-                }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Auto == item))
-                {
-                    this._parent.Auto = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -80518,7 +71322,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.TapChg).Concat(this._parent.RCol).Concat(this._parent.LCol).Concat(this._parent.Loc).Concat(this._parent.OpCntRs).Concat(this._parent.Auto).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.TapChg).Concat(this._parent.RCol).Concat(this._parent.LCol).GetEnumerator();
             }
         }
         
@@ -80893,34 +71697,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             {
                 return this.DschBlk;
             }
-            if ((reference == "LOC"))
-            {
-                return this.Loc;
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "AUTO"))
-            {
-                return this.Auto;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -80951,41 +71727,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                 this.DschBlk = ((ISPS)(value));
                 return;
             }
-            if ((feature == "LOC"))
-            {
-                this.Loc = ((ISPS)(value));
-                return;
-            }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "AUTO"))
-            {
-                this.Auto = ((ISPS)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -81011,34 +71752,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             if ((reference == "DSCHBLK"))
             {
                 return new ARCODschBlkProxy(this);
-            }
-            if ((reference == "LOC"))
-            {
-                return new GroupALocProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupAOpCntRsProxy(this);
-            }
-            if ((reference == "AUTO"))
-            {
-                return new GroupAAutoProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -81091,34 +71804,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Loc != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Auto != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -81133,14 +71818,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                         new ARCOTapChgProxy(this._parent),
                         new ARCOVOvStProxy(this._parent),
                         new ARCONeutAlmProxy(this._parent),
-                        new ARCODschBlkProxy(this._parent),
-                        new GroupALocProxy(this._parent),
-                        new GroupAOpCntRsProxy(this._parent),
-                        new GroupAAutoProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new ARCODschBlkProxy(this._parent)};
             }
             
             /// <summary>
@@ -81185,69 +71863,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                         return;
                     }
                 }
-                if ((this._parent.Loc == null))
-                {
-                    ISPS locCasted = item.As<ISPS>();
-                    if ((locCasted != null))
-                    {
-                        this._parent.Loc = locCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Auto == null))
-                {
-                    ISPS autoCasted = item.As<ISPS>();
-                    if ((autoCasted != null))
-                    {
-                        this._parent.Auto = autoCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -81259,13 +71874,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                 this._parent.VOvSt = null;
                 this._parent.NeutAlm = null;
                 this._parent.DschBlk = null;
-                this._parent.Loc = null;
-                this._parent.OpCntRs = null;
-                this._parent.Auto = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -81288,34 +71896,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                     return true;
                 }
                 if ((item == this._parent.DschBlk))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Loc))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Auto))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -81349,41 +71929,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                     array[arrayIndex] = this._parent.DschBlk;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Loc != null))
-                {
-                    array[arrayIndex] = this._parent.Loc;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Auto != null))
-                {
-                    array[arrayIndex] = this._parent.Auto;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -81413,41 +71958,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                     this._parent.DschBlk = null;
                     return true;
                 }
-                if ((this._parent.Loc == item))
-                {
-                    this._parent.Loc = null;
-                    return true;
-                }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Auto == item))
-                {
-                    this._parent.Auto = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -81457,7 +71967,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.TapChg).Concat(this._parent.VOvSt).Concat(this._parent.NeutAlm).Concat(this._parent.DschBlk).Concat(this._parent.Loc).Concat(this._parent.OpCntRs).Concat(this._parent.Auto).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.TapChg).Concat(this._parent.VOvSt).Concat(this._parent.NeutAlm).Concat(this._parent.DschBlk).GetEnumerator();
             }
         }
         
@@ -83537,34 +74047,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             {
                 return this.TapBlkL;
             }
-            if ((reference == "LOC"))
-            {
-                return this.Loc;
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "AUTO"))
-            {
-                return this.Auto;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -83730,41 +74212,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                 this.TapBlkL = ((IASG)(value));
                 return;
             }
-            if ((feature == "LOC"))
-            {
-                this.Loc = ((ISPS)(value));
-                return;
-            }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "AUTO"))
-            {
-                this.Auto = ((ISPS)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -83898,34 +74345,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             if ((reference == "TAPBLKL"))
             {
                 return new ATCCTapBlkLProxy(this);
-            }
-            if ((reference == "LOC"))
-            {
-                return new GroupALocProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupAOpCntRsProxy(this);
-            }
-            if ((reference == "AUTO"))
-            {
-                return new GroupAAutoProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -84086,34 +74505,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Loc != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Auto != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -84155,14 +74546,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                         new ATCCLDCZProxy(this._parent),
                         new ATCCVRedValProxy(this._parent),
                         new ATCCTapBlkRProxy(this._parent),
-                        new ATCCTapBlkLProxy(this._parent),
-                        new GroupALocProxy(this._parent),
-                        new GroupAOpCntRsProxy(this._parent),
-                        new GroupAAutoProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new ATCCTapBlkLProxy(this._parent)};
             }
             
             /// <summary>
@@ -84450,69 +74834,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                         return;
                     }
                 }
-                if ((this._parent.Loc == null))
-                {
-                    ISPS locCasted = item.As<ISPS>();
-                    if ((locCasted != null))
-                    {
-                        this._parent.Loc = locCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Auto == null))
-                {
-                    ISPS autoCasted = item.As<ISPS>();
-                    if ((autoCasted != null))
-                    {
-                        this._parent.Auto = autoCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -84551,13 +74872,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                 this._parent.VRedVal = null;
                 this._parent.TapBlkR = null;
                 this._parent.TapBlkL = null;
-                this._parent.Loc = null;
-                this._parent.OpCntRs = null;
-                this._parent.Auto = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -84688,34 +75002,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                     return true;
                 }
                 if ((item == this._parent.TapBlkL))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Loc))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Auto))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -84884,41 +75170,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                     array[arrayIndex] = this._parent.TapBlkL;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Loc != null))
-                {
-                    array[arrayIndex] = this._parent.Loc;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Auto != null))
-                {
-                    array[arrayIndex] = this._parent.Auto;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -85083,41 +75334,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                     this._parent.TapBlkL = null;
                     return true;
                 }
-                if ((this._parent.Loc == item))
-                {
-                    this._parent.Loc = null;
-                    return true;
-                }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Auto == item))
-                {
-                    this._parent.Auto = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -85127,7 +75343,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.TapChg).Concat(this._parent.TapPos).Concat(this._parent.ParOp).Concat(this._parent.LTCBlk).Concat(this._parent.LTCDragRs).Concat(this._parent.VRed1).Concat(this._parent.VRed2).Concat(this._parent.CtlV).Concat(this._parent.LodA).Concat(this._parent.CircA).Concat(this._parent.PhAng).Concat(this._parent.HiCtlV).Concat(this._parent.LoCtlV).Concat(this._parent.HiDmdA).Concat(this._parent.HiTapPos).Concat(this._parent.LoTapPos).Concat(this._parent.BndCtr).Concat(this._parent.BndWid).Concat(this._parent.CtlDlTmms).Concat(this._parent.LDCR).Concat(this._parent.LDCX).Concat(this._parent.BlkLV).Concat(this._parent.BlkRV).Concat(this._parent.RnbkRV).Concat(this._parent.LimLodA).Concat(this._parent.LDC).Concat(this._parent.TmDlChr).Concat(this._parent.LDCZ).Concat(this._parent.VRedVal).Concat(this._parent.TapBlkR).Concat(this._parent.TapBlkL).Concat(this._parent.Loc).Concat(this._parent.OpCntRs).Concat(this._parent.Auto).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.TapChg).Concat(this._parent.TapPos).Concat(this._parent.ParOp).Concat(this._parent.LTCBlk).Concat(this._parent.LTCDragRs).Concat(this._parent.VRed1).Concat(this._parent.VRed2).Concat(this._parent.CtlV).Concat(this._parent.LodA).Concat(this._parent.CircA).Concat(this._parent.PhAng).Concat(this._parent.HiCtlV).Concat(this._parent.LoCtlV).Concat(this._parent.HiDmdA).Concat(this._parent.HiTapPos).Concat(this._parent.LoTapPos).Concat(this._parent.BndCtr).Concat(this._parent.BndWid).Concat(this._parent.CtlDlTmms).Concat(this._parent.LDCR).Concat(this._parent.LDCX).Concat(this._parent.BlkLV).Concat(this._parent.BlkRV).Concat(this._parent.RnbkRV).Concat(this._parent.LimLodA).Concat(this._parent.LDC).Concat(this._parent.TmDlChr).Concat(this._parent.LDCZ).Concat(this._parent.VRedVal).Concat(this._parent.TapBlkR).Concat(this._parent.TapBlkL).GetEnumerator();
             }
         }
         
@@ -86494,34 +76710,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             {
                 return this.LimVOv;
             }
-            if ((reference == "LOC"))
-            {
-                return this.Loc;
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return this.OpCntRs;
-            }
-            if ((reference == "AUTO"))
-            {
-                return this.Auto;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -86562,41 +76750,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                 this.LimVOv = ((IASG)(value));
                 return;
             }
-            if ((feature == "LOC"))
-            {
-                this.Loc = ((ISPS)(value));
-                return;
-            }
-            if ((feature == "OPCNTRS"))
-            {
-                this.OpCntRs = ((IINC)(value));
-                return;
-            }
-            if ((feature == "AUTO"))
-            {
-                this.Auto = ((ISPS)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -86630,34 +76783,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             if ((reference == "LIMVOV"))
             {
                 return new AVCOLimVOvProxy(this);
-            }
-            if ((reference == "LOC"))
-            {
-                return new GroupALocProxy(this);
-            }
-            if ((reference == "OPCNTRS"))
-            {
-                return new GroupAOpCntRsProxy(this);
-            }
-            if ((reference == "AUTO"))
-            {
-                return new GroupAAutoProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -86718,34 +76843,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Loc != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.OpCntRs != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Auto != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -86762,14 +76859,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                         new AVCOBlkAOvProxy(this._parent),
                         new AVCOBlkVOvProxy(this._parent),
                         new AVCOLimAOvProxy(this._parent),
-                        new AVCOLimVOvProxy(this._parent),
-                        new GroupALocProxy(this._parent),
-                        new GroupAOpCntRsProxy(this._parent),
-                        new GroupAAutoProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new AVCOLimVOvProxy(this._parent)};
             }
             
             /// <summary>
@@ -86832,69 +76922,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                         return;
                     }
                 }
-                if ((this._parent.Loc == null))
-                {
-                    ISPS locCasted = item.As<ISPS>();
-                    if ((locCasted != null))
-                    {
-                        this._parent.Loc = locCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.OpCntRs == null))
-                {
-                    IINC opCntRsCasted = item.As<IINC>();
-                    if ((opCntRsCasted != null))
-                    {
-                        this._parent.OpCntRs = opCntRsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Auto == null))
-                {
-                    ISPS autoCasted = item.As<ISPS>();
-                    if ((autoCasted != null))
-                    {
-                        this._parent.Auto = autoCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -86908,13 +76935,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                 this._parent.BlkVOv = null;
                 this._parent.LimAOv = null;
                 this._parent.LimVOv = null;
-                this._parent.Loc = null;
-                this._parent.OpCntRs = null;
-                this._parent.Auto = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -86945,34 +76965,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                     return true;
                 }
                 if ((item == this._parent.LimVOv))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Loc))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCntRs))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Auto))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -87016,41 +77008,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                     array[arrayIndex] = this._parent.LimVOv;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Loc != null))
-                {
-                    array[arrayIndex] = this._parent.Loc;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.OpCntRs != null))
-                {
-                    array[arrayIndex] = this._parent.OpCntRs;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Auto != null))
-                {
-                    array[arrayIndex] = this._parent.Auto;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -87090,41 +77047,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
                     this._parent.LimVOv = null;
                     return true;
                 }
-                if ((this._parent.Loc == item))
-                {
-                    this._parent.Loc = null;
-                    return true;
-                }
-                if ((this._parent.OpCntRs == item))
-                {
-                    this._parent.OpCntRs = null;
-                    return true;
-                }
-                if ((this._parent.Auto == item))
-                {
-                    this._parent.Auto = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -87134,7 +77056,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.TapChg).Concat(this._parent.BlkEF).Concat(this._parent.BlkAOv).Concat(this._parent.BlkVOv).Concat(this._parent.LimAOv).Concat(this._parent.LimVOv).Concat(this._parent.Loc).Concat(this._parent.OpCntRs).Concat(this._parent.Auto).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.TapChg).Concat(this._parent.BlkEF).Concat(this._parent.BlkAOv).Concat(this._parent.BlkVOv).Concat(this._parent.LimAOv).Concat(this._parent.LimVOv).GetEnumerator();
             }
         }
         
@@ -87922,89 +77844,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         private static IClass _classInstance;
         
         /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given reference
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="reference">The requested reference in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<NMF.Models.IModelElement> GetExpressionForReference(string reference)
-        {
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
-            }
-            return base.GetExpressionForReference(reference);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -88290,22 +78129,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             {
                 return this.Amp3;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -88336,26 +78159,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this.Amp3 = ((ISAV)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -88381,22 +78184,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             if ((reference == "AMP3"))
             {
                 return new MDIFAmp3Proxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -88449,22 +78236,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -88479,11 +78250,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                         new MDIFOpARemProxy(this._parent),
                         new MDIFAmp1Proxy(this._parent),
                         new MDIFAmp2Proxy(this._parent),
-                        new MDIFAmp3Proxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new MDIFAmp3Proxy(this._parent)};
             }
             
             /// <summary>
@@ -88528,42 +78295,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -88575,10 +78306,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this._parent.Amp1 = null;
                 this._parent.Amp2 = null;
                 this._parent.Amp3 = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -88601,22 +78328,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     return true;
                 }
                 if ((item == this._parent.Amp3))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -88650,26 +78361,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     array[arrayIndex] = this._parent.Amp3;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -88699,26 +78390,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     this._parent.Amp3 = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -88728,7 +78399,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpARem).Concat(this._parent.Amp1).Concat(this._parent.Amp2).Concat(this._parent.Amp3).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpARem).Concat(this._parent.Amp1).Concat(this._parent.Amp2).Concat(this._parent.Amp3).GetEnumerator();
             }
         }
         
@@ -91217,22 +80888,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             {
                 return this.NomA;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -91443,26 +81098,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this.NomA = ((IASG)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             if ((feature == "EEHEALTH"))
             {
                 this.EEHealth = ((HealthStateKind)(value));
@@ -91639,22 +81274,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             if ((reference == "NOMA"))
             {
                 return new MHAINomAProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -91839,22 +81458,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -91902,11 +81505,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                         new MHAIThdVValProxy(this._parent),
                         new MHAIThdATmmsProxy(this._parent),
                         new MHAIThdVTmmsProxy(this._parent),
-                        new MHAINomAProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new MHAINomAProxy(this._parent)};
             }
             
             /// <summary>
@@ -92248,42 +81847,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -92328,10 +81891,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this._parent.ThdATmms = null;
                 this._parent.ThdVTmms = null;
                 this._parent.NomA = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -92486,22 +82045,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     return true;
                 }
                 if ((item == this._parent.NomA))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -92700,26 +82243,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     array[arrayIndex] = this._parent.NomA;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -92914,26 +82437,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     this._parent.NomA = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -92943,7 +82446,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.EEName).Concat(this._parent.Hz).Concat(this._parent.HA).Concat(this._parent.HPhV).Concat(this._parent.HPPV).Concat(this._parent.HW).Concat(this._parent.HVAr).Concat(this._parent.HVA).Concat(this._parent.HRmsA).Concat(this._parent.HRmsPhV).Concat(this._parent.HRmsPPV).Concat(this._parent.HTuW).Concat(this._parent.HTsW).Concat(this._parent.HATm).Concat(this._parent.HKf).Concat(this._parent.HTdf).Concat(this._parent.ThdA).Concat(this._parent.ThdOddA).Concat(this._parent.ThdEvnA).Concat(this._parent.ThdPhV).Concat(this._parent.ThdOddPhV).Concat(this._parent.ThdEvnV).Concat(this._parent.ThdPPV).Concat(this._parent.ThdOddPPV).Concat(this._parent.ThdEvnPPV).Concat(this._parent.HCfPhV).Concat(this._parent.HCfPPV).Concat(this._parent.HCfA).Concat(this._parent.HTif).Concat(this._parent.HzSet).Concat(this._parent.EvTmms).Concat(this._parent.NumCyc).Concat(this._parent.ThdAVal).Concat(this._parent.ThdVVal).Concat(this._parent.ThdATmms).Concat(this._parent.ThdVTmms).Concat(this._parent.NomA).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.EEName).Concat(this._parent.Hz).Concat(this._parent.HA).Concat(this._parent.HPhV).Concat(this._parent.HPPV).Concat(this._parent.HW).Concat(this._parent.HVAr).Concat(this._parent.HVA).Concat(this._parent.HRmsA).Concat(this._parent.HRmsPhV).Concat(this._parent.HRmsPPV).Concat(this._parent.HTuW).Concat(this._parent.HTsW).Concat(this._parent.HATm).Concat(this._parent.HKf).Concat(this._parent.HTdf).Concat(this._parent.ThdA).Concat(this._parent.ThdOddA).Concat(this._parent.ThdEvnA).Concat(this._parent.ThdPhV).Concat(this._parent.ThdOddPhV).Concat(this._parent.ThdEvnV).Concat(this._parent.ThdPPV).Concat(this._parent.ThdOddPPV).Concat(this._parent.ThdEvnPPV).Concat(this._parent.HCfPhV).Concat(this._parent.HCfPPV).Concat(this._parent.HCfA).Concat(this._parent.HTif).Concat(this._parent.HzSet).Concat(this._parent.EvTmms).Concat(this._parent.NumCyc).Concat(this._parent.ThdAVal).Concat(this._parent.ThdVVal).Concat(this._parent.ThdATmms).Concat(this._parent.ThdVTmms).Concat(this._parent.NomA).GetEnumerator();
             }
         }
         
@@ -96300,22 +85803,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             {
                 return this.NomA;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -96511,26 +85998,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this.NomA = ((IASG)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             if ((feature == "EEHEALTH"))
             {
                 this.EEHealth = ((HealthStateKind)(value));
@@ -96695,22 +86162,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             if ((reference == "NOMA"))
             {
                 return new MHANNomAProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -96883,22 +86334,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -96943,11 +86378,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                         new MHANThdVValProxy(this._parent),
                         new MHANThdATmmsProxy(this._parent),
                         new MHANThdVTmmsProxy(this._parent),
-                        new MHANNomAProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new MHANNomAProxy(this._parent)};
             }
             
             /// <summary>
@@ -97262,42 +86693,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -97339,10 +86734,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this._parent.ThdATmms = null;
                 this._parent.ThdVTmms = null;
                 this._parent.NomA = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -97485,22 +86876,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     return true;
                 }
                 if ((item == this._parent.NomA))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -97684,26 +87059,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     array[arrayIndex] = this._parent.NomA;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -97883,26 +87238,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     this._parent.NomA = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -97912,7 +87247,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.EEName).Concat(this._parent.Hz).Concat(this._parent.HaAmp).Concat(this._parent.HaVol).Concat(this._parent.HaWatt).Concat(this._parent.HaVolAmpr).Concat(this._parent.HaVolAmp).Concat(this._parent.HaRmsAmp).Concat(this._parent.HaRmsVol).Concat(this._parent.HaTuWatt).Concat(this._parent.HaTsWatt).Concat(this._parent.HaAmpTm).Concat(this._parent.HaKFact).Concat(this._parent.HaTdFact).Concat(this._parent.ThdAmp).Concat(this._parent.ThdOddAmp).Concat(this._parent.ThdEvnAmp).Concat(this._parent.TddAmp).Concat(this._parent.TddOddAmp).Concat(this._parent.TddEvnAmp).Concat(this._parent.ThdVol).Concat(this._parent.ThdOddVol).Concat(this._parent.ThdEvnVol).Concat(this._parent.HaCfAmp).Concat(this._parent.HaCfVol).Concat(this._parent.HaTiFact).Concat(this._parent.HzSet).Concat(this._parent.EvTmms).Concat(this._parent.NumCyc).Concat(this._parent.ThdAVal).Concat(this._parent.ThdVVal).Concat(this._parent.ThdATmms).Concat(this._parent.ThdVTmms).Concat(this._parent.NomA).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.EEName).Concat(this._parent.Hz).Concat(this._parent.HaAmp).Concat(this._parent.HaVol).Concat(this._parent.HaWatt).Concat(this._parent.HaVolAmpr).Concat(this._parent.HaVolAmp).Concat(this._parent.HaRmsAmp).Concat(this._parent.HaRmsVol).Concat(this._parent.HaTuWatt).Concat(this._parent.HaTsWatt).Concat(this._parent.HaAmpTm).Concat(this._parent.HaKFact).Concat(this._parent.HaTdFact).Concat(this._parent.ThdAmp).Concat(this._parent.ThdOddAmp).Concat(this._parent.ThdEvnAmp).Concat(this._parent.TddAmp).Concat(this._parent.TddOddAmp).Concat(this._parent.TddEvnAmp).Concat(this._parent.ThdVol).Concat(this._parent.ThdOddVol).Concat(this._parent.ThdEvnVol).Concat(this._parent.HaCfAmp).Concat(this._parent.HaCfVol).Concat(this._parent.HaTiFact).Concat(this._parent.HzSet).Concat(this._parent.EvTmms).Concat(this._parent.NumCyc).Concat(this._parent.ThdAVal).Concat(this._parent.ThdVVal).Concat(this._parent.ThdATmms).Concat(this._parent.ThdVTmms).Concat(this._parent.NomA).GetEnumerator();
             }
         }
         
@@ -99874,22 +89209,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             {
                 return this.Z;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -99980,26 +89299,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this.Z = ((IWYE)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             if ((feature == "EEHEALTH"))
             {
                 this.EEHealth = ((HealthStateKind)(value));
@@ -100080,22 +89379,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             if ((reference == "Z"))
             {
                 return new MMXUZProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -100184,22 +89467,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -100223,11 +89490,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                         new MMXUVArProxy(this._parent),
                         new MMXUVAProxy(this._parent),
                         new MMXUPFProxy(this._parent),
-                        new MMXUZProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new MMXUZProxy(this._parent)};
             }
             
             /// <summary>
@@ -100353,42 +89616,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -100409,10 +89636,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this._parent.VA = null;
                 this._parent.PF = null;
                 this._parent.Z = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -100471,22 +89694,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     return true;
                 }
                 if ((item == this._parent.Z))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -100565,26 +89772,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     array[arrayIndex] = this._parent.Z;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -100659,26 +89846,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     this._parent.Z = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -100688,7 +89855,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.TotW).Concat(this._parent.TotVAr).Concat(this._parent.TotVA).Concat(this._parent.TotPF).Concat(this._parent.Hz).Concat(this._parent.PPV).Concat(this._parent.PhV).Concat(this._parent.A).Concat(this._parent.W).Concat(this._parent.VAr).Concat(this._parent.VA).Concat(this._parent.PF).Concat(this._parent.Z).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.TotW).Concat(this._parent.TotVAr).Concat(this._parent.TotVA).Concat(this._parent.TotPF).Concat(this._parent.Hz).Concat(this._parent.PPV).Concat(this._parent.PhV).Concat(this._parent.A).Concat(this._parent.W).Concat(this._parent.VAr).Concat(this._parent.VA).Concat(this._parent.PF).Concat(this._parent.Z).GetEnumerator();
             }
         }
         
@@ -102061,22 +91228,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             {
                 return this.MaxImbV;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -102172,26 +91323,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this.MaxImbV = ((IWYE)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             if ((feature == "EEHEALTH"))
             {
                 this.EEHealth = ((HealthStateKind)(value));
@@ -102276,22 +91407,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             if ((reference == "MAXIMBV"))
             {
                 return new MSQIMaxImbVProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -102384,22 +91499,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -102424,11 +91523,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                         new MSQIImbZroVProxy(this._parent),
                         new MSQIMaxImbAProxy(this._parent),
                         new MSQIMaxImbPPVProxy(this._parent),
-                        new MSQIMaxImbVProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new MSQIMaxImbVProxy(this._parent)};
             }
             
             /// <summary>
@@ -102563,42 +91658,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -102620,10 +91679,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this._parent.MaxImbA = null;
                 this._parent.MaxImbPPV = null;
                 this._parent.MaxImbV = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -102686,22 +91741,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     return true;
                 }
                 if ((item == this._parent.MaxImbV))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -102785,26 +91824,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     array[arrayIndex] = this._parent.MaxImbV;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -102884,26 +91903,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     this._parent.MaxImbV = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -102913,7 +91912,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.EEName).Concat(this._parent.SeqA).Concat(this._parent.SeqV).Concat(this._parent.DQ0Seq).Concat(this._parent.ImbA).Concat(this._parent.ImbNgA).Concat(this._parent.ImbNgV).Concat(this._parent.ImbPPV).Concat(this._parent.ImbV).Concat(this._parent.ImbZroA).Concat(this._parent.ImbZroV).Concat(this._parent.MaxImbA).Concat(this._parent.MaxImbPPV).Concat(this._parent.MaxImbV).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.EEName).Concat(this._parent.SeqA).Concat(this._parent.SeqV).Concat(this._parent.DQ0Seq).Concat(this._parent.ImbA).Concat(this._parent.ImbNgA).Concat(this._parent.ImbNgV).Concat(this._parent.ImbPPV).Concat(this._parent.ImbV).Concat(this._parent.ImbZroA).Concat(this._parent.ImbZroV).Concat(this._parent.MaxImbA).Concat(this._parent.MaxImbPPV).Concat(this._parent.MaxImbV).GetEnumerator();
             }
         }
         
@@ -103945,22 +92944,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             {
                 return this.DmdVArh;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -104026,26 +93009,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this.DmdVArh = ((IBCR)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             if ((feature == "EEHEALTH"))
             {
                 this.EEHealth = ((HealthStateKind)(value));
@@ -104106,22 +93069,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             if ((reference == "DMDVARH"))
             {
                 return new MMTRDmdVArhProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -104190,22 +93137,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -104224,11 +93155,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                         new MMTRSupWhProxy(this._parent),
                         new MMTRSupVArhProxy(this._parent),
                         new MMTRDmdWhProxy(this._parent),
-                        new MMTRDmdVArhProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new MMTRDmdVArhProxy(this._parent)};
             }
             
             /// <summary>
@@ -104309,42 +93236,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -104360,10 +93251,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this._parent.SupVArh = null;
                 this._parent.DmdWh = null;
                 this._parent.DmdVArh = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -104402,22 +93289,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     return true;
                 }
                 if ((item == this._parent.DmdVArh))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -104471,26 +93342,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     array[arrayIndex] = this._parent.DmdVArh;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -104540,26 +93391,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     this._parent.DmdVArh = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -104569,7 +93400,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.EEName).Concat(this._parent.TotVAh).Concat(this._parent.TotWh).Concat(this._parent.TotVArh).Concat(this._parent.SupWh).Concat(this._parent.SupVArh).Concat(this._parent.DmdWh).Concat(this._parent.DmdVArh).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.EEName).Concat(this._parent.TotVAh).Concat(this._parent.TotWh).Concat(this._parent.TotVArh).Concat(this._parent.SupWh).Concat(this._parent.SupVArh).Concat(this._parent.DmdWh).Concat(this._parent.DmdVArh).GetEnumerator();
             }
         }
         
@@ -105477,22 +94308,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             {
                 return this.Hz;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -105563,26 +94378,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this.Hz = ((IMV)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             if ((feature == "EEHEALTH"))
             {
                 this.EEHealth = ((HealthStateKind)(value));
@@ -105647,22 +94442,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             if ((reference == "HZ"))
             {
                 return new MMXNHzProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -105735,22 +94514,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -105770,11 +94533,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                         new MMXNVolAmpProxy(this._parent),
                         new MMXNPwrFactProxy(this._parent),
                         new MMXNImpProxy(this._parent),
-                        new MMXNHzProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new MMXNHzProxy(this._parent)};
             }
             
             /// <summary>
@@ -105864,42 +94623,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -105916,10 +94639,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this._parent.PwrFact = null;
                 this._parent.Imp = null;
                 this._parent.Hz = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -105962,22 +94681,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     return true;
                 }
                 if ((item == this._parent.Hz))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -106036,26 +94739,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     array[arrayIndex] = this._parent.Hz;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -106110,26 +94793,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     this._parent.Hz = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -106139,7 +94802,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.EEName).Concat(this._parent.Amp).Concat(this._parent.Vol).Concat(this._parent.Watt).Concat(this._parent.VolAmpr).Concat(this._parent.VolAmp).Concat(this._parent.PwrFact).Concat(this._parent.Imp).Concat(this._parent.Hz).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.EEName).Concat(this._parent.Amp).Concat(this._parent.Vol).Concat(this._parent.Watt).Concat(this._parent.VolAmpr).Concat(this._parent.VolAmp).Concat(this._parent.PwrFact).Concat(this._parent.Imp).Concat(this._parent.Hz).GetEnumerator();
             }
         }
         
@@ -107636,22 +96299,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             {
                 return this.EvTmms;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -107767,26 +96414,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this.EvTmms = ((IASG)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             if ((feature == "EEHEALTH"))
             {
                 this.EEHealth = ((HealthStateKind)(value));
@@ -107887,22 +96514,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             if ((reference == "EVTMMS"))
             {
                 return new MSTAEvTmmsProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -108011,22 +96622,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -108055,11 +96650,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                         new MSTAMaxVArProxy(this._parent),
                         new MSTAMinVArProxy(this._parent),
                         new MSTAEvStrProxy(this._parent),
-                        new MSTAEvTmmsProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new MSTAEvTmmsProxy(this._parent)};
             }
             
             /// <summary>
@@ -108230,42 +96821,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -108291,10 +96846,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                 this._parent.MinVAr = null;
                 this._parent.EvStr = null;
                 this._parent.EvTmms = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -108373,22 +96924,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     return true;
                 }
                 if ((item == this._parent.EvTmms))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -108492,26 +97027,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     array[arrayIndex] = this._parent.EvTmms;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -108611,26 +97126,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
                     this._parent.EvTmms = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -108640,7 +97135,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.EEName).Concat(this._parent.AvAmps).Concat(this._parent.MaxAmps).Concat(this._parent.MinAmps).Concat(this._parent.AvVolts).Concat(this._parent.MaxVolts).Concat(this._parent.MinVolts).Concat(this._parent.AvVA).Concat(this._parent.MaxVA).Concat(this._parent.MinVA).Concat(this._parent.AvW).Concat(this._parent.MaxW).Concat(this._parent.MinW).Concat(this._parent.AvVAr).Concat(this._parent.MaxVAr).Concat(this._parent.MinVAr).Concat(this._parent.EvStr).Concat(this._parent.EvTmms).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.EEName).Concat(this._parent.AvAmps).Concat(this._parent.MaxAmps).Concat(this._parent.MinAmps).Concat(this._parent.AvVolts).Concat(this._parent.MaxVolts).Concat(this._parent.MinVolts).Concat(this._parent.AvVA).Concat(this._parent.MaxVA).Concat(this._parent.MinVA).Concat(this._parent.AvW).Concat(this._parent.MaxW).Concat(this._parent.MinW).Concat(this._parent.AvVAr).Concat(this._parent.MaxVAr).Concat(this._parent.MinVAr).Concat(this._parent.EvStr).Concat(this._parent.EvTmms).GetEnumerator();
             }
         }
         
@@ -111424,22 +99919,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             {
                 return this.ChaMotEna;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -111500,26 +99979,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                 this.ChaMotEna = ((ISPC)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             if ((feature == "EEHEALTH"))
             {
                 this.EEHealth = ((HealthStateKind)(value));
@@ -111576,22 +100035,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             if ((reference == "CHAMOTENA"))
             {
                 return new GroupXChaMotEnaProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -111656,22 +100099,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -111689,11 +100116,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                         new GroupXPosProxy(this._parent),
                         new GroupXBlkOpnProxy(this._parent),
                         new GroupXBlkClsProxy(this._parent),
-                        new GroupXChaMotEnaProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new GroupXChaMotEnaProxy(this._parent)};
             }
             
             /// <summary>
@@ -111765,42 +100188,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -111815,10 +100202,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                 this._parent.BlkOpn = null;
                 this._parent.BlkCls = null;
                 this._parent.ChaMotEna = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -111853,22 +100236,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                     return true;
                 }
                 if ((item == this._parent.ChaMotEna))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -111917,26 +100284,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                     array[arrayIndex] = this._parent.ChaMotEna;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -111981,26 +100328,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                     this._parent.ChaMotEna = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -112010,7 +100337,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Loc).Concat(this._parent.EEName).Concat(this._parent.OpCnt).Concat(this._parent.Pos).Concat(this._parent.BlkOpn).Concat(this._parent.BlkCls).Concat(this._parent.ChaMotEna).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Loc).Concat(this._parent.EEName).Concat(this._parent.OpCnt).Concat(this._parent.Pos).Concat(this._parent.BlkOpn).Concat(this._parent.BlkCls).Concat(this._parent.ChaMotEna).GetEnumerator();
             }
         }
         
@@ -112577,50 +100904,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             {
                 return this.SwitchControl;
             }
-            if ((reference == "LOC"))
-            {
-                return this.Loc;
-            }
-            if ((reference == "EENAME"))
-            {
-                return this.EEName;
-            }
-            if ((reference == "OPCNT"))
-            {
-                return this.OpCnt;
-            }
-            if ((reference == "POS"))
-            {
-                return this.Pos;
-            }
-            if ((reference == "BLKOPN"))
-            {
-                return this.BlkOpn;
-            }
-            if ((reference == "BLKCLS"))
-            {
-                return this.BlkCls;
-            }
-            if ((reference == "CHAMOTENA"))
-            {
-                return this.ChaMotEna;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -112635,10 +100918,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             if ((attribute == "POWCAP"))
             {
                 return this.POWCap;
-            }
-            if ((attribute == "EEHEALTH"))
-            {
-                return this.EEHealth;
             }
             return base.GetAttributeValue(attribute, index);
         }
@@ -112670,69 +100949,9 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                 this.SwitchControl = ((ICSWI)(value));
                 return;
             }
-            if ((feature == "LOC"))
-            {
-                this.Loc = ((ISPS)(value));
-                return;
-            }
-            if ((feature == "EENAME"))
-            {
-                this.EEName = ((IDPL)(value));
-                return;
-            }
-            if ((feature == "OPCNT"))
-            {
-                this.OpCnt = ((IINS)(value));
-                return;
-            }
-            if ((feature == "POS"))
-            {
-                this.Pos = ((IDPC)(value));
-                return;
-            }
-            if ((feature == "BLKOPN"))
-            {
-                this.BlkOpn = ((ISPC)(value));
-                return;
-            }
-            if ((feature == "BLKCLS"))
-            {
-                this.BlkCls = ((ISPC)(value));
-                return;
-            }
-            if ((feature == "CHAMOTENA"))
-            {
-                this.ChaMotEna = ((ISPC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             if ((feature == "POWCAP"))
             {
                 this.POWCap = ((SwitchingCapabilityKind)(value));
-                return;
-            }
-            if ((feature == "EEHEALTH"))
-            {
-                this.EEHealth = ((HealthStateKind)(value));
                 return;
             }
             base.SetFeature(feature, value);
@@ -112748,10 +100967,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             if ((attribute == "POWCAP"))
             {
                 return Observable.Box(new XCBRPOWCapProxy(this));
-            }
-            if ((attribute == "EEHEALTH"))
-            {
-                return Observable.Box(new GroupXEEHealthProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -112778,50 +100993,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             if ((reference == "SWITCHCONTROL"))
             {
                 return new XCBRSwitchControlProxy(this);
-            }
-            if ((reference == "LOC"))
-            {
-                return new GroupXLocProxy(this);
-            }
-            if ((reference == "EENAME"))
-            {
-                return new GroupXEENameProxy(this);
-            }
-            if ((reference == "OPCNT"))
-            {
-                return new GroupXOpCntProxy(this);
-            }
-            if ((reference == "POS"))
-            {
-                return new GroupXPosProxy(this);
-            }
-            if ((reference == "BLKOPN"))
-            {
-                return new GroupXBlkOpnProxy(this);
-            }
-            if ((reference == "BLKCLS"))
-            {
-                return new GroupXBlkClsProxy(this);
-            }
-            if ((reference == "CHAMOTENA"))
-            {
-                return new GroupXChaMotEnaProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -112874,50 +101045,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Loc != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.EEName != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.OpCnt != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Pos != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.BlkOpn != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.BlkCls != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.ChaMotEna != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -112932,18 +101059,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                         new XCBRSumSwARsProxy(this._parent),
                         new XCBRCBOpCapProxy(this._parent),
                         new XCBRMaxOpCapProxy(this._parent),
-                        new XCBRSwitchControlProxy(this._parent),
-                        new GroupXLocProxy(this._parent),
-                        new GroupXEENameProxy(this._parent),
-                        new GroupXOpCntProxy(this._parent),
-                        new GroupXPosProxy(this._parent),
-                        new GroupXBlkOpnProxy(this._parent),
-                        new GroupXBlkClsProxy(this._parent),
-                        new GroupXChaMotEnaProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new XCBRSwitchControlProxy(this._parent)};
             }
             
             /// <summary>
@@ -112988,105 +101104,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                         return;
                     }
                 }
-                if ((this._parent.Loc == null))
-                {
-                    ISPS locCasted = item.As<ISPS>();
-                    if ((locCasted != null))
-                    {
-                        this._parent.Loc = locCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.EEName == null))
-                {
-                    IDPL eENameCasted = item.As<IDPL>();
-                    if ((eENameCasted != null))
-                    {
-                        this._parent.EEName = eENameCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.OpCnt == null))
-                {
-                    IINS opCntCasted = item.As<IINS>();
-                    if ((opCntCasted != null))
-                    {
-                        this._parent.OpCnt = opCntCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Pos == null))
-                {
-                    IDPC posCasted = item.As<IDPC>();
-                    if ((posCasted != null))
-                    {
-                        this._parent.Pos = posCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.BlkOpn == null))
-                {
-                    ISPC blkOpnCasted = item.As<ISPC>();
-                    if ((blkOpnCasted != null))
-                    {
-                        this._parent.BlkOpn = blkOpnCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.BlkCls == null))
-                {
-                    ISPC blkClsCasted = item.As<ISPC>();
-                    if ((blkClsCasted != null))
-                    {
-                        this._parent.BlkCls = blkClsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.ChaMotEna == null))
-                {
-                    ISPC chaMotEnaCasted = item.As<ISPC>();
-                    if ((chaMotEnaCasted != null))
-                    {
-                        this._parent.ChaMotEna = chaMotEnaCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -113098,17 +101115,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                 this._parent.CBOpCap = null;
                 this._parent.MaxOpCap = null;
                 this._parent.SwitchControl = null;
-                this._parent.Loc = null;
-                this._parent.EEName = null;
-                this._parent.OpCnt = null;
-                this._parent.Pos = null;
-                this._parent.BlkOpn = null;
-                this._parent.BlkCls = null;
-                this._parent.ChaMotEna = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -113131,50 +101137,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                     return true;
                 }
                 if ((item == this._parent.SwitchControl))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Loc))
-                {
-                    return true;
-                }
-                if ((item == this._parent.EEName))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCnt))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Pos))
-                {
-                    return true;
-                }
-                if ((item == this._parent.BlkOpn))
-                {
-                    return true;
-                }
-                if ((item == this._parent.BlkCls))
-                {
-                    return true;
-                }
-                if ((item == this._parent.ChaMotEna))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -113208,61 +101170,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                     array[arrayIndex] = this._parent.SwitchControl;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Loc != null))
-                {
-                    array[arrayIndex] = this._parent.Loc;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.EEName != null))
-                {
-                    array[arrayIndex] = this._parent.EEName;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.OpCnt != null))
-                {
-                    array[arrayIndex] = this._parent.OpCnt;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Pos != null))
-                {
-                    array[arrayIndex] = this._parent.Pos;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.BlkOpn != null))
-                {
-                    array[arrayIndex] = this._parent.BlkOpn;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.BlkCls != null))
-                {
-                    array[arrayIndex] = this._parent.BlkCls;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.ChaMotEna != null))
-                {
-                    array[arrayIndex] = this._parent.ChaMotEna;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -113292,61 +101199,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                     this._parent.SwitchControl = null;
                     return true;
                 }
-                if ((this._parent.Loc == item))
-                {
-                    this._parent.Loc = null;
-                    return true;
-                }
-                if ((this._parent.EEName == item))
-                {
-                    this._parent.EEName = null;
-                    return true;
-                }
-                if ((this._parent.OpCnt == item))
-                {
-                    this._parent.OpCnt = null;
-                    return true;
-                }
-                if ((this._parent.Pos == item))
-                {
-                    this._parent.Pos = null;
-                    return true;
-                }
-                if ((this._parent.BlkOpn == item))
-                {
-                    this._parent.BlkOpn = null;
-                    return true;
-                }
-                if ((this._parent.BlkCls == item))
-                {
-                    this._parent.BlkCls = null;
-                    return true;
-                }
-                if ((this._parent.ChaMotEna == item))
-                {
-                    this._parent.ChaMotEna = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -113356,7 +101208,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.SumSwARs).Concat(this._parent.CBOpCap).Concat(this._parent.MaxOpCap).Concat(this._parent.SwitchControl).Concat(this._parent.Loc).Concat(this._parent.EEName).Concat(this._parent.OpCnt).Concat(this._parent.Pos).Concat(this._parent.BlkOpn).Concat(this._parent.BlkCls).Concat(this._parent.ChaMotEna).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.SumSwARs).Concat(this._parent.CBOpCap).Concat(this._parent.MaxOpCap).Concat(this._parent.SwitchControl).GetEnumerator();
             }
         }
         
@@ -113718,50 +101570,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             {
                 return this.SwitchControl;
             }
-            if ((reference == "LOC"))
-            {
-                return this.Loc;
-            }
-            if ((reference == "EENAME"))
-            {
-                return this.EEName;
-            }
-            if ((reference == "OPCNT"))
-            {
-                return this.OpCnt;
-            }
-            if ((reference == "POS"))
-            {
-                return this.Pos;
-            }
-            if ((reference == "BLKOPN"))
-            {
-                return this.BlkOpn;
-            }
-            if ((reference == "BLKCLS"))
-            {
-                return this.BlkCls;
-            }
-            if ((reference == "CHAMOTENA"))
-            {
-                return this.ChaMotEna;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -113785,10 +101593,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             {
                 return this.SwTyp;
             }
-            if ((attribute == "EEHEALTH"))
-            {
-                return this.EEHealth;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -113804,61 +101608,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                 this.SwitchControl = ((ICSWI)(value));
                 return;
             }
-            if ((feature == "LOC"))
-            {
-                this.Loc = ((ISPS)(value));
-                return;
-            }
-            if ((feature == "EENAME"))
-            {
-                this.EEName = ((IDPL)(value));
-                return;
-            }
-            if ((feature == "OPCNT"))
-            {
-                this.OpCnt = ((IINS)(value));
-                return;
-            }
-            if ((feature == "POS"))
-            {
-                this.Pos = ((IDPC)(value));
-                return;
-            }
-            if ((feature == "BLKOPN"))
-            {
-                this.BlkOpn = ((ISPC)(value));
-                return;
-            }
-            if ((feature == "BLKCLS"))
-            {
-                this.BlkCls = ((ISPC)(value));
-                return;
-            }
-            if ((feature == "CHAMOTENA"))
-            {
-                this.ChaMotEna = ((ISPC)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             if ((feature == "SWOPCAP"))
             {
                 this.SwOpCap = ((SwitchingCapabilityKind)(value));
@@ -113872,11 +101621,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             if ((feature == "SWTYP"))
             {
                 this.SwTyp = ((SwitchTypeKind)(value));
-                return;
-            }
-            if ((feature == "EEHEALTH"))
-            {
-                this.EEHealth = ((HealthStateKind)(value));
                 return;
             }
             base.SetFeature(feature, value);
@@ -113901,10 +101645,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             {
                 return Observable.Box(new XSWISwTypProxy(this));
             }
-            if ((attribute == "EEHEALTH"))
-            {
-                return Observable.Box(new GroupXEEHealthProxy(this));
-            }
             return base.GetExpressionForAttribute(attribute);
         }
         
@@ -113918,50 +101658,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             if ((reference == "SWITCHCONTROL"))
             {
                 return new XSWISwitchControlProxy(this);
-            }
-            if ((reference == "LOC"))
-            {
-                return new GroupXLocProxy(this);
-            }
-            if ((reference == "EENAME"))
-            {
-                return new GroupXEENameProxy(this);
-            }
-            if ((reference == "OPCNT"))
-            {
-                return new GroupXOpCntProxy(this);
-            }
-            if ((reference == "POS"))
-            {
-                return new GroupXPosProxy(this);
-            }
-            if ((reference == "BLKOPN"))
-            {
-                return new GroupXBlkOpnProxy(this);
-            }
-            if ((reference == "BLKCLS"))
-            {
-                return new GroupXBlkClsProxy(this);
-            }
-            if ((reference == "CHAMOTENA"))
-            {
-                return new GroupXChaMotEnaProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -114002,50 +101698,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Loc != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.EEName != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.OpCnt != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Pos != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.BlkOpn != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.BlkCls != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.ChaMotEna != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -114057,18 +101709,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new XSWISwitchControlProxy(this._parent),
-                        new GroupXLocProxy(this._parent),
-                        new GroupXEENameProxy(this._parent),
-                        new GroupXOpCntProxy(this._parent),
-                        new GroupXPosProxy(this._parent),
-                        new GroupXBlkOpnProxy(this._parent),
-                        new GroupXBlkClsProxy(this._parent),
-                        new GroupXChaMotEnaProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new XSWISwitchControlProxy(this._parent)};
             }
             
             /// <summary>
@@ -114086,105 +101727,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                         return;
                     }
                 }
-                if ((this._parent.Loc == null))
-                {
-                    ISPS locCasted = item.As<ISPS>();
-                    if ((locCasted != null))
-                    {
-                        this._parent.Loc = locCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.EEName == null))
-                {
-                    IDPL eENameCasted = item.As<IDPL>();
-                    if ((eENameCasted != null))
-                    {
-                        this._parent.EEName = eENameCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.OpCnt == null))
-                {
-                    IINS opCntCasted = item.As<IINS>();
-                    if ((opCntCasted != null))
-                    {
-                        this._parent.OpCnt = opCntCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Pos == null))
-                {
-                    IDPC posCasted = item.As<IDPC>();
-                    if ((posCasted != null))
-                    {
-                        this._parent.Pos = posCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.BlkOpn == null))
-                {
-                    ISPC blkOpnCasted = item.As<ISPC>();
-                    if ((blkOpnCasted != null))
-                    {
-                        this._parent.BlkOpn = blkOpnCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.BlkCls == null))
-                {
-                    ISPC blkClsCasted = item.As<ISPC>();
-                    if ((blkClsCasted != null))
-                    {
-                        this._parent.BlkCls = blkClsCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.ChaMotEna == null))
-                {
-                    ISPC chaMotEnaCasted = item.As<ISPC>();
-                    if ((chaMotEnaCasted != null))
-                    {
-                        this._parent.ChaMotEna = chaMotEnaCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -114193,17 +101735,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             public override void Clear()
             {
                 this._parent.SwitchControl = null;
-                this._parent.Loc = null;
-                this._parent.EEName = null;
-                this._parent.OpCnt = null;
-                this._parent.Pos = null;
-                this._parent.BlkOpn = null;
-                this._parent.BlkCls = null;
-                this._parent.ChaMotEna = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -114214,50 +101745,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             public override bool Contains(IModelElement item)
             {
                 if ((item == this._parent.SwitchControl))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Loc))
-                {
-                    return true;
-                }
-                if ((item == this._parent.EEName))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpCnt))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Pos))
-                {
-                    return true;
-                }
-                if ((item == this._parent.BlkOpn))
-                {
-                    return true;
-                }
-                if ((item == this._parent.BlkCls))
-                {
-                    return true;
-                }
-                if ((item == this._parent.ChaMotEna))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -114276,61 +101763,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                     array[arrayIndex] = this._parent.SwitchControl;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Loc != null))
-                {
-                    array[arrayIndex] = this._parent.Loc;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.EEName != null))
-                {
-                    array[arrayIndex] = this._parent.EEName;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.OpCnt != null))
-                {
-                    array[arrayIndex] = this._parent.OpCnt;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Pos != null))
-                {
-                    array[arrayIndex] = this._parent.Pos;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.BlkOpn != null))
-                {
-                    array[arrayIndex] = this._parent.BlkOpn;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.BlkCls != null))
-                {
-                    array[arrayIndex] = this._parent.BlkCls;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.ChaMotEna != null))
-                {
-                    array[arrayIndex] = this._parent.ChaMotEna;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -114345,61 +101777,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
                     this._parent.SwitchControl = null;
                     return true;
                 }
-                if ((this._parent.Loc == item))
-                {
-                    this._parent.Loc = null;
-                    return true;
-                }
-                if ((this._parent.EEName == item))
-                {
-                    this._parent.EEName = null;
-                    return true;
-                }
-                if ((this._parent.OpCnt == item))
-                {
-                    this._parent.OpCnt = null;
-                    return true;
-                }
-                if ((this._parent.Pos == item))
-                {
-                    this._parent.Pos = null;
-                    return true;
-                }
-                if ((this._parent.BlkOpn == item))
-                {
-                    this._parent.BlkOpn = null;
-                    return true;
-                }
-                if ((this._parent.BlkCls == item))
-                {
-                    this._parent.BlkCls = null;
-                    return true;
-                }
-                if ((this._parent.ChaMotEna == item))
-                {
-                    this._parent.ChaMotEna = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -114409,7 +101786,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.SwitchControl).Concat(this._parent.Loc).Concat(this._parent.EEName).Concat(this._parent.OpCnt).Concat(this._parent.Pos).Concat(this._parent.BlkOpn).Concat(this._parent.BlkCls).Concat(this._parent.ChaMotEna).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.SwitchControl).GetEnumerator();
             }
         }
         
@@ -115214,22 +102591,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
             {
                 return this.AngCor;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -115285,26 +102646,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                 this.AngCor = ((IASG)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             if ((feature == "EEHEALTH"))
             {
                 this.EEHealth = ((HealthStateKind)(value));
@@ -115357,22 +102698,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
             if ((reference == "ANGCOR"))
             {
                 return new GroupTAngCorProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -115433,22 +102758,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -115465,11 +102774,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                         new GroupTHzRtgProxy(this._parent),
                         new GroupTRatProxy(this._parent),
                         new GroupTCorProxy(this._parent),
-                        new GroupTAngCorProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new GroupTAngCorProxy(this._parent)};
             }
             
             /// <summary>
@@ -115532,42 +102837,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -115581,10 +102850,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                 this._parent.Rat = null;
                 this._parent.Cor = null;
                 this._parent.AngCor = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -115615,22 +102880,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                     return true;
                 }
                 if ((item == this._parent.AngCor))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -115674,26 +102923,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                     array[arrayIndex] = this._parent.AngCor;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -115733,26 +102962,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                     this._parent.AngCor = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -115762,7 +102971,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.EEName).Concat(this._parent.OpTmh).Concat(this._parent.HzRtg).Concat(this._parent.Rat).Concat(this._parent.Cor).Concat(this._parent.AngCor).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.EEName).Concat(this._parent.OpTmh).Concat(this._parent.HzRtg).Concat(this._parent.Rat).Concat(this._parent.Cor).Concat(this._parent.AngCor).GetEnumerator();
             }
         }
         
@@ -116137,62 +103346,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
             {
                 return this.ARtg;
             }
-            if ((reference == "EENAME"))
-            {
-                return this.EEName;
-            }
-            if ((reference == "OPTMH"))
-            {
-                return this.OpTmh;
-            }
-            if ((reference == "HZRTG"))
-            {
-                return this.HzRtg;
-            }
-            if ((reference == "RAT"))
-            {
-                return this.Rat;
-            }
-            if ((reference == "COR"))
-            {
-                return this.Cor;
-            }
-            if ((reference == "ANGCOR"))
-            {
-                return this.AngCor;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "EEHEALTH"))
-            {
-                return this.EEHealth;
-            }
-            return base.GetAttributeValue(attribute, index);
         }
         
         /// <summary>
@@ -116212,76 +103366,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                 this.ARtg = ((IASG)(value));
                 return;
             }
-            if ((feature == "EENAME"))
-            {
-                this.EEName = ((IDPL)(value));
-                return;
-            }
-            if ((feature == "OPTMH"))
-            {
-                this.OpTmh = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HZRTG"))
-            {
-                this.HzRtg = ((IASG)(value));
-                return;
-            }
-            if ((feature == "RAT"))
-            {
-                this.Rat = ((IASG)(value));
-                return;
-            }
-            if ((feature == "COR"))
-            {
-                this.Cor = ((IASG)(value));
-                return;
-            }
-            if ((feature == "ANGCOR"))
-            {
-                this.AngCor = ((IASG)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
-            if ((feature == "EEHEALTH"))
-            {
-                this.EEHealth = ((HealthStateKind)(value));
-                return;
-            }
             base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "EEHEALTH"))
-            {
-                return Observable.Box(new GroupTEEHealthProxy(this));
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -116298,46 +103383,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
             if ((reference == "ARTG"))
             {
                 return new TCTRARtgProxy(this);
-            }
-            if ((reference == "EENAME"))
-            {
-                return new GroupTEENameProxy(this);
-            }
-            if ((reference == "OPTMH"))
-            {
-                return new GroupTOpTmhProxy(this);
-            }
-            if ((reference == "HZRTG"))
-            {
-                return new GroupTHzRtgProxy(this);
-            }
-            if ((reference == "RAT"))
-            {
-                return new GroupTRatProxy(this);
-            }
-            if ((reference == "COR"))
-            {
-                return new GroupTCorProxy(this);
-            }
-            if ((reference == "ANGCOR"))
-            {
-                return new GroupTAngCorProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -116382,46 +103427,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.EEName != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.OpTmh != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.HzRtg != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Rat != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Cor != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.AngCor != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -116434,17 +103439,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
             {
                 return new INotifiable[] {
                         new TCTRAmpProxy(this._parent),
-                        new TCTRARtgProxy(this._parent),
-                        new GroupTEENameProxy(this._parent),
-                        new GroupTOpTmhProxy(this._parent),
-                        new GroupTHzRtgProxy(this._parent),
-                        new GroupTRatProxy(this._parent),
-                        new GroupTCorProxy(this._parent),
-                        new GroupTAngCorProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new TCTRARtgProxy(this._parent)};
             }
             
             /// <summary>
@@ -116471,96 +103466,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                         return;
                     }
                 }
-                if ((this._parent.EEName == null))
-                {
-                    IDPL eENameCasted = item.As<IDPL>();
-                    if ((eENameCasted != null))
-                    {
-                        this._parent.EEName = eENameCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.OpTmh == null))
-                {
-                    IINS opTmhCasted = item.As<IINS>();
-                    if ((opTmhCasted != null))
-                    {
-                        this._parent.OpTmh = opTmhCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.HzRtg == null))
-                {
-                    IASG hzRtgCasted = item.As<IASG>();
-                    if ((hzRtgCasted != null))
-                    {
-                        this._parent.HzRtg = hzRtgCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Rat == null))
-                {
-                    IASG ratCasted = item.As<IASG>();
-                    if ((ratCasted != null))
-                    {
-                        this._parent.Rat = ratCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Cor == null))
-                {
-                    IASG corCasted = item.As<IASG>();
-                    if ((corCasted != null))
-                    {
-                        this._parent.Cor = corCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.AngCor == null))
-                {
-                    IASG angCorCasted = item.As<IASG>();
-                    if ((angCorCasted != null))
-                    {
-                        this._parent.AngCor = angCorCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -116570,16 +103475,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
             {
                 this._parent.Amp = null;
                 this._parent.ARtg = null;
-                this._parent.EEName = null;
-                this._parent.OpTmh = null;
-                this._parent.HzRtg = null;
-                this._parent.Rat = null;
-                this._parent.Cor = null;
-                this._parent.AngCor = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -116594,46 +103489,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                     return true;
                 }
                 if ((item == this._parent.ARtg))
-                {
-                    return true;
-                }
-                if ((item == this._parent.EEName))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpTmh))
-                {
-                    return true;
-                }
-                if ((item == this._parent.HzRtg))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Rat))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Cor))
-                {
-                    return true;
-                }
-                if ((item == this._parent.AngCor))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -116657,56 +103512,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                     array[arrayIndex] = this._parent.ARtg;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.EEName != null))
-                {
-                    array[arrayIndex] = this._parent.EEName;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.OpTmh != null))
-                {
-                    array[arrayIndex] = this._parent.OpTmh;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.HzRtg != null))
-                {
-                    array[arrayIndex] = this._parent.HzRtg;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Rat != null))
-                {
-                    array[arrayIndex] = this._parent.Rat;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Cor != null))
-                {
-                    array[arrayIndex] = this._parent.Cor;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.AngCor != null))
-                {
-                    array[arrayIndex] = this._parent.AngCor;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -116726,56 +103531,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                     this._parent.ARtg = null;
                     return true;
                 }
-                if ((this._parent.EEName == item))
-                {
-                    this._parent.EEName = null;
-                    return true;
-                }
-                if ((this._parent.OpTmh == item))
-                {
-                    this._parent.OpTmh = null;
-                    return true;
-                }
-                if ((this._parent.HzRtg == item))
-                {
-                    this._parent.HzRtg = null;
-                    return true;
-                }
-                if ((this._parent.Rat == item))
-                {
-                    this._parent.Rat = null;
-                    return true;
-                }
-                if ((this._parent.Cor == item))
-                {
-                    this._parent.Cor = null;
-                    return true;
-                }
-                if ((this._parent.AngCor == item))
-                {
-                    this._parent.AngCor = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -116785,7 +103540,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Amp).Concat(this._parent.ARtg).Concat(this._parent.EEName).Concat(this._parent.OpTmh).Concat(this._parent.HzRtg).Concat(this._parent.Rat).Concat(this._parent.Cor).Concat(this._parent.AngCor).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Amp).Concat(this._parent.ARtg).GetEnumerator();
             }
         }
         
@@ -117067,62 +103822,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
             {
                 return this.VRtg;
             }
-            if ((reference == "EENAME"))
-            {
-                return this.EEName;
-            }
-            if ((reference == "OPTMH"))
-            {
-                return this.OpTmh;
-            }
-            if ((reference == "HZRTG"))
-            {
-                return this.HzRtg;
-            }
-            if ((reference == "RAT"))
-            {
-                return this.Rat;
-            }
-            if ((reference == "COR"))
-            {
-                return this.Cor;
-            }
-            if ((reference == "ANGCOR"))
-            {
-                return this.AngCor;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "EEHEALTH"))
-            {
-                return this.EEHealth;
-            }
-            return base.GetAttributeValue(attribute, index);
         }
         
         /// <summary>
@@ -117147,76 +103847,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                 this.VRtg = ((IASG)(value));
                 return;
             }
-            if ((feature == "EENAME"))
-            {
-                this.EEName = ((IDPL)(value));
-                return;
-            }
-            if ((feature == "OPTMH"))
-            {
-                this.OpTmh = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HZRTG"))
-            {
-                this.HzRtg = ((IASG)(value));
-                return;
-            }
-            if ((feature == "RAT"))
-            {
-                this.Rat = ((IASG)(value));
-                return;
-            }
-            if ((feature == "COR"))
-            {
-                this.Cor = ((IASG)(value));
-                return;
-            }
-            if ((feature == "ANGCOR"))
-            {
-                this.AngCor = ((IASG)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
-            if ((feature == "EEHEALTH"))
-            {
-                this.EEHealth = ((HealthStateKind)(value));
-                return;
-            }
             base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "EEHEALTH"))
-            {
-                return Observable.Box(new GroupTEEHealthProxy(this));
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -117237,46 +103868,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
             if ((reference == "VRTG"))
             {
                 return new TVTRVRtgProxy(this);
-            }
-            if ((reference == "EENAME"))
-            {
-                return new GroupTEENameProxy(this);
-            }
-            if ((reference == "OPTMH"))
-            {
-                return new GroupTOpTmhProxy(this);
-            }
-            if ((reference == "HZRTG"))
-            {
-                return new GroupTHzRtgProxy(this);
-            }
-            if ((reference == "RAT"))
-            {
-                return new GroupTRatProxy(this);
-            }
-            if ((reference == "COR"))
-            {
-                return new GroupTCorProxy(this);
-            }
-            if ((reference == "ANGCOR"))
-            {
-                return new GroupTAngCorProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -117325,46 +103916,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.EEName != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.OpTmh != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.HzRtg != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Rat != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Cor != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.AngCor != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -117378,17 +103929,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                 return new INotifiable[] {
                         new TVTRVolProxy(this._parent),
                         new TVTRFuFailProxy(this._parent),
-                        new TVTRVRtgProxy(this._parent),
-                        new GroupTEENameProxy(this._parent),
-                        new GroupTOpTmhProxy(this._parent),
-                        new GroupTHzRtgProxy(this._parent),
-                        new GroupTRatProxy(this._parent),
-                        new GroupTCorProxy(this._parent),
-                        new GroupTAngCorProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new TVTRVRtgProxy(this._parent)};
             }
             
             /// <summary>
@@ -117424,96 +103965,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                         return;
                     }
                 }
-                if ((this._parent.EEName == null))
-                {
-                    IDPL eENameCasted = item.As<IDPL>();
-                    if ((eENameCasted != null))
-                    {
-                        this._parent.EEName = eENameCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.OpTmh == null))
-                {
-                    IINS opTmhCasted = item.As<IINS>();
-                    if ((opTmhCasted != null))
-                    {
-                        this._parent.OpTmh = opTmhCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.HzRtg == null))
-                {
-                    IASG hzRtgCasted = item.As<IASG>();
-                    if ((hzRtgCasted != null))
-                    {
-                        this._parent.HzRtg = hzRtgCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Rat == null))
-                {
-                    IASG ratCasted = item.As<IASG>();
-                    if ((ratCasted != null))
-                    {
-                        this._parent.Rat = ratCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Cor == null))
-                {
-                    IASG corCasted = item.As<IASG>();
-                    if ((corCasted != null))
-                    {
-                        this._parent.Cor = corCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.AngCor == null))
-                {
-                    IASG angCorCasted = item.As<IASG>();
-                    if ((angCorCasted != null))
-                    {
-                        this._parent.AngCor = angCorCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -117524,16 +103975,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                 this._parent.Vol = null;
                 this._parent.FuFail = null;
                 this._parent.VRtg = null;
-                this._parent.EEName = null;
-                this._parent.OpTmh = null;
-                this._parent.HzRtg = null;
-                this._parent.Rat = null;
-                this._parent.Cor = null;
-                this._parent.AngCor = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -117552,46 +103993,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                     return true;
                 }
                 if ((item == this._parent.VRtg))
-                {
-                    return true;
-                }
-                if ((item == this._parent.EEName))
-                {
-                    return true;
-                }
-                if ((item == this._parent.OpTmh))
-                {
-                    return true;
-                }
-                if ((item == this._parent.HzRtg))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Rat))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Cor))
-                {
-                    return true;
-                }
-                if ((item == this._parent.AngCor))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -117620,56 +104021,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                     array[arrayIndex] = this._parent.VRtg;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.EEName != null))
-                {
-                    array[arrayIndex] = this._parent.EEName;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.OpTmh != null))
-                {
-                    array[arrayIndex] = this._parent.OpTmh;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.HzRtg != null))
-                {
-                    array[arrayIndex] = this._parent.HzRtg;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Rat != null))
-                {
-                    array[arrayIndex] = this._parent.Rat;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Cor != null))
-                {
-                    array[arrayIndex] = this._parent.Cor;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.AngCor != null))
-                {
-                    array[arrayIndex] = this._parent.AngCor;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -117694,56 +104045,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
                     this._parent.VRtg = null;
                     return true;
                 }
-                if ((this._parent.EEName == item))
-                {
-                    this._parent.EEName = null;
-                    return true;
-                }
-                if ((this._parent.OpTmh == item))
-                {
-                    this._parent.OpTmh = null;
-                    return true;
-                }
-                if ((this._parent.HzRtg == item))
-                {
-                    this._parent.HzRtg = null;
-                    return true;
-                }
-                if ((this._parent.Rat == item))
-                {
-                    this._parent.Rat = null;
-                    return true;
-                }
-                if ((this._parent.Cor == item))
-                {
-                    this._parent.Cor = null;
-                    return true;
-                }
-                if ((this._parent.AngCor == item))
-                {
-                    this._parent.AngCor = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -117753,7 +104054,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Vol).Concat(this._parent.FuFail).Concat(this._parent.VRtg).Concat(this._parent.EEName).Concat(this._parent.OpTmh).Concat(this._parent.HzRtg).Concat(this._parent.Rat).Concat(this._parent.Cor).Concat(this._parent.AngCor).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Vol).Concat(this._parent.FuFail).Concat(this._parent.VRtg).GetEnumerator();
             }
         }
         
@@ -118163,22 +104464,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             {
                 return this.EEName;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -118207,26 +104492,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             if ((feature == "EENAME"))
             {
                 this.EEName = ((IDPL)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
                 return;
             }
             if ((feature == "EEHEALTH"))
@@ -118261,22 +104526,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             if ((reference == "EENAME"))
             {
                 return new GroupYEENameProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -118317,22 +104566,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -118344,11 +104577,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new GroupYEENameProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new GroupYEENameProxy(this._parent)};
             }
             
             /// <summary>
@@ -118366,42 +104595,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -118410,10 +104603,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             public override void Clear()
             {
                 this._parent.EEName = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -118424,22 +104613,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             public override bool Contains(IModelElement item)
             {
                 if ((item == this._parent.EEName))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -118458,26 +104631,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                     array[arrayIndex] = this._parent.EEName;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -118492,26 +104645,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                     this._parent.EEName = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -118521,7 +104654,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.EEName).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.EEName).GetEnumerator();
             }
         }
         
@@ -118927,42 +105060,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             {
                 return this.ColPos;
             }
-            if ((reference == "EENAME"))
-            {
-                return this.EEName;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "EEHEALTH"))
-            {
-                return this.EEHealth;
-            }
-            return base.GetAttributeValue(attribute, index);
         }
         
         /// <summary>
@@ -118997,51 +105095,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                 this.ColPos = ((IAPC)(value));
                 return;
             }
-            if ((feature == "EENAME"))
-            {
-                this.EEName = ((IDPL)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
-            if ((feature == "EEHEALTH"))
-            {
-                this.EEHealth = ((HealthStateKind)(value));
-                return;
-            }
             base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "EEHEALTH"))
-            {
-                return Observable.Box(new GroupYEEHealthProxy(this));
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -119070,26 +105124,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             if ((reference == "COLPOS"))
             {
                 return new YEFNColPosProxy(this);
-            }
-            if ((reference == "EENAME"))
-            {
-                return new GroupYEENameProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -119146,26 +105180,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.EEName != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -119181,12 +105195,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                         new YEFNOpTmhProxy(this._parent),
                         new YEFNECAProxy(this._parent),
                         new YEFNColTapPosProxy(this._parent),
-                        new YEFNColPosProxy(this._parent),
-                        new GroupYEENameProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new YEFNColPosProxy(this._parent)};
             }
             
             /// <summary>
@@ -119240,51 +105249,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                         return;
                     }
                 }
-                if ((this._parent.EEName == null))
-                {
-                    IDPL eENameCasted = item.As<IDPL>();
-                    if ((eENameCasted != null))
-                    {
-                        this._parent.EEName = eENameCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -119297,11 +105261,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                 this._parent.ECA = null;
                 this._parent.ColTapPos = null;
                 this._parent.ColPos = null;
-                this._parent.EEName = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -119328,26 +105287,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                     return true;
                 }
                 if ((item == this._parent.ColPos))
-                {
-                    return true;
-                }
-                if ((item == this._parent.EEName))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -119386,31 +105325,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                     array[arrayIndex] = this._parent.ColPos;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.EEName != null))
-                {
-                    array[arrayIndex] = this._parent.EEName;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -119445,31 +105359,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                     this._parent.ColPos = null;
                     return true;
                 }
-                if ((this._parent.EEName == item))
-                {
-                    this._parent.EEName = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -119479,7 +105368,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.Loc).Concat(this._parent.OpTmh).Concat(this._parent.ECA).Concat(this._parent.ColTapPos).Concat(this._parent.ColPos).Concat(this._parent.EEName).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Loc).Concat(this._parent.OpTmh).Concat(this._parent.ECA).Concat(this._parent.ColTapPos).Concat(this._parent.ColPos).GetEnumerator();
             }
         }
         
@@ -120164,42 +106053,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             {
                 return this.OilFil;
             }
-            if ((reference == "EENAME"))
-            {
-                return this.EEName;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "EEHEALTH"))
-            {
-                return this.EEHealth;
-            }
-            return base.GetAttributeValue(attribute, index);
         }
         
         /// <summary>
@@ -120249,51 +106103,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                 this.OilFil = ((ISPS)(value));
                 return;
             }
-            if ((feature == "EENAME"))
-            {
-                this.EEName = ((IDPL)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
-            if ((feature == "EEHEALTH"))
-            {
-                this.EEHealth = ((HealthStateKind)(value));
-                return;
-            }
             base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "EEHEALTH"))
-            {
-                return Observable.Box(new GroupYEEHealthProxy(this));
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -120334,26 +106144,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             if ((reference == "OILFIL"))
             {
                 return new YLTCOilFilProxy(this);
-            }
-            if ((reference == "EENAME"))
-            {
-                return new GroupYEENameProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -120422,26 +106212,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.EEName != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -120460,12 +106230,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                         new YLTCTapChgProxy(this._parent),
                         new YLTCEndPosRProxy(this._parent),
                         new YLTCEndPosLProxy(this._parent),
-                        new YLTCOilFilProxy(this._parent),
-                        new GroupYEENameProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new YLTCOilFilProxy(this._parent)};
             }
             
             /// <summary>
@@ -120546,51 +106311,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                         return;
                     }
                 }
-                if ((this._parent.EEName == null))
-                {
-                    IDPL eENameCasted = item.As<IDPL>();
-                    if ((eENameCasted != null))
-                    {
-                        this._parent.EEName = eENameCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -120606,11 +106326,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                 this._parent.EndPosR = null;
                 this._parent.EndPosL = null;
                 this._parent.OilFil = null;
-                this._parent.EEName = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -120649,26 +106364,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                     return true;
                 }
                 if ((item == this._parent.OilFil))
-                {
-                    return true;
-                }
-                if ((item == this._parent.EEName))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -120722,31 +106417,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                     array[arrayIndex] = this._parent.OilFil;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.EEName != null))
-                {
-                    array[arrayIndex] = this._parent.EEName;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -120796,31 +106466,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                     this._parent.OilFil = null;
                     return true;
                 }
-                if ((this._parent.EEName == item))
-                {
-                    this._parent.EEName = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -120830,7 +106475,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpCnt).Concat(this._parent.Torq).Concat(this._parent.MotDrvA).Concat(this._parent.TapPos).Concat(this._parent.TapChg).Concat(this._parent.EndPosR).Concat(this._parent.EndPosL).Concat(this._parent.OilFil).Concat(this._parent.EEName).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpCnt).Concat(this._parent.Torq).Concat(this._parent.MotDrvA).Concat(this._parent.TapPos).Concat(this._parent.TapChg).Concat(this._parent.EndPosR).Concat(this._parent.EndPosL).Concat(this._parent.OilFil).GetEnumerator();
             }
         }
         
@@ -121496,26 +107141,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             {
                 return this.ChaMotEna;
             }
-            if ((reference == "EENAME"))
-            {
-                return this.EEName;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -121534,10 +107159,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             if ((attribute == "MAXOPCAP"))
             {
                 return this.MaxOpCap;
-            }
-            if ((attribute == "EEHEALTH"))
-            {
-                return this.EEHealth;
             }
             return base.GetAttributeValue(attribute, index);
         }
@@ -121574,31 +107195,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                 this.ChaMotEna = ((ISPC)(value));
                 return;
             }
-            if ((feature == "EENAME"))
-            {
-                this.EEName = ((IDPL)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             if ((feature == "SHOPCAP"))
             {
                 this.ShOpCap = ((SwitchingCapabilityKind)(value));
@@ -121607,11 +107203,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             if ((feature == "MAXOPCAP"))
             {
                 this.MaxOpCap = ((SwitchingCapabilityKind)(value));
-                return;
-            }
-            if ((feature == "EEHEALTH"))
-            {
-                this.EEHealth = ((HealthStateKind)(value));
                 return;
             }
             base.SetFeature(feature, value);
@@ -121631,10 +107222,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             if ((attribute == "MAXOPCAP"))
             {
                 return Observable.Box(new YPSHMaxOpCapProxy(this));
-            }
-            if ((attribute == "EEHEALTH"))
-            {
-                return Observable.Box(new GroupYEEHealthProxy(this));
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -121665,26 +107252,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             if ((reference == "CHAMOTENA"))
             {
                 return new YPSHChaMotEnaProxy(this);
-            }
-            if ((reference == "EENAME"))
-            {
-                return new GroupYEENameProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -121741,26 +107308,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.EEName != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -121776,12 +107323,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                         new YPSHPosProxy(this._parent),
                         new YPSHBlkOpnProxy(this._parent),
                         new YPSHBlkClsProxy(this._parent),
-                        new YPSHChaMotEnaProxy(this._parent),
-                        new GroupYEENameProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new YPSHChaMotEnaProxy(this._parent)};
             }
             
             /// <summary>
@@ -121835,51 +107377,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                         return;
                     }
                 }
-                if ((this._parent.EEName == null))
-                {
-                    IDPL eENameCasted = item.As<IDPL>();
-                    if ((eENameCasted != null))
-                    {
-                        this._parent.EEName = eENameCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -121892,11 +107389,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                 this._parent.BlkOpn = null;
                 this._parent.BlkCls = null;
                 this._parent.ChaMotEna = null;
-                this._parent.EEName = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -121923,26 +107415,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                     return true;
                 }
                 if ((item == this._parent.ChaMotEna))
-                {
-                    return true;
-                }
-                if ((item == this._parent.EEName))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -121981,31 +107453,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                     array[arrayIndex] = this._parent.ChaMotEna;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.EEName != null))
-                {
-                    array[arrayIndex] = this._parent.EEName;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -122040,31 +107487,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                     this._parent.ChaMotEna = null;
                     return true;
                 }
-                if ((this._parent.EEName == item))
-                {
-                    this._parent.EEName = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -122074,7 +107496,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.Pos).Concat(this._parent.BlkOpn).Concat(this._parent.BlkCls).Concat(this._parent.ChaMotEna).Concat(this._parent.EEName).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.Pos).Concat(this._parent.BlkOpn).Concat(this._parent.BlkCls).Concat(this._parent.ChaMotEna).GetEnumerator();
             }
         }
         
@@ -123131,42 +108553,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             {
                 return this.TransformerControl;
             }
-            if ((reference == "EENAME"))
-            {
-                return this.EEName;
-            }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "EEHEALTH"))
-            {
-                return this.EEHealth;
-            }
-            return base.GetAttributeValue(attribute, index);
         }
         
         /// <summary>
@@ -123241,51 +108628,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                 this.TransformerControl = ((IATCC)(value));
                 return;
             }
-            if ((feature == "EENAME"))
-            {
-                this.EEName = ((IDPL)(value));
-                return;
-            }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
-            if ((feature == "EEHEALTH"))
-            {
-                this.EEHealth = ((HealthStateKind)(value));
-                return;
-            }
             base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "EEHEALTH"))
-            {
-                return Observable.Box(new GroupYEEHealthProxy(this));
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -123346,26 +108689,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             if ((reference == "TRANSFORMERCONTROL"))
             {
                 return new YPTRTransformerControlProxy(this);
-            }
-            if ((reference == "EENAME"))
-            {
-                return new GroupYEENameProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -123454,26 +108777,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.EEName != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -123497,12 +108800,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                         new YPTRHiVRtgProxy(this._parent),
                         new YPTRLoVRtgProxy(this._parent),
                         new YPTRPwrRtgProxy(this._parent),
-                        new YPTRTransformerControlProxy(this._parent),
-                        new GroupYEENameProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new YPTRTransformerControlProxy(this._parent)};
             }
             
             /// <summary>
@@ -123628,51 +108926,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                         return;
                     }
                 }
-                if ((this._parent.EEName == null))
-                {
-                    IDPL eENameCasted = item.As<IDPL>();
-                    if ((eENameCasted != null))
-                    {
-                        this._parent.EEName = eENameCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -123693,11 +108946,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                 this._parent.LoVRtg = null;
                 this._parent.PwrRtg = null;
                 this._parent.TransformerControl = null;
-                this._parent.EEName = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -123756,26 +109004,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                     return true;
                 }
                 if ((item == this._parent.TransformerControl))
-                {
-                    return true;
-                }
-                if ((item == this._parent.EEName))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -123854,31 +109082,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                     array[arrayIndex] = this._parent.TransformerControl;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.EEName != null))
-                {
-                    array[arrayIndex] = this._parent.EEName;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -123953,31 +109156,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
                     this._parent.TransformerControl = null;
                     return true;
                 }
-                if ((this._parent.EEName == item))
-                {
-                    this._parent.EEName = null;
-                    return true;
-                }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -123987,7 +109165,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.HPTmp).Concat(this._parent.HPZmpAlm).Concat(this._parent.HPTmpTr).Concat(this._parent.OANL).Concat(this._parent.OpOvA).Concat(this._parent.OpOvV).Concat(this._parent.OpUnV).Concat(this._parent.CGAlm).Concat(this._parent.HiVRtg).Concat(this._parent.LoVRtg).Concat(this._parent.PwrRtg).Concat(this._parent.TransformerControl).Concat(this._parent.EEName).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.HPTmp).Concat(this._parent.HPZmpAlm).Concat(this._parent.HPTmpTr).Concat(this._parent.OANL).Concat(this._parent.OpOvA).Concat(this._parent.OpOvV).Concat(this._parent.OpUnV).Concat(this._parent.CGAlm).Concat(this._parent.HiVRtg).Concat(this._parent.LoVRtg).Concat(this._parent.PwrRtg).Concat(this._parent.TransformerControl).GetEnumerator();
             }
         }
         
@@ -124861,89 +110039,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         private static IClass _classInstance;
         
         /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given reference
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="reference">The requested reference in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<NMF.Models.IModelElement> GetExpressionForReference(string reference)
-        {
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
-            }
-            return base.GetExpressionForReference(reference);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -125167,22 +110262,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.Amp;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -125208,26 +110287,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.Amp = ((IMV)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -125249,22 +110308,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "AMP"))
             {
                 return new ZAXNAmpProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -125313,22 +110356,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -125342,11 +110369,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 return new INotifiable[] {
                         new ZAXNOpTmhProxy(this._parent),
                         new ZAXNVolProxy(this._parent),
-                        new ZAXNAmpProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new ZAXNAmpProxy(this._parent)};
             }
             
             /// <summary>
@@ -125382,42 +110405,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -125428,10 +110415,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this._parent.OpTmh = null;
                 this._parent.Vol = null;
                 this._parent.Amp = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -125450,22 +110433,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     return true;
                 }
                 if ((item == this._parent.Amp))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -125494,26 +110461,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     array[arrayIndex] = this._parent.Amp;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -125538,26 +110485,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     this._parent.Amp = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -125567,7 +110494,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.Vol).Concat(this._parent.Amp).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.Vol).Concat(this._parent.Amp).GetEnumerator();
             }
         }
         
@@ -125756,22 +110683,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.OpTmh;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -125787,26 +110698,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.OpTmh = ((IINS)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -125820,22 +110711,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "OPTMH"))
             {
                 return new ZGILOpTmhProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -125876,22 +110751,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -125903,11 +110762,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new ZGILOpTmhProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new ZGILOpTmhProxy(this._parent)};
             }
             
             /// <summary>
@@ -125925,42 +110780,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -125969,10 +110788,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             public override void Clear()
             {
                 this._parent.OpTmh = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -125983,22 +110798,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             public override bool Contains(IModelElement item)
             {
                 if ((item == this._parent.OpTmh))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -126017,26 +110816,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     array[arrayIndex] = this._parent.OpTmh;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -126051,26 +110830,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     this._parent.OpTmh = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -126080,7 +110839,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).GetEnumerator();
             }
         }
         
@@ -126765,22 +111524,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.HiBatVal;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -126841,26 +111584,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.HiBatVal = ((IASG)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -126910,22 +111633,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "HIBATVAL"))
             {
                 return new ZBATHiBatValProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -127002,22 +111709,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -127038,11 +111729,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                         new ZBATBatHiProxy(this._parent),
                         new ZBATBatLoProxy(this._parent),
                         new ZBATLoBatValProxy(this._parent),
-                        new ZBATHiBatValProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new ZBATHiBatValProxy(this._parent)};
             }
             
             /// <summary>
@@ -127141,42 +111828,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -127194,10 +111845,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this._parent.BatLo = null;
                 this._parent.LoBatVal = null;
                 this._parent.HiBatVal = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -127244,22 +111891,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     return true;
                 }
                 if ((item == this._parent.HiBatVal))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -127323,26 +111954,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     array[arrayIndex] = this._parent.HiBatVal;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -127402,26 +112013,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     this._parent.HiBatVal = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -127431,7 +112022,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.Vol).Concat(this._parent.VolChgRte).Concat(this._parent.Amp).Concat(this._parent.BatTest).Concat(this._parent.TestRsl).Concat(this._parent.BatHi).Concat(this._parent.BatLo).Concat(this._parent.LoBatVal).Concat(this._parent.HiBatVal).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.Vol).Concat(this._parent.VolChgRte).Concat(this._parent.Amp).Concat(this._parent.BatTest).Concat(this._parent.TestRsl).Concat(this._parent.BatHi).Concat(this._parent.BatLo).Concat(this._parent.LoBatVal).Concat(this._parent.HiBatVal).GetEnumerator();
             }
         }
         
@@ -127837,22 +112428,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.OpTmh;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -127868,26 +112443,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.OpTmh = ((IINS)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -127901,22 +112456,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "OPTMH"))
             {
                 return new ZLINOpTmhProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -127957,22 +112496,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -127984,11 +112507,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new ZLINOpTmhProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new ZLINOpTmhProxy(this._parent)};
             }
             
             /// <summary>
@@ -128006,42 +112525,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -128050,10 +112533,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             public override void Clear()
             {
                 this._parent.OpTmh = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -128064,22 +112543,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             public override bool Contains(IModelElement item)
             {
                 if ((item == this._parent.OpTmh))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -128098,26 +112561,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     array[arrayIndex] = this._parent.OpTmh;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -128132,26 +112575,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     this._parent.OpTmh = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -128161,7 +112584,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).GetEnumerator();
             }
         }
         
@@ -128536,22 +112959,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.PresAlm;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -128587,26 +112994,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.PresAlm = ((ISPS)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -128636,22 +113023,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "PRESALM"))
             {
                 return new ZMOTPresAlmProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -128708,22 +113079,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -128739,11 +113094,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                         new ZMOTDExtProxy(this._parent),
                         new ZMOTLosOilProxy(this._parent),
                         new ZMOTLosVacProxy(this._parent),
-                        new ZMOTPresAlmProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new ZMOTPresAlmProxy(this._parent)};
             }
             
             /// <summary>
@@ -128797,42 +113148,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -128845,10 +113160,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this._parent.LosOil = null;
                 this._parent.LosVac = null;
                 this._parent.PresAlm = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -128875,22 +113186,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     return true;
                 }
                 if ((item == this._parent.PresAlm))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -128929,26 +113224,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     array[arrayIndex] = this._parent.PresAlm;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -128983,26 +113258,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     this._parent.PresAlm = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -129012,7 +113267,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.DExt).Concat(this._parent.LosOil).Concat(this._parent.LosVac).Concat(this._parent.PresAlm).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.DExt).Concat(this._parent.LosOil).Concat(this._parent.LosVac).Concat(this._parent.PresAlm).GetEnumerator();
             }
         }
         
@@ -129325,22 +113580,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.ReactorControl;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -129361,26 +113600,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.ReactorControl = ((IARCO)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -129398,22 +113617,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "REACTORCONTROL"))
             {
                 return new ZREAReactorControlProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -129458,22 +113661,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -129486,11 +113673,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return new INotifiable[] {
                         new ZREAOpTmhProxy(this._parent),
-                        new ZREAReactorControlProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new ZREAReactorControlProxy(this._parent)};
             }
             
             /// <summary>
@@ -129517,42 +113700,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -129562,10 +113709,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 this._parent.OpTmh = null;
                 this._parent.ReactorControl = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -129580,22 +113723,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     return true;
                 }
                 if ((item == this._parent.ReactorControl))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -129619,26 +113746,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     array[arrayIndex] = this._parent.ReactorControl;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -129658,26 +113765,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     this._parent.ReactorControl = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -129687,7 +113774,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.ReactorControl).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.ReactorControl).GetEnumerator();
             }
         }
         
@@ -130217,22 +114304,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.RefV;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -130278,26 +114349,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.RefV = ((IASG)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -130335,22 +114386,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "REFV"))
             {
                 return new ZBSHRefVProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -130415,22 +114450,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -130448,11 +114467,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                         new ZBSHVolProxy(this._parent),
                         new ZBSHRefReactProxy(this._parent),
                         new ZBSHRefPFProxy(this._parent),
-                        new ZBSHRefVProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new ZBSHRefVProxy(this._parent)};
             }
             
             /// <summary>
@@ -130524,42 +114539,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -130574,10 +114553,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this._parent.RefReact = null;
                 this._parent.RefPF = null;
                 this._parent.RefV = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -130612,22 +114587,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     return true;
                 }
                 if ((item == this._parent.RefV))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -130676,26 +114635,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     array[arrayIndex] = this._parent.RefV;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -130740,26 +114679,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     this._parent.RefV = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -130769,7 +114688,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.React).Concat(this._parent.LosFact).Concat(this._parent.Vol).Concat(this._parent.RefReact).Concat(this._parent.RefPF).Concat(this._parent.RefV).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.React).Concat(this._parent.LosFact).Concat(this._parent.Vol).Concat(this._parent.RefReact).Concat(this._parent.RefPF).Concat(this._parent.RefV).GetEnumerator();
             }
         }
         
@@ -131082,22 +115001,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.OpTmh;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -131113,26 +115016,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.OpTmh = ((IINS)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -131146,22 +115029,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "OPTMH"))
             {
                 return new ZRRCOpTmhProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -131202,22 +115069,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -131229,11 +115080,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new ZRRCOpTmhProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new ZRRCOpTmhProxy(this._parent)};
             }
             
             /// <summary>
@@ -131251,42 +115098,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -131295,10 +115106,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             public override void Clear()
             {
                 this._parent.OpTmh = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -131309,22 +115116,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             public override bool Contains(IModelElement item)
             {
                 if ((item == this._parent.OpTmh))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -131343,26 +115134,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     array[arrayIndex] = this._parent.OpTmh;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -131377,26 +115148,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     this._parent.OpTmh = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -131406,7 +115157,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).GetEnumerator();
             }
         }
         
@@ -131595,22 +115346,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.OPSA;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -131631,26 +115366,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.OPSA = ((ISPS)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -131668,22 +115383,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "OPSA"))
             {
                 return new ZSAROPSAProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -131728,22 +115427,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -131756,11 +115439,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return new INotifiable[] {
                         new ZSAROpCntProxy(this._parent),
-                        new ZSAROPSAProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new ZSAROPSAProxy(this._parent)};
             }
             
             /// <summary>
@@ -131787,42 +115466,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -131832,10 +115475,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 this._parent.OpCnt = null;
                 this._parent.OPSA = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -131850,22 +115489,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     return true;
                 }
                 if ((item == this._parent.OPSA))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -131889,26 +115512,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     array[arrayIndex] = this._parent.OPSA;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -131928,26 +115531,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     this._parent.OPSA = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -131957,7 +115540,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpCnt).Concat(this._parent.OPSA).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpCnt).Concat(this._parent.OPSA).GetEnumerator();
             }
         }
         
@@ -132177,22 +115760,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.PwrFrq;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -132213,26 +115780,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.PwrFrq = ((IASG)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -132250,22 +115797,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "PWRFRQ"))
             {
                 return new ZTCFPwrFrqProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -132310,22 +115841,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -132338,11 +115853,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return new INotifiable[] {
                         new ZTCFOpTmhProxy(this._parent),
-                        new ZTCFPwrFrqProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new ZTCFPwrFrqProxy(this._parent)};
             }
             
             /// <summary>
@@ -132369,42 +115880,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -132414,10 +115889,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 this._parent.OpTmh = null;
                 this._parent.PwrFrq = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -132432,22 +115903,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     return true;
                 }
                 if ((item == this._parent.PwrFrq))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -132471,26 +115926,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     array[arrayIndex] = this._parent.PwrFrq;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -132510,26 +115945,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     this._parent.PwrFrq = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -132539,7 +115954,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.PwrFrq).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.PwrFrq).GetEnumerator();
             }
         }
         
@@ -132697,22 +116112,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.OpTmh;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -132728,26 +116127,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.OpTmh = ((IINS)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -132761,22 +116140,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "OPTMH"))
             {
                 return new ZTCROpTmhProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -132817,22 +116180,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -132844,11 +116191,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new ZTCROpTmhProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new ZTCROpTmhProxy(this._parent)};
             }
             
             /// <summary>
@@ -132866,42 +116209,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -132910,10 +116217,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             public override void Clear()
             {
                 this._parent.OpTmh = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -132924,22 +116227,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             public override bool Contains(IModelElement item)
             {
                 if ((item == this._parent.OpTmh))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -132958,26 +116245,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     array[arrayIndex] = this._parent.OpTmh;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -132992,26 +116259,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     this._parent.OpTmh = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -133021,7 +116268,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).GetEnumerator();
             }
         }
         
@@ -133148,22 +116395,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.OpTmh;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -133179,26 +116410,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.OpTmh = ((IINS)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -133212,22 +116423,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "OPTMH"))
             {
                 return new ZCABOpTmhProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -133268,22 +116463,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -133295,11 +116474,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new ZCABOpTmhProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new ZCABOpTmhProxy(this._parent)};
             }
             
             /// <summary>
@@ -133317,42 +116492,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -133361,10 +116500,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             public override void Clear()
             {
                 this._parent.OpTmh = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -133375,22 +116510,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             public override bool Contains(IModelElement item)
             {
                 if ((item == this._parent.OpTmh))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -133409,26 +116528,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     array[arrayIndex] = this._parent.OpTmh;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -133443,26 +116542,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     this._parent.OpTmh = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -133472,7 +116551,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).GetEnumerator();
             }
         }
         
@@ -133785,22 +116864,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.CapControl;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -133831,26 +116894,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.CapControl = ((IARCO)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -133876,22 +116919,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "CAPCONTROL"))
             {
                 return new ZCAPCapControlProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -133944,22 +116971,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -133974,11 +116985,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                         new ZCAPOpTmhProxy(this._parent),
                         new ZCAPCapDSProxy(this._parent),
                         new ZCAPDschBlkProxy(this._parent),
-                        new ZCAPCapControlProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new ZCAPCapControlProxy(this._parent)};
             }
             
             /// <summary>
@@ -134023,42 +117030,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -134070,10 +117041,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this._parent.CapDS = null;
                 this._parent.DschBlk = null;
                 this._parent.CapControl = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -134096,22 +117063,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     return true;
                 }
                 if ((item == this._parent.CapControl))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -134145,26 +117096,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     array[arrayIndex] = this._parent.CapControl;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -134194,26 +117125,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     this._parent.CapControl = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -134223,7 +117134,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.CapDS).Concat(this._parent.DschBlk).Concat(this._parent.CapControl).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.CapDS).Concat(this._parent.DschBlk).Concat(this._parent.CapControl).GetEnumerator();
             }
         }
         
@@ -134443,22 +117354,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.OpTmh;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -134474,26 +117369,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.OpTmh = ((IINS)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -134507,22 +117382,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "OPTMH"))
             {
                 return new ZCONOpTmhProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -134563,22 +117422,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -134590,11 +117433,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             protected override INotifiable[] CreateDependencies()
             {
                 return new INotifiable[] {
-                        new ZCONOpTmhProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new ZCONOpTmhProxy(this._parent)};
             }
             
             /// <summary>
@@ -134612,42 +117451,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -134656,10 +117459,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             public override void Clear()
             {
                 this._parent.OpTmh = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -134670,22 +117469,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             public override bool Contains(IModelElement item)
             {
                 if ((item == this._parent.OpTmh))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -134704,26 +117487,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     array[arrayIndex] = this._parent.OpTmh;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -134738,26 +117501,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     this._parent.OpTmh = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -134767,7 +117510,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).GetEnumerator();
             }
         }
         
@@ -136047,22 +118790,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             {
                 return this.VRtg;
             }
-            if ((reference == "MODE"))
-            {
-                return this.Mode;
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return this.Behaviour;
-            }
-            if ((reference == "HEALTH"))
-            {
-                return this.Health;
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return this.NamePlt;
-            }
             return base.GetModelElementForReference(reference, index);
         }
         
@@ -136183,26 +118910,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this.VRtg = ((IASG)(value));
                 return;
             }
-            if ((feature == "MODE"))
-            {
-                this.Mode = ((IINC)(value));
-                return;
-            }
-            if ((feature == "BEHAVIOUR"))
-            {
-                this.Behaviour = ((IINS)(value));
-                return;
-            }
-            if ((feature == "HEALTH"))
-            {
-                this.Health = ((IINS)(value));
-                return;
-            }
-            if ((feature == "NAMEPLT"))
-            {
-                this.NamePlt = ((ILPL)(value));
-                return;
-            }
             if ((feature == "GNST"))
             {
                 this.GnSt = ((GeneratorStateKind)(value));
@@ -136307,22 +119014,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             if ((reference == "VRTG"))
             {
                 return new ZGENVRtgProxy(this);
-            }
-            if ((reference == "MODE"))
-            {
-                return new DomainLNModeProxy(this);
-            }
-            if ((reference == "BEHAVIOUR"))
-            {
-                return new DomainLNBehaviourProxy(this);
-            }
-            if ((reference == "HEALTH"))
-            {
-                return new DomainLNHealthProxy(this);
-            }
-            if ((reference == "NAMEPLT"))
-            {
-                return new DomainLNNamePltProxy(this);
             }
             return base.GetExpressionForReference(reference);
         }
@@ -136435,22 +119126,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     {
                         count = (count + 1);
                     }
-                    if ((this._parent.Mode != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Behaviour != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.Health != null))
-                    {
-                        count = (count + 1);
-                    }
-                    if ((this._parent.NamePlt != null))
-                    {
-                        count = (count + 1);
-                    }
                     return count;
                 }
             }
@@ -136480,11 +119155,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                         new ZGENPresAlmProxy(this._parent),
                         new ZGENDmdPwrProxy(this._parent),
                         new ZGENPwrRtgProxy(this._parent),
-                        new ZGENVRtgProxy(this._parent),
-                        new DomainLNModeProxy(this._parent),
-                        new DomainLNBehaviourProxy(this._parent),
-                        new DomainLNHealthProxy(this._parent),
-                        new DomainLNNamePltProxy(this._parent)};
+                        new ZGENVRtgProxy(this._parent)};
             }
             
             /// <summary>
@@ -136664,42 +119335,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                         return;
                     }
                 }
-                if ((this._parent.Mode == null))
-                {
-                    IINC modeCasted = item.As<IINC>();
-                    if ((modeCasted != null))
-                    {
-                        this._parent.Mode = modeCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Behaviour == null))
-                {
-                    IINS behaviourCasted = item.As<IINS>();
-                    if ((behaviourCasted != null))
-                    {
-                        this._parent.Behaviour = behaviourCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.Health == null))
-                {
-                    IINS healthCasted = item.As<IINS>();
-                    if ((healthCasted != null))
-                    {
-                        this._parent.Health = healthCasted;
-                        return;
-                    }
-                }
-                if ((this._parent.NamePlt == null))
-                {
-                    ILPL namePltCasted = item.As<ILPL>();
-                    if ((namePltCasted != null))
-                    {
-                        this._parent.NamePlt = namePltCasted;
-                        return;
-                    }
-                }
             }
             
             /// <summary>
@@ -136726,10 +119361,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                 this._parent.DmdPwr = null;
                 this._parent.PwrRtg = null;
                 this._parent.VRtg = null;
-                this._parent.Mode = null;
-                this._parent.Behaviour = null;
-                this._parent.Health = null;
-                this._parent.NamePlt = null;
             }
             
             /// <summary>
@@ -136812,22 +119443,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     return true;
                 }
                 if ((item == this._parent.VRtg))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Mode))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Behaviour))
-                {
-                    return true;
-                }
-                if ((item == this._parent.Health))
-                {
-                    return true;
-                }
-                if ((item == this._parent.NamePlt))
                 {
                     return true;
                 }
@@ -136936,26 +119551,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     array[arrayIndex] = this._parent.VRtg;
                     arrayIndex = (arrayIndex + 1);
                 }
-                if ((this._parent.Mode != null))
-                {
-                    array[arrayIndex] = this._parent.Mode;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Behaviour != null))
-                {
-                    array[arrayIndex] = this._parent.Behaviour;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.Health != null))
-                {
-                    array[arrayIndex] = this._parent.Health;
-                    arrayIndex = (arrayIndex + 1);
-                }
-                if ((this._parent.NamePlt != null))
-                {
-                    array[arrayIndex] = this._parent.NamePlt;
-                    arrayIndex = (arrayIndex + 1);
-                }
             }
             
             /// <summary>
@@ -137060,26 +119655,6 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
                     this._parent.VRtg = null;
                     return true;
                 }
-                if ((this._parent.Mode == item))
-                {
-                    this._parent.Mode = null;
-                    return true;
-                }
-                if ((this._parent.Behaviour == item))
-                {
-                    this._parent.Behaviour = null;
-                    return true;
-                }
-                if ((this._parent.Health == item))
-                {
-                    this._parent.Health = null;
-                    return true;
-                }
-                if ((this._parent.NamePlt == item))
-                {
-                    this._parent.NamePlt = null;
-                    return true;
-                }
                 return false;
             }
             
@@ -137089,7 +119664,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.GnCtl).Concat(this._parent.DExt).Concat(this._parent.AuxSCO).Concat(this._parent.StopVlv).Concat(this._parent.ReactPwrR).Concat(this._parent.ReactPwrL).Concat(this._parent.GnSpd).Concat(this._parent.OANL).Concat(this._parent.ClkRot).Concat(this._parent.CntClkRot).Concat(this._parent.OpUnExt).Concat(this._parent.OpOvExt).Concat(this._parent.LosOil).Concat(this._parent.LosVac).Concat(this._parent.PresAlm).Concat(this._parent.DmdPwr).Concat(this._parent.PwrRtg).Concat(this._parent.VRtg).Concat(this._parent.Mode).Concat(this._parent.Behaviour).Concat(this._parent.Health).Concat(this._parent.NamePlt).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.OpTmh).Concat(this._parent.GnCtl).Concat(this._parent.DExt).Concat(this._parent.AuxSCO).Concat(this._parent.StopVlv).Concat(this._parent.ReactPwrR).Concat(this._parent.ReactPwrL).Concat(this._parent.GnSpd).Concat(this._parent.OANL).Concat(this._parent.ClkRot).Concat(this._parent.CntClkRot).Concat(this._parent.OpUnExt).Concat(this._parent.OpOvExt).Concat(this._parent.LosOil).Concat(this._parent.LosVac).Concat(this._parent.PresAlm).Concat(this._parent.DmdPwr).Concat(this._parent.PwrRtg).Concat(this._parent.VRtg).GetEnumerator();
             }
         }
         

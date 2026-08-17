@@ -44,20 +44,28 @@ namespace NMF.Models.Meta
             {
                 reference2Property = Rule<Reference2Property>();
                 feature2Proxy = Rule<Feature2Proxy>();
+                // Ensures Class2Type(scope) has fully run - and so generatedType.Members below reflects both its
+                // own declared members and anything duplicated onto it to compensate for NMeta multiple inheritance
+                // before GetImplementingReferences reads it. Without this, Class2Type(scope) is only guaranteed to
+                // exist (via ResolveIn's CreateOutput), not to have been transformed yet.
+                Require(Rule<Class2Type>(), (children, type) => { });
             }
 
             /// <inheritdoc />
             protected virtual List<IReference> GetImplementingReferences(IClass scope, ITransformationContext context)
             {
-                // A reference is excluded here precisely when some other reference visible to scope refines it -
-                // that other reference holds the actual data and will be included in its own right. This must be
-                // decided from the Refines relationships in the metamodel itself, not from whether the reference's
-                // generated property has already been added to generatedType.Members: Class2Children runs before
-                // that population happens, so a members-containment check is always false here, regardless of
-                // whether the reference is refined or not.
-                var allReferences = scope.Closure(c => c.BaseTypes).SelectMany(c => c.References).ToList();
-                var refinedAway = new HashSet<IReference>(allReferences.Select(r => r.Refines).Where(r => r != null));
-                return allReferences.Where(r => r.IsContainment && !refinedAway.Contains(r)).ToList();
+                // A reference is included here only if its generated property actually ended up on scope's own
+                // generated type either declared directly here, or duplicated here to compensate for multiple
+                // inheritance (see Class2Type.AddReferencesOfClass). A reference reachable only via the chosen
+                // single-inheritance C# base class is deliberately excluded: it is already enumerated by that
+                // ancestor's own Children collection, reached through the base.Children call in Transform below;
+                // including it again here would double it up in the concatenated sequence.
+                var generatedType = context.Trace.ResolveIn(Rule<Class2Type>(), scope);
+                var references = scope.Closure(c => c.BaseTypes)
+                    .SelectMany(c => c.References)
+                    .Where(r => r.IsContainment && generatedType.Members.Contains(context.Trace.ResolveIn(reference2Property, r)));
+
+                return references.ToList();
             }
 
             private readonly CodeFieldReferenceExpression parentRef = new CodeFieldReferenceExpression(new CodeThisReferenceExpression(), "_parent");

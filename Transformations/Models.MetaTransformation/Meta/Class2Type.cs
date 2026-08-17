@@ -1336,22 +1336,24 @@ namespace NMF.Models.Meta
             protected T AddReferencesOfClass<T>(IClass input, CodeTypeDeclaration typeDeclaration, Func<T, IReference, CodeMemberProperty, ITransformationContext, T> action, T initial, bool containmentsOnly, ITransformationContext context)
             {
                 var r2p = Rule<Reference2Property>();
-                var allReferences = input.Closure(cl => cl.BaseTypes).SelectMany(c => c.References).ToList();
-                // A reference is excluded here precisely when some other reference visible to input refines it -
-                // that other reference holds the actual data and will be visited in its own right. This must be
-                // decided from the Refines relationships in the metamodel itself, not from whether the reference's
-                // generated property has been added to typeDeclaration.Members: that check is always false for a
-                // reference inherited from a base class (its property lives on the base class's own
-                // CodeTypeDeclaration, never copied into a derived one) and is otherwise a race against when the
-                // scope class's own member population happens to run relative to this call. See Class2Children.
-                var refinedAway = new HashSet<IReference>(allReferences.Select(r => r.Refines).Where(r => r != null));
-                foreach (var reference in allReferences)
+                // Only references whose property actually ended up on this generated type - either declared here
+                // directly, or duplicated here to compensate for NMeta multiple inheritance (base.Transform, called
+                // before this runs, has already decided that) - are handled by this class's own override. A
+                // reference reachable only through the chosen single-inheritance C# base class is intentionally
+                // left out: the inherited override (and its base.* fallback chain) already handles it, so
+                // re-checking it here would just duplicate that logic.
+                foreach (var bcl in input.Closure(cl => cl.BaseTypes))
                 {
-                    if (refinedAway.Contains(reference)) continue;
-                    if (!containmentsOnly || reference.IsContainment)
+                    foreach (var reference in bcl.References)
                     {
-                        var property = context.Trace.ResolveIn(r2p, reference);
-                        initial = action(initial, reference, property, context);
+                        if (!containmentsOnly || reference.IsContainment)
+                        {
+                            var property = context.Trace.ResolveIn(r2p, reference);
+                            if (typeDeclaration.Members.Contains(property))
+                            {
+                                initial = action(initial, reference, property, context);
+                            }
+                        }
                     }
                 }
                 return initial;
@@ -1429,15 +1431,18 @@ namespace NMF.Models.Meta
             protected T AddAttributesOfClass<T>(IClass input, CodeTypeDeclaration typeDeclaration, Func<T, IAttribute, CodeMemberProperty, ITransformationContext, T> action, T initial, ITransformationContext context)
             {
                 var a2p = Rule<Attribute2Property>();
-                var allAttributes = input.Closure(cl => cl.BaseTypes).SelectMany(c => c.Attributes).ToList();
-                // See AddReferencesOfClass: exclude only attributes some other visible attribute refines,
-                // decided from the metamodel's Refines relationships rather than typeDeclaration.Members.
-                var refinedAway = new HashSet<IAttribute>(allAttributes.Select(a => a.Refines).Where(a => a != null));
-                foreach (var att in allAttributes)
+                // See AddReferencesOfClass: only attributes whose property actually ended up on this generated
+                // type (declared here, or duplicated to compensate for multiple inheritance) are handled here.
+                foreach (var bcl in input.Closure(cl => cl.BaseTypes))
                 {
-                    if (refinedAway.Contains(att)) continue;
-                    var property = context.Trace.ResolveIn(a2p, att);
-                    initial = action(initial, att, property, context);
+                    foreach (var att in bcl.Attributes)
+                    {
+                        var property = context.Trace.ResolveIn(a2p, att);
+                        if (typeDeclaration.Members.Contains(property))
+                        {
+                            initial = action(initial, att, property, context);
+                        }
+                    }
                 }
                 return initial;
             }

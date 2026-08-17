@@ -55,6 +55,9 @@
     <Compile Update="References\KDM.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
+    <Compile Update="References\MultiInheritance.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Update="References\NameClashes.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
@@ -122,6 +125,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="KDM.ecore">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="MultiInheritance.ecore">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="NameClashes.ecore">

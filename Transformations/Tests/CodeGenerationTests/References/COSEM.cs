@@ -8390,455 +8390,6 @@ namespace TemporaryGeneratedCode.COSEM
         }
         
         /// <summary>
-        /// Gets the relative URI fragment for the given child model element
-        /// </summary>
-        /// <returns>A fragment of the relative URI</returns>
-        /// <param name="element">The element that should be looked for</param>
-        protected override string GetRelativePathForNonIdentifiedChild(IModelElement element)
-        {
-            if ((element == this.AA))
-            {
-                return ModelHelper.CreatePath("AA");
-            }
-            if ((element == this.Name))
-            {
-                return ModelHelper.CreatePath("name");
-            }
-            if ((element == this.AutoConnect))
-            {
-                return ModelHelper.CreatePath("AutoConnect");
-            }
-            if ((element == this.BillingPeriodValues))
-            {
-                return ModelHelper.CreatePath("BillingPeriodValues");
-            }
-            if ((element == this.ElectricityID))
-            {
-                return ModelHelper.CreatePath("ElectricityID");
-            }
-            if ((element == this.ProgramEntries))
-            {
-                return ModelHelper.CreatePath("ProgramEntries");
-            }
-            if ((element == this.OutputPulse))
-            {
-                return ModelHelper.CreatePath("OutputPulse");
-            }
-            if ((element == this.ReadingFactor))
-            {
-                return ModelHelper.CreatePath("ReadingFactor");
-            }
-            if ((element == this.NominalValues))
-            {
-                return ModelHelper.CreatePath("NominalValues");
-            }
-            if ((element == this.InputPulse))
-            {
-                return ModelHelper.CreatePath("InputPulse");
-            }
-            if ((element == this.MeasurementPeriod))
-            {
-                return ModelHelper.CreatePath("MeasurementPeriod");
-            }
-            if ((element == this.TimeEntries))
-            {
-                return ModelHelper.CreatePath("TimeEntries");
-            }
-            if ((element == this.TransformerLineLosses))
-            {
-                return ModelHelper.CreatePath("TransformerLineLosses");
-            }
-            if ((element == this.MeasurementAlgorithm))
-            {
-                return ModelHelper.CreatePath("MeasurementAlgorithm");
-            }
-            if ((element == this.MeteringPoint))
-            {
-                return ModelHelper.CreatePath("MeteringPoint");
-            }
-            if ((element == this.ElectricityRelatedStatus))
-            {
-                return ModelHelper.CreatePath("ElectricityRelatedStatus");
-            }
-            if ((element == this.RegisterMonitor))
-            {
-                return ModelHelper.CreatePath("RegisterMonitor");
-            }
-            if ((element == this.ElectricityValues))
-            {
-                return ModelHelper.CreatePath("ElectricityValues");
-            }
-            if ((element == this.MeasurementValueTypes))
-            {
-                return ModelHelper.CreatePath("MeasurementValueTypes");
-            }
-            if ((element == this.Harmonics))
-            {
-                return ModelHelper.CreatePath("Harmonics");
-            }
-            if ((element == this.Tariffs))
-            {
-                return ModelHelper.CreatePath("Tariffs");
-            }
-            if ((element == this.Phaseangles))
-            {
-                return ModelHelper.CreatePath("Phaseangles");
-            }
-            return base.GetRelativePathForNonIdentifiedChild(element);
-        }
-        
-        /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "AA"))
-            {
-                return this.AA;
-            }
-            if ((reference == "NAME"))
-            {
-                return this.Name;
-            }
-            if ((reference == "AUTOCONNECT"))
-            {
-                return this.AutoConnect;
-            }
-            if ((reference == "BILLINGPERIODVALUES"))
-            {
-                return this.BillingPeriodValues;
-            }
-            if ((reference == "ELECTRICITYID"))
-            {
-                return this.ElectricityID;
-            }
-            if ((reference == "PROGRAMENTRIES"))
-            {
-                return this.ProgramEntries;
-            }
-            if ((reference == "OUTPUTPULSE"))
-            {
-                return this.OutputPulse;
-            }
-            if ((reference == "READINGFACTOR"))
-            {
-                return this.ReadingFactor;
-            }
-            if ((reference == "NOMINALVALUES"))
-            {
-                return this.NominalValues;
-            }
-            if ((reference == "INPUTPULSE"))
-            {
-                return this.InputPulse;
-            }
-            if ((reference == "MEASUREMENTPERIOD"))
-            {
-                return this.MeasurementPeriod;
-            }
-            if ((reference == "TIMEENTRIES"))
-            {
-                return this.TimeEntries;
-            }
-            if ((reference == "TRANSFORMERLINELOSSES"))
-            {
-                return this.TransformerLineLosses;
-            }
-            if ((reference == "MEASUREMENTALGORITHM"))
-            {
-                return this.MeasurementAlgorithm;
-            }
-            if ((reference == "METERINGPOINT"))
-            {
-                return this.MeteringPoint;
-            }
-            if ((reference == "ELECTRICITYRELATEDSTATUS"))
-            {
-                return this.ElectricityRelatedStatus;
-            }
-            if ((reference == "REGISTERMONITOR"))
-            {
-                return this.RegisterMonitor;
-            }
-            if ((reference == "ELECTRICITYVALUES"))
-            {
-                return this.ElectricityValues;
-            }
-            if ((reference == "MEASUREMENTVALUETYPES"))
-            {
-                return this.MeasurementValueTypes;
-            }
-            if ((reference == "HARMONICS"))
-            {
-                return this.Harmonics;
-            }
-            if ((reference == "TARIFFS"))
-            {
-                return this.Tariffs;
-            }
-            if ((reference == "PHASEANGLES"))
-            {
-                return this.Phaseangles;
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "ID"))
-            {
-                return this.ID;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "AA"))
-            {
-                this.AA = ((ICurrentAssociation)(value));
-                return;
-            }
-            if ((feature == "NAME"))
-            {
-                this.Name = ((ILogicalDeviceName)(value));
-                return;
-            }
-            if ((feature == "AUTOCONNECT"))
-            {
-                this.AutoConnect = ((IAutoConnectObject)(value));
-                return;
-            }
-            if ((feature == "BILLINGPERIODVALUES"))
-            {
-                this.BillingPeriodValues = ((IBillingPeriodValues)(value));
-                return;
-            }
-            if ((feature == "ELECTRICITYID"))
-            {
-                this.ElectricityID = ((IElectricityID)(value));
-                return;
-            }
-            if ((feature == "PROGRAMENTRIES"))
-            {
-                this.ProgramEntries = ((IElectricityProgramEntries)(value));
-                return;
-            }
-            if ((feature == "OUTPUTPULSE"))
-            {
-                this.OutputPulse = ((IOutputPulseValues_constants)(value));
-                return;
-            }
-            if ((feature == "READINGFACTOR"))
-            {
-                this.ReadingFactor = ((IReadingFactorAndCT_VTratio)(value));
-                return;
-            }
-            if ((feature == "NOMINALVALUES"))
-            {
-                this.NominalValues = ((IElectricityNominalValues)(value));
-                return;
-            }
-            if ((feature == "INPUTPULSE"))
-            {
-                this.InputPulse = ((IInputPulseValuesOrConstants)(value));
-                return;
-            }
-            if ((feature == "MEASUREMENTPERIOD"))
-            {
-                this.MeasurementPeriod = ((IMeasurementPeriod_recordingInterval_billingPeriodDuration)(value));
-                return;
-            }
-            if ((feature == "TIMEENTRIES"))
-            {
-                this.TimeEntries = ((ITimeEntries)(value));
-                return;
-            }
-            if ((feature == "TRANSFORMERLINELOSSES"))
-            {
-                this.TransformerLineLosses = ((ITransformerAndLineLosses)(value));
-                return;
-            }
-            if ((feature == "MEASUREMENTALGORITHM"))
-            {
-                this.MeasurementAlgorithm = ((IMeasurementMethods)(value));
-                return;
-            }
-            if ((feature == "METERINGPOINT"))
-            {
-                this.MeteringPoint = ((IMeteringPointID)(value));
-                return;
-            }
-            if ((feature == "ELECTRICITYRELATEDSTATUS"))
-            {
-                this.ElectricityRelatedStatus = ((IElectricityRelatedStatusData)(value));
-                return;
-            }
-            if ((feature == "REGISTERMONITOR"))
-            {
-                this.RegisterMonitor = ((IRegisterMonitorObject)(value));
-                return;
-            }
-            if ((feature == "ELECTRICITYVALUES"))
-            {
-                this.ElectricityValues = ((IElectricityValues)(value));
-                return;
-            }
-            if ((feature == "MEASUREMENTVALUETYPES"))
-            {
-                this.MeasurementValueTypes = ((IMeasurementValues)(value));
-                return;
-            }
-            if ((feature == "HARMONICS"))
-            {
-                this.Harmonics = ((IElectricityHarmonics)(value));
-                return;
-            }
-            if ((feature == "TARIFFS"))
-            {
-                this.Tariffs = ((ICurrentlyActiveTariff)(value));
-                return;
-            }
-            if ((feature == "PHASEANGLES"))
-            {
-                this.Phaseangles = ((IExtendedPhaseAngleMeasurement)(value));
-                return;
-            }
-            if ((feature == "ID"))
-            {
-                this.ID = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "ID"))
-            {
-                return new LogicalDeviceIDProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given reference
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="reference">The requested reference in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<NMF.Models.IModelElement> GetExpressionForReference(string reference)
-        {
-            if ((reference == "AA"))
-            {
-                return new LogicalDeviceAAProxy(this);
-            }
-            if ((reference == "NAME"))
-            {
-                return new LogicalDeviceNameProxy(this);
-            }
-            if ((reference == "AUTOCONNECT"))
-            {
-                return new LogicalDeviceAutoConnectProxy(this);
-            }
-            if ((reference == "BILLINGPERIODVALUES"))
-            {
-                return new LogicalDeviceBillingPeriodValuesProxy(this);
-            }
-            if ((reference == "ELECTRICITYID"))
-            {
-                return new LogicalDeviceElectricityIDProxy(this);
-            }
-            if ((reference == "PROGRAMENTRIES"))
-            {
-                return new LogicalDeviceProgramEntriesProxy(this);
-            }
-            if ((reference == "OUTPUTPULSE"))
-            {
-                return new LogicalDeviceOutputPulseProxy(this);
-            }
-            if ((reference == "READINGFACTOR"))
-            {
-                return new LogicalDeviceReadingFactorProxy(this);
-            }
-            if ((reference == "NOMINALVALUES"))
-            {
-                return new LogicalDeviceNominalValuesProxy(this);
-            }
-            if ((reference == "INPUTPULSE"))
-            {
-                return new LogicalDeviceInputPulseProxy(this);
-            }
-            if ((reference == "MEASUREMENTPERIOD"))
-            {
-                return new LogicalDeviceMeasurementPeriodProxy(this);
-            }
-            if ((reference == "TIMEENTRIES"))
-            {
-                return new LogicalDeviceTimeEntriesProxy(this);
-            }
-            if ((reference == "TRANSFORMERLINELOSSES"))
-            {
-                return new LogicalDeviceTransformerLineLossesProxy(this);
-            }
-            if ((reference == "MEASUREMENTALGORITHM"))
-            {
-                return new LogicalDeviceMeasurementAlgorithmProxy(this);
-            }
-            if ((reference == "METERINGPOINT"))
-            {
-                return new LogicalDeviceMeteringPointProxy(this);
-            }
-            if ((reference == "ELECTRICITYRELATEDSTATUS"))
-            {
-                return new LogicalDeviceElectricityRelatedStatusProxy(this);
-            }
-            if ((reference == "REGISTERMONITOR"))
-            {
-                return new LogicalDeviceRegisterMonitorProxy(this);
-            }
-            if ((reference == "ELECTRICITYVALUES"))
-            {
-                return new LogicalDeviceElectricityValuesProxy(this);
-            }
-            if ((reference == "MEASUREMENTVALUETYPES"))
-            {
-                return new LogicalDeviceMeasurementValueTypesProxy(this);
-            }
-            if ((reference == "HARMONICS"))
-            {
-                return new LogicalDeviceHarmonicsProxy(this);
-            }
-            if ((reference == "TARIFFS"))
-            {
-                return new LogicalDeviceTariffsProxy(this);
-            }
-            if ((reference == "PHASEANGLES"))
-            {
-                return new LogicalDevicePhaseanglesProxy(this);
-            }
-            return base.GetExpressionForReference(reference);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -11669,63 +11220,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -11762,63 +11256,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -11861,63 +11298,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -11954,63 +11334,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -12053,63 +11376,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -12146,63 +11412,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -12246,63 +11455,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -12339,63 +11491,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -12438,63 +11533,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -12531,63 +11569,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -12630,63 +11611,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -12723,63 +11647,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -12822,63 +11689,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -12915,63 +11725,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -13014,63 +11767,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -13107,63 +11803,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -13206,63 +11845,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -13299,63 +11881,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -13398,63 +11923,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -13491,63 +11959,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -13590,63 +12001,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -13683,63 +12037,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -13782,63 +12079,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -13875,63 +12115,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -13974,63 +12157,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -14067,63 +12193,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -14166,63 +12235,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -14259,63 +12271,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -14358,63 +12313,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -14451,63 +12349,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -14550,63 +12391,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -14643,63 +12427,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -14742,63 +12469,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -14835,63 +12505,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -14934,63 +12547,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -15027,63 +12583,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -15126,63 +12625,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -15222,63 +12664,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -15315,63 +12700,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -15534,25 +12862,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
         /// Gets the Model element collection for the given feature
         /// </summary>
         /// <returns>A non-generic list of elements</returns>
@@ -15564,44 +12873,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 return ((System.Collections.IList)(this.Includes));
             }
             return base.GetCollectionForFeature(feature);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -15807,63 +13078,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -15900,63 +13114,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -15999,63 +13156,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -16092,63 +13192,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -16191,63 +13234,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -16284,63 +13270,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -16383,63 +13312,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -16476,63 +13348,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -16668,14 +13483,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
             {
                 return this.Transition;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -16696,16 +13503,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 this.Transition = ((DisconnectControlTransition)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -16723,14 +13520,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
             if ((attribute == "TRANSITION"))
             {
                 return Observable.Box(new DisconnectControlTransitionProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -16837,63 +13626,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -16930,63 +13662,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -17029,63 +13704,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -17122,63 +13740,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -17221,63 +13782,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -17314,63 +13818,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -17413,63 +13860,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -17506,63 +13896,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -17605,63 +13938,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -17698,63 +13974,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -17960,14 +14179,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
             {
                 return this.Value;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -17988,16 +14199,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 this.Value = ((float)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -18011,14 +14212,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
             if ((attribute == "VALUE"))
             {
                 return Observable.Box(new RegisterValueProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -18345,25 +14538,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
         /// Sets a value to the given feature
         /// </summary>
         /// <param name="feature">The requested feature</param>
@@ -18375,35 +14549,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 this.Ldnname = ((ILogicalDeviceName)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -18695,25 +14841,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
         /// Sets a value to the given feature
         /// </summary>
         /// <param name="feature">The requested feature</param>
@@ -18725,35 +14852,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 this.AA = ((IApplicationAssociation)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -18961,63 +15060,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -19054,110 +15096,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "SCALER_UNIT"))
-            {
-                return this.Scaler_unit;
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "VALUE"))
-            {
-                return this.Value;
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "SCALER_UNIT"))
-            {
-                this.Scaler_unit = ((IScal_unit_type)(value));
-                return;
-            }
-            if ((feature == "VALUE"))
-            {
-                this.Value = ((float)(value));
-                return;
-            }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "VALUE"))
-            {
-                return Observable.Box(new RegisterValueProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given reference
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="reference">The requested reference in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<NMF.Models.IModelElement> GetExpressionForReference(string reference)
-        {
-            if ((reference == "SCALER_UNIT"))
-            {
-                return new RegisterScaler_unitProxy(this);
-            }
-            return base.GetExpressionForReference(reference);
         }
         
         /// <summary>
@@ -19332,21 +15270,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "SCALER_UNIT"))
-            {
-                return this.Scaler_unit;
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
         /// Resolves the given attribute name
         /// </summary>
         /// <returns>The attribute value or null if it could not be found</returns>
@@ -19362,18 +15285,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
             {
                 return this.Period;
             }
-            if ((attribute == "VALUE"))
-            {
-                return this.Value;
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -19384,11 +15295,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <param name="value">The value that should be set to that feature</param>
         protected override void SetFeature(string feature, object value)
         {
-            if ((feature == "SCALER_UNIT"))
-            {
-                this.Scaler_unit = ((IScal_unit_type)(value));
-                return;
-            }
             if ((feature == "NUMBER_OF_PERIODS"))
             {
                 this.Number_of_periods = ((int)(value));
@@ -19397,21 +15303,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
             if ((feature == "PERIOD"))
             {
                 this.Period = ((int)(value));
-                return;
-            }
-            if ((feature == "VALUE"))
-            {
-                this.Value = ((float)(value));
-                return;
-            }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
                 return;
             }
             base.SetFeature(feature, value);
@@ -19432,33 +15323,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
             {
                 return Observable.Box(new DemandRegisterPeriodProxy(this));
             }
-            if ((attribute == "VALUE"))
-            {
-                return Observable.Box(new RegisterValueProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
             return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given reference
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="reference">The requested reference in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<NMF.Models.IModelElement> GetExpressionForReference(string reference)
-        {
-            if ((reference == "SCALER_UNIT"))
-            {
-                return new RegisterScaler_unitProxy(this);
-            }
-            return base.GetExpressionForReference(reference);
         }
         
         /// <summary>
@@ -19563,63 +15428,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -19656,63 +15464,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -19989,63 +15740,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -20082,63 +15776,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -20317,14 +15954,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
             {
                 return this.Template_description;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -20350,16 +15979,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 this.Template_description = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -20381,14 +16000,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
             if ((attribute == "TEMPLATE_DESCRIPTION"))
             {
                 return new CompactdataTemplate_descriptionProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -20526,63 +16137,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -20619,63 +16173,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -20718,63 +16215,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -20811,63 +16251,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -20910,63 +16293,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -21003,63 +16329,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -21623,14 +16892,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
             {
                 return this.Daylight_savings_enabled;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -21684,16 +16945,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
                 this.Daylight_savings_enabled = ((bool)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -21723,14 +16974,6 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
             if ((attribute == "DAYLIGHT_SAVINGS_ENABLED"))
             {
                 return Observable.Box(new ClockDaylight_savings_enabledProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -23087,8 +18330,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
     using NMF.Utilities;
     using TemporaryGeneratedCode.COSEM.InterfaceClasses;
     using NMF.Models.Repository;
-    using TemporaryGeneratedCode.COSEM.Datatypes;
-    using TemporaryGeneratedCode.COSEM;
     
     
     /// <summary>
@@ -23248,14 +18489,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.ActiveFirmwareSignature;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -23281,16 +18514,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.ActiveFirmwareSignature = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -23312,14 +18535,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "ACTIVEFIRMWARESIGNATURE"))
             {
                 return new ProgramEntriesActiveFirmwareSignatureProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -23587,14 +18802,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.TimestampRecentBillingPeriod;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -23620,16 +18827,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.TimestampRecentBillingPeriod = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -23651,14 +18848,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "TIMESTAMPRECENTBILLINGPERIOD"))
             {
                 return new BillingPeriodValuesTimestampRecentBillingPeriodProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -23885,14 +19074,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.LocalDate;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -23913,16 +19094,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.LocalDate = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -23940,14 +19111,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "LOCALDATE"))
             {
                 return new TimeEntriesLocalDateProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -24102,75 +19265,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Time;
             }
-            if ((attribute == "TIME"))
-            {
-                return this.Time;
-            }
-            if ((attribute == "TIME_ZONE"))
-            {
-                if ((index < this.Time_zone.Count))
-                {
-                    return this.Time_zone[index];
-                }
-                else
-                {
-                    return null;
-                }
-            }
-            if ((attribute == "STATUS"))
-            {
-                return this.Status;
-            }
-            if ((attribute == "DAYLIGHT_SAVINGS_BEGIN"))
-            {
-                return this.Daylight_savings_begin;
-            }
-            if ((attribute == "DAYLIGHT_SAVINGS_END"))
-            {
-                return this.Daylight_savings_end;
-            }
-            if ((attribute == "DAYLIGHT_SAVINGS_DEVIATION"))
-            {
-                if ((index < this.Daylight_savings_deviation.Count))
-                {
-                    return this.Daylight_savings_deviation[index];
-                }
-                else
-                {
-                    return null;
-                }
-            }
-            if ((attribute == "DAYLIGHT_SAVINGS_ENABLED"))
-            {
-                return this.Daylight_savings_enabled;
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Gets the Model element collection for the given feature
-        /// </summary>
-        /// <returns>A non-generic list of elements</returns>
-        /// <param name="feature">The requested feature</param>
-        protected override System.Collections.IList GetCollectionForFeature(string feature)
-        {
-            if ((feature == "TIME_ZONE"))
-            {
-                return ((System.Collections.IList)(this.Time_zone));
-            }
-            if ((feature == "DAYLIGHT_SAVINGS_DEVIATION"))
-            {
-                return ((System.Collections.IList)(this.Daylight_savings_deviation));
-            }
-            return base.GetCollectionForFeature(feature);
         }
         
         /// <summary>
@@ -24183,41 +19278,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((feature == "TIME"))
             {
                 this.Time = ((string)(value));
-                return;
-            }
-            if ((feature == "TIME"))
-            {
-                this.Time = ((string)(value));
-                return;
-            }
-            if ((feature == "STATUS"))
-            {
-                this.Status = ((string)(value));
-                return;
-            }
-            if ((feature == "DAYLIGHT_SAVINGS_BEGIN"))
-            {
-                this.Daylight_savings_begin = ((string)(value));
-                return;
-            }
-            if ((feature == "DAYLIGHT_SAVINGS_END"))
-            {
-                this.Daylight_savings_end = ((string)(value));
-                return;
-            }
-            if ((feature == "DAYLIGHT_SAVINGS_ENABLED"))
-            {
-                this.Daylight_savings_enabled = ((bool)(value));
-                return;
-            }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
                 return;
             }
             base.SetFeature(feature, value);
@@ -24233,34 +19293,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "TIME"))
             {
                 return new ClockObjectTimeProxy(this);
-            }
-            if ((attribute == "TIME"))
-            {
-                return new ClockTimeProxy(this);
-            }
-            if ((attribute == "STATUS"))
-            {
-                return new ClockStatusProxy(this);
-            }
-            if ((attribute == "DAYLIGHT_SAVINGS_BEGIN"))
-            {
-                return new ClockDaylight_savings_beginProxy(this);
-            }
-            if ((attribute == "DAYLIGHT_SAVINGS_END"))
-            {
-                return new ClockDaylight_savings_endProxy(this);
-            }
-            if ((attribute == "DAYLIGHT_SAVINGS_ENABLED"))
-            {
-                return Observable.Box(new ClockDaylight_savings_enabledProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -24386,14 +19418,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Value;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -24409,16 +19433,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Value = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -24432,14 +19446,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "VALUE"))
             {
                 return new UNIXClockValueProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -24512,63 +19518,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -24659,14 +19608,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Connection;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -24682,16 +19623,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Connection = ((bool)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -24705,14 +19636,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "CONNECTION"))
             {
                 return Observable.Box(new AutoConnectObjectConnectionProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -24836,14 +19759,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Answer;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -24859,16 +19774,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Answer = ((bool)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -24882,14 +19787,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "ANSWER"))
             {
                 return Observable.Box(new AutoAnswerObjectAnswerProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -25729,51 +20626,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Broadcast;
             }
-            if ((reference == "INCLUDES"))
-            {
-                if ((index < this.Includes.Count))
-                {
-                    return this.Includes[index];
-                }
-                else
-                {
-                    return null;
-                }
-            }
             return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Gets the Model element collection for the given feature
-        /// </summary>
-        /// <returns>A non-generic list of elements</returns>
-        /// <param name="feature">The requested feature</param>
-        protected override System.Collections.IList GetCollectionForFeature(string feature)
-        {
-            if ((feature == "INCLUDES"))
-            {
-                return ((System.Collections.IList)(this.Includes));
-            }
-            return base.GetCollectionForFeature(feature);
         }
         
         /// <summary>
@@ -25843,35 +20696,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Broadcast = ((IBroadcast)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -26016,7 +20841,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                     {
                         count = (count + 1);
                     }
-                    count = (count + this._parent.Includes.Count);
                     return count;
                 }
             }
@@ -26039,8 +20863,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                         new ScriptTableDisconnectProxy(this._parent),
                         new ScriptTableImageProxy(this._parent),
                         new ScriptTablePushProxy(this._parent),
-                        new ScriptTableBroadcastProxy(this._parent),
-                        this._parent.Includes.AsNotifiable()};
+                        new ScriptTableBroadcastProxy(this._parent)};
             }
             
             /// <summary>
@@ -26157,11 +20980,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                         return;
                     }
                 }
-                IScript includesCasted = item.As<IScript>();
-                if ((includesCasted != null))
-                {
-                    this._parent.Includes.Add(includesCasted);
-                }
             }
             
             /// <summary>
@@ -26181,7 +20999,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this._parent.Image = null;
                 this._parent.Push = null;
                 this._parent.Broadcast = null;
-                this._parent.Includes.Clear();
             }
             
             /// <summary>
@@ -26236,10 +21053,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                     return true;
                 }
                 if ((item == this._parent.Broadcast))
-                {
-                    return true;
-                }
-                if (this._parent.Includes.Contains(item))
                 {
                     return true;
                 }
@@ -26313,21 +21126,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                     array[arrayIndex] = this._parent.Broadcast;
                     arrayIndex = (arrayIndex + 1);
                 }
-                IEnumerator<IModelElement> includesEnumerator = this._parent.Includes.GetEnumerator();
-                try
-                {
-                    for (
-                    ; includesEnumerator.MoveNext(); 
-                    )
-                    {
-                        array[arrayIndex] = includesEnumerator.Current;
-                        arrayIndex = (arrayIndex + 1);
-                    }
-                }
-                finally
-                {
-                    includesEnumerator.Dispose();
-                }
             }
             
             /// <summary>
@@ -26397,12 +21195,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                     this._parent.Broadcast = null;
                     return true;
                 }
-                IScript scriptItem = item.As<IScript>();
-                if (((scriptItem != null) 
-                            && this._parent.Includes.Remove(scriptItem)))
-                {
-                    return true;
-                }
                 return false;
             }
             
@@ -26412,7 +21204,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().Concat(this._parent.GlobalMeterReset).Concat(this._parent.MDIReset).Concat(this._parent.Tariffication).Concat(this._parent.AcitvateTest).Concat(this._parent.ActivateNormal).Concat(this._parent.SetOutput).Concat(this._parent.SwitchOptical).Concat(this._parent.PowerQuality).Concat(this._parent.Disconnect).Concat(this._parent.Image).Concat(this._parent.Push).Concat(this._parent.Broadcast).Concat(this._parent.Includes).GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.GlobalMeterReset).Concat(this._parent.MDIReset).Concat(this._parent.Tariffication).Concat(this._parent.AcitvateTest).Concat(this._parent.ActivateNormal).Concat(this._parent.SetOutput).Concat(this._parent.SwitchOptical).Concat(this._parent.PowerQuality).Concat(this._parent.Disconnect).Concat(this._parent.Image).Concat(this._parent.Push).Concat(this._parent.Broadcast).GetEnumerator();
             }
         }
         
@@ -26816,99 +21608,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "INCLUDES"))
-            {
-                if ((index < this.Includes.Count))
-                {
-                    return this.Includes[index];
-                }
-                else
-                {
-                    return null;
-                }
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Gets the Model element collection for the given feature
-        /// </summary>
-        /// <returns>A non-generic list of elements</returns>
-        /// <param name="feature">The requested feature</param>
-        protected override System.Collections.IList GetCollectionForFeature(string feature)
-        {
-            if ((feature == "INCLUDES"))
-            {
-                return ((System.Collections.IList)(this.Includes));
-            }
-            return base.GetCollectionForFeature(feature);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -26945,99 +21644,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "INCLUDES"))
-            {
-                if ((index < this.Includes.Count))
-                {
-                    return this.Includes[index];
-                }
-                else
-                {
-                    return null;
-                }
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Gets the Model element collection for the given feature
-        /// </summary>
-        /// <returns>A non-generic list of elements</returns>
-        /// <param name="feature">The requested feature</param>
-        protected override System.Collections.IList GetCollectionForFeature(string feature)
-        {
-            if ((feature == "INCLUDES"))
-            {
-                return ((System.Collections.IList)(this.Includes));
-            }
-            return base.GetCollectionForFeature(feature);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -27080,99 +21686,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "INCLUDES"))
-            {
-                if ((index < this.Includes.Count))
-                {
-                    return this.Includes[index];
-                }
-                else
-                {
-                    return null;
-                }
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Gets the Model element collection for the given feature
-        /// </summary>
-        /// <returns>A non-generic list of elements</returns>
-        /// <param name="feature">The requested feature</param>
-        protected override System.Collections.IList GetCollectionForFeature(string feature)
-        {
-            if ((feature == "INCLUDES"))
-            {
-                return ((System.Collections.IList)(this.Includes));
-            }
-            return base.GetCollectionForFeature(feature);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -27209,99 +21722,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "INCLUDES"))
-            {
-                if ((index < this.Includes.Count))
-                {
-                    return this.Includes[index];
-                }
-                else
-                {
-                    return null;
-                }
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Gets the Model element collection for the given feature
-        /// </summary>
-        /// <returns>A non-generic list of elements</returns>
-        /// <param name="feature">The requested feature</param>
-        protected override System.Collections.IList GetCollectionForFeature(string feature)
-        {
-            if ((feature == "INCLUDES"))
-            {
-                return ((System.Collections.IList)(this.Includes));
-            }
-            return base.GetCollectionForFeature(feature);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -27344,99 +21764,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "INCLUDES"))
-            {
-                if ((index < this.Includes.Count))
-                {
-                    return this.Includes[index];
-                }
-                else
-                {
-                    return null;
-                }
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Gets the Model element collection for the given feature
-        /// </summary>
-        /// <returns>A non-generic list of elements</returns>
-        /// <param name="feature">The requested feature</param>
-        protected override System.Collections.IList GetCollectionForFeature(string feature)
-        {
-            if ((feature == "INCLUDES"))
-            {
-                return ((System.Collections.IList)(this.Includes));
-            }
-            return base.GetCollectionForFeature(feature);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -27473,99 +21800,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "INCLUDES"))
-            {
-                if ((index < this.Includes.Count))
-                {
-                    return this.Includes[index];
-                }
-                else
-                {
-                    return null;
-                }
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Gets the Model element collection for the given feature
-        /// </summary>
-        /// <returns>A non-generic list of elements</returns>
-        /// <param name="feature">The requested feature</param>
-        protected override System.Collections.IList GetCollectionForFeature(string feature)
-        {
-            if ((feature == "INCLUDES"))
-            {
-                return ((System.Collections.IList)(this.Includes));
-            }
-            return base.GetCollectionForFeature(feature);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -27608,99 +21842,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "INCLUDES"))
-            {
-                if ((index < this.Includes.Count))
-                {
-                    return this.Includes[index];
-                }
-                else
-                {
-                    return null;
-                }
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Gets the Model element collection for the given feature
-        /// </summary>
-        /// <returns>A non-generic list of elements</returns>
-        /// <param name="feature">The requested feature</param>
-        protected override System.Collections.IList GetCollectionForFeature(string feature)
-        {
-            if ((feature == "INCLUDES"))
-            {
-                return ((System.Collections.IList)(this.Includes));
-            }
-            return base.GetCollectionForFeature(feature);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -27737,99 +21878,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "INCLUDES"))
-            {
-                if ((index < this.Includes.Count))
-                {
-                    return this.Includes[index];
-                }
-                else
-                {
-                    return null;
-                }
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Gets the Model element collection for the given feature
-        /// </summary>
-        /// <returns>A non-generic list of elements</returns>
-        /// <param name="feature">The requested feature</param>
-        protected override System.Collections.IList GetCollectionForFeature(string feature)
-        {
-            if ((feature == "INCLUDES"))
-            {
-                return ((System.Collections.IList)(this.Includes));
-            }
-            return base.GetCollectionForFeature(feature);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -27872,99 +21920,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "INCLUDES"))
-            {
-                if ((index < this.Includes.Count))
-                {
-                    return this.Includes[index];
-                }
-                else
-                {
-                    return null;
-                }
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Gets the Model element collection for the given feature
-        /// </summary>
-        /// <returns>A non-generic list of elements</returns>
-        /// <param name="feature">The requested feature</param>
-        protected override System.Collections.IList GetCollectionForFeature(string feature)
-        {
-            if ((feature == "INCLUDES"))
-            {
-                return ((System.Collections.IList)(this.Includes));
-            }
-            return base.GetCollectionForFeature(feature);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -28001,99 +21956,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "INCLUDES"))
-            {
-                if ((index < this.Includes.Count))
-                {
-                    return this.Includes[index];
-                }
-                else
-                {
-                    return null;
-                }
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Gets the Model element collection for the given feature
-        /// </summary>
-        /// <returns>A non-generic list of elements</returns>
-        /// <param name="feature">The requested feature</param>
-        protected override System.Collections.IList GetCollectionForFeature(string feature)
-        {
-            if ((feature == "INCLUDES"))
-            {
-                return ((System.Collections.IList)(this.Includes));
-            }
-            return base.GetCollectionForFeature(feature);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -28136,99 +21998,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "INCLUDES"))
-            {
-                if ((index < this.Includes.Count))
-                {
-                    return this.Includes[index];
-                }
-                else
-                {
-                    return null;
-                }
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Gets the Model element collection for the given feature
-        /// </summary>
-        /// <returns>A non-generic list of elements</returns>
-        /// <param name="feature">The requested feature</param>
-        protected override System.Collections.IList GetCollectionForFeature(string feature)
-        {
-            if ((feature == "INCLUDES"))
-            {
-                return ((System.Collections.IList)(this.Includes));
-            }
-            return base.GetCollectionForFeature(feature);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -28265,99 +22034,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "INCLUDES"))
-            {
-                if ((index < this.Includes.Count))
-                {
-                    return this.Includes[index];
-                }
-                else
-                {
-                    return null;
-                }
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Gets the Model element collection for the given feature
-        /// </summary>
-        /// <returns>A non-generic list of elements</returns>
-        /// <param name="feature">The requested feature</param>
-        protected override System.Collections.IList GetCollectionForFeature(string feature)
-        {
-            if ((feature == "INCLUDES"))
-            {
-                return ((System.Collections.IList)(this.Includes));
-            }
-            return base.GetCollectionForFeature(feature);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -28400,63 +22076,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -28493,63 +22112,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -28592,63 +22154,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -28685,63 +22190,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -29118,25 +22566,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
         /// Sets a value to the given feature
         /// </summary>
         /// <param name="feature">The requested feature</param>
@@ -29168,35 +22597,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Push = ((IPushSchedule)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -29660,63 +23061,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -29753,63 +23097,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -29852,63 +23139,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -29945,63 +23175,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -30044,63 +23217,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -30137,63 +23253,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -30236,63 +23295,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -30329,63 +23331,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -30428,63 +23373,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -30521,63 +23409,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -30620,63 +23451,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -30716,63 +23490,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -30809,63 +23526,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -30958,14 +23618,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Value;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -30981,16 +23633,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Value = ((double)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -31004,14 +23646,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "VALUE"))
             {
                 return Observable.Box(new MaxCreditLimitValueProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -31137,14 +23771,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Value;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -31160,16 +23786,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Value = ((double)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -31183,14 +23799,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "VALUE"))
             {
                 return Observable.Box(new MaxVendLimitValueProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -31266,63 +23874,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -31359,63 +23910,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -31711,14 +24205,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.AdditionalReadout;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -31759,16 +24245,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.AdditionalReadout = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -31802,14 +24278,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "ADDITIONALREADOUT"))
             {
                 return new StandardReadoutAdditionalReadoutProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -32040,63 +24508,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -32133,63 +24544,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -32232,63 +24586,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -32325,63 +24622,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -32424,63 +24664,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -32517,63 +24700,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -32616,63 +24742,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -32709,63 +24778,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -32808,63 +24820,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -32901,63 +24856,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -33000,110 +24898,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "SCALER_UNIT"))
-            {
-                return this.Scaler_unit;
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "VALUE"))
-            {
-                return this.Value;
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "SCALER_UNIT"))
-            {
-                this.Scaler_unit = ((IScal_unit_type)(value));
-                return;
-            }
-            if ((feature == "VALUE"))
-            {
-                this.Value = ((float)(value));
-                return;
-            }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "VALUE"))
-            {
-                return Observable.Box(new RegisterValueProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given reference
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="reference">The requested reference in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<NMF.Models.IModelElement> GetExpressionForReference(string reference)
-        {
-            if ((reference == "SCALER_UNIT"))
-            {
-                return new RegisterScaler_unitProxy(this);
-            }
-            return base.GetExpressionForReference(reference);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -33140,63 +24934,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -33239,89 +24976,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "STATE"))
-            {
-                return this.State;
-            }
-            if ((attribute == "TRANSITION"))
-            {
-                return this.Transition;
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "STATE"))
-            {
-                this.State = ((DisconnectControlState)(value));
-                return;
-            }
-            if ((feature == "TRANSITION"))
-            {
-                this.Transition = ((DisconnectControlTransition)(value));
-                return;
-            }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "STATE"))
-            {
-                return Observable.Box(new DisconnectControlStateProxy(this));
-            }
-            if ((attribute == "TRANSITION"))
-            {
-                return Observable.Box(new DisconnectControlTransitionProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -33358,63 +25012,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -33457,63 +25054,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -33550,63 +25090,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -33649,63 +25132,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -33742,63 +25168,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -33841,63 +25210,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -33934,63 +25246,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -34033,63 +25288,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -34126,63 +25324,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -34225,63 +25366,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -34318,63 +25402,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -34417,63 +25444,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -34510,63 +25480,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -34609,63 +25522,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -34702,63 +25558,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -34801,63 +25600,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -34894,63 +25636,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -34993,63 +25678,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -35086,63 +25714,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -35185,63 +25756,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -35278,63 +25792,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -35377,63 +25834,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -35470,63 +25870,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -35570,63 +25913,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -35663,63 +25949,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -35762,63 +25991,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -35855,63 +26027,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -35954,63 +26069,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -36047,63 +26105,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -36146,63 +26147,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -36239,63 +26183,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -36338,63 +26225,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -36431,63 +26261,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -36530,63 +26303,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -36623,63 +26339,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -36722,63 +26381,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -36815,63 +26417,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -36914,63 +26459,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -37007,63 +26495,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -37106,97 +26537,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "AA"))
-            {
-                return this.AA;
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "AA"))
-            {
-                this.AA = ((IApplicationAssociation)(value));
-                return;
-            }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given reference
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="reference">The requested reference in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<NMF.Models.IModelElement> GetExpressionForReference(string reference)
-        {
-            if ((reference == "AA"))
-            {
-                return new AssociationLNAAProxy(this);
-            }
-            return base.GetExpressionForReference(reference);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -37236,97 +26576,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "LDNNAME"))
-            {
-                return this.Ldnname;
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LDNNAME"))
-            {
-                this.Ldnname = ((ILogicalDeviceName)(value));
-                return;
-            }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given reference
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="reference">The requested reference in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<NMF.Models.IModelElement> GetExpressionForReference(string reference)
-        {
-            if ((reference == "LDNNAME"))
-            {
-                return new SAPAssignmentLdnnameProxy(this);
-            }
-            return base.GetExpressionForReference(reference);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -37363,63 +26612,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -37512,14 +26704,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Value;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -37535,16 +26719,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Value = ((int)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -37558,14 +26732,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "VALUE"))
             {
                 return Observable.Box(new InvocationCounterValueProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -37641,63 +26807,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -37734,63 +26843,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -38004,14 +27056,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.MfgPending;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -38042,16 +27086,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.MfgPending = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -38077,14 +27111,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "MFGPENDING"))
             {
                 return new UtilitiesTableObjectMfgPendingProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -38253,102 +27279,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "COMPACT_BUFFER"))
-            {
-                return this.Compact_buffer;
-            }
-            if ((attribute == "TEMPLATE_ID"))
-            {
-                return this.Template_id;
-            }
-            if ((attribute == "TEMPLATE_DESCRIPTION"))
-            {
-                return this.Template_description;
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "COMPACT_BUFFER"))
-            {
-                this.Compact_buffer = ((string)(value));
-                return;
-            }
-            if ((feature == "TEMPLATE_ID"))
-            {
-                this.Template_id = ((string)(value));
-                return;
-            }
-            if ((feature == "TEMPLATE_DESCRIPTION"))
-            {
-                this.Template_description = ((string)(value));
-                return;
-            }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "COMPACT_BUFFER"))
-            {
-                return new CompactdataCompact_bufferProxy(this);
-            }
-            if ((attribute == "TEMPLATE_ID"))
-            {
-                return new CompactdataTemplate_idProxy(this);
-            }
-            if ((attribute == "TEMPLATE_DESCRIPTION"))
-            {
-                return new CompactdataTemplate_descriptionProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -38438,14 +27368,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Value;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -38461,16 +27383,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Value = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -38484,14 +27396,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "VALUE"))
             {
                 return new DeviceIDValueProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -38617,14 +27521,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Value;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -38640,16 +27536,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Value = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -38663,14 +27549,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "VALUE"))
             {
                 return new MeteringPointIDValueProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -39245,14 +28123,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.DateLastFirmwareActivation;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -39323,16 +28193,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.DateLastFirmwareActivation = ((System.DateTime)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -39390,14 +28250,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "DATELASTFIRMWAREACTIVATION"))
             {
                 return Observable.Box(new ParameterChangesObjectDateLastFirmwareActivationProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -39864,14 +28716,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Value;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -39887,16 +28731,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Value = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -39910,14 +28744,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "VALUE"))
             {
                 return new I_O_control_signal_objects_contentsmanufacturerspecificValueProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -39995,63 +28821,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -40089,63 +28858,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -40188,89 +28900,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "STATE"))
-            {
-                return this.State;
-            }
-            if ((attribute == "TRANSITION"))
-            {
-                return this.Transition;
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "STATE"))
-            {
-                this.State = ((DisconnectControlState)(value));
-                return;
-            }
-            if ((feature == "TRANSITION"))
-            {
-                this.Transition = ((DisconnectControlTransition)(value));
-                return;
-            }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "STATE"))
-            {
-                return Observable.Box(new DisconnectControlStateProxy(this));
-            }
-            if ((attribute == "TRANSITION"))
-            {
-                return Observable.Box(new DisconnectControlTransitionProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -40307,63 +28936,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -40456,14 +29028,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Value;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -40479,16 +29043,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Value = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -40502,14 +29056,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "VALUE"))
             {
                 return new IOControlSignalsManufacturerValueProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -40585,63 +29131,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -40678,63 +29167,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -40777,89 +29209,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "STATE"))
-            {
-                return this.State;
-            }
-            if ((attribute == "TRANSITION"))
-            {
-                return this.Transition;
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "STATE"))
-            {
-                this.State = ((DisconnectControlState)(value));
-                return;
-            }
-            if ((feature == "TRANSITION"))
-            {
-                this.Transition = ((DisconnectControlTransition)(value));
-                return;
-            }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "STATE"))
-            {
-                return Observable.Box(new DisconnectControlStateProxy(this));
-            }
-            if ((attribute == "TRANSITION"))
-            {
-                return Observable.Box(new DisconnectControlTransitionProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -40896,63 +29245,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -41045,14 +29337,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Value;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -41068,16 +29352,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Value = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -41091,14 +29365,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "VALUE"))
             {
                 return new InternalControlManuValueProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -41174,63 +29440,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -41267,63 +29476,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -41366,63 +29518,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -41459,63 +29554,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -41558,63 +29596,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -41654,63 +29635,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -41747,63 +29671,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -41896,14 +29763,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Value;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -41919,16 +29778,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Value = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -41942,14 +29791,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "VALUE"))
             {
                 return new ErrorRegisterObjectValueProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -42025,63 +29866,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -42118,63 +29902,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -42267,14 +29994,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Value;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -42290,16 +30009,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Value = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -42313,14 +30022,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "VALUE"))
             {
                 return new AlarmRegisterObjectValueProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -42446,14 +30147,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Value;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -42469,16 +30162,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Value = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -42492,14 +30175,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "VALUE"))
             {
                 return new AlarmFilterObjectValueProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -42625,14 +30300,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Value;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -42648,16 +30315,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Value = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -42671,14 +30328,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "VALUE"))
             {
                 return new AlarmDescriptorObjectValueProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -42751,63 +30400,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -42900,14 +30492,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Value;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -42923,16 +30507,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Value = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -42946,14 +30520,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "VALUE"))
             {
                 return new ElectricityIDValueProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -43323,14 +30889,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Activefirmwaresignature;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -43376,16 +30934,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Activefirmwaresignature = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -43423,14 +30971,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "ACTIVEFIRMWARESIGNATURE"))
             {
                 return new ElectricityProgramEntriesActivefirmwaresignatureProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -44109,14 +31649,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Ampere_squaredhoursoutputpulse;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -44177,16 +31709,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Ampere_squaredhoursoutputpulse = ((double)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -44236,14 +31758,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "AMPERE_SQUAREDHOURSOUTPUTPULSE"))
             {
                 return Observable.Box(new OutputPulseValues_constantsAmpere_squaredhoursoutputpulseProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -44933,14 +32447,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Overalltransformer_rationenner;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -44991,16 +32497,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Overalltransformer_rationenner = ((int)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -45042,14 +32538,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "OVERALLTRANSFORMER_RATIONENNER"))
             {
                 return Observable.Box(new ReadingFactorAndCT_VTratioOveralltransformer_rationennerProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -45595,14 +33083,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Reference_voltage_for_aux_power_supply;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -45643,16 +33123,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Reference_voltage_for_aux_power_supply = ((double)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -45686,14 +33156,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "REFERENCE_VOLTAGE_FOR_AUX_POWER_SUPPLY"))
             {
                 return Observable.Box(new ElectricityNominalValuesReference_voltage_for_aux_power_supplyProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -46300,14 +33762,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Apparent_energy_export;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -46363,16 +33817,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Apparent_energy_export = ((double)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -46418,14 +33862,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "APPARENT_ENERGY_EXPORT"))
             {
                 return Observable.Box(new InputPulseValuesOrConstantsApparent_energy_exportProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -47045,14 +34481,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Billingperiod;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -47098,16 +34526,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Billingperiod = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -47145,14 +34563,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "BILLINGPERIOD"))
             {
                 return new MeasurementPeriod_recordingInterval_billingPeriodDurationBillingperiodProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -47873,14 +35283,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Billing_period_reset_lockout_time;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -47946,16 +35348,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Billing_period_reset_lockout_time = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -48009,14 +35401,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "BILLING_PERIOD_RESET_LOCKOUT_TIME"))
             {
                 return new ElectricityTimeEntriesBilling_period_reset_lockout_timeProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -48573,14 +35957,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Line_reactance_losses;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -48611,16 +35987,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Line_reactance_losses = ((double)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -48646,14 +36012,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "LINE_REACTANCE_LOSSES"))
             {
                 return Observable.Box(new CoefficientsLine_reactance_lossesProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -49116,14 +36474,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Algorithm_for_power_factor_calculation;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -49169,16 +36519,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Algorithm_for_power_factor_calculation = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -49216,14 +36556,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "ALGORITHM_FOR_POWER_FACTOR_CALCULATION"))
             {
                 return new MeasurementMethodsAlgorithm_for_power_factor_calculationProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -49535,14 +36867,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Value;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -49558,16 +36882,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Value = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -49581,14 +36895,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "VALUE"))
             {
                 return new ElectricityMeteringPointIDValueProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -49835,14 +37141,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Status_information_auxiliary_power_supply;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -49873,16 +37171,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Status_information_auxiliary_power_supply = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -49908,14 +37196,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "STATUS_INFORMATION_AUXILIARY_POWER_SUPPLY"))
             {
                 return new ElectricityRelatedStatusDataStatus_information_auxiliary_power_supplyProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -50081,63 +37361,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 }
                 return _classInstance;
             }
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
         }
         
         /// <summary>
@@ -50556,14 +37779,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Aux_voltage;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -50619,16 +37834,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Aux_voltage = ((double)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -50674,14 +37879,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "AUX_VOLTAGE"))
             {
                 return Observable.Box(new BatteryEntriesAux_voltageProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -51914,14 +39111,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Time_threshold_long_powerfailure;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -52042,16 +39231,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Time_threshold_long_powerfailure = ((int)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -52149,14 +39328,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "TIME_THRESHOLD_LONG_POWERFAILURE"))
             {
                 return Observable.Box(new PowerFailureMonitoringTime_threshold_long_powerfailureProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -52931,14 +40102,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Timeofoperation;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -52954,16 +40117,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Timeofoperation = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -52977,14 +40130,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "TIMEOFOPERATION"))
             {
                 return new OperatingTimeTimeofoperationProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -53173,21 +40318,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "SCALER_UNIT"))
-            {
-                return this.Scaler_unit;
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
         /// Resolves the given attribute name
         /// </summary>
         /// <returns>The attribute value or null if it could not be found</returns>
@@ -53207,18 +40337,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Relative_humidity;
             }
-            if ((attribute == "VALUE"))
-            {
-                return this.Value;
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -53229,11 +40347,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <param name="value">The value that should be set to that feature</param>
         protected override void SetFeature(string feature, object value)
         {
-            if ((feature == "SCALER_UNIT"))
-            {
-                this.Scaler_unit = ((IScal_unit_type)(value));
-                return;
-            }
             if ((feature == "AMBIENT_TEMPERATURE"))
             {
                 this.Ambient_temperature = ((double)(value));
@@ -53247,21 +40360,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((feature == "RELATIVE_HUMIDITY"))
             {
                 this.Relative_humidity = ((double)(value));
-                return;
-            }
-            if ((feature == "VALUE"))
-            {
-                this.Value = ((float)(value));
-                return;
-            }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
                 return;
             }
             base.SetFeature(feature, value);
@@ -53286,33 +40384,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return Observable.Box(new EnvironmentRelatedParametersRelative_humidityProxy(this));
             }
-            if ((attribute == "VALUE"))
-            {
-                return Observable.Box(new RegisterValueProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
             return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given reference
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="reference">The requested reference in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<NMF.Models.IModelElement> GetExpressionForReference(string reference)
-        {
-            if ((reference == "SCALER_UNIT"))
-            {
-                return new RegisterScaler_unitProxy(this);
-            }
-            return base.GetExpressionForReference(reference);
         }
         
         /// <summary>
@@ -53448,110 +40520,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         }
         
         /// <summary>
-        /// Resolves the given URI to a child model element
-        /// </summary>
-        /// <returns>The model element or null if it could not be found</returns>
-        /// <param name="reference">The requested reference name</param>
-        /// <param name="index">The index of this reference</param>
-        protected override IModelElement GetModelElementForReference(string reference, int index)
-        {
-            if ((reference == "SCALER_UNIT"))
-            {
-                return this.Scaler_unit;
-            }
-            return base.GetModelElementForReference(reference, index);
-        }
-        
-        /// <summary>
-        /// Resolves the given attribute name
-        /// </summary>
-        /// <returns>The attribute value or null if it could not be found</returns>
-        /// <param name="attribute">The requested attribute name</param>
-        /// <param name="index">The index of this attribute</param>
-        protected override object GetAttributeValue(string attribute, int index)
-        {
-            if ((attribute == "VALUE"))
-            {
-                return this.Value;
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
-            return base.GetAttributeValue(attribute, index);
-        }
-        
-        /// <summary>
-        /// Sets a value to the given feature
-        /// </summary>
-        /// <param name="feature">The requested feature</param>
-        /// <param name="value">The value that should be set to that feature</param>
-        protected override void SetFeature(string feature, object value)
-        {
-            if ((feature == "SCALER_UNIT"))
-            {
-                this.Scaler_unit = ((IScal_unit_type)(value));
-                return;
-            }
-            if ((feature == "VALUE"))
-            {
-                this.Value = ((float)(value));
-                return;
-            }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
-            base.SetFeature(feature, value);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given attribute
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="attribute">The requested attribute in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<object> GetExpressionForAttribute(string attribute)
-        {
-            if ((attribute == "VALUE"))
-            {
-                return Observable.Box(new RegisterValueProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
-            }
-            return base.GetExpressionForAttribute(attribute);
-        }
-        
-        /// <summary>
-        /// Gets the property expression for the given reference
-        /// </summary>
-        /// <returns>An incremental property expression</returns>
-        /// <param name="reference">The requested reference in upper case</param>
-        protected override NMF.Expressions.INotifyExpression<NMF.Models.IModelElement> GetExpressionForReference(string reference)
-        {
-            if ((reference == "SCALER_UNIT"))
-            {
-                return new RegisterScaler_unitProxy(this);
-            }
-            return base.GetExpressionForReference(reference);
-        }
-        
-        /// <summary>
         /// Gets the Class for this model element
         /// </summary>
         public override IClass GetClass()
@@ -53641,14 +40609,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Event_code_object;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -53664,16 +40624,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Event_code_object = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -53687,14 +40637,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "EVENT_CODE_OBJECT"))
             {
                 return new EventCodeEvent_code_objectProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -53982,14 +40924,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Communicationaddress;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -54025,16 +40959,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Communicationaddress = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -54064,14 +40988,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "COMMUNICATIONADDRESS"))
             {
                 return new CommunicationPortLogParametersCommunicationaddressProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -54360,14 +41276,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Consumer_message_via_meter_display;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -54388,16 +41296,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Consumer_message_via_meter_display = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -54415,14 +41313,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "CONSUMER_MESSAGE_VIA_METER_DISPLAY"))
             {
                 return new ConsumerMessageConsumer_message_via_meter_displayProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -54579,14 +41469,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Value;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -54602,16 +41484,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Value = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -54625,14 +41497,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "VALUE"))
             {
                 return new CurrentlyActiveTariffValueProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -54758,14 +41622,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Value;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -54781,16 +41637,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Value = ((int)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -54804,14 +41650,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "VALUE"))
             {
                 return Observable.Box(new EventCounterObjectValueProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -54937,14 +41775,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Value;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -54960,16 +41790,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Value = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -54983,14 +41803,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "VALUE"))
             {
                 return new ProfileEntryDigitalSignatureObjectValueProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -56262,14 +43074,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Manufacturer_specific;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -56425,16 +43229,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Manufacturer_specific = ((string)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -56560,14 +43354,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "MANUFACTURER_SPECIFIC"))
             {
                 return new MeterTemperEventRelatedObjectManufacturer_specificProxy(this);
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -61044,14 +47830,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.NeutralVoltage;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -61492,16 +48270,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.NeutralVoltage = ((double)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -61855,14 +48623,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "NEUTRALVOLTAGE"))
             {
                 return Observable.Box(new ElectricityValuesNeutralVoltageProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -65814,14 +52574,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.Test_average;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -65977,16 +52729,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.Test_average = ((double)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -66108,14 +52850,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "TEST_AVERAGE"))
             {
                 return Observable.Box(new MeasurementValuesTest_averageProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -67493,14 +54227,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.All_harmonics_to_nominal_value_ratio;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -67546,16 +54272,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.All_harmonics_to_nominal_value_ratio = ((double)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -67593,14 +54309,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "ALL_HARMONICS_TO_NOMINAL_VALUE_RATIO"))
             {
                 return Observable.Box(new ElectricityHarmonicsAll_harmonics_to_nominal_value_ratioProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -69591,14 +56299,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.FromIL0toIL3;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -69819,16 +56519,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.FromIL0toIL3 = ((double)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -70006,14 +56696,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "FROMIL0TOIL3"))
             {
                 return Observable.Box(new ExtendedPhaseAngleMeasurementFromIL0toIL3Proxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
@@ -74852,14 +61534,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             {
                 return this.L3Volt_Squared_hours;
             }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return this.Logical_name;
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return this.OBIScode;
-            }
             return base.GetAttributeValue(attribute, index);
         }
         
@@ -75295,16 +61969,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
                 this.L3Volt_Squared_hours = ((double)(value));
                 return;
             }
-            if ((feature == "LOGICAL_NAME"))
-            {
-                this.Logical_name = ((string)(value));
-                return;
-            }
-            if ((feature == "OBISCODE"))
-            {
-                this.OBIScode = ((string)(value));
-                return;
-            }
             base.SetFeature(feature, value);
         }
         
@@ -75654,14 +62318,6 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
             if ((attribute == "L3VOLT_SQUARED_HOURS"))
             {
                 return Observable.Box(new TransformerAndLineLossesL3Volt_Squared_hoursProxy(this));
-            }
-            if ((attribute == "LOGICAL_NAME"))
-            {
-                return new BaseLogical_nameProxy(this);
-            }
-            if ((attribute == "OBISCODE"))
-            {
-                return new BaseOBIScodeProxy(this);
             }
             return base.GetExpressionForAttribute(attribute);
         }
