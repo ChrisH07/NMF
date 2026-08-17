@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 
 namespace NMF.AnyText.Rules
 {
@@ -10,6 +11,21 @@ namespace NMF.AnyText.Rules
     /// </summary>
     public class ChoiceRule : Rule
     {
+        /// <summary>
+        /// Tracks, per thread, the semantic elements for which this rule is currently in the
+        /// process of being synthesized (via either <see cref="CanSynthesize"/> or
+        /// <see cref="Synthesize"/>). This guards against unbounded recursion for a
+        /// self-referential choice where one alternative (typically a transparent
+        /// <c>parantheses</c> rule) can represent any element the choice itself can represent:
+        /// without this guard, such an alternative gets re-selected for the same element
+        /// indefinitely, because <see cref="SynthesisPlan"/>'s own memoization is only consulted
+        /// when a sibling <see cref="ChoiceRule"/> resolves its alternatives -- rules that call
+        /// into another rule's CanSynthesize/Synthesize directly (e.g. <see cref="SequenceRule"/>,
+        /// including the <c>parantheses</c> rule) bypass that memoization entirely.
+        /// </summary>
+        private readonly ThreadLocal<HashSet<object>> _synthesisInProgress =
+            new(() => new HashSet<object>(ReferenceEqualityComparer.Instance));
+
         /// <summary>
         /// Creates a new instance
         /// </summary>
@@ -181,21 +197,45 @@ namespace NMF.AnyText.Rules
         /// <inheritdoc />
         public override bool CanSynthesize(object semanticElement, ParseContext context, SynthesisPlan synthesisPlan)
         {
-            synthesisPlan ??= new SynthesisPlan();
-            synthesisPlan.BlockRecursion(this, semanticElement);
-            return Array.Exists(Alternatives, r => synthesisPlan.CanSynthesize(r.Rule, semanticElement, context));
+            var inProgress = _synthesisInProgress.Value;
+            if (!inProgress.Add(semanticElement))
+            {
+                return false;
+            }
+            try
+            {
+                synthesisPlan ??= new SynthesisPlan();
+                synthesisPlan.BlockRecursion(this, semanticElement);
+                return Array.Exists(Alternatives, r => synthesisPlan.CanSynthesize(r.Rule, semanticElement, context));
+            }
+            finally
+            {
+                inProgress.Remove(semanticElement);
+            }
         }
 
         /// <inheritdoc />
         public override RuleApplication Synthesize(object semanticElement, ParsePosition position, ParseContext context)
         {
-            var synthesisPlan = new SynthesisPlan();
-            var alternative = Array.Find(Alternatives, a => synthesisPlan.CanSynthesize(a.Rule, semanticElement, context));
-            if (alternative.Rule != null)
+            var inProgress = _synthesisInProgress.Value;
+            if (!inProgress.Add(semanticElement))
             {
-                return CreateRuleApplication(alternative.Rule.Synthesize(semanticElement, position, context), default);
+                return new FailedRuleApplication(this, default, $"Recursive synthesis detected for {semanticElement}");
             }
-            return new FailedRuleApplication(this, default, $"Failed to synthesize {semanticElement}");
+            try
+            {
+                var synthesisPlan = new SynthesisPlan();
+                var alternative = Array.Find(Alternatives, a => synthesisPlan.CanSynthesize(a.Rule, semanticElement, context));
+                if (alternative.Rule != null)
+                {
+                    return CreateRuleApplication(alternative.Rule.Synthesize(semanticElement, position, context), default);
+                }
+                return new FailedRuleApplication(this, default, $"Failed to synthesize {semanticElement}");
+            }
+            finally
+            {
+                inProgress.Remove(semanticElement);
+            }
         }
 
         internal override void Write(PrettyPrintWriter writer, ParseContext context, SingleRuleApplication ruleApplication)

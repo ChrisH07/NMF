@@ -196,7 +196,10 @@ namespace NMF.AnyText
             }
             if (End.Line >= input.Length)
             {
-                newArray[End.Line + offset] = NewText[NewText.Length - 1];
+                if (End.Line + offset != Start.Line)
+                {
+                    newArray[End.Line + offset] = NewText[NewText.Length - 1];
+                }
             }
             else
             {
