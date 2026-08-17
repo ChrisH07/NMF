@@ -51,3 +51,4 @@ patch: adapt metamodel code to changed interface
 patch: improve error reporting
 patch: update StreamJsonRpc version, improve error reporting
 patch: update dependencies
+patch: fix stack overflow in ChoiceRule synthesis for self-referential choices with a parantheses alternative
