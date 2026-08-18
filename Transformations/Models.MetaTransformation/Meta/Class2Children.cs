@@ -48,7 +48,7 @@ namespace NMF.Models.Meta
                 // own declared members and anything duplicated onto it to compensate for NMeta multiple inheritance
                 // before GetImplementingReferences reads it. Without this, Class2Type(scope) is only guaranteed to
                 // exist (via ResolveIn's CreateOutput), not to have been transformed yet.
-                Require(Rule<Class2Type>(), (children, type) => { });
+                Require(Rule<Class2Type>());
             }
 
             /// <inheritdoc />
