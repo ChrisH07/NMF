@@ -153,7 +153,7 @@ namespace TemporaryGeneratedCode.Persons
         /// <summary>
         /// Represents a proxy to represent an incremental access to the fullName property
         /// </summary>
-        private sealed class PersonFullNameProxy : ModelPropertyChange<IPerson, string>
+        protected sealed class PersonFullNameProxy : ModelPropertyChange<IPerson, string>
         {
             
             /// <summary>

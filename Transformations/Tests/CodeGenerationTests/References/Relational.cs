@@ -182,7 +182,7 @@ namespace TemporaryGeneratedCode.Relational
         /// <summary>
         /// Represents a proxy to represent an incremental access to the name property
         /// </summary>
-        private sealed class NamedNameProxy : ModelPropertyChange<INamed, string>
+        protected sealed class NamedNameProxy : ModelPropertyChange<INamed, string>
         {
             
             /// <summary>
@@ -421,11 +421,11 @@ namespace TemporaryGeneratedCode.Relational
         {
             if ((feature == "COL"))
             {
-                return this._col;
+                return ((System.Collections.IList)(this.Col));
             }
             if ((feature == "KEY"))
             {
-                return this._key;
+                return ((System.Collections.IList)(this.Key));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -437,7 +437,7 @@ namespace TemporaryGeneratedCode.Relational
         /// <param name="container">The container object</param>
         protected override string GetCompositionName(object container)
         {
-            if ((container == this._col))
+            if ((container == this.Col))
             {
                 return "col";
             }
@@ -1223,7 +1223,7 @@ namespace TemporaryGeneratedCode.Relational
         /// <summary>
         /// Represents a proxy to represent an incremental access to the owner property
         /// </summary>
-        private sealed class ColumnOwnerProxy : ModelPropertyChange<IColumn, ITable>
+        protected sealed class ColumnOwnerProxy : ModelPropertyChange<IColumn, ITable>
         {
             
             /// <summary>
@@ -1254,7 +1254,7 @@ namespace TemporaryGeneratedCode.Relational
         /// <summary>
         /// Represents a proxy to represent an incremental access to the keyOf property
         /// </summary>
-        private sealed class ColumnKeyOfProxy : ModelPropertyChange<IColumn, ITable>
+        protected sealed class ColumnKeyOfProxy : ModelPropertyChange<IColumn, ITable>
         {
             
             /// <summary>
@@ -1285,7 +1285,7 @@ namespace TemporaryGeneratedCode.Relational
         /// <summary>
         /// Represents a proxy to represent an incremental access to the type property
         /// </summary>
-        private sealed class ColumnTypeProxy : ModelPropertyChange<IColumn, TemporaryGeneratedCode.Relational.IType>
+        protected sealed class ColumnTypeProxy : ModelPropertyChange<IColumn, TemporaryGeneratedCode.Relational.IType>
         {
             
             /// <summary>

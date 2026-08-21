@@ -216,7 +216,7 @@ namespace TemporaryGeneratedCode.NameClashes
         /// <summary>
         /// Represents a proxy to represent an incremental access to the name property
         /// </summary>
-        private sealed class ElementNameProxy : ModelPropertyChange<IElement, string>
+        protected sealed class ElementNameProxy : ModelPropertyChange<IElement, string>
         {
             
             /// <summary>
@@ -400,7 +400,7 @@ namespace TemporaryGeneratedCode.NameClashes
         {
             if ((feature == "CHILDREN"))
             {
-                return this._children_;
+                return ((System.Collections.IList)(this.Children_));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -412,7 +412,7 @@ namespace TemporaryGeneratedCode.NameClashes
         /// <param name="container">The container object</param>
         protected override string GetCompositionName(object container)
         {
-            if ((container == this._children_))
+            if ((container == this.Children_))
             {
                 return "children";
             }

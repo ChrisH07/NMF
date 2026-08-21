@@ -154,7 +154,7 @@ namespace TemporaryGeneratedCode.Railway
         /// <summary>
         /// Represents a proxy to represent an incremental access to the length property
         /// </summary>
-        private sealed class SegmentLengthProxy : ModelPropertyChange<ISegment, int>
+        protected sealed class SegmentLengthProxy : ModelPropertyChange<ISegment, int>
         {
             
             /// <summary>
@@ -377,7 +377,7 @@ namespace TemporaryGeneratedCode.Railway
         {
             if ((feature == "CONNECTSTO"))
             {
-                return this._connectsTo;
+                return ((System.Collections.IList)(this.ConnectsTo));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -579,7 +579,7 @@ namespace TemporaryGeneratedCode.Railway
         /// <summary>
         /// Represents a proxy to represent an incremental access to the sensor property
         /// </summary>
-        private sealed class TrackElementSensorProxy : ModelPropertyChange<ITrackElement, ISensor>
+        protected sealed class TrackElementSensorProxy : ModelPropertyChange<ITrackElement, ISensor>
         {
             
             /// <summary>
@@ -791,7 +791,7 @@ namespace TemporaryGeneratedCode.Railway
         {
             if ((feature == "POSITIONS"))
             {
-                return this._positions;
+                return ((System.Collections.IList)(this.Positions));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -964,7 +964,7 @@ namespace TemporaryGeneratedCode.Railway
         /// <summary>
         /// Represents a proxy to represent an incremental access to the currentPosition property
         /// </summary>
-        private sealed class SwitchCurrentPositionProxy : ModelPropertyChange<ISwitch, Position>
+        protected sealed class SwitchCurrentPositionProxy : ModelPropertyChange<ISwitch, Position>
         {
             
             /// <summary>
@@ -1346,11 +1346,11 @@ namespace TemporaryGeneratedCode.Railway
         {
             if ((feature == "FOLLOWS"))
             {
-                return this._follows;
+                return ((System.Collections.IList)(this.Follows));
             }
             if ((feature == "DEFINEDBY"))
             {
-                return this._definedBy;
+                return ((System.Collections.IList)(this.DefinedBy));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -1400,11 +1400,11 @@ namespace TemporaryGeneratedCode.Railway
         /// <param name="container">The container object</param>
         protected override string GetCompositionName(object container)
         {
-            if ((container == this._follows))
+            if ((container == this.Follows))
             {
                 return "follows";
             }
-            if ((container == this._definedBy))
+            if ((container == this.DefinedBy))
             {
                 return "definedBy";
             }
@@ -1798,7 +1798,7 @@ namespace TemporaryGeneratedCode.Railway
         /// <summary>
         /// Represents a proxy to represent an incremental access to the entry property
         /// </summary>
-        private sealed class RouteEntryProxy : ModelPropertyChange<IRoute, ISemaphore>
+        protected sealed class RouteEntryProxy : ModelPropertyChange<IRoute, ISemaphore>
         {
             
             /// <summary>
@@ -1829,7 +1829,7 @@ namespace TemporaryGeneratedCode.Railway
         /// <summary>
         /// Represents a proxy to represent an incremental access to the exit property
         /// </summary>
-        private sealed class RouteExitProxy : ModelPropertyChange<IRoute, ISemaphore>
+        protected sealed class RouteExitProxy : ModelPropertyChange<IRoute, ISemaphore>
         {
             
             /// <summary>
@@ -1982,7 +1982,7 @@ namespace TemporaryGeneratedCode.Railway
         /// <summary>
         /// Represents a proxy to represent an incremental access to the signal property
         /// </summary>
-        private sealed class SemaphoreSignalProxy : ModelPropertyChange<ISemaphore, Signal>
+        protected sealed class SemaphoreSignalProxy : ModelPropertyChange<ISemaphore, Signal>
         {
             
             /// <summary>
@@ -2467,7 +2467,7 @@ namespace TemporaryGeneratedCode.Railway
         /// <summary>
         /// Represents a proxy to represent an incremental access to the position property
         /// </summary>
-        private sealed class SwitchPositionPositionProxy : ModelPropertyChange<ISwitchPosition, Position>
+        protected sealed class SwitchPositionPositionProxy : ModelPropertyChange<ISwitchPosition, Position>
         {
             
             /// <summary>
@@ -2498,7 +2498,7 @@ namespace TemporaryGeneratedCode.Railway
         /// <summary>
         /// Represents a proxy to represent an incremental access to the switch property
         /// </summary>
-        private sealed class SwitchPositionSwitchProxy : ModelPropertyChange<ISwitchPosition, ISwitch>
+        protected sealed class SwitchPositionSwitchProxy : ModelPropertyChange<ISwitchPosition, ISwitch>
         {
             
             /// <summary>
@@ -2529,7 +2529,7 @@ namespace TemporaryGeneratedCode.Railway
         /// <summary>
         /// Represents a proxy to represent an incremental access to the route property
         /// </summary>
-        private sealed class SwitchPositionRouteProxy : ModelPropertyChange<ISwitchPosition, IRoute>
+        protected sealed class SwitchPositionRouteProxy : ModelPropertyChange<ISwitchPosition, IRoute>
         {
             
             /// <summary>
@@ -2682,7 +2682,7 @@ namespace TemporaryGeneratedCode.Railway
         /// <summary>
         /// Represents a proxy to represent an incremental access to the id property
         /// </summary>
-        private sealed class RailwayElementIdProxy : ModelPropertyChange<IRailwayElement, Nullable<int>>
+        protected sealed class RailwayElementIdProxy : ModelPropertyChange<IRailwayElement, Nullable<int>>
         {
             
             /// <summary>
@@ -2866,7 +2866,7 @@ namespace TemporaryGeneratedCode.Railway
         {
             if ((feature == "ELEMENTS"))
             {
-                return this._elements;
+                return ((System.Collections.IList)(this.Elements));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -2878,7 +2878,7 @@ namespace TemporaryGeneratedCode.Railway
         /// <param name="container">The container object</param>
         protected override string GetCompositionName(object container)
         {
-            if ((container == this._elements))
+            if ((container == this.Elements))
             {
                 return "elements";
             }
@@ -3462,15 +3462,15 @@ namespace TemporaryGeneratedCode.Railway
         {
             if ((feature == "INVALIDS"))
             {
-                return this._invalids;
+                return ((System.Collections.IList)(this.Invalids));
             }
             if ((feature == "SEMAPHORES"))
             {
-                return this._semaphores;
+                return ((System.Collections.IList)(this.Semaphores));
             }
             if ((feature == "ROUTES"))
             {
-                return this._routes;
+                return ((System.Collections.IList)(this.Routes));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -3482,15 +3482,15 @@ namespace TemporaryGeneratedCode.Railway
         /// <param name="container">The container object</param>
         protected override string GetCompositionName(object container)
         {
-            if ((container == this._invalids))
+            if ((container == this.Invalids))
             {
                 return "invalids";
             }
-            if ((container == this._semaphores))
+            if ((container == this.Semaphores))
             {
                 return "semaphores";
             }
-            if ((container == this._routes))
+            if ((container == this.Routes))
             {
                 return "routes";
             }

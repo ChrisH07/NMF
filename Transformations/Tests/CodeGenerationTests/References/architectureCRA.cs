@@ -254,11 +254,11 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         {
             if ((feature == "CLASSES"))
             {
-                return this._classes;
+                return ((System.Collections.IList)(this.Classes));
             }
             if ((feature == "FEATURES"))
             {
-                return this._features;
+                return ((System.Collections.IList)(this.Features));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -270,11 +270,11 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         /// <param name="container">The container object</param>
         protected override string GetCompositionName(object container)
         {
-            if ((container == this._classes))
+            if ((container == this.Classes))
             {
                 return "classes";
             }
-            if ((container == this._features))
+            if ((container == this.Features))
             {
                 return "features";
             }
@@ -739,7 +739,7 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         {
             if ((feature == "ENCAPSULATES"))
             {
-                return this._encapsulates;
+                return ((System.Collections.IList)(this.Encapsulates));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -1114,11 +1114,11 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         {
             if ((feature == "DATADEPENDENCY"))
             {
-                return this._dataDependency;
+                return ((System.Collections.IList)(this.DataDependency));
             }
             if ((feature == "FUNCTIONALDEPENDENCY"))
             {
-                return this._functionalDependency;
+                return ((System.Collections.IList)(this.FunctionalDependency));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -1573,7 +1573,7 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the isEncapsulatedBy property
         /// </summary>
-        private sealed class FeatureIsEncapsulatedByProxy : ModelPropertyChange<IFeature, TemporaryGeneratedCode.ArchitectureCRA.IClass>
+        protected sealed class FeatureIsEncapsulatedByProxy : ModelPropertyChange<IFeature, TemporaryGeneratedCode.ArchitectureCRA.IClass>
         {
             
             /// <summary>
@@ -1754,7 +1754,7 @@ namespace TemporaryGeneratedCode.ArchitectureCRA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the name property
         /// </summary>
-        private sealed class NamedElementNameProxy : ModelPropertyChange<INamedElement, string>
+        protected sealed class NamedElementNameProxy : ModelPropertyChange<INamedElement, string>
         {
             
             /// <summary>

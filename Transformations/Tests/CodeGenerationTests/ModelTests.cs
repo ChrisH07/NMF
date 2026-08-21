@@ -90,6 +90,12 @@ namespace NMF.CodeGenerationTests
         }
 
         [TestMethod]
+        public void MultiInheritanceModelGeneratedSuccessfully()
+        {
+            GenerateAndAssertEcore("MultiInheritance.ecore");
+        }
+
+        [TestMethod]
         public void DefaultValueExampleGeneratesAndInstanceCanBeLoaded()
         {
             GenerateAndAssertEcore("DefaultValueTest.ecore");

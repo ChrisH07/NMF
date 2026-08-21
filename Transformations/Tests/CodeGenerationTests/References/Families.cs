@@ -461,11 +461,11 @@ namespace TemporaryGeneratedCode.Families
         {
             if ((feature == "SONS"))
             {
-                return this._sons;
+                return ((System.Collections.IList)(this.Sons));
             }
             if ((feature == "DAUGHTERS"))
             {
-                return this._daughters;
+                return ((System.Collections.IList)(this.Daughters));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -534,11 +534,11 @@ namespace TemporaryGeneratedCode.Families
         /// <param name="container">The container object</param>
         protected override string GetCompositionName(object container)
         {
-            if ((container == this._sons))
+            if ((container == this.Sons))
             {
                 return "sons";
             }
-            if ((container == this._daughters))
+            if ((container == this.Daughters))
             {
                 return "daughters";
             }
@@ -988,7 +988,7 @@ namespace TemporaryGeneratedCode.Families
         /// <summary>
         /// Represents a proxy to represent an incremental access to the lastName property
         /// </summary>
-        private sealed class FamilyLastNameProxy : ModelPropertyChange<IFamily, string>
+        protected sealed class FamilyLastNameProxy : ModelPropertyChange<IFamily, string>
         {
             
             /// <summary>
@@ -1019,7 +1019,7 @@ namespace TemporaryGeneratedCode.Families
         /// <summary>
         /// Represents a proxy to represent an incremental access to the father property
         /// </summary>
-        private sealed class FamilyFatherProxy : ModelPropertyChange<IFamily, IMember>
+        protected sealed class FamilyFatherProxy : ModelPropertyChange<IFamily, IMember>
         {
             
             /// <summary>
@@ -1050,7 +1050,7 @@ namespace TemporaryGeneratedCode.Families
         /// <summary>
         /// Represents a proxy to represent an incremental access to the mother property
         /// </summary>
-        private sealed class FamilyMotherProxy : ModelPropertyChange<IFamily, IMember>
+        protected sealed class FamilyMotherProxy : ModelPropertyChange<IFamily, IMember>
         {
             
             /// <summary>
@@ -1742,7 +1742,7 @@ namespace TemporaryGeneratedCode.Families
         /// <summary>
         /// Represents a proxy to represent an incremental access to the firstName property
         /// </summary>
-        private sealed class MemberFirstNameProxy : ModelPropertyChange<IMember, string>
+        protected sealed class MemberFirstNameProxy : ModelPropertyChange<IMember, string>
         {
             
             /// <summary>
@@ -1773,7 +1773,7 @@ namespace TemporaryGeneratedCode.Families
         /// <summary>
         /// Represents a proxy to represent an incremental access to the familyFather property
         /// </summary>
-        private sealed class MemberFamilyFatherProxy : ModelPropertyChange<IMember, IFamily>
+        protected sealed class MemberFamilyFatherProxy : ModelPropertyChange<IMember, IFamily>
         {
             
             /// <summary>
@@ -1804,7 +1804,7 @@ namespace TemporaryGeneratedCode.Families
         /// <summary>
         /// Represents a proxy to represent an incremental access to the familyMother property
         /// </summary>
-        private sealed class MemberFamilyMotherProxy : ModelPropertyChange<IMember, IFamily>
+        protected sealed class MemberFamilyMotherProxy : ModelPropertyChange<IMember, IFamily>
         {
             
             /// <summary>
@@ -1835,7 +1835,7 @@ namespace TemporaryGeneratedCode.Families
         /// <summary>
         /// Represents a proxy to represent an incremental access to the familySon property
         /// </summary>
-        private sealed class MemberFamilySonProxy : ModelPropertyChange<IMember, IFamily>
+        protected sealed class MemberFamilySonProxy : ModelPropertyChange<IMember, IFamily>
         {
             
             /// <summary>
@@ -1866,7 +1866,7 @@ namespace TemporaryGeneratedCode.Families
         /// <summary>
         /// Represents a proxy to represent an incremental access to the familyDaughter property
         /// </summary>
-        private sealed class MemberFamilyDaughterProxy : ModelPropertyChange<IMember, IFamily>
+        protected sealed class MemberFamilyDaughterProxy : ModelPropertyChange<IMember, IFamily>
         {
             
             /// <summary>

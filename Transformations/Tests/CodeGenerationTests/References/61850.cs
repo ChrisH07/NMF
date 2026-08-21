@@ -27,8 +27,8 @@ namespace TemporaryGeneratedCode.SubstationStandard
     using NMF.Serialization;
     using NMF.Utilities;
     using TemporaryGeneratedCode.SubstationStandard.LNNodes.DomainLNs;
-    using System.Collections.Specialized;
     using TemporaryGeneratedCode.SubstationStandard.Dataclasses;
+    using System.Collections.Specialized;
     
     
     /// <summary>
@@ -1392,79 +1392,79 @@ namespace TemporaryGeneratedCode.SubstationStandard
         {
             if ((feature == "LN"))
             {
-                return this._lN;
+                return ((System.Collections.IList)(this.LN));
             }
             if ((feature == "NAMEPLT"))
             {
-                return this._namePlt;
+                return ((System.Collections.IList)(this.NamePlt));
             }
             if ((feature == "LPL"))
             {
-                return this._lPL;
+                return ((System.Collections.IList)(this.LPL));
             }
             if ((feature == "DPC"))
             {
-                return this._dPC;
+                return ((System.Collections.IList)(this.DPC));
             }
             if ((feature == "ACT"))
             {
-                return this._aCT;
+                return ((System.Collections.IList)(this.ACT));
             }
             if ((feature == "SPS"))
             {
-                return this._sPS;
+                return ((System.Collections.IList)(this.SPS));
             }
             if ((feature == "BSC"))
             {
-                return this._bSC;
+                return ((System.Collections.IList)(this.BSC));
             }
             if ((feature == "ISC"))
             {
-                return this._iSC;
+                return ((System.Collections.IList)(this.ISC));
             }
             if ((feature == "SPC"))
             {
-                return this._sPC;
+                return ((System.Collections.IList)(this.SPC));
             }
             if ((feature == "MV"))
             {
-                return this._mV;
+                return ((System.Collections.IList)(this.MV));
             }
             if ((feature == "INS"))
             {
-                return this._iNS;
+                return ((System.Collections.IList)(this.INS));
             }
             if ((feature == "ASG"))
             {
-                return this._aSG;
+                return ((System.Collections.IList)(this.ASG));
             }
             if ((feature == "WYE"))
             {
-                return this._wYE;
+                return ((System.Collections.IList)(this.WYE));
             }
             if ((feature == "DPSTATUS"))
             {
-                return this._dPStatus;
+                return ((System.Collections.IList)(this.DPStatus));
             }
             if ((feature == "ANALOGUEVALUE"))
             {
-                return this._analogueValue;
+                return ((System.Collections.IList)(this.AnalogueValue));
             }
             if ((feature == "CMV"))
             {
-                return this._cMV;
+                return ((System.Collections.IList)(this.CMV));
             }
             if ((feature == "VALWITHTRANS"))
             {
-                return this._valWithTrans;
+                return ((System.Collections.IList)(this.ValWithTrans));
             }
             if ((feature == "BSCONTROL"))
             {
-                return this._bSControl;
+                return ((System.Collections.IList)(this.BSControl));
             }
             if ((feature == "VECTOR"))
             {
-                return this._vector;
+                return ((System.Collections.IList)(this.Vector));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -1476,79 +1476,79 @@ namespace TemporaryGeneratedCode.SubstationStandard
         /// <param name="container">The container object</param>
         protected override string GetCompositionName(object container)
         {
-            if ((container == this._lN))
+            if ((container == this.LN))
             {
                 return "LN";
             }
-            if ((container == this._namePlt))
+            if ((container == this.NamePlt))
             {
                 return "NamePlt";
             }
-            if ((container == this._lPL))
+            if ((container == this.LPL))
             {
                 return "LPL";
             }
-            if ((container == this._dPC))
+            if ((container == this.DPC))
             {
                 return "DPC";
             }
-            if ((container == this._aCT))
+            if ((container == this.ACT))
             {
                 return "ACT";
             }
-            if ((container == this._sPS))
+            if ((container == this.SPS))
             {
                 return "SPS";
             }
-            if ((container == this._bSC))
+            if ((container == this.BSC))
             {
                 return "BSC";
             }
-            if ((container == this._iSC))
+            if ((container == this.ISC))
             {
                 return "ISC";
             }
-            if ((container == this._sPC))
+            if ((container == this.SPC))
             {
                 return "SPC";
             }
-            if ((container == this._mV))
+            if ((container == this.MV))
             {
                 return "MV";
             }
-            if ((container == this._iNS))
+            if ((container == this.INS))
             {
                 return "INS";
             }
-            if ((container == this._aSG))
+            if ((container == this.ASG))
             {
                 return "ASG";
             }
-            if ((container == this._wYE))
+            if ((container == this.WYE))
             {
                 return "WYE";
             }
-            if ((container == this._dPStatus))
+            if ((container == this.DPStatus))
             {
                 return "DPStatus";
             }
-            if ((container == this._analogueValue))
+            if ((container == this.AnalogueValue))
             {
                 return "AnalogueValue";
             }
-            if ((container == this._cMV))
+            if ((container == this.CMV))
             {
                 return "CMV";
             }
-            if ((container == this._valWithTrans))
+            if ((container == this.ValWithTrans))
             {
                 return "ValWithTrans";
             }
-            if ((container == this._bSControl))
+            if ((container == this.BSControl))
             {
                 return "BSControl";
             }
-            if ((container == this._vector))
+            if ((container == this.Vector))
             {
                 return "Vector";
             }
@@ -3851,7 +3851,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.DomainLNs
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Mode property
         /// </summary>
-        private sealed class DomainLNModeProxy : ModelPropertyChange<IDomainLN, IINC>
+        protected sealed class DomainLNModeProxy : ModelPropertyChange<IDomainLN, IINC>
         {
             
             /// <summary>
@@ -3882,7 +3882,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.DomainLNs
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Behaviour property
         /// </summary>
-        private sealed class DomainLNBehaviourProxy : ModelPropertyChange<IDomainLN, IINS>
+        protected sealed class DomainLNBehaviourProxy : ModelPropertyChange<IDomainLN, IINS>
         {
             
             /// <summary>
@@ -3913,7 +3913,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.DomainLNs
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Health property
         /// </summary>
-        private sealed class DomainLNHealthProxy : ModelPropertyChange<IDomainLN, IINS>
+        protected sealed class DomainLNHealthProxy : ModelPropertyChange<IDomainLN, IINS>
         {
             
             /// <summary>
@@ -3944,7 +3944,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.DomainLNs
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NamePlt property
         /// </summary>
-        private sealed class DomainLNNamePltProxy : ModelPropertyChange<IDomainLN, ILPL>
+        protected sealed class DomainLNNamePltProxy : ModelPropertyChange<IDomainLN, ILPL>
         {
             
             /// <summary>
@@ -4303,7 +4303,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpCntRs property
         /// </summary>
-        private sealed class GroupPOpCntRsProxy : ModelPropertyChange<IGroupP, IINC>
+        protected sealed class GroupPOpCntRsProxy : ModelPropertyChange<IGroupP, IINC>
         {
             
             /// <summary>
@@ -5786,7 +5786,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PDIFStrProxy : ModelPropertyChange<IPDIF, IACD>
+        protected sealed class PDIFStrProxy : ModelPropertyChange<IPDIF, IACD>
         {
             
             /// <summary>
@@ -5817,7 +5817,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PDIFOpProxy : ModelPropertyChange<IPDIF, IACT>
+        protected sealed class PDIFOpProxy : ModelPropertyChange<IPDIF, IACT>
         {
             
             /// <summary>
@@ -5848,7 +5848,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmASt property
         /// </summary>
-        private sealed class PDIFTmAStProxy : ModelPropertyChange<IPDIF, ICSD>
+        protected sealed class PDIFTmAStProxy : ModelPropertyChange<IPDIF, ICSD>
         {
             
             /// <summary>
@@ -5879,7 +5879,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DifAClc property
         /// </summary>
-        private sealed class PDIFDifAClcProxy : ModelPropertyChange<IPDIF, IWYE>
+        protected sealed class PDIFDifAClcProxy : ModelPropertyChange<IPDIF, IWYE>
         {
             
             /// <summary>
@@ -5910,7 +5910,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RstA property
         /// </summary>
-        private sealed class PDIFRstAProxy : ModelPropertyChange<IPDIF, IWYE>
+        protected sealed class PDIFRstAProxy : ModelPropertyChange<IPDIF, IWYE>
         {
             
             /// <summary>
@@ -5941,7 +5941,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LinCapac property
         /// </summary>
-        private sealed class PDIFLinCapacProxy : ModelPropertyChange<IPDIF, IASG>
+        protected sealed class PDIFLinCapacProxy : ModelPropertyChange<IPDIF, IASG>
         {
             
             /// <summary>
@@ -5972,7 +5972,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LoSet property
         /// </summary>
-        private sealed class PDIFLoSetProxy : ModelPropertyChange<IPDIF, IING>
+        protected sealed class PDIFLoSetProxy : ModelPropertyChange<IPDIF, IING>
         {
             
             /// <summary>
@@ -6003,7 +6003,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HiSet property
         /// </summary>
-        private sealed class PDIFHiSetProxy : ModelPropertyChange<IPDIF, IING>
+        protected sealed class PDIFHiSetProxy : ModelPropertyChange<IPDIF, IING>
         {
             
             /// <summary>
@@ -6034,7 +6034,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MinOpTmms property
         /// </summary>
-        private sealed class PDIFMinOpTmmsProxy : ModelPropertyChange<IPDIF, IING>
+        protected sealed class PDIFMinOpTmmsProxy : ModelPropertyChange<IPDIF, IING>
         {
             
             /// <summary>
@@ -6065,7 +6065,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxOpTmms property
         /// </summary>
-        private sealed class PDIFMaxOpTmmsProxy : ModelPropertyChange<IPDIF, IING>
+        protected sealed class PDIFMaxOpTmmsProxy : ModelPropertyChange<IPDIF, IING>
         {
             
             /// <summary>
@@ -6096,7 +6096,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RstMod property
         /// </summary>
-        private sealed class PDIFRstModProxy : ModelPropertyChange<IPDIF, IING>
+        protected sealed class PDIFRstModProxy : ModelPropertyChange<IPDIF, IING>
         {
             
             /// <summary>
@@ -6127,7 +6127,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RsDiTmms property
         /// </summary>
-        private sealed class PDIFRsDiTmmsProxy : ModelPropertyChange<IPDIF, IING>
+        protected sealed class PDIFRsDiTmmsProxy : ModelPropertyChange<IPDIF, IING>
         {
             
             /// <summary>
@@ -6158,7 +6158,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmACrv property
         /// </summary>
-        private sealed class PDIFTmACrvProxy : ModelPropertyChange<IPDIF, ICURVE>
+        protected sealed class PDIFTmACrvProxy : ModelPropertyChange<IPDIF, ICURVE>
         {
             
             /// <summary>
@@ -6641,7 +6641,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PDIRStrProxy : ModelPropertyChange<IPDIR, IACD>
+        protected sealed class PDIRStrProxy : ModelPropertyChange<IPDIR, IACD>
         {
             
             /// <summary>
@@ -6672,7 +6672,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PDIROpProxy : ModelPropertyChange<IPDIR, IACT>
+        protected sealed class PDIROpProxy : ModelPropertyChange<IPDIR, IACT>
         {
             
             /// <summary>
@@ -6703,7 +6703,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RsDiTmms property
         /// </summary>
-        private sealed class PDIRRsDiTmmsProxy : ModelPropertyChange<IPDIR, IING>
+        protected sealed class PDIRRsDiTmmsProxy : ModelPropertyChange<IPDIR, IING>
         {
             
             /// <summary>
@@ -7586,7 +7586,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PFRCStrProxy : ModelPropertyChange<IPFRC, IACD>
+        protected sealed class PFRCStrProxy : ModelPropertyChange<IPFRC, IACD>
         {
             
             /// <summary>
@@ -7617,7 +7617,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PFRCOpProxy : ModelPropertyChange<IPFRC, IACT>
+        protected sealed class PFRCOpProxy : ModelPropertyChange<IPFRC, IACT>
         {
             
             /// <summary>
@@ -7648,7 +7648,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkV property
         /// </summary>
-        private sealed class PFRCBlkVProxy : ModelPropertyChange<IPFRC, ISPS>
+        protected sealed class PFRCBlkVProxy : ModelPropertyChange<IPFRC, ISPS>
         {
             
             /// <summary>
@@ -7679,7 +7679,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StrVal property
         /// </summary>
-        private sealed class PFRCStrValProxy : ModelPropertyChange<IPFRC, IASG>
+        protected sealed class PFRCStrValProxy : ModelPropertyChange<IPFRC, IASG>
         {
             
             /// <summary>
@@ -7710,7 +7710,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkVal property
         /// </summary>
-        private sealed class PFRCBlkValProxy : ModelPropertyChange<IPFRC, IASG>
+        protected sealed class PFRCBlkValProxy : ModelPropertyChange<IPFRC, IASG>
         {
             
             /// <summary>
@@ -7741,7 +7741,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpDiTmms property
         /// </summary>
-        private sealed class PFRCOpDiTmmsProxy : ModelPropertyChange<IPFRC, IING>
+        protected sealed class PFRCOpDiTmmsProxy : ModelPropertyChange<IPFRC, IING>
         {
             
             /// <summary>
@@ -7772,7 +7772,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RsDiTmms property
         /// </summary>
-        private sealed class PFRCRsDiTmmsProxy : ModelPropertyChange<IPFRC, IING>
+        protected sealed class PFRCRsDiTmmsProxy : ModelPropertyChange<IPFRC, IING>
         {
             
             /// <summary>
@@ -8555,7 +8555,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PHARStrProxy : ModelPropertyChange<IPHAR, IACD>
+        protected sealed class PHARStrProxy : ModelPropertyChange<IPHAR, IACD>
         {
             
             /// <summary>
@@ -8586,7 +8586,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HaRst property
         /// </summary>
-        private sealed class PHARHaRstProxy : ModelPropertyChange<IPHAR, IING>
+        protected sealed class PHARHaRstProxy : ModelPropertyChange<IPHAR, IING>
         {
             
             /// <summary>
@@ -8617,7 +8617,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PhStr property
         /// </summary>
-        private sealed class PHARPhStrProxy : ModelPropertyChange<IPHAR, IASG>
+        protected sealed class PHARPhStrProxy : ModelPropertyChange<IPHAR, IASG>
         {
             
             /// <summary>
@@ -8648,7 +8648,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PhStop property
         /// </summary>
-        private sealed class PHARPhStopProxy : ModelPropertyChange<IPHAR, IASG>
+        protected sealed class PHARPhStopProxy : ModelPropertyChange<IPHAR, IASG>
         {
             
             /// <summary>
@@ -8679,7 +8679,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpDiTmms property
         /// </summary>
-        private sealed class PHAROpDiTmmsProxy : ModelPropertyChange<IPHAR, IING>
+        protected sealed class PHAROpDiTmmsProxy : ModelPropertyChange<IPHAR, IING>
         {
             
             /// <summary>
@@ -8710,7 +8710,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RsDiTmms property
         /// </summary>
-        private sealed class PHARRsDiTmmsProxy : ModelPropertyChange<IPHAR, IING>
+        protected sealed class PHARRsDiTmmsProxy : ModelPropertyChange<IPHAR, IING>
         {
             
             /// <summary>
@@ -9793,7 +9793,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class POPFStrProxy : ModelPropertyChange<IPOPF, IACD>
+        protected sealed class POPFStrProxy : ModelPropertyChange<IPOPF, IACD>
         {
             
             /// <summary>
@@ -9824,7 +9824,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class POPFOpProxy : ModelPropertyChange<IPOPF, IACT>
+        protected sealed class POPFOpProxy : ModelPropertyChange<IPOPF, IACT>
         {
             
             /// <summary>
@@ -9855,7 +9855,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkA property
         /// </summary>
-        private sealed class POPFBlkAProxy : ModelPropertyChange<IPOPF, ISPS>
+        protected sealed class POPFBlkAProxy : ModelPropertyChange<IPOPF, ISPS>
         {
             
             /// <summary>
@@ -9886,7 +9886,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkV property
         /// </summary>
-        private sealed class POPFBlkVProxy : ModelPropertyChange<IPOPF, ISPS>
+        protected sealed class POPFBlkVProxy : ModelPropertyChange<IPOPF, ISPS>
         {
             
             /// <summary>
@@ -9917,7 +9917,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StrVal property
         /// </summary>
-        private sealed class POPFStrValProxy : ModelPropertyChange<IPOPF, IASG>
+        protected sealed class POPFStrValProxy : ModelPropertyChange<IPOPF, IASG>
         {
             
             /// <summary>
@@ -9948,7 +9948,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpDiTmms property
         /// </summary>
-        private sealed class POPFOpDiTmmsProxy : ModelPropertyChange<IPOPF, IING>
+        protected sealed class POPFOpDiTmmsProxy : ModelPropertyChange<IPOPF, IING>
         {
             
             /// <summary>
@@ -9979,7 +9979,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RsDiTmms property
         /// </summary>
-        private sealed class POPFRsDiTmmsProxy : ModelPropertyChange<IPOPF, IING>
+        protected sealed class POPFRsDiTmmsProxy : ModelPropertyChange<IPOPF, IING>
         {
             
             /// <summary>
@@ -10010,7 +10010,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkValA property
         /// </summary>
-        private sealed class POPFBlkValAProxy : ModelPropertyChange<IPOPF, IASG>
+        protected sealed class POPFBlkValAProxy : ModelPropertyChange<IPOPF, IASG>
         {
             
             /// <summary>
@@ -10041,7 +10041,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkValV property
         /// </summary>
-        private sealed class POPFBlkValVProxy : ModelPropertyChange<IPOPF, IASG>
+        protected sealed class POPFBlkValVProxy : ModelPropertyChange<IPOPF, IASG>
         {
             
             /// <summary>
@@ -10524,7 +10524,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PPAMStrProxy : ModelPropertyChange<IPPAM, IACD>
+        protected sealed class PPAMStrProxy : ModelPropertyChange<IPPAM, IACD>
         {
             
             /// <summary>
@@ -10555,7 +10555,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PPAMOpProxy : ModelPropertyChange<IPPAM, IACT>
+        protected sealed class PPAMOpProxy : ModelPropertyChange<IPPAM, IACT>
         {
             
             /// <summary>
@@ -10586,7 +10586,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StrVal property
         /// </summary>
-        private sealed class PPAMStrValProxy : ModelPropertyChange<IPPAM, IASG>
+        protected sealed class PPAMStrValProxy : ModelPropertyChange<IPPAM, IASG>
         {
             
             /// <summary>
@@ -13169,7 +13169,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PDISStrProxy : ModelPropertyChange<IPDIS, IACD>
+        protected sealed class PDISStrProxy : ModelPropertyChange<IPDIS, IACD>
         {
             
             /// <summary>
@@ -13200,7 +13200,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PDISOpProxy : ModelPropertyChange<IPDIS, IACT>
+        protected sealed class PDISOpProxy : ModelPropertyChange<IPDIS, IACT>
         {
             
             /// <summary>
@@ -13231,7 +13231,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PoRch property
         /// </summary>
-        private sealed class PDISPoRchProxy : ModelPropertyChange<IPDIS, IASG>
+        protected sealed class PDISPoRchProxy : ModelPropertyChange<IPDIS, IASG>
         {
             
             /// <summary>
@@ -13262,7 +13262,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PhStr property
         /// </summary>
-        private sealed class PDISPhStrProxy : ModelPropertyChange<IPDIS, IASG>
+        protected sealed class PDISPhStrProxy : ModelPropertyChange<IPDIS, IASG>
         {
             
             /// <summary>
@@ -13293,7 +13293,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the GndStr property
         /// </summary>
-        private sealed class PDISGndStrProxy : ModelPropertyChange<IPDIS, IASG>
+        protected sealed class PDISGndStrProxy : ModelPropertyChange<IPDIS, IASG>
         {
             
             /// <summary>
@@ -13324,7 +13324,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DirMod property
         /// </summary>
-        private sealed class PDISDirModProxy : ModelPropertyChange<IPDIS, IING>
+        protected sealed class PDISDirModProxy : ModelPropertyChange<IPDIS, IING>
         {
             
             /// <summary>
@@ -13355,7 +13355,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PctRch property
         /// </summary>
-        private sealed class PDISPctRchProxy : ModelPropertyChange<IPDIS, IASG>
+        protected sealed class PDISPctRchProxy : ModelPropertyChange<IPDIS, IASG>
         {
             
             /// <summary>
@@ -13386,7 +13386,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Ofs property
         /// </summary>
-        private sealed class PDISOfsProxy : ModelPropertyChange<IPDIS, IASG>
+        protected sealed class PDISOfsProxy : ModelPropertyChange<IPDIS, IASG>
         {
             
             /// <summary>
@@ -13417,7 +13417,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PctOfs property
         /// </summary>
-        private sealed class PDISPctOfsProxy : ModelPropertyChange<IPDIS, IASG>
+        protected sealed class PDISPctOfsProxy : ModelPropertyChange<IPDIS, IASG>
         {
             
             /// <summary>
@@ -13448,7 +13448,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RisLod property
         /// </summary>
-        private sealed class PDISRisLodProxy : ModelPropertyChange<IPDIS, IASG>
+        protected sealed class PDISRisLodProxy : ModelPropertyChange<IPDIS, IASG>
         {
             
             /// <summary>
@@ -13479,7 +13479,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AngLod property
         /// </summary>
-        private sealed class PDISAngLodProxy : ModelPropertyChange<IPDIS, IASG>
+        protected sealed class PDISAngLodProxy : ModelPropertyChange<IPDIS, IASG>
         {
             
             /// <summary>
@@ -13510,7 +13510,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmDlMod property
         /// </summary>
-        private sealed class PDISTmDlModProxy : ModelPropertyChange<IPDIS, ISPG>
+        protected sealed class PDISTmDlModProxy : ModelPropertyChange<IPDIS, ISPG>
         {
             
             /// <summary>
@@ -13541,7 +13541,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpDlTmms property
         /// </summary>
-        private sealed class PDISOpDlTmmsProxy : ModelPropertyChange<IPDIS, IING>
+        protected sealed class PDISOpDlTmmsProxy : ModelPropertyChange<IPDIS, IING>
         {
             
             /// <summary>
@@ -13572,7 +13572,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PhDlMod property
         /// </summary>
-        private sealed class PDISPhDlModProxy : ModelPropertyChange<IPDIS, ISPG>
+        protected sealed class PDISPhDlModProxy : ModelPropertyChange<IPDIS, ISPG>
         {
             
             /// <summary>
@@ -13603,7 +13603,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PhDlTmms property
         /// </summary>
-        private sealed class PDISPhDlTmmsProxy : ModelPropertyChange<IPDIS, IING>
+        protected sealed class PDISPhDlTmmsProxy : ModelPropertyChange<IPDIS, IING>
         {
             
             /// <summary>
@@ -13634,7 +13634,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the GndDlMod property
         /// </summary>
-        private sealed class PDISGndDlModProxy : ModelPropertyChange<IPDIS, ISPG>
+        protected sealed class PDISGndDlModProxy : ModelPropertyChange<IPDIS, ISPG>
         {
             
             /// <summary>
@@ -13665,7 +13665,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the GndDlTmms property
         /// </summary>
-        private sealed class PDISGndDlTmmsProxy : ModelPropertyChange<IPDIS, IING>
+        protected sealed class PDISGndDlTmmsProxy : ModelPropertyChange<IPDIS, IING>
         {
             
             /// <summary>
@@ -13696,7 +13696,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the X1 property
         /// </summary>
-        private sealed class PDISX1Proxy : ModelPropertyChange<IPDIS, IASG>
+        protected sealed class PDISX1Proxy : ModelPropertyChange<IPDIS, IASG>
         {
             
             /// <summary>
@@ -13727,7 +13727,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LinAng property
         /// </summary>
-        private sealed class PDISLinAngProxy : ModelPropertyChange<IPDIS, IASG>
+        protected sealed class PDISLinAngProxy : ModelPropertyChange<IPDIS, IASG>
         {
             
             /// <summary>
@@ -13758,7 +13758,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RisGndRch property
         /// </summary>
-        private sealed class PDISRisGndRchProxy : ModelPropertyChange<IPDIS, IASG>
+        protected sealed class PDISRisGndRchProxy : ModelPropertyChange<IPDIS, IASG>
         {
             
             /// <summary>
@@ -13789,7 +13789,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RisPhRch property
         /// </summary>
-        private sealed class PDISRisPhRchProxy : ModelPropertyChange<IPDIS, IASG>
+        protected sealed class PDISRisPhRchProxy : ModelPropertyChange<IPDIS, IASG>
         {
             
             /// <summary>
@@ -13820,7 +13820,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the K0Fact property
         /// </summary>
-        private sealed class PDISK0FactProxy : ModelPropertyChange<IPDIS, IASG>
+        protected sealed class PDISK0FactProxy : ModelPropertyChange<IPDIS, IASG>
         {
             
             /// <summary>
@@ -13851,7 +13851,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the K0FactAng property
         /// </summary>
-        private sealed class PDISK0FactAngProxy : ModelPropertyChange<IPDIS, IASG>
+        protected sealed class PDISK0FactAngProxy : ModelPropertyChange<IPDIS, IASG>
         {
             
             /// <summary>
@@ -13882,7 +13882,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RsDlTmms property
         /// </summary>
-        private sealed class PDISRsDlTmmsProxy : ModelPropertyChange<IPDIS, IING>
+        protected sealed class PDISRsDlTmmsProxy : ModelPropertyChange<IPDIS, IING>
         {
             
             /// <summary>
@@ -14665,7 +14665,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PDOPStrProxy : ModelPropertyChange<IPDOP, IACD>
+        protected sealed class PDOPStrProxy : ModelPropertyChange<IPDOP, IACD>
         {
             
             /// <summary>
@@ -14696,7 +14696,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PDOPOpProxy : ModelPropertyChange<IPDOP, IACT>
+        protected sealed class PDOPOpProxy : ModelPropertyChange<IPDOP, IACT>
         {
             
             /// <summary>
@@ -14727,7 +14727,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DirMod property
         /// </summary>
-        private sealed class PDOPDirModProxy : ModelPropertyChange<IPDOP, IING>
+        protected sealed class PDOPDirModProxy : ModelPropertyChange<IPDOP, IING>
         {
             
             /// <summary>
@@ -14758,7 +14758,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StrVal property
         /// </summary>
-        private sealed class PDOPStrValProxy : ModelPropertyChange<IPDOP, IASG>
+        protected sealed class PDOPStrValProxy : ModelPropertyChange<IPDOP, IASG>
         {
             
             /// <summary>
@@ -14789,7 +14789,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpDlTmms property
         /// </summary>
-        private sealed class PDOPOpDlTmmsProxy : ModelPropertyChange<IPDOP, IING>
+        protected sealed class PDOPOpDlTmmsProxy : ModelPropertyChange<IPDOP, IING>
         {
             
             /// <summary>
@@ -14820,7 +14820,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RsDlTmms property
         /// </summary>
-        private sealed class PDOPRsDlTmmsProxy : ModelPropertyChange<IPDOP, IING>
+        protected sealed class PDOPRsDlTmmsProxy : ModelPropertyChange<IPDOP, IING>
         {
             
             /// <summary>
@@ -15703,7 +15703,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PHIZStrProxy : ModelPropertyChange<IPHIZ, IACD>
+        protected sealed class PHIZStrProxy : ModelPropertyChange<IPHIZ, IACD>
         {
             
             /// <summary>
@@ -15734,7 +15734,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PHIZOpProxy : ModelPropertyChange<IPHIZ, IACT>
+        protected sealed class PHIZOpProxy : ModelPropertyChange<IPHIZ, IACT>
         {
             
             /// <summary>
@@ -15765,7 +15765,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AStr property
         /// </summary>
-        private sealed class PHIZAStrProxy : ModelPropertyChange<IPHIZ, IASG>
+        protected sealed class PHIZAStrProxy : ModelPropertyChange<IPHIZ, IASG>
         {
             
             /// <summary>
@@ -15796,7 +15796,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VStr property
         /// </summary>
-        private sealed class PHIZVStrProxy : ModelPropertyChange<IPHIZ, IASG>
+        protected sealed class PHIZVStrProxy : ModelPropertyChange<IPHIZ, IASG>
         {
             
             /// <summary>
@@ -15827,7 +15827,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HVStr property
         /// </summary>
-        private sealed class PHIZHVStrProxy : ModelPropertyChange<IPHIZ, IASG>
+        protected sealed class PHIZHVStrProxy : ModelPropertyChange<IPHIZ, IASG>
         {
             
             /// <summary>
@@ -15858,7 +15858,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpDlTmms property
         /// </summary>
-        private sealed class PHIZOpDlTmmsProxy : ModelPropertyChange<IPHIZ, IING>
+        protected sealed class PHIZOpDlTmmsProxy : ModelPropertyChange<IPHIZ, IING>
         {
             
             /// <summary>
@@ -15889,7 +15889,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RsDlTmms property
         /// </summary>
-        private sealed class PHIZRsDlTmmsProxy : ModelPropertyChange<IPHIZ, IING>
+        protected sealed class PHIZRsDlTmmsProxy : ModelPropertyChange<IPHIZ, IING>
         {
             
             /// <summary>
@@ -16372,7 +16372,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PIOCStrProxy : ModelPropertyChange<IPIOC, IACD>
+        protected sealed class PIOCStrProxy : ModelPropertyChange<IPIOC, IACD>
         {
             
             /// <summary>
@@ -16403,7 +16403,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PIOCOpProxy : ModelPropertyChange<IPIOC, IACT>
+        protected sealed class PIOCOpProxy : ModelPropertyChange<IPIOC, IACT>
         {
             
             /// <summary>
@@ -16434,7 +16434,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StrVal property
         /// </summary>
-        private sealed class PIOCStrValProxy : ModelPropertyChange<IPIOC, IASG>
+        protected sealed class PIOCStrValProxy : ModelPropertyChange<IPIOC, IASG>
         {
             
             /// <summary>
@@ -17617,7 +17617,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PMRIOpProxy : ModelPropertyChange<IPMRI, IACT>
+        protected sealed class PMRIOpProxy : ModelPropertyChange<IPMRI, IACT>
         {
             
             /// <summary>
@@ -17648,7 +17648,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StrInh property
         /// </summary>
-        private sealed class PMRIStrInhProxy : ModelPropertyChange<IPMRI, ISPS>
+        protected sealed class PMRIStrInhProxy : ModelPropertyChange<IPMRI, ISPS>
         {
             
             /// <summary>
@@ -17679,7 +17679,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StrInhTmm property
         /// </summary>
-        private sealed class PMRIStrInhTmmProxy : ModelPropertyChange<IPMRI, IINS>
+        protected sealed class PMRIStrInhTmmProxy : ModelPropertyChange<IPMRI, IINS>
         {
             
             /// <summary>
@@ -17710,7 +17710,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SetA property
         /// </summary>
-        private sealed class PMRISetAProxy : ModelPropertyChange<IPMRI, IASG>
+        protected sealed class PMRISetAProxy : ModelPropertyChange<IPMRI, IASG>
         {
             
             /// <summary>
@@ -17741,7 +17741,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SetTms property
         /// </summary>
-        private sealed class PMRISetTmsProxy : ModelPropertyChange<IPMRI, IING>
+        protected sealed class PMRISetTmsProxy : ModelPropertyChange<IPMRI, IING>
         {
             
             /// <summary>
@@ -17772,7 +17772,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxNumStr property
         /// </summary>
-        private sealed class PMRIMaxNumStrProxy : ModelPropertyChange<IPMRI, IING>
+        protected sealed class PMRIMaxNumStrProxy : ModelPropertyChange<IPMRI, IING>
         {
             
             /// <summary>
@@ -17803,7 +17803,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxWrmStr property
         /// </summary>
-        private sealed class PMRIMaxWrmStrProxy : ModelPropertyChange<IPMRI, IING>
+        protected sealed class PMRIMaxWrmStrProxy : ModelPropertyChange<IPMRI, IING>
         {
             
             /// <summary>
@@ -17834,7 +17834,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxStrTmm property
         /// </summary>
-        private sealed class PMRIMaxStrTmmProxy : ModelPropertyChange<IPMRI, IING>
+        protected sealed class PMRIMaxStrTmmProxy : ModelPropertyChange<IPMRI, IING>
         {
             
             /// <summary>
@@ -17865,7 +17865,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EqTmm property
         /// </summary>
-        private sealed class PMRIEqTmmProxy : ModelPropertyChange<IPMRI, IING>
+        protected sealed class PMRIEqTmmProxy : ModelPropertyChange<IPMRI, IING>
         {
             
             /// <summary>
@@ -17896,7 +17896,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the InhTmm property
         /// </summary>
-        private sealed class PMRIInhTmmProxy : ModelPropertyChange<IPMRI, IING>
+        protected sealed class PMRIInhTmmProxy : ModelPropertyChange<IPMRI, IING>
         {
             
             /// <summary>
@@ -18679,7 +18679,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PMSSStrProxy : ModelPropertyChange<IPMSS, IACD>
+        protected sealed class PMSSStrProxy : ModelPropertyChange<IPMSS, IACD>
         {
             
             /// <summary>
@@ -18710,7 +18710,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PMSSOpProxy : ModelPropertyChange<IPMSS, IACT>
+        protected sealed class PMSSOpProxy : ModelPropertyChange<IPMSS, IACT>
         {
             
             /// <summary>
@@ -18741,7 +18741,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SetA property
         /// </summary>
-        private sealed class PMSSSetAProxy : ModelPropertyChange<IPMSS, IASG>
+        protected sealed class PMSSSetAProxy : ModelPropertyChange<IPMSS, IASG>
         {
             
             /// <summary>
@@ -18772,7 +18772,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SetTms property
         /// </summary>
-        private sealed class PMSSSetTmsProxy : ModelPropertyChange<IPMSS, IING>
+        protected sealed class PMSSSetTmsProxy : ModelPropertyChange<IPMSS, IING>
         {
             
             /// <summary>
@@ -18803,7 +18803,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MotStr property
         /// </summary>
-        private sealed class PMSSMotStrProxy : ModelPropertyChange<IPMSS, IASG>
+        protected sealed class PMSSMotStrProxy : ModelPropertyChange<IPMSS, IASG>
         {
             
             /// <summary>
@@ -18834,7 +18834,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LokRotTms property
         /// </summary>
-        private sealed class PMSSLokRotTmsProxy : ModelPropertyChange<IPMSS, IING>
+        protected sealed class PMSSLokRotTmsProxy : ModelPropertyChange<IPMSS, IING>
         {
             
             /// <summary>
@@ -21317,7 +21317,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ProTx property
         /// </summary>
-        private sealed class PSCHProTxProxy : ModelPropertyChange<IPSCH, ISPS>
+        protected sealed class PSCHProTxProxy : ModelPropertyChange<IPSCH, ISPS>
         {
             
             /// <summary>
@@ -21348,7 +21348,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ProRx property
         /// </summary>
-        private sealed class PSCHProRxProxy : ModelPropertyChange<IPSCH, ISPS>
+        protected sealed class PSCHProRxProxy : ModelPropertyChange<IPSCH, ISPS>
         {
             
             /// <summary>
@@ -21379,7 +21379,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PSCHStrProxy : ModelPropertyChange<IPSCH, IACD>
+        protected sealed class PSCHStrProxy : ModelPropertyChange<IPSCH, IACD>
         {
             
             /// <summary>
@@ -21410,7 +21410,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PSCHOpProxy : ModelPropertyChange<IPSCH, IACT>
+        protected sealed class PSCHOpProxy : ModelPropertyChange<IPSCH, IACT>
         {
             
             /// <summary>
@@ -21441,7 +21441,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the CarRx property
         /// </summary>
-        private sealed class PSCHCarRxProxy : ModelPropertyChange<IPSCH, IACT>
+        protected sealed class PSCHCarRxProxy : ModelPropertyChange<IPSCH, IACT>
         {
             
             /// <summary>
@@ -21472,7 +21472,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LosOfGrd property
         /// </summary>
-        private sealed class PSCHLosOfGrdProxy : ModelPropertyChange<IPSCH, ISPS>
+        protected sealed class PSCHLosOfGrdProxy : ModelPropertyChange<IPSCH, ISPS>
         {
             
             /// <summary>
@@ -21503,7 +21503,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Echo property
         /// </summary>
-        private sealed class PSCHEchoProxy : ModelPropertyChange<IPSCH, IACT>
+        protected sealed class PSCHEchoProxy : ModelPropertyChange<IPSCH, IACT>
         {
             
             /// <summary>
@@ -21534,7 +21534,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the WeiOp property
         /// </summary>
-        private sealed class PSCHWeiOpProxy : ModelPropertyChange<IPSCH, IACT>
+        protected sealed class PSCHWeiOpProxy : ModelPropertyChange<IPSCH, IACT>
         {
             
             /// <summary>
@@ -21565,7 +21565,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RvABlk property
         /// </summary>
-        private sealed class PSCHRvABlkProxy : ModelPropertyChange<IPSCH, IACT>
+        protected sealed class PSCHRvABlkProxy : ModelPropertyChange<IPSCH, IACT>
         {
             
             /// <summary>
@@ -21596,7 +21596,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the GrdRx property
         /// </summary>
-        private sealed class PSCHGrdRxProxy : ModelPropertyChange<IPSCH, ISPS>
+        protected sealed class PSCHGrdRxProxy : ModelPropertyChange<IPSCH, ISPS>
         {
             
             /// <summary>
@@ -21627,7 +21627,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SchTyp property
         /// </summary>
-        private sealed class PSCHSchTypProxy : ModelPropertyChange<IPSCH, IING>
+        protected sealed class PSCHSchTypProxy : ModelPropertyChange<IPSCH, IING>
         {
             
             /// <summary>
@@ -21658,7 +21658,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpDlTmms property
         /// </summary>
-        private sealed class PSCHOpDlTmmsProxy : ModelPropertyChange<IPSCH, IING>
+        protected sealed class PSCHOpDlTmmsProxy : ModelPropertyChange<IPSCH, IING>
         {
             
             /// <summary>
@@ -21689,7 +21689,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the CrdTmms property
         /// </summary>
-        private sealed class PSCHCrdTmmsProxy : ModelPropertyChange<IPSCH, IING>
+        protected sealed class PSCHCrdTmmsProxy : ModelPropertyChange<IPSCH, IING>
         {
             
             /// <summary>
@@ -21720,7 +21720,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DurTmms property
         /// </summary>
-        private sealed class PSCHDurTmmsProxy : ModelPropertyChange<IPSCH, IING>
+        protected sealed class PSCHDurTmmsProxy : ModelPropertyChange<IPSCH, IING>
         {
             
             /// <summary>
@@ -21751,7 +21751,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the UnBlkMod property
         /// </summary>
-        private sealed class PSCHUnBlkModProxy : ModelPropertyChange<IPSCH, IING>
+        protected sealed class PSCHUnBlkModProxy : ModelPropertyChange<IPSCH, IING>
         {
             
             /// <summary>
@@ -21782,7 +21782,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SecTmms property
         /// </summary>
-        private sealed class PSCHSecTmmsProxy : ModelPropertyChange<IPSCH, IING>
+        protected sealed class PSCHSecTmmsProxy : ModelPropertyChange<IPSCH, IING>
         {
             
             /// <summary>
@@ -21813,7 +21813,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the WeiMod property
         /// </summary>
-        private sealed class PSCHWeiModProxy : ModelPropertyChange<IPSCH, IING>
+        protected sealed class PSCHWeiModProxy : ModelPropertyChange<IPSCH, IING>
         {
             
             /// <summary>
@@ -21844,7 +21844,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the WeiTmms property
         /// </summary>
-        private sealed class PSCHWeiTmmsProxy : ModelPropertyChange<IPSCH, IING>
+        protected sealed class PSCHWeiTmmsProxy : ModelPropertyChange<IPSCH, IING>
         {
             
             /// <summary>
@@ -21875,7 +21875,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PPVVal property
         /// </summary>
-        private sealed class PSCHPPVValProxy : ModelPropertyChange<IPSCH, IASG>
+        protected sealed class PSCHPPVValProxy : ModelPropertyChange<IPSCH, IASG>
         {
             
             /// <summary>
@@ -21906,7 +21906,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PhGndVal property
         /// </summary>
-        private sealed class PSCHPhGndValProxy : ModelPropertyChange<IPSCH, IASG>
+        protected sealed class PSCHPhGndValProxy : ModelPropertyChange<IPSCH, IASG>
         {
             
             /// <summary>
@@ -21937,7 +21937,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RvAMod property
         /// </summary>
-        private sealed class PSCHRvAModProxy : ModelPropertyChange<IPSCH, IING>
+        protected sealed class PSCHRvAModProxy : ModelPropertyChange<IPSCH, IING>
         {
             
             /// <summary>
@@ -21968,7 +21968,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RvATmms property
         /// </summary>
-        private sealed class PSCHRvATmmsProxy : ModelPropertyChange<IPSCH, IING>
+        protected sealed class PSCHRvATmmsProxy : ModelPropertyChange<IPSCH, IING>
         {
             
             /// <summary>
@@ -21999,7 +21999,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RvRsTmms property
         /// </summary>
-        private sealed class PSCHRvRsTmmsProxy : ModelPropertyChange<IPSCH, IING>
+        protected sealed class PSCHRvRsTmmsProxy : ModelPropertyChange<IPSCH, IING>
         {
             
             /// <summary>
@@ -22982,7 +22982,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PSDEStrProxy : ModelPropertyChange<IPSDE, IACD>
+        protected sealed class PSDEStrProxy : ModelPropertyChange<IPSDE, IACD>
         {
             
             /// <summary>
@@ -23013,7 +23013,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PSDEOpProxy : ModelPropertyChange<IPSDE, IACT>
+        protected sealed class PSDEOpProxy : ModelPropertyChange<IPSDE, IACT>
         {
             
             /// <summary>
@@ -23044,7 +23044,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Ang property
         /// </summary>
-        private sealed class PSDEAngProxy : ModelPropertyChange<IPSDE, IASG>
+        protected sealed class PSDEAngProxy : ModelPropertyChange<IPSDE, IASG>
         {
             
             /// <summary>
@@ -23075,7 +23075,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the GndStr property
         /// </summary>
-        private sealed class PSDEGndStrProxy : ModelPropertyChange<IPSDE, IASG>
+        protected sealed class PSDEGndStrProxy : ModelPropertyChange<IPSDE, IASG>
         {
             
             /// <summary>
@@ -23106,7 +23106,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the GndOp property
         /// </summary>
-        private sealed class PSDEGndOpProxy : ModelPropertyChange<IPSDE, IASG>
+        protected sealed class PSDEGndOpProxy : ModelPropertyChange<IPSDE, IASG>
         {
             
             /// <summary>
@@ -23137,7 +23137,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StrDlTmms property
         /// </summary>
-        private sealed class PSDEStrDlTmmsProxy : ModelPropertyChange<IPSDE, IING>
+        protected sealed class PSDEStrDlTmmsProxy : ModelPropertyChange<IPSDE, IING>
         {
             
             /// <summary>
@@ -23168,7 +23168,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpDlTmms property
         /// </summary>
-        private sealed class PSDEOpDlTmmsProxy : ModelPropertyChange<IPSDE, IING>
+        protected sealed class PSDEOpDlTmmsProxy : ModelPropertyChange<IPSDE, IING>
         {
             
             /// <summary>
@@ -23199,7 +23199,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DirMod property
         /// </summary>
-        private sealed class PSDEDirModProxy : ModelPropertyChange<IPSDE, IING>
+        protected sealed class PSDEDirModProxy : ModelPropertyChange<IPSDE, IING>
         {
             
             /// <summary>
@@ -23982,7 +23982,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PDUPStrProxy : ModelPropertyChange<IPDUP, IACD>
+        protected sealed class PDUPStrProxy : ModelPropertyChange<IPDUP, IACD>
         {
             
             /// <summary>
@@ -24013,7 +24013,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PDUPOpProxy : ModelPropertyChange<IPDUP, IACT>
+        protected sealed class PDUPOpProxy : ModelPropertyChange<IPDUP, IACT>
         {
             
             /// <summary>
@@ -24044,7 +24044,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StrVal property
         /// </summary>
-        private sealed class PDUPStrValProxy : ModelPropertyChange<IPDUP, IASG>
+        protected sealed class PDUPStrValProxy : ModelPropertyChange<IPDUP, IASG>
         {
             
             /// <summary>
@@ -24075,7 +24075,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpDlTmms property
         /// </summary>
-        private sealed class PDUPOpDlTmmsProxy : ModelPropertyChange<IPDUP, IING>
+        protected sealed class PDUPOpDlTmmsProxy : ModelPropertyChange<IPDUP, IING>
         {
             
             /// <summary>
@@ -24106,7 +24106,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RsDlTmms property
         /// </summary>
-        private sealed class PDUPRsDlTmmsProxy : ModelPropertyChange<IPDUP, IING>
+        protected sealed class PDUPRsDlTmmsProxy : ModelPropertyChange<IPDUP, IING>
         {
             
             /// <summary>
@@ -24137,7 +24137,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DirMod property
         /// </summary>
-        private sealed class PDUPDirModProxy : ModelPropertyChange<IPDUP, IING>
+        protected sealed class PDUPDirModProxy : ModelPropertyChange<IPDUP, IING>
         {
             
             /// <summary>
@@ -24720,7 +24720,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PTEFStrProxy : ModelPropertyChange<IPTEF, IACD>
+        protected sealed class PTEFStrProxy : ModelPropertyChange<IPTEF, IACD>
         {
             
             /// <summary>
@@ -24751,7 +24751,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PTEFOpProxy : ModelPropertyChange<IPTEF, IACT>
+        protected sealed class PTEFOpProxy : ModelPropertyChange<IPTEF, IACT>
         {
             
             /// <summary>
@@ -24782,7 +24782,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the GndStr property
         /// </summary>
-        private sealed class PTEFGndStrProxy : ModelPropertyChange<IPTEF, IASG>
+        protected sealed class PTEFGndStrProxy : ModelPropertyChange<IPTEF, IASG>
         {
             
             /// <summary>
@@ -24813,7 +24813,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DirMod property
         /// </summary>
-        private sealed class PTEFDirModProxy : ModelPropertyChange<IPTEF, IING>
+        protected sealed class PTEFDirModProxy : ModelPropertyChange<IPTEF, IING>
         {
             
             /// <summary>
@@ -26196,7 +26196,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PTOCStrProxy : ModelPropertyChange<IPTOC, IACD>
+        protected sealed class PTOCStrProxy : ModelPropertyChange<IPTOC, IACD>
         {
             
             /// <summary>
@@ -26227,7 +26227,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PTOCOpProxy : ModelPropertyChange<IPTOC, IACT>
+        protected sealed class PTOCOpProxy : ModelPropertyChange<IPTOC, IACT>
         {
             
             /// <summary>
@@ -26258,7 +26258,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmASt property
         /// </summary>
-        private sealed class PTOCTmAStProxy : ModelPropertyChange<IPTOC, ICSD>
+        protected sealed class PTOCTmAStProxy : ModelPropertyChange<IPTOC, ICSD>
         {
             
             /// <summary>
@@ -26289,7 +26289,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmACrv property
         /// </summary>
-        private sealed class PTOCTmACrvProxy : ModelPropertyChange<IPTOC, ICURVE>
+        protected sealed class PTOCTmACrvProxy : ModelPropertyChange<IPTOC, ICURVE>
         {
             
             /// <summary>
@@ -26320,7 +26320,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StrVal property
         /// </summary>
-        private sealed class PTOCStrValProxy : ModelPropertyChange<IPTOC, IASG>
+        protected sealed class PTOCStrValProxy : ModelPropertyChange<IPTOC, IASG>
         {
             
             /// <summary>
@@ -26351,7 +26351,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmMult property
         /// </summary>
-        private sealed class PTOCTmMultProxy : ModelPropertyChange<IPTOC, IASG>
+        protected sealed class PTOCTmMultProxy : ModelPropertyChange<IPTOC, IASG>
         {
             
             /// <summary>
@@ -26382,7 +26382,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MinOpTmms property
         /// </summary>
-        private sealed class PTOCMinOpTmmsProxy : ModelPropertyChange<IPTOC, IING>
+        protected sealed class PTOCMinOpTmmsProxy : ModelPropertyChange<IPTOC, IING>
         {
             
             /// <summary>
@@ -26413,7 +26413,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxOpTmms property
         /// </summary>
-        private sealed class PTOCMaxOpTmmsProxy : ModelPropertyChange<IPTOC, IING>
+        protected sealed class PTOCMaxOpTmmsProxy : ModelPropertyChange<IPTOC, IING>
         {
             
             /// <summary>
@@ -26444,7 +26444,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpDlTmms property
         /// </summary>
-        private sealed class PTOCOpDlTmmsProxy : ModelPropertyChange<IPTOC, IING>
+        protected sealed class PTOCOpDlTmmsProxy : ModelPropertyChange<IPTOC, IING>
         {
             
             /// <summary>
@@ -26475,7 +26475,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TypRsCrv property
         /// </summary>
-        private sealed class PTOCTypRsCrvProxy : ModelPropertyChange<IPTOC, IING>
+        protected sealed class PTOCTypRsCrvProxy : ModelPropertyChange<IPTOC, IING>
         {
             
             /// <summary>
@@ -26506,7 +26506,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RsDlTmms property
         /// </summary>
-        private sealed class PTOCRsDlTmmsProxy : ModelPropertyChange<IPTOC, IING>
+        protected sealed class PTOCRsDlTmmsProxy : ModelPropertyChange<IPTOC, IING>
         {
             
             /// <summary>
@@ -26537,7 +26537,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DirMod property
         /// </summary>
-        private sealed class PTOCDirModProxy : ModelPropertyChange<IPTOC, IING>
+        protected sealed class PTOCDirModProxy : ModelPropertyChange<IPTOC, IING>
         {
             
             /// <summary>
@@ -27420,7 +27420,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PTOFStrProxy : ModelPropertyChange<IPTOF, IACD>
+        protected sealed class PTOFStrProxy : ModelPropertyChange<IPTOF, IACD>
         {
             
             /// <summary>
@@ -27451,7 +27451,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PTOFOpProxy : ModelPropertyChange<IPTOF, IACT>
+        protected sealed class PTOFOpProxy : ModelPropertyChange<IPTOF, IACT>
         {
             
             /// <summary>
@@ -27482,7 +27482,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkV property
         /// </summary>
-        private sealed class PTOFBlkVProxy : ModelPropertyChange<IPTOF, ISPS>
+        protected sealed class PTOFBlkVProxy : ModelPropertyChange<IPTOF, ISPS>
         {
             
             /// <summary>
@@ -27513,7 +27513,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StrVal property
         /// </summary>
-        private sealed class PTOFStrValProxy : ModelPropertyChange<IPTOF, IASG>
+        protected sealed class PTOFStrValProxy : ModelPropertyChange<IPTOF, IASG>
         {
             
             /// <summary>
@@ -27544,7 +27544,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkVal property
         /// </summary>
-        private sealed class PTOFBlkValProxy : ModelPropertyChange<IPTOF, IASG>
+        protected sealed class PTOFBlkValProxy : ModelPropertyChange<IPTOF, IASG>
         {
             
             /// <summary>
@@ -27575,7 +27575,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpDlTmms property
         /// </summary>
-        private sealed class PTOFOpDlTmmsProxy : ModelPropertyChange<IPTOF, IING>
+        protected sealed class PTOFOpDlTmmsProxy : ModelPropertyChange<IPTOF, IING>
         {
             
             /// <summary>
@@ -27606,7 +27606,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RsDlTmms property
         /// </summary>
-        private sealed class PTOFRsDlTmmsProxy : ModelPropertyChange<IPTOF, IING>
+        protected sealed class PTOFRsDlTmmsProxy : ModelPropertyChange<IPTOF, IING>
         {
             
             /// <summary>
@@ -28789,7 +28789,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PTOVStrProxy : ModelPropertyChange<IPTOV, IACD>
+        protected sealed class PTOVStrProxy : ModelPropertyChange<IPTOV, IACD>
         {
             
             /// <summary>
@@ -28820,7 +28820,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PTOVOpProxy : ModelPropertyChange<IPTOV, IACT>
+        protected sealed class PTOVOpProxy : ModelPropertyChange<IPTOV, IACT>
         {
             
             /// <summary>
@@ -28851,7 +28851,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmVst property
         /// </summary>
-        private sealed class PTOVTmVstProxy : ModelPropertyChange<IPTOV, ICSD>
+        protected sealed class PTOVTmVstProxy : ModelPropertyChange<IPTOV, ICSD>
         {
             
             /// <summary>
@@ -28882,7 +28882,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmVCrv property
         /// </summary>
-        private sealed class PTOVTmVCrvProxy : ModelPropertyChange<IPTOV, ICURVE>
+        protected sealed class PTOVTmVCrvProxy : ModelPropertyChange<IPTOV, ICURVE>
         {
             
             /// <summary>
@@ -28913,7 +28913,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StrVal property
         /// </summary>
-        private sealed class PTOVStrValProxy : ModelPropertyChange<IPTOV, IASG>
+        protected sealed class PTOVStrValProxy : ModelPropertyChange<IPTOV, IASG>
         {
             
             /// <summary>
@@ -28944,7 +28944,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmMult property
         /// </summary>
-        private sealed class PTOVTmMultProxy : ModelPropertyChange<IPTOV, IASG>
+        protected sealed class PTOVTmMultProxy : ModelPropertyChange<IPTOV, IASG>
         {
             
             /// <summary>
@@ -28975,7 +28975,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MinOpTmms property
         /// </summary>
-        private sealed class PTOVMinOpTmmsProxy : ModelPropertyChange<IPTOV, IING>
+        protected sealed class PTOVMinOpTmmsProxy : ModelPropertyChange<IPTOV, IING>
         {
             
             /// <summary>
@@ -29006,7 +29006,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxOpTmms property
         /// </summary>
-        private sealed class PTOVMaxOpTmmsProxy : ModelPropertyChange<IPTOV, IING>
+        protected sealed class PTOVMaxOpTmmsProxy : ModelPropertyChange<IPTOV, IING>
         {
             
             /// <summary>
@@ -29037,7 +29037,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpDlTmms property
         /// </summary>
-        private sealed class PTOVOpDlTmmsProxy : ModelPropertyChange<IPTOV, IING>
+        protected sealed class PTOVOpDlTmmsProxy : ModelPropertyChange<IPTOV, IING>
         {
             
             /// <summary>
@@ -29068,7 +29068,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RsDlTmms property
         /// </summary>
-        private sealed class PTOVRsDlTmmsProxy : ModelPropertyChange<IPTOV, IING>
+        protected sealed class PTOVRsDlTmmsProxy : ModelPropertyChange<IPTOV, IING>
         {
             
             /// <summary>
@@ -31351,7 +31351,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Amp property
         /// </summary>
-        private sealed class PTTRAmpProxy : ModelPropertyChange<IPTTR, IMV>
+        protected sealed class PTTRAmpProxy : ModelPropertyChange<IPTTR, IMV>
         {
             
             /// <summary>
@@ -31382,7 +31382,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Tmp property
         /// </summary>
-        private sealed class PTTRTmpProxy : ModelPropertyChange<IPTTR, IMV>
+        protected sealed class PTTRTmpProxy : ModelPropertyChange<IPTTR, IMV>
         {
             
             /// <summary>
@@ -31413,7 +31413,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmpRl property
         /// </summary>
-        private sealed class PTTRTmpRlProxy : ModelPropertyChange<IPTTR, IMV>
+        protected sealed class PTTRTmpRlProxy : ModelPropertyChange<IPTTR, IMV>
         {
             
             /// <summary>
@@ -31444,7 +31444,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LodRsvAlm property
         /// </summary>
-        private sealed class PTTRLodRsvAlmProxy : ModelPropertyChange<IPTTR, IMV>
+        protected sealed class PTTRLodRsvAlmProxy : ModelPropertyChange<IPTTR, IMV>
         {
             
             /// <summary>
@@ -31475,7 +31475,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LodRsvTr property
         /// </summary>
-        private sealed class PTTRLodRsvTrProxy : ModelPropertyChange<IPTTR, IMV>
+        protected sealed class PTTRLodRsvTrProxy : ModelPropertyChange<IPTTR, IMV>
         {
             
             /// <summary>
@@ -31506,7 +31506,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AgeRat property
         /// </summary>
-        private sealed class PTTRAgeRatProxy : ModelPropertyChange<IPTTR, IMV>
+        protected sealed class PTTRAgeRatProxy : ModelPropertyChange<IPTTR, IMV>
         {
             
             /// <summary>
@@ -31537,7 +31537,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PTTRStrProxy : ModelPropertyChange<IPTTR, IACD>
+        protected sealed class PTTRStrProxy : ModelPropertyChange<IPTTR, IACD>
         {
             
             /// <summary>
@@ -31568,7 +31568,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PTTROpProxy : ModelPropertyChange<IPTTR, IACT>
+        protected sealed class PTTROpProxy : ModelPropertyChange<IPTTR, IACT>
         {
             
             /// <summary>
@@ -31599,7 +31599,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AlmThm property
         /// </summary>
-        private sealed class PTTRAlmThmProxy : ModelPropertyChange<IPTTR, IACT>
+        protected sealed class PTTRAlmThmProxy : ModelPropertyChange<IPTTR, IACT>
         {
             
             /// <summary>
@@ -31630,7 +31630,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmTmpSt property
         /// </summary>
-        private sealed class PTTRTmTmpStProxy : ModelPropertyChange<IPTTR, ICSD>
+        protected sealed class PTTRTmTmpStProxy : ModelPropertyChange<IPTTR, ICSD>
         {
             
             /// <summary>
@@ -31661,7 +31661,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmASt property
         /// </summary>
-        private sealed class PTTRTmAStProxy : ModelPropertyChange<IPTTR, ICSD>
+        protected sealed class PTTRTmAStProxy : ModelPropertyChange<IPTTR, ICSD>
         {
             
             /// <summary>
@@ -31692,7 +31692,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmTmpCrv property
         /// </summary>
-        private sealed class PTTRTmTmpCrvProxy : ModelPropertyChange<IPTTR, ICURVE>
+        protected sealed class PTTRTmTmpCrvProxy : ModelPropertyChange<IPTTR, ICURVE>
         {
             
             /// <summary>
@@ -31723,7 +31723,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmACrv property
         /// </summary>
-        private sealed class PTTRTmACrvProxy : ModelPropertyChange<IPTTR, ICURVE>
+        protected sealed class PTTRTmACrvProxy : ModelPropertyChange<IPTTR, ICURVE>
         {
             
             /// <summary>
@@ -31754,7 +31754,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmpMax property
         /// </summary>
-        private sealed class PTTRTmpMaxProxy : ModelPropertyChange<IPTTR, IASG>
+        protected sealed class PTTRTmpMaxProxy : ModelPropertyChange<IPTTR, IASG>
         {
             
             /// <summary>
@@ -31785,7 +31785,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StrVal property
         /// </summary>
-        private sealed class PTTRStrValProxy : ModelPropertyChange<IPTTR, IASG>
+        protected sealed class PTTRStrValProxy : ModelPropertyChange<IPTTR, IASG>
         {
             
             /// <summary>
@@ -31816,7 +31816,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpDlTmms property
         /// </summary>
-        private sealed class PTTROpDlTmmsProxy : ModelPropertyChange<IPTTR, IING>
+        protected sealed class PTTROpDlTmmsProxy : ModelPropertyChange<IPTTR, IING>
         {
             
             /// <summary>
@@ -31847,7 +31847,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MinOpTmms property
         /// </summary>
-        private sealed class PTTRMinOpTmmsProxy : ModelPropertyChange<IPTTR, IING>
+        protected sealed class PTTRMinOpTmmsProxy : ModelPropertyChange<IPTTR, IING>
         {
             
             /// <summary>
@@ -31878,7 +31878,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxOpTmms property
         /// </summary>
-        private sealed class PTTRMaxOpTmmsProxy : ModelPropertyChange<IPTTR, IING>
+        protected sealed class PTTRMaxOpTmmsProxy : ModelPropertyChange<IPTTR, IING>
         {
             
             /// <summary>
@@ -31909,7 +31909,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RsDlTmms property
         /// </summary>
-        private sealed class PTTRRsDlTmmsProxy : ModelPropertyChange<IPTTR, IING>
+        protected sealed class PTTRRsDlTmmsProxy : ModelPropertyChange<IPTTR, IING>
         {
             
             /// <summary>
@@ -31940,7 +31940,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ConsTms property
         /// </summary>
-        private sealed class PTTRConsTmsProxy : ModelPropertyChange<IPTTR, IING>
+        protected sealed class PTTRConsTmsProxy : ModelPropertyChange<IPTTR, IING>
         {
             
             /// <summary>
@@ -31971,7 +31971,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AlmVal property
         /// </summary>
-        private sealed class PTTRAlmValProxy : ModelPropertyChange<IPTTR, IASG>
+        protected sealed class PTTRAlmValProxy : ModelPropertyChange<IPTTR, IASG>
         {
             
             /// <summary>
@@ -33354,7 +33354,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PTUCStrProxy : ModelPropertyChange<IPTUC, IACD>
+        protected sealed class PTUCStrProxy : ModelPropertyChange<IPTUC, IACD>
         {
             
             /// <summary>
@@ -33385,7 +33385,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PTUCOpProxy : ModelPropertyChange<IPTUC, IACT>
+        protected sealed class PTUCOpProxy : ModelPropertyChange<IPTUC, IACT>
         {
             
             /// <summary>
@@ -33416,7 +33416,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmASt property
         /// </summary>
-        private sealed class PTUCTmAStProxy : ModelPropertyChange<IPTUC, ICSD>
+        protected sealed class PTUCTmAStProxy : ModelPropertyChange<IPTUC, ICSD>
         {
             
             /// <summary>
@@ -33447,7 +33447,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmACrv property
         /// </summary>
-        private sealed class PTUCTmACrvProxy : ModelPropertyChange<IPTUC, ICURVE>
+        protected sealed class PTUCTmACrvProxy : ModelPropertyChange<IPTUC, ICURVE>
         {
             
             /// <summary>
@@ -33478,7 +33478,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StrVal property
         /// </summary>
-        private sealed class PTUCStrValProxy : ModelPropertyChange<IPTUC, IASG>
+        protected sealed class PTUCStrValProxy : ModelPropertyChange<IPTUC, IASG>
         {
             
             /// <summary>
@@ -33509,7 +33509,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpDlTmms property
         /// </summary>
-        private sealed class PTUCOpDlTmmsProxy : ModelPropertyChange<IPTUC, IING>
+        protected sealed class PTUCOpDlTmmsProxy : ModelPropertyChange<IPTUC, IING>
         {
             
             /// <summary>
@@ -33540,7 +33540,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmMult property
         /// </summary>
-        private sealed class PTUCTmMultProxy : ModelPropertyChange<IPTUC, IASG>
+        protected sealed class PTUCTmMultProxy : ModelPropertyChange<IPTUC, IASG>
         {
             
             /// <summary>
@@ -33571,7 +33571,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MinOpTmms property
         /// </summary>
-        private sealed class PTUCMinOpTmmsProxy : ModelPropertyChange<IPTUC, IING>
+        protected sealed class PTUCMinOpTmmsProxy : ModelPropertyChange<IPTUC, IING>
         {
             
             /// <summary>
@@ -33602,7 +33602,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxOpTmms property
         /// </summary>
-        private sealed class PTUCMaxOpTmmsProxy : ModelPropertyChange<IPTUC, IING>
+        protected sealed class PTUCMaxOpTmmsProxy : ModelPropertyChange<IPTUC, IING>
         {
             
             /// <summary>
@@ -33633,7 +33633,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RsDlTmms property
         /// </summary>
-        private sealed class PTUCRsDlTmmsProxy : ModelPropertyChange<IPTUC, IING>
+        protected sealed class PTUCRsDlTmmsProxy : ModelPropertyChange<IPTUC, IING>
         {
             
             /// <summary>
@@ -33664,7 +33664,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ConsTms property
         /// </summary>
-        private sealed class PTUCConsTmsProxy : ModelPropertyChange<IPTUC, IING>
+        protected sealed class PTUCConsTmsProxy : ModelPropertyChange<IPTUC, IING>
         {
             
             /// <summary>
@@ -33695,7 +33695,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AlmVal property
         /// </summary>
-        private sealed class PTUCAlmValProxy : ModelPropertyChange<IPTUC, IASG>
+        protected sealed class PTUCAlmValProxy : ModelPropertyChange<IPTUC, IASG>
         {
             
             /// <summary>
@@ -34578,7 +34578,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PTUFStrProxy : ModelPropertyChange<IPTUF, IACD>
+        protected sealed class PTUFStrProxy : ModelPropertyChange<IPTUF, IACD>
         {
             
             /// <summary>
@@ -34609,7 +34609,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PTUFOpProxy : ModelPropertyChange<IPTUF, IACT>
+        protected sealed class PTUFOpProxy : ModelPropertyChange<IPTUF, IACT>
         {
             
             /// <summary>
@@ -34640,7 +34640,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkV property
         /// </summary>
-        private sealed class PTUFBlkVProxy : ModelPropertyChange<IPTUF, ISPS>
+        protected sealed class PTUFBlkVProxy : ModelPropertyChange<IPTUF, ISPS>
         {
             
             /// <summary>
@@ -34671,7 +34671,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StrVal property
         /// </summary>
-        private sealed class PTUFStrValProxy : ModelPropertyChange<IPTUF, IASG>
+        protected sealed class PTUFStrValProxy : ModelPropertyChange<IPTUF, IASG>
         {
             
             /// <summary>
@@ -34702,7 +34702,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkVal property
         /// </summary>
-        private sealed class PTUFBlkValProxy : ModelPropertyChange<IPTUF, IACT>
+        protected sealed class PTUFBlkValProxy : ModelPropertyChange<IPTUF, IACT>
         {
             
             /// <summary>
@@ -34733,7 +34733,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpDlTmms property
         /// </summary>
-        private sealed class PTUFOpDlTmmsProxy : ModelPropertyChange<IPTUF, IING>
+        protected sealed class PTUFOpDlTmmsProxy : ModelPropertyChange<IPTUF, IING>
         {
             
             /// <summary>
@@ -34764,7 +34764,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RsDlTmms property
         /// </summary>
-        private sealed class PTUFRsDlTmmsProxy : ModelPropertyChange<IPTUF, IING>
+        protected sealed class PTUFRsDlTmmsProxy : ModelPropertyChange<IPTUF, IING>
         {
             
             /// <summary>
@@ -36147,7 +36147,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PVOCStrProxy : ModelPropertyChange<IPVOC, IACD>
+        protected sealed class PVOCStrProxy : ModelPropertyChange<IPVOC, IACD>
         {
             
             /// <summary>
@@ -36178,7 +36178,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PVOCOpProxy : ModelPropertyChange<IPVOC, IACT>
+        protected sealed class PVOCOpProxy : ModelPropertyChange<IPVOC, IACT>
         {
             
             /// <summary>
@@ -36209,7 +36209,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AVSt property
         /// </summary>
-        private sealed class PVOCAVStProxy : ModelPropertyChange<IPVOC, ICSD>
+        protected sealed class PVOCAVStProxy : ModelPropertyChange<IPVOC, ICSD>
         {
             
             /// <summary>
@@ -36240,7 +36240,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmASt property
         /// </summary>
-        private sealed class PVOCTmAStProxy : ModelPropertyChange<IPVOC, ICSD>
+        protected sealed class PVOCTmAStProxy : ModelPropertyChange<IPVOC, ICSD>
         {
             
             /// <summary>
@@ -36271,7 +36271,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmMult property
         /// </summary>
-        private sealed class PVOCTmMultProxy : ModelPropertyChange<IPVOC, IASG>
+        protected sealed class PVOCTmMultProxy : ModelPropertyChange<IPVOC, IASG>
         {
             
             /// <summary>
@@ -36302,7 +36302,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AVCrv property
         /// </summary>
-        private sealed class PVOCAVCrvProxy : ModelPropertyChange<IPVOC, ICURVE>
+        protected sealed class PVOCAVCrvProxy : ModelPropertyChange<IPVOC, ICURVE>
         {
             
             /// <summary>
@@ -36333,7 +36333,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmACrv property
         /// </summary>
-        private sealed class PVOCTmACrvProxy : ModelPropertyChange<IPVOC, ICURVE>
+        protected sealed class PVOCTmACrvProxy : ModelPropertyChange<IPVOC, ICURVE>
         {
             
             /// <summary>
@@ -36364,7 +36364,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MinOpTmms property
         /// </summary>
-        private sealed class PVOCMinOpTmmsProxy : ModelPropertyChange<IPVOC, IING>
+        protected sealed class PVOCMinOpTmmsProxy : ModelPropertyChange<IPVOC, IING>
         {
             
             /// <summary>
@@ -36395,7 +36395,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxOpTmms property
         /// </summary>
-        private sealed class PVOCMaxOpTmmsProxy : ModelPropertyChange<IPVOC, IING>
+        protected sealed class PVOCMaxOpTmmsProxy : ModelPropertyChange<IPVOC, IING>
         {
             
             /// <summary>
@@ -36426,7 +36426,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpDlTmms property
         /// </summary>
-        private sealed class PVOCOpDlTmmsProxy : ModelPropertyChange<IPVOC, IING>
+        protected sealed class PVOCOpDlTmmsProxy : ModelPropertyChange<IPVOC, IING>
         {
             
             /// <summary>
@@ -36457,7 +36457,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TypRsCrv property
         /// </summary>
-        private sealed class PVOCTypRsCrvProxy : ModelPropertyChange<IPVOC, IING>
+        protected sealed class PVOCTypRsCrvProxy : ModelPropertyChange<IPVOC, IING>
         {
             
             /// <summary>
@@ -36488,7 +36488,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RsDlTmms property
         /// </summary>
-        private sealed class PVOCRsDlTmmsProxy : ModelPropertyChange<IPVOC, IING>
+        protected sealed class PVOCRsDlTmmsProxy : ModelPropertyChange<IPVOC, IING>
         {
             
             /// <summary>
@@ -37771,7 +37771,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PVPHStrProxy : ModelPropertyChange<IPVPH, IACD>
+        protected sealed class PVPHStrProxy : ModelPropertyChange<IPVPH, IACD>
         {
             
             /// <summary>
@@ -37802,7 +37802,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PVPHOpProxy : ModelPropertyChange<IPVPH, IACT>
+        protected sealed class PVPHOpProxy : ModelPropertyChange<IPVPH, IACT>
         {
             
             /// <summary>
@@ -37833,7 +37833,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VHzSt property
         /// </summary>
-        private sealed class PVPHVHzStProxy : ModelPropertyChange<IPVPH, ICSD>
+        protected sealed class PVPHVHzStProxy : ModelPropertyChange<IPVPH, ICSD>
         {
             
             /// <summary>
@@ -37864,7 +37864,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VHzCrv property
         /// </summary>
-        private sealed class PVPHVHzCrvProxy : ModelPropertyChange<IPVPH, ICURVE>
+        protected sealed class PVPHVHzCrvProxy : ModelPropertyChange<IPVPH, ICURVE>
         {
             
             /// <summary>
@@ -37895,7 +37895,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StrVal property
         /// </summary>
-        private sealed class PVPHStrValProxy : ModelPropertyChange<IPVPH, IASG>
+        protected sealed class PVPHStrValProxy : ModelPropertyChange<IPVPH, IASG>
         {
             
             /// <summary>
@@ -37926,7 +37926,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpDlTmms property
         /// </summary>
-        private sealed class PVPHOpDlTmmsProxy : ModelPropertyChange<IPVPH, IING>
+        protected sealed class PVPHOpDlTmmsProxy : ModelPropertyChange<IPVPH, IING>
         {
             
             /// <summary>
@@ -37957,7 +37957,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TypRsCrv property
         /// </summary>
-        private sealed class PVPHTypRsCrvProxy : ModelPropertyChange<IPVPH, IING>
+        protected sealed class PVPHTypRsCrvProxy : ModelPropertyChange<IPVPH, IING>
         {
             
             /// <summary>
@@ -37988,7 +37988,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RsDlTmms property
         /// </summary>
-        private sealed class PVPHRsDlTmmsProxy : ModelPropertyChange<IPVPH, IING>
+        protected sealed class PVPHRsDlTmmsProxy : ModelPropertyChange<IPVPH, IING>
         {
             
             /// <summary>
@@ -38019,7 +38019,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmMult property
         /// </summary>
-        private sealed class PVPHTmMultProxy : ModelPropertyChange<IPVPH, IASG>
+        protected sealed class PVPHTmMultProxy : ModelPropertyChange<IPVPH, IASG>
         {
             
             /// <summary>
@@ -38050,7 +38050,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MinOpTmms property
         /// </summary>
-        private sealed class PVPHMinOpTmmsProxy : ModelPropertyChange<IPVPH, IING>
+        protected sealed class PVPHMinOpTmmsProxy : ModelPropertyChange<IPVPH, IING>
         {
             
             /// <summary>
@@ -38081,7 +38081,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxOpTmms property
         /// </summary>
-        private sealed class PVPHMaxOpTmmsProxy : ModelPropertyChange<IPVPH, IING>
+        protected sealed class PVPHMaxOpTmmsProxy : ModelPropertyChange<IPVPH, IING>
         {
             
             /// <summary>
@@ -38764,7 +38764,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Tr property
         /// </summary>
-        private sealed class PTRCTrProxy : ModelPropertyChange<IPTRC, IACT>
+        protected sealed class PTRCTrProxy : ModelPropertyChange<IPTRC, IACT>
         {
             
             /// <summary>
@@ -38795,7 +38795,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PTRCOpProxy : ModelPropertyChange<IPTRC, IACT>
+        protected sealed class PTRCOpProxy : ModelPropertyChange<IPTRC, IACT>
         {
             
             /// <summary>
@@ -38826,7 +38826,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PTRCStrProxy : ModelPropertyChange<IPTRC, IACD>
+        protected sealed class PTRCStrProxy : ModelPropertyChange<IPTRC, IACD>
         {
             
             /// <summary>
@@ -38857,7 +38857,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TrMod property
         /// </summary>
-        private sealed class PTRCTrModProxy : ModelPropertyChange<IPTRC, IING>
+        protected sealed class PTRCTrModProxy : ModelPropertyChange<IPTRC, IING>
         {
             
             /// <summary>
@@ -38888,7 +38888,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TrPlsTmms property
         /// </summary>
-        private sealed class PTRCTrPlsTmmsProxy : ModelPropertyChange<IPTRC, IING>
+        protected sealed class PTRCTrPlsTmmsProxy : ModelPropertyChange<IPTRC, IING>
         {
             
             /// <summary>
@@ -40071,7 +40071,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PTUVStrProxy : ModelPropertyChange<IPTUV, IACD>
+        protected sealed class PTUVStrProxy : ModelPropertyChange<IPTUV, IACD>
         {
             
             /// <summary>
@@ -40102,7 +40102,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PTUVOpProxy : ModelPropertyChange<IPTUV, IACT>
+        protected sealed class PTUVOpProxy : ModelPropertyChange<IPTUV, IACT>
         {
             
             /// <summary>
@@ -40133,7 +40133,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmVSt property
         /// </summary>
-        private sealed class PTUVTmVStProxy : ModelPropertyChange<IPTUV, ICSD>
+        protected sealed class PTUVTmVStProxy : ModelPropertyChange<IPTUV, ICSD>
         {
             
             /// <summary>
@@ -40164,7 +40164,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmVCrv property
         /// </summary>
-        private sealed class PTUVTmVCrvProxy : ModelPropertyChange<IPTUV, ICURVE>
+        protected sealed class PTUVTmVCrvProxy : ModelPropertyChange<IPTUV, ICURVE>
         {
             
             /// <summary>
@@ -40195,7 +40195,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StrVal property
         /// </summary>
-        private sealed class PTUVStrValProxy : ModelPropertyChange<IPTUV, IASG>
+        protected sealed class PTUVStrValProxy : ModelPropertyChange<IPTUV, IASG>
         {
             
             /// <summary>
@@ -40226,7 +40226,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmMult property
         /// </summary>
-        private sealed class PTUVTmMultProxy : ModelPropertyChange<IPTUV, IASG>
+        protected sealed class PTUVTmMultProxy : ModelPropertyChange<IPTUV, IASG>
         {
             
             /// <summary>
@@ -40257,7 +40257,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MinOpTmms property
         /// </summary>
-        private sealed class PTUVMinOpTmmsProxy : ModelPropertyChange<IPTUV, IING>
+        protected sealed class PTUVMinOpTmmsProxy : ModelPropertyChange<IPTUV, IING>
         {
             
             /// <summary>
@@ -40288,7 +40288,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxOpTmms property
         /// </summary>
-        private sealed class PTUVMaxOpTmmsProxy : ModelPropertyChange<IPTUV, IING>
+        protected sealed class PTUVMaxOpTmmsProxy : ModelPropertyChange<IPTUV, IING>
         {
             
             /// <summary>
@@ -40319,7 +40319,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpDlTmms property
         /// </summary>
-        private sealed class PTUVOpDlTmmsProxy : ModelPropertyChange<IPTUV, IING>
+        protected sealed class PTUVOpDlTmmsProxy : ModelPropertyChange<IPTUV, IING>
         {
             
             /// <summary>
@@ -40350,7 +40350,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RsDlTmms property
         /// </summary>
-        private sealed class PTUVRsDlTmmsProxy : ModelPropertyChange<IPTUV, IING>
+        protected sealed class PTUVRsDlTmmsProxy : ModelPropertyChange<IPTUV, IING>
         {
             
             /// <summary>
@@ -41433,7 +41433,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PUPFStrProxy : ModelPropertyChange<IPUPF, IACD>
+        protected sealed class PUPFStrProxy : ModelPropertyChange<IPUPF, IACD>
         {
             
             /// <summary>
@@ -41464,7 +41464,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PUPFOpProxy : ModelPropertyChange<IPUPF, IACT>
+        protected sealed class PUPFOpProxy : ModelPropertyChange<IPUPF, IACT>
         {
             
             /// <summary>
@@ -41495,7 +41495,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkA property
         /// </summary>
-        private sealed class PUPFBlkAProxy : ModelPropertyChange<IPUPF, ISPS>
+        protected sealed class PUPFBlkAProxy : ModelPropertyChange<IPUPF, ISPS>
         {
             
             /// <summary>
@@ -41526,7 +41526,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkV property
         /// </summary>
-        private sealed class PUPFBlkVProxy : ModelPropertyChange<IPUPF, ISPS>
+        protected sealed class PUPFBlkVProxy : ModelPropertyChange<IPUPF, ISPS>
         {
             
             /// <summary>
@@ -41557,7 +41557,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StrVal property
         /// </summary>
-        private sealed class PUPFStrValProxy : ModelPropertyChange<IPUPF, IASG>
+        protected sealed class PUPFStrValProxy : ModelPropertyChange<IPUPF, IASG>
         {
             
             /// <summary>
@@ -41588,7 +41588,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpDlTmms property
         /// </summary>
-        private sealed class PUPFOpDlTmmsProxy : ModelPropertyChange<IPUPF, IING>
+        protected sealed class PUPFOpDlTmmsProxy : ModelPropertyChange<IPUPF, IING>
         {
             
             /// <summary>
@@ -41619,7 +41619,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RsDlTmms property
         /// </summary>
-        private sealed class PUPFRsDlTmmsProxy : ModelPropertyChange<IPUPF, IING>
+        protected sealed class PUPFRsDlTmmsProxy : ModelPropertyChange<IPUPF, IING>
         {
             
             /// <summary>
@@ -41650,7 +41650,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkValA property
         /// </summary>
-        private sealed class PUPFBlkValAProxy : ModelPropertyChange<IPUPF, IASG>
+        protected sealed class PUPFBlkValAProxy : ModelPropertyChange<IPUPF, IASG>
         {
             
             /// <summary>
@@ -41681,7 +41681,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkValV property
         /// </summary>
-        private sealed class PUPFBlkValVProxy : ModelPropertyChange<IPUPF, IASG>
+        protected sealed class PUPFBlkValVProxy : ModelPropertyChange<IPUPF, IASG>
         {
             
             /// <summary>
@@ -42364,7 +42364,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class PZSUStrProxy : ModelPropertyChange<IPZSU, IACD>
+        protected sealed class PZSUStrProxy : ModelPropertyChange<IPZSU, IACD>
         {
             
             /// <summary>
@@ -42395,7 +42395,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class PZSUOpProxy : ModelPropertyChange<IPZSU, IACT>
+        protected sealed class PZSUOpProxy : ModelPropertyChange<IPZSU, IACT>
         {
             
             /// <summary>
@@ -42426,7 +42426,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StrVal property
         /// </summary>
-        private sealed class PZSUStrValProxy : ModelPropertyChange<IPZSU, IASG>
+        protected sealed class PZSUStrValProxy : ModelPropertyChange<IPZSU, IASG>
         {
             
             /// <summary>
@@ -42457,7 +42457,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpDlTmms property
         /// </summary>
-        private sealed class PZSUOpDlTmmsProxy : ModelPropertyChange<IPZSU, IING>
+        protected sealed class PZSUOpDlTmmsProxy : ModelPropertyChange<IPZSU, IING>
         {
             
             /// <summary>
@@ -42488,7 +42488,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupP
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RsDlTmms property
         /// </summary>
-        private sealed class PZSURsDlTmmsProxy : ModelPropertyChange<IPZSU, IING>
+        protected sealed class PZSURsDlTmmsProxy : ModelPropertyChange<IPZSU, IING>
         {
             
             /// <summary>
@@ -47734,7 +47734,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpCntRs property
         /// </summary>
-        private sealed class RDREOpCntRsProxy : ModelPropertyChange<IRDRE, IINC>
+        protected sealed class RDREOpCntRsProxy : ModelPropertyChange<IRDRE, IINC>
         {
             
             /// <summary>
@@ -47765,7 +47765,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RcdTrg property
         /// </summary>
-        private sealed class RDRERcdTrgProxy : ModelPropertyChange<IRDRE, ISPC>
+        protected sealed class RDRERcdTrgProxy : ModelPropertyChange<IRDRE, ISPC>
         {
             
             /// <summary>
@@ -47796,7 +47796,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MemRs property
         /// </summary>
-        private sealed class RDREMemRsProxy : ModelPropertyChange<IRDRE, ISPC>
+        protected sealed class RDREMemRsProxy : ModelPropertyChange<IRDRE, ISPC>
         {
             
             /// <summary>
@@ -47827,7 +47827,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MemClr property
         /// </summary>
-        private sealed class RDREMemClrProxy : ModelPropertyChange<IRDRE, ISPC>
+        protected sealed class RDREMemClrProxy : ModelPropertyChange<IRDRE, ISPC>
         {
             
             /// <summary>
@@ -47858,7 +47858,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RcdMade property
         /// </summary>
-        private sealed class RDRERcdMadeProxy : ModelPropertyChange<IRDRE, ISPS>
+        protected sealed class RDRERcdMadeProxy : ModelPropertyChange<IRDRE, ISPS>
         {
             
             /// <summary>
@@ -47889,7 +47889,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FltNum property
         /// </summary>
-        private sealed class RDREFltNumProxy : ModelPropertyChange<IRDRE, IINS>
+        protected sealed class RDREFltNumProxy : ModelPropertyChange<IRDRE, IINS>
         {
             
             /// <summary>
@@ -47920,7 +47920,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the GriFltNum property
         /// </summary>
-        private sealed class RDREGriFltNumProxy : ModelPropertyChange<IRDRE, IINS>
+        protected sealed class RDREGriFltNumProxy : ModelPropertyChange<IRDRE, IINS>
         {
             
             /// <summary>
@@ -47951,7 +47951,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RcdStr property
         /// </summary>
-        private sealed class RDRERcdStrProxy : ModelPropertyChange<IRDRE, ISPS>
+        protected sealed class RDRERcdStrProxy : ModelPropertyChange<IRDRE, ISPS>
         {
             
             /// <summary>
@@ -47982,7 +47982,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MemUsed property
         /// </summary>
-        private sealed class RDREMemUsedProxy : ModelPropertyChange<IRDRE, IINS>
+        protected sealed class RDREMemUsedProxy : ModelPropertyChange<IRDRE, IINS>
         {
             
             /// <summary>
@@ -48013,7 +48013,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TrgMod property
         /// </summary>
-        private sealed class RDRETrgModProxy : ModelPropertyChange<IRDRE, IING>
+        protected sealed class RDRETrgModProxy : ModelPropertyChange<IRDRE, IING>
         {
             
             /// <summary>
@@ -48044,7 +48044,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LevMod property
         /// </summary>
-        private sealed class RDRELevModProxy : ModelPropertyChange<IRDRE, IING>
+        protected sealed class RDRELevModProxy : ModelPropertyChange<IRDRE, IING>
         {
             
             /// <summary>
@@ -48075,7 +48075,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PreTmms property
         /// </summary>
-        private sealed class RDREPreTmmsProxy : ModelPropertyChange<IRDRE, IING>
+        protected sealed class RDREPreTmmsProxy : ModelPropertyChange<IRDRE, IING>
         {
             
             /// <summary>
@@ -48106,7 +48106,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PstTmms property
         /// </summary>
-        private sealed class RDREPstTmmsProxy : ModelPropertyChange<IRDRE, IING>
+        protected sealed class RDREPstTmmsProxy : ModelPropertyChange<IRDRE, IING>
         {
             
             /// <summary>
@@ -48137,7 +48137,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MemFull property
         /// </summary>
-        private sealed class RDREMemFullProxy : ModelPropertyChange<IRDRE, IING>
+        protected sealed class RDREMemFullProxy : ModelPropertyChange<IRDRE, IING>
         {
             
             /// <summary>
@@ -48168,7 +48168,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxNumRcd property
         /// </summary>
-        private sealed class RDREMaxNumRcdProxy : ModelPropertyChange<IRDRE, IING>
+        protected sealed class RDREMaxNumRcdProxy : ModelPropertyChange<IRDRE, IING>
         {
             
             /// <summary>
@@ -48199,7 +48199,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReTrgMod property
         /// </summary>
-        private sealed class RDREReTrgModProxy : ModelPropertyChange<IRDRE, IING>
+        protected sealed class RDREReTrgModProxy : ModelPropertyChange<IRDRE, IING>
         {
             
             /// <summary>
@@ -48230,7 +48230,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PerTrgTms property
         /// </summary>
-        private sealed class RDREPerTrgTmsProxy : ModelPropertyChange<IRDRE, IING>
+        protected sealed class RDREPerTrgTmsProxy : ModelPropertyChange<IRDRE, IING>
         {
             
             /// <summary>
@@ -48261,7 +48261,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ExclTmms property
         /// </summary>
-        private sealed class RDREExclTmmsProxy : ModelPropertyChange<IRDRE, IING>
+        protected sealed class RDREExclTmmsProxy : ModelPropertyChange<IRDRE, IING>
         {
             
             /// <summary>
@@ -48292,7 +48292,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpMod property
         /// </summary>
-        private sealed class RDREOpModProxy : ModelPropertyChange<IRDRE, IING>
+        protected sealed class RDREOpModProxy : ModelPropertyChange<IRDRE, IING>
         {
             
             /// <summary>
@@ -48675,7 +48675,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AutoUpLod property
         /// </summary>
-        private sealed class RDRSAutoUpLodProxy : ModelPropertyChange<IRDRS, ISPC>
+        protected sealed class RDRSAutoUpLodProxy : ModelPropertyChange<IRDRS, ISPC>
         {
             
             /// <summary>
@@ -48706,7 +48706,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DltRcd property
         /// </summary>
-        private sealed class RDRSDltRcdProxy : ModelPropertyChange<IRDRS, ISPC>
+        protected sealed class RDRSDltRcdProxy : ModelPropertyChange<IRDRS, ISPC>
         {
             
             /// <summary>
@@ -50289,7 +50289,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpCntRs property
         /// </summary>
-        private sealed class RPSBOpCntRsProxy : ModelPropertyChange<IRPSB, IINC>
+        protected sealed class RPSBOpCntRsProxy : ModelPropertyChange<IRPSB, IINC>
         {
             
             /// <summary>
@@ -50320,7 +50320,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class RPSBStrProxy : ModelPropertyChange<IRPSB, IACD>
+        protected sealed class RPSBStrProxy : ModelPropertyChange<IRPSB, IACD>
         {
             
             /// <summary>
@@ -50351,7 +50351,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class RPSBOpProxy : ModelPropertyChange<IRPSB, IACT>
+        protected sealed class RPSBOpProxy : ModelPropertyChange<IRPSB, IACT>
         {
             
             /// <summary>
@@ -50382,7 +50382,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkZn property
         /// </summary>
-        private sealed class RPSBBlkZnProxy : ModelPropertyChange<IRPSB, ISPS>
+        protected sealed class RPSBBlkZnProxy : ModelPropertyChange<IRPSB, ISPS>
         {
             
             /// <summary>
@@ -50413,7 +50413,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ZeroEna property
         /// </summary>
-        private sealed class RPSBZeroEnaProxy : ModelPropertyChange<IRPSB, ISPG>
+        protected sealed class RPSBZeroEnaProxy : ModelPropertyChange<IRPSB, ISPG>
         {
             
             /// <summary>
@@ -50444,7 +50444,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NgEna property
         /// </summary>
-        private sealed class RPSBNgEnaProxy : ModelPropertyChange<IRPSB, ISPG>
+        protected sealed class RPSBNgEnaProxy : ModelPropertyChange<IRPSB, ISPG>
         {
             
             /// <summary>
@@ -50475,7 +50475,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxEna property
         /// </summary>
-        private sealed class RPSBMaxEnaProxy : ModelPropertyChange<IRPSB, ISPG>
+        protected sealed class RPSBMaxEnaProxy : ModelPropertyChange<IRPSB, ISPG>
         {
             
             /// <summary>
@@ -50506,7 +50506,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SwgVal property
         /// </summary>
-        private sealed class RPSBSwgValProxy : ModelPropertyChange<IRPSB, IASG>
+        protected sealed class RPSBSwgValProxy : ModelPropertyChange<IRPSB, IASG>
         {
             
             /// <summary>
@@ -50537,7 +50537,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SwgRis property
         /// </summary>
-        private sealed class RPSBSwgRisProxy : ModelPropertyChange<IRPSB, IASG>
+        protected sealed class RPSBSwgRisProxy : ModelPropertyChange<IRPSB, IASG>
         {
             
             /// <summary>
@@ -50568,7 +50568,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SwgReact property
         /// </summary>
-        private sealed class RPSBSwgReactProxy : ModelPropertyChange<IRPSB, IASG>
+        protected sealed class RPSBSwgReactProxy : ModelPropertyChange<IRPSB, IASG>
         {
             
             /// <summary>
@@ -50599,7 +50599,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SwgTmms property
         /// </summary>
-        private sealed class RPSBSwgTmmsProxy : ModelPropertyChange<IRPSB, IING>
+        protected sealed class RPSBSwgTmmsProxy : ModelPropertyChange<IRPSB, IING>
         {
             
             /// <summary>
@@ -50630,7 +50630,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the UnBlkTmms property
         /// </summary>
-        private sealed class RPSBUnBlkTmmsProxy : ModelPropertyChange<IRPSB, IING>
+        protected sealed class RPSBUnBlkTmmsProxy : ModelPropertyChange<IRPSB, IING>
         {
             
             /// <summary>
@@ -50661,7 +50661,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxNumSlp property
         /// </summary>
-        private sealed class RPSBMaxNumSlpProxy : ModelPropertyChange<IRPSB, IING>
+        protected sealed class RPSBMaxNumSlpProxy : ModelPropertyChange<IRPSB, IING>
         {
             
             /// <summary>
@@ -50692,7 +50692,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EvTmms property
         /// </summary>
-        private sealed class RPSBEvTmmsProxy : ModelPropertyChange<IRPSB, IING>
+        protected sealed class RPSBEvTmmsProxy : ModelPropertyChange<IRPSB, IING>
         {
             
             /// <summary>
@@ -51875,7 +51875,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpCntRs property
         /// </summary>
-        private sealed class RBRFOpCntRsProxy : ModelPropertyChange<IRBRF, IINC>
+        protected sealed class RBRFOpCntRsProxy : ModelPropertyChange<IRBRF, IINC>
         {
             
             /// <summary>
@@ -51906,7 +51906,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Str property
         /// </summary>
-        private sealed class RBRFStrProxy : ModelPropertyChange<IRBRF, IACD>
+        protected sealed class RBRFStrProxy : ModelPropertyChange<IRBRF, IACD>
         {
             
             /// <summary>
@@ -51937,7 +51937,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpEx property
         /// </summary>
-        private sealed class RBRFOpExProxy : ModelPropertyChange<IRBRF, IACT>
+        protected sealed class RBRFOpExProxy : ModelPropertyChange<IRBRF, IACT>
         {
             
             /// <summary>
@@ -51968,7 +51968,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpIn property
         /// </summary>
-        private sealed class RBRFOpInProxy : ModelPropertyChange<IRBRF, IACT>
+        protected sealed class RBRFOpInProxy : ModelPropertyChange<IRBRF, IACT>
         {
             
             /// <summary>
@@ -51999,7 +51999,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FailMod property
         /// </summary>
-        private sealed class RBRFFailModProxy : ModelPropertyChange<IRBRF, IING>
+        protected sealed class RBRFFailModProxy : ModelPropertyChange<IRBRF, IING>
         {
             
             /// <summary>
@@ -52030,7 +52030,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FailTmms property
         /// </summary>
-        private sealed class RBRFFailTmmsProxy : ModelPropertyChange<IRBRF, IING>
+        protected sealed class RBRFFailTmmsProxy : ModelPropertyChange<IRBRF, IING>
         {
             
             /// <summary>
@@ -52061,7 +52061,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SPlTrTmms property
         /// </summary>
-        private sealed class RBRFSPlTrTmmsProxy : ModelPropertyChange<IRBRF, IING>
+        protected sealed class RBRFSPlTrTmmsProxy : ModelPropertyChange<IRBRF, IING>
         {
             
             /// <summary>
@@ -52092,7 +52092,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TPTrTmms property
         /// </summary>
-        private sealed class RBRFTPTrTmmsProxy : ModelPropertyChange<IRBRF, IING>
+        protected sealed class RBRFTPTrTmmsProxy : ModelPropertyChange<IRBRF, IING>
         {
             
             /// <summary>
@@ -52123,7 +52123,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DetValA property
         /// </summary>
-        private sealed class RBRFDetValAProxy : ModelPropertyChange<IRBRF, IASG>
+        protected sealed class RBRFDetValAProxy : ModelPropertyChange<IRBRF, IASG>
         {
             
             /// <summary>
@@ -52154,7 +52154,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReTrMod property
         /// </summary>
-        private sealed class RBRFReTrModProxy : ModelPropertyChange<IRBRF, IING>
+        protected sealed class RBRFReTrModProxy : ModelPropertyChange<IRBRF, IING>
         {
             
             /// <summary>
@@ -53237,7 +53237,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpCntRs property
         /// </summary>
-        private sealed class RADROpCntRsProxy : ModelPropertyChange<IRADR, IINC>
+        protected sealed class RADROpCntRsProxy : ModelPropertyChange<IRADR, IINC>
         {
             
             /// <summary>
@@ -53268,7 +53268,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ChTrg property
         /// </summary>
-        private sealed class RADRChTrgProxy : ModelPropertyChange<IRADR, ISPS>
+        protected sealed class RADRChTrgProxy : ModelPropertyChange<IRADR, ISPS>
         {
             
             /// <summary>
@@ -53299,7 +53299,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ChNum property
         /// </summary>
-        private sealed class RADRChNumProxy : ModelPropertyChange<IRADR, IING>
+        protected sealed class RADRChNumProxy : ModelPropertyChange<IRADR, IING>
         {
             
             /// <summary>
@@ -53330,7 +53330,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TrGMod property
         /// </summary>
-        private sealed class RADRTrGModProxy : ModelPropertyChange<IRADR, IING>
+        protected sealed class RADRTrGModProxy : ModelPropertyChange<IRADR, IING>
         {
             
             /// <summary>
@@ -53361,7 +53361,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LevMod property
         /// </summary>
-        private sealed class RADRLevModProxy : ModelPropertyChange<IRADR, IING>
+        protected sealed class RADRLevModProxy : ModelPropertyChange<IRADR, IING>
         {
             
             /// <summary>
@@ -53392,7 +53392,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HiTrgLev property
         /// </summary>
-        private sealed class RADRHiTrgLevProxy : ModelPropertyChange<IRADR, IASG>
+        protected sealed class RADRHiTrgLevProxy : ModelPropertyChange<IRADR, IASG>
         {
             
             /// <summary>
@@ -53423,7 +53423,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LoTrgLev property
         /// </summary>
-        private sealed class RADRLoTrgLevProxy : ModelPropertyChange<IRADR, IASG>
+        protected sealed class RADRLoTrgLevProxy : ModelPropertyChange<IRADR, IASG>
         {
             
             /// <summary>
@@ -53454,7 +53454,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PreTmms property
         /// </summary>
-        private sealed class RADRPreTmmsProxy : ModelPropertyChange<IRADR, IING>
+        protected sealed class RADRPreTmmsProxy : ModelPropertyChange<IRADR, IING>
         {
             
             /// <summary>
@@ -53485,7 +53485,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PstTmms property
         /// </summary>
-        private sealed class RADRPstTmmsProxy : ModelPropertyChange<IRADR, IING>
+        protected sealed class RADRPstTmmsProxy : ModelPropertyChange<IRADR, IING>
         {
             
             /// <summary>
@@ -54368,7 +54368,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpCntRs property
         /// </summary>
-        private sealed class RBDROpCntRsProxy : ModelPropertyChange<IRBDR, IINC>
+        protected sealed class RBDROpCntRsProxy : ModelPropertyChange<IRBDR, IINC>
         {
             
             /// <summary>
@@ -54399,7 +54399,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ChTrg property
         /// </summary>
-        private sealed class RBDRChTrgProxy : ModelPropertyChange<IRBDR, ISPS>
+        protected sealed class RBDRChTrgProxy : ModelPropertyChange<IRBDR, ISPS>
         {
             
             /// <summary>
@@ -54430,7 +54430,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ChNum property
         /// </summary>
-        private sealed class RBDRChNumProxy : ModelPropertyChange<IRBDR, IING>
+        protected sealed class RBDRChNumProxy : ModelPropertyChange<IRBDR, IING>
         {
             
             /// <summary>
@@ -54461,7 +54461,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TrgMod property
         /// </summary>
-        private sealed class RBDRTrgModProxy : ModelPropertyChange<IRBDR, IING>
+        protected sealed class RBDRTrgModProxy : ModelPropertyChange<IRBDR, IING>
         {
             
             /// <summary>
@@ -54492,7 +54492,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LevMod property
         /// </summary>
-        private sealed class RBDRLevModProxy : ModelPropertyChange<IRBDR, IING>
+        protected sealed class RBDRLevModProxy : ModelPropertyChange<IRBDR, IING>
         {
             
             /// <summary>
@@ -54523,7 +54523,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PreTmms property
         /// </summary>
-        private sealed class RBDRPreTmmsProxy : ModelPropertyChange<IRBDR, IING>
+        protected sealed class RBDRPreTmmsProxy : ModelPropertyChange<IRBDR, IING>
         {
             
             /// <summary>
@@ -54554,7 +54554,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PstTmms property
         /// </summary>
-        private sealed class RBDRPstTmmsProxy : ModelPropertyChange<IRBDR, IING>
+        protected sealed class RBDRPstTmmsProxy : ModelPropertyChange<IRBDR, IING>
         {
             
             /// <summary>
@@ -55737,7 +55737,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Dir property
         /// </summary>
-        private sealed class RDIRDirProxy : ModelPropertyChange<IRDIR, IACD>
+        protected sealed class RDIRDirProxy : ModelPropertyChange<IRDIR, IACD>
         {
             
             /// <summary>
@@ -55768,7 +55768,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ChrAng property
         /// </summary>
-        private sealed class RDIRChrAngProxy : ModelPropertyChange<IRDIR, IASG>
+        protected sealed class RDIRChrAngProxy : ModelPropertyChange<IRDIR, IASG>
         {
             
             /// <summary>
@@ -55799,7 +55799,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MinFwdAng property
         /// </summary>
-        private sealed class RDIRMinFwdAngProxy : ModelPropertyChange<IRDIR, IASG>
+        protected sealed class RDIRMinFwdAngProxy : ModelPropertyChange<IRDIR, IASG>
         {
             
             /// <summary>
@@ -55830,7 +55830,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MinRvAng property
         /// </summary>
-        private sealed class RDIRMinRvAngProxy : ModelPropertyChange<IRDIR, IASG>
+        protected sealed class RDIRMinRvAngProxy : ModelPropertyChange<IRDIR, IASG>
         {
             
             /// <summary>
@@ -55861,7 +55861,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxFwdAng property
         /// </summary>
-        private sealed class RDIRMaxFwdAngProxy : ModelPropertyChange<IRDIR, IASG>
+        protected sealed class RDIRMaxFwdAngProxy : ModelPropertyChange<IRDIR, IASG>
         {
             
             /// <summary>
@@ -55892,7 +55892,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxRvAng property
         /// </summary>
-        private sealed class RDIRMaxRvAngProxy : ModelPropertyChange<IRDIR, IASG>
+        protected sealed class RDIRMaxRvAngProxy : ModelPropertyChange<IRDIR, IASG>
         {
             
             /// <summary>
@@ -55923,7 +55923,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkValA property
         /// </summary>
-        private sealed class RDIRBlkValAProxy : ModelPropertyChange<IRDIR, IASG>
+        protected sealed class RDIRBlkValAProxy : ModelPropertyChange<IRDIR, IASG>
         {
             
             /// <summary>
@@ -55954,7 +55954,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkValV property
         /// </summary>
-        private sealed class RDIRBlkValVProxy : ModelPropertyChange<IRDIR, IASG>
+        protected sealed class RDIRBlkValVProxy : ModelPropertyChange<IRDIR, IASG>
         {
             
             /// <summary>
@@ -55985,7 +55985,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PolQty property
         /// </summary>
-        private sealed class RDIRPolQtyProxy : ModelPropertyChange<IRDIR, IING>
+        protected sealed class RDIRPolQtyProxy : ModelPropertyChange<IRDIR, IING>
         {
             
             /// <summary>
@@ -56016,7 +56016,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MinPPV property
         /// </summary>
-        private sealed class RDIRMinPPVProxy : ModelPropertyChange<IRDIR, IASG>
+        protected sealed class RDIRMinPPVProxy : ModelPropertyChange<IRDIR, IASG>
         {
             
             /// <summary>
@@ -57899,7 +57899,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpCntRs property
         /// </summary>
-        private sealed class RFLOOpCntRsProxy : ModelPropertyChange<IRFLO, IINC>
+        protected sealed class RFLOOpCntRsProxy : ModelPropertyChange<IRFLO, IINC>
         {
             
             /// <summary>
@@ -57930,7 +57930,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FltZ property
         /// </summary>
-        private sealed class RFLOFltZProxy : ModelPropertyChange<IRFLO, ICMV>
+        protected sealed class RFLOFltZProxy : ModelPropertyChange<IRFLO, ICMV>
         {
             
             /// <summary>
@@ -57961,7 +57961,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FltDiskm property
         /// </summary>
-        private sealed class RFLOFltDiskmProxy : ModelPropertyChange<IRFLO, IMV>
+        protected sealed class RFLOFltDiskmProxy : ModelPropertyChange<IRFLO, IMV>
         {
             
             /// <summary>
@@ -57992,7 +57992,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FltLoop property
         /// </summary>
-        private sealed class RFLOFltLoopProxy : ModelPropertyChange<IRFLO, IINS>
+        protected sealed class RFLOFltLoopProxy : ModelPropertyChange<IRFLO, IINS>
         {
             
             /// <summary>
@@ -58023,7 +58023,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LinLenKm property
         /// </summary>
-        private sealed class RFLOLinLenKmProxy : ModelPropertyChange<IRFLO, IASG>
+        protected sealed class RFLOLinLenKmProxy : ModelPropertyChange<IRFLO, IASG>
         {
             
             /// <summary>
@@ -58054,7 +58054,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the R1 property
         /// </summary>
-        private sealed class RFLOR1Proxy : ModelPropertyChange<IRFLO, IASG>
+        protected sealed class RFLOR1Proxy : ModelPropertyChange<IRFLO, IASG>
         {
             
             /// <summary>
@@ -58085,7 +58085,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the X1 property
         /// </summary>
-        private sealed class RFLOX1Proxy : ModelPropertyChange<IRFLO, IASG>
+        protected sealed class RFLOX1Proxy : ModelPropertyChange<IRFLO, IASG>
         {
             
             /// <summary>
@@ -58116,7 +58116,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the R0 property
         /// </summary>
-        private sealed class RFLOR0Proxy : ModelPropertyChange<IRFLO, IASG>
+        protected sealed class RFLOR0Proxy : ModelPropertyChange<IRFLO, IASG>
         {
             
             /// <summary>
@@ -58147,7 +58147,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the X0 property
         /// </summary>
-        private sealed class RFLOX0Proxy : ModelPropertyChange<IRFLO, IASG>
+        protected sealed class RFLOX0Proxy : ModelPropertyChange<IRFLO, IASG>
         {
             
             /// <summary>
@@ -58178,7 +58178,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Z1Mod property
         /// </summary>
-        private sealed class RFLOZ1ModProxy : ModelPropertyChange<IRFLO, IASG>
+        protected sealed class RFLOZ1ModProxy : ModelPropertyChange<IRFLO, IASG>
         {
             
             /// <summary>
@@ -58209,7 +58209,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Z1Ang property
         /// </summary>
-        private sealed class RFLOZ1AngProxy : ModelPropertyChange<IRFLO, IASG>
+        protected sealed class RFLOZ1AngProxy : ModelPropertyChange<IRFLO, IASG>
         {
             
             /// <summary>
@@ -58240,7 +58240,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Z0Mod property
         /// </summary>
-        private sealed class RFLOZ0ModProxy : ModelPropertyChange<IRFLO, IASG>
+        protected sealed class RFLOZ0ModProxy : ModelPropertyChange<IRFLO, IASG>
         {
             
             /// <summary>
@@ -58271,7 +58271,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Z0Ang property
         /// </summary>
-        private sealed class RFLOZ0AngProxy : ModelPropertyChange<IRFLO, IASG>
+        protected sealed class RFLOZ0AngProxy : ModelPropertyChange<IRFLO, IASG>
         {
             
             /// <summary>
@@ -58302,7 +58302,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Rm0 property
         /// </summary>
-        private sealed class RFLORm0Proxy : ModelPropertyChange<IRFLO, IASG>
+        protected sealed class RFLORm0Proxy : ModelPropertyChange<IRFLO, IASG>
         {
             
             /// <summary>
@@ -58333,7 +58333,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Xm0 property
         /// </summary>
-        private sealed class RFLOXm0Proxy : ModelPropertyChange<IRFLO, IASG>
+        protected sealed class RFLOXm0Proxy : ModelPropertyChange<IRFLO, IASG>
         {
             
             /// <summary>
@@ -58364,7 +58364,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Zm0Mod property
         /// </summary>
-        private sealed class RFLOZm0ModProxy : ModelPropertyChange<IRFLO, IASG>
+        protected sealed class RFLOZm0ModProxy : ModelPropertyChange<IRFLO, IASG>
         {
             
             /// <summary>
@@ -58395,7 +58395,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Zm0Ang property
         /// </summary>
-        private sealed class RFLOZm0AngProxy : ModelPropertyChange<IRFLO, IASG>
+        protected sealed class RFLOZm0AngProxy : ModelPropertyChange<IRFLO, IASG>
         {
             
             /// <summary>
@@ -59678,7 +59678,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpCntRs property
         /// </summary>
-        private sealed class RRECOpCntRsProxy : ModelPropertyChange<IRREC, IINC>
+        protected sealed class RRECOpCntRsProxy : ModelPropertyChange<IRREC, IINC>
         {
             
             /// <summary>
@@ -59709,7 +59709,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkRec property
         /// </summary>
-        private sealed class RRECBlkRecProxy : ModelPropertyChange<IRREC, ISPC>
+        protected sealed class RRECBlkRecProxy : ModelPropertyChange<IRREC, ISPC>
         {
             
             /// <summary>
@@ -59740,7 +59740,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ChkRec property
         /// </summary>
-        private sealed class RRECChkRecProxy : ModelPropertyChange<IRREC, ISPC>
+        protected sealed class RRECChkRecProxy : ModelPropertyChange<IRREC, ISPC>
         {
             
             /// <summary>
@@ -59771,7 +59771,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Auto property
         /// </summary>
-        private sealed class RRECAutoProxy : ModelPropertyChange<IRREC, ISPS>
+        protected sealed class RRECAutoProxy : ModelPropertyChange<IRREC, ISPS>
         {
             
             /// <summary>
@@ -59802,7 +59802,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Op property
         /// </summary>
-        private sealed class RRECOpProxy : ModelPropertyChange<IRREC, IACT>
+        protected sealed class RRECOpProxy : ModelPropertyChange<IRREC, IACT>
         {
             
             /// <summary>
@@ -59833,7 +59833,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AutoRecSt property
         /// </summary>
-        private sealed class RRECAutoRecStProxy : ModelPropertyChange<IRREC, IINS>
+        protected sealed class RRECAutoRecStProxy : ModelPropertyChange<IRREC, IINS>
         {
             
             /// <summary>
@@ -59864,7 +59864,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Rec1Tmms property
         /// </summary>
-        private sealed class RRECRec1TmmsProxy : ModelPropertyChange<IRREC, IING>
+        protected sealed class RRECRec1TmmsProxy : ModelPropertyChange<IRREC, IING>
         {
             
             /// <summary>
@@ -59895,7 +59895,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Rec2Tmms property
         /// </summary>
-        private sealed class RRECRec2TmmsProxy : ModelPropertyChange<IRREC, IING>
+        protected sealed class RRECRec2TmmsProxy : ModelPropertyChange<IRREC, IING>
         {
             
             /// <summary>
@@ -59926,7 +59926,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Rec3Tmms property
         /// </summary>
-        private sealed class RRECRec3TmmsProxy : ModelPropertyChange<IRREC, IING>
+        protected sealed class RRECRec3TmmsProxy : ModelPropertyChange<IRREC, IING>
         {
             
             /// <summary>
@@ -59957,7 +59957,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PlsTmms property
         /// </summary>
-        private sealed class RRECPlsTmmsProxy : ModelPropertyChange<IRREC, IING>
+        protected sealed class RRECPlsTmmsProxy : ModelPropertyChange<IRREC, IING>
         {
             
             /// <summary>
@@ -59988,7 +59988,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RclTmms property
         /// </summary>
-        private sealed class RRECRclTmmsProxy : ModelPropertyChange<IRREC, IING>
+        protected sealed class RRECRclTmmsProxy : ModelPropertyChange<IRREC, IING>
         {
             
             /// <summary>
@@ -62171,7 +62171,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RHz property
         /// </summary>
-        private sealed class RSYNRHzProxy : ModelPropertyChange<IRSYN, ISPC>
+        protected sealed class RSYNRHzProxy : ModelPropertyChange<IRSYN, ISPC>
         {
             
             /// <summary>
@@ -62202,7 +62202,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LHz property
         /// </summary>
-        private sealed class RSYNLHzProxy : ModelPropertyChange<IRSYN, ISPC>
+        protected sealed class RSYNLHzProxy : ModelPropertyChange<IRSYN, ISPC>
         {
             
             /// <summary>
@@ -62233,7 +62233,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RV property
         /// </summary>
-        private sealed class RSYNRVProxy : ModelPropertyChange<IRSYN, ISPC>
+        protected sealed class RSYNRVProxy : ModelPropertyChange<IRSYN, ISPC>
         {
             
             /// <summary>
@@ -62264,7 +62264,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LV property
         /// </summary>
-        private sealed class RSYNLVProxy : ModelPropertyChange<IRSYN, ISPC>
+        protected sealed class RSYNLVProxy : ModelPropertyChange<IRSYN, ISPC>
         {
             
             /// <summary>
@@ -62295,7 +62295,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Rel property
         /// </summary>
-        private sealed class RSYNRelProxy : ModelPropertyChange<IRSYN, ISPS>
+        protected sealed class RSYNRelProxy : ModelPropertyChange<IRSYN, ISPS>
         {
             
             /// <summary>
@@ -62326,7 +62326,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Vlnd property
         /// </summary>
-        private sealed class RSYNVlndProxy : ModelPropertyChange<IRSYN, ISPS>
+        protected sealed class RSYNVlndProxy : ModelPropertyChange<IRSYN, ISPS>
         {
             
             /// <summary>
@@ -62357,7 +62357,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AngInd property
         /// </summary>
-        private sealed class RSYNAngIndProxy : ModelPropertyChange<IRSYN, ISPS>
+        protected sealed class RSYNAngIndProxy : ModelPropertyChange<IRSYN, ISPS>
         {
             
             /// <summary>
@@ -62388,7 +62388,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HzInd property
         /// </summary>
-        private sealed class RSYNHzIndProxy : ModelPropertyChange<IRSYN, ISPS>
+        protected sealed class RSYNHzIndProxy : ModelPropertyChange<IRSYN, ISPS>
         {
             
             /// <summary>
@@ -62419,7 +62419,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SynPrg property
         /// </summary>
-        private sealed class RSYNSynPrgProxy : ModelPropertyChange<IRSYN, ISPS>
+        protected sealed class RSYNSynPrgProxy : ModelPropertyChange<IRSYN, ISPS>
         {
             
             /// <summary>
@@ -62450,7 +62450,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DifVClc property
         /// </summary>
-        private sealed class RSYNDifVClcProxy : ModelPropertyChange<IRSYN, IMV>
+        protected sealed class RSYNDifVClcProxy : ModelPropertyChange<IRSYN, IMV>
         {
             
             /// <summary>
@@ -62481,7 +62481,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DifAngClc property
         /// </summary>
-        private sealed class RSYNDifAngClcProxy : ModelPropertyChange<IRSYN, IMV>
+        protected sealed class RSYNDifAngClcProxy : ModelPropertyChange<IRSYN, IMV>
         {
             
             /// <summary>
@@ -62512,7 +62512,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DifV property
         /// </summary>
-        private sealed class RSYNDifVProxy : ModelPropertyChange<IRSYN, IASG>
+        protected sealed class RSYNDifVProxy : ModelPropertyChange<IRSYN, IASG>
         {
             
             /// <summary>
@@ -62543,7 +62543,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DifHz property
         /// </summary>
-        private sealed class RSYNDifHzProxy : ModelPropertyChange<IRSYN, IASG>
+        protected sealed class RSYNDifHzProxy : ModelPropertyChange<IRSYN, IASG>
         {
             
             /// <summary>
@@ -62574,7 +62574,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DifAng property
         /// </summary>
-        private sealed class RSYNDifAngProxy : ModelPropertyChange<IRSYN, IASG>
+        protected sealed class RSYNDifAngProxy : ModelPropertyChange<IRSYN, IASG>
         {
             
             /// <summary>
@@ -62605,7 +62605,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LivDeaMod property
         /// </summary>
-        private sealed class RSYNLivDeaModProxy : ModelPropertyChange<IRSYN, IING>
+        protected sealed class RSYNLivDeaModProxy : ModelPropertyChange<IRSYN, IING>
         {
             
             /// <summary>
@@ -62636,7 +62636,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DeaLinVal property
         /// </summary>
-        private sealed class RSYNDeaLinValProxy : ModelPropertyChange<IRSYN, IASG>
+        protected sealed class RSYNDeaLinValProxy : ModelPropertyChange<IRSYN, IASG>
         {
             
             /// <summary>
@@ -62667,7 +62667,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LivLinVal property
         /// </summary>
-        private sealed class RSYNLivLinValProxy : ModelPropertyChange<IRSYN, IASG>
+        protected sealed class RSYNLivLinValProxy : ModelPropertyChange<IRSYN, IASG>
         {
             
             /// <summary>
@@ -62698,7 +62698,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DeaBusVal property
         /// </summary>
-        private sealed class RSYNDeaBusValProxy : ModelPropertyChange<IRSYN, IASG>
+        protected sealed class RSYNDeaBusValProxy : ModelPropertyChange<IRSYN, IASG>
         {
             
             /// <summary>
@@ -62729,7 +62729,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PlsTmms property
         /// </summary>
-        private sealed class RSYNPlsTmmsProxy : ModelPropertyChange<IRSYN, IING>
+        protected sealed class RSYNPlsTmmsProxy : ModelPropertyChange<IRSYN, IING>
         {
             
             /// <summary>
@@ -62760,7 +62760,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupR
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BkrTmms property
         /// </summary>
-        private sealed class RSYNBkrTmmsProxy : ModelPropertyChange<IRSYN, IING>
+        protected sealed class RSYNBkrTmmsProxy : ModelPropertyChange<IRSYN, IING>
         {
             
             /// <summary>
@@ -64693,7 +64693,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the GrAlm property
         /// </summary>
-        private sealed class CALHGrAlmProxy : ModelPropertyChange<ICALH, ISPS>
+        protected sealed class CALHGrAlmProxy : ModelPropertyChange<ICALH, ISPS>
         {
             
             /// <summary>
@@ -64724,7 +64724,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the GrWrn property
         /// </summary>
-        private sealed class CALHGrWrnProxy : ModelPropertyChange<ICALH, ISPS>
+        protected sealed class CALHGrWrnProxy : ModelPropertyChange<ICALH, ISPS>
         {
             
             /// <summary>
@@ -64755,7 +64755,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AlmLstOv property
         /// </summary>
-        private sealed class CALHAlmLstOvProxy : ModelPropertyChange<ICALH, ISPS>
+        protected sealed class CALHAlmLstOvProxy : ModelPropertyChange<ICALH, ISPS>
         {
             
             /// <summary>
@@ -65138,7 +65138,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EnaOpn property
         /// </summary>
-        private sealed class CILOEnaOpnProxy : ModelPropertyChange<ICILO, ISPS>
+        protected sealed class CILOEnaOpnProxy : ModelPropertyChange<ICILO, ISPS>
         {
             
             /// <summary>
@@ -65169,7 +65169,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EnaCls property
         /// </summary>
-        private sealed class CILOEnaClsProxy : ModelPropertyChange<ICILO, ISPS>
+        protected sealed class CILOEnaClsProxy : ModelPropertyChange<ICILO, ISPS>
         {
             
             /// <summary>
@@ -67252,7 +67252,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEHealth property
         /// </summary>
-        private sealed class CCGREEHealthProxy : ModelPropertyChange<ICCGR, IING>
+        protected sealed class CCGREEHealthProxy : ModelPropertyChange<ICCGR, IING>
         {
             
             /// <summary>
@@ -67283,7 +67283,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEName property
         /// </summary>
-        private sealed class CCGREENameProxy : ModelPropertyChange<ICCGR, IDPL>
+        protected sealed class CCGREENameProxy : ModelPropertyChange<ICCGR, IDPL>
         {
             
             /// <summary>
@@ -67314,7 +67314,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpTmh property
         /// </summary>
-        private sealed class CCGROpTmhProxy : ModelPropertyChange<ICCGR, IINS>
+        protected sealed class CCGROpTmhProxy : ModelPropertyChange<ICCGR, IINS>
         {
             
             /// <summary>
@@ -67345,7 +67345,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EnvTmp property
         /// </summary>
-        private sealed class CCGREnvTmpProxy : ModelPropertyChange<ICCGR, IMV>
+        protected sealed class CCGREnvTmpProxy : ModelPropertyChange<ICCGR, IMV>
         {
             
             /// <summary>
@@ -67376,7 +67376,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OilTmpIn property
         /// </summary>
-        private sealed class CCGROilTmpInProxy : ModelPropertyChange<ICCGR, IMV>
+        protected sealed class CCGROilTmpInProxy : ModelPropertyChange<ICCGR, IMV>
         {
             
             /// <summary>
@@ -67407,7 +67407,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OilTmpOut property
         /// </summary>
-        private sealed class CCGROilTmpOutProxy : ModelPropertyChange<ICCGR, IMV>
+        protected sealed class CCGROilTmpOutProxy : ModelPropertyChange<ICCGR, IMV>
         {
             
             /// <summary>
@@ -67438,7 +67438,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OilMotA property
         /// </summary>
-        private sealed class CCGROilMotAProxy : ModelPropertyChange<ICCGR, IMV>
+        protected sealed class CCGROilMotAProxy : ModelPropertyChange<ICCGR, IMV>
         {
             
             /// <summary>
@@ -67469,7 +67469,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FanFlw property
         /// </summary>
-        private sealed class CCGRFanFlwProxy : ModelPropertyChange<ICCGR, IMV>
+        protected sealed class CCGRFanFlwProxy : ModelPropertyChange<ICCGR, IMV>
         {
             
             /// <summary>
@@ -67500,7 +67500,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FanA property
         /// </summary>
-        private sealed class CCGRFanAProxy : ModelPropertyChange<ICCGR, IMV>
+        protected sealed class CCGRFanAProxy : ModelPropertyChange<ICCGR, IMV>
         {
             
             /// <summary>
@@ -67531,7 +67531,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the CECtl property
         /// </summary>
-        private sealed class CCGRCECtlProxy : ModelPropertyChange<ICCGR, ISPC>
+        protected sealed class CCGRCECtlProxy : ModelPropertyChange<ICCGR, ISPC>
         {
             
             /// <summary>
@@ -67562,7 +67562,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PmpCtlGen property
         /// </summary>
-        private sealed class CCGRPmpCtlGenProxy : ModelPropertyChange<ICCGR, IINC>
+        protected sealed class CCGRPmpCtlGenProxy : ModelPropertyChange<ICCGR, IINC>
         {
             
             /// <summary>
@@ -67593,7 +67593,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PmpCtl property
         /// </summary>
-        private sealed class CCGRPmpCtlProxy : ModelPropertyChange<ICCGR, IINC>
+        protected sealed class CCGRPmpCtlProxy : ModelPropertyChange<ICCGR, IINC>
         {
             
             /// <summary>
@@ -67624,7 +67624,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FanCtlGen property
         /// </summary>
-        private sealed class CCGRFanCtlGenProxy : ModelPropertyChange<ICCGR, IINC>
+        protected sealed class CCGRFanCtlGenProxy : ModelPropertyChange<ICCGR, IINC>
         {
             
             /// <summary>
@@ -67655,7 +67655,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FanCtl property
         /// </summary>
-        private sealed class CCGRFanCtlProxy : ModelPropertyChange<ICCGR, IINC>
+        protected sealed class CCGRFanCtlProxy : ModelPropertyChange<ICCGR, IINC>
         {
             
             /// <summary>
@@ -67686,7 +67686,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Auto property
         /// </summary>
-        private sealed class CCGRAutoProxy : ModelPropertyChange<ICCGR, ISPS>
+        protected sealed class CCGRAutoProxy : ModelPropertyChange<ICCGR, ISPS>
         {
             
             /// <summary>
@@ -67717,7 +67717,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FanOvCur property
         /// </summary>
-        private sealed class CCGRFanOvCurProxy : ModelPropertyChange<ICCGR, ISPS>
+        protected sealed class CCGRFanOvCurProxy : ModelPropertyChange<ICCGR, ISPS>
         {
             
             /// <summary>
@@ -67748,7 +67748,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PmpOvCur property
         /// </summary>
-        private sealed class CCGRPmpOvCurProxy : ModelPropertyChange<ICCGR, ISPS>
+        protected sealed class CCGRPmpOvCurProxy : ModelPropertyChange<ICCGR, ISPS>
         {
             
             /// <summary>
@@ -67779,7 +67779,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PmpAlm property
         /// </summary>
-        private sealed class CCGRPmpAlmProxy : ModelPropertyChange<ICCGR, ISPS>
+        protected sealed class CCGRPmpAlmProxy : ModelPropertyChange<ICCGR, ISPS>
         {
             
             /// <summary>
@@ -67810,7 +67810,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OilTmpSet property
         /// </summary>
-        private sealed class CCGROilTmpSetProxy : ModelPropertyChange<ICCGR, IASG>
+        protected sealed class CCGROilTmpSetProxy : ModelPropertyChange<ICCGR, IASG>
         {
             
             /// <summary>
@@ -68493,7 +68493,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmExc property
         /// </summary>
-        private sealed class CPOWTmExcProxy : ModelPropertyChange<ICPOW, ISPS>
+        protected sealed class CPOWTmExcProxy : ModelPropertyChange<ICPOW, ISPS>
         {
             
             /// <summary>
@@ -68524,7 +68524,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StrPOW property
         /// </summary>
-        private sealed class CPOWStrPOWProxy : ModelPropertyChange<ICPOW, ISPS>
+        protected sealed class CPOWStrPOWProxy : ModelPropertyChange<ICPOW, ISPS>
         {
             
             /// <summary>
@@ -68555,7 +68555,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpOpn property
         /// </summary>
-        private sealed class CPOWOpOpnProxy : ModelPropertyChange<ICPOW, IACT>
+        protected sealed class CPOWOpOpnProxy : ModelPropertyChange<ICPOW, IACT>
         {
             
             /// <summary>
@@ -68586,7 +68586,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpCls property
         /// </summary>
-        private sealed class CPOWOpClsProxy : ModelPropertyChange<ICPOW, IACT>
+        protected sealed class CPOWOpClsProxy : ModelPropertyChange<ICPOW, IACT>
         {
             
             /// <summary>
@@ -68617,7 +68617,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxDlTmms property
         /// </summary>
-        private sealed class CPOWMaxDlTmmsProxy : ModelPropertyChange<ICPOW, IING>
+        protected sealed class CPOWMaxDlTmmsProxy : ModelPropertyChange<ICPOW, IING>
         {
             
             /// <summary>
@@ -69600,7 +69600,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Loc property
         /// </summary>
-        private sealed class CSWILocProxy : ModelPropertyChange<ICSWI, ISPS>
+        protected sealed class CSWILocProxy : ModelPropertyChange<ICSWI, ISPS>
         {
             
             /// <summary>
@@ -69631,7 +69631,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpCntRs property
         /// </summary>
-        private sealed class CSWIOpCntRsProxy : ModelPropertyChange<ICSWI, IINC>
+        protected sealed class CSWIOpCntRsProxy : ModelPropertyChange<ICSWI, IINC>
         {
             
             /// <summary>
@@ -69662,7 +69662,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Pos property
         /// </summary>
-        private sealed class CSWIPosProxy : ModelPropertyChange<ICSWI, IDPC>
+        protected sealed class CSWIPosProxy : ModelPropertyChange<ICSWI, IDPC>
         {
             
             /// <summary>
@@ -69693,7 +69693,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PosA property
         /// </summary>
-        private sealed class CSWIPosAProxy : ModelPropertyChange<ICSWI, IDPC>
+        protected sealed class CSWIPosAProxy : ModelPropertyChange<ICSWI, IDPC>
         {
             
             /// <summary>
@@ -69724,7 +69724,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PosB property
         /// </summary>
-        private sealed class CSWIPosBProxy : ModelPropertyChange<ICSWI, IDPC>
+        protected sealed class CSWIPosBProxy : ModelPropertyChange<ICSWI, IDPC>
         {
             
             /// <summary>
@@ -69755,7 +69755,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PosC property
         /// </summary>
-        private sealed class CSWIPosCProxy : ModelPropertyChange<ICSWI, IDPC>
+        protected sealed class CSWIPosCProxy : ModelPropertyChange<ICSWI, IDPC>
         {
             
             /// <summary>
@@ -69786,7 +69786,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpOpn property
         /// </summary>
-        private sealed class CSWIOpOpnProxy : ModelPropertyChange<ICSWI, IACT>
+        protected sealed class CSWIOpOpnProxy : ModelPropertyChange<ICSWI, IACT>
         {
             
             /// <summary>
@@ -69817,7 +69817,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpCls property
         /// </summary>
-        private sealed class CSWIOpClsProxy : ModelPropertyChange<ICSWI, IACT>
+        protected sealed class CSWIOpClsProxy : ModelPropertyChange<ICSWI, IACT>
         {
             
             /// <summary>
@@ -70784,7 +70784,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Loc property
         /// </summary>
-        private sealed class GroupALocProxy : ModelPropertyChange<IGroupA, ISPS>
+        protected sealed class GroupALocProxy : ModelPropertyChange<IGroupA, ISPS>
         {
             
             /// <summary>
@@ -70815,7 +70815,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpCntRs property
         /// </summary>
-        private sealed class GroupAOpCntRsProxy : ModelPropertyChange<IGroupA, IINC>
+        protected sealed class GroupAOpCntRsProxy : ModelPropertyChange<IGroupA, IINC>
         {
             
             /// <summary>
@@ -70846,7 +70846,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Auto property
         /// </summary>
-        private sealed class GroupAAutoProxy : ModelPropertyChange<IGroupA, ISPS>
+        protected sealed class GroupAAutoProxy : ModelPropertyChange<IGroupA, ISPS>
         {
             
             /// <summary>
@@ -71329,7 +71329,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TapChg property
         /// </summary>
-        private sealed class ANCRTapChgProxy : ModelPropertyChange<IANCR, IBSC>
+        protected sealed class ANCRTapChgProxy : ModelPropertyChange<IANCR, IBSC>
         {
             
             /// <summary>
@@ -71360,7 +71360,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RCol property
         /// </summary>
-        private sealed class ANCRRColProxy : ModelPropertyChange<IANCR, ISPC>
+        protected sealed class ANCRRColProxy : ModelPropertyChange<IANCR, ISPC>
         {
             
             /// <summary>
@@ -71391,7 +71391,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LCol property
         /// </summary>
-        private sealed class ANCRLColProxy : ModelPropertyChange<IANCR, ISPC>
+        protected sealed class ANCRLColProxy : ModelPropertyChange<IANCR, ISPC>
         {
             
             /// <summary>
@@ -71974,7 +71974,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TapChg property
         /// </summary>
-        private sealed class ARCOTapChgProxy : ModelPropertyChange<IARCO, IBSC>
+        protected sealed class ARCOTapChgProxy : ModelPropertyChange<IARCO, IBSC>
         {
             
             /// <summary>
@@ -72005,7 +72005,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VOvSt property
         /// </summary>
-        private sealed class ARCOVOvStProxy : ModelPropertyChange<IARCO, ISPS>
+        protected sealed class ARCOVOvStProxy : ModelPropertyChange<IARCO, ISPS>
         {
             
             /// <summary>
@@ -72036,7 +72036,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NeutAlm property
         /// </summary>
-        private sealed class ARCONeutAlmProxy : ModelPropertyChange<IARCO, ISPS>
+        protected sealed class ARCONeutAlmProxy : ModelPropertyChange<IARCO, ISPS>
         {
             
             /// <summary>
@@ -72067,7 +72067,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DschBlk property
         /// </summary>
-        private sealed class ARCODschBlkProxy : ModelPropertyChange<IARCO, ISPS>
+        protected sealed class ARCODschBlkProxy : ModelPropertyChange<IARCO, ISPS>
         {
             
             /// <summary>
@@ -75350,7 +75350,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TapChg property
         /// </summary>
-        private sealed class ATCCTapChgProxy : ModelPropertyChange<IATCC, IBSC>
+        protected sealed class ATCCTapChgProxy : ModelPropertyChange<IATCC, IBSC>
         {
             
             /// <summary>
@@ -75381,7 +75381,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TapPos property
         /// </summary>
-        private sealed class ATCCTapPosProxy : ModelPropertyChange<IATCC, IISC>
+        protected sealed class ATCCTapPosProxy : ModelPropertyChange<IATCC, IISC>
         {
             
             /// <summary>
@@ -75412,7 +75412,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ParOp property
         /// </summary>
-        private sealed class ATCCParOpProxy : ModelPropertyChange<IATCC, IDPC>
+        protected sealed class ATCCParOpProxy : ModelPropertyChange<IATCC, IDPC>
         {
             
             /// <summary>
@@ -75443,7 +75443,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LTCBlk property
         /// </summary>
-        private sealed class ATCCLTCBlkProxy : ModelPropertyChange<IATCC, ISPC>
+        protected sealed class ATCCLTCBlkProxy : ModelPropertyChange<IATCC, ISPC>
         {
             
             /// <summary>
@@ -75474,7 +75474,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LTCDragRs property
         /// </summary>
-        private sealed class ATCCLTCDragRsProxy : ModelPropertyChange<IATCC, ISPC>
+        protected sealed class ATCCLTCDragRsProxy : ModelPropertyChange<IATCC, ISPC>
         {
             
             /// <summary>
@@ -75505,7 +75505,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VRed1 property
         /// </summary>
-        private sealed class ATCCVRed1Proxy : ModelPropertyChange<IATCC, ISPC>
+        protected sealed class ATCCVRed1Proxy : ModelPropertyChange<IATCC, ISPC>
         {
             
             /// <summary>
@@ -75536,7 +75536,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VRed2 property
         /// </summary>
-        private sealed class ATCCVRed2Proxy : ModelPropertyChange<IATCC, ISPC>
+        protected sealed class ATCCVRed2Proxy : ModelPropertyChange<IATCC, ISPC>
         {
             
             /// <summary>
@@ -75567,7 +75567,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the CtlV property
         /// </summary>
-        private sealed class ATCCCtlVProxy : ModelPropertyChange<IATCC, IMV>
+        protected sealed class ATCCCtlVProxy : ModelPropertyChange<IATCC, IMV>
         {
             
             /// <summary>
@@ -75598,7 +75598,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LodA property
         /// </summary>
-        private sealed class ATCCLodAProxy : ModelPropertyChange<IATCC, IMV>
+        protected sealed class ATCCLodAProxy : ModelPropertyChange<IATCC, IMV>
         {
             
             /// <summary>
@@ -75629,7 +75629,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the CircA property
         /// </summary>
-        private sealed class ATCCCircAProxy : ModelPropertyChange<IATCC, IMV>
+        protected sealed class ATCCCircAProxy : ModelPropertyChange<IATCC, IMV>
         {
             
             /// <summary>
@@ -75660,7 +75660,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PhAng property
         /// </summary>
-        private sealed class ATCCPhAngProxy : ModelPropertyChange<IATCC, IMV>
+        protected sealed class ATCCPhAngProxy : ModelPropertyChange<IATCC, IMV>
         {
             
             /// <summary>
@@ -75691,7 +75691,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HiCtlV property
         /// </summary>
-        private sealed class ATCCHiCtlVProxy : ModelPropertyChange<IATCC, IMV>
+        protected sealed class ATCCHiCtlVProxy : ModelPropertyChange<IATCC, IMV>
         {
             
             /// <summary>
@@ -75722,7 +75722,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LoCtlV property
         /// </summary>
-        private sealed class ATCCLoCtlVProxy : ModelPropertyChange<IATCC, IMV>
+        protected sealed class ATCCLoCtlVProxy : ModelPropertyChange<IATCC, IMV>
         {
             
             /// <summary>
@@ -75753,7 +75753,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HiDmdA property
         /// </summary>
-        private sealed class ATCCHiDmdAProxy : ModelPropertyChange<IATCC, IMV>
+        protected sealed class ATCCHiDmdAProxy : ModelPropertyChange<IATCC, IMV>
         {
             
             /// <summary>
@@ -75784,7 +75784,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HiTapPos property
         /// </summary>
-        private sealed class ATCCHiTapPosProxy : ModelPropertyChange<IATCC, IINS>
+        protected sealed class ATCCHiTapPosProxy : ModelPropertyChange<IATCC, IINS>
         {
             
             /// <summary>
@@ -75815,7 +75815,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LoTapPos property
         /// </summary>
-        private sealed class ATCCLoTapPosProxy : ModelPropertyChange<IATCC, IINS>
+        protected sealed class ATCCLoTapPosProxy : ModelPropertyChange<IATCC, IINS>
         {
             
             /// <summary>
@@ -75846,7 +75846,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BndCtr property
         /// </summary>
-        private sealed class ATCCBndCtrProxy : ModelPropertyChange<IATCC, IASG>
+        protected sealed class ATCCBndCtrProxy : ModelPropertyChange<IATCC, IASG>
         {
             
             /// <summary>
@@ -75877,7 +75877,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BndWid property
         /// </summary>
-        private sealed class ATCCBndWidProxy : ModelPropertyChange<IATCC, IASG>
+        protected sealed class ATCCBndWidProxy : ModelPropertyChange<IATCC, IASG>
         {
             
             /// <summary>
@@ -75908,7 +75908,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the CtlDlTmms property
         /// </summary>
-        private sealed class ATCCCtlDlTmmsProxy : ModelPropertyChange<IATCC, IASG>
+        protected sealed class ATCCCtlDlTmmsProxy : ModelPropertyChange<IATCC, IASG>
         {
             
             /// <summary>
@@ -75939,7 +75939,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LDCR property
         /// </summary>
-        private sealed class ATCCLDCRProxy : ModelPropertyChange<IATCC, IASG>
+        protected sealed class ATCCLDCRProxy : ModelPropertyChange<IATCC, IASG>
         {
             
             /// <summary>
@@ -75970,7 +75970,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LDCX property
         /// </summary>
-        private sealed class ATCCLDCXProxy : ModelPropertyChange<IATCC, IASG>
+        protected sealed class ATCCLDCXProxy : ModelPropertyChange<IATCC, IASG>
         {
             
             /// <summary>
@@ -76001,7 +76001,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkLV property
         /// </summary>
-        private sealed class ATCCBlkLVProxy : ModelPropertyChange<IATCC, IASG>
+        protected sealed class ATCCBlkLVProxy : ModelPropertyChange<IATCC, IASG>
         {
             
             /// <summary>
@@ -76032,7 +76032,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkRV property
         /// </summary>
-        private sealed class ATCCBlkRVProxy : ModelPropertyChange<IATCC, IASG>
+        protected sealed class ATCCBlkRVProxy : ModelPropertyChange<IATCC, IASG>
         {
             
             /// <summary>
@@ -76063,7 +76063,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RnbkRV property
         /// </summary>
-        private sealed class ATCCRnbkRVProxy : ModelPropertyChange<IATCC, IASG>
+        protected sealed class ATCCRnbkRVProxy : ModelPropertyChange<IATCC, IASG>
         {
             
             /// <summary>
@@ -76094,7 +76094,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LimLodA property
         /// </summary>
-        private sealed class ATCCLimLodAProxy : ModelPropertyChange<IATCC, IASG>
+        protected sealed class ATCCLimLodAProxy : ModelPropertyChange<IATCC, IASG>
         {
             
             /// <summary>
@@ -76125,7 +76125,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LDC property
         /// </summary>
-        private sealed class ATCCLDCProxy : ModelPropertyChange<IATCC, ISPG>
+        protected sealed class ATCCLDCProxy : ModelPropertyChange<IATCC, ISPG>
         {
             
             /// <summary>
@@ -76156,7 +76156,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TmDlChr property
         /// </summary>
-        private sealed class ATCCTmDlChrProxy : ModelPropertyChange<IATCC, ISPG>
+        protected sealed class ATCCTmDlChrProxy : ModelPropertyChange<IATCC, ISPG>
         {
             
             /// <summary>
@@ -76187,7 +76187,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LDCZ property
         /// </summary>
-        private sealed class ATCCLDCZProxy : ModelPropertyChange<IATCC, IASG>
+        protected sealed class ATCCLDCZProxy : ModelPropertyChange<IATCC, IASG>
         {
             
             /// <summary>
@@ -76218,7 +76218,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VRedVal property
         /// </summary>
-        private sealed class ATCCVRedValProxy : ModelPropertyChange<IATCC, IASG>
+        protected sealed class ATCCVRedValProxy : ModelPropertyChange<IATCC, IASG>
         {
             
             /// <summary>
@@ -76249,7 +76249,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TapBlkR property
         /// </summary>
-        private sealed class ATCCTapBlkRProxy : ModelPropertyChange<IATCC, IASG>
+        protected sealed class ATCCTapBlkRProxy : ModelPropertyChange<IATCC, IASG>
         {
             
             /// <summary>
@@ -76280,7 +76280,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TapBlkL property
         /// </summary>
-        private sealed class ATCCTapBlkLProxy : ModelPropertyChange<IATCC, IASG>
+        protected sealed class ATCCTapBlkLProxy : ModelPropertyChange<IATCC, IASG>
         {
             
             /// <summary>
@@ -77063,7 +77063,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TapChg property
         /// </summary>
-        private sealed class AVCOTapChgProxy : ModelPropertyChange<IAVCO, IBSC>
+        protected sealed class AVCOTapChgProxy : ModelPropertyChange<IAVCO, IBSC>
         {
             
             /// <summary>
@@ -77094,7 +77094,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkEF property
         /// </summary>
-        private sealed class AVCOBlkEFProxy : ModelPropertyChange<IAVCO, ISPS>
+        protected sealed class AVCOBlkEFProxy : ModelPropertyChange<IAVCO, ISPS>
         {
             
             /// <summary>
@@ -77125,7 +77125,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkAOv property
         /// </summary>
-        private sealed class AVCOBlkAOvProxy : ModelPropertyChange<IAVCO, ISPS>
+        protected sealed class AVCOBlkAOvProxy : ModelPropertyChange<IAVCO, ISPS>
         {
             
             /// <summary>
@@ -77156,7 +77156,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkVOv property
         /// </summary>
-        private sealed class AVCOBlkVOvProxy : ModelPropertyChange<IAVCO, ISPS>
+        protected sealed class AVCOBlkVOvProxy : ModelPropertyChange<IAVCO, ISPS>
         {
             
             /// <summary>
@@ -77187,7 +77187,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LimAOv property
         /// </summary>
-        private sealed class AVCOLimAOvProxy : ModelPropertyChange<IAVCO, IASG>
+        protected sealed class AVCOLimAOvProxy : ModelPropertyChange<IAVCO, IASG>
         {
             
             /// <summary>
@@ -77218,7 +77218,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LimVOv property
         /// </summary>
-        private sealed class AVCOLimVOvProxy : ModelPropertyChange<IAVCO, IASG>
+        protected sealed class AVCOLimVOvProxy : ModelPropertyChange<IAVCO, IASG>
         {
             
             /// <summary>
@@ -78406,7 +78406,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpARem property
         /// </summary>
-        private sealed class MDIFOpARemProxy : ModelPropertyChange<IMDIF, IWYE>
+        protected sealed class MDIFOpARemProxy : ModelPropertyChange<IMDIF, IWYE>
         {
             
             /// <summary>
@@ -78437,7 +78437,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Amp1 property
         /// </summary>
-        private sealed class MDIFAmp1Proxy : ModelPropertyChange<IMDIF, ISAV>
+        protected sealed class MDIFAmp1Proxy : ModelPropertyChange<IMDIF, ISAV>
         {
             
             /// <summary>
@@ -78468,7 +78468,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Amp2 property
         /// </summary>
-        private sealed class MDIFAmp2Proxy : ModelPropertyChange<IMDIF, ISAV>
+        protected sealed class MDIFAmp2Proxy : ModelPropertyChange<IMDIF, ISAV>
         {
             
             /// <summary>
@@ -78499,7 +78499,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Amp3 property
         /// </summary>
-        private sealed class MDIFAmp3Proxy : ModelPropertyChange<IMDIF, ISAV>
+        protected sealed class MDIFAmp3Proxy : ModelPropertyChange<IMDIF, ISAV>
         {
             
             /// <summary>
@@ -82453,7 +82453,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEHealth property
         /// </summary>
-        private sealed class MHAIEEHealthProxy : ModelPropertyChange<IMHAI, Nullable<HealthStateKind>>
+        protected sealed class MHAIEEHealthProxy : ModelPropertyChange<IMHAI, Nullable<HealthStateKind>>
         {
             
             /// <summary>
@@ -82484,7 +82484,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEName property
         /// </summary>
-        private sealed class MHAIEENameProxy : ModelPropertyChange<IMHAI, IDPL>
+        protected sealed class MHAIEENameProxy : ModelPropertyChange<IMHAI, IDPL>
         {
             
             /// <summary>
@@ -82515,7 +82515,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Hz property
         /// </summary>
-        private sealed class MHAIHzProxy : ModelPropertyChange<IMHAI, IMV>
+        protected sealed class MHAIHzProxy : ModelPropertyChange<IMHAI, IMV>
         {
             
             /// <summary>
@@ -82546,7 +82546,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HA property
         /// </summary>
-        private sealed class MHAIHAProxy : ModelPropertyChange<IMHAI, IHYWE>
+        protected sealed class MHAIHAProxy : ModelPropertyChange<IMHAI, IHYWE>
         {
             
             /// <summary>
@@ -82577,7 +82577,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HPhV property
         /// </summary>
-        private sealed class MHAIHPhVProxy : ModelPropertyChange<IMHAI, IHYWE>
+        protected sealed class MHAIHPhVProxy : ModelPropertyChange<IMHAI, IHYWE>
         {
             
             /// <summary>
@@ -82608,7 +82608,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HPPV property
         /// </summary>
-        private sealed class MHAIHPPVProxy : ModelPropertyChange<IMHAI, IHDEL>
+        protected sealed class MHAIHPPVProxy : ModelPropertyChange<IMHAI, IHDEL>
         {
             
             /// <summary>
@@ -82639,7 +82639,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HW property
         /// </summary>
-        private sealed class MHAIHWProxy : ModelPropertyChange<IMHAI, IHYWE>
+        protected sealed class MHAIHWProxy : ModelPropertyChange<IMHAI, IHYWE>
         {
             
             /// <summary>
@@ -82670,7 +82670,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HVAr property
         /// </summary>
-        private sealed class MHAIHVArProxy : ModelPropertyChange<IMHAI, IHYWE>
+        protected sealed class MHAIHVArProxy : ModelPropertyChange<IMHAI, IHYWE>
         {
             
             /// <summary>
@@ -82701,7 +82701,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HVA property
         /// </summary>
-        private sealed class MHAIHVAProxy : ModelPropertyChange<IMHAI, IHYWE>
+        protected sealed class MHAIHVAProxy : ModelPropertyChange<IMHAI, IHYWE>
         {
             
             /// <summary>
@@ -82732,7 +82732,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HRmsA property
         /// </summary>
-        private sealed class MHAIHRmsAProxy : ModelPropertyChange<IMHAI, IWYE>
+        protected sealed class MHAIHRmsAProxy : ModelPropertyChange<IMHAI, IWYE>
         {
             
             /// <summary>
@@ -82763,7 +82763,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HRmsPhV property
         /// </summary>
-        private sealed class MHAIHRmsPhVProxy : ModelPropertyChange<IMHAI, IWYE>
+        protected sealed class MHAIHRmsPhVProxy : ModelPropertyChange<IMHAI, IWYE>
         {
             
             /// <summary>
@@ -82794,7 +82794,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HRmsPPV property
         /// </summary>
-        private sealed class MHAIHRmsPPVProxy : ModelPropertyChange<IMHAI, IDEL>
+        protected sealed class MHAIHRmsPPVProxy : ModelPropertyChange<IMHAI, IDEL>
         {
             
             /// <summary>
@@ -82825,7 +82825,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HTuW property
         /// </summary>
-        private sealed class MHAIHTuWProxy : ModelPropertyChange<IMHAI, IWYE>
+        protected sealed class MHAIHTuWProxy : ModelPropertyChange<IMHAI, IWYE>
         {
             
             /// <summary>
@@ -82856,7 +82856,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HTsW property
         /// </summary>
-        private sealed class MHAIHTsWProxy : ModelPropertyChange<IMHAI, IWYE>
+        protected sealed class MHAIHTsWProxy : ModelPropertyChange<IMHAI, IWYE>
         {
             
             /// <summary>
@@ -82887,7 +82887,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HATm property
         /// </summary>
-        private sealed class MHAIHATmProxy : ModelPropertyChange<IMHAI, IWYE>
+        protected sealed class MHAIHATmProxy : ModelPropertyChange<IMHAI, IWYE>
         {
             
             /// <summary>
@@ -82918,7 +82918,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HKf property
         /// </summary>
-        private sealed class MHAIHKfProxy : ModelPropertyChange<IMHAI, IWYE>
+        protected sealed class MHAIHKfProxy : ModelPropertyChange<IMHAI, IWYE>
         {
             
             /// <summary>
@@ -82949,7 +82949,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HTdf property
         /// </summary>
-        private sealed class MHAIHTdfProxy : ModelPropertyChange<IMHAI, IWYE>
+        protected sealed class MHAIHTdfProxy : ModelPropertyChange<IMHAI, IWYE>
         {
             
             /// <summary>
@@ -82980,7 +82980,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdA property
         /// </summary>
-        private sealed class MHAIThdAProxy : ModelPropertyChange<IMHAI, IWYE>
+        protected sealed class MHAIThdAProxy : ModelPropertyChange<IMHAI, IWYE>
         {
             
             /// <summary>
@@ -83011,7 +83011,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdOddA property
         /// </summary>
-        private sealed class MHAIThdOddAProxy : ModelPropertyChange<IMHAI, IWYE>
+        protected sealed class MHAIThdOddAProxy : ModelPropertyChange<IMHAI, IWYE>
         {
             
             /// <summary>
@@ -83042,7 +83042,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdEvnA property
         /// </summary>
-        private sealed class MHAIThdEvnAProxy : ModelPropertyChange<IMHAI, IWYE>
+        protected sealed class MHAIThdEvnAProxy : ModelPropertyChange<IMHAI, IWYE>
         {
             
             /// <summary>
@@ -83073,7 +83073,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdPhV property
         /// </summary>
-        private sealed class MHAIThdPhVProxy : ModelPropertyChange<IMHAI, IWYE>
+        protected sealed class MHAIThdPhVProxy : ModelPropertyChange<IMHAI, IWYE>
         {
             
             /// <summary>
@@ -83104,7 +83104,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdOddPhV property
         /// </summary>
-        private sealed class MHAIThdOddPhVProxy : ModelPropertyChange<IMHAI, IWYE>
+        protected sealed class MHAIThdOddPhVProxy : ModelPropertyChange<IMHAI, IWYE>
         {
             
             /// <summary>
@@ -83135,7 +83135,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdEvnV property
         /// </summary>
-        private sealed class MHAIThdEvnVProxy : ModelPropertyChange<IMHAI, IWYE>
+        protected sealed class MHAIThdEvnVProxy : ModelPropertyChange<IMHAI, IWYE>
         {
             
             /// <summary>
@@ -83166,7 +83166,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdPPV property
         /// </summary>
-        private sealed class MHAIThdPPVProxy : ModelPropertyChange<IMHAI, IDEL>
+        protected sealed class MHAIThdPPVProxy : ModelPropertyChange<IMHAI, IDEL>
         {
             
             /// <summary>
@@ -83197,7 +83197,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdOddPPV property
         /// </summary>
-        private sealed class MHAIThdOddPPVProxy : ModelPropertyChange<IMHAI, IDEL>
+        protected sealed class MHAIThdOddPPVProxy : ModelPropertyChange<IMHAI, IDEL>
         {
             
             /// <summary>
@@ -83228,7 +83228,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdEvnPPV property
         /// </summary>
-        private sealed class MHAIThdEvnPPVProxy : ModelPropertyChange<IMHAI, IDEL>
+        protected sealed class MHAIThdEvnPPVProxy : ModelPropertyChange<IMHAI, IDEL>
         {
             
             /// <summary>
@@ -83259,7 +83259,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HCfPhV property
         /// </summary>
-        private sealed class MHAIHCfPhVProxy : ModelPropertyChange<IMHAI, IWYE>
+        protected sealed class MHAIHCfPhVProxy : ModelPropertyChange<IMHAI, IWYE>
         {
             
             /// <summary>
@@ -83290,7 +83290,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HCfPPV property
         /// </summary>
-        private sealed class MHAIHCfPPVProxy : ModelPropertyChange<IMHAI, IDEL>
+        protected sealed class MHAIHCfPPVProxy : ModelPropertyChange<IMHAI, IDEL>
         {
             
             /// <summary>
@@ -83321,7 +83321,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HCfA property
         /// </summary>
-        private sealed class MHAIHCfAProxy : ModelPropertyChange<IMHAI, IWYE>
+        protected sealed class MHAIHCfAProxy : ModelPropertyChange<IMHAI, IWYE>
         {
             
             /// <summary>
@@ -83352,7 +83352,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HTif property
         /// </summary>
-        private sealed class MHAIHTifProxy : ModelPropertyChange<IMHAI, IWYE>
+        protected sealed class MHAIHTifProxy : ModelPropertyChange<IMHAI, IWYE>
         {
             
             /// <summary>
@@ -83383,7 +83383,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HzSet property
         /// </summary>
-        private sealed class MHAIHzSetProxy : ModelPropertyChange<IMHAI, IASG>
+        protected sealed class MHAIHzSetProxy : ModelPropertyChange<IMHAI, IASG>
         {
             
             /// <summary>
@@ -83414,7 +83414,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EvTmms property
         /// </summary>
-        private sealed class MHAIEvTmmsProxy : ModelPropertyChange<IMHAI, IASG>
+        protected sealed class MHAIEvTmmsProxy : ModelPropertyChange<IMHAI, IASG>
         {
             
             /// <summary>
@@ -83445,7 +83445,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NumCyc property
         /// </summary>
-        private sealed class MHAINumCycProxy : ModelPropertyChange<IMHAI, IING>
+        protected sealed class MHAINumCycProxy : ModelPropertyChange<IMHAI, IING>
         {
             
             /// <summary>
@@ -83476,7 +83476,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdAVal property
         /// </summary>
-        private sealed class MHAIThdAValProxy : ModelPropertyChange<IMHAI, IASG>
+        protected sealed class MHAIThdAValProxy : ModelPropertyChange<IMHAI, IASG>
         {
             
             /// <summary>
@@ -83507,7 +83507,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdVVal property
         /// </summary>
-        private sealed class MHAIThdVValProxy : ModelPropertyChange<IMHAI, IASG>
+        protected sealed class MHAIThdVValProxy : ModelPropertyChange<IMHAI, IASG>
         {
             
             /// <summary>
@@ -83538,7 +83538,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdATmms property
         /// </summary>
-        private sealed class MHAIThdATmmsProxy : ModelPropertyChange<IMHAI, IING>
+        protected sealed class MHAIThdATmmsProxy : ModelPropertyChange<IMHAI, IING>
         {
             
             /// <summary>
@@ -83569,7 +83569,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdVTmms property
         /// </summary>
-        private sealed class MHAIThdVTmmsProxy : ModelPropertyChange<IMHAI, IING>
+        protected sealed class MHAIThdVTmmsProxy : ModelPropertyChange<IMHAI, IING>
         {
             
             /// <summary>
@@ -83600,7 +83600,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NomA property
         /// </summary>
-        private sealed class MHAINomAProxy : ModelPropertyChange<IMHAI, IASG>
+        protected sealed class MHAINomAProxy : ModelPropertyChange<IMHAI, IASG>
         {
             
             /// <summary>
@@ -87254,7 +87254,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEHealth property
         /// </summary>
-        private sealed class MHANEEHealthProxy : ModelPropertyChange<IMHAN, Nullable<HealthStateKind>>
+        protected sealed class MHANEEHealthProxy : ModelPropertyChange<IMHAN, Nullable<HealthStateKind>>
         {
             
             /// <summary>
@@ -87285,7 +87285,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEName property
         /// </summary>
-        private sealed class MHANEENameProxy : ModelPropertyChange<IMHAN, IDPL>
+        protected sealed class MHANEENameProxy : ModelPropertyChange<IMHAN, IDPL>
         {
             
             /// <summary>
@@ -87316,7 +87316,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Hz property
         /// </summary>
-        private sealed class MHANHzProxy : ModelPropertyChange<IMHAN, IMV>
+        protected sealed class MHANHzProxy : ModelPropertyChange<IMHAN, IMV>
         {
             
             /// <summary>
@@ -87347,7 +87347,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HaAmp property
         /// </summary>
-        private sealed class MHANHaAmpProxy : ModelPropertyChange<IMHAN, IHMV>
+        protected sealed class MHANHaAmpProxy : ModelPropertyChange<IMHAN, IHMV>
         {
             
             /// <summary>
@@ -87378,7 +87378,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HaVol property
         /// </summary>
-        private sealed class MHANHaVolProxy : ModelPropertyChange<IMHAN, IHMV>
+        protected sealed class MHANHaVolProxy : ModelPropertyChange<IMHAN, IHMV>
         {
             
             /// <summary>
@@ -87409,7 +87409,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HaWatt property
         /// </summary>
-        private sealed class MHANHaWattProxy : ModelPropertyChange<IMHAN, IHMV>
+        protected sealed class MHANHaWattProxy : ModelPropertyChange<IMHAN, IHMV>
         {
             
             /// <summary>
@@ -87440,7 +87440,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HaVolAmpr property
         /// </summary>
-        private sealed class MHANHaVolAmprProxy : ModelPropertyChange<IMHAN, IHMV>
+        protected sealed class MHANHaVolAmprProxy : ModelPropertyChange<IMHAN, IHMV>
         {
             
             /// <summary>
@@ -87471,7 +87471,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HaVolAmp property
         /// </summary>
-        private sealed class MHANHaVolAmpProxy : ModelPropertyChange<IMHAN, IHMV>
+        protected sealed class MHANHaVolAmpProxy : ModelPropertyChange<IMHAN, IHMV>
         {
             
             /// <summary>
@@ -87502,7 +87502,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HaRmsAmp property
         /// </summary>
-        private sealed class MHANHaRmsAmpProxy : ModelPropertyChange<IMHAN, IMV>
+        protected sealed class MHANHaRmsAmpProxy : ModelPropertyChange<IMHAN, IMV>
         {
             
             /// <summary>
@@ -87533,7 +87533,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HaRmsVol property
         /// </summary>
-        private sealed class MHANHaRmsVolProxy : ModelPropertyChange<IMHAN, IMV>
+        protected sealed class MHANHaRmsVolProxy : ModelPropertyChange<IMHAN, IMV>
         {
             
             /// <summary>
@@ -87564,7 +87564,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HaTuWatt property
         /// </summary>
-        private sealed class MHANHaTuWattProxy : ModelPropertyChange<IMHAN, IMV>
+        protected sealed class MHANHaTuWattProxy : ModelPropertyChange<IMHAN, IMV>
         {
             
             /// <summary>
@@ -87595,7 +87595,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HaTsWatt property
         /// </summary>
-        private sealed class MHANHaTsWattProxy : ModelPropertyChange<IMHAN, IMV>
+        protected sealed class MHANHaTsWattProxy : ModelPropertyChange<IMHAN, IMV>
         {
             
             /// <summary>
@@ -87626,7 +87626,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HaAmpTm property
         /// </summary>
-        private sealed class MHANHaAmpTmProxy : ModelPropertyChange<IMHAN, IMV>
+        protected sealed class MHANHaAmpTmProxy : ModelPropertyChange<IMHAN, IMV>
         {
             
             /// <summary>
@@ -87657,7 +87657,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HaKFact property
         /// </summary>
-        private sealed class MHANHaKFactProxy : ModelPropertyChange<IMHAN, IMV>
+        protected sealed class MHANHaKFactProxy : ModelPropertyChange<IMHAN, IMV>
         {
             
             /// <summary>
@@ -87688,7 +87688,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HaTdFact property
         /// </summary>
-        private sealed class MHANHaTdFactProxy : ModelPropertyChange<IMHAN, IMV>
+        protected sealed class MHANHaTdFactProxy : ModelPropertyChange<IMHAN, IMV>
         {
             
             /// <summary>
@@ -87719,7 +87719,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdAmp property
         /// </summary>
-        private sealed class MHANThdAmpProxy : ModelPropertyChange<IMHAN, IMV>
+        protected sealed class MHANThdAmpProxy : ModelPropertyChange<IMHAN, IMV>
         {
             
             /// <summary>
@@ -87750,7 +87750,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdOddAmp property
         /// </summary>
-        private sealed class MHANThdOddAmpProxy : ModelPropertyChange<IMHAN, IMV>
+        protected sealed class MHANThdOddAmpProxy : ModelPropertyChange<IMHAN, IMV>
         {
             
             /// <summary>
@@ -87781,7 +87781,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdEvnAmp property
         /// </summary>
-        private sealed class MHANThdEvnAmpProxy : ModelPropertyChange<IMHAN, IMV>
+        protected sealed class MHANThdEvnAmpProxy : ModelPropertyChange<IMHAN, IMV>
         {
             
             /// <summary>
@@ -87812,7 +87812,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TddAmp property
         /// </summary>
-        private sealed class MHANTddAmpProxy : ModelPropertyChange<IMHAN, IMV>
+        protected sealed class MHANTddAmpProxy : ModelPropertyChange<IMHAN, IMV>
         {
             
             /// <summary>
@@ -87843,7 +87843,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TddOddAmp property
         /// </summary>
-        private sealed class MHANTddOddAmpProxy : ModelPropertyChange<IMHAN, IMV>
+        protected sealed class MHANTddOddAmpProxy : ModelPropertyChange<IMHAN, IMV>
         {
             
             /// <summary>
@@ -87874,7 +87874,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TddEvnAmp property
         /// </summary>
-        private sealed class MHANTddEvnAmpProxy : ModelPropertyChange<IMHAN, IMV>
+        protected sealed class MHANTddEvnAmpProxy : ModelPropertyChange<IMHAN, IMV>
         {
             
             /// <summary>
@@ -87905,7 +87905,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdVol property
         /// </summary>
-        private sealed class MHANThdVolProxy : ModelPropertyChange<IMHAN, IMV>
+        protected sealed class MHANThdVolProxy : ModelPropertyChange<IMHAN, IMV>
         {
             
             /// <summary>
@@ -87936,7 +87936,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdOddVol property
         /// </summary>
-        private sealed class MHANThdOddVolProxy : ModelPropertyChange<IMHAN, IMV>
+        protected sealed class MHANThdOddVolProxy : ModelPropertyChange<IMHAN, IMV>
         {
             
             /// <summary>
@@ -87967,7 +87967,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdEvnVol property
         /// </summary>
-        private sealed class MHANThdEvnVolProxy : ModelPropertyChange<IMHAN, IMV>
+        protected sealed class MHANThdEvnVolProxy : ModelPropertyChange<IMHAN, IMV>
         {
             
             /// <summary>
@@ -87998,7 +87998,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HaCfAmp property
         /// </summary>
-        private sealed class MHANHaCfAmpProxy : ModelPropertyChange<IMHAN, IMV>
+        protected sealed class MHANHaCfAmpProxy : ModelPropertyChange<IMHAN, IMV>
         {
             
             /// <summary>
@@ -88029,7 +88029,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HaCfVol property
         /// </summary>
-        private sealed class MHANHaCfVolProxy : ModelPropertyChange<IMHAN, IMV>
+        protected sealed class MHANHaCfVolProxy : ModelPropertyChange<IMHAN, IMV>
         {
             
             /// <summary>
@@ -88060,7 +88060,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HaTiFact property
         /// </summary>
-        private sealed class MHANHaTiFactProxy : ModelPropertyChange<IMHAN, IMV>
+        protected sealed class MHANHaTiFactProxy : ModelPropertyChange<IMHAN, IMV>
         {
             
             /// <summary>
@@ -88091,7 +88091,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HzSet property
         /// </summary>
-        private sealed class MHANHzSetProxy : ModelPropertyChange<IMHAN, IASG>
+        protected sealed class MHANHzSetProxy : ModelPropertyChange<IMHAN, IASG>
         {
             
             /// <summary>
@@ -88122,7 +88122,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EvTmms property
         /// </summary>
-        private sealed class MHANEvTmmsProxy : ModelPropertyChange<IMHAN, IASG>
+        protected sealed class MHANEvTmmsProxy : ModelPropertyChange<IMHAN, IASG>
         {
             
             /// <summary>
@@ -88153,7 +88153,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NumCyc property
         /// </summary>
-        private sealed class MHANNumCycProxy : ModelPropertyChange<IMHAN, IING>
+        protected sealed class MHANNumCycProxy : ModelPropertyChange<IMHAN, IING>
         {
             
             /// <summary>
@@ -88184,7 +88184,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdAVal property
         /// </summary>
-        private sealed class MHANThdAValProxy : ModelPropertyChange<IMHAN, IASG>
+        protected sealed class MHANThdAValProxy : ModelPropertyChange<IMHAN, IASG>
         {
             
             /// <summary>
@@ -88215,7 +88215,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdVVal property
         /// </summary>
-        private sealed class MHANThdVValProxy : ModelPropertyChange<IMHAN, IASG>
+        protected sealed class MHANThdVValProxy : ModelPropertyChange<IMHAN, IASG>
         {
             
             /// <summary>
@@ -88246,7 +88246,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdATmms property
         /// </summary>
-        private sealed class MHANThdATmmsProxy : ModelPropertyChange<IMHAN, IING>
+        protected sealed class MHANThdATmmsProxy : ModelPropertyChange<IMHAN, IING>
         {
             
             /// <summary>
@@ -88277,7 +88277,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ThdVTmms property
         /// </summary>
-        private sealed class MHANThdVTmmsProxy : ModelPropertyChange<IMHAN, IING>
+        protected sealed class MHANThdVTmmsProxy : ModelPropertyChange<IMHAN, IING>
         {
             
             /// <summary>
@@ -88308,7 +88308,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NomA property
         /// </summary>
-        private sealed class MHANNomAProxy : ModelPropertyChange<IMHAN, IASG>
+        protected sealed class MHANNomAProxy : ModelPropertyChange<IMHAN, IASG>
         {
             
             /// <summary>
@@ -89862,7 +89862,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEHealth property
         /// </summary>
-        private sealed class MMXUEEHealthProxy : ModelPropertyChange<IMMXU, Nullable<HealthStateKind>>
+        protected sealed class MMXUEEHealthProxy : ModelPropertyChange<IMMXU, Nullable<HealthStateKind>>
         {
             
             /// <summary>
@@ -89893,7 +89893,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TotW property
         /// </summary>
-        private sealed class MMXUTotWProxy : ModelPropertyChange<IMMXU, IMV>
+        protected sealed class MMXUTotWProxy : ModelPropertyChange<IMMXU, IMV>
         {
             
             /// <summary>
@@ -89924,7 +89924,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TotVAr property
         /// </summary>
-        private sealed class MMXUTotVArProxy : ModelPropertyChange<IMMXU, IMV>
+        protected sealed class MMXUTotVArProxy : ModelPropertyChange<IMMXU, IMV>
         {
             
             /// <summary>
@@ -89955,7 +89955,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TotVA property
         /// </summary>
-        private sealed class MMXUTotVAProxy : ModelPropertyChange<IMMXU, IMV>
+        protected sealed class MMXUTotVAProxy : ModelPropertyChange<IMMXU, IMV>
         {
             
             /// <summary>
@@ -89986,7 +89986,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TotPF property
         /// </summary>
-        private sealed class MMXUTotPFProxy : ModelPropertyChange<IMMXU, IMV>
+        protected sealed class MMXUTotPFProxy : ModelPropertyChange<IMMXU, IMV>
         {
             
             /// <summary>
@@ -90017,7 +90017,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Hz property
         /// </summary>
-        private sealed class MMXUHzProxy : ModelPropertyChange<IMMXU, IMV>
+        protected sealed class MMXUHzProxy : ModelPropertyChange<IMMXU, IMV>
         {
             
             /// <summary>
@@ -90048,7 +90048,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PPV property
         /// </summary>
-        private sealed class MMXUPPVProxy : ModelPropertyChange<IMMXU, IDEL>
+        protected sealed class MMXUPPVProxy : ModelPropertyChange<IMMXU, IDEL>
         {
             
             /// <summary>
@@ -90079,7 +90079,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PhV property
         /// </summary>
-        private sealed class MMXUPhVProxy : ModelPropertyChange<IMMXU, IWYE>
+        protected sealed class MMXUPhVProxy : ModelPropertyChange<IMMXU, IWYE>
         {
             
             /// <summary>
@@ -90110,7 +90110,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the A property
         /// </summary>
-        private sealed class MMXUAProxy : ModelPropertyChange<IMMXU, IWYE>
+        protected sealed class MMXUAProxy : ModelPropertyChange<IMMXU, IWYE>
         {
             
             /// <summary>
@@ -90141,7 +90141,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the W property
         /// </summary>
-        private sealed class MMXUWProxy : ModelPropertyChange<IMMXU, IWYE>
+        protected sealed class MMXUWProxy : ModelPropertyChange<IMMXU, IWYE>
         {
             
             /// <summary>
@@ -90172,7 +90172,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VAr property
         /// </summary>
-        private sealed class MMXUVArProxy : ModelPropertyChange<IMMXU, IWYE>
+        protected sealed class MMXUVArProxy : ModelPropertyChange<IMMXU, IWYE>
         {
             
             /// <summary>
@@ -90203,7 +90203,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VA property
         /// </summary>
-        private sealed class MMXUVAProxy : ModelPropertyChange<IMMXU, IWYE>
+        protected sealed class MMXUVAProxy : ModelPropertyChange<IMMXU, IWYE>
         {
             
             /// <summary>
@@ -90234,7 +90234,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PF property
         /// </summary>
-        private sealed class MMXUPFProxy : ModelPropertyChange<IMMXU, IWYE>
+        protected sealed class MMXUPFProxy : ModelPropertyChange<IMMXU, IWYE>
         {
             
             /// <summary>
@@ -90265,7 +90265,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Z property
         /// </summary>
-        private sealed class MMXUZProxy : ModelPropertyChange<IMMXU, IWYE>
+        protected sealed class MMXUZProxy : ModelPropertyChange<IMMXU, IWYE>
         {
             
             /// <summary>
@@ -91919,7 +91919,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEHealth property
         /// </summary>
-        private sealed class MSQIEEHealthProxy : ModelPropertyChange<IMSQI, Nullable<HealthStateKind>>
+        protected sealed class MSQIEEHealthProxy : ModelPropertyChange<IMSQI, Nullable<HealthStateKind>>
         {
             
             /// <summary>
@@ -91950,7 +91950,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEName property
         /// </summary>
-        private sealed class MSQIEENameProxy : ModelPropertyChange<IMSQI, IDPL>
+        protected sealed class MSQIEENameProxy : ModelPropertyChange<IMSQI, IDPL>
         {
             
             /// <summary>
@@ -91981,7 +91981,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SeqA property
         /// </summary>
-        private sealed class MSQISeqAProxy : ModelPropertyChange<IMSQI, ISEQ>
+        protected sealed class MSQISeqAProxy : ModelPropertyChange<IMSQI, ISEQ>
         {
             
             /// <summary>
@@ -92012,7 +92012,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SeqV property
         /// </summary>
-        private sealed class MSQISeqVProxy : ModelPropertyChange<IMSQI, ISEQ>
+        protected sealed class MSQISeqVProxy : ModelPropertyChange<IMSQI, ISEQ>
         {
             
             /// <summary>
@@ -92043,7 +92043,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DQ0Seq property
         /// </summary>
-        private sealed class MSQIDQ0SeqProxy : ModelPropertyChange<IMSQI, ISEQ>
+        protected sealed class MSQIDQ0SeqProxy : ModelPropertyChange<IMSQI, ISEQ>
         {
             
             /// <summary>
@@ -92074,7 +92074,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ImbA property
         /// </summary>
-        private sealed class MSQIImbAProxy : ModelPropertyChange<IMSQI, IWYE>
+        protected sealed class MSQIImbAProxy : ModelPropertyChange<IMSQI, IWYE>
         {
             
             /// <summary>
@@ -92105,7 +92105,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ImbNgA property
         /// </summary>
-        private sealed class MSQIImbNgAProxy : ModelPropertyChange<IMSQI, IMV>
+        protected sealed class MSQIImbNgAProxy : ModelPropertyChange<IMSQI, IMV>
         {
             
             /// <summary>
@@ -92136,7 +92136,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ImbNgV property
         /// </summary>
-        private sealed class MSQIImbNgVProxy : ModelPropertyChange<IMSQI, IMV>
+        protected sealed class MSQIImbNgVProxy : ModelPropertyChange<IMSQI, IMV>
         {
             
             /// <summary>
@@ -92167,7 +92167,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ImbPPV property
         /// </summary>
-        private sealed class MSQIImbPPVProxy : ModelPropertyChange<IMSQI, IDEL>
+        protected sealed class MSQIImbPPVProxy : ModelPropertyChange<IMSQI, IDEL>
         {
             
             /// <summary>
@@ -92198,7 +92198,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ImbV property
         /// </summary>
-        private sealed class MSQIImbVProxy : ModelPropertyChange<IMSQI, IMV>
+        protected sealed class MSQIImbVProxy : ModelPropertyChange<IMSQI, IMV>
         {
             
             /// <summary>
@@ -92229,7 +92229,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ImbZroA property
         /// </summary>
-        private sealed class MSQIImbZroAProxy : ModelPropertyChange<IMSQI, IMV>
+        protected sealed class MSQIImbZroAProxy : ModelPropertyChange<IMSQI, IMV>
         {
             
             /// <summary>
@@ -92260,7 +92260,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ImbZroV property
         /// </summary>
-        private sealed class MSQIImbZroVProxy : ModelPropertyChange<IMSQI, IMV>
+        protected sealed class MSQIImbZroVProxy : ModelPropertyChange<IMSQI, IMV>
         {
             
             /// <summary>
@@ -92291,7 +92291,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxImbA property
         /// </summary>
-        private sealed class MSQIMaxImbAProxy : ModelPropertyChange<IMSQI, IWYE>
+        protected sealed class MSQIMaxImbAProxy : ModelPropertyChange<IMSQI, IWYE>
         {
             
             /// <summary>
@@ -92322,7 +92322,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxImbPPV property
         /// </summary>
-        private sealed class MSQIMaxImbPPVProxy : ModelPropertyChange<IMSQI, IWYE>
+        protected sealed class MSQIMaxImbPPVProxy : ModelPropertyChange<IMSQI, IWYE>
         {
             
             /// <summary>
@@ -92353,7 +92353,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxImbV property
         /// </summary>
-        private sealed class MSQIMaxImbVProxy : ModelPropertyChange<IMSQI, IWYE>
+        protected sealed class MSQIMaxImbVProxy : ModelPropertyChange<IMSQI, IWYE>
         {
             
             /// <summary>
@@ -93407,7 +93407,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEHealth property
         /// </summary>
-        private sealed class MMTREEHealthProxy : ModelPropertyChange<IMMTR, Nullable<HealthStateKind>>
+        protected sealed class MMTREEHealthProxy : ModelPropertyChange<IMMTR, Nullable<HealthStateKind>>
         {
             
             /// <summary>
@@ -93438,7 +93438,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEName property
         /// </summary>
-        private sealed class MMTREENameProxy : ModelPropertyChange<IMMTR, IDPL>
+        protected sealed class MMTREENameProxy : ModelPropertyChange<IMMTR, IDPL>
         {
             
             /// <summary>
@@ -93469,7 +93469,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TotVAh property
         /// </summary>
-        private sealed class MMTRTotVAhProxy : ModelPropertyChange<IMMTR, IBCR>
+        protected sealed class MMTRTotVAhProxy : ModelPropertyChange<IMMTR, IBCR>
         {
             
             /// <summary>
@@ -93500,7 +93500,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TotWh property
         /// </summary>
-        private sealed class MMTRTotWhProxy : ModelPropertyChange<IMMTR, IBCR>
+        protected sealed class MMTRTotWhProxy : ModelPropertyChange<IMMTR, IBCR>
         {
             
             /// <summary>
@@ -93531,7 +93531,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TotVArh property
         /// </summary>
-        private sealed class MMTRTotVArhProxy : ModelPropertyChange<IMMTR, IBCR>
+        protected sealed class MMTRTotVArhProxy : ModelPropertyChange<IMMTR, IBCR>
         {
             
             /// <summary>
@@ -93562,7 +93562,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SupWh property
         /// </summary>
-        private sealed class MMTRSupWhProxy : ModelPropertyChange<IMMTR, IBCR>
+        protected sealed class MMTRSupWhProxy : ModelPropertyChange<IMMTR, IBCR>
         {
             
             /// <summary>
@@ -93593,7 +93593,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SupVArh property
         /// </summary>
-        private sealed class MMTRSupVArhProxy : ModelPropertyChange<IMMTR, IBCR>
+        protected sealed class MMTRSupVArhProxy : ModelPropertyChange<IMMTR, IBCR>
         {
             
             /// <summary>
@@ -93624,7 +93624,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DmdWh property
         /// </summary>
-        private sealed class MMTRDmdWhProxy : ModelPropertyChange<IMMTR, IBCR>
+        protected sealed class MMTRDmdWhProxy : ModelPropertyChange<IMMTR, IBCR>
         {
             
             /// <summary>
@@ -93655,7 +93655,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DmdVArh property
         /// </summary>
-        private sealed class MMTRDmdVArhProxy : ModelPropertyChange<IMMTR, IBCR>
+        protected sealed class MMTRDmdVArhProxy : ModelPropertyChange<IMMTR, IBCR>
         {
             
             /// <summary>
@@ -94809,7 +94809,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEHealth property
         /// </summary>
-        private sealed class MMXNEEHealthProxy : ModelPropertyChange<IMMXN, Nullable<HealthStateKind>>
+        protected sealed class MMXNEEHealthProxy : ModelPropertyChange<IMMXN, Nullable<HealthStateKind>>
         {
             
             /// <summary>
@@ -94840,7 +94840,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEName property
         /// </summary>
-        private sealed class MMXNEENameProxy : ModelPropertyChange<IMMXN, IDPL>
+        protected sealed class MMXNEENameProxy : ModelPropertyChange<IMMXN, IDPL>
         {
             
             /// <summary>
@@ -94871,7 +94871,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Amp property
         /// </summary>
-        private sealed class MMXNAmpProxy : ModelPropertyChange<IMMXN, IMV>
+        protected sealed class MMXNAmpProxy : ModelPropertyChange<IMMXN, IMV>
         {
             
             /// <summary>
@@ -94902,7 +94902,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Vol property
         /// </summary>
-        private sealed class MMXNVolProxy : ModelPropertyChange<IMMXN, IMV>
+        protected sealed class MMXNVolProxy : ModelPropertyChange<IMMXN, IMV>
         {
             
             /// <summary>
@@ -94933,7 +94933,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Watt property
         /// </summary>
-        private sealed class MMXNWattProxy : ModelPropertyChange<IMMXN, IMV>
+        protected sealed class MMXNWattProxy : ModelPropertyChange<IMMXN, IMV>
         {
             
             /// <summary>
@@ -94964,7 +94964,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VolAmpr property
         /// </summary>
-        private sealed class MMXNVolAmprProxy : ModelPropertyChange<IMMXN, IMV>
+        protected sealed class MMXNVolAmprProxy : ModelPropertyChange<IMMXN, IMV>
         {
             
             /// <summary>
@@ -94995,7 +94995,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VolAmp property
         /// </summary>
-        private sealed class MMXNVolAmpProxy : ModelPropertyChange<IMMXN, IMV>
+        protected sealed class MMXNVolAmpProxy : ModelPropertyChange<IMMXN, IMV>
         {
             
             /// <summary>
@@ -95026,7 +95026,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PwrFact property
         /// </summary>
-        private sealed class MMXNPwrFactProxy : ModelPropertyChange<IMMXN, IMV>
+        protected sealed class MMXNPwrFactProxy : ModelPropertyChange<IMMXN, IMV>
         {
             
             /// <summary>
@@ -95057,7 +95057,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Imp property
         /// </summary>
-        private sealed class MMXNImpProxy : ModelPropertyChange<IMMXN, ICMV>
+        protected sealed class MMXNImpProxy : ModelPropertyChange<IMMXN, ICMV>
         {
             
             /// <summary>
@@ -95088,7 +95088,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Hz property
         /// </summary>
-        private sealed class MMXNHzProxy : ModelPropertyChange<IMMXN, IMV>
+        protected sealed class MMXNHzProxy : ModelPropertyChange<IMMXN, IMV>
         {
             
             /// <summary>
@@ -97142,7 +97142,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEHealth property
         /// </summary>
-        private sealed class MSTAEEHealthProxy : ModelPropertyChange<IMSTA, Nullable<HealthStateKind>>
+        protected sealed class MSTAEEHealthProxy : ModelPropertyChange<IMSTA, Nullable<HealthStateKind>>
         {
             
             /// <summary>
@@ -97173,7 +97173,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEName property
         /// </summary>
-        private sealed class MSTAEENameProxy : ModelPropertyChange<IMSTA, IDPL>
+        protected sealed class MSTAEENameProxy : ModelPropertyChange<IMSTA, IDPL>
         {
             
             /// <summary>
@@ -97204,7 +97204,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AvAmps property
         /// </summary>
-        private sealed class MSTAAvAmpsProxy : ModelPropertyChange<IMSTA, IMV>
+        protected sealed class MSTAAvAmpsProxy : ModelPropertyChange<IMSTA, IMV>
         {
             
             /// <summary>
@@ -97235,7 +97235,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxAmps property
         /// </summary>
-        private sealed class MSTAMaxAmpsProxy : ModelPropertyChange<IMSTA, IMV>
+        protected sealed class MSTAMaxAmpsProxy : ModelPropertyChange<IMSTA, IMV>
         {
             
             /// <summary>
@@ -97266,7 +97266,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MinAmps property
         /// </summary>
-        private sealed class MSTAMinAmpsProxy : ModelPropertyChange<IMSTA, IMV>
+        protected sealed class MSTAMinAmpsProxy : ModelPropertyChange<IMSTA, IMV>
         {
             
             /// <summary>
@@ -97297,7 +97297,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AvVolts property
         /// </summary>
-        private sealed class MSTAAvVoltsProxy : ModelPropertyChange<IMSTA, IMV>
+        protected sealed class MSTAAvVoltsProxy : ModelPropertyChange<IMSTA, IMV>
         {
             
             /// <summary>
@@ -97328,7 +97328,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxVolts property
         /// </summary>
-        private sealed class MSTAMaxVoltsProxy : ModelPropertyChange<IMSTA, IMV>
+        protected sealed class MSTAMaxVoltsProxy : ModelPropertyChange<IMSTA, IMV>
         {
             
             /// <summary>
@@ -97359,7 +97359,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MinVolts property
         /// </summary>
-        private sealed class MSTAMinVoltsProxy : ModelPropertyChange<IMSTA, IMV>
+        protected sealed class MSTAMinVoltsProxy : ModelPropertyChange<IMSTA, IMV>
         {
             
             /// <summary>
@@ -97390,7 +97390,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AvVA property
         /// </summary>
-        private sealed class MSTAAvVAProxy : ModelPropertyChange<IMSTA, IMV>
+        protected sealed class MSTAAvVAProxy : ModelPropertyChange<IMSTA, IMV>
         {
             
             /// <summary>
@@ -97421,7 +97421,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxVA property
         /// </summary>
-        private sealed class MSTAMaxVAProxy : ModelPropertyChange<IMSTA, IMV>
+        protected sealed class MSTAMaxVAProxy : ModelPropertyChange<IMSTA, IMV>
         {
             
             /// <summary>
@@ -97452,7 +97452,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MinVA property
         /// </summary>
-        private sealed class MSTAMinVAProxy : ModelPropertyChange<IMSTA, IMV>
+        protected sealed class MSTAMinVAProxy : ModelPropertyChange<IMSTA, IMV>
         {
             
             /// <summary>
@@ -97483,7 +97483,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AvW property
         /// </summary>
-        private sealed class MSTAAvWProxy : ModelPropertyChange<IMSTA, IMV>
+        protected sealed class MSTAAvWProxy : ModelPropertyChange<IMSTA, IMV>
         {
             
             /// <summary>
@@ -97514,7 +97514,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxW property
         /// </summary>
-        private sealed class MSTAMaxWProxy : ModelPropertyChange<IMSTA, IMV>
+        protected sealed class MSTAMaxWProxy : ModelPropertyChange<IMSTA, IMV>
         {
             
             /// <summary>
@@ -97545,7 +97545,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MinW property
         /// </summary>
-        private sealed class MSTAMinWProxy : ModelPropertyChange<IMSTA, IMV>
+        protected sealed class MSTAMinWProxy : ModelPropertyChange<IMSTA, IMV>
         {
             
             /// <summary>
@@ -97576,7 +97576,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AvVAr property
         /// </summary>
-        private sealed class MSTAAvVArProxy : ModelPropertyChange<IMSTA, IMV>
+        protected sealed class MSTAAvVArProxy : ModelPropertyChange<IMSTA, IMV>
         {
             
             /// <summary>
@@ -97607,7 +97607,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxVAr property
         /// </summary>
-        private sealed class MSTAMaxVArProxy : ModelPropertyChange<IMSTA, IMV>
+        protected sealed class MSTAMaxVArProxy : ModelPropertyChange<IMSTA, IMV>
         {
             
             /// <summary>
@@ -97638,7 +97638,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MinVAr property
         /// </summary>
-        private sealed class MSTAMinVArProxy : ModelPropertyChange<IMSTA, IMV>
+        protected sealed class MSTAMinVArProxy : ModelPropertyChange<IMSTA, IMV>
         {
             
             /// <summary>
@@ -97669,7 +97669,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EvStr property
         /// </summary>
-        private sealed class MSTAEvStrProxy : ModelPropertyChange<IMSTA, ISPC>
+        protected sealed class MSTAEvStrProxy : ModelPropertyChange<IMSTA, ISPC>
         {
             
             /// <summary>
@@ -97700,7 +97700,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EvTmms property
         /// </summary>
-        private sealed class MSTAEvTmmsProxy : ModelPropertyChange<IMSTA, IASG>
+        protected sealed class MSTAEvTmmsProxy : ModelPropertyChange<IMSTA, IASG>
         {
             
             /// <summary>
@@ -99414,8 +99414,8 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
     using NMF.Serialization;
     using NMF.Utilities;
     using TemporaryGeneratedCode.SubstationStandard.LNNodes.DomainLNs;
-    using TemporaryGeneratedCode.SubstationStandard.Enumerations;
     using TemporaryGeneratedCode.SubstationStandard.Dataclasses;
+    using TemporaryGeneratedCode.SubstationStandard.Enumerations;
     using TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupC;
     
     
@@ -100344,7 +100344,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEHealth property
         /// </summary>
-        private sealed class GroupXEEHealthProxy : ModelPropertyChange<IGroupX, Nullable<HealthStateKind>>
+        protected sealed class GroupXEEHealthProxy : ModelPropertyChange<IGroupX, Nullable<HealthStateKind>>
         {
             
             /// <summary>
@@ -100375,7 +100375,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Loc property
         /// </summary>
-        private sealed class GroupXLocProxy : ModelPropertyChange<IGroupX, ISPS>
+        protected sealed class GroupXLocProxy : ModelPropertyChange<IGroupX, ISPS>
         {
             
             /// <summary>
@@ -100406,7 +100406,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEName property
         /// </summary>
-        private sealed class GroupXEENameProxy : ModelPropertyChange<IGroupX, IDPL>
+        protected sealed class GroupXEENameProxy : ModelPropertyChange<IGroupX, IDPL>
         {
             
             /// <summary>
@@ -100437,7 +100437,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpCnt property
         /// </summary>
-        private sealed class GroupXOpCntProxy : ModelPropertyChange<IGroupX, IINS>
+        protected sealed class GroupXOpCntProxy : ModelPropertyChange<IGroupX, IINS>
         {
             
             /// <summary>
@@ -100468,7 +100468,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Pos property
         /// </summary>
-        private sealed class GroupXPosProxy : ModelPropertyChange<IGroupX, IDPC>
+        protected sealed class GroupXPosProxy : ModelPropertyChange<IGroupX, IDPC>
         {
             
             /// <summary>
@@ -100499,7 +100499,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkOpn property
         /// </summary>
-        private sealed class GroupXBlkOpnProxy : ModelPropertyChange<IGroupX, ISPC>
+        protected sealed class GroupXBlkOpnProxy : ModelPropertyChange<IGroupX, ISPC>
         {
             
             /// <summary>
@@ -100530,7 +100530,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkCls property
         /// </summary>
-        private sealed class GroupXBlkClsProxy : ModelPropertyChange<IGroupX, ISPC>
+        protected sealed class GroupXBlkClsProxy : ModelPropertyChange<IGroupX, ISPC>
         {
             
             /// <summary>
@@ -100561,7 +100561,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ChaMotEna property
         /// </summary>
-        private sealed class GroupXChaMotEnaProxy : ModelPropertyChange<IGroupX, ISPC>
+        protected sealed class GroupXChaMotEnaProxy : ModelPropertyChange<IGroupX, ISPC>
         {
             
             /// <summary>
@@ -101215,7 +101215,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
         /// <summary>
         /// Represents a proxy to represent an incremental access to the POWCap property
         /// </summary>
-        private sealed class XCBRPOWCapProxy : ModelPropertyChange<IXCBR, Nullable<SwitchingCapabilityKind>>
+        protected sealed class XCBRPOWCapProxy : ModelPropertyChange<IXCBR, Nullable<SwitchingCapabilityKind>>
         {
             
             /// <summary>
@@ -101246,7 +101246,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SumSwARs property
         /// </summary>
-        private sealed class XCBRSumSwARsProxy : ModelPropertyChange<IXCBR, IBCR>
+        protected sealed class XCBRSumSwARsProxy : ModelPropertyChange<IXCBR, IBCR>
         {
             
             /// <summary>
@@ -101277,7 +101277,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
         /// <summary>
         /// Represents a proxy to represent an incremental access to the CBOpCap property
         /// </summary>
-        private sealed class XCBRCBOpCapProxy : ModelPropertyChange<IXCBR, IINS>
+        protected sealed class XCBRCBOpCapProxy : ModelPropertyChange<IXCBR, IINS>
         {
             
             /// <summary>
@@ -101308,7 +101308,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxOpCap property
         /// </summary>
-        private sealed class XCBRMaxOpCapProxy : ModelPropertyChange<IXCBR, IINS>
+        protected sealed class XCBRMaxOpCapProxy : ModelPropertyChange<IXCBR, IINS>
         {
             
             /// <summary>
@@ -101339,7 +101339,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SwitchControl property
         /// </summary>
-        private sealed class XCBRSwitchControlProxy : ModelPropertyChange<IXCBR, ICSWI>
+        protected sealed class XCBRSwitchControlProxy : ModelPropertyChange<IXCBR, ICSWI>
         {
             
             /// <summary>
@@ -101793,7 +101793,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SwOpCap property
         /// </summary>
-        private sealed class XSWISwOpCapProxy : ModelPropertyChange<IXSWI, Nullable<SwitchingCapabilityKind>>
+        protected sealed class XSWISwOpCapProxy : ModelPropertyChange<IXSWI, Nullable<SwitchingCapabilityKind>>
         {
             
             /// <summary>
@@ -101824,7 +101824,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxOpCap property
         /// </summary>
-        private sealed class XSWIMaxOpCapProxy : ModelPropertyChange<IXSWI, Nullable<SwitchingCapabilityKind>>
+        protected sealed class XSWIMaxOpCapProxy : ModelPropertyChange<IXSWI, Nullable<SwitchingCapabilityKind>>
         {
             
             /// <summary>
@@ -101855,7 +101855,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SwTyp property
         /// </summary>
-        private sealed class XSWISwTypProxy : ModelPropertyChange<IXSWI, Nullable<SwitchTypeKind>>
+        protected sealed class XSWISwTypProxy : ModelPropertyChange<IXSWI, Nullable<SwitchTypeKind>>
         {
             
             /// <summary>
@@ -101886,7 +101886,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupX
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SwitchControl property
         /// </summary>
-        private sealed class XSWISwitchControlProxy : ModelPropertyChange<IXSWI, ICSWI>
+        protected sealed class XSWISwitchControlProxy : ModelPropertyChange<IXSWI, ICSWI>
         {
             
             /// <summary>
@@ -102149,8 +102149,8 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
     using NMF.Serialization;
     using NMF.Utilities;
     using TemporaryGeneratedCode.SubstationStandard.LNNodes.DomainLNs;
-    using TemporaryGeneratedCode.SubstationStandard.Enumerations;
     using TemporaryGeneratedCode.SubstationStandard.Dataclasses;
+    using TemporaryGeneratedCode.SubstationStandard.Enumerations;
     
     
     /// <summary>
@@ -102978,7 +102978,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEHealth property
         /// </summary>
-        private sealed class GroupTEEHealthProxy : ModelPropertyChange<IGroupT, Nullable<HealthStateKind>>
+        protected sealed class GroupTEEHealthProxy : ModelPropertyChange<IGroupT, Nullable<HealthStateKind>>
         {
             
             /// <summary>
@@ -103009,7 +103009,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEName property
         /// </summary>
-        private sealed class GroupTEENameProxy : ModelPropertyChange<IGroupT, IDPL>
+        protected sealed class GroupTEENameProxy : ModelPropertyChange<IGroupT, IDPL>
         {
             
             /// <summary>
@@ -103040,7 +103040,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpTmh property
         /// </summary>
-        private sealed class GroupTOpTmhProxy : ModelPropertyChange<IGroupT, IINS>
+        protected sealed class GroupTOpTmhProxy : ModelPropertyChange<IGroupT, IINS>
         {
             
             /// <summary>
@@ -103071,7 +103071,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HzRtg property
         /// </summary>
-        private sealed class GroupTHzRtgProxy : ModelPropertyChange<IGroupT, IASG>
+        protected sealed class GroupTHzRtgProxy : ModelPropertyChange<IGroupT, IASG>
         {
             
             /// <summary>
@@ -103102,7 +103102,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Rat property
         /// </summary>
-        private sealed class GroupTRatProxy : ModelPropertyChange<IGroupT, IASG>
+        protected sealed class GroupTRatProxy : ModelPropertyChange<IGroupT, IASG>
         {
             
             /// <summary>
@@ -103133,7 +103133,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Cor property
         /// </summary>
-        private sealed class GroupTCorProxy : ModelPropertyChange<IGroupT, IASG>
+        protected sealed class GroupTCorProxy : ModelPropertyChange<IGroupT, IASG>
         {
             
             /// <summary>
@@ -103164,7 +103164,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AngCor property
         /// </summary>
-        private sealed class GroupTAngCorProxy : ModelPropertyChange<IGroupT, IASG>
+        protected sealed class GroupTAngCorProxy : ModelPropertyChange<IGroupT, IASG>
         {
             
             /// <summary>
@@ -103547,7 +103547,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Amp property
         /// </summary>
-        private sealed class TCTRAmpProxy : ModelPropertyChange<ITCTR, ISAV>
+        protected sealed class TCTRAmpProxy : ModelPropertyChange<ITCTR, ISAV>
         {
             
             /// <summary>
@@ -103578,7 +103578,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ARtg property
         /// </summary>
-        private sealed class TCTRARtgProxy : ModelPropertyChange<ITCTR, IASG>
+        protected sealed class TCTRARtgProxy : ModelPropertyChange<ITCTR, IASG>
         {
             
             /// <summary>
@@ -104061,7 +104061,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Vol property
         /// </summary>
-        private sealed class TVTRVolProxy : ModelPropertyChange<ITVTR, ISAV>
+        protected sealed class TVTRVolProxy : ModelPropertyChange<ITVTR, ISAV>
         {
             
             /// <summary>
@@ -104092,7 +104092,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FuFail property
         /// </summary>
-        private sealed class TVTRFuFailProxy : ModelPropertyChange<ITVTR, ISPS>
+        protected sealed class TVTRFuFailProxy : ModelPropertyChange<ITVTR, ISPS>
         {
             
             /// <summary>
@@ -104123,7 +104123,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupT
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VRtg property
         /// </summary>
-        private sealed class TVTRVRtgProxy : ModelPropertyChange<ITVTR, IASG>
+        protected sealed class TVTRVRtgProxy : ModelPropertyChange<ITVTR, IASG>
         {
             
             /// <summary>
@@ -104331,8 +104331,8 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
     using NMF.Serialization;
     using NMF.Utilities;
     using TemporaryGeneratedCode.SubstationStandard.LNNodes.DomainLNs;
-    using TemporaryGeneratedCode.SubstationStandard.Enumerations;
     using TemporaryGeneratedCode.SubstationStandard.Dataclasses;
+    using TemporaryGeneratedCode.SubstationStandard.Enumerations;
     using TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupA;
     
     
@@ -104661,7 +104661,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEHealth property
         /// </summary>
-        private sealed class GroupYEEHealthProxy : ModelPropertyChange<IGroupY, Nullable<HealthStateKind>>
+        protected sealed class GroupYEEHealthProxy : ModelPropertyChange<IGroupY, Nullable<HealthStateKind>>
         {
             
             /// <summary>
@@ -104692,7 +104692,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EEName property
         /// </summary>
-        private sealed class GroupYEENameProxy : ModelPropertyChange<IGroupY, IDPL>
+        protected sealed class GroupYEENameProxy : ModelPropertyChange<IGroupY, IDPL>
         {
             
             /// <summary>
@@ -105375,7 +105375,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Loc property
         /// </summary>
-        private sealed class YEFNLocProxy : ModelPropertyChange<IYEFN, ISPS>
+        protected sealed class YEFNLocProxy : ModelPropertyChange<IYEFN, ISPS>
         {
             
             /// <summary>
@@ -105406,7 +105406,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpTmh property
         /// </summary>
-        private sealed class YEFNOpTmhProxy : ModelPropertyChange<IYEFN, IINS>
+        protected sealed class YEFNOpTmhProxy : ModelPropertyChange<IYEFN, IINS>
         {
             
             /// <summary>
@@ -105437,7 +105437,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ECA property
         /// </summary>
-        private sealed class YEFNECAProxy : ModelPropertyChange<IYEFN, IMV>
+        protected sealed class YEFNECAProxy : ModelPropertyChange<IYEFN, IMV>
         {
             
             /// <summary>
@@ -105468,7 +105468,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ColTapPos property
         /// </summary>
-        private sealed class YEFNColTapPosProxy : ModelPropertyChange<IYEFN, IISC>
+        protected sealed class YEFNColTapPosProxy : ModelPropertyChange<IYEFN, IISC>
         {
             
             /// <summary>
@@ -105499,7 +105499,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ColPos property
         /// </summary>
-        private sealed class YEFNColPosProxy : ModelPropertyChange<IYEFN, IAPC>
+        protected sealed class YEFNColPosProxy : ModelPropertyChange<IYEFN, IAPC>
         {
             
             /// <summary>
@@ -106482,7 +106482,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpCnt property
         /// </summary>
-        private sealed class YLTCOpCntProxy : ModelPropertyChange<IYLTC, IINS>
+        protected sealed class YLTCOpCntProxy : ModelPropertyChange<IYLTC, IINS>
         {
             
             /// <summary>
@@ -106513,7 +106513,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Torq property
         /// </summary>
-        private sealed class YLTCTorqProxy : ModelPropertyChange<IYLTC, IMV>
+        protected sealed class YLTCTorqProxy : ModelPropertyChange<IYLTC, IMV>
         {
             
             /// <summary>
@@ -106544,7 +106544,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MotDrvA property
         /// </summary>
-        private sealed class YLTCMotDrvAProxy : ModelPropertyChange<IYLTC, IMV>
+        protected sealed class YLTCMotDrvAProxy : ModelPropertyChange<IYLTC, IMV>
         {
             
             /// <summary>
@@ -106575,7 +106575,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TapPos property
         /// </summary>
-        private sealed class YLTCTapPosProxy : ModelPropertyChange<IYLTC, IISC>
+        protected sealed class YLTCTapPosProxy : ModelPropertyChange<IYLTC, IISC>
         {
             
             /// <summary>
@@ -106606,7 +106606,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TapChg property
         /// </summary>
-        private sealed class YLTCTapChgProxy : ModelPropertyChange<IYLTC, IBSC>
+        protected sealed class YLTCTapChgProxy : ModelPropertyChange<IYLTC, IBSC>
         {
             
             /// <summary>
@@ -106637,7 +106637,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EndPosR property
         /// </summary>
-        private sealed class YLTCEndPosRProxy : ModelPropertyChange<IYLTC, ISPS>
+        protected sealed class YLTCEndPosRProxy : ModelPropertyChange<IYLTC, ISPS>
         {
             
             /// <summary>
@@ -106668,7 +106668,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the EndPosL property
         /// </summary>
-        private sealed class YLTCEndPosLProxy : ModelPropertyChange<IYLTC, ISPS>
+        protected sealed class YLTCEndPosLProxy : ModelPropertyChange<IYLTC, ISPS>
         {
             
             /// <summary>
@@ -106699,7 +106699,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OilFil property
         /// </summary>
-        private sealed class YLTCOilFilProxy : ModelPropertyChange<IYLTC, ISPS>
+        protected sealed class YLTCOilFilProxy : ModelPropertyChange<IYLTC, ISPS>
         {
             
             /// <summary>
@@ -107503,7 +107503,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ShOpCap property
         /// </summary>
-        private sealed class YPSHShOpCapProxy : ModelPropertyChange<IYPSH, Nullable<SwitchingCapabilityKind>>
+        protected sealed class YPSHShOpCapProxy : ModelPropertyChange<IYPSH, Nullable<SwitchingCapabilityKind>>
         {
             
             /// <summary>
@@ -107534,7 +107534,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MaxOpCap property
         /// </summary>
-        private sealed class YPSHMaxOpCapProxy : ModelPropertyChange<IYPSH, Nullable<SwitchingCapabilityKind>>
+        protected sealed class YPSHMaxOpCapProxy : ModelPropertyChange<IYPSH, Nullable<SwitchingCapabilityKind>>
         {
             
             /// <summary>
@@ -107565,7 +107565,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpTmh property
         /// </summary>
-        private sealed class YPSHOpTmhProxy : ModelPropertyChange<IYPSH, IINS>
+        protected sealed class YPSHOpTmhProxy : ModelPropertyChange<IYPSH, IINS>
         {
             
             /// <summary>
@@ -107596,7 +107596,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Pos property
         /// </summary>
-        private sealed class YPSHPosProxy : ModelPropertyChange<IYPSH, IDPC>
+        protected sealed class YPSHPosProxy : ModelPropertyChange<IYPSH, IDPC>
         {
             
             /// <summary>
@@ -107627,7 +107627,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkOpn property
         /// </summary>
-        private sealed class YPSHBlkOpnProxy : ModelPropertyChange<IYPSH, ISPC>
+        protected sealed class YPSHBlkOpnProxy : ModelPropertyChange<IYPSH, ISPC>
         {
             
             /// <summary>
@@ -107658,7 +107658,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BlkCls property
         /// </summary>
-        private sealed class YPSHBlkClsProxy : ModelPropertyChange<IYPSH, ISPC>
+        protected sealed class YPSHBlkClsProxy : ModelPropertyChange<IYPSH, ISPC>
         {
             
             /// <summary>
@@ -107689,7 +107689,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ChaMotEna property
         /// </summary>
-        private sealed class YPSHChaMotEnaProxy : ModelPropertyChange<IYPSH, ISPC>
+        protected sealed class YPSHChaMotEnaProxy : ModelPropertyChange<IYPSH, ISPC>
         {
             
             /// <summary>
@@ -109172,7 +109172,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpTmh property
         /// </summary>
-        private sealed class YPTROpTmhProxy : ModelPropertyChange<IYPTR, IINS>
+        protected sealed class YPTROpTmhProxy : ModelPropertyChange<IYPTR, IINS>
         {
             
             /// <summary>
@@ -109203,7 +109203,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HPTmp property
         /// </summary>
-        private sealed class YPTRHPTmpProxy : ModelPropertyChange<IYPTR, IMV>
+        protected sealed class YPTRHPTmpProxy : ModelPropertyChange<IYPTR, IMV>
         {
             
             /// <summary>
@@ -109234,7 +109234,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HPZmpAlm property
         /// </summary>
-        private sealed class YPTRHPZmpAlmProxy : ModelPropertyChange<IYPTR, ISPS>
+        protected sealed class YPTRHPZmpAlmProxy : ModelPropertyChange<IYPTR, ISPS>
         {
             
             /// <summary>
@@ -109265,7 +109265,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HPTmpTr property
         /// </summary>
-        private sealed class YPTRHPTmpTrProxy : ModelPropertyChange<IYPTR, ISPS>
+        protected sealed class YPTRHPTmpTrProxy : ModelPropertyChange<IYPTR, ISPS>
         {
             
             /// <summary>
@@ -109296,7 +109296,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OANL property
         /// </summary>
-        private sealed class YPTROANLProxy : ModelPropertyChange<IYPTR, ISPS>
+        protected sealed class YPTROANLProxy : ModelPropertyChange<IYPTR, ISPS>
         {
             
             /// <summary>
@@ -109327,7 +109327,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpOvA property
         /// </summary>
-        private sealed class YPTROpOvAProxy : ModelPropertyChange<IYPTR, ISPS>
+        protected sealed class YPTROpOvAProxy : ModelPropertyChange<IYPTR, ISPS>
         {
             
             /// <summary>
@@ -109358,7 +109358,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpOvV property
         /// </summary>
-        private sealed class YPTROpOvVProxy : ModelPropertyChange<IYPTR, ISPS>
+        protected sealed class YPTROpOvVProxy : ModelPropertyChange<IYPTR, ISPS>
         {
             
             /// <summary>
@@ -109389,7 +109389,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpUnV property
         /// </summary>
-        private sealed class YPTROpUnVProxy : ModelPropertyChange<IYPTR, ISPS>
+        protected sealed class YPTROpUnVProxy : ModelPropertyChange<IYPTR, ISPS>
         {
             
             /// <summary>
@@ -109420,7 +109420,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the CGAlm property
         /// </summary>
-        private sealed class YPTRCGAlmProxy : ModelPropertyChange<IYPTR, ISPS>
+        protected sealed class YPTRCGAlmProxy : ModelPropertyChange<IYPTR, ISPS>
         {
             
             /// <summary>
@@ -109451,7 +109451,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HiVRtg property
         /// </summary>
-        private sealed class YPTRHiVRtgProxy : ModelPropertyChange<IYPTR, IASG>
+        protected sealed class YPTRHiVRtgProxy : ModelPropertyChange<IYPTR, IASG>
         {
             
             /// <summary>
@@ -109482,7 +109482,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LoVRtg property
         /// </summary>
-        private sealed class YPTRLoVRtgProxy : ModelPropertyChange<IYPTR, IASG>
+        protected sealed class YPTRLoVRtgProxy : ModelPropertyChange<IYPTR, IASG>
         {
             
             /// <summary>
@@ -109513,7 +109513,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PwrRtg property
         /// </summary>
-        private sealed class YPTRPwrRtgProxy : ModelPropertyChange<IYPTR, IASG>
+        protected sealed class YPTRPwrRtgProxy : ModelPropertyChange<IYPTR, IASG>
         {
             
             /// <summary>
@@ -109544,7 +109544,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupY
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TransformerControl property
         /// </summary>
-        private sealed class YPTRTransformerControlProxy : ModelPropertyChange<IYPTR, IATCC>
+        protected sealed class YPTRTransformerControlProxy : ModelPropertyChange<IYPTR, IATCC>
         {
             
             /// <summary>
@@ -110501,7 +110501,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpTmh property
         /// </summary>
-        private sealed class ZAXNOpTmhProxy : ModelPropertyChange<IZAXN, IINS>
+        protected sealed class ZAXNOpTmhProxy : ModelPropertyChange<IZAXN, IINS>
         {
             
             /// <summary>
@@ -110532,7 +110532,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Vol property
         /// </summary>
-        private sealed class ZAXNVolProxy : ModelPropertyChange<IZAXN, IMV>
+        protected sealed class ZAXNVolProxy : ModelPropertyChange<IZAXN, IMV>
         {
             
             /// <summary>
@@ -110563,7 +110563,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Amp property
         /// </summary>
-        private sealed class ZAXNAmpProxy : ModelPropertyChange<IZAXN, IMV>
+        protected sealed class ZAXNAmpProxy : ModelPropertyChange<IZAXN, IMV>
         {
             
             /// <summary>
@@ -110846,7 +110846,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpTmh property
         /// </summary>
-        private sealed class ZGILOpTmhProxy : ModelPropertyChange<IZGIL, IINS>
+        protected sealed class ZGILOpTmhProxy : ModelPropertyChange<IZGIL, IINS>
         {
             
             /// <summary>
@@ -112029,7 +112029,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpTmh property
         /// </summary>
-        private sealed class ZBATOpTmhProxy : ModelPropertyChange<IZBAT, IMV>
+        protected sealed class ZBATOpTmhProxy : ModelPropertyChange<IZBAT, IMV>
         {
             
             /// <summary>
@@ -112060,7 +112060,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Vol property
         /// </summary>
-        private sealed class ZBATVolProxy : ModelPropertyChange<IZBAT, IMV>
+        protected sealed class ZBATVolProxy : ModelPropertyChange<IZBAT, IMV>
         {
             
             /// <summary>
@@ -112091,7 +112091,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VolChgRte property
         /// </summary>
-        private sealed class ZBATVolChgRteProxy : ModelPropertyChange<IZBAT, IMV>
+        protected sealed class ZBATVolChgRteProxy : ModelPropertyChange<IZBAT, IMV>
         {
             
             /// <summary>
@@ -112122,7 +112122,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Amp property
         /// </summary>
-        private sealed class ZBATAmpProxy : ModelPropertyChange<IZBAT, IMV>
+        protected sealed class ZBATAmpProxy : ModelPropertyChange<IZBAT, IMV>
         {
             
             /// <summary>
@@ -112153,7 +112153,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BatTest property
         /// </summary>
-        private sealed class ZBATBatTestProxy : ModelPropertyChange<IZBAT, ISPC>
+        protected sealed class ZBATBatTestProxy : ModelPropertyChange<IZBAT, ISPC>
         {
             
             /// <summary>
@@ -112184,7 +112184,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TestRsl property
         /// </summary>
-        private sealed class ZBATTestRslProxy : ModelPropertyChange<IZBAT, ISPC>
+        protected sealed class ZBATTestRslProxy : ModelPropertyChange<IZBAT, ISPC>
         {
             
             /// <summary>
@@ -112215,7 +112215,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BatHi property
         /// </summary>
-        private sealed class ZBATBatHiProxy : ModelPropertyChange<IZBAT, ISPC>
+        protected sealed class ZBATBatHiProxy : ModelPropertyChange<IZBAT, ISPC>
         {
             
             /// <summary>
@@ -112246,7 +112246,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BatLo property
         /// </summary>
-        private sealed class ZBATBatLoProxy : ModelPropertyChange<IZBAT, ISPC>
+        protected sealed class ZBATBatLoProxy : ModelPropertyChange<IZBAT, ISPC>
         {
             
             /// <summary>
@@ -112277,7 +112277,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LoBatVal property
         /// </summary>
-        private sealed class ZBATLoBatValProxy : ModelPropertyChange<IZBAT, IASG>
+        protected sealed class ZBATLoBatValProxy : ModelPropertyChange<IZBAT, IASG>
         {
             
             /// <summary>
@@ -112308,7 +112308,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the HiBatVal property
         /// </summary>
-        private sealed class ZBATHiBatValProxy : ModelPropertyChange<IZBAT, IASG>
+        protected sealed class ZBATHiBatValProxy : ModelPropertyChange<IZBAT, IASG>
         {
             
             /// <summary>
@@ -112591,7 +112591,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpTmh property
         /// </summary>
-        private sealed class ZLINOpTmhProxy : ModelPropertyChange<IZLIN, IINS>
+        protected sealed class ZLINOpTmhProxy : ModelPropertyChange<IZLIN, IINS>
         {
             
             /// <summary>
@@ -113274,7 +113274,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpTmh property
         /// </summary>
-        private sealed class ZMOTOpTmhProxy : ModelPropertyChange<IZMOT, IINS>
+        protected sealed class ZMOTOpTmhProxy : ModelPropertyChange<IZMOT, IINS>
         {
             
             /// <summary>
@@ -113305,7 +113305,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DExt property
         /// </summary>
-        private sealed class ZMOTDExtProxy : ModelPropertyChange<IZMOT, ISPC>
+        protected sealed class ZMOTDExtProxy : ModelPropertyChange<IZMOT, ISPC>
         {
             
             /// <summary>
@@ -113336,7 +113336,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LosOil property
         /// </summary>
-        private sealed class ZMOTLosOilProxy : ModelPropertyChange<IZMOT, ISPS>
+        protected sealed class ZMOTLosOilProxy : ModelPropertyChange<IZMOT, ISPS>
         {
             
             /// <summary>
@@ -113367,7 +113367,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LosVac property
         /// </summary>
-        private sealed class ZMOTLosVacProxy : ModelPropertyChange<IZMOT, ISPS>
+        protected sealed class ZMOTLosVacProxy : ModelPropertyChange<IZMOT, ISPS>
         {
             
             /// <summary>
@@ -113398,7 +113398,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PresAlm property
         /// </summary>
-        private sealed class ZMOTPresAlmProxy : ModelPropertyChange<IZMOT, ISPS>
+        protected sealed class ZMOTPresAlmProxy : ModelPropertyChange<IZMOT, ISPS>
         {
             
             /// <summary>
@@ -113781,7 +113781,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpTmh property
         /// </summary>
-        private sealed class ZREAOpTmhProxy : ModelPropertyChange<IZREA, IINS>
+        protected sealed class ZREAOpTmhProxy : ModelPropertyChange<IZREA, IINS>
         {
             
             /// <summary>
@@ -113812,7 +113812,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactorControl property
         /// </summary>
-        private sealed class ZREAReactorControlProxy : ModelPropertyChange<IZREA, IARCO>
+        protected sealed class ZREAReactorControlProxy : ModelPropertyChange<IZREA, IARCO>
         {
             
             /// <summary>
@@ -114695,7 +114695,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpTmh property
         /// </summary>
-        private sealed class ZBSHOpTmhProxy : ModelPropertyChange<IZBSH, IINS>
+        protected sealed class ZBSHOpTmhProxy : ModelPropertyChange<IZBSH, IINS>
         {
             
             /// <summary>
@@ -114726,7 +114726,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the React property
         /// </summary>
-        private sealed class ZBSHReactProxy : ModelPropertyChange<IZBSH, IMV>
+        protected sealed class ZBSHReactProxy : ModelPropertyChange<IZBSH, IMV>
         {
             
             /// <summary>
@@ -114757,7 +114757,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LosFact property
         /// </summary>
-        private sealed class ZBSHLosFactProxy : ModelPropertyChange<IZBSH, IMV>
+        protected sealed class ZBSHLosFactProxy : ModelPropertyChange<IZBSH, IMV>
         {
             
             /// <summary>
@@ -114788,7 +114788,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Vol property
         /// </summary>
-        private sealed class ZBSHVolProxy : ModelPropertyChange<IZBSH, IMV>
+        protected sealed class ZBSHVolProxy : ModelPropertyChange<IZBSH, IMV>
         {
             
             /// <summary>
@@ -114819,7 +114819,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RefReact property
         /// </summary>
-        private sealed class ZBSHRefReactProxy : ModelPropertyChange<IZBSH, IASG>
+        protected sealed class ZBSHRefReactProxy : ModelPropertyChange<IZBSH, IASG>
         {
             
             /// <summary>
@@ -114850,7 +114850,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RefPF property
         /// </summary>
-        private sealed class ZBSHRefPFProxy : ModelPropertyChange<IZBSH, IASG>
+        protected sealed class ZBSHRefPFProxy : ModelPropertyChange<IZBSH, IASG>
         {
             
             /// <summary>
@@ -114881,7 +114881,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RefV property
         /// </summary>
-        private sealed class ZBSHRefVProxy : ModelPropertyChange<IZBSH, IASG>
+        protected sealed class ZBSHRefVProxy : ModelPropertyChange<IZBSH, IASG>
         {
             
             /// <summary>
@@ -115164,7 +115164,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpTmh property
         /// </summary>
-        private sealed class ZRRCOpTmhProxy : ModelPropertyChange<IZRRC, IINS>
+        protected sealed class ZRRCOpTmhProxy : ModelPropertyChange<IZRRC, IINS>
         {
             
             /// <summary>
@@ -115547,7 +115547,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpCnt property
         /// </summary>
-        private sealed class ZSAROpCntProxy : ModelPropertyChange<IZSAR, IINS>
+        protected sealed class ZSAROpCntProxy : ModelPropertyChange<IZSAR, IINS>
         {
             
             /// <summary>
@@ -115578,7 +115578,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OPSA property
         /// </summary>
-        private sealed class ZSAROPSAProxy : ModelPropertyChange<IZSAR, ISPS>
+        protected sealed class ZSAROPSAProxy : ModelPropertyChange<IZSAR, ISPS>
         {
             
             /// <summary>
@@ -115961,7 +115961,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpTmh property
         /// </summary>
-        private sealed class ZTCFOpTmhProxy : ModelPropertyChange<IZTCF, IINS>
+        protected sealed class ZTCFOpTmhProxy : ModelPropertyChange<IZTCF, IINS>
         {
             
             /// <summary>
@@ -115992,7 +115992,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PwrFrq property
         /// </summary>
-        private sealed class ZTCFPwrFrqProxy : ModelPropertyChange<IZTCF, IASG>
+        protected sealed class ZTCFPwrFrqProxy : ModelPropertyChange<IZTCF, IASG>
         {
             
             /// <summary>
@@ -116275,7 +116275,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpTmh property
         /// </summary>
-        private sealed class ZTCROpTmhProxy : ModelPropertyChange<IZTCR, IINS>
+        protected sealed class ZTCROpTmhProxy : ModelPropertyChange<IZTCR, IINS>
         {
             
             /// <summary>
@@ -116558,7 +116558,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpTmh property
         /// </summary>
-        private sealed class ZCABOpTmhProxy : ModelPropertyChange<IZCAB, IINS>
+        protected sealed class ZCABOpTmhProxy : ModelPropertyChange<IZCAB, IINS>
         {
             
             /// <summary>
@@ -117141,7 +117141,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpTmh property
         /// </summary>
-        private sealed class ZCAPOpTmhProxy : ModelPropertyChange<IZCAP, IINS>
+        protected sealed class ZCAPOpTmhProxy : ModelPropertyChange<IZCAP, IINS>
         {
             
             /// <summary>
@@ -117172,7 +117172,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the CapDS property
         /// </summary>
-        private sealed class ZCAPCapDSProxy : ModelPropertyChange<IZCAP, ISPC>
+        protected sealed class ZCAPCapDSProxy : ModelPropertyChange<IZCAP, ISPC>
         {
             
             /// <summary>
@@ -117203,7 +117203,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DschBlk property
         /// </summary>
-        private sealed class ZCAPDschBlkProxy : ModelPropertyChange<IZCAP, ISPS>
+        protected sealed class ZCAPDschBlkProxy : ModelPropertyChange<IZCAP, ISPS>
         {
             
             /// <summary>
@@ -117234,7 +117234,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the CapControl property
         /// </summary>
-        private sealed class ZCAPCapControlProxy : ModelPropertyChange<IZCAP, IARCO>
+        protected sealed class ZCAPCapControlProxy : ModelPropertyChange<IZCAP, IARCO>
         {
             
             /// <summary>
@@ -117517,7 +117517,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpTmh property
         /// </summary>
-        private sealed class ZCONOpTmhProxy : ModelPropertyChange<IZCON, IINS>
+        protected sealed class ZCONOpTmhProxy : ModelPropertyChange<IZCON, IINS>
         {
             
             /// <summary>
@@ -119671,7 +119671,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the GnSt property
         /// </summary>
-        private sealed class ZGENGnStProxy : ModelPropertyChange<IZGEN, Nullable<GeneratorStateKind>>
+        protected sealed class ZGENGnStProxy : ModelPropertyChange<IZGEN, Nullable<GeneratorStateKind>>
         {
             
             /// <summary>
@@ -119702,7 +119702,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpTmh property
         /// </summary>
-        private sealed class ZGENOpTmhProxy : ModelPropertyChange<IZGEN, IINS>
+        protected sealed class ZGENOpTmhProxy : ModelPropertyChange<IZGEN, IINS>
         {
             
             /// <summary>
@@ -119733,7 +119733,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the GnCtl property
         /// </summary>
-        private sealed class ZGENGnCtlProxy : ModelPropertyChange<IZGEN, IDPC>
+        protected sealed class ZGENGnCtlProxy : ModelPropertyChange<IZGEN, IDPC>
         {
             
             /// <summary>
@@ -119764,7 +119764,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DExt property
         /// </summary>
-        private sealed class ZGENDExtProxy : ModelPropertyChange<IZGEN, ISPC>
+        protected sealed class ZGENDExtProxy : ModelPropertyChange<IZGEN, ISPC>
         {
             
             /// <summary>
@@ -119795,7 +119795,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AuxSCO property
         /// </summary>
-        private sealed class ZGENAuxSCOProxy : ModelPropertyChange<IZGEN, ISPC>
+        protected sealed class ZGENAuxSCOProxy : ModelPropertyChange<IZGEN, ISPC>
         {
             
             /// <summary>
@@ -119826,7 +119826,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StopVlv property
         /// </summary>
-        private sealed class ZGENStopVlvProxy : ModelPropertyChange<IZGEN, ISPC>
+        protected sealed class ZGENStopVlvProxy : ModelPropertyChange<IZGEN, ISPC>
         {
             
             /// <summary>
@@ -119857,7 +119857,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactPwrR property
         /// </summary>
-        private sealed class ZGENReactPwrRProxy : ModelPropertyChange<IZGEN, ISPC>
+        protected sealed class ZGENReactPwrRProxy : ModelPropertyChange<IZGEN, ISPC>
         {
             
             /// <summary>
@@ -119888,7 +119888,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactPwrL property
         /// </summary>
-        private sealed class ZGENReactPwrLProxy : ModelPropertyChange<IZGEN, ISPC>
+        protected sealed class ZGENReactPwrLProxy : ModelPropertyChange<IZGEN, ISPC>
         {
             
             /// <summary>
@@ -119919,7 +119919,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the GnSpd property
         /// </summary>
-        private sealed class ZGENGnSpdProxy : ModelPropertyChange<IZGEN, IMV>
+        protected sealed class ZGENGnSpdProxy : ModelPropertyChange<IZGEN, IMV>
         {
             
             /// <summary>
@@ -119950,7 +119950,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OANL property
         /// </summary>
-        private sealed class ZGENOANLProxy : ModelPropertyChange<IZGEN, ISPS>
+        protected sealed class ZGENOANLProxy : ModelPropertyChange<IZGEN, ISPS>
         {
             
             /// <summary>
@@ -119981,7 +119981,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ClkRot property
         /// </summary>
-        private sealed class ZGENClkRotProxy : ModelPropertyChange<IZGEN, ISPS>
+        protected sealed class ZGENClkRotProxy : ModelPropertyChange<IZGEN, ISPS>
         {
             
             /// <summary>
@@ -120012,7 +120012,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the CntClkRot property
         /// </summary>
-        private sealed class ZGENCntClkRotProxy : ModelPropertyChange<IZGEN, ISPS>
+        protected sealed class ZGENCntClkRotProxy : ModelPropertyChange<IZGEN, ISPS>
         {
             
             /// <summary>
@@ -120043,7 +120043,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpUnExt property
         /// </summary>
-        private sealed class ZGENOpUnExtProxy : ModelPropertyChange<IZGEN, ISPS>
+        protected sealed class ZGENOpUnExtProxy : ModelPropertyChange<IZGEN, ISPS>
         {
             
             /// <summary>
@@ -120074,7 +120074,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OpOvExt property
         /// </summary>
-        private sealed class ZGENOpOvExtProxy : ModelPropertyChange<IZGEN, ISPS>
+        protected sealed class ZGENOpOvExtProxy : ModelPropertyChange<IZGEN, ISPS>
         {
             
             /// <summary>
@@ -120105,7 +120105,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LosOil property
         /// </summary>
-        private sealed class ZGENLosOilProxy : ModelPropertyChange<IZGEN, ISPS>
+        protected sealed class ZGENLosOilProxy : ModelPropertyChange<IZGEN, ISPS>
         {
             
             /// <summary>
@@ -120136,7 +120136,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LosVac property
         /// </summary>
-        private sealed class ZGENLosVacProxy : ModelPropertyChange<IZGEN, ISPS>
+        protected sealed class ZGENLosVacProxy : ModelPropertyChange<IZGEN, ISPS>
         {
             
             /// <summary>
@@ -120167,7 +120167,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PresAlm property
         /// </summary>
-        private sealed class ZGENPresAlmProxy : ModelPropertyChange<IZGEN, ISPS>
+        protected sealed class ZGENPresAlmProxy : ModelPropertyChange<IZGEN, ISPS>
         {
             
             /// <summary>
@@ -120198,7 +120198,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DmdPwr property
         /// </summary>
-        private sealed class ZGENDmdPwrProxy : ModelPropertyChange<IZGEN, IASG>
+        protected sealed class ZGENDmdPwrProxy : ModelPropertyChange<IZGEN, IASG>
         {
             
             /// <summary>
@@ -120229,7 +120229,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PwrRtg property
         /// </summary>
-        private sealed class ZGENPwrRtgProxy : ModelPropertyChange<IZGEN, IASG>
+        protected sealed class ZGENPwrRtgProxy : ModelPropertyChange<IZGEN, IASG>
         {
             
             /// <summary>
@@ -120260,7 +120260,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.LNNodes.LNGroupZ
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VRtg property
         /// </summary>
-        private sealed class ZGENVRtgProxy : ModelPropertyChange<IZGEN, IASG>
+        protected sealed class ZGENVRtgProxy : ModelPropertyChange<IZGEN, IASG>
         {
             
             /// <summary>
@@ -121383,7 +121383,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the val property
         /// </summary>
-        private sealed class TimeStampValProxy : ModelPropertyChange<ITimeStamp, IP_TimeStamp>
+        protected sealed class TimeStampValProxy : ModelPropertyChange<ITimeStamp, IP_TimeStamp>
         {
             
             /// <summary>
@@ -121793,7 +121793,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the secondSinceEpoch property
         /// </summary>
-        private sealed class P_TimeStampSecondSinceEpochProxy : ModelPropertyChange<IP_TimeStamp, Nullable<int>>
+        protected sealed class P_TimeStampSecondSinceEpochProxy : ModelPropertyChange<IP_TimeStamp, Nullable<int>>
         {
             
             /// <summary>
@@ -121824,7 +121824,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the fractionOfSecond property
         /// </summary>
-        private sealed class P_TimeStampFractionOfSecondProxy : ModelPropertyChange<IP_TimeStamp, Nullable<int>>
+        protected sealed class P_TimeStampFractionOfSecondProxy : ModelPropertyChange<IP_TimeStamp, Nullable<int>>
         {
             
             /// <summary>
@@ -121855,7 +121855,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the timeQuality property
         /// </summary>
-        private sealed class P_TimeStampTimeQualityProxy : ModelPropertyChange<IP_TimeStamp, ITimeQuality>
+        protected sealed class P_TimeStampTimeQualityProxy : ModelPropertyChange<IP_TimeStamp, ITimeQuality>
         {
             
             /// <summary>
@@ -122144,7 +122144,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the leapSecondsKnown property
         /// </summary>
-        private sealed class TimeQualityLeapSecondsKnownProxy : ModelPropertyChange<ITimeQuality, Nullable<bool>>
+        protected sealed class TimeQualityLeapSecondsKnownProxy : ModelPropertyChange<ITimeQuality, Nullable<bool>>
         {
             
             /// <summary>
@@ -122175,7 +122175,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the clockFailure property
         /// </summary>
-        private sealed class TimeQualityClockFailureProxy : ModelPropertyChange<ITimeQuality, Nullable<bool>>
+        protected sealed class TimeQualityClockFailureProxy : ModelPropertyChange<ITimeQuality, Nullable<bool>>
         {
             
             /// <summary>
@@ -122206,7 +122206,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the clockNotSynchronized property
         /// </summary>
-        private sealed class TimeQualityClockNotSynchronizedProxy : ModelPropertyChange<ITimeQuality, Nullable<bool>>
+        protected sealed class TimeQualityClockNotSynchronizedProxy : ModelPropertyChange<ITimeQuality, Nullable<bool>>
         {
             
             /// <summary>
@@ -122237,7 +122237,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the timeAccuracy property
         /// </summary>
-        private sealed class TimeQualityTimeAccuracyProxy : ModelPropertyChange<ITimeQuality, Nullable<TimeAccuracyKind>>
+        protected sealed class TimeQualityTimeAccuracyProxy : ModelPropertyChange<ITimeQuality, Nullable<TimeAccuracyKind>>
         {
             
             /// <summary>
@@ -122422,7 +122422,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the i property
         /// </summary>
-        private sealed class AnalogueValueIProxy : ModelPropertyChange<IAnalogueValue, Nullable<int>>
+        protected sealed class AnalogueValueIProxy : ModelPropertyChange<IAnalogueValue, Nullable<int>>
         {
             
             /// <summary>
@@ -122453,7 +122453,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the f property
         /// </summary>
-        private sealed class AnalogueValueFProxy : ModelPropertyChange<IAnalogueValue, Nullable<float>>
+        protected sealed class AnalogueValueFProxy : ModelPropertyChange<IAnalogueValue, Nullable<float>>
         {
             
             /// <summary>
@@ -122586,7 +122586,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the val property
         /// </summary>
-        private sealed class AngleReferenceValProxy : ModelPropertyChange<IAngleReference, Nullable<AngleReferenceKind>>
+        protected sealed class AngleReferenceValProxy : ModelPropertyChange<IAngleReference, Nullable<AngleReferenceKind>>
         {
             
             /// <summary>
@@ -122719,7 +122719,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the val property
         /// </summary>
-        private sealed class BSControlValProxy : ModelPropertyChange<IBSControl, Nullable<BSControlKind>>
+        protected sealed class BSControlValProxy : ModelPropertyChange<IBSControl, Nullable<BSControlKind>>
         {
             
             /// <summary>
@@ -122852,7 +122852,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the val property
         /// </summary>
-        private sealed class CMVAngleReferenceValProxy : ModelPropertyChange<ICMVAngleReference, Nullable<CMVAngleReferenceKind>>
+        protected sealed class CMVAngleReferenceValProxy : ModelPropertyChange<ICMVAngleReference, Nullable<CMVAngleReferenceKind>>
         {
             
             /// <summary>
@@ -122985,7 +122985,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the val property
         /// </summary>
-        private sealed class ControlOutputValProxy : ModelPropertyChange<IControlOutput, Nullable<ControlOutputKind>>
+        protected sealed class ControlOutputValProxy : ModelPropertyChange<IControlOutput, Nullable<ControlOutputKind>>
         {
             
             /// <summary>
@@ -123118,7 +123118,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the val property
         /// </summary>
-        private sealed class CtlModelsValProxy : ModelPropertyChange<ICtlModels, Nullable<CtlModelsKind>>
+        protected sealed class CtlModelsValProxy : ModelPropertyChange<ICtlModels, Nullable<CtlModelsKind>>
         {
             
             /// <summary>
@@ -123251,7 +123251,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the val property
         /// </summary>
-        private sealed class CurveCharValProxy : ModelPropertyChange<ICurveChar, Nullable<CurveCharKind>>
+        protected sealed class CurveCharValProxy : ModelPropertyChange<ICurveChar, Nullable<CurveCharKind>>
         {
             
             /// <summary>
@@ -123384,7 +123384,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the val property
         /// </summary>
-        private sealed class DirectionPhaseValProxy : ModelPropertyChange<IDirectionPhase, Nullable<DirectionPhaseKind>>
+        protected sealed class DirectionPhaseValProxy : ModelPropertyChange<IDirectionPhase, Nullable<DirectionPhaseKind>>
         {
             
             /// <summary>
@@ -123517,7 +123517,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the val property
         /// </summary>
-        private sealed class DPStatusValProxy : ModelPropertyChange<IDPStatus, Nullable<DPStatusKind>>
+        protected sealed class DPStatusValProxy : ModelPropertyChange<IDPStatus, Nullable<DPStatusKind>>
         {
             
             /// <summary>
@@ -123650,7 +123650,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the val property
         /// </summary>
-        private sealed class FaultDirectionValProxy : ModelPropertyChange<IFaultDirection, Nullable<FaultDirectionKind>>
+        protected sealed class FaultDirectionValProxy : ModelPropertyChange<IFaultDirection, Nullable<FaultDirectionKind>>
         {
             
             /// <summary>
@@ -123783,7 +123783,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the val property
         /// </summary>
-        private sealed class MagReferenceValProxy : ModelPropertyChange<IMagReference, Nullable<MagReferenceKind>>
+        protected sealed class MagReferenceValProxy : ModelPropertyChange<IMagReference, Nullable<MagReferenceKind>>
         {
             
             /// <summary>
@@ -123916,7 +123916,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the val property
         /// </summary>
-        private sealed class MultiplierValProxy : ModelPropertyChange<IMultiplier, Nullable<MultiplierKind>>
+        protected sealed class MultiplierValProxy : ModelPropertyChange<IMultiplier, Nullable<MultiplierKind>>
         {
             
             /// <summary>
@@ -124274,7 +124274,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the orident property
         /// </summary>
-        private sealed class OriginatorOridentProxy : ModelPropertyChange<IOriginator, string>
+        protected sealed class OriginatorOridentProxy : ModelPropertyChange<IOriginator, string>
         {
             
             /// <summary>
@@ -124305,7 +124305,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the orCat property
         /// </summary>
-        private sealed class OriginatorOrCatProxy : ModelPropertyChange<IOriginator, IOriginatorCategory>
+        protected sealed class OriginatorOrCatProxy : ModelPropertyChange<IOriginator, IOriginatorCategory>
         {
             
             /// <summary>
@@ -124439,7 +124439,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the val property
         /// </summary>
-        private sealed class OriginatorCategoryValProxy : ModelPropertyChange<IOriginatorCategory, Nullable<OriginatorCategoryKind>>
+        protected sealed class OriginatorCategoryValProxy : ModelPropertyChange<IOriginatorCategory, Nullable<OriginatorCategoryKind>>
         {
             
             /// <summary>
@@ -124572,7 +124572,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the val property
         /// </summary>
-        private sealed class PhaseReferenceValProxy : ModelPropertyChange<IPhaseReference, Nullable<PhaseReferenceKind>>
+        protected sealed class PhaseReferenceValProxy : ModelPropertyChange<IPhaseReference, Nullable<PhaseReferenceKind>>
         {
             
             /// <summary>
@@ -124757,7 +124757,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the xVal property
         /// </summary>
-        private sealed class PointXValProxy : ModelPropertyChange<IPoint, Nullable<float>>
+        protected sealed class PointXValProxy : ModelPropertyChange<IPoint, Nullable<float>>
         {
             
             /// <summary>
@@ -124788,7 +124788,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the yVal property
         /// </summary>
-        private sealed class PointYValProxy : ModelPropertyChange<IPoint, Nullable<float>>
+        protected sealed class PointYValProxy : ModelPropertyChange<IPoint, Nullable<float>>
         {
             
             /// <summary>
@@ -124930,7 +124930,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         {
             if ((feature == "POINT"))
             {
-                return this._point;
+                return ((System.Collections.IList)(this.Point));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -125501,7 +125501,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the onDur property
         /// </summary>
-        private sealed class PulseConfigOnDurProxy : ModelPropertyChange<IPulseConfig, Nullable<int>>
+        protected sealed class PulseConfigOnDurProxy : ModelPropertyChange<IPulseConfig, Nullable<int>>
         {
             
             /// <summary>
@@ -125532,7 +125532,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the offDur property
         /// </summary>
-        private sealed class PulseConfigOffDurProxy : ModelPropertyChange<IPulseConfig, Nullable<int>>
+        protected sealed class PulseConfigOffDurProxy : ModelPropertyChange<IPulseConfig, Nullable<int>>
         {
             
             /// <summary>
@@ -125563,7 +125563,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the numPls property
         /// </summary>
-        private sealed class PulseConfigNumPlsProxy : ModelPropertyChange<IPulseConfig, Nullable<int>>
+        protected sealed class PulseConfigNumPlsProxy : ModelPropertyChange<IPulseConfig, Nullable<int>>
         {
             
             /// <summary>
@@ -125594,7 +125594,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the cmdQual property
         /// </summary>
-        private sealed class PulseConfigCmdQualProxy : ModelPropertyChange<IPulseConfig, IControlOutput>
+        protected sealed class PulseConfigCmdQualProxy : ModelPropertyChange<IPulseConfig, IControlOutput>
         {
             
             /// <summary>
@@ -126108,7 +126108,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the test property
         /// </summary>
-        private sealed class QualityTestProxy : ModelPropertyChange<IQuality, Nullable<bool>>
+        protected sealed class QualityTestProxy : ModelPropertyChange<IQuality, Nullable<bool>>
         {
             
             /// <summary>
@@ -126139,7 +126139,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the operatorBlocked property
         /// </summary>
-        private sealed class QualityOperatorBlockedProxy : ModelPropertyChange<IQuality, Nullable<bool>>
+        protected sealed class QualityOperatorBlockedProxy : ModelPropertyChange<IQuality, Nullable<bool>>
         {
             
             /// <summary>
@@ -126170,7 +126170,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the validity property
         /// </summary>
-        private sealed class QualityValidityProxy : ModelPropertyChange<IQuality, Nullable<ValidityKind>>
+        protected sealed class QualityValidityProxy : ModelPropertyChange<IQuality, Nullable<ValidityKind>>
         {
             
             /// <summary>
@@ -126201,7 +126201,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the source property
         /// </summary>
-        private sealed class QualitySourceProxy : ModelPropertyChange<IQuality, Nullable<SourceKind>>
+        protected sealed class QualitySourceProxy : ModelPropertyChange<IQuality, Nullable<SourceKind>>
         {
             
             /// <summary>
@@ -126232,7 +126232,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the detailQual property
         /// </summary>
-        private sealed class QualityDetailQualProxy : ModelPropertyChange<IQuality, IDetailQual>
+        protected sealed class QualityDetailQualProxy : ModelPropertyChange<IQuality, IDetailQual>
         {
             
             /// <summary>
@@ -126729,7 +126729,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the overflow property
         /// </summary>
-        private sealed class DetailQualOverflowProxy : ModelPropertyChange<IDetailQual, Nullable<bool>>
+        protected sealed class DetailQualOverflowProxy : ModelPropertyChange<IDetailQual, Nullable<bool>>
         {
             
             /// <summary>
@@ -126760,7 +126760,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the outOfRange property
         /// </summary>
-        private sealed class DetailQualOutOfRangeProxy : ModelPropertyChange<IDetailQual, Nullable<bool>>
+        protected sealed class DetailQualOutOfRangeProxy : ModelPropertyChange<IDetailQual, Nullable<bool>>
         {
             
             /// <summary>
@@ -126791,7 +126791,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the badReference property
         /// </summary>
-        private sealed class DetailQualBadReferenceProxy : ModelPropertyChange<IDetailQual, Nullable<bool>>
+        protected sealed class DetailQualBadReferenceProxy : ModelPropertyChange<IDetailQual, Nullable<bool>>
         {
             
             /// <summary>
@@ -126822,7 +126822,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the oscillatory property
         /// </summary>
-        private sealed class DetailQualOscillatoryProxy : ModelPropertyChange<IDetailQual, Nullable<bool>>
+        protected sealed class DetailQualOscillatoryProxy : ModelPropertyChange<IDetailQual, Nullable<bool>>
         {
             
             /// <summary>
@@ -126853,7 +126853,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the failure property
         /// </summary>
-        private sealed class DetailQualFailureProxy : ModelPropertyChange<IDetailQual, Nullable<bool>>
+        protected sealed class DetailQualFailureProxy : ModelPropertyChange<IDetailQual, Nullable<bool>>
         {
             
             /// <summary>
@@ -126884,7 +126884,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the oldData property
         /// </summary>
-        private sealed class DetailQualOldDataProxy : ModelPropertyChange<IDetailQual, Nullable<bool>>
+        protected sealed class DetailQualOldDataProxy : ModelPropertyChange<IDetailQual, Nullable<bool>>
         {
             
             /// <summary>
@@ -126915,7 +126915,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the inconsistent property
         /// </summary>
-        private sealed class DetailQualInconsistentProxy : ModelPropertyChange<IDetailQual, Nullable<bool>>
+        protected sealed class DetailQualInconsistentProxy : ModelPropertyChange<IDetailQual, Nullable<bool>>
         {
             
             /// <summary>
@@ -126946,7 +126946,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the inaccurate property
         /// </summary>
-        private sealed class DetailQualInaccurateProxy : ModelPropertyChange<IDetailQual, Nullable<bool>>
+        protected sealed class DetailQualInaccurateProxy : ModelPropertyChange<IDetailQual, Nullable<bool>>
         {
             
             /// <summary>
@@ -127079,7 +127079,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the val property
         /// </summary>
-        private sealed class RangeValProxy : ModelPropertyChange<IRange, Nullable<RangeKind>>
+        protected sealed class RangeValProxy : ModelPropertyChange<IRange, Nullable<RangeKind>>
         {
             
             /// <summary>
@@ -127874,7 +127874,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the hhLim property
         /// </summary>
-        private sealed class RangeConfigHhLimProxy : ModelPropertyChange<IRangeConfig, IAnalogueValue>
+        protected sealed class RangeConfigHhLimProxy : ModelPropertyChange<IRangeConfig, IAnalogueValue>
         {
             
             /// <summary>
@@ -127905,7 +127905,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the hLim property
         /// </summary>
-        private sealed class RangeConfigHLimProxy : ModelPropertyChange<IRangeConfig, IAnalogueValue>
+        protected sealed class RangeConfigHLimProxy : ModelPropertyChange<IRangeConfig, IAnalogueValue>
         {
             
             /// <summary>
@@ -127936,7 +127936,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the lLim property
         /// </summary>
-        private sealed class RangeConfigLLimProxy : ModelPropertyChange<IRangeConfig, IAnalogueValue>
+        protected sealed class RangeConfigLLimProxy : ModelPropertyChange<IRangeConfig, IAnalogueValue>
         {
             
             /// <summary>
@@ -127967,7 +127967,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the llLim property
         /// </summary>
-        private sealed class RangeConfigLlLimProxy : ModelPropertyChange<IRangeConfig, IAnalogueValue>
+        protected sealed class RangeConfigLlLimProxy : ModelPropertyChange<IRangeConfig, IAnalogueValue>
         {
             
             /// <summary>
@@ -127998,7 +127998,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the min property
         /// </summary>
-        private sealed class RangeConfigMinProxy : ModelPropertyChange<IRangeConfig, IAnalogueValue>
+        protected sealed class RangeConfigMinProxy : ModelPropertyChange<IRangeConfig, IAnalogueValue>
         {
             
             /// <summary>
@@ -128029,7 +128029,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the max property
         /// </summary>
-        private sealed class RangeConfigMaxProxy : ModelPropertyChange<IRangeConfig, IAnalogueValue>
+        protected sealed class RangeConfigMaxProxy : ModelPropertyChange<IRangeConfig, IAnalogueValue>
         {
             
             /// <summary>
@@ -128162,7 +128162,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the val property
         /// </summary>
-        private sealed class SboClassesValProxy : ModelPropertyChange<ISboClasses, Nullable<SboClassesKind>>
+        protected sealed class SboClassesValProxy : ModelPropertyChange<ISboClasses, Nullable<SboClassesKind>>
         {
             
             /// <summary>
@@ -128347,7 +128347,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the scaleFactor property
         /// </summary>
-        private sealed class ScaledValueConfigScaleFactorProxy : ModelPropertyChange<IScaledValueConfig, Nullable<float>>
+        protected sealed class ScaledValueConfigScaleFactorProxy : ModelPropertyChange<IScaledValueConfig, Nullable<float>>
         {
             
             /// <summary>
@@ -128378,7 +128378,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the offset property
         /// </summary>
-        private sealed class ScaledValueConfigOffsetProxy : ModelPropertyChange<IScaledValueConfig, Nullable<float>>
+        protected sealed class ScaledValueConfigOffsetProxy : ModelPropertyChange<IScaledValueConfig, Nullable<float>>
         {
             
             /// <summary>
@@ -128511,7 +128511,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the val property
         /// </summary>
-        private sealed class SequenceValProxy : ModelPropertyChange<ISequence, Nullable<SequenceKind>>
+        protected sealed class SequenceValProxy : ModelPropertyChange<ISequence, Nullable<SequenceKind>>
         {
             
             /// <summary>
@@ -128644,7 +128644,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the val property
         /// </summary>
-        private sealed class SeverityValProxy : ModelPropertyChange<ISeverity, Nullable<SeverityKind>>
+        protected sealed class SeverityValProxy : ModelPropertyChange<ISeverity, Nullable<SeverityKind>>
         {
             
             /// <summary>
@@ -128775,7 +128775,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SlUnitsKind property
         /// </summary>
-        private sealed class SlUnitsSlUnitsKindProxy : ModelPropertyChange<ISlUnits, Nullable<SIUnitsKind>>
+        protected sealed class SlUnitsSlUnitsKindProxy : ModelPropertyChange<ISlUnits, Nullable<SIUnitsKind>>
         {
             
             /// <summary>
@@ -129160,7 +129160,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SlUnits property
         /// </summary>
-        private sealed class UnitsSlUnitsProxy : ModelPropertyChange<IUnits, ISlUnits>
+        protected sealed class UnitsSlUnitsProxy : ModelPropertyChange<IUnits, ISlUnits>
         {
             
             /// <summary>
@@ -129191,7 +129191,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the multiplier property
         /// </summary>
-        private sealed class UnitsMultiplierProxy : ModelPropertyChange<IUnits, IMultiplier>
+        protected sealed class UnitsMultiplierProxy : ModelPropertyChange<IUnits, IMultiplier>
         {
             
             /// <summary>
@@ -129376,7 +129376,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the posVal property
         /// </summary>
-        private sealed class ValWithTransPosValProxy : ModelPropertyChange<IValWithTrans, Nullable<int>>
+        protected sealed class ValWithTransPosValProxy : ModelPropertyChange<IValWithTrans, Nullable<int>>
         {
             
             /// <summary>
@@ -129407,7 +129407,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the transInd property
         /// </summary>
-        private sealed class ValWithTransTransIndProxy : ModelPropertyChange<IValWithTrans, Nullable<bool>>
+        protected sealed class ValWithTransTransIndProxy : ModelPropertyChange<IValWithTrans, Nullable<bool>>
         {
             
             /// <summary>
@@ -129794,7 +129794,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the mag property
         /// </summary>
-        private sealed class VectorMagProxy : ModelPropertyChange<IVector, IAnalogueValue>
+        protected sealed class VectorMagProxy : ModelPropertyChange<IVector, IAnalogueValue>
         {
             
             /// <summary>
@@ -129825,7 +129825,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ang property
         /// </summary>
-        private sealed class VectorAngProxy : ModelPropertyChange<IVector, IAnalogueValue>
+        protected sealed class VectorAngProxy : ModelPropertyChange<IVector, IAnalogueValue>
         {
             
             /// <summary>
@@ -129965,7 +129965,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         {
             if ((feature == "VECTOR"))
             {
-                return this._vector;
+                return ((System.Collections.IList)(this.Vector));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -130311,7 +130311,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the cdcNs property
         /// </summary>
-        private sealed class C_PrimitiveCDCCdcNsProxy : ModelPropertyChange<IC_PrimitiveCDC, string>
+        protected sealed class C_PrimitiveCDCCdcNsProxy : ModelPropertyChange<IC_PrimitiveCDC, string>
         {
             
             /// <summary>
@@ -130342,7 +130342,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the cdcName property
         /// </summary>
-        private sealed class C_PrimitiveCDCCdcNameProxy : ModelPropertyChange<IC_PrimitiveCDC, string>
+        protected sealed class C_PrimitiveCDCCdcNameProxy : ModelPropertyChange<IC_PrimitiveCDC, string>
         {
             
             /// <summary>
@@ -130373,7 +130373,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the dataNs property
         /// </summary>
-        private sealed class C_PrimitiveCDCDataNsProxy : ModelPropertyChange<IC_PrimitiveCDC, string>
+        protected sealed class C_PrimitiveCDCDataNsProxy : ModelPropertyChange<IC_PrimitiveCDC, string>
         {
             
             /// <summary>
@@ -130610,7 +130610,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the cdcNs property
         /// </summary>
-        private sealed class C_ComposedCDCCdcNsProxy : ModelPropertyChange<IC_ComposedCDC, string>
+        protected sealed class C_ComposedCDCCdcNsProxy : ModelPropertyChange<IC_ComposedCDC, string>
         {
             
             /// <summary>
@@ -130641,7 +130641,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the cdcName property
         /// </summary>
-        private sealed class C_ComposedCDCCdcNameProxy : ModelPropertyChange<IC_ComposedCDC, string>
+        protected sealed class C_ComposedCDCCdcNameProxy : ModelPropertyChange<IC_ComposedCDC, string>
         {
             
             /// <summary>
@@ -130672,7 +130672,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the dataNs property
         /// </summary>
-        private sealed class C_ComposedCDCDataNsProxy : ModelPropertyChange<IC_ComposedCDC, string>
+        protected sealed class C_ComposedCDCDataNsProxy : ModelPropertyChange<IC_ComposedCDC, string>
         {
             
             /// <summary>
@@ -131082,7 +131082,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the d property
         /// </summary>
-        private sealed class StatusInfoDProxy : ModelPropertyChange<IStatusInfo, string>
+        protected sealed class StatusInfoDProxy : ModelPropertyChange<IStatusInfo, string>
         {
             
             /// <summary>
@@ -131113,7 +131113,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the dU property
         /// </summary>
-        private sealed class StatusInfoDUProxy : ModelPropertyChange<IStatusInfo, string>
+        protected sealed class StatusInfoDUProxy : ModelPropertyChange<IStatusInfo, string>
         {
             
             /// <summary>
@@ -131144,7 +131144,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the t property
         /// </summary>
-        private sealed class StatusInfoTProxy : ModelPropertyChange<IStatusInfo, ITimeStamp>
+        protected sealed class StatusInfoTProxy : ModelPropertyChange<IStatusInfo, ITimeStamp>
         {
             
             /// <summary>
@@ -131760,7 +131760,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the stVal property
         /// </summary>
-        private sealed class SPSStValProxy : ModelPropertyChange<ISPS, Nullable<bool>>
+        protected sealed class SPSStValProxy : ModelPropertyChange<ISPS, Nullable<bool>>
         {
             
             /// <summary>
@@ -131791,7 +131791,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subEna property
         /// </summary>
-        private sealed class SPSSubEnaProxy : ModelPropertyChange<ISPS, Nullable<bool>>
+        protected sealed class SPSSubEnaProxy : ModelPropertyChange<ISPS, Nullable<bool>>
         {
             
             /// <summary>
@@ -131822,7 +131822,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subVal property
         /// </summary>
-        private sealed class SPSSubValProxy : ModelPropertyChange<ISPS, Nullable<bool>>
+        protected sealed class SPSSubValProxy : ModelPropertyChange<ISPS, Nullable<bool>>
         {
             
             /// <summary>
@@ -131853,7 +131853,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subID property
         /// </summary>
-        private sealed class SPSSubIDProxy : ModelPropertyChange<ISPS, string>
+        protected sealed class SPSSubIDProxy : ModelPropertyChange<ISPS, string>
         {
             
             /// <summary>
@@ -131884,7 +131884,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the q property
         /// </summary>
-        private sealed class SPSQProxy : ModelPropertyChange<ISPS, IQuality>
+        protected sealed class SPSQProxy : ModelPropertyChange<ISPS, IQuality>
         {
             
             /// <summary>
@@ -131915,7 +131915,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subQ property
         /// </summary>
-        private sealed class SPSSubQProxy : ModelPropertyChange<ISPS, IQuality>
+        protected sealed class SPSSubQProxy : ModelPropertyChange<ISPS, IQuality>
         {
             
             /// <summary>
@@ -132531,7 +132531,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the stVal property
         /// </summary>
-        private sealed class INSStValProxy : ModelPropertyChange<IINS, Nullable<int>>
+        protected sealed class INSStValProxy : ModelPropertyChange<IINS, Nullable<int>>
         {
             
             /// <summary>
@@ -132562,7 +132562,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subEna property
         /// </summary>
-        private sealed class INSSubEnaProxy : ModelPropertyChange<IINS, Nullable<bool>>
+        protected sealed class INSSubEnaProxy : ModelPropertyChange<IINS, Nullable<bool>>
         {
             
             /// <summary>
@@ -132593,7 +132593,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subVal property
         /// </summary>
-        private sealed class INSSubValProxy : ModelPropertyChange<IINS, Nullable<int>>
+        protected sealed class INSSubValProxy : ModelPropertyChange<IINS, Nullable<int>>
         {
             
             /// <summary>
@@ -132624,7 +132624,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subID property
         /// </summary>
-        private sealed class INSSubIDProxy : ModelPropertyChange<IINS, string>
+        protected sealed class INSSubIDProxy : ModelPropertyChange<IINS, string>
         {
             
             /// <summary>
@@ -132655,7 +132655,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the q property
         /// </summary>
-        private sealed class INSQProxy : ModelPropertyChange<IINS, IQuality>
+        protected sealed class INSQProxy : ModelPropertyChange<IINS, IQuality>
         {
             
             /// <summary>
@@ -132686,7 +132686,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subQ property
         /// </summary>
-        private sealed class INSSubQProxy : ModelPropertyChange<IINS, IQuality>
+        protected sealed class INSSubQProxy : ModelPropertyChange<IINS, IQuality>
         {
             
             /// <summary>
@@ -133402,7 +133402,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subEna property
         /// </summary>
-        private sealed class DPSSubEnaProxy : ModelPropertyChange<IDPS, Nullable<bool>>
+        protected sealed class DPSSubEnaProxy : ModelPropertyChange<IDPS, Nullable<bool>>
         {
             
             /// <summary>
@@ -133433,7 +133433,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subID property
         /// </summary>
-        private sealed class DPSSubIDProxy : ModelPropertyChange<IDPS, string>
+        protected sealed class DPSSubIDProxy : ModelPropertyChange<IDPS, string>
         {
             
             /// <summary>
@@ -133464,7 +133464,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the stVal property
         /// </summary>
-        private sealed class DPSStValProxy : ModelPropertyChange<IDPS, IDPStatus>
+        protected sealed class DPSStValProxy : ModelPropertyChange<IDPS, IDPStatus>
         {
             
             /// <summary>
@@ -133495,7 +133495,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the q property
         /// </summary>
-        private sealed class DPSQProxy : ModelPropertyChange<IDPS, IQuality>
+        protected sealed class DPSQProxy : ModelPropertyChange<IDPS, IQuality>
         {
             
             /// <summary>
@@ -133526,7 +133526,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subVal property
         /// </summary>
-        private sealed class DPSSubValProxy : ModelPropertyChange<IDPS, IDPStatus>
+        protected sealed class DPSSubValProxy : ModelPropertyChange<IDPS, IDPStatus>
         {
             
             /// <summary>
@@ -133557,7 +133557,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subQ property
         /// </summary>
-        private sealed class DPSSubQProxy : ModelPropertyChange<IDPS, IQuality>
+        protected sealed class DPSSubQProxy : ModelPropertyChange<IDPS, IQuality>
         {
             
             /// <summary>
@@ -134225,7 +134225,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the general property
         /// </summary>
-        private sealed class ACTGeneralProxy : ModelPropertyChange<IACT, Nullable<bool>>
+        protected sealed class ACTGeneralProxy : ModelPropertyChange<IACT, Nullable<bool>>
         {
             
             /// <summary>
@@ -134256,7 +134256,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the phsA property
         /// </summary>
-        private sealed class ACTPhsAProxy : ModelPropertyChange<IACT, Nullable<bool>>
+        protected sealed class ACTPhsAProxy : ModelPropertyChange<IACT, Nullable<bool>>
         {
             
             /// <summary>
@@ -134287,7 +134287,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the phsB property
         /// </summary>
-        private sealed class ACTPhsBProxy : ModelPropertyChange<IACT, Nullable<bool>>
+        protected sealed class ACTPhsBProxy : ModelPropertyChange<IACT, Nullable<bool>>
         {
             
             /// <summary>
@@ -134318,7 +134318,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the phsC property
         /// </summary>
-        private sealed class ACTPhsCProxy : ModelPropertyChange<IACT, Nullable<bool>>
+        protected sealed class ACTPhsCProxy : ModelPropertyChange<IACT, Nullable<bool>>
         {
             
             /// <summary>
@@ -134349,7 +134349,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the neut property
         /// </summary>
-        private sealed class ACTNeutProxy : ModelPropertyChange<IACT, Nullable<bool>>
+        protected sealed class ACTNeutProxy : ModelPropertyChange<IACT, Nullable<bool>>
         {
             
             /// <summary>
@@ -134380,7 +134380,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the q property
         /// </summary>
-        private sealed class ACTQProxy : ModelPropertyChange<IACT, IQuality>
+        protected sealed class ACTQProxy : ModelPropertyChange<IACT, IQuality>
         {
             
             /// <summary>
@@ -134411,7 +134411,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the operTm property
         /// </summary>
-        private sealed class ACTOperTmProxy : ModelPropertyChange<IACT, ITimeStamp>
+        protected sealed class ACTOperTmProxy : ModelPropertyChange<IACT, ITimeStamp>
         {
             
             /// <summary>
@@ -135487,7 +135487,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the general property
         /// </summary>
-        private sealed class ACDGeneralProxy : ModelPropertyChange<IACD, Nullable<bool>>
+        protected sealed class ACDGeneralProxy : ModelPropertyChange<IACD, Nullable<bool>>
         {
             
             /// <summary>
@@ -135518,7 +135518,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the phsA property
         /// </summary>
-        private sealed class ACDPhsAProxy : ModelPropertyChange<IACD, Nullable<bool>>
+        protected sealed class ACDPhsAProxy : ModelPropertyChange<IACD, Nullable<bool>>
         {
             
             /// <summary>
@@ -135549,7 +135549,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the phsB property
         /// </summary>
-        private sealed class ACDPhsBProxy : ModelPropertyChange<IACD, Nullable<bool>>
+        protected sealed class ACDPhsBProxy : ModelPropertyChange<IACD, Nullable<bool>>
         {
             
             /// <summary>
@@ -135580,7 +135580,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the phsC property
         /// </summary>
-        private sealed class ACDPhsCProxy : ModelPropertyChange<IACD, Nullable<bool>>
+        protected sealed class ACDPhsCProxy : ModelPropertyChange<IACD, Nullable<bool>>
         {
             
             /// <summary>
@@ -135611,7 +135611,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the neut property
         /// </summary>
-        private sealed class ACDNeutProxy : ModelPropertyChange<IACD, Nullable<bool>>
+        protected sealed class ACDNeutProxy : ModelPropertyChange<IACD, Nullable<bool>>
         {
             
             /// <summary>
@@ -135642,7 +135642,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the dirGeneral property
         /// </summary>
-        private sealed class ACDDirGeneralProxy : ModelPropertyChange<IACD, IFaultDirection>
+        protected sealed class ACDDirGeneralProxy : ModelPropertyChange<IACD, IFaultDirection>
         {
             
             /// <summary>
@@ -135673,7 +135673,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the dirPhsA property
         /// </summary>
-        private sealed class ACDDirPhsAProxy : ModelPropertyChange<IACD, IDirectionPhase>
+        protected sealed class ACDDirPhsAProxy : ModelPropertyChange<IACD, IDirectionPhase>
         {
             
             /// <summary>
@@ -135704,7 +135704,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the dirPhsB property
         /// </summary>
-        private sealed class ACDDirPhsBProxy : ModelPropertyChange<IACD, IDirectionPhase>
+        protected sealed class ACDDirPhsBProxy : ModelPropertyChange<IACD, IDirectionPhase>
         {
             
             /// <summary>
@@ -135735,7 +135735,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the dirPhsC property
         /// </summary>
-        private sealed class ACDDirPhsCProxy : ModelPropertyChange<IACD, IDirectionPhase>
+        protected sealed class ACDDirPhsCProxy : ModelPropertyChange<IACD, IDirectionPhase>
         {
             
             /// <summary>
@@ -135766,7 +135766,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the dirNeut property
         /// </summary>
-        private sealed class ACDDirNeutProxy : ModelPropertyChange<IACD, IDirectionPhase>
+        protected sealed class ACDDirNeutProxy : ModelPropertyChange<IACD, IDirectionPhase>
         {
             
             /// <summary>
@@ -135797,7 +135797,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the q property
         /// </summary>
-        private sealed class ACDQProxy : ModelPropertyChange<IACD, IQuality>
+        protected sealed class ACDQProxy : ModelPropertyChange<IACD, IQuality>
         {
             
             /// <summary>
@@ -136259,7 +136259,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the cnt property
         /// </summary>
-        private sealed class SECCntProxy : ModelPropertyChange<ISEC, Nullable<int>>
+        protected sealed class SECCntProxy : ModelPropertyChange<ISEC, Nullable<int>>
         {
             
             /// <summary>
@@ -136290,7 +136290,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the addr property
         /// </summary>
-        private sealed class SECAddrProxy : ModelPropertyChange<ISEC, string>
+        protected sealed class SECAddrProxy : ModelPropertyChange<ISEC, string>
         {
             
             /// <summary>
@@ -136321,7 +136321,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the addInfo property
         /// </summary>
-        private sealed class SECAddInfoProxy : ModelPropertyChange<ISEC, string>
+        protected sealed class SECAddInfoProxy : ModelPropertyChange<ISEC, string>
         {
             
             /// <summary>
@@ -136352,7 +136352,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the sev property
         /// </summary>
-        private sealed class SECSevProxy : ModelPropertyChange<ISEC, ISeverity>
+        protected sealed class SECSevProxy : ModelPropertyChange<ISEC, ISeverity>
         {
             
             /// <summary>
@@ -137276,7 +137276,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the actVal property
         /// </summary>
-        private sealed class BCRActValProxy : ModelPropertyChange<IBCR, Nullable<int>>
+        protected sealed class BCRActValProxy : ModelPropertyChange<IBCR, Nullable<int>>
         {
             
             /// <summary>
@@ -137307,7 +137307,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the frVal property
         /// </summary>
-        private sealed class BCRFrValProxy : ModelPropertyChange<IBCR, Nullable<int>>
+        protected sealed class BCRFrValProxy : ModelPropertyChange<IBCR, Nullable<int>>
         {
             
             /// <summary>
@@ -137338,7 +137338,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the pulsQty property
         /// </summary>
-        private sealed class BCRPulsQtyProxy : ModelPropertyChange<IBCR, Nullable<float>>
+        protected sealed class BCRPulsQtyProxy : ModelPropertyChange<IBCR, Nullable<float>>
         {
             
             /// <summary>
@@ -137369,7 +137369,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the frEna property
         /// </summary>
-        private sealed class BCRFrEnaProxy : ModelPropertyChange<IBCR, Nullable<bool>>
+        protected sealed class BCRFrEnaProxy : ModelPropertyChange<IBCR, Nullable<bool>>
         {
             
             /// <summary>
@@ -137400,7 +137400,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the frPd property
         /// </summary>
-        private sealed class BCRFrPdProxy : ModelPropertyChange<IBCR, Nullable<int>>
+        protected sealed class BCRFrPdProxy : ModelPropertyChange<IBCR, Nullable<int>>
         {
             
             /// <summary>
@@ -137431,7 +137431,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the frRs property
         /// </summary>
-        private sealed class BCRFrRsProxy : ModelPropertyChange<IBCR, Nullable<bool>>
+        protected sealed class BCRFrRsProxy : ModelPropertyChange<IBCR, Nullable<bool>>
         {
             
             /// <summary>
@@ -137462,7 +137462,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the frTm property
         /// </summary>
-        private sealed class BCRFrTmProxy : ModelPropertyChange<IBCR, ITimeStamp>
+        protected sealed class BCRFrTmProxy : ModelPropertyChange<IBCR, ITimeStamp>
         {
             
             /// <summary>
@@ -137493,7 +137493,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the q property
         /// </summary>
-        private sealed class BCRQProxy : ModelPropertyChange<IBCR, IQuality>
+        protected sealed class BCRQProxy : ModelPropertyChange<IBCR, IQuality>
         {
             
             /// <summary>
@@ -137524,7 +137524,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the units property
         /// </summary>
-        private sealed class BCRUnitsProxy : ModelPropertyChange<IBCR, IUnits>
+        protected sealed class BCRUnitsProxy : ModelPropertyChange<IBCR, IUnits>
         {
             
             /// <summary>
@@ -137555,7 +137555,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the strTm property
         /// </summary>
-        private sealed class BCRStrTmProxy : ModelPropertyChange<IBCR, ITimeStamp>
+        protected sealed class BCRStrTmProxy : ModelPropertyChange<IBCR, ITimeStamp>
         {
             
             /// <summary>
@@ -137741,7 +137741,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the d property
         /// </summary>
-        private sealed class PrimitiveMeasureAndInfoDProxy : ModelPropertyChange<IPrimitiveMeasureAndInfo, string>
+        protected sealed class PrimitiveMeasureAndInfoDProxy : ModelPropertyChange<IPrimitiveMeasureAndInfo, string>
         {
             
             /// <summary>
@@ -137772,7 +137772,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the dU property
         /// </summary>
-        private sealed class PrimitiveMeasureAndInfoDUProxy : ModelPropertyChange<IPrimitiveMeasureAndInfo, string>
+        protected sealed class PrimitiveMeasureAndInfoDUProxy : ModelPropertyChange<IPrimitiveMeasureAndInfo, string>
         {
             
             /// <summary>
@@ -137958,7 +137958,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the d property
         /// </summary>
-        private sealed class ComposedMeasureAndInfoDProxy : ModelPropertyChange<IComposedMeasureAndInfo, string>
+        protected sealed class ComposedMeasureAndInfoDProxy : ModelPropertyChange<IComposedMeasureAndInfo, string>
         {
             
             /// <summary>
@@ -137989,7 +137989,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the dU property
         /// </summary>
-        private sealed class ComposedMeasureAndInfoDUProxy : ModelPropertyChange<IComposedMeasureAndInfo, string>
+        protected sealed class ComposedMeasureAndInfoDUProxy : ModelPropertyChange<IComposedMeasureAndInfo, string>
         {
             
             /// <summary>
@@ -139473,7 +139473,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subEna property
         /// </summary>
-        private sealed class MVSubEnaProxy : ModelPropertyChange<IMV, Nullable<bool>>
+        protected sealed class MVSubEnaProxy : ModelPropertyChange<IMV, Nullable<bool>>
         {
             
             /// <summary>
@@ -139504,7 +139504,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subID property
         /// </summary>
-        private sealed class MVSubIDProxy : ModelPropertyChange<IMV, string>
+        protected sealed class MVSubIDProxy : ModelPropertyChange<IMV, string>
         {
             
             /// <summary>
@@ -139535,7 +139535,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the db property
         /// </summary>
-        private sealed class MVDbProxy : ModelPropertyChange<IMV, Nullable<int>>
+        protected sealed class MVDbProxy : ModelPropertyChange<IMV, Nullable<int>>
         {
             
             /// <summary>
@@ -139566,7 +139566,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the zeroDb property
         /// </summary>
-        private sealed class MVZeroDbProxy : ModelPropertyChange<IMV, Nullable<int>>
+        protected sealed class MVZeroDbProxy : ModelPropertyChange<IMV, Nullable<int>>
         {
             
             /// <summary>
@@ -139597,7 +139597,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the smpRate property
         /// </summary>
-        private sealed class MVSmpRateProxy : ModelPropertyChange<IMV, Nullable<int>>
+        protected sealed class MVSmpRateProxy : ModelPropertyChange<IMV, Nullable<int>>
         {
             
             /// <summary>
@@ -139628,7 +139628,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the instMag property
         /// </summary>
-        private sealed class MVInstMagProxy : ModelPropertyChange<IMV, IAnalogueValue>
+        protected sealed class MVInstMagProxy : ModelPropertyChange<IMV, IAnalogueValue>
         {
             
             /// <summary>
@@ -139659,7 +139659,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the mag property
         /// </summary>
-        private sealed class MVMagProxy : ModelPropertyChange<IMV, IAnalogueValue>
+        protected sealed class MVMagProxy : ModelPropertyChange<IMV, IAnalogueValue>
         {
             
             /// <summary>
@@ -139690,7 +139690,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the range property
         /// </summary>
-        private sealed class MVRangeProxy : ModelPropertyChange<IMV, IRange>
+        protected sealed class MVRangeProxy : ModelPropertyChange<IMV, IRange>
         {
             
             /// <summary>
@@ -139721,7 +139721,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the q property
         /// </summary>
-        private sealed class MVQProxy : ModelPropertyChange<IMV, IQuality>
+        protected sealed class MVQProxy : ModelPropertyChange<IMV, IQuality>
         {
             
             /// <summary>
@@ -139752,7 +139752,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the t property
         /// </summary>
-        private sealed class MVTProxy : ModelPropertyChange<IMV, ITimeStamp>
+        protected sealed class MVTProxy : ModelPropertyChange<IMV, ITimeStamp>
         {
             
             /// <summary>
@@ -139783,7 +139783,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subMag property
         /// </summary>
-        private sealed class MVSubMagProxy : ModelPropertyChange<IMV, IAnalogueValue>
+        protected sealed class MVSubMagProxy : ModelPropertyChange<IMV, IAnalogueValue>
         {
             
             /// <summary>
@@ -139814,7 +139814,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subQ property
         /// </summary>
-        private sealed class MVSubQProxy : ModelPropertyChange<IMV, IQuality>
+        protected sealed class MVSubQProxy : ModelPropertyChange<IMV, IQuality>
         {
             
             /// <summary>
@@ -139845,7 +139845,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the units property
         /// </summary>
-        private sealed class MVUnitsProxy : ModelPropertyChange<IMV, IUnits>
+        protected sealed class MVUnitsProxy : ModelPropertyChange<IMV, IUnits>
         {
             
             /// <summary>
@@ -139876,7 +139876,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the sVC property
         /// </summary>
-        private sealed class MVSVCProxy : ModelPropertyChange<IMV, IScaledValueConfig>
+        protected sealed class MVSVCProxy : ModelPropertyChange<IMV, IScaledValueConfig>
         {
             
             /// <summary>
@@ -139907,7 +139907,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the rangeC property
         /// </summary>
-        private sealed class MVRangeCProxy : ModelPropertyChange<IMV, IRangeConfig>
+        protected sealed class MVRangeCProxy : ModelPropertyChange<IMV, IRangeConfig>
         {
             
             /// <summary>
@@ -141595,7 +141595,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subEna property
         /// </summary>
-        private sealed class CMVSubEnaProxy : ModelPropertyChange<ICMV, Nullable<bool>>
+        protected sealed class CMVSubEnaProxy : ModelPropertyChange<ICMV, Nullable<bool>>
         {
             
             /// <summary>
@@ -141626,7 +141626,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subID property
         /// </summary>
-        private sealed class CMVSubIDProxy : ModelPropertyChange<ICMV, string>
+        protected sealed class CMVSubIDProxy : ModelPropertyChange<ICMV, string>
         {
             
             /// <summary>
@@ -141657,7 +141657,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the db property
         /// </summary>
-        private sealed class CMVDbProxy : ModelPropertyChange<ICMV, Nullable<int>>
+        protected sealed class CMVDbProxy : ModelPropertyChange<ICMV, Nullable<int>>
         {
             
             /// <summary>
@@ -141688,7 +141688,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the zeroDb property
         /// </summary>
-        private sealed class CMVZeroDbProxy : ModelPropertyChange<ICMV, Nullable<int>>
+        protected sealed class CMVZeroDbProxy : ModelPropertyChange<ICMV, Nullable<int>>
         {
             
             /// <summary>
@@ -141719,7 +141719,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the smpRate property
         /// </summary>
-        private sealed class CMVSmpRateProxy : ModelPropertyChange<ICMV, Nullable<int>>
+        protected sealed class CMVSmpRateProxy : ModelPropertyChange<ICMV, Nullable<int>>
         {
             
             /// <summary>
@@ -141750,7 +141750,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the instCVal property
         /// </summary>
-        private sealed class CMVInstCValProxy : ModelPropertyChange<ICMV, IVector>
+        protected sealed class CMVInstCValProxy : ModelPropertyChange<ICMV, IVector>
         {
             
             /// <summary>
@@ -141781,7 +141781,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the cVal property
         /// </summary>
-        private sealed class CMVCValProxy : ModelPropertyChange<ICMV, IVector>
+        protected sealed class CMVCValProxy : ModelPropertyChange<ICMV, IVector>
         {
             
             /// <summary>
@@ -141812,7 +141812,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the range property
         /// </summary>
-        private sealed class CMVRangeProxy : ModelPropertyChange<ICMV, IRange>
+        protected sealed class CMVRangeProxy : ModelPropertyChange<ICMV, IRange>
         {
             
             /// <summary>
@@ -141843,7 +141843,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the q property
         /// </summary>
-        private sealed class CMVQProxy : ModelPropertyChange<ICMV, IQuality>
+        protected sealed class CMVQProxy : ModelPropertyChange<ICMV, IQuality>
         {
             
             /// <summary>
@@ -141874,7 +141874,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the t property
         /// </summary>
-        private sealed class CMVTProxy : ModelPropertyChange<ICMV, ITimeStamp>
+        protected sealed class CMVTProxy : ModelPropertyChange<ICMV, ITimeStamp>
         {
             
             /// <summary>
@@ -141905,7 +141905,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subCVal property
         /// </summary>
-        private sealed class CMVSubCValProxy : ModelPropertyChange<ICMV, IVector>
+        protected sealed class CMVSubCValProxy : ModelPropertyChange<ICMV, IVector>
         {
             
             /// <summary>
@@ -141936,7 +141936,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subQ property
         /// </summary>
-        private sealed class CMVSubQProxy : ModelPropertyChange<ICMV, IQuality>
+        protected sealed class CMVSubQProxy : ModelPropertyChange<ICMV, IQuality>
         {
             
             /// <summary>
@@ -141967,7 +141967,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the units property
         /// </summary>
-        private sealed class CMVUnitsProxy : ModelPropertyChange<ICMV, IUnits>
+        protected sealed class CMVUnitsProxy : ModelPropertyChange<ICMV, IUnits>
         {
             
             /// <summary>
@@ -141998,7 +141998,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the rangeC property
         /// </summary>
-        private sealed class CMVRangeCProxy : ModelPropertyChange<ICMV, IRangeConfig>
+        protected sealed class CMVRangeCProxy : ModelPropertyChange<ICMV, IRangeConfig>
         {
             
             /// <summary>
@@ -142029,7 +142029,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the magSVC property
         /// </summary>
-        private sealed class CMVMagSVCProxy : ModelPropertyChange<ICMV, IScaledValueConfig>
+        protected sealed class CMVMagSVCProxy : ModelPropertyChange<ICMV, IScaledValueConfig>
         {
             
             /// <summary>
@@ -142060,7 +142060,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the angSVC property
         /// </summary>
-        private sealed class CMVAngSVCProxy : ModelPropertyChange<ICMV, IScaledValueConfig>
+        protected sealed class CMVAngSVCProxy : ModelPropertyChange<ICMV, IScaledValueConfig>
         {
             
             /// <summary>
@@ -142091,7 +142091,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the angRef property
         /// </summary>
-        private sealed class CMVAngRefProxy : ModelPropertyChange<ICMV, ICMVAngleReference>
+        protected sealed class CMVAngRefProxy : ModelPropertyChange<ICMV, ICMVAngleReference>
         {
             
             /// <summary>
@@ -142988,7 +142988,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the instMag property
         /// </summary>
-        private sealed class SAVInstMagProxy : ModelPropertyChange<ISAV, IAnalogueValue>
+        protected sealed class SAVInstMagProxy : ModelPropertyChange<ISAV, IAnalogueValue>
         {
             
             /// <summary>
@@ -143019,7 +143019,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the q property
         /// </summary>
-        private sealed class SAVQProxy : ModelPropertyChange<ISAV, IQuality>
+        protected sealed class SAVQProxy : ModelPropertyChange<ISAV, IQuality>
         {
             
             /// <summary>
@@ -143050,7 +143050,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the t property
         /// </summary>
-        private sealed class SAVTProxy : ModelPropertyChange<ISAV, ITimeStamp>
+        protected sealed class SAVTProxy : ModelPropertyChange<ISAV, ITimeStamp>
         {
             
             /// <summary>
@@ -143081,7 +143081,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the units property
         /// </summary>
-        private sealed class SAVUnitsProxy : ModelPropertyChange<ISAV, IUnits>
+        protected sealed class SAVUnitsProxy : ModelPropertyChange<ISAV, IUnits>
         {
             
             /// <summary>
@@ -143112,7 +143112,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the sVC property
         /// </summary>
-        private sealed class SAVSVCProxy : ModelPropertyChange<ISAV, IScaledValueConfig>
+        protected sealed class SAVSVCProxy : ModelPropertyChange<ISAV, IScaledValueConfig>
         {
             
             /// <summary>
@@ -143143,7 +143143,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the min property
         /// </summary>
-        private sealed class SAVMinProxy : ModelPropertyChange<ISAV, IAnalogueValue>
+        protected sealed class SAVMinProxy : ModelPropertyChange<ISAV, IAnalogueValue>
         {
             
             /// <summary>
@@ -143174,7 +143174,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the max property
         /// </summary>
-        private sealed class SAVMaxProxy : ModelPropertyChange<ISAV, IAnalogueValue>
+        protected sealed class SAVMaxProxy : ModelPropertyChange<ISAV, IAnalogueValue>
         {
             
             /// <summary>
@@ -143765,7 +143765,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the phsAB property
         /// </summary>
-        private sealed class DELPhsABProxy : ModelPropertyChange<IDEL, ICMV>
+        protected sealed class DELPhsABProxy : ModelPropertyChange<IDEL, ICMV>
         {
             
             /// <summary>
@@ -143796,7 +143796,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the phsBC property
         /// </summary>
-        private sealed class DELPhsBCProxy : ModelPropertyChange<IDEL, ICMV>
+        protected sealed class DELPhsBCProxy : ModelPropertyChange<IDEL, ICMV>
         {
             
             /// <summary>
@@ -143827,7 +143827,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the phsCA property
         /// </summary>
-        private sealed class DELPhsCAProxy : ModelPropertyChange<IDEL, ICMV>
+        protected sealed class DELPhsCAProxy : ModelPropertyChange<IDEL, ICMV>
         {
             
             /// <summary>
@@ -143858,7 +143858,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the angRef property
         /// </summary>
-        private sealed class DELAngRefProxy : ModelPropertyChange<IDEL, IAngleReference>
+        protected sealed class DELAngRefProxy : ModelPropertyChange<IDEL, IAngleReference>
         {
             
             /// <summary>
@@ -144755,7 +144755,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the phsA property
         /// </summary>
-        private sealed class WYEPhsAProxy : ModelPropertyChange<IWYE, ICMV>
+        protected sealed class WYEPhsAProxy : ModelPropertyChange<IWYE, ICMV>
         {
             
             /// <summary>
@@ -144786,7 +144786,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the phsB property
         /// </summary>
-        private sealed class WYEPhsBProxy : ModelPropertyChange<IWYE, ICMV>
+        protected sealed class WYEPhsBProxy : ModelPropertyChange<IWYE, ICMV>
         {
             
             /// <summary>
@@ -144817,7 +144817,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the phsC property
         /// </summary>
-        private sealed class WYEPhsCProxy : ModelPropertyChange<IWYE, ICMV>
+        protected sealed class WYEPhsCProxy : ModelPropertyChange<IWYE, ICMV>
         {
             
             /// <summary>
@@ -144848,7 +144848,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the neut property
         /// </summary>
-        private sealed class WYENeutProxy : ModelPropertyChange<IWYE, ICMV>
+        protected sealed class WYENeutProxy : ModelPropertyChange<IWYE, ICMV>
         {
             
             /// <summary>
@@ -144879,7 +144879,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the net property
         /// </summary>
-        private sealed class WYENetProxy : ModelPropertyChange<IWYE, ICMV>
+        protected sealed class WYENetProxy : ModelPropertyChange<IWYE, ICMV>
         {
             
             /// <summary>
@@ -144910,7 +144910,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the res property
         /// </summary>
-        private sealed class WYEResProxy : ModelPropertyChange<IWYE, ICMV>
+        protected sealed class WYEResProxy : ModelPropertyChange<IWYE, ICMV>
         {
             
             /// <summary>
@@ -144941,7 +144941,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the angRef property
         /// </summary>
-        private sealed class WYEAngRefProxy : ModelPropertyChange<IWYE, IAngleReference>
+        protected sealed class WYEAngRefProxy : ModelPropertyChange<IWYE, IAngleReference>
         {
             
             /// <summary>
@@ -145634,7 +145634,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the c1 property
         /// </summary>
-        private sealed class SEQC1Proxy : ModelPropertyChange<ISEQ, ICMV>
+        protected sealed class SEQC1Proxy : ModelPropertyChange<ISEQ, ICMV>
         {
             
             /// <summary>
@@ -145665,7 +145665,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the c2 property
         /// </summary>
-        private sealed class SEQC2Proxy : ModelPropertyChange<ISEQ, ICMV>
+        protected sealed class SEQC2Proxy : ModelPropertyChange<ISEQ, ICMV>
         {
             
             /// <summary>
@@ -145696,7 +145696,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the c3 property
         /// </summary>
-        private sealed class SEQC3Proxy : ModelPropertyChange<ISEQ, ICMV>
+        protected sealed class SEQC3Proxy : ModelPropertyChange<ISEQ, ICMV>
         {
             
             /// <summary>
@@ -145727,7 +145727,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the seqT property
         /// </summary>
-        private sealed class SEQSeqTProxy : ModelPropertyChange<ISEQ, ISequence>
+        protected sealed class SEQSeqTProxy : ModelPropertyChange<ISEQ, ISequence>
         {
             
             /// <summary>
@@ -145758,7 +145758,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the phsRef property
         /// </summary>
-        private sealed class SEQPhsRefProxy : ModelPropertyChange<ISEQ, IPhaseReference>
+        protected sealed class SEQPhsRefProxy : ModelPropertyChange<ISEQ, IPhaseReference>
         {
             
             /// <summary>
@@ -146784,7 +146784,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the numHar property
         /// </summary>
-        private sealed class HMVNumHarProxy : ModelPropertyChange<IHMV, Nullable<int>>
+        protected sealed class HMVNumHarProxy : ModelPropertyChange<IHMV, Nullable<int>>
         {
             
             /// <summary>
@@ -146815,7 +146815,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the numCyc property
         /// </summary>
-        private sealed class HMVNumCycProxy : ModelPropertyChange<IHMV, Nullable<int>>
+        protected sealed class HMVNumCycProxy : ModelPropertyChange<IHMV, Nullable<int>>
         {
             
             /// <summary>
@@ -146846,7 +146846,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the evalTm property
         /// </summary>
-        private sealed class HMVEvalTmProxy : ModelPropertyChange<IHMV, Nullable<int>>
+        protected sealed class HMVEvalTmProxy : ModelPropertyChange<IHMV, Nullable<int>>
         {
             
             /// <summary>
@@ -146877,7 +146877,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the smpRate property
         /// </summary>
-        private sealed class HMVSmpRateProxy : ModelPropertyChange<IHMV, Nullable<int>>
+        protected sealed class HMVSmpRateProxy : ModelPropertyChange<IHMV, Nullable<int>>
         {
             
             /// <summary>
@@ -146908,7 +146908,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the frequency property
         /// </summary>
-        private sealed class HMVFrequencyProxy : ModelPropertyChange<IHMV, Nullable<float>>
+        protected sealed class HMVFrequencyProxy : ModelPropertyChange<IHMV, Nullable<float>>
         {
             
             /// <summary>
@@ -146939,7 +146939,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the rmsCyc property
         /// </summary>
-        private sealed class HMVRmsCycProxy : ModelPropertyChange<IHMV, Nullable<int>>
+        protected sealed class HMVRmsCycProxy : ModelPropertyChange<IHMV, Nullable<int>>
         {
             
             /// <summary>
@@ -146970,7 +146970,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the q property
         /// </summary>
-        private sealed class HMVQProxy : ModelPropertyChange<IHMV, IQuality>
+        protected sealed class HMVQProxy : ModelPropertyChange<IHMV, IQuality>
         {
             
             /// <summary>
@@ -147001,7 +147001,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the t property
         /// </summary>
-        private sealed class HMVTProxy : ModelPropertyChange<IHMV, ITimeStamp>
+        protected sealed class HMVTProxy : ModelPropertyChange<IHMV, ITimeStamp>
         {
             
             /// <summary>
@@ -147032,7 +147032,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the har property
         /// </summary>
-        private sealed class HMVHarProxy : ModelPropertyChange<IHMV, IVectorArray>
+        protected sealed class HMVHarProxy : ModelPropertyChange<IHMV, IVectorArray>
         {
             
             /// <summary>
@@ -147063,7 +147063,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the units property
         /// </summary>
-        private sealed class HMVUnitsProxy : ModelPropertyChange<IHMV, IUnits>
+        protected sealed class HMVUnitsProxy : ModelPropertyChange<IHMV, IUnits>
         {
             
             /// <summary>
@@ -147094,7 +147094,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the hvRef property
         /// </summary>
-        private sealed class HMVHvRefProxy : ModelPropertyChange<IHMV, IMagReference>
+        protected sealed class HMVHvRefProxy : ModelPropertyChange<IHMV, IMagReference>
         {
             
             /// <summary>
@@ -148732,7 +148732,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the numHar property
         /// </summary>
-        private sealed class HYWENumHarProxy : ModelPropertyChange<IHYWE, Nullable<int>>
+        protected sealed class HYWENumHarProxy : ModelPropertyChange<IHYWE, Nullable<int>>
         {
             
             /// <summary>
@@ -148763,7 +148763,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the numCyc property
         /// </summary>
-        private sealed class HYWENumCycProxy : ModelPropertyChange<IHYWE, Nullable<int>>
+        protected sealed class HYWENumCycProxy : ModelPropertyChange<IHYWE, Nullable<int>>
         {
             
             /// <summary>
@@ -148794,7 +148794,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the evalTm property
         /// </summary>
-        private sealed class HYWEEvalTmProxy : ModelPropertyChange<IHYWE, Nullable<int>>
+        protected sealed class HYWEEvalTmProxy : ModelPropertyChange<IHYWE, Nullable<int>>
         {
             
             /// <summary>
@@ -148825,7 +148825,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the smpRate property
         /// </summary>
-        private sealed class HYWESmpRateProxy : ModelPropertyChange<IHYWE, Nullable<int>>
+        protected sealed class HYWESmpRateProxy : ModelPropertyChange<IHYWE, Nullable<int>>
         {
             
             /// <summary>
@@ -148856,7 +148856,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the frequency property
         /// </summary>
-        private sealed class HYWEFrequencyProxy : ModelPropertyChange<IHYWE, Nullable<float>>
+        protected sealed class HYWEFrequencyProxy : ModelPropertyChange<IHYWE, Nullable<float>>
         {
             
             /// <summary>
@@ -148887,7 +148887,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the rmsCyc property
         /// </summary>
-        private sealed class HYWERmsCycProxy : ModelPropertyChange<IHYWE, Nullable<int>>
+        protected sealed class HYWERmsCycProxy : ModelPropertyChange<IHYWE, Nullable<int>>
         {
             
             /// <summary>
@@ -148918,7 +148918,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the q property
         /// </summary>
-        private sealed class HYWEQProxy : ModelPropertyChange<IHYWE, IQuality>
+        protected sealed class HYWEQProxy : ModelPropertyChange<IHYWE, IQuality>
         {
             
             /// <summary>
@@ -148949,7 +148949,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the t property
         /// </summary>
-        private sealed class HYWETProxy : ModelPropertyChange<IHYWE, ITimeStamp>
+        protected sealed class HYWETProxy : ModelPropertyChange<IHYWE, ITimeStamp>
         {
             
             /// <summary>
@@ -148980,7 +148980,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the phsAHar property
         /// </summary>
-        private sealed class HYWEPhsAHarProxy : ModelPropertyChange<IHYWE, IVectorArray>
+        protected sealed class HYWEPhsAHarProxy : ModelPropertyChange<IHYWE, IVectorArray>
         {
             
             /// <summary>
@@ -149011,7 +149011,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the phsBHar property
         /// </summary>
-        private sealed class HYWEPhsBHarProxy : ModelPropertyChange<IHYWE, IVectorArray>
+        protected sealed class HYWEPhsBHarProxy : ModelPropertyChange<IHYWE, IVectorArray>
         {
             
             /// <summary>
@@ -149042,7 +149042,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the phsCHar property
         /// </summary>
-        private sealed class HYWEPhsCHarProxy : ModelPropertyChange<IHYWE, IVectorArray>
+        protected sealed class HYWEPhsCHarProxy : ModelPropertyChange<IHYWE, IVectorArray>
         {
             
             /// <summary>
@@ -149073,7 +149073,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the neutHar property
         /// </summary>
-        private sealed class HYWENeutHarProxy : ModelPropertyChange<IHYWE, IVectorArray>
+        protected sealed class HYWENeutHarProxy : ModelPropertyChange<IHYWE, IVectorArray>
         {
             
             /// <summary>
@@ -149104,7 +149104,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the netHar property
         /// </summary>
-        private sealed class HYWENetHarProxy : ModelPropertyChange<IHYWE, IVectorArray>
+        protected sealed class HYWENetHarProxy : ModelPropertyChange<IHYWE, IVectorArray>
         {
             
             /// <summary>
@@ -149135,7 +149135,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the resHar property
         /// </summary>
-        private sealed class HYWEResHarProxy : ModelPropertyChange<IHYWE, IVectorArray>
+        protected sealed class HYWEResHarProxy : ModelPropertyChange<IHYWE, IVectorArray>
         {
             
             /// <summary>
@@ -149166,7 +149166,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the units property
         /// </summary>
-        private sealed class HYWEUnitsProxy : ModelPropertyChange<IHYWE, IUnits>
+        protected sealed class HYWEUnitsProxy : ModelPropertyChange<IHYWE, IUnits>
         {
             
             /// <summary>
@@ -149197,7 +149197,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the angRef property
         /// </summary>
-        private sealed class HYWEAngRefProxy : ModelPropertyChange<IHYWE, IAngleReference>
+        protected sealed class HYWEAngRefProxy : ModelPropertyChange<IHYWE, IAngleReference>
         {
             
             /// <summary>
@@ -149228,7 +149228,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the hvRef property
         /// </summary>
-        private sealed class HYWEHvRefProxy : ModelPropertyChange<IHYWE, IMagReference>
+        protected sealed class HYWEHvRefProxy : ModelPropertyChange<IHYWE, IMagReference>
         {
             
             /// <summary>
@@ -150560,7 +150560,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the numHar property
         /// </summary>
-        private sealed class HDELNumHarProxy : ModelPropertyChange<IHDEL, Nullable<int>>
+        protected sealed class HDELNumHarProxy : ModelPropertyChange<IHDEL, Nullable<int>>
         {
             
             /// <summary>
@@ -150591,7 +150591,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the numCyc property
         /// </summary>
-        private sealed class HDELNumCycProxy : ModelPropertyChange<IHDEL, Nullable<int>>
+        protected sealed class HDELNumCycProxy : ModelPropertyChange<IHDEL, Nullable<int>>
         {
             
             /// <summary>
@@ -150622,7 +150622,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the evalTm property
         /// </summary>
-        private sealed class HDELEvalTmProxy : ModelPropertyChange<IHDEL, Nullable<int>>
+        protected sealed class HDELEvalTmProxy : ModelPropertyChange<IHDEL, Nullable<int>>
         {
             
             /// <summary>
@@ -150653,7 +150653,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the smpRate property
         /// </summary>
-        private sealed class HDELSmpRateProxy : ModelPropertyChange<IHDEL, Nullable<int>>
+        protected sealed class HDELSmpRateProxy : ModelPropertyChange<IHDEL, Nullable<int>>
         {
             
             /// <summary>
@@ -150684,7 +150684,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the frequency property
         /// </summary>
-        private sealed class HDELFrequencyProxy : ModelPropertyChange<IHDEL, Nullable<float>>
+        protected sealed class HDELFrequencyProxy : ModelPropertyChange<IHDEL, Nullable<float>>
         {
             
             /// <summary>
@@ -150715,7 +150715,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the rmsCyc property
         /// </summary>
-        private sealed class HDELRmsCycProxy : ModelPropertyChange<IHDEL, Nullable<int>>
+        protected sealed class HDELRmsCycProxy : ModelPropertyChange<IHDEL, Nullable<int>>
         {
             
             /// <summary>
@@ -150746,7 +150746,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the q property
         /// </summary>
-        private sealed class HDELQProxy : ModelPropertyChange<IHDEL, IQuality>
+        protected sealed class HDELQProxy : ModelPropertyChange<IHDEL, IQuality>
         {
             
             /// <summary>
@@ -150777,7 +150777,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the t property
         /// </summary>
-        private sealed class HDELTProxy : ModelPropertyChange<IHDEL, ITimeStamp>
+        protected sealed class HDELTProxy : ModelPropertyChange<IHDEL, ITimeStamp>
         {
             
             /// <summary>
@@ -150808,7 +150808,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the phsABHar property
         /// </summary>
-        private sealed class HDELPhsABHarProxy : ModelPropertyChange<IHDEL, IVectorArray>
+        protected sealed class HDELPhsABHarProxy : ModelPropertyChange<IHDEL, IVectorArray>
         {
             
             /// <summary>
@@ -150839,7 +150839,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the phsBCHar property
         /// </summary>
-        private sealed class HDELPhsBCHarProxy : ModelPropertyChange<IHDEL, IVectorArray>
+        protected sealed class HDELPhsBCHarProxy : ModelPropertyChange<IHDEL, IVectorArray>
         {
             
             /// <summary>
@@ -150870,7 +150870,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the phsCAHar property
         /// </summary>
-        private sealed class HDELPhsCAHarProxy : ModelPropertyChange<IHDEL, IVectorArray>
+        protected sealed class HDELPhsCAHarProxy : ModelPropertyChange<IHDEL, IVectorArray>
         {
             
             /// <summary>
@@ -150901,7 +150901,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the units property
         /// </summary>
-        private sealed class HDELUnitsProxy : ModelPropertyChange<IHDEL, IUnits>
+        protected sealed class HDELUnitsProxy : ModelPropertyChange<IHDEL, IUnits>
         {
             
             /// <summary>
@@ -150932,7 +150932,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the angRef property
         /// </summary>
-        private sealed class HDELAngRefProxy : ModelPropertyChange<IHDEL, IAngleReference>
+        protected sealed class HDELAngRefProxy : ModelPropertyChange<IHDEL, IAngleReference>
         {
             
             /// <summary>
@@ -150963,7 +150963,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the hvRef property
         /// </summary>
-        private sealed class HDELHvRefProxy : ModelPropertyChange<IHDEL, IMagReference>
+        protected sealed class HDELHvRefProxy : ModelPropertyChange<IHDEL, IMagReference>
         {
             
             /// <summary>
@@ -152196,7 +152196,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ctlNum property
         /// </summary>
-        private sealed class ControllableStatusInfoCtlNumProxy : ModelPropertyChange<IControllableStatusInfo, Nullable<int>>
+        protected sealed class ControllableStatusInfoCtlNumProxy : ModelPropertyChange<IControllableStatusInfo, Nullable<int>>
         {
             
             /// <summary>
@@ -152227,7 +152227,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the _ctlNum property
         /// </summary>
-        private sealed class ControllableStatusInfo_CtlNumProxy : ModelPropertyChange<IControllableStatusInfo, Nullable<int>>
+        protected sealed class ControllableStatusInfo_CtlNumProxy : ModelPropertyChange<IControllableStatusInfo, Nullable<int>>
         {
             
             /// <summary>
@@ -152258,7 +152258,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the stSeld property
         /// </summary>
-        private sealed class ControllableStatusInfoStSeldProxy : ModelPropertyChange<IControllableStatusInfo, Nullable<bool>>
+        protected sealed class ControllableStatusInfoStSeldProxy : ModelPropertyChange<IControllableStatusInfo, Nullable<bool>>
         {
             
             /// <summary>
@@ -152289,7 +152289,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subEna property
         /// </summary>
-        private sealed class ControllableStatusInfoSubEnaProxy : ModelPropertyChange<IControllableStatusInfo, Nullable<bool>>
+        protected sealed class ControllableStatusInfoSubEnaProxy : ModelPropertyChange<IControllableStatusInfo, Nullable<bool>>
         {
             
             /// <summary>
@@ -152320,7 +152320,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subID property
         /// </summary>
-        private sealed class ControllableStatusInfoSubIDProxy : ModelPropertyChange<IControllableStatusInfo, string>
+        protected sealed class ControllableStatusInfoSubIDProxy : ModelPropertyChange<IControllableStatusInfo, string>
         {
             
             /// <summary>
@@ -152351,7 +152351,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the sboTimeout property
         /// </summary>
-        private sealed class ControllableStatusInfoSboTimeoutProxy : ModelPropertyChange<IControllableStatusInfo, Nullable<int>>
+        protected sealed class ControllableStatusInfoSboTimeoutProxy : ModelPropertyChange<IControllableStatusInfo, Nullable<int>>
         {
             
             /// <summary>
@@ -152382,7 +152382,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the d property
         /// </summary>
-        private sealed class ControllableStatusInfoDProxy : ModelPropertyChange<IControllableStatusInfo, string>
+        protected sealed class ControllableStatusInfoDProxy : ModelPropertyChange<IControllableStatusInfo, string>
         {
             
             /// <summary>
@@ -152413,7 +152413,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the dU property
         /// </summary>
-        private sealed class ControllableStatusInfoDUProxy : ModelPropertyChange<IControllableStatusInfo, string>
+        protected sealed class ControllableStatusInfoDUProxy : ModelPropertyChange<IControllableStatusInfo, string>
         {
             
             /// <summary>
@@ -152444,7 +152444,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the operTm property
         /// </summary>
-        private sealed class ControllableStatusInfoOperTmProxy : ModelPropertyChange<IControllableStatusInfo, ITimeStamp>
+        protected sealed class ControllableStatusInfoOperTmProxy : ModelPropertyChange<IControllableStatusInfo, ITimeStamp>
         {
             
             /// <summary>
@@ -152475,7 +152475,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the origin property
         /// </summary>
-        private sealed class ControllableStatusInfoOriginProxy : ModelPropertyChange<IControllableStatusInfo, IOriginator>
+        protected sealed class ControllableStatusInfoOriginProxy : ModelPropertyChange<IControllableStatusInfo, IOriginator>
         {
             
             /// <summary>
@@ -152506,7 +152506,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the _origin property
         /// </summary>
-        private sealed class ControllableStatusInfo_OriginProxy : ModelPropertyChange<IControllableStatusInfo, IOriginator>
+        protected sealed class ControllableStatusInfo_OriginProxy : ModelPropertyChange<IControllableStatusInfo, IOriginator>
         {
             
             /// <summary>
@@ -152537,7 +152537,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subQ property
         /// </summary>
-        private sealed class ControllableStatusInfoSubQProxy : ModelPropertyChange<IControllableStatusInfo, IQuality>
+        protected sealed class ControllableStatusInfoSubQProxy : ModelPropertyChange<IControllableStatusInfo, IQuality>
         {
             
             /// <summary>
@@ -152568,7 +152568,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ctlModel property
         /// </summary>
-        private sealed class ControllableStatusInfoCtlModelProxy : ModelPropertyChange<IControllableStatusInfo, ICtlModels>
+        protected sealed class ControllableStatusInfoCtlModelProxy : ModelPropertyChange<IControllableStatusInfo, ICtlModels>
         {
             
             /// <summary>
@@ -152599,7 +152599,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the sboClass property
         /// </summary>
-        private sealed class ControllableStatusInfoSboClassProxy : ModelPropertyChange<IControllableStatusInfo, ISboClasses>
+        protected sealed class ControllableStatusInfoSboClassProxy : ModelPropertyChange<IControllableStatusInfo, ISboClasses>
         {
             
             /// <summary>
@@ -153265,7 +153265,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ctlVal property
         /// </summary>
-        private sealed class SPCCtlValProxy : ModelPropertyChange<ISPC, Nullable<bool>>
+        protected sealed class SPCCtlValProxy : ModelPropertyChange<ISPC, Nullable<bool>>
         {
             
             /// <summary>
@@ -153296,7 +153296,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the stVal property
         /// </summary>
-        private sealed class SPCStValProxy : ModelPropertyChange<ISPC, Nullable<bool>>
+        protected sealed class SPCStValProxy : ModelPropertyChange<ISPC, Nullable<bool>>
         {
             
             /// <summary>
@@ -153327,7 +153327,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subVal property
         /// </summary>
-        private sealed class SPCSubValProxy : ModelPropertyChange<ISPC, Nullable<bool>>
+        protected sealed class SPCSubValProxy : ModelPropertyChange<ISPC, Nullable<bool>>
         {
             
             /// <summary>
@@ -153358,7 +153358,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the q property
         /// </summary>
-        private sealed class SPCQProxy : ModelPropertyChange<ISPC, IQuality>
+        protected sealed class SPCQProxy : ModelPropertyChange<ISPC, IQuality>
         {
             
             /// <summary>
@@ -153389,7 +153389,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the t property
         /// </summary>
-        private sealed class SPCTProxy : ModelPropertyChange<ISPC, ITimeStamp>
+        protected sealed class SPCTProxy : ModelPropertyChange<ISPC, ITimeStamp>
         {
             
             /// <summary>
@@ -153420,7 +153420,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the pulseConfig property
         /// </summary>
-        private sealed class SPCPulseConfigProxy : ModelPropertyChange<ISPC, IPulseConfig>
+        protected sealed class SPCPulseConfigProxy : ModelPropertyChange<ISPC, IPulseConfig>
         {
             
             /// <summary>
@@ -154186,7 +154186,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ctlVal property
         /// </summary>
-        private sealed class DPCCtlValProxy : ModelPropertyChange<IDPC, Nullable<bool>>
+        protected sealed class DPCCtlValProxy : ModelPropertyChange<IDPC, Nullable<bool>>
         {
             
             /// <summary>
@@ -154217,7 +154217,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the stVal property
         /// </summary>
-        private sealed class DPCStValProxy : ModelPropertyChange<IDPC, IDPStatus>
+        protected sealed class DPCStValProxy : ModelPropertyChange<IDPC, IDPStatus>
         {
             
             /// <summary>
@@ -154248,7 +154248,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the q property
         /// </summary>
-        private sealed class DPCQProxy : ModelPropertyChange<IDPC, IQuality>
+        protected sealed class DPCQProxy : ModelPropertyChange<IDPC, IQuality>
         {
             
             /// <summary>
@@ -154279,7 +154279,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the t property
         /// </summary>
-        private sealed class DPCTProxy : ModelPropertyChange<IDPC, ITimeStamp>
+        protected sealed class DPCTProxy : ModelPropertyChange<IDPC, ITimeStamp>
         {
             
             /// <summary>
@@ -154310,7 +154310,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subVal property
         /// </summary>
-        private sealed class DPCSubValProxy : ModelPropertyChange<IDPC, IDPStatus>
+        protected sealed class DPCSubValProxy : ModelPropertyChange<IDPC, IDPStatus>
         {
             
             /// <summary>
@@ -154341,7 +154341,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the pulseConfig property
         /// </summary>
-        private sealed class DPCPulseConfigProxy : ModelPropertyChange<IDPC, IPulseConfig>
+        protected sealed class DPCPulseConfigProxy : ModelPropertyChange<IDPC, IPulseConfig>
         {
             
             /// <summary>
@@ -155061,7 +155061,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ctlVal property
         /// </summary>
-        private sealed class INCCtlValProxy : ModelPropertyChange<IINC, Nullable<int>>
+        protected sealed class INCCtlValProxy : ModelPropertyChange<IINC, Nullable<int>>
         {
             
             /// <summary>
@@ -155092,7 +155092,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the stVal property
         /// </summary>
-        private sealed class INCStValProxy : ModelPropertyChange<IINC, Nullable<int>>
+        protected sealed class INCStValProxy : ModelPropertyChange<IINC, Nullable<int>>
         {
             
             /// <summary>
@@ -155123,7 +155123,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subVal property
         /// </summary>
-        private sealed class INCSubValProxy : ModelPropertyChange<IINC, Nullable<int>>
+        protected sealed class INCSubValProxy : ModelPropertyChange<IINC, Nullable<int>>
         {
             
             /// <summary>
@@ -155154,7 +155154,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the minVal property
         /// </summary>
-        private sealed class INCMinValProxy : ModelPropertyChange<IINC, Nullable<int>>
+        protected sealed class INCMinValProxy : ModelPropertyChange<IINC, Nullable<int>>
         {
             
             /// <summary>
@@ -155185,7 +155185,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the maxVal property
         /// </summary>
-        private sealed class INCMaxValProxy : ModelPropertyChange<IINC, Nullable<int>>
+        protected sealed class INCMaxValProxy : ModelPropertyChange<IINC, Nullable<int>>
         {
             
             /// <summary>
@@ -155216,7 +155216,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the stepSize property
         /// </summary>
-        private sealed class INCStepSizeProxy : ModelPropertyChange<IINC, Nullable<int>>
+        protected sealed class INCStepSizeProxy : ModelPropertyChange<IINC, Nullable<int>>
         {
             
             /// <summary>
@@ -155247,7 +155247,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the q property
         /// </summary>
-        private sealed class INCQProxy : ModelPropertyChange<IINC, IQuality>
+        protected sealed class INCQProxy : ModelPropertyChange<IINC, IQuality>
         {
             
             /// <summary>
@@ -155278,7 +155278,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the t property
         /// </summary>
-        private sealed class INCTProxy : ModelPropertyChange<IINC, ITimeStamp>
+        protected sealed class INCTProxy : ModelPropertyChange<IINC, ITimeStamp>
         {
             
             /// <summary>
@@ -156200,7 +156200,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the persistent property
         /// </summary>
-        private sealed class BSCPersistentProxy : ModelPropertyChange<IBSC, Nullable<bool>>
+        protected sealed class BSCPersistentProxy : ModelPropertyChange<IBSC, Nullable<bool>>
         {
             
             /// <summary>
@@ -156231,7 +156231,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the minVal property
         /// </summary>
-        private sealed class BSCMinValProxy : ModelPropertyChange<IBSC, Nullable<int>>
+        protected sealed class BSCMinValProxy : ModelPropertyChange<IBSC, Nullable<int>>
         {
             
             /// <summary>
@@ -156262,7 +156262,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the maxVal property
         /// </summary>
-        private sealed class BSCMaxValProxy : ModelPropertyChange<IBSC, Nullable<int>>
+        protected sealed class BSCMaxValProxy : ModelPropertyChange<IBSC, Nullable<int>>
         {
             
             /// <summary>
@@ -156293,7 +156293,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the stepSize property
         /// </summary>
-        private sealed class BSCStepSizeProxy : ModelPropertyChange<IBSC, Nullable<int>>
+        protected sealed class BSCStepSizeProxy : ModelPropertyChange<IBSC, Nullable<int>>
         {
             
             /// <summary>
@@ -156324,7 +156324,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ctlVal property
         /// </summary>
-        private sealed class BSCCtlValProxy : ModelPropertyChange<IBSC, IBSControl>
+        protected sealed class BSCCtlValProxy : ModelPropertyChange<IBSC, IBSControl>
         {
             
             /// <summary>
@@ -156355,7 +156355,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the valWTr property
         /// </summary>
-        private sealed class BSCValWTrProxy : ModelPropertyChange<IBSC, IValWithTrans>
+        protected sealed class BSCValWTrProxy : ModelPropertyChange<IBSC, IValWithTrans>
         {
             
             /// <summary>
@@ -156386,7 +156386,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the q property
         /// </summary>
-        private sealed class BSCQProxy : ModelPropertyChange<IBSC, IQuality>
+        protected sealed class BSCQProxy : ModelPropertyChange<IBSC, IQuality>
         {
             
             /// <summary>
@@ -156417,7 +156417,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the t property
         /// </summary>
-        private sealed class BSCTProxy : ModelPropertyChange<IBSC, ITimeStamp>
+        protected sealed class BSCTProxy : ModelPropertyChange<IBSC, ITimeStamp>
         {
             
             /// <summary>
@@ -156448,7 +156448,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subVal property
         /// </summary>
-        private sealed class BSCSubValProxy : ModelPropertyChange<IBSC, IValWithTrans>
+        protected sealed class BSCSubValProxy : ModelPropertyChange<IBSC, IValWithTrans>
         {
             
             /// <summary>
@@ -157268,7 +157268,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ctlVal property
         /// </summary>
-        private sealed class ISCCtlValProxy : ModelPropertyChange<IISC, Nullable<int>>
+        protected sealed class ISCCtlValProxy : ModelPropertyChange<IISC, Nullable<int>>
         {
             
             /// <summary>
@@ -157299,7 +157299,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the minVal property
         /// </summary>
-        private sealed class ISCMinValProxy : ModelPropertyChange<IISC, Nullable<int>>
+        protected sealed class ISCMinValProxy : ModelPropertyChange<IISC, Nullable<int>>
         {
             
             /// <summary>
@@ -157330,7 +157330,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the maxVal property
         /// </summary>
-        private sealed class ISCMaxValProxy : ModelPropertyChange<IISC, Nullable<int>>
+        protected sealed class ISCMaxValProxy : ModelPropertyChange<IISC, Nullable<int>>
         {
             
             /// <summary>
@@ -157361,7 +157361,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the stepSize property
         /// </summary>
-        private sealed class ISCStepSizeProxy : ModelPropertyChange<IISC, Nullable<int>>
+        protected sealed class ISCStepSizeProxy : ModelPropertyChange<IISC, Nullable<int>>
         {
             
             /// <summary>
@@ -157392,7 +157392,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the valWTr property
         /// </summary>
-        private sealed class ISCValWTrProxy : ModelPropertyChange<IISC, IValWithTrans>
+        protected sealed class ISCValWTrProxy : ModelPropertyChange<IISC, IValWithTrans>
         {
             
             /// <summary>
@@ -157423,7 +157423,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the t property
         /// </summary>
-        private sealed class ISCTProxy : ModelPropertyChange<IISC, ITimeStamp>
+        protected sealed class ISCTProxy : ModelPropertyChange<IISC, ITimeStamp>
         {
             
             /// <summary>
@@ -157454,7 +157454,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the q property
         /// </summary>
-        private sealed class ISCQProxy : ModelPropertyChange<IISC, IQuality>
+        protected sealed class ISCQProxy : ModelPropertyChange<IISC, IQuality>
         {
             
             /// <summary>
@@ -157485,7 +157485,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the subVal property
         /// </summary>
-        private sealed class ISCSubValProxy : ModelPropertyChange<IISC, IValWithTrans>
+        protected sealed class ISCSubValProxy : ModelPropertyChange<IISC, IValWithTrans>
         {
             
             /// <summary>
@@ -157688,11 +157688,11 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         {
             if ((feature == "APC"))
             {
-                return this._aPC;
+                return ((System.Collections.IList)(this.APC));
             }
             if ((feature == "C_PRIMITIVECDC"))
             {
-                return this._c_PrimitiveCDC;
+                return ((System.Collections.IList)(this.C_PrimitiveCDC));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -159469,7 +159469,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the d property
         /// </summary>
-        private sealed class APCDProxy : ModelPropertyChange<IAPC, string>
+        protected sealed class APCDProxy : ModelPropertyChange<IAPC, string>
         {
             
             /// <summary>
@@ -159500,7 +159500,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the dU property
         /// </summary>
-        private sealed class APCDUProxy : ModelPropertyChange<IAPC, string>
+        protected sealed class APCDUProxy : ModelPropertyChange<IAPC, string>
         {
             
             /// <summary>
@@ -159531,7 +159531,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the setMag property
         /// </summary>
-        private sealed class APCSetMagProxy : ModelPropertyChange<IAPC, IAnalogueValue>
+        protected sealed class APCSetMagProxy : ModelPropertyChange<IAPC, IAnalogueValue>
         {
             
             /// <summary>
@@ -159562,7 +159562,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the _setMag property
         /// </summary>
-        private sealed class APC_SetMagProxy : ModelPropertyChange<IAPC, IAnalogueValue>
+        protected sealed class APC_SetMagProxy : ModelPropertyChange<IAPC, IAnalogueValue>
         {
             
             /// <summary>
@@ -159593,7 +159593,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the origin property
         /// </summary>
-        private sealed class APCOriginProxy : ModelPropertyChange<IAPC, IOriginator>
+        protected sealed class APCOriginProxy : ModelPropertyChange<IAPC, IOriginator>
         {
             
             /// <summary>
@@ -159624,7 +159624,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the _origin property
         /// </summary>
-        private sealed class APC_OriginProxy : ModelPropertyChange<IAPC, IOriginator>
+        protected sealed class APC_OriginProxy : ModelPropertyChange<IAPC, IOriginator>
         {
             
             /// <summary>
@@ -159655,7 +159655,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the operTm property
         /// </summary>
-        private sealed class APCOperTmProxy : ModelPropertyChange<IAPC, ITimeStamp>
+        protected sealed class APCOperTmProxy : ModelPropertyChange<IAPC, ITimeStamp>
         {
             
             /// <summary>
@@ -159686,7 +159686,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the q property
         /// </summary>
-        private sealed class APCQProxy : ModelPropertyChange<IAPC, IQuality>
+        protected sealed class APCQProxy : ModelPropertyChange<IAPC, IQuality>
         {
             
             /// <summary>
@@ -159717,7 +159717,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the t property
         /// </summary>
-        private sealed class APCTProxy : ModelPropertyChange<IAPC, ITimeStamp>
+        protected sealed class APCTProxy : ModelPropertyChange<IAPC, ITimeStamp>
         {
             
             /// <summary>
@@ -159748,7 +159748,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ctlModel property
         /// </summary>
-        private sealed class APCCtlModelProxy : ModelPropertyChange<IAPC, ICtlModels>
+        protected sealed class APCCtlModelProxy : ModelPropertyChange<IAPC, ICtlModels>
         {
             
             /// <summary>
@@ -159779,7 +159779,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the units property
         /// </summary>
-        private sealed class APCUnitsProxy : ModelPropertyChange<IAPC, IUnits>
+        protected sealed class APCUnitsProxy : ModelPropertyChange<IAPC, IUnits>
         {
             
             /// <summary>
@@ -159810,7 +159810,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the sVC property
         /// </summary>
-        private sealed class APCSVCProxy : ModelPropertyChange<IAPC, IScaledValueConfig>
+        protected sealed class APCSVCProxy : ModelPropertyChange<IAPC, IScaledValueConfig>
         {
             
             /// <summary>
@@ -159841,7 +159841,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the minVal property
         /// </summary>
-        private sealed class APCMinValProxy : ModelPropertyChange<IAPC, IAnalogueValue>
+        protected sealed class APCMinValProxy : ModelPropertyChange<IAPC, IAnalogueValue>
         {
             
             /// <summary>
@@ -159872,7 +159872,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the maxVal property
         /// </summary>
-        private sealed class APCMaxValProxy : ModelPropertyChange<IAPC, IAnalogueValue>
+        protected sealed class APCMaxValProxy : ModelPropertyChange<IAPC, IAnalogueValue>
         {
             
             /// <summary>
@@ -159903,7 +159903,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the stepSize property
         /// </summary>
-        private sealed class APCStepSizeProxy : ModelPropertyChange<IAPC, IAnalogueValue>
+        protected sealed class APCStepSizeProxy : ModelPropertyChange<IAPC, IAnalogueValue>
         {
             
             /// <summary>
@@ -160140,7 +160140,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the setVal property
         /// </summary>
-        private sealed class SPGSetValProxy : ModelPropertyChange<ISPG, Nullable<bool>>
+        protected sealed class SPGSetValProxy : ModelPropertyChange<ISPG, Nullable<bool>>
         {
             
             /// <summary>
@@ -160171,7 +160171,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the _setVal property
         /// </summary>
-        private sealed class SPG_SetValProxy : ModelPropertyChange<ISPG, Nullable<bool>>
+        protected sealed class SPG_SetValProxy : ModelPropertyChange<ISPG, Nullable<bool>>
         {
             
             /// <summary>
@@ -160202,7 +160202,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the __setVal property
         /// </summary>
-        private sealed class SPG__SetValProxy : ModelPropertyChange<ISPG, Nullable<bool>>
+        protected sealed class SPG__SetValProxy : ModelPropertyChange<ISPG, Nullable<bool>>
         {
             
             /// <summary>
@@ -160595,7 +160595,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the setVal property
         /// </summary>
-        private sealed class INGSetValProxy : ModelPropertyChange<IING, Nullable<int>>
+        protected sealed class INGSetValProxy : ModelPropertyChange<IING, Nullable<int>>
         {
             
             /// <summary>
@@ -160626,7 +160626,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the _setVal property
         /// </summary>
-        private sealed class ING_SetValProxy : ModelPropertyChange<IING, Nullable<int>>
+        protected sealed class ING_SetValProxy : ModelPropertyChange<IING, Nullable<int>>
         {
             
             /// <summary>
@@ -160657,7 +160657,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the __setVal property
         /// </summary>
-        private sealed class ING__SetValProxy : ModelPropertyChange<IING, Nullable<int>>
+        protected sealed class ING__SetValProxy : ModelPropertyChange<IING, Nullable<int>>
         {
             
             /// <summary>
@@ -160688,7 +160688,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the minVal property
         /// </summary>
-        private sealed class INGMinValProxy : ModelPropertyChange<IING, Nullable<int>>
+        protected sealed class INGMinValProxy : ModelPropertyChange<IING, Nullable<int>>
         {
             
             /// <summary>
@@ -160719,7 +160719,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the maxVal property
         /// </summary>
-        private sealed class INGMaxValProxy : ModelPropertyChange<IING, Nullable<int>>
+        protected sealed class INGMaxValProxy : ModelPropertyChange<IING, Nullable<int>>
         {
             
             /// <summary>
@@ -160750,7 +160750,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the stepSize property
         /// </summary>
-        private sealed class INGStepSizeProxy : ModelPropertyChange<IING, Nullable<int>>
+        protected sealed class INGStepSizeProxy : ModelPropertyChange<IING, Nullable<int>>
         {
             
             /// <summary>
@@ -160935,7 +160935,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the d property
         /// </summary>
-        private sealed class AnalogueSettingsDProxy : ModelPropertyChange<IAnalogueSettings, string>
+        protected sealed class AnalogueSettingsDProxy : ModelPropertyChange<IAnalogueSettings, string>
         {
             
             /// <summary>
@@ -160966,7 +160966,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the dU property
         /// </summary>
-        private sealed class AnalogueSettingsDUProxy : ModelPropertyChange<IAnalogueSettings, string>
+        protected sealed class AnalogueSettingsDUProxy : ModelPropertyChange<IAnalogueSettings, string>
         {
             
             /// <summary>
@@ -161965,7 +161965,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the setMag property
         /// </summary>
-        private sealed class ASGSetMagProxy : ModelPropertyChange<IASG, IAnalogueValue>
+        protected sealed class ASGSetMagProxy : ModelPropertyChange<IASG, IAnalogueValue>
         {
             
             /// <summary>
@@ -161996,7 +161996,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the _setMag property
         /// </summary>
-        private sealed class ASG_SetMagProxy : ModelPropertyChange<IASG, IAnalogueValue>
+        protected sealed class ASG_SetMagProxy : ModelPropertyChange<IASG, IAnalogueValue>
         {
             
             /// <summary>
@@ -162027,7 +162027,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the __setMag property
         /// </summary>
-        private sealed class ASG__SetMagProxy : ModelPropertyChange<IASG, IAnalogueValue>
+        protected sealed class ASG__SetMagProxy : ModelPropertyChange<IASG, IAnalogueValue>
         {
             
             /// <summary>
@@ -162058,7 +162058,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the units property
         /// </summary>
-        private sealed class ASGUnitsProxy : ModelPropertyChange<IASG, IUnits>
+        protected sealed class ASGUnitsProxy : ModelPropertyChange<IASG, IUnits>
         {
             
             /// <summary>
@@ -162089,7 +162089,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the sVC property
         /// </summary>
-        private sealed class ASGSVCProxy : ModelPropertyChange<IASG, IScaledValueConfig>
+        protected sealed class ASGSVCProxy : ModelPropertyChange<IASG, IScaledValueConfig>
         {
             
             /// <summary>
@@ -162120,7 +162120,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the minVal property
         /// </summary>
-        private sealed class ASGMinValProxy : ModelPropertyChange<IASG, IAnalogueValue>
+        protected sealed class ASGMinValProxy : ModelPropertyChange<IASG, IAnalogueValue>
         {
             
             /// <summary>
@@ -162151,7 +162151,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the maxVal property
         /// </summary>
-        private sealed class ASGMaxValProxy : ModelPropertyChange<IASG, IAnalogueValue>
+        protected sealed class ASGMaxValProxy : ModelPropertyChange<IASG, IAnalogueValue>
         {
             
             /// <summary>
@@ -162182,7 +162182,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the stepSize property
         /// </summary>
-        private sealed class ASGStepSizeProxy : ModelPropertyChange<IASG, IAnalogueValue>
+        protected sealed class ASGStepSizeProxy : ModelPropertyChange<IASG, IAnalogueValue>
         {
             
             /// <summary>
@@ -163628,7 +163628,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the setParA property
         /// </summary>
-        private sealed class CURVESetParAProxy : ModelPropertyChange<ICURVE, Nullable<float>>
+        protected sealed class CURVESetParAProxy : ModelPropertyChange<ICURVE, Nullable<float>>
         {
             
             /// <summary>
@@ -163659,7 +163659,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the setParB property
         /// </summary>
-        private sealed class CURVESetParBProxy : ModelPropertyChange<ICURVE, Nullable<float>>
+        protected sealed class CURVESetParBProxy : ModelPropertyChange<ICURVE, Nullable<float>>
         {
             
             /// <summary>
@@ -163690,7 +163690,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the setParC property
         /// </summary>
-        private sealed class CURVESetParCProxy : ModelPropertyChange<ICURVE, Nullable<float>>
+        protected sealed class CURVESetParCProxy : ModelPropertyChange<ICURVE, Nullable<float>>
         {
             
             /// <summary>
@@ -163721,7 +163721,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the setParD property
         /// </summary>
-        private sealed class CURVESetParDProxy : ModelPropertyChange<ICURVE, Nullable<float>>
+        protected sealed class CURVESetParDProxy : ModelPropertyChange<ICURVE, Nullable<float>>
         {
             
             /// <summary>
@@ -163752,7 +163752,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the setParE property
         /// </summary>
-        private sealed class CURVESetParEProxy : ModelPropertyChange<ICURVE, Nullable<float>>
+        protected sealed class CURVESetParEProxy : ModelPropertyChange<ICURVE, Nullable<float>>
         {
             
             /// <summary>
@@ -163783,7 +163783,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the setParF property
         /// </summary>
-        private sealed class CURVESetParFProxy : ModelPropertyChange<ICURVE, Nullable<float>>
+        protected sealed class CURVESetParFProxy : ModelPropertyChange<ICURVE, Nullable<float>>
         {
             
             /// <summary>
@@ -163814,7 +163814,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the _setParA property
         /// </summary>
-        private sealed class CURVE_SetParAProxy : ModelPropertyChange<ICURVE, Nullable<float>>
+        protected sealed class CURVE_SetParAProxy : ModelPropertyChange<ICURVE, Nullable<float>>
         {
             
             /// <summary>
@@ -163845,7 +163845,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the _setParB property
         /// </summary>
-        private sealed class CURVE_SetParBProxy : ModelPropertyChange<ICURVE, Nullable<float>>
+        protected sealed class CURVE_SetParBProxy : ModelPropertyChange<ICURVE, Nullable<float>>
         {
             
             /// <summary>
@@ -163876,7 +163876,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the _setParC property
         /// </summary>
-        private sealed class CURVE_SetParCProxy : ModelPropertyChange<ICURVE, Nullable<float>>
+        protected sealed class CURVE_SetParCProxy : ModelPropertyChange<ICURVE, Nullable<float>>
         {
             
             /// <summary>
@@ -163907,7 +163907,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the _setParD property
         /// </summary>
-        private sealed class CURVE_SetParDProxy : ModelPropertyChange<ICURVE, Nullable<float>>
+        protected sealed class CURVE_SetParDProxy : ModelPropertyChange<ICURVE, Nullable<float>>
         {
             
             /// <summary>
@@ -163938,7 +163938,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the _setParE property
         /// </summary>
-        private sealed class CURVE_SetParEProxy : ModelPropertyChange<ICURVE, Nullable<float>>
+        protected sealed class CURVE_SetParEProxy : ModelPropertyChange<ICURVE, Nullable<float>>
         {
             
             /// <summary>
@@ -163969,7 +163969,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the _setParF property
         /// </summary>
-        private sealed class CURVE_SetParFProxy : ModelPropertyChange<ICURVE, Nullable<float>>
+        protected sealed class CURVE_SetParFProxy : ModelPropertyChange<ICURVE, Nullable<float>>
         {
             
             /// <summary>
@@ -164000,7 +164000,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the __setParA property
         /// </summary>
-        private sealed class CURVE__SetParAProxy : ModelPropertyChange<ICURVE, Nullable<float>>
+        protected sealed class CURVE__SetParAProxy : ModelPropertyChange<ICURVE, Nullable<float>>
         {
             
             /// <summary>
@@ -164031,7 +164031,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the __setParB property
         /// </summary>
-        private sealed class CURVE__SetParBProxy : ModelPropertyChange<ICURVE, Nullable<float>>
+        protected sealed class CURVE__SetParBProxy : ModelPropertyChange<ICURVE, Nullable<float>>
         {
             
             /// <summary>
@@ -164062,7 +164062,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the __setParC property
         /// </summary>
-        private sealed class CURVE__SetParCProxy : ModelPropertyChange<ICURVE, Nullable<float>>
+        protected sealed class CURVE__SetParCProxy : ModelPropertyChange<ICURVE, Nullable<float>>
         {
             
             /// <summary>
@@ -164093,7 +164093,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the __setParD property
         /// </summary>
-        private sealed class CURVE__SetParDProxy : ModelPropertyChange<ICURVE, Nullable<float>>
+        protected sealed class CURVE__SetParDProxy : ModelPropertyChange<ICURVE, Nullable<float>>
         {
             
             /// <summary>
@@ -164124,7 +164124,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the __setParE property
         /// </summary>
-        private sealed class CURVE__SetParEProxy : ModelPropertyChange<ICURVE, Nullable<float>>
+        protected sealed class CURVE__SetParEProxy : ModelPropertyChange<ICURVE, Nullable<float>>
         {
             
             /// <summary>
@@ -164155,7 +164155,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the __setParF property
         /// </summary>
-        private sealed class CURVE__SetParFProxy : ModelPropertyChange<ICURVE, Nullable<float>>
+        protected sealed class CURVE__SetParFProxy : ModelPropertyChange<ICURVE, Nullable<float>>
         {
             
             /// <summary>
@@ -164186,7 +164186,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the setCharact property
         /// </summary>
-        private sealed class CURVESetCharactProxy : ModelPropertyChange<ICURVE, ICurveChar>
+        protected sealed class CURVESetCharactProxy : ModelPropertyChange<ICURVE, ICurveChar>
         {
             
             /// <summary>
@@ -164217,7 +164217,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the _setCharact property
         /// </summary>
-        private sealed class CURVE_SetCharactProxy : ModelPropertyChange<ICURVE, ICurveChar>
+        protected sealed class CURVE_SetCharactProxy : ModelPropertyChange<ICURVE, ICurveChar>
         {
             
             /// <summary>
@@ -164248,7 +164248,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the __setCharact property
         /// </summary>
-        private sealed class CURVE__SetCharactProxy : ModelPropertyChange<ICURVE, ICurveChar>
+        protected sealed class CURVE__SetCharactProxy : ModelPropertyChange<ICURVE, ICurveChar>
         {
             
             /// <summary>
@@ -164577,19 +164577,19 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         {
             if ((feature == "DPL"))
             {
-                return this._dPL;
+                return ((System.Collections.IList)(this.DPL));
             }
             if ((feature == "LPL"))
             {
-                return this._lPL;
+                return ((System.Collections.IList)(this.LPL));
             }
             if ((feature == "CSD"))
             {
-                return this._cSD;
+                return ((System.Collections.IList)(this.CSD));
             }
             if ((feature == "C_PRIMITIVECDC"))
             {
-                return this._c_PrimitiveCDC;
+                return ((System.Collections.IList)(this.C_PrimitiveCDC));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -165190,7 +165190,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the vendor property
         /// </summary>
-        private sealed class DPLVendorProxy : ModelPropertyChange<IDPL, string>
+        protected sealed class DPLVendorProxy : ModelPropertyChange<IDPL, string>
         {
             
             /// <summary>
@@ -165221,7 +165221,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the hwRev property
         /// </summary>
-        private sealed class DPLHwRevProxy : ModelPropertyChange<IDPL, string>
+        protected sealed class DPLHwRevProxy : ModelPropertyChange<IDPL, string>
         {
             
             /// <summary>
@@ -165252,7 +165252,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the swRev property
         /// </summary>
-        private sealed class DPLSwRevProxy : ModelPropertyChange<IDPL, string>
+        protected sealed class DPLSwRevProxy : ModelPropertyChange<IDPL, string>
         {
             
             /// <summary>
@@ -165283,7 +165283,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the serNum property
         /// </summary>
-        private sealed class DPLSerNumProxy : ModelPropertyChange<IDPL, string>
+        protected sealed class DPLSerNumProxy : ModelPropertyChange<IDPL, string>
         {
             
             /// <summary>
@@ -165314,7 +165314,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the model property
         /// </summary>
-        private sealed class DPLModelProxy : ModelPropertyChange<IDPL, string>
+        protected sealed class DPLModelProxy : ModelPropertyChange<IDPL, string>
         {
             
             /// <summary>
@@ -165345,7 +165345,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the location property
         /// </summary>
-        private sealed class DPLLocationProxy : ModelPropertyChange<IDPL, string>
+        protected sealed class DPLLocationProxy : ModelPropertyChange<IDPL, string>
         {
             
             /// <summary>
@@ -165788,7 +165788,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the vendor property
         /// </summary>
-        private sealed class LPLVendorProxy : ModelPropertyChange<ILPL, string>
+        protected sealed class LPLVendorProxy : ModelPropertyChange<ILPL, string>
         {
             
             /// <summary>
@@ -165819,7 +165819,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the swRev property
         /// </summary>
-        private sealed class LPLSwRevProxy : ModelPropertyChange<ILPL, string>
+        protected sealed class LPLSwRevProxy : ModelPropertyChange<ILPL, string>
         {
             
             /// <summary>
@@ -165850,7 +165850,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the d property
         /// </summary>
-        private sealed class LPLDProxy : ModelPropertyChange<ILPL, string>
+        protected sealed class LPLDProxy : ModelPropertyChange<ILPL, string>
         {
             
             /// <summary>
@@ -165881,7 +165881,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the dU property
         /// </summary>
-        private sealed class LPLDUProxy : ModelPropertyChange<ILPL, string>
+        protected sealed class LPLDUProxy : ModelPropertyChange<ILPL, string>
         {
             
             /// <summary>
@@ -165912,7 +165912,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the configRev property
         /// </summary>
-        private sealed class LPLConfigRevProxy : ModelPropertyChange<ILPL, string>
+        protected sealed class LPLConfigRevProxy : ModelPropertyChange<ILPL, string>
         {
             
             /// <summary>
@@ -165943,7 +165943,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the IdNs property
         /// </summary>
-        private sealed class LPLIdNsProxy : ModelPropertyChange<ILPL, string>
+        protected sealed class LPLIdNsProxy : ModelPropertyChange<ILPL, string>
         {
             
             /// <summary>
@@ -165974,7 +165974,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the lnNs property
         /// </summary>
-        private sealed class LPLLnNsProxy : ModelPropertyChange<ILPL, string>
+        protected sealed class LPLLnNsProxy : ModelPropertyChange<ILPL, string>
         {
             
             /// <summary>
@@ -166744,7 +166744,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the xD property
         /// </summary>
-        private sealed class CSDXDProxy : ModelPropertyChange<ICSD, string>
+        protected sealed class CSDXDProxy : ModelPropertyChange<ICSD, string>
         {
             
             /// <summary>
@@ -166775,7 +166775,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the yD property
         /// </summary>
-        private sealed class CSDYDProxy : ModelPropertyChange<ICSD, string>
+        protected sealed class CSDYDProxy : ModelPropertyChange<ICSD, string>
         {
             
             /// <summary>
@@ -166806,7 +166806,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the numPts property
         /// </summary>
-        private sealed class CSDNumPtsProxy : ModelPropertyChange<ICSD, Nullable<int>>
+        protected sealed class CSDNumPtsProxy : ModelPropertyChange<ICSD, Nullable<int>>
         {
             
             /// <summary>
@@ -166837,7 +166837,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the d property
         /// </summary>
-        private sealed class CSDDProxy : ModelPropertyChange<ICSD, string>
+        protected sealed class CSDDProxy : ModelPropertyChange<ICSD, string>
         {
             
             /// <summary>
@@ -166868,7 +166868,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the dU property
         /// </summary>
-        private sealed class CSDDUProxy : ModelPropertyChange<ICSD, string>
+        protected sealed class CSDDUProxy : ModelPropertyChange<ICSD, string>
         {
             
             /// <summary>
@@ -166899,7 +166899,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the xUnit property
         /// </summary>
-        private sealed class CSDXUnitProxy : ModelPropertyChange<ICSD, IUnits>
+        protected sealed class CSDXUnitProxy : ModelPropertyChange<ICSD, IUnits>
         {
             
             /// <summary>
@@ -166930,7 +166930,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the yUnit property
         /// </summary>
-        private sealed class CSDYUnitProxy : ModelPropertyChange<ICSD, IUnits>
+        protected sealed class CSDYUnitProxy : ModelPropertyChange<ICSD, IUnits>
         {
             
             /// <summary>
@@ -166961,7 +166961,7 @@ namespace TemporaryGeneratedCode.SubstationStandard.Dataclasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the crvPts property
         /// </summary>
-        private sealed class CSDCrvPtsProxy : ModelPropertyChange<ICSD, IPointArray>
+        protected sealed class CSDCrvPtsProxy : ModelPropertyChange<ICSD, IPointArray>
         {
             
             /// <summary>

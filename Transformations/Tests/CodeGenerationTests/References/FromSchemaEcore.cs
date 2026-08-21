@@ -166,7 +166,7 @@ namespace TemporaryGeneratedCode.Simulink
         {
             if ((feature == "P"))
             {
-                return this._p;
+                return ((System.Collections.IList)(this.P));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -178,7 +178,7 @@ namespace TemporaryGeneratedCode.Simulink
         /// <param name="container">The container object</param>
         protected override string GetCompositionName(object container)
         {
-            if ((container == this._p))
+            if ((container == this.P))
             {
                 return "p";
             }
@@ -547,7 +547,7 @@ namespace TemporaryGeneratedCode.Simulink
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class PTypeValueProxy : ModelPropertyChange<IPType, string>
+        protected sealed class PTypeValueProxy : ModelPropertyChange<IPType, string>
         {
             
             /// <summary>

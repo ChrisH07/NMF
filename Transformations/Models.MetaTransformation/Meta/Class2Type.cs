@@ -1005,7 +1005,11 @@ namespace NMF.Models.Meta
             {
                 if (feature.UpperBound != 1)
                 {
-                    var propRef = new CodePropertyReferenceExpression(new CodeThisReferenceExpression(), "_" + property.Name.ToCamelCase());
+                    // Goes through the public property rather than guessing the backing field's name: the field
+                    // is private on whichever class declares the feature, which is not necessarily this one now
+                    // that inherited features are included here too. ICollectionExpression<T> doesn't declare
+                    // IList, so an explicit cast is needed even though the concrete collection implements it.
+                    var propRef = new CodeCastExpression(typeof(System.Collections.IList), new CodePropertyReferenceExpression(new CodeThisReferenceExpression(), property.Name));
                     var ifStmt = new CodeConditionStatement(new CodeBinaryOperatorExpression(new CodeVariableReferenceExpression("feature"),
                         CodeBinaryOperatorType.ValueEquality, new CodePrimitiveExpression(feature.Name.ToUpperInvariant())));
                     ifStmt.TrueStatements.Add(new CodeMethodReturnStatement(propRef));
@@ -1187,7 +1191,11 @@ namespace NMF.Models.Meta
                 {
                     if (r.UpperBound != 1)
                     {
-                        stmts.Add(new CodeConditionStatement(new CodeBinaryOperatorExpression(containerRef, CodeBinaryOperatorType.ValueEquality, new CodeFieldReferenceExpression(new CodeThisReferenceExpression(), "_" + p.Name.ToCamelCase())),
+                        // Goes through the public property rather than the backing field directly: the field is
+                        // private on whichever class declares the feature, not necessarily this one now that
+                        // inherited features are included here too. The property getter just returns the field,
+                        // so the identity comparison against "container" is unaffected.
+                        stmts.Add(new CodeConditionStatement(new CodeBinaryOperatorExpression(containerRef, CodeBinaryOperatorType.ValueEquality, new CodePropertyReferenceExpression(new CodeThisReferenceExpression(), p.Name)),
                             new CodeMethodReturnStatement(new CodePrimitiveExpression(r.Name))));
                     }
                     return stmts;
@@ -1328,6 +1336,12 @@ namespace NMF.Models.Meta
             protected T AddReferencesOfClass<T>(IClass input, CodeTypeDeclaration typeDeclaration, Func<T, IReference, CodeMemberProperty, ITransformationContext, T> action, T initial, bool containmentsOnly, ITransformationContext context)
             {
                 var r2p = Rule<Reference2Property>();
+                // Only references whose property actually ended up on this generated type - either declared here
+                // directly, or duplicated here to compensate for NMeta multiple inheritance (base.Transform, called
+                // before this runs, has already decided that) - are handled by this class's own override. A
+                // reference reachable only through the chosen single-inheritance C# base class is intentionally
+                // left out: the inherited override (and its base.* fallback chain) already handles it, so
+                // re-checking it here would just duplicate that logic.
                 foreach (var bcl in input.Closure(cl => cl.BaseTypes))
                 {
                     foreach (var reference in bcl.References)
@@ -1417,6 +1431,8 @@ namespace NMF.Models.Meta
             protected T AddAttributesOfClass<T>(IClass input, CodeTypeDeclaration typeDeclaration, Func<T, IAttribute, CodeMemberProperty, ITransformationContext, T> action, T initial, ITransformationContext context)
             {
                 var a2p = Rule<Attribute2Property>();
+                // See AddReferencesOfClass: only attributes whose property actually ended up on this generated
+                // type (declared here, or duplicated to compensate for multiple inheritance) are handled here.
                 foreach (var bcl in input.Closure(cl => cl.BaseTypes))
                 {
                     foreach (var att in bcl.Attributes)
@@ -1474,11 +1490,18 @@ namespace NMF.Models.Meta
 
                     method.Statements.Add(ifIdentical);
                 }
-                else if (containment.IsOrdered)
+                else if (containment.IsOrdered || !containment.IsUnique)
                 {
                     var idxVarName = containment.Name.ToCamelCase() + "Index";
+                    // Bags (non-unique, non-ordered) are typed as ICollectionExpression<T>, which IndexOfReference's
+                    // IList<T> parameter doesn't accept, even though the underlying collection is list-backed.
+                    CodeExpression listRef = new CodePropertyReferenceExpression(new CodeThisReferenceExpression(), property.Name);
+                    if (!containment.IsOrdered && !containment.IsUnique)
+                    {
+                        listRef = new CodeCastExpression(new CodeTypeReference(typeof(IList<>).Name, property.Type.TypeArguments[0]), listRef);
+                    }
                     var idxVar = new CodeVariableDeclarationStatement(typeof(int), idxVarName, new CodeMethodInvokeExpression(new CodeTypeReferenceExpression(typeof(ModelHelper).ToTypeReference()), "IndexOfReference",
-                        new CodePropertyReferenceExpression(new CodeThisReferenceExpression(), property.Name), new CodeArgumentReferenceExpression("element")));
+                        listRef, new CodeArgumentReferenceExpression("element")));
                     var idxRef = new CodeVariableReferenceExpression(idxVarName);
 
                     var ifContained = new CodeConditionStatement(new CodeBinaryOperatorExpression(idxRef, CodeBinaryOperatorType.IdentityInequality, new CodePrimitiveExpression(-1)));
@@ -1494,7 +1517,7 @@ namespace NMF.Models.Meta
 
             private static CodeMemberMethod AddToGetModelElementForUri(CodeMemberMethod method, IReference containment, CodeMemberProperty property, ITransformationContext context)
             {
-                if (containment.UpperBound == 1 || containment.IsOrdered)
+                if (containment.UpperBound == 1 || containment.IsOrdered || !containment.IsUnique)
                 {
                     var propRef = new CodePropertyReferenceExpression(new CodeThisReferenceExpression(), property.Name);
                     var ifStmt = new CodeConditionStatement(new CodeBinaryOperatorExpression(new CodeVariableReferenceExpression("reference"),
@@ -1505,10 +1528,17 @@ namespace NMF.Models.Meta
                     }
                     else
                     {
+                        // Bags (non-unique, non-ordered) are typed as ICollectionExpression<T>, which lacks an indexer,
+                        // even though the underlying collection is list-backed and supports positional access.
+                        CodeExpression listRef = propRef;
+                        if (!containment.IsOrdered && !containment.IsUnique)
+                        {
+                            listRef = new CodeCastExpression(new CodeTypeReference(typeof(IList<>).Name, property.Type.TypeArguments[0]), propRef);
+                        }
                         var indexCondition = new CodeBinaryOperatorExpression(new CodeVariableReferenceExpression("index"), CodeBinaryOperatorType.LessThan,
-                            new CodePropertyReferenceExpression(propRef, "Count"));
+                            new CodePropertyReferenceExpression(listRef, "Count"));
                         var innerIf = new CodeConditionStatement(indexCondition);
-                        innerIf.TrueStatements.Add(new CodeMethodReturnStatement(new CodeIndexerExpression(propRef, new CodeVariableReferenceExpression("index"))));
+                        innerIf.TrueStatements.Add(new CodeMethodReturnStatement(new CodeIndexerExpression(listRef, new CodeVariableReferenceExpression("index"))));
                         innerIf.FalseStatements.Add(new CodeMethodReturnStatement(new CodePrimitiveExpression(null)));
                         ifStmt.TrueStatements.Add(innerIf);
                     }

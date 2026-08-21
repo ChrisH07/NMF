@@ -445,7 +445,7 @@ namespace TemporaryGeneratedCode.Test
         /// <summary>
         /// Represents a proxy to represent an incremental access to the attr01 property
         /// </summary>
-        private sealed class ClassAAttr01Proxy : ModelPropertyChange<IClassA, string>
+        protected sealed class ClassAAttr01Proxy : ModelPropertyChange<IClassA, string>
         {
             
             /// <summary>
@@ -476,7 +476,7 @@ namespace TemporaryGeneratedCode.Test
         /// <summary>
         /// Represents a proxy to represent an incremental access to the attr02 property
         /// </summary>
-        private sealed class ClassAAttr02Proxy : ModelPropertyChange<IClassA, IClassB>
+        protected sealed class ClassAAttr02Proxy : ModelPropertyChange<IClassA, IClassB>
         {
             
             /// <summary>
@@ -609,7 +609,7 @@ namespace TemporaryGeneratedCode.Test
         /// <summary>
         /// Represents a proxy to represent an incremental access to the attr01 property
         /// </summary>
-        private sealed class ClassBAttr01Proxy : ModelPropertyChange<IClassB, Nullable<int>>
+        protected sealed class ClassBAttr01Proxy : ModelPropertyChange<IClassB, Nullable<int>>
         {
             
             /// <summary>

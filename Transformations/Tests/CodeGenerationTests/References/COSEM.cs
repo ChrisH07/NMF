@@ -3447,7 +3447,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ID property
         /// </summary>
-        private sealed class LogicalDeviceIDProxy : ModelPropertyChange<ILogicalDevice, string>
+        protected sealed class LogicalDeviceIDProxy : ModelPropertyChange<ILogicalDevice, string>
         {
             
             /// <summary>
@@ -3478,7 +3478,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AA property
         /// </summary>
-        private sealed class LogicalDeviceAAProxy : ModelPropertyChange<ILogicalDevice, ICurrentAssociation>
+        protected sealed class LogicalDeviceAAProxy : ModelPropertyChange<ILogicalDevice, ICurrentAssociation>
         {
             
             /// <summary>
@@ -3509,7 +3509,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the name property
         /// </summary>
-        private sealed class LogicalDeviceNameProxy : ModelPropertyChange<ILogicalDevice, ILogicalDeviceName>
+        protected sealed class LogicalDeviceNameProxy : ModelPropertyChange<ILogicalDevice, ILogicalDeviceName>
         {
             
             /// <summary>
@@ -3540,7 +3540,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AutoConnect property
         /// </summary>
-        private sealed class LogicalDeviceAutoConnectProxy : ModelPropertyChange<ILogicalDevice, IAutoConnectObject>
+        protected sealed class LogicalDeviceAutoConnectProxy : ModelPropertyChange<ILogicalDevice, IAutoConnectObject>
         {
             
             /// <summary>
@@ -3571,7 +3571,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BillingPeriodValues property
         /// </summary>
-        private sealed class LogicalDeviceBillingPeriodValuesProxy : ModelPropertyChange<ILogicalDevice, IBillingPeriodValues>
+        protected sealed class LogicalDeviceBillingPeriodValuesProxy : ModelPropertyChange<ILogicalDevice, IBillingPeriodValues>
         {
             
             /// <summary>
@@ -3602,7 +3602,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ElectricityID property
         /// </summary>
-        private sealed class LogicalDeviceElectricityIDProxy : ModelPropertyChange<ILogicalDevice, IElectricityID>
+        protected sealed class LogicalDeviceElectricityIDProxy : ModelPropertyChange<ILogicalDevice, IElectricityID>
         {
             
             /// <summary>
@@ -3633,7 +3633,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ProgramEntries property
         /// </summary>
-        private sealed class LogicalDeviceProgramEntriesProxy : ModelPropertyChange<ILogicalDevice, IElectricityProgramEntries>
+        protected sealed class LogicalDeviceProgramEntriesProxy : ModelPropertyChange<ILogicalDevice, IElectricityProgramEntries>
         {
             
             /// <summary>
@@ -3664,7 +3664,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OutputPulse property
         /// </summary>
-        private sealed class LogicalDeviceOutputPulseProxy : ModelPropertyChange<ILogicalDevice, IOutputPulseValues_constants>
+        protected sealed class LogicalDeviceOutputPulseProxy : ModelPropertyChange<ILogicalDevice, IOutputPulseValues_constants>
         {
             
             /// <summary>
@@ -3695,7 +3695,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReadingFactor property
         /// </summary>
-        private sealed class LogicalDeviceReadingFactorProxy : ModelPropertyChange<ILogicalDevice, IReadingFactorAndCT_VTratio>
+        protected sealed class LogicalDeviceReadingFactorProxy : ModelPropertyChange<ILogicalDevice, IReadingFactorAndCT_VTratio>
         {
             
             /// <summary>
@@ -3726,7 +3726,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NominalValues property
         /// </summary>
-        private sealed class LogicalDeviceNominalValuesProxy : ModelPropertyChange<ILogicalDevice, IElectricityNominalValues>
+        protected sealed class LogicalDeviceNominalValuesProxy : ModelPropertyChange<ILogicalDevice, IElectricityNominalValues>
         {
             
             /// <summary>
@@ -3757,7 +3757,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the InputPulse property
         /// </summary>
-        private sealed class LogicalDeviceInputPulseProxy : ModelPropertyChange<ILogicalDevice, IInputPulseValuesOrConstants>
+        protected sealed class LogicalDeviceInputPulseProxy : ModelPropertyChange<ILogicalDevice, IInputPulseValuesOrConstants>
         {
             
             /// <summary>
@@ -3788,7 +3788,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MeasurementPeriod property
         /// </summary>
-        private sealed class LogicalDeviceMeasurementPeriodProxy : ModelPropertyChange<ILogicalDevice, IMeasurementPeriod_recordingInterval_billingPeriodDuration>
+        protected sealed class LogicalDeviceMeasurementPeriodProxy : ModelPropertyChange<ILogicalDevice, IMeasurementPeriod_recordingInterval_billingPeriodDuration>
         {
             
             /// <summary>
@@ -3819,7 +3819,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TimeEntries property
         /// </summary>
-        private sealed class LogicalDeviceTimeEntriesProxy : ModelPropertyChange<ILogicalDevice, ITimeEntries>
+        protected sealed class LogicalDeviceTimeEntriesProxy : ModelPropertyChange<ILogicalDevice, ITimeEntries>
         {
             
             /// <summary>
@@ -3850,7 +3850,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TransformerLineLosses property
         /// </summary>
-        private sealed class LogicalDeviceTransformerLineLossesProxy : ModelPropertyChange<ILogicalDevice, ITransformerAndLineLosses>
+        protected sealed class LogicalDeviceTransformerLineLossesProxy : ModelPropertyChange<ILogicalDevice, ITransformerAndLineLosses>
         {
             
             /// <summary>
@@ -3881,7 +3881,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MeasurementAlgorithm property
         /// </summary>
-        private sealed class LogicalDeviceMeasurementAlgorithmProxy : ModelPropertyChange<ILogicalDevice, IMeasurementMethods>
+        protected sealed class LogicalDeviceMeasurementAlgorithmProxy : ModelPropertyChange<ILogicalDevice, IMeasurementMethods>
         {
             
             /// <summary>
@@ -3912,7 +3912,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MeteringPoint property
         /// </summary>
-        private sealed class LogicalDeviceMeteringPointProxy : ModelPropertyChange<ILogicalDevice, IMeteringPointID>
+        protected sealed class LogicalDeviceMeteringPointProxy : ModelPropertyChange<ILogicalDevice, IMeteringPointID>
         {
             
             /// <summary>
@@ -3943,7 +3943,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ElectricityRelatedStatus property
         /// </summary>
-        private sealed class LogicalDeviceElectricityRelatedStatusProxy : ModelPropertyChange<ILogicalDevice, IElectricityRelatedStatusData>
+        protected sealed class LogicalDeviceElectricityRelatedStatusProxy : ModelPropertyChange<ILogicalDevice, IElectricityRelatedStatusData>
         {
             
             /// <summary>
@@ -3974,7 +3974,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RegisterMonitor property
         /// </summary>
-        private sealed class LogicalDeviceRegisterMonitorProxy : ModelPropertyChange<ILogicalDevice, IRegisterMonitorObject>
+        protected sealed class LogicalDeviceRegisterMonitorProxy : ModelPropertyChange<ILogicalDevice, IRegisterMonitorObject>
         {
             
             /// <summary>
@@ -4005,7 +4005,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ElectricityValues property
         /// </summary>
-        private sealed class LogicalDeviceElectricityValuesProxy : ModelPropertyChange<ILogicalDevice, IElectricityValues>
+        protected sealed class LogicalDeviceElectricityValuesProxy : ModelPropertyChange<ILogicalDevice, IElectricityValues>
         {
             
             /// <summary>
@@ -4036,7 +4036,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MeasurementValueTypes property
         /// </summary>
-        private sealed class LogicalDeviceMeasurementValueTypesProxy : ModelPropertyChange<ILogicalDevice, IMeasurementValues>
+        protected sealed class LogicalDeviceMeasurementValueTypesProxy : ModelPropertyChange<ILogicalDevice, IMeasurementValues>
         {
             
             /// <summary>
@@ -4067,7 +4067,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Harmonics property
         /// </summary>
-        private sealed class LogicalDeviceHarmonicsProxy : ModelPropertyChange<ILogicalDevice, IElectricityHarmonics>
+        protected sealed class LogicalDeviceHarmonicsProxy : ModelPropertyChange<ILogicalDevice, IElectricityHarmonics>
         {
             
             /// <summary>
@@ -4098,7 +4098,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Tariffs property
         /// </summary>
-        private sealed class LogicalDeviceTariffsProxy : ModelPropertyChange<ILogicalDevice, ICurrentlyActiveTariff>
+        protected sealed class LogicalDeviceTariffsProxy : ModelPropertyChange<ILogicalDevice, ICurrentlyActiveTariff>
         {
             
             /// <summary>
@@ -4129,7 +4129,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Phaseangles property
         /// </summary>
-        private sealed class LogicalDevicePhaseanglesProxy : ModelPropertyChange<ILogicalDevice, IExtendedPhaseAngleMeasurement>
+        protected sealed class LogicalDevicePhaseanglesProxy : ModelPropertyChange<ILogicalDevice, IExtendedPhaseAngleMeasurement>
         {
             
             /// <summary>
@@ -5933,7 +5933,7 @@ namespace TemporaryGeneratedCode.COSEM
         {
             if ((feature == "LOGICALDEVICE"))
             {
-                return this._logicalDevice;
+                return ((System.Collections.IList)(this.LogicalDevice));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -7652,7 +7652,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ID property
         /// </summary>
-        private sealed class PhysicalDeviceIDProxy : ModelPropertyChange<IPhysicalDevice, string>
+        protected sealed class PhysicalDeviceIDProxy : ModelPropertyChange<IPhysicalDevice, string>
         {
             
             /// <summary>
@@ -7683,7 +7683,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the managementLogicalDevice property
         /// </summary>
-        private sealed class PhysicalDeviceManagementLogicalDeviceProxy : ModelPropertyChange<IPhysicalDevice, IManagementLogicalDevice>
+        protected sealed class PhysicalDeviceManagementLogicalDeviceProxy : ModelPropertyChange<IPhysicalDevice, IManagementLogicalDevice>
         {
             
             /// <summary>
@@ -7714,7 +7714,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ElectricityRelatedStatus property
         /// </summary>
-        private sealed class PhysicalDeviceElectricityRelatedStatusProxy : ModelPropertyChange<IPhysicalDevice, IElectricityRelatedStatusData>
+        protected sealed class PhysicalDeviceElectricityRelatedStatusProxy : ModelPropertyChange<IPhysicalDevice, IElectricityRelatedStatusData>
         {
             
             /// <summary>
@@ -7745,7 +7745,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AA property
         /// </summary>
-        private sealed class PhysicalDeviceAAProxy : ModelPropertyChange<IPhysicalDevice, ICurrentAssociation>
+        protected sealed class PhysicalDeviceAAProxy : ModelPropertyChange<IPhysicalDevice, ICurrentAssociation>
         {
             
             /// <summary>
@@ -7776,7 +7776,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AutoConnect property
         /// </summary>
-        private sealed class PhysicalDeviceAutoConnectProxy : ModelPropertyChange<IPhysicalDevice, IAutoConnectObject>
+        protected sealed class PhysicalDeviceAutoConnectProxy : ModelPropertyChange<IPhysicalDevice, IAutoConnectObject>
         {
             
             /// <summary>
@@ -7807,7 +7807,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BillingPeriodValues property
         /// </summary>
-        private sealed class PhysicalDeviceBillingPeriodValuesProxy : ModelPropertyChange<IPhysicalDevice, IBillingPeriodValues>
+        protected sealed class PhysicalDeviceBillingPeriodValuesProxy : ModelPropertyChange<IPhysicalDevice, IBillingPeriodValues>
         {
             
             /// <summary>
@@ -7838,7 +7838,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ElectricityID property
         /// </summary>
-        private sealed class PhysicalDeviceElectricityIDProxy : ModelPropertyChange<IPhysicalDevice, IElectricityID>
+        protected sealed class PhysicalDeviceElectricityIDProxy : ModelPropertyChange<IPhysicalDevice, IElectricityID>
         {
             
             /// <summary>
@@ -7869,7 +7869,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ProgramEntries property
         /// </summary>
-        private sealed class PhysicalDeviceProgramEntriesProxy : ModelPropertyChange<IPhysicalDevice, IElectricityProgramEntries>
+        protected sealed class PhysicalDeviceProgramEntriesProxy : ModelPropertyChange<IPhysicalDevice, IElectricityProgramEntries>
         {
             
             /// <summary>
@@ -7900,7 +7900,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OutputPulse property
         /// </summary>
-        private sealed class PhysicalDeviceOutputPulseProxy : ModelPropertyChange<IPhysicalDevice, IOutputPulseValues_constants>
+        protected sealed class PhysicalDeviceOutputPulseProxy : ModelPropertyChange<IPhysicalDevice, IOutputPulseValues_constants>
         {
             
             /// <summary>
@@ -7931,7 +7931,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReadingFactor property
         /// </summary>
-        private sealed class PhysicalDeviceReadingFactorProxy : ModelPropertyChange<IPhysicalDevice, IReadingFactorAndCT_VTratio>
+        protected sealed class PhysicalDeviceReadingFactorProxy : ModelPropertyChange<IPhysicalDevice, IReadingFactorAndCT_VTratio>
         {
             
             /// <summary>
@@ -7962,7 +7962,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NominalValues property
         /// </summary>
-        private sealed class PhysicalDeviceNominalValuesProxy : ModelPropertyChange<IPhysicalDevice, IElectricityNominalValues>
+        protected sealed class PhysicalDeviceNominalValuesProxy : ModelPropertyChange<IPhysicalDevice, IElectricityNominalValues>
         {
             
             /// <summary>
@@ -7993,7 +7993,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the InputPulse property
         /// </summary>
-        private sealed class PhysicalDeviceInputPulseProxy : ModelPropertyChange<IPhysicalDevice, IInputPulseValuesOrConstants>
+        protected sealed class PhysicalDeviceInputPulseProxy : ModelPropertyChange<IPhysicalDevice, IInputPulseValuesOrConstants>
         {
             
             /// <summary>
@@ -8024,7 +8024,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MeasurementPeriod property
         /// </summary>
-        private sealed class PhysicalDeviceMeasurementPeriodProxy : ModelPropertyChange<IPhysicalDevice, IMeasurementPeriod_recordingInterval_billingPeriodDuration>
+        protected sealed class PhysicalDeviceMeasurementPeriodProxy : ModelPropertyChange<IPhysicalDevice, IMeasurementPeriod_recordingInterval_billingPeriodDuration>
         {
             
             /// <summary>
@@ -8055,7 +8055,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TimeEntries property
         /// </summary>
-        private sealed class PhysicalDeviceTimeEntriesProxy : ModelPropertyChange<IPhysicalDevice, ITimeEntries>
+        protected sealed class PhysicalDeviceTimeEntriesProxy : ModelPropertyChange<IPhysicalDevice, ITimeEntries>
         {
             
             /// <summary>
@@ -8086,7 +8086,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TransformerLineLosses property
         /// </summary>
-        private sealed class PhysicalDeviceTransformerLineLossesProxy : ModelPropertyChange<IPhysicalDevice, ITransformerAndLineLosses>
+        protected sealed class PhysicalDeviceTransformerLineLossesProxy : ModelPropertyChange<IPhysicalDevice, ITransformerAndLineLosses>
         {
             
             /// <summary>
@@ -8117,7 +8117,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MeasurementAlgorithm property
         /// </summary>
-        private sealed class PhysicalDeviceMeasurementAlgorithmProxy : ModelPropertyChange<IPhysicalDevice, IMeasurementMethods>
+        protected sealed class PhysicalDeviceMeasurementAlgorithmProxy : ModelPropertyChange<IPhysicalDevice, IMeasurementMethods>
         {
             
             /// <summary>
@@ -8148,7 +8148,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MeteringPoint property
         /// </summary>
-        private sealed class PhysicalDeviceMeteringPointProxy : ModelPropertyChange<IPhysicalDevice, IMeteringPointID>
+        protected sealed class PhysicalDeviceMeteringPointProxy : ModelPropertyChange<IPhysicalDevice, IMeteringPointID>
         {
             
             /// <summary>
@@ -8179,7 +8179,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RegisterMonitor property
         /// </summary>
-        private sealed class PhysicalDeviceRegisterMonitorProxy : ModelPropertyChange<IPhysicalDevice, IRegisterMonitorObject>
+        protected sealed class PhysicalDeviceRegisterMonitorProxy : ModelPropertyChange<IPhysicalDevice, IRegisterMonitorObject>
         {
             
             /// <summary>
@@ -8210,7 +8210,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ElectricityValues property
         /// </summary>
-        private sealed class PhysicalDeviceElectricityValuesProxy : ModelPropertyChange<IPhysicalDevice, IElectricityValues>
+        protected sealed class PhysicalDeviceElectricityValuesProxy : ModelPropertyChange<IPhysicalDevice, IElectricityValues>
         {
             
             /// <summary>
@@ -8241,7 +8241,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MeasurementValueTypes property
         /// </summary>
-        private sealed class PhysicalDeviceMeasurementValueTypesProxy : ModelPropertyChange<IPhysicalDevice, IMeasurementValues>
+        protected sealed class PhysicalDeviceMeasurementValueTypesProxy : ModelPropertyChange<IPhysicalDevice, IMeasurementValues>
         {
             
             /// <summary>
@@ -8272,7 +8272,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Harmonics property
         /// </summary>
-        private sealed class PhysicalDeviceHarmonicsProxy : ModelPropertyChange<IPhysicalDevice, IElectricityHarmonics>
+        protected sealed class PhysicalDeviceHarmonicsProxy : ModelPropertyChange<IPhysicalDevice, IElectricityHarmonics>
         {
             
             /// <summary>
@@ -8303,7 +8303,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Tariffs property
         /// </summary>
-        private sealed class PhysicalDeviceTariffsProxy : ModelPropertyChange<IPhysicalDevice, ICurrentlyActiveTariff>
+        protected sealed class PhysicalDeviceTariffsProxy : ModelPropertyChange<IPhysicalDevice, ICurrentlyActiveTariff>
         {
             
             /// <summary>
@@ -8334,7 +8334,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Phaseangles property
         /// </summary>
-        private sealed class PhysicalDevicePhaseanglesProxy : ModelPropertyChange<IPhysicalDevice, IExtendedPhaseAngleMeasurement>
+        protected sealed class PhysicalDevicePhaseanglesProxy : ModelPropertyChange<IPhysicalDevice, IExtendedPhaseAngleMeasurement>
         {
             
             /// <summary>
@@ -8828,7 +8828,7 @@ namespace TemporaryGeneratedCode.COSEM
         /// <summary>
         /// Represents a proxy to represent an incremental access to the name property
         /// </summary>
-        private sealed class LogicalDeviceNameNameProxy : ModelPropertyChange<ILogicalDeviceName, ISAPAssignmentCurrent>
+        protected sealed class LogicalDeviceNameNameProxy : ModelPropertyChange<ILogicalDeviceName, ISAPAssignmentCurrent>
         {
             
             /// <summary>
@@ -9078,11 +9078,11 @@ namespace TemporaryGeneratedCode.COSEM
         {
             if ((feature == "PHYSICALDEVICE"))
             {
-                return this._physicalDevice;
+                return ((System.Collections.IList)(this.PhysicalDevice));
             }
             if ((feature == "LOGICALDEVICE"))
             {
-                return this._logicalDevice;
+                return ((System.Collections.IList)(this.LogicalDevice));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -9094,11 +9094,11 @@ namespace TemporaryGeneratedCode.COSEM
         /// <param name="container">The container object</param>
         protected override string GetCompositionName(object container)
         {
-            if ((container == this._physicalDevice))
+            if ((container == this.PhysicalDevice))
             {
                 return "PhysicalDevice";
             }
-            if ((container == this._logicalDevice))
+            if ((container == this.LogicalDevice))
             {
                 return "LogicalDevice";
             }
@@ -10283,7 +10283,7 @@ namespace TemporaryGeneratedCode.COSEM.Datatypes
         /// <summary>
         /// Represents a proxy to represent an incremental access to the scaler property
         /// </summary>
-        private sealed class Scal_unit_typeScalerProxy : ModelPropertyChange<IScal_unit_type, Nullable<int>>
+        protected sealed class Scal_unit_typeScalerProxy : ModelPropertyChange<IScal_unit_type, Nullable<int>>
         {
             
             /// <summary>
@@ -10314,7 +10314,7 @@ namespace TemporaryGeneratedCode.COSEM.Datatypes
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Unit property
         /// </summary>
-        private sealed class Scal_unit_typeUnitProxy : ModelPropertyChange<IScal_unit_type, Nullable<Units>>
+        protected sealed class Scal_unit_typeUnitProxy : ModelPropertyChange<IScal_unit_type, Nullable<Units>>
         {
             
             /// <summary>
@@ -12870,7 +12870,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         {
             if ((feature == "INCLUDES"))
             {
-                return this._includes;
+                return ((System.Collections.IList)(this.Includes));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -13539,7 +13539,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the state property
         /// </summary>
-        private sealed class DisconnectControlStateProxy : ModelPropertyChange<TemporaryGeneratedCode.COSEM.InterfaceClasses.IDisconnectControl, Nullable<DisconnectControlState>>
+        protected sealed class DisconnectControlStateProxy : ModelPropertyChange<TemporaryGeneratedCode.COSEM.InterfaceClasses.IDisconnectControl, Nullable<DisconnectControlState>>
         {
             
             /// <summary>
@@ -13570,7 +13570,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the transition property
         /// </summary>
-        private sealed class DisconnectControlTransitionProxy : ModelPropertyChange<TemporaryGeneratedCode.COSEM.InterfaceClasses.IDisconnectControl, Nullable<DisconnectControlTransition>>
+        protected sealed class DisconnectControlTransitionProxy : ModelPropertyChange<TemporaryGeneratedCode.COSEM.InterfaceClasses.IDisconnectControl, Nullable<DisconnectControlTransition>>
         {
             
             /// <summary>
@@ -14365,7 +14365,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class RegisterValueProxy : ModelPropertyChange<IRegister, Nullable<float>>
+        protected sealed class RegisterValueProxy : ModelPropertyChange<IRegister, Nullable<float>>
         {
             
             /// <summary>
@@ -14396,7 +14396,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the scaler_unit property
         /// </summary>
-        private sealed class RegisterScaler_unitProxy : ModelPropertyChange<IRegister, IScal_unit_type>
+        protected sealed class RegisterScaler_unitProxy : ModelPropertyChange<IRegister, IScal_unit_type>
         {
             
             /// <summary>
@@ -14701,7 +14701,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ldnname property
         /// </summary>
-        private sealed class SAPAssignmentLdnnameProxy : ModelPropertyChange<ISAPAssignment, ILogicalDeviceName>
+        protected sealed class SAPAssignmentLdnnameProxy : ModelPropertyChange<ISAPAssignment, ILogicalDeviceName>
         {
             
             /// <summary>
@@ -15004,7 +15004,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AA property
         /// </summary>
-        private sealed class AssociationLNAAProxy : ModelPropertyChange<IAssociationLN, IApplicationAssociation>
+        protected sealed class AssociationLNAAProxy : ModelPropertyChange<IAssociationLN, IApplicationAssociation>
         {
             
             /// <summary>
@@ -15341,7 +15341,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the number_of_periods property
         /// </summary>
-        private sealed class DemandRegisterNumber_of_periodsProxy : ModelPropertyChange<IDemandRegister, Nullable<int>>
+        protected sealed class DemandRegisterNumber_of_periodsProxy : ModelPropertyChange<IDemandRegister, Nullable<int>>
         {
             
             /// <summary>
@@ -15372,7 +15372,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the period property
         /// </summary>
-        private sealed class DemandRegisterPeriodProxy : ModelPropertyChange<IDemandRegister, Nullable<int>>
+        protected sealed class DemandRegisterPeriodProxy : ModelPropertyChange<IDemandRegister, Nullable<int>>
         {
             
             /// <summary>
@@ -15653,7 +15653,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the logical_name property
         /// </summary>
-        private sealed class BaseLogical_nameProxy : ModelPropertyChange<IBase, string>
+        protected sealed class BaseLogical_nameProxy : ModelPropertyChange<IBase, string>
         {
             
             /// <summary>
@@ -15684,7 +15684,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the OBIScode property
         /// </summary>
-        private sealed class BaseOBIScodeProxy : ModelPropertyChange<IBase, string>
+        protected sealed class BaseOBIScodeProxy : ModelPropertyChange<IBase, string>
         {
             
             /// <summary>
@@ -16019,7 +16019,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the compact_buffer property
         /// </summary>
-        private sealed class CompactdataCompact_bufferProxy : ModelPropertyChange<ICompactdata, string>
+        protected sealed class CompactdataCompact_bufferProxy : ModelPropertyChange<ICompactdata, string>
         {
             
             /// <summary>
@@ -16050,7 +16050,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the template_id property
         /// </summary>
-        private sealed class CompactdataTemplate_idProxy : ModelPropertyChange<ICompactdata, string>
+        protected sealed class CompactdataTemplate_idProxy : ModelPropertyChange<ICompactdata, string>
         {
             
             /// <summary>
@@ -16081,7 +16081,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the template_description property
         /// </summary>
-        private sealed class CompactdataTemplate_descriptionProxy : ModelPropertyChange<ICompactdata, string>
+        protected sealed class CompactdataTemplate_descriptionProxy : ModelPropertyChange<ICompactdata, string>
         {
             
             /// <summary>
@@ -16904,11 +16904,11 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         {
             if ((feature == "TIME_ZONE"))
             {
-                return this._time_zone;
+                return ((System.Collections.IList)(this.Time_zone));
             }
             if ((feature == "DAYLIGHT_SAVINGS_DEVIATION"))
             {
-                return this._daylight_savings_deviation;
+                return ((System.Collections.IList)(this.Daylight_savings_deviation));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -16993,7 +16993,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the time property
         /// </summary>
-        private sealed class ClockTimeProxy : ModelPropertyChange<IClock, string>
+        protected sealed class ClockTimeProxy : ModelPropertyChange<IClock, string>
         {
             
             /// <summary>
@@ -17024,7 +17024,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the status property
         /// </summary>
-        private sealed class ClockStatusProxy : ModelPropertyChange<IClock, string>
+        protected sealed class ClockStatusProxy : ModelPropertyChange<IClock, string>
         {
             
             /// <summary>
@@ -17055,7 +17055,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the daylight_savings_begin property
         /// </summary>
-        private sealed class ClockDaylight_savings_beginProxy : ModelPropertyChange<IClock, string>
+        protected sealed class ClockDaylight_savings_beginProxy : ModelPropertyChange<IClock, string>
         {
             
             /// <summary>
@@ -17086,7 +17086,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the daylight_savings_end property
         /// </summary>
-        private sealed class ClockDaylight_savings_endProxy : ModelPropertyChange<IClock, string>
+        protected sealed class ClockDaylight_savings_endProxy : ModelPropertyChange<IClock, string>
         {
             
             /// <summary>
@@ -17117,7 +17117,7 @@ namespace TemporaryGeneratedCode.COSEM.InterfaceClasses
         /// <summary>
         /// Represents a proxy to represent an incremental access to the daylight_savings_enabled property
         /// </summary>
-        private sealed class ClockDaylight_savings_enabledProxy : ModelPropertyChange<IClock, Nullable<bool>>
+        protected sealed class ClockDaylight_savings_enabledProxy : ModelPropertyChange<IClock, Nullable<bool>>
         {
             
             /// <summary>
@@ -18554,7 +18554,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActiveFirmwareIdentifier property
         /// </summary>
-        private sealed class ProgramEntriesActiveFirmwareIdentifierProxy : ModelPropertyChange<IProgramEntries, string>
+        protected sealed class ProgramEntriesActiveFirmwareIdentifierProxy : ModelPropertyChange<IProgramEntries, string>
         {
             
             /// <summary>
@@ -18585,7 +18585,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActiveFirmwareVersion property
         /// </summary>
-        private sealed class ProgramEntriesActiveFirmwareVersionProxy : ModelPropertyChange<IProgramEntries, string>
+        protected sealed class ProgramEntriesActiveFirmwareVersionProxy : ModelPropertyChange<IProgramEntries, string>
         {
             
             /// <summary>
@@ -18616,7 +18616,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActiveFirmwareSignature property
         /// </summary>
-        private sealed class ProgramEntriesActiveFirmwareSignatureProxy : ModelPropertyChange<IProgramEntries, string>
+        protected sealed class ProgramEntriesActiveFirmwareSignatureProxy : ModelPropertyChange<IProgramEntries, string>
         {
             
             /// <summary>
@@ -18867,7 +18867,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BillingPeriodCounter property
         /// </summary>
-        private sealed class BillingPeriodValuesBillingPeriodCounterProxy : ModelPropertyChange<IBillingPeriodValues, Nullable<int>>
+        protected sealed class BillingPeriodValuesBillingPeriodCounterProxy : ModelPropertyChange<IBillingPeriodValues, Nullable<int>>
         {
             
             /// <summary>
@@ -18898,7 +18898,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NumberAvailableBillingPeriods property
         /// </summary>
-        private sealed class BillingPeriodValuesNumberAvailableBillingPeriodsProxy : ModelPropertyChange<IBillingPeriodValues, Nullable<int>>
+        protected sealed class BillingPeriodValuesNumberAvailableBillingPeriodsProxy : ModelPropertyChange<IBillingPeriodValues, Nullable<int>>
         {
             
             /// <summary>
@@ -18929,7 +18929,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TimestampRecentBillingPeriod property
         /// </summary>
-        private sealed class BillingPeriodValuesTimestampRecentBillingPeriodProxy : ModelPropertyChange<IBillingPeriodValues, string>
+        protected sealed class BillingPeriodValuesTimestampRecentBillingPeriodProxy : ModelPropertyChange<IBillingPeriodValues, string>
         {
             
             /// <summary>
@@ -19130,7 +19130,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LocalTime property
         /// </summary>
-        private sealed class TimeEntriesLocalTimeProxy : ModelPropertyChange<ITimeEntries, string>
+        protected sealed class TimeEntriesLocalTimeProxy : ModelPropertyChange<ITimeEntries, string>
         {
             
             /// <summary>
@@ -19161,7 +19161,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LocalDate property
         /// </summary>
-        private sealed class TimeEntriesLocalDateProxy : ModelPropertyChange<ITimeEntries, string>
+        protected sealed class TimeEntriesLocalDateProxy : ModelPropertyChange<ITimeEntries, string>
         {
             
             /// <summary>
@@ -19312,7 +19312,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Time property
         /// </summary>
-        private sealed class ClockObjectTimeProxy : ModelPropertyChange<IClockObject, string>
+        protected sealed class ClockObjectTimeProxy : ModelPropertyChange<IClockObject, string>
         {
             
             /// <summary>
@@ -19465,7 +19465,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class UNIXClockValueProxy : ModelPropertyChange<IUNIXClock, string>
+        protected sealed class UNIXClockValueProxy : ModelPropertyChange<IUNIXClock, string>
         {
             
             /// <summary>
@@ -19655,7 +19655,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Connection property
         /// </summary>
-        private sealed class AutoConnectObjectConnectionProxy : ModelPropertyChange<IAutoConnectObject, Nullable<bool>>
+        protected sealed class AutoConnectObjectConnectionProxy : ModelPropertyChange<IAutoConnectObject, Nullable<bool>>
         {
             
             /// <summary>
@@ -19806,7 +19806,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Answer property
         /// </summary>
-        private sealed class AutoAnswerObjectAnswerProxy : ModelPropertyChange<IAutoAnswerObject, Nullable<bool>>
+        protected sealed class AutoAnswerObjectAnswerProxy : ModelPropertyChange<IAutoAnswerObject, Nullable<bool>>
         {
             
             /// <summary>
@@ -21211,7 +21211,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the globalMeterReset property
         /// </summary>
-        private sealed class ScriptTableGlobalMeterResetProxy : ModelPropertyChange<IScriptTable, IGlobalMeterReset>
+        protected sealed class ScriptTableGlobalMeterResetProxy : ModelPropertyChange<IScriptTable, IGlobalMeterReset>
         {
             
             /// <summary>
@@ -21242,7 +21242,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MDIReset property
         /// </summary>
-        private sealed class ScriptTableMDIResetProxy : ModelPropertyChange<IScriptTable, IMDIReset>
+        protected sealed class ScriptTableMDIResetProxy : ModelPropertyChange<IScriptTable, IMDIReset>
         {
             
             /// <summary>
@@ -21273,7 +21273,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Tariffication property
         /// </summary>
-        private sealed class ScriptTableTarifficationProxy : ModelPropertyChange<IScriptTable, ITariffication>
+        protected sealed class ScriptTableTarifficationProxy : ModelPropertyChange<IScriptTable, ITariffication>
         {
             
             /// <summary>
@@ -21304,7 +21304,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AcitvateTest property
         /// </summary>
-        private sealed class ScriptTableAcitvateTestProxy : ModelPropertyChange<IScriptTable, IActivateTestMode>
+        protected sealed class ScriptTableAcitvateTestProxy : ModelPropertyChange<IScriptTable, IActivateTestMode>
         {
             
             /// <summary>
@@ -21335,7 +21335,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivateNormal property
         /// </summary>
-        private sealed class ScriptTableActivateNormalProxy : ModelPropertyChange<IScriptTable, IActivateNormalMode>
+        protected sealed class ScriptTableActivateNormalProxy : ModelPropertyChange<IScriptTable, IActivateNormalMode>
         {
             
             /// <summary>
@@ -21366,7 +21366,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SetOutput property
         /// </summary>
-        private sealed class ScriptTableSetOutputProxy : ModelPropertyChange<IScriptTable, ISetOutputSignal>
+        protected sealed class ScriptTableSetOutputProxy : ModelPropertyChange<IScriptTable, ISetOutputSignal>
         {
             
             /// <summary>
@@ -21397,7 +21397,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SwitchOptical property
         /// </summary>
-        private sealed class ScriptTableSwitchOpticalProxy : ModelPropertyChange<IScriptTable, ISwitchOpticalTestOutput>
+        protected sealed class ScriptTableSwitchOpticalProxy : ModelPropertyChange<IScriptTable, ISwitchOpticalTestOutput>
         {
             
             /// <summary>
@@ -21428,7 +21428,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PowerQuality property
         /// </summary>
-        private sealed class ScriptTablePowerQualityProxy : ModelPropertyChange<IScriptTable, IPowerQualityMeasurementManagement>
+        protected sealed class ScriptTablePowerQualityProxy : ModelPropertyChange<IScriptTable, IPowerQualityMeasurementManagement>
         {
             
             /// <summary>
@@ -21459,7 +21459,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Disconnect property
         /// </summary>
-        private sealed class ScriptTableDisconnectProxy : ModelPropertyChange<IScriptTable, IDisconnectControl>
+        protected sealed class ScriptTableDisconnectProxy : ModelPropertyChange<IScriptTable, IDisconnectControl>
         {
             
             /// <summary>
@@ -21490,7 +21490,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Image property
         /// </summary>
-        private sealed class ScriptTableImageProxy : ModelPropertyChange<IScriptTable, IImageActivation>
+        protected sealed class ScriptTableImageProxy : ModelPropertyChange<IScriptTable, IImageActivation>
         {
             
             /// <summary>
@@ -21521,7 +21521,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Push property
         /// </summary>
-        private sealed class ScriptTablePushProxy : ModelPropertyChange<IScriptTable, IPush>
+        protected sealed class ScriptTablePushProxy : ModelPropertyChange<IScriptTable, IPush>
         {
             
             /// <summary>
@@ -21552,7 +21552,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Broadcast property
         /// </summary>
-        private sealed class ScriptTableBroadcastProxy : ModelPropertyChange<IScriptTable, IBroadcast>
+        protected sealed class ScriptTableBroadcastProxy : ModelPropertyChange<IScriptTable, IBroadcast>
         {
             
             /// <summary>
@@ -22881,7 +22881,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the disconnect property
         /// </summary>
-        private sealed class SingleActionScheduleObjectDisconnectProxy : ModelPropertyChange<ISingleActionScheduleObject, IDisconnectControlSchedule>
+        protected sealed class SingleActionScheduleObjectDisconnectProxy : ModelPropertyChange<ISingleActionScheduleObject, IDisconnectControlSchedule>
         {
             
             /// <summary>
@@ -22912,7 +22912,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the BillingPeriodEnd property
         /// </summary>
-        private sealed class SingleActionScheduleObjectBillingPeriodEndProxy : ModelPropertyChange<ISingleActionScheduleObject, IEndOfBillingPeriodSchedule>
+        protected sealed class SingleActionScheduleObjectBillingPeriodEndProxy : ModelPropertyChange<ISingleActionScheduleObject, IEndOfBillingPeriodSchedule>
         {
             
             /// <summary>
@@ -22943,7 +22943,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Image property
         /// </summary>
-        private sealed class SingleActionScheduleObjectImageProxy : ModelPropertyChange<ISingleActionScheduleObject, IImageActivationSchedule>
+        protected sealed class SingleActionScheduleObjectImageProxy : ModelPropertyChange<ISingleActionScheduleObject, IImageActivationSchedule>
         {
             
             /// <summary>
@@ -22974,7 +22974,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Output property
         /// </summary>
-        private sealed class SingleActionScheduleObjectOutputProxy : ModelPropertyChange<ISingleActionScheduleObject, IOutputControlSchedule>
+        protected sealed class SingleActionScheduleObjectOutputProxy : ModelPropertyChange<ISingleActionScheduleObject, IOutputControlSchedule>
         {
             
             /// <summary>
@@ -23005,7 +23005,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Push property
         /// </summary>
-        private sealed class SingleActionScheduleObjectPushProxy : ModelPropertyChange<ISingleActionScheduleObject, IPushSchedule>
+        protected sealed class SingleActionScheduleObjectPushProxy : ModelPropertyChange<ISingleActionScheduleObject, IPushSchedule>
         {
             
             /// <summary>
@@ -23665,7 +23665,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class MaxCreditLimitValueProxy : ModelPropertyChange<IMaxCreditLimit, Nullable<double>>
+        protected sealed class MaxCreditLimitValueProxy : ModelPropertyChange<IMaxCreditLimit, Nullable<double>>
         {
             
             /// <summary>
@@ -23818,7 +23818,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class MaxVendLimitValueProxy : ModelPropertyChange<IMaxVendLimit, Nullable<double>>
+        protected sealed class MaxVendLimitValueProxy : ModelPropertyChange<IMaxVendLimit, Nullable<double>>
         {
             
             /// <summary>
@@ -24297,7 +24297,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the GeneralLocalPortReadout property
         /// </summary>
-        private sealed class StandardReadoutGeneralLocalPortReadoutProxy : ModelPropertyChange<IStandardReadout, string>
+        protected sealed class StandardReadoutGeneralLocalPortReadoutProxy : ModelPropertyChange<IStandardReadout, string>
         {
             
             /// <summary>
@@ -24328,7 +24328,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the GeneralDisplayReadout property
         /// </summary>
-        private sealed class StandardReadoutGeneralDisplayReadoutProxy : ModelPropertyChange<IStandardReadout, string>
+        protected sealed class StandardReadoutGeneralDisplayReadoutProxy : ModelPropertyChange<IStandardReadout, string>
         {
             
             /// <summary>
@@ -24359,7 +24359,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AlternateDisplayReadout property
         /// </summary>
-        private sealed class StandardReadoutAlternateDisplayReadoutProxy : ModelPropertyChange<IStandardReadout, string>
+        protected sealed class StandardReadoutAlternateDisplayReadoutProxy : ModelPropertyChange<IStandardReadout, string>
         {
             
             /// <summary>
@@ -24390,7 +24390,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ServiceDisplayReadout property
         /// </summary>
-        private sealed class StandardReadoutServiceDisplayReadoutProxy : ModelPropertyChange<IStandardReadout, string>
+        protected sealed class StandardReadoutServiceDisplayReadoutProxy : ModelPropertyChange<IStandardReadout, string>
         {
             
             /// <summary>
@@ -24421,7 +24421,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ListConfigMeterData property
         /// </summary>
-        private sealed class StandardReadoutListConfigMeterDataProxy : ModelPropertyChange<IStandardReadout, string>
+        protected sealed class StandardReadoutListConfigMeterDataProxy : ModelPropertyChange<IStandardReadout, string>
         {
             
             /// <summary>
@@ -24452,7 +24452,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the AdditionalReadout property
         /// </summary>
-        private sealed class StandardReadoutAdditionalReadoutProxy : ModelPropertyChange<IStandardReadout, string>
+        protected sealed class StandardReadoutAdditionalReadoutProxy : ModelPropertyChange<IStandardReadout, string>
         {
             
             /// <summary>
@@ -26751,7 +26751,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class InvocationCounterValueProxy : ModelPropertyChange<IInvocationCounter, Nullable<int>>
+        protected sealed class InvocationCounterValueProxy : ModelPropertyChange<IInvocationCounter, Nullable<int>>
         {
             
             /// <summary>
@@ -27130,7 +27130,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Standard property
         /// </summary>
-        private sealed class UtilitiesTableObjectStandardProxy : ModelPropertyChange<IUtilitiesTableObject, string>
+        protected sealed class UtilitiesTableObjectStandardProxy : ModelPropertyChange<IUtilitiesTableObject, string>
         {
             
             /// <summary>
@@ -27161,7 +27161,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Manufacturer property
         /// </summary>
-        private sealed class UtilitiesTableObjectManufacturerProxy : ModelPropertyChange<IUtilitiesTableObject, string>
+        protected sealed class UtilitiesTableObjectManufacturerProxy : ModelPropertyChange<IUtilitiesTableObject, string>
         {
             
             /// <summary>
@@ -27192,7 +27192,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StdPending property
         /// </summary>
-        private sealed class UtilitiesTableObjectStdPendingProxy : ModelPropertyChange<IUtilitiesTableObject, string>
+        protected sealed class UtilitiesTableObjectStdPendingProxy : ModelPropertyChange<IUtilitiesTableObject, string>
         {
             
             /// <summary>
@@ -27223,7 +27223,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MfgPending property
         /// </summary>
-        private sealed class UtilitiesTableObjectMfgPendingProxy : ModelPropertyChange<IUtilitiesTableObject, string>
+        protected sealed class UtilitiesTableObjectMfgPendingProxy : ModelPropertyChange<IUtilitiesTableObject, string>
         {
             
             /// <summary>
@@ -27415,7 +27415,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class DeviceIDValueProxy : ModelPropertyChange<IDeviceID, string>
+        protected sealed class DeviceIDValueProxy : ModelPropertyChange<IDeviceID, string>
         {
             
             /// <summary>
@@ -27568,7 +27568,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class MeteringPointIDValueProxy : ModelPropertyChange<IMeteringPointID, string>
+        protected sealed class MeteringPointIDValueProxy : ModelPropertyChange<IMeteringPointID, string>
         {
             
             /// <summary>
@@ -28269,7 +28269,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NumberConfigProgramChanges property
         /// </summary>
-        private sealed class ParameterChangesObjectNumberConfigProgramChangesProxy : ModelPropertyChange<IParameterChangesObject, Nullable<int>>
+        protected sealed class ParameterChangesObjectNumberConfigProgramChangesProxy : ModelPropertyChange<IParameterChangesObject, Nullable<int>>
         {
             
             /// <summary>
@@ -28300,7 +28300,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DateLastConfigChange property
         /// </summary>
-        private sealed class ParameterChangesObjectDateLastConfigChangeProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
+        protected sealed class ParameterChangesObjectDateLastConfigChangeProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
         {
             
             /// <summary>
@@ -28331,7 +28331,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DateLastSwitchChange property
         /// </summary>
-        private sealed class ParameterChangesObjectDateLastSwitchChangeProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
+        protected sealed class ParameterChangesObjectDateLastSwitchChangeProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
         {
             
             /// <summary>
@@ -28362,7 +28362,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DateLastRippleControlChange property
         /// </summary>
-        private sealed class ParameterChangesObjectDateLastRippleControlChangeProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
+        protected sealed class ParameterChangesObjectDateLastRippleControlChangeProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
         {
             
             /// <summary>
@@ -28393,7 +28393,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the StatusSecuritySwitches property
         /// </summary>
-        private sealed class ParameterChangesObjectStatusSecuritySwitchesProxy : ModelPropertyChange<IParameterChangesObject, string>
+        protected sealed class ParameterChangesObjectStatusSecuritySwitchesProxy : ModelPropertyChange<IParameterChangesObject, string>
         {
             
             /// <summary>
@@ -28424,7 +28424,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DateLastCalibration property
         /// </summary>
-        private sealed class ParameterChangesObjectDateLastCalibrationProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
+        protected sealed class ParameterChangesObjectDateLastCalibrationProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
         {
             
             /// <summary>
@@ -28455,7 +28455,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DateNextConfig property
         /// </summary>
-        private sealed class ParameterChangesObjectDateNextConfigProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
+        protected sealed class ParameterChangesObjectDateNextConfigProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
         {
             
             /// <summary>
@@ -28486,7 +28486,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DateActivationPassivCalendar property
         /// </summary>
-        private sealed class ParameterChangesObjectDateActivationPassivCalendarProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
+        protected sealed class ParameterChangesObjectDateActivationPassivCalendarProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
         {
             
             /// <summary>
@@ -28517,7 +28517,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NumberProtectedConfigChanges property
         /// </summary>
-        private sealed class ParameterChangesObjectNumberProtectedConfigChangesProxy : ModelPropertyChange<IParameterChangesObject, Nullable<int>>
+        protected sealed class ParameterChangesObjectNumberProtectedConfigChangesProxy : ModelPropertyChange<IParameterChangesObject, Nullable<int>>
         {
             
             /// <summary>
@@ -28548,7 +28548,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DateLastProtectedConfigChange property
         /// </summary>
-        private sealed class ParameterChangesObjectDateLastProtectedConfigChangeProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
+        protected sealed class ParameterChangesObjectDateLastProtectedConfigChangeProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
         {
             
             /// <summary>
@@ -28579,7 +28579,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DateLastClockSynch property
         /// </summary>
-        private sealed class ParameterChangesObjectDateLastClockSynchProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
+        protected sealed class ParameterChangesObjectDateLastClockSynchProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
         {
             
             /// <summary>
@@ -28610,7 +28610,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DateLastFirmwareActivation property
         /// </summary>
-        private sealed class ParameterChangesObjectDateLastFirmwareActivationProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
+        protected sealed class ParameterChangesObjectDateLastFirmwareActivationProxy : ModelPropertyChange<IParameterChangesObject, Nullable<System.DateTime>>
         {
             
             /// <summary>
@@ -28763,7 +28763,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class I_O_control_signal_objects_contentsmanufacturerspecificValueProxy : ModelPropertyChange<II_O_control_signal_objects_contentsmanufacturerspecific, string>
+        protected sealed class I_O_control_signal_objects_contentsmanufacturerspecificValueProxy : ModelPropertyChange<II_O_control_signal_objects_contentsmanufacturerspecific, string>
         {
             
             /// <summary>
@@ -29075,7 +29075,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class IOControlSignalsManufacturerValueProxy : ModelPropertyChange<IIOControlSignalsManufacturer, string>
+        protected sealed class IOControlSignalsManufacturerValueProxy : ModelPropertyChange<IIOControlSignalsManufacturer, string>
         {
             
             /// <summary>
@@ -29384,7 +29384,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class InternalControlManuValueProxy : ModelPropertyChange<IInternalControlManu, string>
+        protected sealed class InternalControlManuValueProxy : ModelPropertyChange<IInternalControlManu, string>
         {
             
             /// <summary>
@@ -29810,7 +29810,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ErrorRegisterObjectValueProxy : ModelPropertyChange<IErrorRegisterObject, string>
+        protected sealed class ErrorRegisterObjectValueProxy : ModelPropertyChange<IErrorRegisterObject, string>
         {
             
             /// <summary>
@@ -30041,7 +30041,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class AlarmRegisterObjectValueProxy : ModelPropertyChange<IAlarmRegisterObject, string>
+        protected sealed class AlarmRegisterObjectValueProxy : ModelPropertyChange<IAlarmRegisterObject, string>
         {
             
             /// <summary>
@@ -30194,7 +30194,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class AlarmFilterObjectValueProxy : ModelPropertyChange<IAlarmFilterObject, string>
+        protected sealed class AlarmFilterObjectValueProxy : ModelPropertyChange<IAlarmFilterObject, string>
         {
             
             /// <summary>
@@ -30347,7 +30347,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class AlarmDescriptorObjectValueProxy : ModelPropertyChange<IAlarmDescriptorObject, string>
+        protected sealed class AlarmDescriptorObjectValueProxy : ModelPropertyChange<IAlarmDescriptorObject, string>
         {
             
             /// <summary>
@@ -30539,7 +30539,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ElectricityIDValueProxy : ModelPropertyChange<IElectricityID, string>
+        protected sealed class ElectricityIDValueProxy : ModelPropertyChange<IElectricityID, string>
         {
             
             /// <summary>
@@ -30990,7 +30990,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Activefirmwareidentifier property
         /// </summary>
-        private sealed class ElectricityProgramEntriesActivefirmwareidentifierProxy : ModelPropertyChange<IElectricityProgramEntries, string>
+        protected sealed class ElectricityProgramEntriesActivefirmwareidentifierProxy : ModelPropertyChange<IElectricityProgramEntries, string>
         {
             
             /// <summary>
@@ -31021,7 +31021,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Parameterrecordnumber property
         /// </summary>
-        private sealed class ElectricityProgramEntriesParameterrecordnumberProxy : ModelPropertyChange<IElectricityProgramEntries, Nullable<int>>
+        protected sealed class ElectricityProgramEntriesParameterrecordnumberProxy : ModelPropertyChange<IElectricityProgramEntries, Nullable<int>>
         {
             
             /// <summary>
@@ -31052,7 +31052,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Timeswitchprogramnumber property
         /// </summary>
-        private sealed class ElectricityProgramEntriesTimeswitchprogramnumberProxy : ModelPropertyChange<IElectricityProgramEntries, Nullable<int>>
+        protected sealed class ElectricityProgramEntriesTimeswitchprogramnumberProxy : ModelPropertyChange<IElectricityProgramEntries, Nullable<int>>
         {
             
             /// <summary>
@@ -31083,7 +31083,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the RCRprogramnumber property
         /// </summary>
-        private sealed class ElectricityProgramEntriesRCRprogramnumberProxy : ModelPropertyChange<IElectricityProgramEntries, Nullable<int>>
+        protected sealed class ElectricityProgramEntriesRCRprogramnumberProxy : ModelPropertyChange<IElectricityProgramEntries, Nullable<int>>
         {
             
             /// <summary>
@@ -31114,7 +31114,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the MeterconnectiondiagramID property
         /// </summary>
-        private sealed class ElectricityProgramEntriesMeterconnectiondiagramIDProxy : ModelPropertyChange<IElectricityProgramEntries, string>
+        protected sealed class ElectricityProgramEntriesMeterconnectiondiagramIDProxy : ModelPropertyChange<IElectricityProgramEntries, string>
         {
             
             /// <summary>
@@ -31145,7 +31145,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Passivecalendarname property
         /// </summary>
-        private sealed class ElectricityProgramEntriesPassivecalendarnameProxy : ModelPropertyChange<IElectricityProgramEntries, string>
+        protected sealed class ElectricityProgramEntriesPassivecalendarnameProxy : ModelPropertyChange<IElectricityProgramEntries, string>
         {
             
             /// <summary>
@@ -31176,7 +31176,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Activefirmwaresignature property
         /// </summary>
-        private sealed class ElectricityProgramEntriesActivefirmwaresignatureProxy : ModelPropertyChange<IElectricityProgramEntries, string>
+        protected sealed class ElectricityProgramEntriesActivefirmwaresignatureProxy : ModelPropertyChange<IElectricityProgramEntries, string>
         {
             
             /// <summary>
@@ -31777,7 +31777,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActiveenergymetrologicalLED property
         /// </summary>
-        private sealed class OutputPulseValues_constantsActiveenergymetrologicalLEDProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
+        protected sealed class OutputPulseValues_constantsActiveenergymetrologicalLEDProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
         {
             
             /// <summary>
@@ -31808,7 +31808,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactiveenergymetrologicalLED property
         /// </summary>
-        private sealed class OutputPulseValues_constantsReactiveenergymetrologicalLEDProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
+        protected sealed class OutputPulseValues_constantsReactiveenergymetrologicalLEDProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
         {
             
             /// <summary>
@@ -31839,7 +31839,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ApparentenergymetrologicalLED property
         /// </summary>
-        private sealed class OutputPulseValues_constantsApparentenergymetrologicalLEDProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
+        protected sealed class OutputPulseValues_constantsApparentenergymetrologicalLEDProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
         {
             
             /// <summary>
@@ -31870,7 +31870,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Activeenergyoutputpulse property
         /// </summary>
-        private sealed class OutputPulseValues_constantsActiveenergyoutputpulseProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
+        protected sealed class OutputPulseValues_constantsActiveenergyoutputpulseProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
         {
             
             /// <summary>
@@ -31901,7 +31901,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactiveenergyoutputpulse property
         /// </summary>
-        private sealed class OutputPulseValues_constantsReactiveenergyoutputpulseProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
+        protected sealed class OutputPulseValues_constantsReactiveenergyoutputpulseProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
         {
             
             /// <summary>
@@ -31932,7 +31932,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Apparentenergyoutputpulse property
         /// </summary>
-        private sealed class OutputPulseValues_constantsApparentenergyoutputpulseProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
+        protected sealed class OutputPulseValues_constantsApparentenergyoutputpulseProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
         {
             
             /// <summary>
@@ -31963,7 +31963,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Volt_squaredhoursmetrologicalLED property
         /// </summary>
-        private sealed class OutputPulseValues_constantsVolt_squaredhoursmetrologicalLEDProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
+        protected sealed class OutputPulseValues_constantsVolt_squaredhoursmetrologicalLEDProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
         {
             
             /// <summary>
@@ -31994,7 +31994,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Ampere_squaredhoursmetrologicalLED property
         /// </summary>
-        private sealed class OutputPulseValues_constantsAmpere_squaredhoursmetrologicalLEDProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
+        protected sealed class OutputPulseValues_constantsAmpere_squaredhoursmetrologicalLEDProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
         {
             
             /// <summary>
@@ -32025,7 +32025,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Volt_squaredhoursoutputpulse property
         /// </summary>
-        private sealed class OutputPulseValues_constantsVolt_squaredhoursoutputpulseProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
+        protected sealed class OutputPulseValues_constantsVolt_squaredhoursoutputpulseProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
         {
             
             /// <summary>
@@ -32056,7 +32056,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Ampere_squaredhoursoutputpulse property
         /// </summary>
-        private sealed class OutputPulseValues_constantsAmpere_squaredhoursoutputpulseProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
+        protected sealed class OutputPulseValues_constantsAmpere_squaredhoursoutputpulseProxy : ModelPropertyChange<IOutputPulseValues_constants, Nullable<double>>
         {
             
             /// <summary>
@@ -32557,7 +32557,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Readingfactorforpower property
         /// </summary>
-        private sealed class ReadingFactorAndCT_VTratioReadingfactorforpowerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<double>>
+        protected sealed class ReadingFactorAndCT_VTratioReadingfactorforpowerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<double>>
         {
             
             /// <summary>
@@ -32588,7 +32588,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Readingfactorforenergy property
         /// </summary>
-        private sealed class ReadingFactorAndCT_VTratioReadingfactorforenergyProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<double>>
+        protected sealed class ReadingFactorAndCT_VTratioReadingfactorforenergyProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<double>>
         {
             
             /// <summary>
@@ -32619,7 +32619,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Transformerratio_currentzähler property
         /// </summary>
-        private sealed class ReadingFactorAndCT_VTratioTransformerratio_currentzählerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
+        protected sealed class ReadingFactorAndCT_VTratioTransformerratio_currentzählerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
         {
             
             /// <summary>
@@ -32650,7 +32650,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Transformerratio_voltagezähler property
         /// </summary>
-        private sealed class ReadingFactorAndCT_VTratioTransformerratio_voltagezählerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
+        protected sealed class ReadingFactorAndCT_VTratioTransformerratio_voltagezählerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
         {
             
             /// <summary>
@@ -32681,7 +32681,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Overalltransformerratiozähler property
         /// </summary>
-        private sealed class ReadingFactorAndCT_VTratioOveralltransformerratiozählerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
+        protected sealed class ReadingFactorAndCT_VTratioOveralltransformerratiozählerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
         {
             
             /// <summary>
@@ -32712,7 +32712,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Transformerratio_currentnenner property
         /// </summary>
-        private sealed class ReadingFactorAndCT_VTratioTransformerratio_currentnennerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
+        protected sealed class ReadingFactorAndCT_VTratioTransformerratio_currentnennerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
         {
             
             /// <summary>
@@ -32743,7 +32743,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Transformerratio_voltagenenner property
         /// </summary>
-        private sealed class ReadingFactorAndCT_VTratioTransformerratio_voltagenennerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
+        protected sealed class ReadingFactorAndCT_VTratioTransformerratio_voltagenennerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
         {
             
             /// <summary>
@@ -32774,7 +32774,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Overalltransformer_rationenner property
         /// </summary>
-        private sealed class ReadingFactorAndCT_VTratioOveralltransformer_rationennerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
+        protected sealed class ReadingFactorAndCT_VTratioOveralltransformer_rationennerProxy : ModelPropertyChange<IReadingFactorAndCT_VTratio, Nullable<int>>
         {
             
             /// <summary>
@@ -33175,7 +33175,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Voltage property
         /// </summary>
-        private sealed class ElectricityNominalValuesVoltageProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
+        protected sealed class ElectricityNominalValuesVoltageProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
         {
             
             /// <summary>
@@ -33206,7 +33206,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Nominalcurrent property
         /// </summary>
-        private sealed class ElectricityNominalValuesNominalcurrentProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
+        protected sealed class ElectricityNominalValuesNominalcurrentProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
         {
             
             /// <summary>
@@ -33237,7 +33237,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Frequency property
         /// </summary>
-        private sealed class ElectricityNominalValuesFrequencyProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
+        protected sealed class ElectricityNominalValuesFrequencyProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
         {
             
             /// <summary>
@@ -33268,7 +33268,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Maximumcurrent property
         /// </summary>
-        private sealed class ElectricityNominalValuesMaximumcurrentProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
+        protected sealed class ElectricityNominalValuesMaximumcurrentProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
         {
             
             /// <summary>
@@ -33299,7 +33299,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reference_voltage_for_power_quality_measurement property
         /// </summary>
-        private sealed class ElectricityNominalValuesReference_voltage_for_power_quality_measurementProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
+        protected sealed class ElectricityNominalValuesReference_voltage_for_power_quality_measurementProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
         {
             
             /// <summary>
@@ -33330,7 +33330,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reference_voltage_for_aux_power_supply property
         /// </summary>
-        private sealed class ElectricityNominalValuesReference_voltage_for_aux_power_supplyProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
+        protected sealed class ElectricityNominalValuesReference_voltage_for_aux_power_supplyProxy : ModelPropertyChange<IElectricityNominalValues, Nullable<double>>
         {
             
             /// <summary>
@@ -33881,7 +33881,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActiveEnergy property
         /// </summary>
-        private sealed class InputPulseValuesOrConstantsActiveEnergyProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
+        protected sealed class InputPulseValuesOrConstantsActiveEnergyProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
         {
             
             /// <summary>
@@ -33912,7 +33912,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_energy property
         /// </summary>
-        private sealed class InputPulseValuesOrConstantsReactive_energyProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
+        protected sealed class InputPulseValuesOrConstantsReactive_energyProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
         {
             
             /// <summary>
@@ -33943,7 +33943,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Apparent_energy property
         /// </summary>
-        private sealed class InputPulseValuesOrConstantsApparent_energyProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
+        protected sealed class InputPulseValuesOrConstantsApparent_energyProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
         {
             
             /// <summary>
@@ -33974,7 +33974,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Volt_squared_hours property
         /// </summary>
-        private sealed class InputPulseValuesOrConstantsVolt_squared_hoursProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
+        protected sealed class InputPulseValuesOrConstantsVolt_squared_hoursProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
         {
             
             /// <summary>
@@ -34005,7 +34005,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Ampere_squared_hours property
         /// </summary>
-        private sealed class InputPulseValuesOrConstantsAmpere_squared_hoursProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
+        protected sealed class InputPulseValuesOrConstantsAmpere_squared_hoursProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
         {
             
             /// <summary>
@@ -34036,7 +34036,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Unitless_quantities property
         /// </summary>
-        private sealed class InputPulseValuesOrConstantsUnitless_quantitiesProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
+        protected sealed class InputPulseValuesOrConstantsUnitless_quantitiesProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
         {
             
             /// <summary>
@@ -34067,7 +34067,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Active_energy_export property
         /// </summary>
-        private sealed class InputPulseValuesOrConstantsActive_energy_exportProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
+        protected sealed class InputPulseValuesOrConstantsActive_energy_exportProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
         {
             
             /// <summary>
@@ -34098,7 +34098,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_energy_export property
         /// </summary>
-        private sealed class InputPulseValuesOrConstantsReactive_energy_exportProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
+        protected sealed class InputPulseValuesOrConstantsReactive_energy_exportProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
         {
             
             /// <summary>
@@ -34129,7 +34129,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Apparent_energy_export property
         /// </summary>
-        private sealed class InputPulseValuesOrConstantsApparent_energy_exportProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
+        protected sealed class InputPulseValuesOrConstantsApparent_energy_exportProxy : ModelPropertyChange<IInputPulseValuesOrConstants, Nullable<double>>
         {
             
             /// <summary>
@@ -34583,7 +34583,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Measurement_period_1_for_averaging_scheme_1 property
         /// </summary>
-        private sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationMeasurement_period_1_for_averaging_scheme_1Proxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
+        protected sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationMeasurement_period_1_for_averaging_scheme_1Proxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
         {
             
             /// <summary>
@@ -34614,7 +34614,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Measurement_period_2_for_averagingscheme_2 property
         /// </summary>
-        private sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationMeasurement_period_2_for_averagingscheme_2Proxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
+        protected sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationMeasurement_period_2_for_averagingscheme_2Proxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
         {
             
             /// <summary>
@@ -34645,7 +34645,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Measurement_period_3_for_instantaneous_value property
         /// </summary>
-        private sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationMeasurement_period_3_for_instantaneous_valueProxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
+        protected sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationMeasurement_period_3_for_instantaneous_valueProxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
         {
             
             /// <summary>
@@ -34676,7 +34676,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Measurement_period_4_for_test_value property
         /// </summary>
-        private sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationMeasurement_period_4_for_test_valueProxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
+        protected sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationMeasurement_period_4_for_test_valueProxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
         {
             
             /// <summary>
@@ -34707,7 +34707,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Recording_interval_1_for_loadprofile property
         /// </summary>
-        private sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationRecording_interval_1_for_loadprofileProxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
+        protected sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationRecording_interval_1_for_loadprofileProxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
         {
             
             /// <summary>
@@ -34738,7 +34738,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Recording_interval_2_for_loadprofile property
         /// </summary>
-        private sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationRecording_interval_2_for_loadprofileProxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
+        protected sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationRecording_interval_2_for_loadprofileProxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
         {
             
             /// <summary>
@@ -34769,7 +34769,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Billingperiod property
         /// </summary>
-        private sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationBillingperiodProxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
+        protected sealed class MeasurementPeriod_recordingInterval_billingPeriodDurationBillingperiodProxy : ModelPropertyChange<IMeasurementPeriod_recordingInterval_billingPeriodDuration, string>
         {
             
             /// <summary>
@@ -35420,7 +35420,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Time_expired_since_last_end_of_billing_period property
         /// </summary>
-        private sealed class ElectricityTimeEntriesTime_expired_since_last_end_of_billing_periodProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        protected sealed class ElectricityTimeEntriesTime_expired_since_last_end_of_billing_periodProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
@@ -35451,7 +35451,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Localtime property
         /// </summary>
-        private sealed class ElectricityTimeEntriesLocaltimeProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        protected sealed class ElectricityTimeEntriesLocaltimeProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
@@ -35482,7 +35482,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Localdate property
         /// </summary>
-        private sealed class ElectricityTimeEntriesLocaldateProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        protected sealed class ElectricityTimeEntriesLocaldateProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
@@ -35513,7 +35513,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Weekday property
         /// </summary>
-        private sealed class ElectricityTimeEntriesWeekdayProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        protected sealed class ElectricityTimeEntriesWeekdayProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
@@ -35544,7 +35544,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Timeoflastreset property
         /// </summary>
-        private sealed class ElectricityTimeEntriesTimeoflastresetProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        protected sealed class ElectricityTimeEntriesTimeoflastresetProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
@@ -35575,7 +35575,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Dateoflastreset property
         /// </summary>
-        private sealed class ElectricityTimeEntriesDateoflastresetProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        protected sealed class ElectricityTimeEntriesDateoflastresetProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
@@ -35606,7 +35606,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Outputpulseduration property
         /// </summary>
-        private sealed class ElectricityTimeEntriesOutputpulsedurationProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        protected sealed class ElectricityTimeEntriesOutputpulsedurationProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
@@ -35637,7 +35637,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Clocksynchronizationwindow property
         /// </summary>
-        private sealed class ElectricityTimeEntriesClocksynchronizationwindowProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        protected sealed class ElectricityTimeEntriesClocksynchronizationwindowProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
@@ -35668,7 +35668,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Clock_synchronization_method property
         /// </summary>
-        private sealed class ElectricityTimeEntriesClock_synchronization_methodProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        protected sealed class ElectricityTimeEntriesClock_synchronization_methodProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
@@ -35699,7 +35699,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Clock_time_shift_limit property
         /// </summary>
-        private sealed class ElectricityTimeEntriesClock_time_shift_limitProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        protected sealed class ElectricityTimeEntriesClock_time_shift_limitProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
@@ -35730,7 +35730,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Billing_period_reset_lockout_time property
         /// </summary>
-        private sealed class ElectricityTimeEntriesBilling_period_reset_lockout_timeProxy : ModelPropertyChange<IElectricityTimeEntries, string>
+        protected sealed class ElectricityTimeEntriesBilling_period_reset_lockout_timeProxy : ModelPropertyChange<IElectricityTimeEntries, string>
         {
             
             /// <summary>
@@ -36031,7 +36031,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Transformer_magnetic_losses property
         /// </summary>
-        private sealed class CoefficientsTransformer_magnetic_lossesProxy : ModelPropertyChange<ICoefficients, Nullable<double>>
+        protected sealed class CoefficientsTransformer_magnetic_lossesProxy : ModelPropertyChange<ICoefficients, Nullable<double>>
         {
             
             /// <summary>
@@ -36062,7 +36062,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Transformer_iron_losses property
         /// </summary>
-        private sealed class CoefficientsTransformer_iron_lossesProxy : ModelPropertyChange<ICoefficients, Nullable<double>>
+        protected sealed class CoefficientsTransformer_iron_lossesProxy : ModelPropertyChange<ICoefficients, Nullable<double>>
         {
             
             /// <summary>
@@ -36093,7 +36093,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Line_resistance_losses property
         /// </summary>
-        private sealed class CoefficientsLine_resistance_lossesProxy : ModelPropertyChange<ICoefficients, Nullable<double>>
+        protected sealed class CoefficientsLine_resistance_lossesProxy : ModelPropertyChange<ICoefficients, Nullable<double>>
         {
             
             /// <summary>
@@ -36124,7 +36124,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Line_reactance_losses property
         /// </summary>
-        private sealed class CoefficientsLine_reactance_lossesProxy : ModelPropertyChange<ICoefficients, Nullable<double>>
+        protected sealed class CoefficientsLine_reactance_lossesProxy : ModelPropertyChange<ICoefficients, Nullable<double>>
         {
             
             /// <summary>
@@ -36575,7 +36575,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Algorithm_for_active_power_measurement property
         /// </summary>
-        private sealed class MeasurementMethodsAlgorithm_for_active_power_measurementProxy : ModelPropertyChange<IMeasurementMethods, string>
+        protected sealed class MeasurementMethodsAlgorithm_for_active_power_measurementProxy : ModelPropertyChange<IMeasurementMethods, string>
         {
             
             /// <summary>
@@ -36606,7 +36606,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Algorithm_for_active_energy_management property
         /// </summary>
-        private sealed class MeasurementMethodsAlgorithm_for_active_energy_managementProxy : ModelPropertyChange<IMeasurementMethods, string>
+        protected sealed class MeasurementMethodsAlgorithm_for_active_energy_managementProxy : ModelPropertyChange<IMeasurementMethods, string>
         {
             
             /// <summary>
@@ -36637,7 +36637,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Algorithm_for_reactive_power_measurement property
         /// </summary>
-        private sealed class MeasurementMethodsAlgorithm_for_reactive_power_measurementProxy : ModelPropertyChange<IMeasurementMethods, string>
+        protected sealed class MeasurementMethodsAlgorithm_for_reactive_power_measurementProxy : ModelPropertyChange<IMeasurementMethods, string>
         {
             
             /// <summary>
@@ -36668,7 +36668,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Algorithm_for_reactive_energy_measurement property
         /// </summary>
-        private sealed class MeasurementMethodsAlgorithm_for_reactive_energy_measurementProxy : ModelPropertyChange<IMeasurementMethods, string>
+        protected sealed class MeasurementMethodsAlgorithm_for_reactive_energy_measurementProxy : ModelPropertyChange<IMeasurementMethods, string>
         {
             
             /// <summary>
@@ -36699,7 +36699,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Algorithm_for_apparent_power_measurement property
         /// </summary>
-        private sealed class MeasurementMethodsAlgorithm_for_apparent_power_measurementProxy : ModelPropertyChange<IMeasurementMethods, string>
+        protected sealed class MeasurementMethodsAlgorithm_for_apparent_power_measurementProxy : ModelPropertyChange<IMeasurementMethods, string>
         {
             
             /// <summary>
@@ -36730,7 +36730,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Algorithm_for_apparent_energy_measurement property
         /// </summary>
-        private sealed class MeasurementMethodsAlgorithm_for_apparent_energy_measurementProxy : ModelPropertyChange<IMeasurementMethods, string>
+        protected sealed class MeasurementMethodsAlgorithm_for_apparent_energy_measurementProxy : ModelPropertyChange<IMeasurementMethods, string>
         {
             
             /// <summary>
@@ -36761,7 +36761,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Algorithm_for_power_factor_calculation property
         /// </summary>
-        private sealed class MeasurementMethodsAlgorithm_for_power_factor_calculationProxy : ModelPropertyChange<IMeasurementMethods, string>
+        protected sealed class MeasurementMethodsAlgorithm_for_power_factor_calculationProxy : ModelPropertyChange<IMeasurementMethods, string>
         {
             
             /// <summary>
@@ -36914,7 +36914,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ElectricityMeteringPointIDValueProxy : ModelPropertyChange<IElectricityMeteringPointID, string>
+        protected sealed class ElectricityMeteringPointIDValueProxy : ModelPropertyChange<IElectricityMeteringPointID, string>
         {
             
             /// <summary>
@@ -37215,7 +37215,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Status_information_missing_voltage property
         /// </summary>
-        private sealed class ElectricityRelatedStatusDataStatus_information_missing_voltageProxy : ModelPropertyChange<IElectricityRelatedStatusData, string>
+        protected sealed class ElectricityRelatedStatusDataStatus_information_missing_voltageProxy : ModelPropertyChange<IElectricityRelatedStatusData, string>
         {
             
             /// <summary>
@@ -37246,7 +37246,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Status_information_missing_current property
         /// </summary>
-        private sealed class ElectricityRelatedStatusDataStatus_information_missing_currentProxy : ModelPropertyChange<IElectricityRelatedStatusData, string>
+        protected sealed class ElectricityRelatedStatusDataStatus_information_missing_currentProxy : ModelPropertyChange<IElectricityRelatedStatusData, string>
         {
             
             /// <summary>
@@ -37277,7 +37277,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Status_information_current_without_voltage property
         /// </summary>
-        private sealed class ElectricityRelatedStatusDataStatus_information_current_without_voltageProxy : ModelPropertyChange<IElectricityRelatedStatusData, string>
+        protected sealed class ElectricityRelatedStatusDataStatus_information_current_without_voltageProxy : ModelPropertyChange<IElectricityRelatedStatusData, string>
         {
             
             /// <summary>
@@ -37308,7 +37308,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Status_information_auxiliary_power_supply property
         /// </summary>
-        private sealed class ElectricityRelatedStatusDataStatus_information_auxiliary_power_supplyProxy : ModelPropertyChange<IElectricityRelatedStatusData, string>
+        protected sealed class ElectricityRelatedStatusDataStatus_information_auxiliary_power_supplyProxy : ModelPropertyChange<IElectricityRelatedStatusData, string>
         {
             
             /// <summary>
@@ -37898,7 +37898,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Battery_use_time_counter property
         /// </summary>
-        private sealed class BatteryEntriesBattery_use_time_counterProxy : ModelPropertyChange<IBatteryEntries, Nullable<int>>
+        protected sealed class BatteryEntriesBattery_use_time_counterProxy : ModelPropertyChange<IBatteryEntries, Nullable<int>>
         {
             
             /// <summary>
@@ -37929,7 +37929,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Battery_charge_display property
         /// </summary>
-        private sealed class BatteryEntriesBattery_charge_displayProxy : ModelPropertyChange<IBatteryEntries, string>
+        protected sealed class BatteryEntriesBattery_charge_displayProxy : ModelPropertyChange<IBatteryEntries, string>
         {
             
             /// <summary>
@@ -37960,7 +37960,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Date_of_next_battery_change property
         /// </summary>
-        private sealed class BatteryEntriesDate_of_next_battery_changeProxy : ModelPropertyChange<IBatteryEntries, string>
+        protected sealed class BatteryEntriesDate_of_next_battery_changeProxy : ModelPropertyChange<IBatteryEntries, string>
         {
             
             /// <summary>
@@ -37991,7 +37991,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Battery_voltage property
         /// </summary>
-        private sealed class BatteryEntriesBattery_voltageProxy : ModelPropertyChange<IBatteryEntries, Nullable<double>>
+        protected sealed class BatteryEntriesBattery_voltageProxy : ModelPropertyChange<IBatteryEntries, Nullable<double>>
         {
             
             /// <summary>
@@ -38022,7 +38022,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Battery_initial_capacity property
         /// </summary>
-        private sealed class BatteryEntriesBattery_initial_capacityProxy : ModelPropertyChange<IBatteryEntries, Nullable<double>>
+        protected sealed class BatteryEntriesBattery_initial_capacityProxy : ModelPropertyChange<IBatteryEntries, Nullable<double>>
         {
             
             /// <summary>
@@ -38053,7 +38053,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Battery_installation_date_and_time property
         /// </summary>
-        private sealed class BatteryEntriesBattery_installation_date_and_timeProxy : ModelPropertyChange<IBatteryEntries, string>
+        protected sealed class BatteryEntriesBattery_installation_date_and_timeProxy : ModelPropertyChange<IBatteryEntries, string>
         {
             
             /// <summary>
@@ -38084,7 +38084,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Battery_estimated_remaining_use_time property
         /// </summary>
-        private sealed class BatteryEntriesBattery_estimated_remaining_use_timeProxy : ModelPropertyChange<IBatteryEntries, string>
+        protected sealed class BatteryEntriesBattery_estimated_remaining_use_timeProxy : ModelPropertyChange<IBatteryEntries, string>
         {
             
             /// <summary>
@@ -38115,7 +38115,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Aux_supply_use_time_counter property
         /// </summary>
-        private sealed class BatteryEntriesAux_supply_use_time_counterProxy : ModelPropertyChange<IBatteryEntries, Nullable<int>>
+        protected sealed class BatteryEntriesAux_supply_use_time_counterProxy : ModelPropertyChange<IBatteryEntries, Nullable<int>>
         {
             
             /// <summary>
@@ -38146,7 +38146,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Aux_voltage property
         /// </summary>
-        private sealed class BatteryEntriesAux_voltageProxy : ModelPropertyChange<IBatteryEntries, Nullable<double>>
+        protected sealed class BatteryEntriesAux_voltageProxy : ModelPropertyChange<IBatteryEntries, Nullable<double>>
         {
             
             /// <summary>
@@ -39347,7 +39347,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FailuresAllPhases property
         /// </summary>
-        private sealed class PowerFailureMonitoringFailuresAllPhasesProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        protected sealed class PowerFailureMonitoringFailuresAllPhasesProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
@@ -39378,7 +39378,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FailuresL1 property
         /// </summary>
-        private sealed class PowerFailureMonitoringFailuresL1Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        protected sealed class PowerFailureMonitoringFailuresL1Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
@@ -39409,7 +39409,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FailuresL2 property
         /// </summary>
-        private sealed class PowerFailureMonitoringFailuresL2Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        protected sealed class PowerFailureMonitoringFailuresL2Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
@@ -39440,7 +39440,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FailuresL3 property
         /// </summary>
-        private sealed class PowerFailureMonitoringFailuresL3Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        protected sealed class PowerFailureMonitoringFailuresL3Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
@@ -39471,7 +39471,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FailuresAny property
         /// </summary>
-        private sealed class PowerFailureMonitoringFailuresAnyProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        protected sealed class PowerFailureMonitoringFailuresAnyProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
@@ -39502,7 +39502,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Auxiliarysupply property
         /// </summary>
-        private sealed class PowerFailureMonitoringAuxiliarysupplyProxy : ModelPropertyChange<IPowerFailureMonitoring, string>
+        protected sealed class PowerFailureMonitoringAuxiliarysupplyProxy : ModelPropertyChange<IPowerFailureMonitoring, string>
         {
             
             /// <summary>
@@ -39533,7 +39533,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LongFailsAll property
         /// </summary>
-        private sealed class PowerFailureMonitoringLongFailsAllProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        protected sealed class PowerFailureMonitoringLongFailsAllProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
@@ -39564,7 +39564,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LongFailsL1 property
         /// </summary>
-        private sealed class PowerFailureMonitoringLongFailsL1Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        protected sealed class PowerFailureMonitoringLongFailsL1Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
@@ -39595,7 +39595,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LongFailsL2 property
         /// </summary>
-        private sealed class PowerFailureMonitoringLongFailsL2Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        protected sealed class PowerFailureMonitoringLongFailsL2Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
@@ -39626,7 +39626,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LongFailsL3 property
         /// </summary>
-        private sealed class PowerFailureMonitoringLongFailsL3Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        protected sealed class PowerFailureMonitoringLongFailsL3Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
@@ -39657,7 +39657,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the LongFailsAny property
         /// </summary>
-        private sealed class PowerFailureMonitoringLongFailsAnyProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        protected sealed class PowerFailureMonitoringLongFailsAnyProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
@@ -39688,7 +39688,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TimeAll property
         /// </summary>
-        private sealed class PowerFailureMonitoringTimeAllProxy : ModelPropertyChange<IPowerFailureMonitoring, string>
+        protected sealed class PowerFailureMonitoringTimeAllProxy : ModelPropertyChange<IPowerFailureMonitoring, string>
         {
             
             /// <summary>
@@ -39719,7 +39719,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TimeL1 property
         /// </summary>
-        private sealed class PowerFailureMonitoringTimeL1Proxy : ModelPropertyChange<IPowerFailureMonitoring, string>
+        protected sealed class PowerFailureMonitoringTimeL1Proxy : ModelPropertyChange<IPowerFailureMonitoring, string>
         {
             
             /// <summary>
@@ -39750,7 +39750,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TimeL2 property
         /// </summary>
-        private sealed class PowerFailureMonitoringTimeL2Proxy : ModelPropertyChange<IPowerFailureMonitoring, string>
+        protected sealed class PowerFailureMonitoringTimeL2Proxy : ModelPropertyChange<IPowerFailureMonitoring, string>
         {
             
             /// <summary>
@@ -39781,7 +39781,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TimeL3 property
         /// </summary>
-        private sealed class PowerFailureMonitoringTimeL3Proxy : ModelPropertyChange<IPowerFailureMonitoring, string>
+        protected sealed class PowerFailureMonitoringTimeL3Proxy : ModelPropertyChange<IPowerFailureMonitoring, string>
         {
             
             /// <summary>
@@ -39812,7 +39812,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the TimeAny property
         /// </summary>
-        private sealed class PowerFailureMonitoringTimeAnyProxy : ModelPropertyChange<IPowerFailureMonitoring, string>
+        protected sealed class PowerFailureMonitoringTimeAnyProxy : ModelPropertyChange<IPowerFailureMonitoring, string>
         {
             
             /// <summary>
@@ -39843,7 +39843,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DurationAll property
         /// </summary>
-        private sealed class PowerFailureMonitoringDurationAllProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        protected sealed class PowerFailureMonitoringDurationAllProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
@@ -39874,7 +39874,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DurationL1 property
         /// </summary>
-        private sealed class PowerFailureMonitoringDurationL1Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        protected sealed class PowerFailureMonitoringDurationL1Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
@@ -39905,7 +39905,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DurationL2 property
         /// </summary>
-        private sealed class PowerFailureMonitoringDurationL2Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        protected sealed class PowerFailureMonitoringDurationL2Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
@@ -39936,7 +39936,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DurationL3 property
         /// </summary>
-        private sealed class PowerFailureMonitoringDurationL3Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        protected sealed class PowerFailureMonitoringDurationL3Proxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
@@ -39967,7 +39967,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the DurationAny property
         /// </summary>
-        private sealed class PowerFailureMonitoringDurationAnyProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        protected sealed class PowerFailureMonitoringDurationAnyProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
@@ -39998,7 +39998,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Time_threshold_long_powerfailure property
         /// </summary>
-        private sealed class PowerFailureMonitoringTime_threshold_long_powerfailureProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
+        protected sealed class PowerFailureMonitoringTime_threshold_long_powerfailureProxy : ModelPropertyChange<IPowerFailureMonitoring, Nullable<int>>
         {
             
             /// <summary>
@@ -40149,7 +40149,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Timeofoperation property
         /// </summary>
-        private sealed class OperatingTimeTimeofoperationProxy : ModelPropertyChange<IOperatingTime, string>
+        protected sealed class OperatingTimeTimeofoperationProxy : ModelPropertyChange<IOperatingTime, string>
         {
             
             /// <summary>
@@ -40402,7 +40402,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ambient_temperature property
         /// </summary>
-        private sealed class EnvironmentRelatedParametersAmbient_temperatureProxy : ModelPropertyChange<IEnvironmentRelatedParameters, Nullable<double>>
+        protected sealed class EnvironmentRelatedParametersAmbient_temperatureProxy : ModelPropertyChange<IEnvironmentRelatedParameters, Nullable<double>>
         {
             
             /// <summary>
@@ -40433,7 +40433,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Ambient_pressure property
         /// </summary>
-        private sealed class EnvironmentRelatedParametersAmbient_pressureProxy : ModelPropertyChange<IEnvironmentRelatedParameters, Nullable<double>>
+        protected sealed class EnvironmentRelatedParametersAmbient_pressureProxy : ModelPropertyChange<IEnvironmentRelatedParameters, Nullable<double>>
         {
             
             /// <summary>
@@ -40464,7 +40464,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Relative_humidity property
         /// </summary>
-        private sealed class EnvironmentRelatedParametersRelative_humidityProxy : ModelPropertyChange<IEnvironmentRelatedParameters, Nullable<double>>
+        protected sealed class EnvironmentRelatedParametersRelative_humidityProxy : ModelPropertyChange<IEnvironmentRelatedParameters, Nullable<double>>
         {
             
             /// <summary>
@@ -40656,7 +40656,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the event_code_object property
         /// </summary>
-        private sealed class EventCodeEvent_code_objectProxy : ModelPropertyChange<IEventCode, string>
+        protected sealed class EventCodeEvent_code_objectProxy : ModelPropertyChange<IEventCode, string>
         {
             
             /// <summary>
@@ -41007,7 +41007,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reserved property
         /// </summary>
-        private sealed class CommunicationPortLogParametersReservedProxy : ModelPropertyChange<ICommunicationPortLogParameters, string>
+        protected sealed class CommunicationPortLogParametersReservedProxy : ModelPropertyChange<ICommunicationPortLogParameters, string>
         {
             
             /// <summary>
@@ -41038,7 +41038,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Number_connections property
         /// </summary>
-        private sealed class CommunicationPortLogParametersNumber_connectionsProxy : ModelPropertyChange<ICommunicationPortLogParameters, string>
+        protected sealed class CommunicationPortLogParametersNumber_connectionsProxy : ModelPropertyChange<ICommunicationPortLogParameters, string>
         {
             
             /// <summary>
@@ -41069,7 +41069,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Communication_port_parameter property
         /// </summary>
-        private sealed class CommunicationPortLogParametersCommunication_port_parameterProxy : ModelPropertyChange<ICommunicationPortLogParameters, string>
+        protected sealed class CommunicationPortLogParametersCommunication_port_parameterProxy : ModelPropertyChange<ICommunicationPortLogParameters, string>
         {
             
             /// <summary>
@@ -41100,7 +41100,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the GSM_field_strength property
         /// </summary>
-        private sealed class CommunicationPortLogParametersGSM_field_strengthProxy : ModelPropertyChange<ICommunicationPortLogParameters, string>
+        protected sealed class CommunicationPortLogParametersGSM_field_strengthProxy : ModelPropertyChange<ICommunicationPortLogParameters, string>
         {
             
             /// <summary>
@@ -41131,7 +41131,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Communicationaddress property
         /// </summary>
-        private sealed class CommunicationPortLogParametersCommunicationaddressProxy : ModelPropertyChange<ICommunicationPortLogParameters, string>
+        protected sealed class CommunicationPortLogParametersCommunicationaddressProxy : ModelPropertyChange<ICommunicationPortLogParameters, string>
         {
             
             /// <summary>
@@ -41332,7 +41332,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Consumer_message_via_local_consumer_information_port property
         /// </summary>
-        private sealed class ConsumerMessageConsumer_message_via_local_consumer_information_portProxy : ModelPropertyChange<IConsumerMessage, string>
+        protected sealed class ConsumerMessageConsumer_message_via_local_consumer_information_portProxy : ModelPropertyChange<IConsumerMessage, string>
         {
             
             /// <summary>
@@ -41363,7 +41363,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Consumer_message_via_meter_display property
         /// </summary>
-        private sealed class ConsumerMessageConsumer_message_via_meter_displayProxy : ModelPropertyChange<IConsumerMessage, string>
+        protected sealed class ConsumerMessageConsumer_message_via_meter_displayProxy : ModelPropertyChange<IConsumerMessage, string>
         {
             
             /// <summary>
@@ -41516,7 +41516,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class CurrentlyActiveTariffValueProxy : ModelPropertyChange<ICurrentlyActiveTariff, string>
+        protected sealed class CurrentlyActiveTariffValueProxy : ModelPropertyChange<ICurrentlyActiveTariff, string>
         {
             
             /// <summary>
@@ -41669,7 +41669,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class EventCounterObjectValueProxy : ModelPropertyChange<IEventCounterObject, Nullable<int>>
+        protected sealed class EventCounterObjectValueProxy : ModelPropertyChange<IEventCounterObject, Nullable<int>>
         {
             
             /// <summary>
@@ -41822,7 +41822,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class ProfileEntryDigitalSignatureObjectValueProxy : ModelPropertyChange<IProfileEntryDigitalSignatureObject, string>
+        protected sealed class ProfileEntryDigitalSignatureObjectValueProxy : ModelPropertyChange<IProfileEntryDigitalSignatureObject, string>
         {
             
             /// <summary>
@@ -43373,7 +43373,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Meter_open_event_counter property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectMeter_open_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectMeter_open_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -43404,7 +43404,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Meter_open_event_timestamp property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectMeter_open_event_timestampProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
+        protected sealed class MeterTemperEventRelatedObjectMeter_open_event_timestampProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
         {
             
             /// <summary>
@@ -43435,7 +43435,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Meter_open_event_duration property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectMeter_open_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectMeter_open_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -43466,7 +43466,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Meter_open_event_cumulative_duration property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectMeter_open_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectMeter_open_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -43497,7 +43497,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Terminal_cover_open_event_counter property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectTerminal_cover_open_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectTerminal_cover_open_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -43528,7 +43528,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Terminal_cover_open_event_time property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectTerminal_cover_open_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
+        protected sealed class MeterTemperEventRelatedObjectTerminal_cover_open_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
         {
             
             /// <summary>
@@ -43559,7 +43559,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Terminal_cover_open_event_duration property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectTerminal_cover_open_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectTerminal_cover_open_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -43590,7 +43590,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Terminal_cover_open_event_cumulative_duration property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectTerminal_cover_open_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectTerminal_cover_open_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -43621,7 +43621,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Tilt_event_counter property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectTilt_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectTilt_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -43652,7 +43652,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Tilt_event_time property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectTilt_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
+        protected sealed class MeterTemperEventRelatedObjectTilt_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
         {
             
             /// <summary>
@@ -43683,7 +43683,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Tilt_event_duration property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectTilt_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectTilt_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -43714,7 +43714,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Tilt_event_cumulative_duration property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectTilt_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectTilt_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -43745,7 +43745,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Strong_DC_magnetic_field_event_counter property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectStrong_DC_magnetic_field_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectStrong_DC_magnetic_field_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -43776,7 +43776,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Strong_DC_magnetic_field_event_time property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectStrong_DC_magnetic_field_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
+        protected sealed class MeterTemperEventRelatedObjectStrong_DC_magnetic_field_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
         {
             
             /// <summary>
@@ -43807,7 +43807,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Strong_DC_magnetic_field_event_duration property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectStrong_DC_magnetic_field_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectStrong_DC_magnetic_field_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -43838,7 +43838,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Strong_DC_magnetic_field_event_cumulative_duration property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectStrong_DC_magnetic_field_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectStrong_DC_magnetic_field_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -43869,7 +43869,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Supply_control_switch_event_counter property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectSupply_control_switch_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectSupply_control_switch_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -43900,7 +43900,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Supply_control_switch_event_time property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectSupply_control_switch_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
+        protected sealed class MeterTemperEventRelatedObjectSupply_control_switch_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
         {
             
             /// <summary>
@@ -43931,7 +43931,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Supply_control_switch_event_duration property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectSupply_control_switch_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectSupply_control_switch_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -43962,7 +43962,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Supply_control_switch_event_cumulative_duration property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectSupply_control_switch_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectSupply_control_switch_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -43993,7 +43993,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Metrology_tamper_event_counter property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectMetrology_tamper_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectMetrology_tamper_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -44024,7 +44024,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Metrology_tamper_event_time property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectMetrology_tamper_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
+        protected sealed class MeterTemperEventRelatedObjectMetrology_tamper_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
         {
             
             /// <summary>
@@ -44055,7 +44055,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Metrology_tamper_event_duration property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectMetrology_tamper_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectMetrology_tamper_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -44086,7 +44086,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Metrology_tamper_event_cumulative_duration property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectMetrology_tamper_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectMetrology_tamper_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -44117,7 +44117,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Communication_tamper_event_counter property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectCommunication_tamper_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectCommunication_tamper_event_counterProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -44148,7 +44148,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Communication_tamper_event_time property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectCommunication_tamper_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
+        protected sealed class MeterTemperEventRelatedObjectCommunication_tamper_event_timeProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
         {
             
             /// <summary>
@@ -44179,7 +44179,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Communication_tamper_event_duration property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectCommunication_tamper_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectCommunication_tamper_event_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -44210,7 +44210,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Communication_tamper_event_cumulative_duration property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectCommunication_tamper_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
+        protected sealed class MeterTemperEventRelatedObjectCommunication_tamper_event_cumulative_durationProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, Nullable<int>>
         {
             
             /// <summary>
@@ -44241,7 +44241,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Manufacturer_specific property
         /// </summary>
-        private sealed class MeterTemperEventRelatedObjectManufacturer_specificProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
+        protected sealed class MeterTemperEventRelatedObjectManufacturer_specificProxy : ModelPropertyChange<IMeterTemperEventRelatedObject, string>
         {
             
             /// <summary>
@@ -48642,7 +48642,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerpL1 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerpL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerpL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -48673,7 +48673,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerpall property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerpallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerpallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -48704,7 +48704,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerpL2 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerpL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerpL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -48735,7 +48735,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerpL3 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerpL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerpL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -48766,7 +48766,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowermL2 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowermL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowermL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -48797,7 +48797,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowermL1 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowermL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowermL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -48828,7 +48828,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowermL3 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowermL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowermL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -48859,7 +48859,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowermall property
         /// </summary>
-        private sealed class ElectricityValuesActivePowermallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowermallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -48890,7 +48890,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerpL1 property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowerpL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowerpL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -48921,7 +48921,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerpL2 property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowerpL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowerpL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -48952,7 +48952,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerpL3 property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowerpL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowerpL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -48983,7 +48983,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerpall property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowerpallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowerpallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49014,7 +49014,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowermL1 property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowermL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowermL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49045,7 +49045,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowermL2 property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowermL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowermL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49076,7 +49076,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowermL3 property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowermL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowermL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49107,7 +49107,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowermall property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowermallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowermallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49138,7 +49138,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIL1 property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowerQIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowerQIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49169,7 +49169,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIL2 property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowerQIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowerQIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49200,7 +49200,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIL3 property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowerQIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowerQIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49231,7 +49231,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIall property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowerQIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowerQIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49262,7 +49262,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIIL1 property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowerQIIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowerQIIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49293,7 +49293,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIIL2 property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowerQIIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowerQIIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49324,7 +49324,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIIL3 property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowerQIIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowerQIIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49355,7 +49355,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIIall property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowerQIIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowerQIIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49386,7 +49386,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIIIL1 property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowerQIIIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowerQIIIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49417,7 +49417,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIIIL2 property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowerQIIIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowerQIIIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49448,7 +49448,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIIIL3 property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowerQIIIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowerQIIIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49479,7 +49479,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIIIall property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowerQIIIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowerQIIIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49510,7 +49510,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIVL1 property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowerQIVL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowerQIVL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49541,7 +49541,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIVL2 property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowerQIVL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowerQIVL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49572,7 +49572,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIVL3 property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowerQIVL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowerQIVL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49603,7 +49603,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ReactivePowerQIVall property
         /// </summary>
-        private sealed class ElectricityValuesReactivePowerQIVallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesReactivePowerQIVallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49634,7 +49634,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ApparentPowerpL1 property
         /// </summary>
-        private sealed class ElectricityValuesApparentPowerpL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesApparentPowerpL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49665,7 +49665,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ApparentPowerpL2 property
         /// </summary>
-        private sealed class ElectricityValuesApparentPowerpL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesApparentPowerpL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49696,7 +49696,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ApparentPowerpL3 property
         /// </summary>
-        private sealed class ElectricityValuesApparentPowerpL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesApparentPowerpL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49727,7 +49727,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ApparentPowerpAll property
         /// </summary>
-        private sealed class ElectricityValuesApparentPowerpAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesApparentPowerpAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49758,7 +49758,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ApparentPowermL1 property
         /// </summary>
-        private sealed class ElectricityValuesApparentPowermL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesApparentPowermL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49789,7 +49789,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ApparentPowermL2 property
         /// </summary>
-        private sealed class ElectricityValuesApparentPowermL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesApparentPowermL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49820,7 +49820,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ApparentPowermL3 property
         /// </summary>
-        private sealed class ElectricityValuesApparentPowermL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesApparentPowermL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49851,7 +49851,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ApparentPowermAll property
         /// </summary>
-        private sealed class ElectricityValuesApparentPowermAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesApparentPowermAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49882,7 +49882,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the CurrentL1 property
         /// </summary>
-        private sealed class ElectricityValuesCurrentL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesCurrentL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49913,7 +49913,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the CurrentL2 property
         /// </summary>
-        private sealed class ElectricityValuesCurrentL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesCurrentL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49944,7 +49944,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the CurrentL3 property
         /// </summary>
-        private sealed class ElectricityValuesCurrentL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesCurrentL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -49975,7 +49975,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the CurrentAll property
         /// </summary>
-        private sealed class ElectricityValuesCurrentAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesCurrentAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50006,7 +50006,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VoltageL1 property
         /// </summary>
-        private sealed class ElectricityValuesVoltageL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesVoltageL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50037,7 +50037,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VoltageL2 property
         /// </summary>
-        private sealed class ElectricityValuesVoltageL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesVoltageL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50068,7 +50068,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VoltageL3 property
         /// </summary>
-        private sealed class ElectricityValuesVoltageL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesVoltageL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50099,7 +50099,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the VoltageAll property
         /// </summary>
-        private sealed class ElectricityValuesVoltageAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesVoltageAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50130,7 +50130,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PowerFactorL1 property
         /// </summary>
-        private sealed class ElectricityValuesPowerFactorL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesPowerFactorL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50161,7 +50161,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PowerFactorL2 property
         /// </summary>
-        private sealed class ElectricityValuesPowerFactorL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesPowerFactorL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50192,7 +50192,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PowerFactorL3 property
         /// </summary>
-        private sealed class ElectricityValuesPowerFactorL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesPowerFactorL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50223,7 +50223,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the PowerFactorAll property
         /// </summary>
-        private sealed class ElectricityValuesPowerFactorAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesPowerFactorAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50254,7 +50254,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SupplyFrequencyL1 property
         /// </summary>
-        private sealed class ElectricityValuesSupplyFrequencyL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesSupplyFrequencyL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50285,7 +50285,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SupplyFrequencyL2 property
         /// </summary>
-        private sealed class ElectricityValuesSupplyFrequencyL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesSupplyFrequencyL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50316,7 +50316,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SupplyFrequencyL3 property
         /// </summary>
-        private sealed class ElectricityValuesSupplyFrequencyL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesSupplyFrequencyL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50347,7 +50347,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the SupplyFrequencyAll property
         /// </summary>
-        private sealed class ElectricityValuesSupplyFrequencyAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesSupplyFrequencyAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50378,7 +50378,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerAbsPL1 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerAbsPL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerAbsPL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50409,7 +50409,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerAbsPL2 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerAbsPL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerAbsPL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50440,7 +50440,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerAbsPL3 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerAbsPL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerAbsPL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50471,7 +50471,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerAbsPAll property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerAbsPAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerAbsPAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50502,7 +50502,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerAbsML1 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerAbsML1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerAbsML1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50533,7 +50533,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerAbsML2 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerAbsML2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerAbsML2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50564,7 +50564,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerAbsML3 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerAbsML3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerAbsML3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50595,7 +50595,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerAbsMAll property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerAbsMAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerAbsMAllProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50626,7 +50626,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIL1 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerQIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerQIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50657,7 +50657,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIL2 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerQIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerQIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50688,7 +50688,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIL3 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerQIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerQIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50719,7 +50719,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIall property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerQIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerQIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50750,7 +50750,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIIL1 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerQIIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerQIIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50781,7 +50781,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIIL2 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerQIIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerQIIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50812,7 +50812,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIIL3 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerQIIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerQIIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50843,7 +50843,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIIall property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerQIIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerQIIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50874,7 +50874,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIIIL1 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerQIIIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerQIIIL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50905,7 +50905,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIIIL2 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerQIIIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerQIIIL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50936,7 +50936,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIIIL3 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerQIIIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerQIIIL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50967,7 +50967,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIIIall property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerQIIIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerQIIIallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -50998,7 +50998,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIVL1 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerQIVL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerQIVL1Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -51029,7 +51029,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIVL2 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerQIVL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerQIVL2Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -51060,7 +51060,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIVL3 property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerQIVL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerQIVL3Proxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -51091,7 +51091,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the ActivePowerQIVall property
         /// </summary>
-        private sealed class ElectricityValuesActivePowerQIVallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesActivePowerQIVallProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -51122,7 +51122,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Angles property
         /// </summary>
-        private sealed class ElectricityValuesAnglesProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesAnglesProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -51153,7 +51153,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Pulses property
         /// </summary>
-        private sealed class ElectricityValuesPulsesProxy : ModelPropertyChange<IElectricityValues, Nullable<int>>
+        protected sealed class ElectricityValuesPulsesProxy : ModelPropertyChange<IElectricityValues, Nullable<int>>
         {
             
             /// <summary>
@@ -51184,7 +51184,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Ampere_squaredHours property
         /// </summary>
-        private sealed class ElectricityValuesAmpere_squaredHoursProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesAmpere_squaredHoursProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -51215,7 +51215,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Volt_squaredHours property
         /// </summary>
-        private sealed class ElectricityValuesVolt_squaredHoursProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesVolt_squaredHoursProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -51246,7 +51246,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NeutralCurrent property
         /// </summary>
-        private sealed class ElectricityValuesNeutralCurrentProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesNeutralCurrentProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -51277,7 +51277,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the NeutralVoltage property
         /// </summary>
-        private sealed class ElectricityValuesNeutralVoltageProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
+        protected sealed class ElectricityValuesNeutralVoltageProxy : ModelPropertyChange<IElectricityValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53003,7 +53003,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Billing_period_average property
         /// </summary>
-        private sealed class MeasurementValuesBilling_period_averageProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesBilling_period_averageProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53034,7 +53034,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Cumulative_minimum property
         /// </summary>
-        private sealed class MeasurementValuesCumulative_minimumProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesCumulative_minimumProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53065,7 +53065,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Cumulative_maximum property
         /// </summary>
-        private sealed class MeasurementValuesCumulative_maximumProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesCumulative_maximumProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53096,7 +53096,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Minimum property
         /// </summary>
-        private sealed class MeasurementValuesMinimumProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesMinimumProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53127,7 +53127,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Current_average property
         /// </summary>
-        private sealed class MeasurementValuesCurrent_averageProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesCurrent_averageProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53158,7 +53158,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Last_average property
         /// </summary>
-        private sealed class MeasurementValuesLast_averageProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesLast_averageProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53189,7 +53189,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Maximum property
         /// </summary>
-        private sealed class MeasurementValuesMaximumProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesMaximumProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53220,7 +53220,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Instantaneous_value property
         /// </summary>
-        private sealed class MeasurementValuesInstantaneous_valueProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesInstantaneous_valueProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53251,7 +53251,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Time_integral property
         /// </summary>
-        private sealed class MeasurementValuesTime_integralProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesTime_integralProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53282,7 +53282,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Under_limit_threshold property
         /// </summary>
-        private sealed class MeasurementValuesUnder_limit_thresholdProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesUnder_limit_thresholdProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53313,7 +53313,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Under_limit_occurrence_counter property
         /// </summary>
-        private sealed class MeasurementValuesUnder_limit_occurrence_counterProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesUnder_limit_occurrence_counterProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53344,7 +53344,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Under_limit_duration property
         /// </summary>
-        private sealed class MeasurementValuesUnder_limit_durationProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesUnder_limit_durationProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53375,7 +53375,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Under_limit_magnitude property
         /// </summary>
-        private sealed class MeasurementValuesUnder_limit_magnitudeProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesUnder_limit_magnitudeProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53406,7 +53406,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Over_limit_threshold property
         /// </summary>
-        private sealed class MeasurementValuesOver_limit_thresholdProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesOver_limit_thresholdProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53437,7 +53437,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Over_limit_occurrence_counter property
         /// </summary>
-        private sealed class MeasurementValuesOver_limit_occurrence_counterProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesOver_limit_occurrence_counterProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53468,7 +53468,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Over_limit_duration property
         /// </summary>
-        private sealed class MeasurementValuesOver_limit_durationProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesOver_limit_durationProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53499,7 +53499,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Over_limit_magnitude property
         /// </summary>
-        private sealed class MeasurementValuesOver_limit_magnitudeProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesOver_limit_magnitudeProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53530,7 +53530,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Missing_threshold property
         /// </summary>
-        private sealed class MeasurementValuesMissing_thresholdProxy : ModelPropertyChange<IMeasurementValues, Nullable<bool>>
+        protected sealed class MeasurementValuesMissing_thresholdProxy : ModelPropertyChange<IMeasurementValues, Nullable<bool>>
         {
             
             /// <summary>
@@ -53561,7 +53561,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Missing_occurrence_counter property
         /// </summary>
-        private sealed class MeasurementValuesMissing_occurrence_counterProxy : ModelPropertyChange<IMeasurementValues, Nullable<bool>>
+        protected sealed class MeasurementValuesMissing_occurrence_counterProxy : ModelPropertyChange<IMeasurementValues, Nullable<bool>>
         {
             
             /// <summary>
@@ -53592,7 +53592,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Missing_duration property
         /// </summary>
-        private sealed class MeasurementValuesMissing_durationProxy : ModelPropertyChange<IMeasurementValues, Nullable<bool>>
+        protected sealed class MeasurementValuesMissing_durationProxy : ModelPropertyChange<IMeasurementValues, Nullable<bool>>
         {
             
             /// <summary>
@@ -53623,7 +53623,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Missing_magnitude property
         /// </summary>
-        private sealed class MeasurementValuesMissing_magnitudeProxy : ModelPropertyChange<IMeasurementValues, Nullable<bool>>
+        protected sealed class MeasurementValuesMissing_magnitudeProxy : ModelPropertyChange<IMeasurementValues, Nullable<bool>>
         {
             
             /// <summary>
@@ -53654,7 +53654,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Time_threshold_for_under_limit property
         /// </summary>
-        private sealed class MeasurementValuesTime_threshold_for_under_limitProxy : ModelPropertyChange<IMeasurementValues, string>
+        protected sealed class MeasurementValuesTime_threshold_for_under_limitProxy : ModelPropertyChange<IMeasurementValues, string>
         {
             
             /// <summary>
@@ -53685,7 +53685,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Time_threshold_for_over_limit property
         /// </summary>
-        private sealed class MeasurementValuesTime_threshold_for_over_limitProxy : ModelPropertyChange<IMeasurementValues, string>
+        protected sealed class MeasurementValuesTime_threshold_for_over_limitProxy : ModelPropertyChange<IMeasurementValues, string>
         {
             
             /// <summary>
@@ -53716,7 +53716,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Time_threshold_for_missing_magnitude property
         /// </summary>
-        private sealed class MeasurementValuesTime_threshold_for_missing_magnitudeProxy : ModelPropertyChange<IMeasurementValues, string>
+        protected sealed class MeasurementValuesTime_threshold_for_missing_magnitudeProxy : ModelPropertyChange<IMeasurementValues, string>
         {
             
             /// <summary>
@@ -53747,7 +53747,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Contracted_value property
         /// </summary>
-        private sealed class MeasurementValuesContracted_valueProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesContracted_valueProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53778,7 +53778,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Minimum_for_recording_interval property
         /// </summary>
-        private sealed class MeasurementValuesMinimum_for_recording_intervalProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesMinimum_for_recording_intervalProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53809,7 +53809,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Maximum_for_recording_interval property
         /// </summary>
-        private sealed class MeasurementValuesMaximum_for_recording_intervalProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesMaximum_for_recording_intervalProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53840,7 +53840,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Test_average property
         /// </summary>
-        private sealed class MeasurementValuesTest_averageProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
+        protected sealed class MeasurementValuesTest_averageProxy : ModelPropertyChange<IMeasurementValues, Nullable<double>>
         {
             
             /// <summary>
@@ -53871,7 +53871,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the calculations property
         /// </summary>
-        private sealed class MeasurementValuesCalculationsProxy : ModelPropertyChange<IMeasurementValues, IElectricityValues>
+        protected sealed class MeasurementValuesCalculationsProxy : ModelPropertyChange<IMeasurementValues, IElectricityValues>
         {
             
             /// <summary>
@@ -54328,7 +54328,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the total property
         /// </summary>
-        private sealed class ElectricityHarmonicsTotalProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
+        protected sealed class ElectricityHarmonicsTotalProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
         {
             
             /// <summary>
@@ -54359,7 +54359,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the fundamental_harmonic property
         /// </summary>
-        private sealed class ElectricityHarmonicsFundamental_harmonicProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
+        protected sealed class ElectricityHarmonicsFundamental_harmonicProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
         {
             
             /// <summary>
@@ -54390,7 +54390,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the harmonic property
         /// </summary>
-        private sealed class ElectricityHarmonicsHarmonicProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
+        protected sealed class ElectricityHarmonicsHarmonicProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
         {
             
             /// <summary>
@@ -54421,7 +54421,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Total_Harmoni_Distortion property
         /// </summary>
-        private sealed class ElectricityHarmonicsTotal_Harmoni_DistortionProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
+        protected sealed class ElectricityHarmonicsTotal_Harmoni_DistortionProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
         {
             
             /// <summary>
@@ -54452,7 +54452,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Total_Demand_Distortion property
         /// </summary>
-        private sealed class ElectricityHarmonicsTotal_Demand_DistortionProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
+        protected sealed class ElectricityHarmonicsTotal_Demand_DistortionProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
         {
             
             /// <summary>
@@ -54483,7 +54483,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the All_harmonics property
         /// </summary>
-        private sealed class ElectricityHarmonicsAll_harmonicsProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
+        protected sealed class ElectricityHarmonicsAll_harmonicsProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
         {
             
             /// <summary>
@@ -54514,7 +54514,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the All_harmonics_to_nominal_value_ratio property
         /// </summary>
-        private sealed class ElectricityHarmonicsAll_harmonics_to_nominal_value_ratioProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
+        protected sealed class ElectricityHarmonicsAll_harmonics_to_nominal_value_ratioProxy : ModelPropertyChange<IElectricityHarmonics, Nullable<double>>
         {
             
             /// <summary>
@@ -56715,7 +56715,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL1toUL2 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromUL1toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromUL1toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -56746,7 +56746,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL1toUL3 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromUL1toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromUL1toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -56777,7 +56777,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL1toIL1 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromUL1toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromUL1toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -56808,7 +56808,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL1toIL2 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromUL1toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromUL1toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -56839,7 +56839,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL1toIL3 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromUL1toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromUL1toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -56870,7 +56870,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL1toIL0 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromUL1toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromUL1toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -56901,7 +56901,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL2toUL1 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromUL2toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromUL2toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -56932,7 +56932,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL2toUL3 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromUL2toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromUL2toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -56963,7 +56963,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL2toIL1 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromUL2toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromUL2toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -56994,7 +56994,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL2toIL2 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromUL2toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromUL2toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57025,7 +57025,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL2toIL3 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromUL2toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromUL2toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57056,7 +57056,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL2toIL0 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromUL2toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromUL2toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57087,7 +57087,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL3toUL1 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromUL3toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromUL3toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57118,7 +57118,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL3toUL2 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromUL3toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromUL3toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57149,7 +57149,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL3toIL1 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromUL3toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromUL3toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57180,7 +57180,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL3toIL2 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromUL3toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromUL3toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57211,7 +57211,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL3toIL3 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromUL3toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromUL3toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57242,7 +57242,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromUL3toIL0 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromUL3toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromUL3toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57273,7 +57273,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL1toUL1 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL1toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL1toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57304,7 +57304,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL1toUL2 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL1toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL1toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57335,7 +57335,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL1toUL3 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL1toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL1toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57366,7 +57366,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL1toIL2 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL1toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL1toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57397,7 +57397,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL1toIL3 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL1toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL1toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57428,7 +57428,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL1toIL0 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL1toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL1toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57459,7 +57459,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL2toUL1 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL2toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL2toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57490,7 +57490,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL2toUL2 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL2toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL2toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57521,7 +57521,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL2toUL3 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL2toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL2toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57552,7 +57552,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL2toIL1 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL2toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL2toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57583,7 +57583,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL2toIL3 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL2toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL2toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57614,7 +57614,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL2toIL0 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL2toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL2toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57645,7 +57645,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL3toUL1 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL3toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL3toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57676,7 +57676,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL3toUL2 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL3toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL3toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57707,7 +57707,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL3toUL3 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL3toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL3toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57738,7 +57738,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL3toIL1 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL3toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL3toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57769,7 +57769,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL3toIL2 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL3toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL3toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57800,7 +57800,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL3toIL0 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL3toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL3toIL0Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57831,7 +57831,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL0toUL1 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL0toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL0toUL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57862,7 +57862,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL0toUL2 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL0toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL0toUL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57893,7 +57893,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL0toUL3 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL0toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL0toUL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57924,7 +57924,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL0toIL1 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL0toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL0toIL1Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57955,7 +57955,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL0toIL2 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL0toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL0toIL2Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -57986,7 +57986,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the FromIL0toIL3 property
         /// </summary>
-        private sealed class ExtendedPhaseAngleMeasurementFromIL0toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
+        protected sealed class ExtendedPhaseAngleMeasurementFromIL0toIL3Proxy : ModelPropertyChange<IExtendedPhaseAngleMeasurement, Nullable<double>>
         {
             
             /// <summary>
@@ -62337,7 +62337,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Active_line_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesActive_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesActive_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62368,7 +62368,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Active_line_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesActive_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesActive_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62399,7 +62399,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Active_line_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesActive_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesActive_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62430,7 +62430,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Active_transformer_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesActive_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesActive_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62461,7 +62461,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Active_transformer_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesActive_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesActive_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62492,7 +62492,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Active_transformer_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesActive_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesActive_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62523,7 +62523,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Active_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesActive_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesActive_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62554,7 +62554,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Active_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesActive_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesActive_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62585,7 +62585,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Active_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesActive_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesActive_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62616,7 +62616,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_line_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesReactive_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesReactive_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62647,7 +62647,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_line_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesReactive_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesReactive_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62678,7 +62678,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_line_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesReactive_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesReactive_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62709,7 +62709,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_transformer_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesReactive_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesReactive_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62740,7 +62740,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_transformer_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesReactive_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesReactive_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62771,7 +62771,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_transformer_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesReactive_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesReactive_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62802,7 +62802,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesReactive_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesReactive_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62833,7 +62833,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesReactive_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesReactive_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62864,7 +62864,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Reactive_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesReactive_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesReactive_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62895,7 +62895,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Total_normalized_transformer_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesTotal_normalized_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesTotal_normalized_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62926,7 +62926,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Total_normalized_line_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesTotal_normalized_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesTotal_normalized_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62957,7 +62957,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Compensated_active_gross_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesCompensated_active_gross_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesCompensated_active_gross_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -62988,7 +62988,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Compensated_active_net_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesCompensated_active_net_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesCompensated_active_net_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63019,7 +63019,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Compensated_active_gross_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesCompensated_active_gross_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesCompensated_active_gross_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63050,7 +63050,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Compensated_active_net_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesCompensated_active_net_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesCompensated_active_net_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63081,7 +63081,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Compensated_reactive_gross_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesCompensated_reactive_gross_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesCompensated_reactive_gross_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63112,7 +63112,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Compensated_reactive_net_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesCompensated_reactive_net_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesCompensated_reactive_net_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63143,7 +63143,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Compensated_reactive_gross_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesCompensated_reactive_gross_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesCompensated_reactive_gross_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63174,7 +63174,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the Compensated_reactive_net_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesCompensated_reactive_net_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesCompensated_reactive_net_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63205,7 +63205,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1active_line_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesL1active_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL1active_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63236,7 +63236,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1active_line_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesL1active_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL1active_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63267,7 +63267,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1active_transformer_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesL1active_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL1active_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63298,7 +63298,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1active_transformer_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesL1active_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL1active_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63329,7 +63329,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1active_transformer_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesL1active_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL1active_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63360,7 +63360,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1active_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesL1active_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL1active_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63391,7 +63391,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1active_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesL1active_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL1active_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63422,7 +63422,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1active_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesL1active_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL1active_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63453,7 +63453,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1reactive_line_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesL1reactive_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL1reactive_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63484,7 +63484,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1reactive_line_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesL1reactive_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL1reactive_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63515,7 +63515,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1reactive_line_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesL1reactive_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL1reactive_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63546,7 +63546,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1reactive_transformer_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesL1reactive_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL1reactive_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63577,7 +63577,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1reactive_transformer_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesL1reactive_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL1reactive_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63608,7 +63608,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1reactive_transformer_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesL1reactive_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL1reactive_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63639,7 +63639,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1Reactive_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesL1Reactive_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL1Reactive_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63670,7 +63670,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1Reactive_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesL1Reactive_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL1Reactive_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63701,7 +63701,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1Reactive_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesL1Reactive_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL1Reactive_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63732,7 +63732,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1Ampere_squared_hours property
         /// </summary>
-        private sealed class TransformerAndLineLossesL1Ampere_squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL1Ampere_squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63763,7 +63763,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L1Volt_squared_hours property
         /// </summary>
-        private sealed class TransformerAndLineLossesL1Volt_squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL1Volt_squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63794,7 +63794,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2active_line_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesL2active_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL2active_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63825,7 +63825,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2active_line_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesL2active_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL2active_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63856,7 +63856,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2active_transformer_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesL2active_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL2active_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63887,7 +63887,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2active_transformer_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesL2active_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL2active_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63918,7 +63918,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2active_transformer_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesL2active_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL2active_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63949,7 +63949,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2active_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesL2active_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL2active_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -63980,7 +63980,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2active_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesL2active_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL2active_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64011,7 +64011,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2active_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesL2active_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL2active_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64042,7 +64042,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2reactive_line_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesL2reactive_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL2reactive_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64073,7 +64073,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2reactive_line_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesL2reactive_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL2reactive_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64104,7 +64104,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2reactive_line_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesL2reactive_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL2reactive_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64135,7 +64135,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2reactive_transformer_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesL2reactive_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL2reactive_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64166,7 +64166,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2reactive_transformer_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesL2reactive_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL2reactive_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64197,7 +64197,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2reactive_transformer_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesL2reactive_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL2reactive_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64228,7 +64228,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2reactive_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesL2reactive_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL2reactive_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64259,7 +64259,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2reactive_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesL2reactive_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL2reactive_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64290,7 +64290,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2reactive_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesL2reactive_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL2reactive_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64321,7 +64321,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2Ampere_squared_hours property
         /// </summary>
-        private sealed class TransformerAndLineLossesL2Ampere_squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL2Ampere_squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64352,7 +64352,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L2Volt_squared_hours property
         /// </summary>
-        private sealed class TransformerAndLineLossesL2Volt_squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL2Volt_squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64383,7 +64383,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3Active_line_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesL3Active_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL3Active_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64414,7 +64414,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3Active_line_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesL3Active_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL3Active_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64445,7 +64445,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3active_transformer_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesL3active_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL3active_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64476,7 +64476,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3active_transformer_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesL3active_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL3active_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64507,7 +64507,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3active_transformer_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesL3active_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL3active_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64538,7 +64538,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3active_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesL3active_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL3active_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64569,7 +64569,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3active_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesL3active_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL3active_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64600,7 +64600,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3active_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesL3active_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL3active_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64631,7 +64631,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3reactive_line_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesL3reactive_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL3reactive_line_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64662,7 +64662,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3reactive_line_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesL3reactive_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL3reactive_line_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64693,7 +64693,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3reactive_line_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesL3reactive_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL3reactive_line_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64724,7 +64724,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3reactive_transformer_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesL3reactive_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL3reactive_transformer_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64755,7 +64755,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3reactive_transformer_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesL3reactive_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL3reactive_transformer_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64786,7 +64786,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3reactive_transformer_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesL3reactive_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL3reactive_transformer_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64817,7 +64817,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3reactive_losses_P property
         /// </summary>
-        private sealed class TransformerAndLineLossesL3reactive_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL3reactive_losses_PProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64848,7 +64848,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3reactive_losses_M property
         /// </summary>
-        private sealed class TransformerAndLineLossesL3reactive_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL3reactive_losses_MProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64879,7 +64879,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3reactive_losses property
         /// </summary>
-        private sealed class TransformerAndLineLossesL3reactive_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL3reactive_lossesProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64910,7 +64910,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3Ampere_squared_hours property
         /// </summary>
-        private sealed class TransformerAndLineLossesL3Ampere_squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL3Ampere_squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>
@@ -64941,7 +64941,7 @@ namespace TemporaryGeneratedCode.COSEM.COSEMObjects
         /// <summary>
         /// Represents a proxy to represent an incremental access to the L3Volt_Squared_hours property
         /// </summary>
-        private sealed class TransformerAndLineLossesL3Volt_Squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
+        protected sealed class TransformerAndLineLossesL3Volt_Squared_hoursProxy : ModelPropertyChange<ITransformerAndLineLosses, Nullable<double>>
         {
             
             /// <summary>

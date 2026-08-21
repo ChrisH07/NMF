@@ -401,6 +401,7 @@ namespace NMF.CodeGen
                     VisitStatements(ifStmt.FalseStatements, referenceConversion);
                     return;
                 case CodeVariableDeclarationStatement decl:
+                    decl.Type = referenceConversion(decl.Type);
                     VisitExpression(decl.InitExpression, referenceConversion);
                     return;
                 case CodeAssignStatement assign:

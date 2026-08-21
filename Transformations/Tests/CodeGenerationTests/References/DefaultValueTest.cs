@@ -213,7 +213,7 @@ namespace TemporaryGeneratedCode.Test
         /// <summary>
         /// Represents a proxy to represent an incremental access to the value property
         /// </summary>
-        private sealed class PTypeValueProxy : ModelPropertyChange<IPType, string>
+        protected sealed class PTypeValueProxy : ModelPropertyChange<IPType, string>
         {
             
             /// <summary>
@@ -244,7 +244,7 @@ namespace TemporaryGeneratedCode.Test
         /// <summary>
         /// Represents a proxy to represent an incremental access to the name property
         /// </summary>
-        private sealed class PTypeNameProxy : ModelPropertyChange<IPType, string>
+        protected sealed class PTypeNameProxy : ModelPropertyChange<IPType, string>
         {
             
             /// <summary>
@@ -372,7 +372,7 @@ namespace TemporaryGeneratedCode.Test
         {
             if ((feature == "P"))
             {
-                return this._p;
+                return ((System.Collections.IList)(this.P));
             }
             return base.GetCollectionForFeature(feature);
         }

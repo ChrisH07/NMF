@@ -216,7 +216,7 @@ namespace TemporaryGeneratedCode.Refines
         /// <summary>
         /// Represents a proxy to represent an incremental access to the name property
         /// </summary>
-        private sealed class NodeNameProxy : ModelPropertyChange<INode, string>
+        protected sealed class NodeNameProxy : ModelPropertyChange<INode, string>
         {
             
             /// <summary>
@@ -463,7 +463,7 @@ namespace TemporaryGeneratedCode.Refines
         {
             if ((feature == "CHILDREN"))
             {
-                return this._children_;
+                return ((System.Collections.IList)(this.Children_));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -504,7 +504,7 @@ namespace TemporaryGeneratedCode.Refines
         /// <param name="container">The container object</param>
         protected override string GetCompositionName(object container)
         {
-            if ((container == this._children_))
+            if ((container == this.Children_))
             {
                 return "children";
             }
@@ -803,7 +803,7 @@ namespace TemporaryGeneratedCode.Refines
         /// <summary>
         /// Represents a proxy to represent an incremental access to the item property
         /// </summary>
-        private sealed class BaseItemProxy : ModelPropertyChange<IBase, INode>
+        protected sealed class BaseItemProxy : ModelPropertyChange<IBase, INode>
         {
             
             /// <summary>
@@ -1072,7 +1072,7 @@ namespace TemporaryGeneratedCode.Refines
         {
             if ((feature == "CHILDREN"))
             {
-                return this._children_;
+                return ((System.Collections.IList)(this.Children_));
             }
             return base.GetCollectionForFeature(feature);
         }
@@ -1113,7 +1113,7 @@ namespace TemporaryGeneratedCode.Refines
         /// <param name="container">The container object</param>
         protected override string GetCompositionName(object container)
         {
-            if ((container == this._children_))
+            if ((container == this.Children_))
             {
                 return "children";
             }
@@ -1156,6 +1156,7 @@ namespace TemporaryGeneratedCode.Refines
                 get
                 {
                     int count = 0;
+                    count = (count + this._parent.Children_.Count);
                     return count;
                 }
             }
@@ -1166,7 +1167,8 @@ namespace TemporaryGeneratedCode.Refines
             /// <returns>A collection of dependencies</returns>
             protected override INotifiable[] CreateDependencies()
             {
-                return new INotifiable[0];
+                return new INotifiable[] {
+                        this._parent.Children_.AsNotifiable()};
             }
             
             /// <summary>
@@ -1175,6 +1177,11 @@ namespace TemporaryGeneratedCode.Refines
             /// <param name="item">The item to add</param>
             public override void Add(IModelElement item)
             {
+                INode childrenCasted = item.As<INode>();
+                if ((childrenCasted != null))
+                {
+                    this._parent.Children_.Add(childrenCasted);
+                }
             }
             
             /// <summary>
@@ -1182,6 +1189,7 @@ namespace TemporaryGeneratedCode.Refines
             /// </summary>
             public override void Clear()
             {
+                this._parent.Children_.Clear();
             }
             
             /// <summary>
@@ -1191,6 +1199,10 @@ namespace TemporaryGeneratedCode.Refines
             /// <param name="item">The item that should be looked out for</param>
             public override bool Contains(IModelElement item)
             {
+                if (this._parent.Children_.Contains(item))
+                {
+                    return true;
+                }
                 return false;
             }
             
@@ -1201,6 +1213,21 @@ namespace TemporaryGeneratedCode.Refines
             /// <param name="arrayIndex">The starting index</param>
             public override void CopyTo(IModelElement[] array, int arrayIndex)
             {
+                IEnumerator<IModelElement> childrenEnumerator = this._parent.Children_.GetEnumerator();
+                try
+                {
+                    for (
+                    ; childrenEnumerator.MoveNext(); 
+                    )
+                    {
+                        array[arrayIndex] = childrenEnumerator.Current;
+                        arrayIndex = (arrayIndex + 1);
+                    }
+                }
+                finally
+                {
+                    childrenEnumerator.Dispose();
+                }
             }
             
             /// <summary>
@@ -1210,6 +1237,12 @@ namespace TemporaryGeneratedCode.Refines
             /// <param name="item">The item that should be removed</param>
             public override bool Remove(IModelElement item)
             {
+                INode nodeItem = item.As<INode>();
+                if (((nodeItem != null) 
+                            && this._parent.Children_.Remove(nodeItem)))
+                {
+                    return true;
+                }
                 return false;
             }
             
@@ -1219,7 +1252,7 @@ namespace TemporaryGeneratedCode.Refines
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Children_).GetEnumerator();
             }
         }
         
@@ -1247,6 +1280,11 @@ namespace TemporaryGeneratedCode.Refines
                 get
                 {
                     int count = 0;
+                    if ((this._parent.Item != null))
+                    {
+                        count = (count + 1);
+                    }
+                    count = (count + this._parent.Children_.Count);
                     return count;
                 }
             }
@@ -1257,7 +1295,9 @@ namespace TemporaryGeneratedCode.Refines
             /// <returns>A collection of dependencies</returns>
             protected override INotifiable[] CreateDependencies()
             {
-                return new INotifiable[0];
+                return new INotifiable[] {
+                        new ConcreteItemProxy(this._parent),
+                        this._parent.Children_.AsNotifiable()};
             }
             
             /// <summary>
@@ -1266,6 +1306,20 @@ namespace TemporaryGeneratedCode.Refines
             /// <param name="item">The item to add</param>
             public override void Add(IModelElement item)
             {
+                if ((this._parent.Item == null))
+                {
+                    INode itemCasted = item.As<INode>();
+                    if ((itemCasted != null))
+                    {
+                        this._parent.Item = itemCasted;
+                        return;
+                    }
+                }
+                INode childrenCasted = item.As<INode>();
+                if ((childrenCasted != null))
+                {
+                    this._parent.Children_.Add(childrenCasted);
+                }
             }
             
             /// <summary>
@@ -1273,6 +1327,8 @@ namespace TemporaryGeneratedCode.Refines
             /// </summary>
             public override void Clear()
             {
+                this._parent.Item = null;
+                this._parent.Children_.Clear();
             }
             
             /// <summary>
@@ -1282,6 +1338,14 @@ namespace TemporaryGeneratedCode.Refines
             /// <param name="item">The item that should be looked out for</param>
             public override bool Contains(IModelElement item)
             {
+                if ((item == this._parent.Item))
+                {
+                    return true;
+                }
+                if (this._parent.Children_.Contains(item))
+                {
+                    return true;
+                }
                 return false;
             }
             
@@ -1292,6 +1356,26 @@ namespace TemporaryGeneratedCode.Refines
             /// <param name="arrayIndex">The starting index</param>
             public override void CopyTo(IModelElement[] array, int arrayIndex)
             {
+                if ((this._parent.Item != null))
+                {
+                    array[arrayIndex] = this._parent.Item;
+                    arrayIndex = (arrayIndex + 1);
+                }
+                IEnumerator<IModelElement> childrenEnumerator = this._parent.Children_.GetEnumerator();
+                try
+                {
+                    for (
+                    ; childrenEnumerator.MoveNext(); 
+                    )
+                    {
+                        array[arrayIndex] = childrenEnumerator.Current;
+                        arrayIndex = (arrayIndex + 1);
+                    }
+                }
+                finally
+                {
+                    childrenEnumerator.Dispose();
+                }
             }
             
             /// <summary>
@@ -1301,6 +1385,17 @@ namespace TemporaryGeneratedCode.Refines
             /// <param name="item">The item that should be removed</param>
             public override bool Remove(IModelElement item)
             {
+                if ((this._parent.Item == item))
+                {
+                    this._parent.Item = null;
+                    return true;
+                }
+                INode nodeItem = item.As<INode>();
+                if (((nodeItem != null) 
+                            && this._parent.Children_.Remove(nodeItem)))
+                {
+                    return true;
+                }
                 return false;
             }
             
@@ -1310,14 +1405,14 @@ namespace TemporaryGeneratedCode.Refines
             /// <returns>A generic enumerator</returns>
             public override IEnumerator<IModelElement> GetEnumerator()
             {
-                return Enumerable.Empty<IModelElement>().GetEnumerator();
+                return Enumerable.Empty<IModelElement>().Concat(this._parent.Item).Concat(this._parent.Children_).GetEnumerator();
             }
         }
         
         /// <summary>
         /// Represents a proxy to represent an incremental access to the item property
         /// </summary>
-        private sealed class ConcreteItemProxy : ModelPropertyChange<IConcrete, INode>
+        protected sealed class ConcreteItemProxy : ModelPropertyChange<IConcrete, INode>
         {
             
             /// <summary>
@@ -1348,7 +1443,7 @@ namespace TemporaryGeneratedCode.Refines
         /// <summary>
         /// Represents a proxy to represent an incremental access to the item property
         /// </summary>
-        private sealed class BaseItemProxy : ModelPropertyChange<IBase, INode>
+        protected sealed class BaseItemProxy : ModelPropertyChange<IBase, INode>
         {
             
             /// <summary>

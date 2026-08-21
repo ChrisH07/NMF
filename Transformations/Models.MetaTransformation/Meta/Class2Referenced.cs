@@ -19,12 +19,14 @@ namespace NMF.Models.Meta
             /// <inheritdoc />
             protected override List<IReference> GetImplementingReferences(IClass scope, ITransformationContext context)
             {
+                // See the base class override: a reference is included here only if its generated property
+                // actually ended up on scope's own generated type.
                 var generatedType = context.Trace.ResolveIn(Rule<Class2Type>(), scope);
                 var r2p = Rule<Reference2Property>();
-                return (from c in scope.Closure(c => c.BaseTypes)
-                        from r in c.References
-                        where generatedType.Members.Contains(context.Trace.ResolveIn(r2p, r))
-                        select r).ToList();
+                return scope.Closure(c => c.BaseTypes)
+                    .SelectMany(c => c.References)
+                    .Where(r => generatedType.Members.Contains(context.Trace.ResolveIn(r2p, r)))
+                    .ToList();
             }
 
             /// <summary>
