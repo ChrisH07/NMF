@@ -373,13 +373,25 @@ namespace NMF.Models.Meta
                 };
                 add.Parameters.Add(new CodeParameterDeclarationExpression(elementType, "item"));
                 var itemRef = new CodeArgumentReferenceExpression("item");
+                var hasCatchAllReference = false;
                 foreach (var reference in implementingReferences)
                 {
                     var catchAllReference = ContributeReferenceToAdd(original, context, add, itemRef, reference);
                     if (catchAllReference)
                     {
+                        hasCatchAllReference = true;
                         break;
                     }
+                }
+                if (!hasCatchAllReference)
+                {
+                    // Every implementing reference is bounded (a fixed single-valued slot, or a
+                    // type-discriminated reference with no unconditional catch-all) and none of them
+                    // accepted the item at runtime - there is no remaining capacity, so fail loudly
+                    // instead of silently doing nothing (the previous behavior: falling off the end
+                    // of the method with no statements executed and no indication to the caller).
+                    add.Statements.Add(new CodeThrowExceptionStatement(new CodeObjectCreateExpression(typeof(NotSupportedException),
+                        new CodePrimitiveExpression("This collection has no remaining capacity for the given element."))));
                 }
                 add.WriteDocumentation("Adds the given element to the collection", null, new Dictionary<string, string>() { { "item", "The item to add" } });
                 return add;
@@ -447,6 +459,20 @@ namespace NMF.Models.Meta
 
             private static void ContributeSingleValuedReferenceToAdd(IReference original, CodeMemberMethod add, CodeArgumentReferenceExpression itemRef, IReference reference, CodeExpression propertyRef, CodeTypeReference propertyTypeRef)
             {
+                // If the item is already sitting in THIS specific slot, treat the call as a no-op
+                // rather than falling through to the next slot's "is it null" check. Without this,
+                // a single-valued property's own setter storing the value directly and THEN routing
+                // Opposite-side bookkeeping back through this generated Add (because the refined-from
+                // reference has an Opposite) sees this slot as already non-null and misassigns the
+                // same item into the next open slot instead - silently aliasing two slots to the same
+                // value and corrupting state on the next unrelated assignment.
+                var alreadyInThisSlot = new CodeConditionStatement
+                {
+                    Condition = new CodeBinaryOperatorExpression(propertyRef, CodeBinaryOperatorType.IdentityEquality, itemRef)
+                };
+                alreadyInThisSlot.TrueStatements.Add(new CodeMethodReturnStatement());
+                add.Statements.Add(alreadyInThisSlot);
+
                 var ifNull = new CodeConditionStatement
                 {
                     Condition = new CodeBinaryOperatorExpression(propertyRef, CodeBinaryOperatorType.IdentityEquality, new CodePrimitiveExpression(null))

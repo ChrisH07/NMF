@@ -355,13 +355,24 @@ namespace NMF.Models.Meta
 
                     var newCollection = new CodeObjectCreateExpression(fieldType);
                     if (property.IsContainment || property.Opposite != null) newCollection.Parameters.Add(new CodeThisReferenceExpression());
-                    var createEmptyCollection = new CodeAssignStatement(fieldRef, newCollection);
-                    var constructorStmts = codeProperty.ImpliedConstructorStatements(true);
-                    constructorStmts.Add(createEmptyCollection);
-                    constructorStmts.Add(new CodeAttachEventStatement(fieldRef, "CollectionChanging",
+
+                    // Lazily create (and wire up) the backing collection on first access, inside the
+                    // getter, instead of unconditionally in the constructor. A collection-typed
+                    // reference should not be the reason every model class needs an explicit
+                    // constructor - a getter can freely reference `this` (unlike a field initializer),
+                    // so nothing about the collection's own wiring actually requires ctor-time
+                    // execution. This keeps constructor generation driven purely by genuinely required
+                    // (LowerBound >= 1) data, not incidentally forced by whichever fields are collections.
+                    var lazyInit = new CodeConditionStatement
+                    {
+                        Condition = new CodeBinaryOperatorExpression(fieldRef, CodeBinaryOperatorType.IdentityEquality, new CodePrimitiveExpression(null))
+                    };
+                    lazyInit.TrueStatements.Add(new CodeAssignStatement(fieldRef, newCollection));
+                    lazyInit.TrueStatements.Add(new CodeAttachEventStatement(fieldRef, "CollectionChanging",
                         GenerateCollectionBubbleHandler(property, codeProperty, "CollectionChanging", typeof(NotifyCollectionChangedEventArgs))));
-                    constructorStmts.Add(new CodeAttachEventStatement(fieldRef, "CollectionChanged",
+                    lazyInit.TrueStatements.Add(new CodeAttachEventStatement(fieldRef, "CollectionChanged",
                         GenerateCollectionBubbleHandler(property, codeProperty, "CollectionChanged", typeof(NotifyCollectionChangedEventArgs))));
+                    codeProperty.GetStatements.Insert(0, lazyInit);
                 }
             }
 
